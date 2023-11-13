@@ -146,6 +146,9 @@ offlineSearch = false
 prism_syntax_highlighting = false
 
 
+company_baseurl = "https://streamzero.com"
+
+
 # User interface configuration
 [params.ui]
 #  Set to true to disable breadcrumb navigation.
@@ -420,6 +423,10 @@ enable = false
   company_website = "streamzero.com"
   company_address = "Baarerstrasse 5, 6300 Zug, Switzerland"
   company_phone = "+41(0)41 561 0105"
+  # company_baseurl = "https://streamzero.com/"
+
+
+
 
 
 
