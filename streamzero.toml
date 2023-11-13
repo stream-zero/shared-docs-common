@@ -242,7 +242,7 @@ enable = false
 [[menu.main]]
   identifier = 'products'
   name = 'PRODUCTS'
-  url = '/products/'
+  url = 'https://streamzero.com/products/'
   weight = 1
   [menu.main.params]
     class = 'highlight-menu-item'
@@ -250,7 +250,7 @@ enable = false
 [[menu.main]]
     identifier = "products_fx"
     name = "STREAMZERO FX"
-    url = "/products/fx/"
+    url = "https://streamzero.com/products/fx/"
     parent = "products"
     weight = 1
     [menu.main.params]
@@ -259,7 +259,7 @@ enable = false
 [[menu.main]]
     identifier = "products_sx"
     name = "STREAMZERO SX"
-    url = "/products/sx/"
+    url = "https://streamzero.com/products/sx/"
     parent = "products"
     weight = 1
     [menu.main.params]
@@ -268,7 +268,7 @@ enable = false
 [[menu.main]]
     identifier = "products_k8x"
     name = "STREAMZERO K8X"
-    url = "/products/k8x/"
+    url = "https://streamzero.com/products/k8x/"
     parent = "products"
     weight = 1
     [menu.main.params]
@@ -277,7 +277,7 @@ enable = false
 [[menu.main]]
   identifier = 'solutions'
   name = 'SOLUTIONS'
-  url = '/solutions/'
+  url = 'https://streamzero.com/solutions/'
   weight = 1
   [menu.main.params]
     class = 'highlight-menu-item'
@@ -285,7 +285,7 @@ enable = false
 [[menu.main]]
     identifier = "solutions_zx"
     name = "STREAMZERO ZX"
-    url = "/solutions/zx/"
+    url = "https://streamzero.com/solutions/zx/"
     parent = "solutions"
     weight = 1
     [menu.main.params]
@@ -294,7 +294,7 @@ enable = false
 [[menu.main]]
     identifier = "solutions_drp"
     name = "STREAMZERO DropBot"
-    url = "/solutions/dropbot/"
+    url = "https://streamzero.com/solutions/dropbot/"
     parent = "solutions"
     weight = 1
     [menu.main.params]
@@ -303,7 +303,7 @@ enable = false
 [[menu.main]]
     identifier = "solutions_ai"
     name = "STREAMZERO AI"
-    url = "/solutions/ai/"
+    url = "https://streamzero.com/solutions/ai/"
     parent = "solutions"
     weight = 1
     [menu.main.params]
@@ -312,7 +312,7 @@ enable = false
 [[menu.main]]
   identifier = 'blog'
   name = 'BLOG'
-  url = '/articles/'
+  url = 'https://streamzero.com/articles/'
   weight = 2
   [menu.main.params]
     class = 'highlight-menu-item'
@@ -321,7 +321,7 @@ enable = false
 #[[menu.main]]
 #  identifier = 'integrations'
 #  name = 'INTEGRATIONS'
-#  url = '/integrations/'
+#  url = 'https://streamzero.com/integrations/'
 #  weight = 2
 #  [menu.main.params]
 #    class = 'highlight-menu-item'
@@ -329,7 +329,7 @@ enable = false
 #[[menu.main]]
 #    identifier = "integrations_databases"
 #    name = "DATABASES"
-#    url = "/integrations/databases/"
+#    url = "https://streamzero.com/integrations/databases/"
 #    parent = "integrations"
 #    weight = 1
 #    [menu.main.params]
