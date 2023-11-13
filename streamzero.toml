@@ -275,41 +275,6 @@ enable = false
       class = 'highlight-menu-item'
 
 [[menu.main]]
-  identifier = 'solutions'
-  name = 'SOLUTIONS'
-  url = 'https://streamzero.com/solutions/'
-  weight = 1
-  [menu.main.params]
-    class = 'highlight-menu-item'
-
-[[menu.main]]
-    identifier = "solutions_zx"
-    name = "STREAMZERO ZX"
-    url = "https://streamzero.com/solutions/zx/"
-    parent = "solutions"
-    weight = 1
-    [menu.main.params]
-      class = 'highlight-menu-item'
-
-[[menu.main]]
-    identifier = "solutions_drp"
-    name = "STREAMZERO DropBot"
-    url = "https://streamzero.com/solutions/dropbot/"
-    parent = "solutions"
-    weight = 1
-    [menu.main.params]
-      class = 'highlight-menu-item'
-
-[[menu.main]]
-    identifier = "solutions_ai"
-    name = "STREAMZERO AI"
-    url = "https://streamzero.com/solutions/ai/"
-    parent = "solutions"
-    weight = 1
-    [menu.main.params]
-      class = 'highlight-menu-item'
-
-[[menu.main]]
   identifier = 'blog'
   name = 'BLOG'
   url = 'https://streamzero.com/articles/'
