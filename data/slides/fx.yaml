@@ -1,0 +1,21 @@
+images: 
+  - image: /images/temp/screenshots/fx_home.drawio.svg
+    heading: "Heading 1"
+    subheading: "Designed to Support Multiple Teams, Well Organized Code and Maximum Observability"
+    index: 1
+  - image: /images/temp/annotated_fx_flox.drawio.svg
+    heading: "Heading 2"
+    subheading: "The FX Hub Links Services Without Any Code Annotations and Provides Granular Information on Service Flows"
+    index: 2
+  - image: /images/temp/screenshots/fx_config.drawio.svg
+    heading: "Heading 2"
+    subheading: "Review and Manage Configurations with Ease"
+    index: 3
+  - image: /images/temp/screenshots/fx_cron.drawio.svg
+    heading: "Heading 3"
+    subheading: "Schedule Runs with Well Known Cron Expressions. Monitor Runs on Dashboard"
+    index: 4
+  - image: /images/temp/screenshots/fx_monitoring.drawio.svg
+    heading: "Heading 4"
+    subheading: "Monitor Runs and Flows with Ease. Integrated Metrics Collections and Analytics. Manual as well as Programattic Retries."
+    index: 5

@@ -1,0 +1,135 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>GridMine – fraudremodelling</title>
+    <link>/tags/fraudremodelling/</link>
+    <description>Recent content in fraudremodelling on GridMine</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    
+	  <atom:link href="/tags/fraudremodelling/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Docs: Onboarding and Fraud Remodelling - Financial Services</title>
+      <link>/docs/solutions/004-onboarding-and-fraud-remodelling-finance/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/solutions/004-onboarding-and-fraud-remodelling-finance/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;onboarding-and-fraud-remodelling&#34;&gt;Onboarding and Fraud Remodelling&lt;/h2&gt;
+&lt;h3 id=&#34;executive-summary&#34;&gt;Executive summary&lt;/h3&gt;
+&lt;p&gt;Leverage an industry proven onboarding and Know Your Customer (KYC) ontology and fine-tune it to your corporate compliance policies. Ensure manual processing, existing triggers and information sources are tied together by a unified and harmonized process supporting front-office and compliance simultaneously.&lt;/p&gt;
+&lt;h3 id=&#34;problem-statement&#34;&gt;Problem statement&lt;/h3&gt;
+&lt;p&gt;Many financial service providers struggle with the complexity and inefficiency of their client onboarding and recurring KYC monitoring practice. And many have issues, when it comes to Anti-Money Laundering (AML), source of funds and transaction monitoring compliance. The front-office staff often tries to cut corners and the compliance staff is overwhelmed with the number of cases and follow-ups that are required from them. Disintegrated and high-maintenance systems and processes are the usual status quo, with little budget and energy to change from due to the inherent risk.&lt;/p&gt;
+&lt;h3 id=&#34;target-market--industries&#34;&gt;Target market / Industries&lt;/h3&gt;
+&lt;p&gt;The use case is primarily applicable to the industries that are exposed to frauds and where fraud tracking and prevention is needed. The financial services industry benefiting most from this use-case.&lt;/p&gt;
+&lt;h3 id=&#34;solution&#34;&gt;Solution&lt;/h3&gt;
+&lt;p&gt;We combine the domain knowledge of what is really required by law and regulation with the opportunity to automate many aspects of the background screening and adverse media monitoring. By integrating the robustness of process of global players and the lean and mean approach FinTech startups take, we usually are able to raise quality while reducing effort. Creating a centralized compliance officer workbench that is integrated with both front-office systems as well as risk-management and compliance tools, we are able to iteratively improve the situation by synchronizing the learning of the models and predictions with the feedback from compliance experts.&lt;/p&gt;
+&lt;p&gt;The solution included:
+-Integrated Compliance Officer Workbench&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Onboarding &amp;amp; Compliance Ontology configuration &amp;amp; subsequent ontology matching&lt;/li&gt;
+&lt;li&gt;Integration of existing screening &amp;amp; trigger sources with learning / improvement loops&lt;/li&gt;
+&lt;li&gt;Automation of standard cases and pre-filling of high-probability issues&lt;/li&gt;
+&lt;li&gt;Aggregation of findings, reporting, alerting &amp;amp; compliance action notifications&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;stakeholders&#34;&gt;Stakeholders&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Compliance&lt;/li&gt;
+&lt;li&gt;Security&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;data-elements-assets-and-deliverables&#34;&gt;Data elements, Assets and Deliverables&lt;/h3&gt;
+&lt;p&gt;As an Input from the client, the following items were used:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Existing client onboarding / KYC policies&lt;/li&gt;
+&lt;li&gt;KYC/AML/onboarding management cases&lt;/li&gt;
+&lt;li&gt;Client‘s contracts, positions &amp;amp; transactions&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Assets &amp;amp; Artefacts:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Client risk attributes&lt;/li&gt;
+&lt;li&gt;Historic client behavior information&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The deliverables included:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Compliance &amp;amp; KYC Ontology&lt;/li&gt;
+&lt;li&gt;Compliance Officer Workbench&lt;/li&gt;
+&lt;li&gt;Use case specific orchestration flow&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;impact-and-benefits&#34;&gt;Impact and benefits&lt;/h3&gt;
+&lt;p&gt;Decreased compliance team by 30% from 18 down to 12 Fuull-Time Employees by automating standard case load. Increased compliance quality and decreased client case resolution time by eliminating aspects not required by current jurisdictional scope.&lt;/p&gt;
+&lt;h3 id=&#34;testimonials&#34;&gt;Testimonials&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&amp;ldquo;This is a compliance expert‘s dream come true. Before I never had an oversight of where I or my team where standing. Now we can actually support our client facing colleagues.&amp;rdquo;
+— Mr. XXX YYY, Title, Company ZZZ.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;tags--keywords&#34;&gt;Tags / Keywords&lt;/h3&gt;
+&lt;p&gt;#fraud #fraudremodelling #compliance #kyc #financialservices #bank&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Onboarding and Fraud Remodelling - General</title>
+      <link>/docs/solutions/004-onboarding-and-fraud-remodelling-general/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/solutions/004-onboarding-and-fraud-remodelling-general/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;onboarding-and-fraud-remodelling&#34;&gt;Onboarding and Fraud Remodelling&lt;/h2&gt;
+&lt;h3 id=&#34;executive-summary&#34;&gt;Executive summary&lt;/h3&gt;
+&lt;p&gt;Leverage an industry proven onboarding and Know Your Customer (KYC) ontology and fine-tune it to your corporate compliance policies. Ensure manual processing, existing triggers and information sources are tied together by a unified and harmonized process supporting sales and compliance simultaneously.&lt;/p&gt;
+&lt;h3 id=&#34;problem-statement&#34;&gt;Problem statement&lt;/h3&gt;
+&lt;p&gt;Many service providers struggle with the complexity and inefficiency of their client onboarding and recurring KYC monitoring practice. And many have issues, when it comes to various types of monitoring of client’s activities. The front-office staff often tries to cut corners and the compliance staff is overwhelmed with the number of cases and follow-ups that are required from them. Disintegrated and high-maintenance systems and processes are the usual status quo, with little budget and energy to change from due to the inherent risk.&lt;/p&gt;
+&lt;h3 id=&#34;target-market--industries&#34;&gt;Target market / Industries&lt;/h3&gt;
+&lt;p&gt;The use case is primarily applicable to the industries that are exposed to frauds and where fraud tracking and prevention is needed.&lt;/p&gt;
+&lt;h3 id=&#34;solution&#34;&gt;Solution&lt;/h3&gt;
+&lt;p&gt;We combine the domain knowledge of what is really required by law and regulation with the opportunity to automate many aspects of the background screening and adverse media monitoring. By integrating the robustness of process of global players and the lean and mean approach, we usually are able to raise quality while reducing effort. Creating a centralized compliance officer workbench that is integrated with both front-office systems as well as risk-management and compliance tools, we are able to iteratively improve the situation by synchronizing the learning of the models and predictions with the feedback from compliance experts.&lt;/p&gt;
+&lt;p&gt;The solution included:
+-Integrated Compliance Officer Workbench&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Onboarding &amp;amp; Compliance Ontology configuration &amp;amp; subsequent ontology matching&lt;/li&gt;
+&lt;li&gt;Integration of existing screening &amp;amp; trigger sources with learning / improvement loops&lt;/li&gt;
+&lt;li&gt;Automation of standard cases and pre-filling of high-probability issues&lt;/li&gt;
+&lt;li&gt;Aggregation of findings, reporting, alerting &amp;amp; compliance action notifications&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;stakeholders&#34;&gt;Stakeholders&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Compliance&lt;/li&gt;
+&lt;li&gt;Security&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;data-elements-assets-and-deliverables&#34;&gt;Data elements, Assets and Deliverables&lt;/h3&gt;
+&lt;p&gt;As an Input from the client, the following items were used:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Existing client onboarding / KYC policies&lt;/li&gt;
+&lt;li&gt;KYC / onboarding management cases&lt;/li&gt;
+&lt;li&gt;Client‘s contracts, positions &amp;amp; transactions&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Assets &amp;amp; Artefacts:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Client risk attributes&lt;/li&gt;
+&lt;li&gt;Historic client behavior information&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The deliverables included:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Compliance &amp;amp; KYC Ontology&lt;/li&gt;
+&lt;li&gt;Compliance Officer Workbench&lt;/li&gt;
+&lt;li&gt;Use case specific orchestration flow&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;tags--keywords&#34;&gt;Tags / Keywords&lt;/h3&gt;
+&lt;p&gt;#fraud #fraudremodelling #frauddetection #fraudtracking #compliance #kyc&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

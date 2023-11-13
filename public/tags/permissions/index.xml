@@ -1,0 +1,59 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>GridMine – permissions</title>
+    <link>/tags/permissions/</link>
+    <description>Recent content in permissions on GridMine</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    
+	  <atom:link href="/tags/permissions/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Docs: Permissions</title>
+      <link>/docs/security/permissions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/security/permissions/</guid>
+      <description>
+        
+        
+        &lt;h4 id=&#34;roles&#34;&gt;Roles&lt;/h4&gt;
+&lt;p&gt;This is us - humans - using StreamZero on a day to day basis. And in this section each user is listed with the most important attributes defininig name, e-mail, status and - most importantly - the associated roles.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;To get the the Users page, navigate to: Security &amp;gt; List Roles&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+
+
+
+
+&lt;p&gt; 
+            &lt;img src=&#34;/streamzero/images/security/list_users_page.png&#34; style=&#34;border:2px solid #fff;
+            box-shadow: 10px 10px 5px #ccc;
+            -moz-box-shadow: 10px 10px 5px #ccc;
+            -webkit-box-shadow: 10px 10px 5px #ccc;
+            -khtml-box-shadow: 10px 10px 5px #ccc;&#34;/&gt;
+&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Example: List of Users&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Besides displaying the list of all current users, the Users page offers a number of capabilities:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Add User &lt;img src=&#34;../../../../../../../images/add_icon.png&#34; alt=&#34;Add User&#34;&gt;&lt;/li&gt;
+&lt;li&gt;Show User &lt;img src=&#34;../../../../../../../images/view_icon.png&#34; alt=&#34;&#34;&gt;&lt;/li&gt;
+&lt;li&gt;Edit User &lt;img src=&#34;../../../../../../../images/edit_icon.png&#34; alt=&#34;&#34;&gt;&lt;/li&gt;
+&lt;li&gt;Delete User &lt;img src=&#34;../../../../../../../images/delete_icon.png&#34; alt=&#34;&#34;&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;em&gt;Note that each of these capabilities depends on the Permissions given to your Role. Some roles may be given full rights (e.g. add, show, edit, delete), where others may only be given viewing rights (e.g. show). As a result, some users may only be seeing the &amp;ldquo;Show User&amp;rdquo; magnifying glass icon.&lt;/em&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,271 @@
+notifications:
+  - name: AWS SES
+    description: Amazon Simple Email Service (SES) is a cost-effective, flexible, and scalable email service that enables developers to send mail from within any application.
+    learn_more_href: /docs/integrations/notifications_and_messaging/notifications_and_messaging/
+    icon: aws_ses.png
+    tags: 
+  - name: Discord
+    description: Discord is a VoIP, instant messaging and digital distribution platform. Users communicate with voice calls, video calls, text messaging, media and files in private chats or as part of communities called "servers".
+    learn_more_href: /docs/integrations/notifications_and_messaging/notifications_and_messaging/
+    icon: discord.png
+    tags: 
+  - name: Emby
+    description: Emby is a media server designed to organize, play, and stream audio and video to a variety of devices. Bringing all of your home videos, music, and photos together into one place has never been easier. Your personal Emby Server automatically converts and streams your media on-the-fly to play on any device.
+    learn_more_href: /docs/integrations/notifications_and_messaging/notifications_and_messaging/
+    icon: emby.png
+    tags: 
+  - name: Enigma2
+    description: Enigma2 is an application used in Linux-based Digital Video Broadcasting (DVB-S, DVB-C, DVB-T) receivers or TV set-top boxes and Internet Protocol television receivers.
+    learn_more_href: /docs/integrations/notifications_and_messaging/notifications_and_messaging/
+    icon: enigma2.png
+    tags: 
+  - name: Faast
+    description: FAAST is the state of Florida’s assistive technology program. Assistive technology activities provided by FAAST include device loans, device demonstrations, device reutilization, device trainings, information and assistance, and a statewide financing program.
+    learn_more_href: /docs/integrations/notifications_and_messaging/notifications_and_messaging/
+    icon: faast.png
+    tags: 
+  - name: FCM
+    description: Firebase Cloud Messaging (FCM) is a cross-platform messaging solution that lets you reliably send messages at no cost.
+    learn_more_href: /docs/integrations/notifications_and_messaging/notifications_and_messaging/
+    icon: fcm.png
+    tags: 
+  - name: Flock
+    description: Flock is a proprietary messaging and collaboration tool. Flock allows users to configure external apps and integrations from the Flock App Store, and receive notifications and updates directly in Flock.
+    learn_more_href: /docs/integrations/notifications_and_messaging/notifications_and_messaging/
+    icon: flock.png
+    tags: 
+  - name: Gitter
+    description: Gitter is a chat and networking platform that helps to manage, grow and connect communities through messaging, content and discovery.
+    learn_more_href: /docs/integrations/notifications_and_messaging/notifications_and_messaging/
+    icon: gitter.png
+    tags: 
+  - name: Google Chat
+    description: Google Chat is an intelligent and secure communication and collaboration tool, built for teams. From ad-hoc messaging to topic-based workstream collaboration, Chat makes it easy to get work done where the conversation is happening.
+    learn_more_href: /docs/integrations/notifications_and_messaging/notifications_and_messaging/
+    icon: google_chat.png
+    tags: 
+  - name: Gotify
+    description: Gotify is a simple server for sending and receiving messages in real-time per WebSocket.
+    learn_more_href: /docs/integrations/notifications_and_messaging/notifications_and_messaging/
+    icon: gotify.png
+    tags: 
+  - name: Growl
+    description: Growl is a deprecated global notification system and pop-up notification implementation for the Mac OS X and Windows operating systems.
+    learn_more_href: /docs/integrations/notifications_and_messaging/notifications_and_messaging/
+    icon: growl.png
+    tags: 
+  - name: Home Assistant
+    description: Home Assistant is a free and open-source software for home automation designed to be a central control system for smart home devices with a focus on local control and privacy.
+    learn_more_href: /docs/integrations/notifications_and_messaging/notifications_and_messaging/
+    icon: home_assistant.png
+    tags: 
+  - name: IFTTT
+    description: If This Then That is a private commercial company that runs services that allow a user to program a response to events in the world. IFTTT has partnerships with different service providers that supply event notifications to IFTTT and execute commands that implement the responses.
+    learn_more_href: /docs/integrations/notifications_and_messaging/notifications_and_messaging/
+    icon: ifttt.png
+    tags: 
+  - name: Join
+    description: Join allows you to easily do stuff remotely on your Android and PC devices like SMS, notifications, clipboard, and much more! And more!! Receive notifications from Android and interact with them on any device using your Google account. For example, you can reply to a Whatsapp message from your PC.
+    learn_more_href: /docs/integrations/notifications_and_messaging/notifications_and_messaging/
+    icon: join.png
+    tags: 
+  - name: KODI
+    description: Kodi is a free and open-source media player software application developed by the XBMC Foundation, a non-profit technology consortium. Kodi is available for multiple operating systems and hardware platforms, with a software 10-foot user interface for use with televisions and remote controls.
+    learn_more_href: /docs/integrations/notifications_and_messaging/notifications_and_messaging/
+    icon: kodi.png
+    tags: 
+  - name: Kumulos
+    description: Kumulos mobile user engagement platform gives you all the technology you need to increase user engagement - whether that's app engagement or website engagement.
+    learn_more_href: /docs/integrations/notifications_and_messaging/notifications_and_messaging/
+    icon: kumulos.png
+    tags: 
+  - name: LaMetric Time
+    description: LaMetric Time is an award-winning internet-connected clock for home and business. It enhances your interior and shows vital information from the Internet and works with numerous smart home devices like smart lights or smart weather station.
+    learn_more_href: /docs/integrations/notifications_and_messaging/notifications_and_messaging/
+    icon: lametric_time.png
+    tags: 
+  - name: Mailgun
+    description: Mailgun lets you measure the business impact of your email campaigns with a/b testing, using tags on your email templates for real-time analytics. Know how your messages are rendering on different desktop clients like Outlook, Gmail, and more.
+    learn_more_href: /docs/integrations/notifications_and_messaging/notifications_and_messaging/
+    icon: mailgun.png
+    tags: 
+  - name: Matrix
+    description: Matrix is an open source project that publishes the Matrix open standard for secure, decentralised, real-time communication, and its Apache licensed reference implementations.
+    learn_more_href: /docs/integrations/notifications_and_messaging/notifications_and_messaging/
+    icon: matrix.png
+    tags: 
+  - name: Mattermost
+    description: Mattermost is an open-source, self-hostable online chat service with file sharing, search, and integrations. It is designed as an internal chat for organisations and companies, and mostly markets itself as an open-source alternative to Slack and Microsoft Teams.
+    learn_more_href: /docs/integrations/notifications_and_messaging/notifications_and_messaging/
+    icon: mattermost.png
+    tags: 
+  - name: Microsoft Teams
+    description: Microsoft Teams is a proprietary business communication platform developed by Microsoft, as part of the Microsoft 365 family of products. Teams primarily competes with the similar service Slack, offering workspace chat and videoconferencing, file storage, and application integration.
+    learn_more_href: /docs/integrations/notifications_and_messaging/notifications_and_messaging/
+    icon: microsoft_teams.png
+    tags: 
+  - name: MQTT
+    description: MQTT is an OASIS standard messaging protocol for the Internet of Things (IoT). It is designed as an extremely lightweight publish/subscribe messaging transport that is ideal for connecting remote devices with a small code footprint and minimal network bandwidth. MQTT today is used in a wide variety of industries, such as automotive, manufacturing, telecommunications, oil and gas, etc.
+    learn_more_href: /docs/integrations/notifications_and_messaging/notifications_and_messaging/
+    icon: mqtt.png
+    tags: 
+  - name: Nextcloud
+    description: Nextcloud is a suite of client-server software for creating and using file hosting services. It is enterprise-ready with comprehensive support options. Being free and open-source software, anyone is allowed to install and operate it on their own private server devices
+    learn_more_href: /docs/integrations/notifications_and_messaging/notifications_and_messaging/
+    icon: nextcloud.png
+    tags: 
+  - name: NextcloudTalk
+    description: Nextcloud Talk is a fully self hosted, on-premises audio/video and chat communication service. It features web and mobile apps and is designed to offer the highest degree of security while being easy to use.
+    learn_more_href: /docs/integrations/notifications_and_messaging/notifications_and_messaging/
+    icon: nextcloud_talk.png
+    tags: 
+  - name: Notica
+    description: Notica lets you send browser notifications from your terminal to your desktop or phone. No installation or registration is required.
+    learn_more_href: /docs/integrations/notifications_and_messaging/notifications_and_messaging/
+    icon: notica.png
+    tags: 
+  - name: Notifico
+    description: Notifico is an open-source replacement for the now-defunct cia.vc service. Notifico receives messages from services and scripts and delivers them to IRC channels.
+    learn_more_href: /docs/integrations/notifications_and_messaging/notifications_and_messaging/
+    icon: notifico.png
+    tags: 
+  - name: Office 365
+    description: Microsoft Office 365 applications provide enterprise solutions that can be adapted for any organization. Popular Microsoft Office 365 applications include Word, Excel, PowerPoint, Outlook, OneNote, Access and Publisher.
+    learn_more_href: /docs/integrations/notifications_and_messaging/notifications_and_messaging/
+    icon: office365.png
+    tags: 
+  - name: OneSignal
+    description: Customer Messaging Delivered · The market leading self-serve customer engagement solution for Push Notifications, Email, SMS & In-App.
+    learn_more_href: /docs/integrations/notifications_and_messaging/notifications_and_messaging/
+    icon: onesignal.png
+    tags: 
+  - name: Opsgenie
+    description: Opsgenie is the #1 alerting and incident response tool. Never miss a critical alert, restore the service, and fix the underlying issue.
+    learn_more_href: /docs/integrations/notifications_and_messaging/notifications_and_messaging/
+    icon: opsgenie.png
+    tags: 
+  - name: ParsePlatform
+    description: Parse is an open-source Android SDK and back-end solution that enables developers to build mobile apps with shared data quickly and without writing any back-end code or custom APIs.
+    learn_more_href: /docs/integrations/notifications_and_messaging/notifications_and_messaging/
+    icon: parse.png
+    tags: 
+  - name: PopcornNotify
+    description: PopcornNotify. An API for sending simple emails and text messages from your code. Get emails and text messages from your code.
+    learn_more_href: /docs/integrations/notifications_and_messaging/notifications_and_messaging/
+    icon: popcorn_notify.png
+    tags: 
+  - name: Prowl
+    description: Prowl is a push notification client for iOS. Push to your iPhone, iPod touch, or iPad notifications from a Mac or Windows computer, or from a multitude of apps and services.
+    learn_more_href: /docs/integrations/notifications_and_messaging/notifications_and_messaging/
+    icon: prowl.png
+    tags: 
+  - name: PushBullet
+    description: Pushbullet (free) is an iPhone app and Web browser extension that fills in the cracks. It lets you quickly push links, addresses plotted in Google Maps, images, and other information to from one device to another in just a matter of taps or clicks.
+    learn_more_href: /docs/integrations/notifications_and_messaging/notifications_and_messaging/
+    icon: push_bullet.png
+    tags: 
+  - name: Push (Techulus)
+    description: Push offers a cross-platform solution for sending push notifications via code and no-codeto deliver transactional information in realtime.
+    learn_more_href: /docs/integrations/notifications_and_messaging/notifications_and_messaging/
+    icon: push_techulus.png
+    tags: 
+  - name: Pushed
+    description: Pushed allows you to send real-time notifications without developing your own app to iOs, Android and Desktop devices.
+    learn_more_href: /docs/integrations/notifications_and_messaging/notifications_and_messaging/
+    icon: pushed.png
+    tags: 
+  - name: Pushover
+    description: Pushover is a simple push notification service that integrates easily into web apps like IFTTT, network monitoring systems, security cameras, shell scripts, IoT devices, and anything else that needs to send alerts to your iPhone, iPad, Desktop, and other robot-like mobile devices.
+    learn_more_href: /docs/integrations/notifications_and_messaging/notifications_and_messaging/
+    icon: pushover.png
+    tags: 
+  - name: PushSafer
+    description: Pushsafer is a service to send & receive instant push notifications on your phone, tablet or desktop pc (iOS, Android, Windows 10, Chrome, Firefox) from a variety of sources. Through the e-mail gateway or by the API Pushsafer can be integrated in almost any application.
+    learn_more_href: /docs/integrations/notifications_and_messaging/notifications_and_messaging/
+    icon: push_safer.png
+    tags: 
+  - name: Reddit
+    description: Reddit is an American social news aggregation, web content rating, and discussion website. Registered members submit content to the site such as links, text posts, images, and videos, which are then voted up or down by other members.
+    learn_more_href: /docs/integrations/notifications_and_messaging/notifications_and_messaging/
+    icon: reddit.png
+    tags: 
+  - name: Rocket.Chat
+    description: Real-time conversations with your colleagues, other companies or customers. Rocket.Chat does everything other platforms do, except exposing your data.
+    learn_more_href: /docs/integrations/notifications_and_messaging/notifications_and_messaging/
+    icon: rocket_chat.png
+    tags: 
+  - name: Ryver
+    description: Ryver provides a way to organize all your team collaboration in one app. You can seamlessly organize your conversations, assign tasks, and hold voice & video conference calls without ever needing to use multiple applications.
+    learn_more_href: /docs/integrations/notifications_and_messaging/notifications_and_messaging/
+    icon: ryver.png
+    tags: 
+  - name: SendGrid
+    description: SendGrid is a cloud-based SMTP provider that allows you to send email without having to maintain email servers. SendGrid manages all of the technical details, from scaling the infrastructure to ISP outreach and reputation monitoring to whitelist services and real time analytics.
+    learn_more_href: /docs/integrations/notifications_and_messaging/notifications_and_messaging/
+    icon: sendgrid.png
+    tags: 
+  - name: SimplePush
+    description: The simplepush platform uses Simplepush to delivery notifications from Home Assistant to your Android device. Unlike similar apps the Simplepush app requires no registration.
+    learn_more_href: /docs/integrations/notifications_and_messaging/notifications_and_messaging/
+    icon: simplepush.png
+    tags: 
+  - name: Slack
+    description: Slack is a proprietary business communication platform developed by American software company Slack Technologies and now owned by Salesforce. Slack offers many IRC-style features, including persistent chat rooms organized by topic, private groups, and direct messaging.
+    learn_more_href: /docs/integrations/notifications_and_messaging/notifications_and_messaging/
+    icon: slack.png
+    tags: 
+  - name: SMTP2Go
+    description: SMTP2GO is the scalable, reliable email deliverability solution. Worldwide servers, a robust API, and powerful reporting set us apart.
+    learn_more_href: /docs/integrations/notifications_and_messaging/notifications_and_messaging/
+    icon: smtp2go.png
+    tags: 
+  - name: Streamlabs
+    description: Streamlabs Desktop (formerly Streamlabs OBS) is a free and open-source streaming software that is based on a fork of OBS and employs Electron for user interface. Streamlabs distributes their user's content over platforms such as Twitch, YouTube Live, and Facebook Live.
+    learn_more_href: /docs/integrations/notifications_and_messaging/notifications_and_messaging/
+    icon: streamlabs.png
+    tags: 
+  - name: SparkPost
+    description: SparkPost is the world's first and only predictive email intelligence platform. As the #1 email delivery provider, we've unified email delivery with email deliverability analytics over the world's largest data footprint.
+    learn_more_href: /docs/integrations/notifications_and_messaging/notifications_and_messaging/
+    icon: spark_post.png
+    tags: 
+  - name: Spontit
+    description: Spontit enables you to send push notifications without your own app, or even website. You can create different channels and even send notifications to specific followers. This enables you to build an entire notification system without your own app.
+    learn_more_href: /docs/integrations/notifications_and_messaging/notifications_and_messaging/
+    icon: spontit.png
+    tags: 
+  - name: Syslog
+    description: System Logging Protocol (Syslog) is a way network devices can use a standard message format to communicate with a logging server. It was designed specifically to make it easy to monitor network devices. Devices can use a Syslog agent to send out notification messages under a wide range of specific conditions.
+    learn_more_href: /docs/integrations/notifications_and_messaging/notifications_and_messaging/
+    icon: syslog.png
+    tags: 
+  - name: Telegram
+    description: Telegram is a freeware, cross-platform, cloud-based instant messaging service. The service also provides end-to-end encrypted video calling, VoIP, file sharing and several other features.
+    learn_more_href: /docs/integrations/notifications_and_messaging/notifications_and_messaging/
+    icon: telegram.png
+    tags: 
+  - name: Twitter
+    description: Twitter is an American microblogging and social networking service on which users post and interact with messages known as "tweets". Registered users can post, like, and retweet tweets, but unregistered users can only read those that are publicly available.
+    learn_more_href: /docs/integrations/notifications_and_messaging/notifications_and_messaging/
+    icon: twitter.png
+    tags: 
+  - name: Twist
+    description: Twist is messaging for teams burned out by real-time, all-the-time communication. Instead of being chained to the 9-to-5 and interrupted by meetings, emails, and Slack chats, join the async work revolution.
+    learn_more_href: /docs/integrations/notifications_and_messaging/notifications_and_messaging/
+    icon: twist.png
+    tags: 
+  - name: XMPP
+    description: Extensible Messaging and Presence Protocol is an open communication protocol designed for instant messaging, presence information, and contact list maintenance. Based on XML, it enables the near-real-time exchange of structured data between two or more network entities.
+    learn_more_href: /docs/integrations/notifications_and_messaging/notifications_and_messaging/
+    icon: xmpp.png
+    tags: 
+  - name: Webex Teams (Cisco)
+    description: Webex Teams is a cloud-based app for continuous teamwork with videoconferencing, meetings, group messaging, file sharing and white boarding.
+    learn_more_href: /docs/integrations/notifications_and_messaging/notifications_and_messaging/
+    icon: webex_teams.png
+    tags: 
+  - name: Zulip Chat
+    description: Zulip is an open-source communications platform, similar to Mattermost, Slack or Rocket. Chat, but providing unique features by combining the immediacy of real-time chat with an email threading model.
+    learn_more_href: /docs/integrations/notifications_and_messaging/notifications_and_messaging/
+    icon: zulip.png
+    tags: 

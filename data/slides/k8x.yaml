@@ -1,0 +1,17 @@
+images: 
+  - image: /images/temp/screenshots/k8x_code.drawio.svg
+    heading: "Heading 1"
+    subheading: "Just 2 Files to Deploy and Link Kubernetes Services to Event Driven Magic"
+    index: 1
+  - image: /images/temp/screenshots/fx_services.drawio.svg
+    heading: "Heading 2"
+    subheading: "Seamlessly handle flows across K8X-Polyglot Services and FX-Python Services"
+    index: 2
+  - image: /images/temp/screenshots/fx_k8x_logs.drawio.svg
+    heading: "Heading 3"
+    subheading: "View Service Detailed Logs of Pods and Service Executions"
+    index: 3
+  - image: /images/temp/screenshots/fx_k8x_metrics.drawio.svg
+    heading: "Heading 4"
+    subheading: "Monitor Runs and Flows with Ease. Integrated Metrics Collections and Analytics. Manual as well as Programattic Retries."
+    index: 4

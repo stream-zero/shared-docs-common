@@ -1,0 +1,1881 @@
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="generator" content="Hugo 0.117.0"><link rel="canonical" type="text/html" href="/docs/integrations/database_guide/databases/">
+<link rel="alternate" type="application/rss&#43;xml" href="/docs/integrations/database_guide/databases/index.xml">
+<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+
+
+<link rel="shortcut icon" href="/favicons/favicon.ico" >
+<link rel="apple-touch-icon" href="/favicons/apple-touch-icon-180x180.png" sizes="180x180">
+<link rel="icon" type="image/png" href="/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicons/android-36x36.png" sizes="36x36">
+<link rel="icon" type="image/png" href="/favicons/android-48x48.png" sizes="48x48">
+<link rel="icon" type="image/png" href="/favicons/android-72x72.png" sizes="72x72">
+<link rel="icon" type="image/png" href="/favicons/android-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="/favicons/android-144x144.png" sizes="144x144">
+<link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
+
+<title>Supported Databases | GridMine</title>
+
+
+  <meta name="description" content="The Database Guide provides an overview of setting up databases and the specifics of each DB type.">
+<meta property="og:title" content="Supported Databases" />
+<meta property="og:description" content="The Database Guide provides an overview of setting up databases and the specifics of each DB type." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="/docs/integrations/database_guide/databases/" />
+<meta itemprop="name" content="Supported Databases">
+<meta itemprop="description" content="The Database Guide provides an overview of setting up databases and the specifics of each DB type."><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Supported Databases"/>
+<meta name="twitter:description" content="The Database Guide provides an overview of setting up databases and the specifics of each DB type."/>
+
+
+
+
+<link rel="preload" href="/scss/main.scss" as="style">
+<link href="/scss/main.scss" rel="stylesheet" integrity="">
+
+
+<script
+  src="https://code.jquery.com/jquery-3.5.1.min.js"
+  integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+  crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RZ6L6XFT3Q"></script>
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-RZ6L6XFT3Q', { 'anonymize_ip': false });
+}
+</script>
+
+
+
+
+  </head>
+  <body class="td-section">
+    <header>
+      
+<nav class="js-navbar-scroll navbar navbar-expand-lg navbar-dark  td-navbar">
+	<a class="navbar-brand" href="/">
+		<span class="navbar-logo"><svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6675 639" width="200" height="29"><style>.a{fill:#e21339}</style><path class="a" d="m234 638.6q-66.8.0-119.6-22.9-52-22.9-81.9-66.9-29.9-44-31.7-106.5h125.9q.9 27.3 14.1 49.3t36.9 35.2q23.8 12.3 56.3 12.3 27.3.0 47.6-8.8 21.1-9.7 32.5-26.4 12.3-16.7 12.3-39.6.0-27.3-14-44.9-13.2-18.4-36.1-29.9-22.9-12.3-52.8-22-29.1-10.5-61.6-21.1Q90.6 321.8 52.8 283q-37.9-39.6-37.9-104.7.0-55.4 26.4-95 26.4-39.6 73.9-60.7 47.6-21.2 108.3-21.2 62.5.0 110 22 47.5 21.2 74.8 61.6 27.3 40.5 29 95.1H309.7q-.9-20.3-11.4-37.9-10.6-18.4-29.9-29-19.4-11.4-46.7-11.4-22.9-.9-41.3 7-18.5 7.9-30 23.8-10.5 14.9-10.5 37.8.0 22 10.5 37 10.6 14.9 30 26.4 19.3 10.5 45.7 20.2 26.4 8.8 57.2 18.5 46.7 15.8 84.5 37.8 38.7 21.1 61.6 55.5 22.9 34.3 22.9 90.6.0 48.4-25.5 89.8-24.7 41.3-73.1 66.8-48.4 25.6-119.7 25.6zM929.2 628H811.3V107.9H630.9V12h478.7v95.9H929.2zm498 0h-118.8V12H1539q73.9.0 122.3 25.5 49.3 25.6 73.1 68.7 23.7 42.2 23.7 94.1.0 49.3-23.7 92.4-22.9 42.3-72.2 68.7-48.4 25.5-125 25.5h-110zm336.2.0h-135.5l-126.7-271h128.4zm-336.1-516.6v189.2h103.8q54.6.0 80.1-26.4 25.5-26.4 25.5-69.5t-25.5-67.8q-25.5-25.5-80.1-25.5zM2383.8 628h-405.6V12h405.6v95.9H2097v161h260.4v92.4H2097V532h286.8zm306.2.0h-124l224.4-616H2925l225.3 616h-125.9l-167.2-480.4zm351.2-140h-375.8l30.8-92.4h314.2zm422.3 140h-118.8V12h141.7l191.8 383.6L3867.4 12h141.7v616h-118.8V213.5L3724 540h-94.2l-166.3-327.4zm1153.7.0h-393.4v-58.1l303.6-493.7h-299.2V12h385.4v58.1l-304.4 493.7h308zm601.8.0h-381V12h381v60.7h-307.1v214.7h280.7v59.8h-280.7v220H5219zm306.2.0h-73.9V12h198.9q72.2.0 117.9 24.7 45.8 23.7 67.8 64.2t22 91.5q0 49.3-22.9 90.7-22 41.3-68.6 66-46.7 24.6-119.7 24.6h-121.5zm338.8.0h-87.1l-135.5-275.4h82.7zM5525.2 74.5v241.1h119.7q70.4.0 103-34.3 33.4-34.4 33.4-88 0-54.6-32.6-86.3-31.6-32.5-104.7-32.5zm844.8 564q-90.7.0-159.3-39.6-67.8-40.4-106.5-111.7-37.8-72.2-37.8-167.2.0-94.2 37.8-165.5 38.7-72.1 106.5-112.6 68.6-40.5 159.3-40.5 91.5.0 159.3 40.5 68.6 40.5 106.4 112.6 37.9 71.3 37.9 165.5.0 95-37.9 167.2-37.8 71.3-106.4 111.7-67.8 39.6-159.3 39.6zm0-65.1q67.7.0 118.8-29.9 51.9-30.8 80.1-87.1 29-57.2 29-136.4t-29-135.5q-28.2-57.2-80.1-87.2-51.1-29.9-118.8-29.9-67.8.0-119.7 29.9-51 30-80.1 87.2-28.1 56.3-28.1 135.5t28.1 136.4q29.1 56.3 80.1 87.1 51.9 29.9 119.7 29.9z"/></svg></span>
+	</a>
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+		<ul class="navbar-nav ml-auto">
+			
+			
+				
+				
+				
+				
+				
+				
+				
+					<li class="nav-item mr-2 mb-2 mb-lg-0 dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">
+							PRODUCTS
+						</a>
+						<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+							
+								<li>
+									<a class="nav-link" href="/products/fx/" >STREAMZERO FX</a>
+								</li>
+							
+								<li>
+									<a class="nav-link" href="/products/k8x/" >STREAMZERO K8X</a>
+								</li>
+							
+								<li>
+									<a class="nav-link" href="/products/sx/" >STREAMZERO SX</a>
+								</li>
+							
+						</ul>
+					</li>
+				
+			
+				
+				
+				
+				
+				
+				
+				
+				
+				
+					<li class="nav-item mr-2 mb-2 mb-lg-0">
+						<a class="nav-link active" href="/docs/" ><span class="active">DOCUMENTATION</span></a>
+					</li>
+				
+			
+			
+			
+		</ul>
+	</div>
+	<div class="navbar-nav d-none d-lg-block">
+<input type="search" class="form-control td-search-input" placeholder="&#xf002; Search this site…" aria-label="Search this site…" autocomplete="off">
+
+</div>
+</nav>
+
+    </header>
+    <div class="container-fluid td-outer">
+      <div class="td-main">
+        <div class="row flex-xl-nowrap">
+          <div class="col-12 col-md-3 col-xl-2 td-sidebar d-print-none">
+          </div>
+          <div class="d-none d-xl-block col-xl-2 td-toc d-print-none">
+          </div>
+          <main class="col-12 col-md-9 col-xl-8 pl-md-5" role="main">
+            
+
+
+
+
+<div class="td-content">
+<div class="pageinfo pageinfo-primary d-print-none">
+<p>
+This the multi-page printable view of this section.
+<a href="#" onclick="print();return false;">Click here to print</a>.
+</p><p>
+<a href="/docs/integrations/database_guide/databases/">Return to the regular view of this page</a>.
+</p>
+</div>
+
+
+
+<h1 class="title">Supported Databases</h1>
+<div class="lead">The Database Guide provides an overview of setting up databases and the specifics of each DB type.</div>
+
+
+
+
+    <ul>
+    
+  
+  
+  
+  
+
+  
+    
+    
+	
+<li>1: <a href="#pg-85e39f837736e14d35ffe5650919d954">Ascend.io</a></li>
+
+
+    
+  
+    
+    
+	
+<li>2: <a href="#pg-3cd21d5f234c70bea5abd5f2b158de09">Amazon Athena</a></li>
+
+
+    
+  
+    
+    
+	
+<li>3: <a href="#pg-a5ef06a44e2beaeaf2a3c98bf81c2c5d">Amazon Redshift</a></li>
+
+
+    
+  
+    
+    
+	
+<li>4: <a href="#pg-c5b2acdd81c246738031b8cfbf6fd430">Apache Drill</a></li>
+
+
+    
+  
+    
+    
+	
+<li>5: <a href="#pg-1ff2151c97d1f0191fc4d4e1585c3429">Apache Druid</a></li>
+
+
+    
+  
+    
+    
+	
+<li>6: <a href="#pg-8527bf36788dfaadc7cc049c9e224d40">Apache Hive</a></li>
+
+
+    
+  
+    
+    
+	
+<li>7: <a href="#pg-23ab22688dcfbc862871246776109cae">Apache Impala</a></li>
+
+
+    
+  
+    
+    
+	
+<li>8: <a href="#pg-cb66dc613cab7388aa086de41b6cb561">Apache Kylin</a></li>
+
+
+    
+  
+    
+    
+	
+<li>9: <a href="#pg-8b6b39d6e8914dbbaad36be6658bad9e">Apache Pinot</a></li>
+
+
+    
+  
+    
+    
+	
+<li>10: <a href="#pg-b34de0c3595710dc4f12fc03fe29e2f5">Apache Solr</a></li>
+
+
+    
+  
+    
+    
+	
+<li>11: <a href="#pg-a1df4691431163fbf5a290554f7efbbb">Apache Spark SQL</a></li>
+
+
+    
+  
+    
+    
+	
+<li>12: <a href="#pg-94ff6a532016988c85b4b8b0de571195">Clickhouse</a></li>
+
+
+    
+  
+    
+    
+	
+<li>13: <a href="#pg-502939f5dea7e9bf52013fd1eeec7c3a">CockroachDB</a></li>
+
+
+    
+  
+    
+    
+	
+<li>14: <a href="#pg-da290602c274061691efd3c1fc8bd546">CrateDB</a></li>
+
+
+    
+  
+    
+    
+	
+<li>15: <a href="#pg-74686483a29c33331fc7175a42ce9dab">Databricks</a></li>
+
+
+    
+  
+    
+    
+	
+<li>16: <a href="#pg-3e8f575d87357baa5f9c18637ef6999b">Dremio</a></li>
+
+
+    
+  
+    
+    
+	
+<li>17: <a href="#pg-b6c2d3ae62147bee644e73fdfe5b5d95">Elasticsearch</a></li>
+
+
+    
+  
+    
+    
+	
+<li>18: <a href="#pg-9b3125303076fc90c6f9f3b0c98b7678">Exasol</a></li>
+
+
+    
+  
+    
+    
+	
+<li>19: <a href="#pg-067dde8fa8aa68f57352fbd0d0a563dc">Firebird</a></li>
+
+
+    
+  
+    
+    
+	
+<li>20: <a href="#pg-d9da980991f7a5cee5d34a27b89c0406">Firebolt</a></li>
+
+
+    
+  
+    
+    
+	
+<li>21: <a href="#pg-f9f124d66c04e8949a1be1b4dfbb89c0">Google BigQuery</a></li>
+
+
+    
+  
+    
+    
+	
+<li>22: <a href="#pg-6698f4c22ab4cc2b1f5b3f1459e67f2b">Google Sheets</a></li>
+
+
+    
+  
+    
+    
+	
+<li>23: <a href="#pg-0c8af8f1139128b3a15ba2cb21485303">Hana</a></li>
+
+
+    
+  
+    
+    
+	
+<li>24: <a href="#pg-aa8552e02c5c9effe9fdc856ee2ae206">Hologres</a></li>
+
+
+    
+  
+    
+    
+	
+<li>25: <a href="#pg-613e82bc8bb3e8598035646c17a5e4e3">IBM DB2</a></li>
+
+
+    
+  
+    
+    
+	
+<li>26: <a href="#pg-f17cc328f4de3c63d23d98ef24bf36fb">IBM Netezza Performance Server</a></li>
+
+
+    
+  
+    
+    
+	
+<li>27: <a href="#pg-86e4a2f7fdee7d5af8942f47dede6115">Microsoft SQL Server</a></li>
+
+
+    
+  
+    
+    
+	
+<li>28: <a href="#pg-173acb377051b7c023be545372f824a7">MySQL</a></li>
+
+
+    
+  
+    
+    
+	
+<li>29: <a href="#pg-c4b1811499db1d4b1b5c7424968322b5">Oracle</a></li>
+
+
+    
+  
+    
+    
+	
+<li>30: <a href="#pg-c57ee0b8f64b4f1f9bc0b23f206f7bf7">Postgres</a></li>
+
+
+    
+  
+    
+    
+	
+<li>31: <a href="#pg-7a45235c2e51bfde7165e9a85f6368d1">Presto</a></li>
+
+
+    
+  
+    
+    
+	
+<li>32: <a href="#pg-29119b26f226dc4349f5a3b7238904db">Rockset</a></li>
+
+
+    
+  
+    
+    
+	
+<li>33: <a href="#pg-467f2ab658952c0b9ecd8abc43c1efc4">Snowflake</a></li>
+
+
+    
+  
+    
+    
+	
+<li>34: <a href="#pg-0e2497078e99139dde28481fc00b5f28">Teradata</a></li>
+
+
+    
+  
+    
+    
+	
+<li>35: <a href="#pg-d26a65f8c161b809f18b324b94400cce">Trino</a></li>
+
+
+    
+  
+    
+    
+	
+<li>36: <a href="#pg-ea5fd90695c8bc554c2454a13295de95">Vertica</a></li>
+
+
+    
+  
+    
+    
+	
+<li>37: <a href="#pg-7abc37e7a1ffce6adb2c0f7853e44aae">YugabyteDB</a></li>
+
+
+    
+  
+
+    </ul>
+
+
+<div class="content">
+      
+</div>
+</div>
+
+
+  
+  
+  
+  
+
+  
+  
+
+  
+    
+    
+	
+    
+
+<div class="td-content" style="">
+    
+	<h1 id="pg-85e39f837736e14d35ffe5650919d954">1 - Ascend.io</h1>
+    
+	<h2 id="ascendio">Ascend.io</h2>
+<p>The recommended connector library to Ascend.io is <a href="https://github.com/cloudera/impyla">impyla</a>.</p>
+<p>The expected connection string is formatted as follows:</p>
+<pre tabindex="0"><code>ascend://{username}:{password}@{hostname}:{port}/{database}?auth_mechanism=PLAIN;use_ssl=true
+</code></pre>
+</div>
+
+
+
+    
+	
+  
+    
+    
+	
+    
+
+<div class="td-content" style="page-break-before: always">
+    
+	<h1 id="pg-3cd21d5f234c70bea5abd5f2b158de09">2 - Amazon Athena</h1>
+    
+	<h2 id="aws-athena">AWS Athena</h2>
+<h3 id="pyathenajdbc">PyAthenaJDBC</h3>
+<p><a href="https://pypi.org/project/PyAthenaJDBC/">PyAthenaJDBC</a> is a Python DB 2.0 compliant wrapper for the
+<a href="https://docs.aws.amazon.com/athena/latest/ug/connect-with-jdbc.html">Amazon Athena JDBC driver</a>.</p>
+<p>The connection string for Amazon Athena is as follows:</p>
+<pre tabindex="0"><code>awsathena+jdbc://{aws_access_key_id}:{aws_secret_access_key}@athena.{region_name}.amazonaws.com/{schema_name}?s3_staging_dir={s3_staging_dir}&amp;...
+</code></pre><p>Note that you&rsquo;ll need to escape &amp; encode when forming the connection string like so:</p>
+<pre tabindex="0"><code>s3://... -&gt; s3%3A//...
+</code></pre><h3 id="pyathena">PyAthena</h3>
+<p>You can also use <a href="https://pypi.org/project/PyAthena/">PyAthena library</a> (no Java required) with the
+following connection string:</p>
+<pre tabindex="0"><code>awsathena+rest://{aws_access_key_id}:{aws_secret_access_key}@athena.{region_name}.amazonaws.com/{schema_name}?s3_staging_dir={s3_staging_dir}&amp;...
+</code></pre>
+</div>
+
+
+
+    
+	
+  
+    
+    
+	
+    
+
+<div class="td-content" style="page-break-before: always">
+    
+	<h1 id="pg-a5ef06a44e2beaeaf2a3c98bf81c2c5d">3 - Amazon Redshift</h1>
+    
+	<h2 id="aws-redshift">AWS Redshift</h2>
+<p>The <a href="https://pypi.org/project/sqlalchemy-redshift/">sqlalchemy-redshift</a> library is the recommended
+way to connect to Redshift through SQLAlchemy.</p>
+<p>You&rsquo;ll need to the following setting values to form the connection string:</p>
+<ul>
+<li><strong>User Name</strong>: userName</li>
+<li><strong>Password</strong>: DBPassword</li>
+<li><strong>Database Host</strong>: AWS Endpoint</li>
+<li><strong>Database Name</strong>: Database Name</li>
+<li><strong>Port</strong>: default 5439</li>
+</ul>
+<p>Here&rsquo;s what the connection string looks like:</p>
+<pre tabindex="0"><code>redshift+psycopg2://&lt;userName&gt;:&lt;DBPassword&gt;@&lt;AWS End Point&gt;:5439/&lt;Database Name&gt;
+</code></pre>
+</div>
+
+
+
+    
+	
+  
+    
+    
+	
+    
+
+<div class="td-content" style="page-break-before: always">
+    
+	<h1 id="pg-c5b2acdd81c246738031b8cfbf6fd430">4 - Apache Drill</h1>
+    
+	<h2 id="apache-drill">Apache Drill</h2>
+<h3 id="sqlalchemy">SQLAlchemy</h3>
+<p>The recommended way to connect to Apache Drill is through SQLAlchemy. You can use the
+<a href="https://github.com/JohnOmernik/sqlalchemy-drill">sqlalchemy-drill</a> package.</p>
+<p>Once that is done, you can connect to Drill in two ways, either via the REST interface or by JDBC.
+If you are connecting via JDBC, you must have the Drill JDBC Driver installed.</p>
+<p>The basic connection string for Drill looks like this:</p>
+<pre tabindex="0"><code>drill+sadrill://&lt;username&gt;:&lt;password&gt;@&lt;host&gt;:&lt;port&gt;/&lt;storage_plugin&gt;?use_ssl=True
+</code></pre><p>To connect to Drill running on a local machine running in embedded mode you can use the following
+connection string:</p>
+<pre tabindex="0"><code>drill+sadrill://localhost:8047/dfs?use_ssl=False
+</code></pre><h3 id="jdbc">JDBC</h3>
+<p>Connecting to Drill through JDBC is more complicated and we recommend following
+<a href="https://drill.apache.org/docs/using-the-jdbc-driver/">this tutorial</a>.</p>
+<p>The connection string looks like:</p>
+<pre tabindex="0"><code>drill+jdbc://&lt;username&gt;:&lt;passsword&gt;@&lt;host&gt;:&lt;port&gt;
+</code></pre><h3 id="odbc">ODBC</h3>
+<p>We recommend reading the
+<a href="https://drill.apache.org/docs/installing-the-driver-on-linux/">Apache Drill documentation</a> and read
+the <a href="https://github.com/JohnOmernik/sqlalchemy-drill#usage-with-odbc">Github README</a> to learn how to
+work with Drill through ODBC.</p>
+
+</div>
+
+
+
+    
+	
+  
+    
+    
+	
+    
+
+<div class="td-content" style="page-break-before: always">
+    
+	<h1 id="pg-1ff2151c97d1f0191fc4d4e1585c3429">5 - Apache Druid</h1>
+    
+	<h2 id="apache-druid">Apache Druid</h2>
+<p>Use the SQLAlchemy / DBAPI connector made available in the
+<a href="https://pythonhosted.org/pydruid/">pydruid library</a>.</p>
+<p>The connection string looks like:</p>
+<pre tabindex="0"><code>druid://&lt;User&gt;:&lt;password&gt;@&lt;Host&gt;:&lt;Port-default-9088&gt;/druid/v2/sql
+</code></pre><h3 id="customizing-druid-connection">Customizing Druid Connection</h3>
+<p>When adding a connection to Druid, you can customize the connection a few different ways in the
+<strong>Add Database</strong> form.</p>
+<p><strong>Custom Certificate</strong></p>
+<p>You can add certificates in the <strong>Root Certificate</strong> field when configuring the new database
+connection to Druid:</p>
+<p>&lt;img src={useBaseUrl(&quot;/img/root-cert-example.png&quot;)} /&gt;{&quot; &ldquo;}</p>
+<p>When using a custom certificate, pydruid will automatically use https scheme.</p>
+<p><strong>Disable SSL Verification</strong></p>
+<p>To disable SSL verification, add the following to the <strong>Extras</strong> field:</p>
+<pre tabindex="0"><code>engine_params:
+{&#34;connect_args&#34;:
+	{&#34;scheme&#34;: &#34;https&#34;, &#34;ssl_verify_cert&#34;: false}}
+</code></pre>
+</div>
+
+
+
+    
+	
+  
+    
+    
+	
+    
+
+<div class="td-content" style="page-break-before: always">
+    
+	<h1 id="pg-8527bf36788dfaadc7cc049c9e224d40">6 - Apache Hive</h1>
+    
+	<h2 id="apache-hive">Apache Hive</h2>
+<p>The <a href="https://pypi.org/project/PyHive/">pyhive</a> library is the recommended way to connect to Hive through SQLAlchemy.</p>
+<p>The expected connection string is formatted as follows:</p>
+<pre tabindex="0"><code>hive://hive@{hostname}:{port}/{database}
+</code></pre>
+</div>
+
+
+
+    
+	
+  
+    
+    
+	
+    
+
+<div class="td-content" style="page-break-before: always">
+    
+	<h1 id="pg-23ab22688dcfbc862871246776109cae">7 - Apache Impala</h1>
+    
+	<h2 id="apache-impala">Apache Impala</h2>
+<p>The recommended connector library to Apache Impala is <a href="https://github.com/cloudera/impyla">impyla</a>.</p>
+<p>The expected connection string is formatted as follows:</p>
+<pre tabindex="0"><code>impala://{hostname}:{port}/{database}
+</code></pre>
+</div>
+
+
+
+    
+	
+  
+    
+    
+	
+    
+
+<div class="td-content" style="page-break-before: always">
+    
+	<h1 id="pg-cb66dc613cab7388aa086de41b6cb561">8 - Apache Kylin</h1>
+    
+	<h2 id="apache-kylin">Apache Kylin</h2>
+<p>The recommended connector library for Apache Kylin is
+<a href="https://github.com/Kyligence/kylinpy">kylinpy</a>.</p>
+<p>The expected connection string is formatted as follows:</p>
+<pre tabindex="0"><code>kylin://&lt;username&gt;:&lt;password&gt;@&lt;hostname&gt;:&lt;port&gt;/&lt;project&gt;?&lt;param1&gt;=&lt;value1&gt;&amp;&lt;param2&gt;=&lt;value2&gt;
+</code></pre>
+</div>
+
+
+
+    
+	
+  
+    
+    
+	
+    
+
+<div class="td-content" style="page-break-before: always">
+    
+	<h1 id="pg-8b6b39d6e8914dbbaad36be6658bad9e">9 - Apache Pinot</h1>
+    
+	<h2 id="apache-pinot">Apache Pinot</h2>
+<p>The recommended connector library for Apache Pinot is <a href="https://pypi.org/project/pinotdb/">pinotdb</a>.</p>
+<p>The expected connection string is formatted as follows:</p>
+<pre tabindex="0"><code>pinot+http://&lt;pinot-broker-host&gt;:&lt;pinot-broker-port&gt;/query?controller=http://&lt;pinot-controller-host&gt;:&lt;pinot-controller-port&gt;/``
+</code></pre>
+</div>
+
+
+
+    
+	
+  
+    
+    
+	
+    
+
+<div class="td-content" style="page-break-before: always">
+    
+	<h1 id="pg-b34de0c3595710dc4f12fc03fe29e2f5">10 - Apache Solr</h1>
+    
+	<h2 id="apache-solr">Apache Solr</h2>
+<p>The <a href="https://pypi.org/project/sqlalchemy-solr/">sqlalchemy-solr</a> library provides a
+Python / SQLAlchemy interface to Apache Solr.</p>
+<p>The connection string for Solr looks like this:</p>
+<pre tabindex="0"><code>solr://{username}:{password}@{host}:{port}/{server_path}/{collection}[/?use_ssl=true|false]
+</code></pre>
+</div>
+
+
+
+    
+	
+  
+    
+    
+	
+    
+
+<div class="td-content" style="page-break-before: always">
+    
+	<h1 id="pg-a1df4691431163fbf5a290554f7efbbb">11 - Apache Spark SQL</h1>
+    
+	<h2 id="apache-spark-sql">Apache Spark SQL</h2>
+<p>The recommended connector library for Apache Spark SQL <a href="https://pypi.org/project/PyHive/">pyhive</a>.</p>
+<p>The expected connection string is formatted as follows:</p>
+<pre tabindex="0"><code>hive://hive@{hostname}:{port}/{database}
+</code></pre>
+</div>
+
+
+
+    
+	
+  
+    
+    
+	
+    
+
+<div class="td-content" style="page-break-before: always">
+    
+	<h1 id="pg-94ff6a532016988c85b4b8b0de571195">12 - Clickhouse</h1>
+    
+	<h2 id="clickhouse">Clickhouse</h2>
+<p>To use Clickhouse with StreamZero you will need to add the following Python libraries:</p>
+<pre tabindex="0"><code>clickhouse-driver==0.2.0
+clickhouse-sqlalchemy==0.1.6
+</code></pre><p>If running StreamZero using Docker Compose, add the following to your <code>./docker/requirements-local.txt</code> file:</p>
+<pre tabindex="0"><code>clickhouse-driver&gt;=0.2.0
+clickhouse-sqlalchemy&gt;=0.1.6
+</code></pre><p>The recommended connector library for Clickhouse is
+<a href="https://github.com/cloudflare/sqlalchemy-clickhouse">sqlalchemy-clickhouse</a>.</p>
+<p>The expected connection string is formatted as follows:</p>
+<pre tabindex="0"><code>clickhouse+native://&lt;user&gt;:&lt;password&gt;@&lt;host&gt;:&lt;port&gt;/&lt;database&gt;[?options…]clickhouse://{username}:{password}@{hostname}:{port}/{database}
+</code></pre><p>Here&rsquo;s a concrete example of a real connection string:</p>
+<pre tabindex="0"><code>clickhouse+native://demo:demo@github.demo.trial.altinity.cloud/default?secure=true
+</code></pre><p>If you&rsquo;re using Clickhouse locally on your computer, you can get away with using a native protocol URL that
+uses the default user without a password (and doesn&rsquo;t encrypt the connection):</p>
+<pre tabindex="0"><code>clickhouse+native://localhost/default
+</code></pre>
+</div>
+
+
+
+    
+	
+  
+    
+    
+	
+    
+
+<div class="td-content" style="page-break-before: always">
+    
+	<h1 id="pg-502939f5dea7e9bf52013fd1eeec7c3a">13 - CockroachDB</h1>
+    
+	<h2 id="cockroachdb">CockroachDB</h2>
+<p>The recommended connector library for CockroachDB is
+<a href="https://github.com/cockroachdb/sqlalchemy-cockroachdb">sqlalchemy-cockroachdb</a>.</p>
+<p>The expected connection string is formatted as follows:</p>
+<pre tabindex="0"><code>cockroachdb://root@{hostname}:{port}/{database}?sslmode=disable
+</code></pre>
+</div>
+
+
+
+    
+	
+  
+    
+    
+	
+    
+
+<div class="td-content" style="page-break-before: always">
+    
+	<h1 id="pg-da290602c274061691efd3c1fc8bd546">14 - CrateDB</h1>
+    
+	<h2 id="cratedb">CrateDB</h2>
+<p>The recommended connector library for CrateDB is
+<a href="https://pypi.org/project/crate/">crate</a>.
+You need to install the extras as well for this library.
+We recommend adding something like the following
+text to your requirements file:</p>
+<pre tabindex="0"><code>crate[sqlalchemy]==0.26.0
+</code></pre><p>The expected connection string is formatted as follows:</p>
+<pre tabindex="0"><code>crate://crate@127.0.0.1:4200
+</code></pre>
+</div>
+
+
+
+    
+	
+  
+    
+    
+	
+    
+
+<div class="td-content" style="page-break-before: always">
+    
+	<h1 id="pg-74686483a29c33331fc7175a42ce9dab">15 - Databricks</h1>
+    
+	<h2 id="databricks">Databricks</h2>
+<p>To connect to Databricks, first install <a href="https://pypi.org/project/databricks-dbapi/">databricks-dbapi</a> with the optional SQLAlchemy dependencies:</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>pip install databricks-dbapi<span style="color:#f92672">[</span>sqlalchemy<span style="color:#f92672">]</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>There are two ways to connect to Databricks: using a Hive connector or an ODBC connector. Both ways work similarly, but only ODBC can be used to connect to <a href="https://docs.databricks.com/sql/admin/sql-endpoints.html">SQL endpoints</a>.</p>
+<h3 id="hive">Hive</h3>
+<p>To use the Hive connector you need the following information from your cluster:</p>
+<ul>
+<li>Server hostname</li>
+<li>Port</li>
+<li>HTTP path</li>
+</ul>
+<p>These can be found under &ldquo;Configuration&rdquo; -&gt; &ldquo;Advanced Options&rdquo; -&gt; &ldquo;JDBC/ODBC&rdquo;.</p>
+<p>You also need an access token from &ldquo;Settings&rdquo; -&gt; &ldquo;User Settings&rdquo; -&gt; &ldquo;Access Tokens&rdquo;.</p>
+<p>Once you have all this information, add a database of type &ldquo;Databricks (Hive)&rdquo; in StreamZero, and use the following SQLAlchemy URI:</p>
+<pre tabindex="0"><code>databricks+pyhive://token:{access token}@{server hostname}:{port}/{database name}
+</code></pre><p>You also need to add the following configuration to &ldquo;Other&rdquo; -&gt; &ldquo;Engine Parameters&rdquo;, with your HTTP path:</p>
+<pre tabindex="0"><code>{&#34;connect_args&#34;: {&#34;http_path&#34;: &#34;sql/protocolv1/o/****&#34;}}
+</code></pre><h3 id="odbc">ODBC</h3>
+<p>For ODBC you first need to install the <a href="https://databricks.com/spark/odbc-drivers-download">ODBC drivers for your platform</a>.</p>
+<p>For a regular connection use this as the SQLAlchemy URI:</p>
+<pre tabindex="0"><code>databricks+pyodbc://token:{access token}@{server hostname}:{port}/{database name}
+</code></pre><p>And for the connection arguments:</p>
+<pre tabindex="0"><code>{&#34;connect_args&#34;: {&#34;http_path&#34;: &#34;sql/protocolv1/o/****&#34;, &#34;driver_path&#34;: &#34;/path/to/odbc/driver&#34;}}
+</code></pre><p>The driver path should be:</p>
+<ul>
+<li><code>/Library/simba/spark/lib/libsparkodbc_sbu.dylib</code> (Mac OS)</li>
+<li><code>/opt/simba/spark/lib/64/libsparkodbc_sb64.so</code> (Linux)</li>
+</ul>
+<p>For a connection to a SQL endpoint you need to use the HTTP path from the endpoint:</p>
+<pre tabindex="0"><code>{&#34;connect_args&#34;: {&#34;http_path&#34;: &#34;/sql/1.0/endpoints/****&#34;, &#34;driver_path&#34;: &#34;/path/to/odbc/driver&#34;}}
+</code></pre>
+</div>
+
+
+
+    
+	
+  
+    
+    
+	
+    
+
+<div class="td-content" style="page-break-before: always">
+    
+	<h1 id="pg-3e8f575d87357baa5f9c18637ef6999b">16 - Dremio</h1>
+    
+	<h2 id="dremio">Dremio</h2>
+<p>The recommended connector library for Dremio is
+<a href="https://pypi.org/project/sqlalchemy-dremio/">sqlalchemy_dremio</a>.</p>
+<p>The expected connection string for ODBC (Default port is 31010) is formatted as follows:</p>
+<pre tabindex="0"><code>dremio://{username}:{password}@{host}:{port}/{database_name}/dremio?SSL=1
+</code></pre><p>The expected connection string for Arrow Flight (Dremio 4.9.1+. Default port is 32010) is formatted as follows:</p>
+<pre tabindex="0"><code>dremio+flight://{username}:{password}@{host}:{port}/dremio
+</code></pre><p>This <a href="https://www.dremio.com/tutorials/dremio-apache-Feris/">blog post by Dremio</a> has some
+additional helpful instructions on connecting StreamZero to Dremio.</p>
+
+</div>
+
+
+
+    
+	
+  
+    
+    
+	
+    
+
+<div class="td-content" style="page-break-before: always">
+    
+	<h1 id="pg-b6c2d3ae62147bee644e73fdfe5b5d95">17 - Elasticsearch</h1>
+    
+	<h2 id="elasticsearch">Elasticsearch</h2>
+<p>The recommended connector library for Elasticsearch is
+<a href="https://github.com/preset-io/elasticsearch-dbapi">elasticsearch-dbapi</a>.</p>
+<p>The connection string for Elasticsearch looks like this:</p>
+<pre tabindex="0"><code>elasticsearch+http://{user}:{password}@{host}:9200/
+</code></pre><p><strong>Using HTTPS</strong></p>
+<pre tabindex="0"><code>elasticsearch+https://{user}:{password}@{host}:9200/
+</code></pre><p>Elasticsearch as a default limit of 10000 rows, so you can increase this limit on your cluster or
+set Feris’s row limit on config</p>
+<pre tabindex="0"><code>ROW_LIMIT = 10000
+</code></pre><p>You can query multiple indices on SQL Lab for example</p>
+<pre tabindex="0"><code>SELECT timestamp, agent FROM &#34;logstash&#34;
+</code></pre><p>But, to use visualizations for multiple indices you need to create an alias index on your cluster</p>
+<pre tabindex="0"><code>POST /_aliases
+{
+    &#34;actions&#34; : [
+        { &#34;add&#34; : { &#34;index&#34; : &#34;logstash-**&#34;, &#34;alias&#34; : &#34;logstash_all&#34; } }
+    ]
+}
+</code></pre><p>Then register your table with the alias name logstasg_all</p>
+<p><strong>Time zone</strong></p>
+<p>By default, StreamZero uses UTC time zone for elasticsearch query. If you need to specify a time zone,
+please edit your Database and enter the settings of your specified time zone in the Other &gt; ENGINE PARAMETERS:</p>
+<pre tabindex="0"><code>{
+    &#34;connect_args&#34;: {
+        &#34;time_zone&#34;: &#34;Asia/Shanghai&#34;
+    }
+}
+</code></pre><p>Another issue to note about the time zone problem is that before elasticsearch7.8, if you want to convert a string into a <code>DATETIME</code> object,
+you need to use the <code>CAST</code> function,but this function does not support our <code>time_zone</code> setting. So it is recommended to upgrade to the version after elasticsearch7.8.
+After elasticsearch7.8, you can use the <code>DATETIME_PARSE</code> function to solve this problem.
+The DATETIME_PARSE function is to support our <code>time_zone</code> setting, and here you need to fill in your elasticsearch version number in the Other &gt; VERSION setting.
+the StreamZero will use the <code>DATETIME_PARSE</code> function for conversion.</p>
+
+</div>
+
+
+
+    
+	
+  
+    
+    
+	
+    
+
+<div class="td-content" style="page-break-before: always">
+    
+	<h1 id="pg-9b3125303076fc90c6f9f3b0c98b7678">18 - Exasol</h1>
+    
+	<h2 id="exasol">Exasol</h2>
+<p>The recommended connector library for Exasol is
+<a href="https://github.com/exasol/sqlalchemy-exasol">sqlalchemy-exasol</a>.</p>
+<p>The connection string for Exasol looks like this:</p>
+<pre tabindex="0"><code>exa+pyodbc://{username}:{password}@{hostname}:{port}/my_schema?CONNECTIONLCALL=en_US.UTF-8&amp;driver=EXAODBC
+</code></pre>
+</div>
+
+
+
+    
+	
+  
+    
+    
+	
+    
+
+<div class="td-content" style="page-break-before: always">
+    
+	<h1 id="pg-067dde8fa8aa68f57352fbd0d0a563dc">19 - Firebird</h1>
+    
+	<h2 id="firebird">Firebird</h2>
+<p>The recommended connector library for Firebird is <a href="https://pypi.org/project/sqlalchemy-firebird/">sqlalchemy-firebird</a>.
+StreamZero has been tested on <code>sqlalchemy-firebird&gt;=0.7.0, &lt;0.8</code>.</p>
+<p>The recommended connection string is:</p>
+<pre tabindex="0"><code>firebird+fdb://{username}:{password}@{host}:{port}//{path_to_db_file}
+</code></pre><p>Here&rsquo;s a connection string example of StreamZero connecting to a local Firebird database:</p>
+<pre tabindex="0"><code>firebird+fdb://SYSDBA:masterkey@192.168.86.38:3050//Library/Frameworks/Firebird.framework/Versions/A/Resources/examples/empbuild/employee.fdb
+</code></pre>
+</div>
+
+
+
+    
+	
+  
+    
+    
+	
+    
+
+<div class="td-content" style="page-break-before: always">
+    
+	<h1 id="pg-d9da980991f7a5cee5d34a27b89c0406">20 - Firebolt</h1>
+    
+	<h2 id="firebolt">Firebolt</h2>
+<p>The recommended connector library for Firebolt is <a href="https://pypi.org/project/firebolt-sqlalchemy/">firebolt-sqlalchemy</a>.
+StreamZero has been tested on <code>firebolt-sqlalchemy&gt;=0.0.1</code>.</p>
+<p>The recommended connection string is:</p>
+<pre tabindex="0"><code>firebolt://{username}:{password}@{database}
+or
+firebolt://{username}:{password}@{database}/{engine_name}
+</code></pre><p>Here&rsquo;s a connection string example of StreamZero connecting to a Firebolt database:</p>
+<pre tabindex="0"><code>firebolt://email@domain:password@sample_database
+or
+firebolt://email@domain:password@sample_database/sample_engine
+</code></pre>
+</div>
+
+
+
+    
+	
+  
+    
+    
+	
+    
+
+<div class="td-content" style="page-break-before: always">
+    
+	<h1 id="pg-f9f124d66c04e8949a1be1b4dfbb89c0">21 - Google BigQuery</h1>
+    
+	<h2 id="google-bigquery">Google BigQuery</h2>
+<p>The recommended connector library for BigQuery is
+<a href="https://github.com/mxmzdlv/pybigquery">pybigquery</a>.</p>
+<h3 id="install-bigquery-driver">Install BigQuery Driver</h3>
+<p>Follow the steps <a href="/docs/databases/docker-add-drivers">here</a> about how to
+install new database drivers when setting up StreamZero locally via docker-compose.</p>
+<pre tabindex="0"><code>echo &#34;pybigquery&#34; &gt;&gt; ./docker/requirements-local.txt
+</code></pre><h3 id="connecting-to-bigquery">Connecting to BigQuery</h3>
+<p>When adding a new BigQuery connection in StreamZero, you&rsquo;ll need to add the GCP Service Account
+credentials file (as a JSON).</p>
+<ol>
+<li>Create your Service Account via the Google Cloud Platform control panel, provide it access to the
+appropriate BigQuery datasets, and download the JSON configuration file for the service account.</li>
+<li>In StreamZero you can either upload that JSON or add the JSON blob in the following format (this should be the content of your credential JSON file):</li>
+</ol>
+<pre tabindex="0"><code>{
+        &#34;type&#34;: &#34;service_account&#34;,
+        &#34;project_id&#34;: &#34;...&#34;,
+        &#34;private_key_id&#34;: &#34;...&#34;,
+        &#34;private_key&#34;: &#34;...&#34;,
+        &#34;client_email&#34;: &#34;...&#34;,
+        &#34;client_id&#34;: &#34;...&#34;,
+        &#34;auth_uri&#34;: &#34;...&#34;,
+        &#34;token_uri&#34;: &#34;...&#34;,
+        &#34;auth_provider_x509_cert_url&#34;: &#34;...&#34;,
+        &#34;client_x509_cert_url&#34;: &#34;...&#34;
+    }
+</code></pre><ol start="3">
+<li>
+<p>Additionally, can connect via SQLAlchemy URI instead</p>
+<p>The connection string for BigQuery looks like:</p>
+<pre tabindex="0"><code>bigquery://{project_id}
+</code></pre><p>Go to the <strong>Advanced</strong> tab, Add a JSON blob to the <strong>Secure Extra</strong> field in the database configuration form with
+the following format:</p>
+<pre tabindex="0"><code>{
+&#34;credentials_info&#34;: &lt;contents of credentials JSON file&gt;
+}
+</code></pre><p>The resulting file should have this structure:</p>
+<pre tabindex="0"><code>{
+ &#34;credentials_info&#34;: {
+     &#34;type&#34;: &#34;service_account&#34;,
+     &#34;project_id&#34;: &#34;...&#34;,
+     &#34;private_key_id&#34;: &#34;...&#34;,
+     &#34;private_key&#34;: &#34;...&#34;,
+     &#34;client_email&#34;: &#34;...&#34;,
+     &#34;client_id&#34;: &#34;...&#34;,
+     &#34;auth_uri&#34;: &#34;...&#34;,
+     &#34;token_uri&#34;: &#34;...&#34;,
+     &#34;auth_provider_x509_cert_url&#34;: &#34;...&#34;,
+     &#34;client_x509_cert_url&#34;: &#34;...&#34;
+     }
+ }
+</code></pre></li>
+</ol>
+<p>You should then be able to connect to your BigQuery datasets.</p>
+<p>To be able to upload CSV or Excel files to BigQuery in StreamZero, you&rsquo;ll need to also add the
+<a href="https://github.com/pydata/pandas-gbq">pandas_gbq</a> library.</p>
+
+</div>
+
+
+
+    
+	
+  
+    
+    
+	
+    
+
+<div class="td-content" style="page-break-before: always">
+    
+	<h1 id="pg-6698f4c22ab4cc2b1f5b3f1459e67f2b">22 - Google Sheets</h1>
+    
+	<h2 id="google-sheets">Google Sheets</h2>
+<p>Google Sheets has a very limited
+<a href="https://developers.google.com/chart/interactive/docs/querylanguage">SQL API</a>. The recommended
+connector library for Google Sheets is <a href="https://github.com/betodealmeida/shillelagh">shillelagh</a>.</p>
+
+</div>
+
+
+
+    
+	
+  
+    
+    
+	
+    
+
+<div class="td-content" style="page-break-before: always">
+    
+	<h1 id="pg-0c8af8f1139128b3a15ba2cb21485303">23 - Hana</h1>
+    
+	<h2 id="hana">Hana</h2>
+<p>The recommended connector library is <a href="https://github.com/SAP/sqlalchemy-hana">sqlalchemy-hana</a>.</p>
+<p>The connection string is formatted as follows:</p>
+<pre tabindex="0"><code>hana://{username}:{password}@{host}:{port}
+</code></pre>
+</div>
+
+
+
+    
+	
+  
+    
+    
+	
+    
+
+<div class="td-content" style="page-break-before: always">
+    
+	<h1 id="pg-aa8552e02c5c9effe9fdc856ee2ae206">24 - Hologres</h1>
+    
+	<h2 id="hologres">Hologres</h2>
+<p>Hologres is a real-time interactive analytics service developed by Alibaba Cloud. It is fully compatible with PostgreSQL 11 and integrates seamlessly with the big data ecosystem.</p>
+<p>Hologres sample connection parameters:</p>
+<ul>
+<li><strong>User Name</strong>: The AccessKey ID of your Alibaba Cloud account.</li>
+<li><strong>Password</strong>: The AccessKey secret of your Alibaba Cloud account.</li>
+<li><strong>Database Host</strong>: The public endpoint of the Hologres instance.</li>
+<li><strong>Database Name</strong>: The name of the Hologres database.</li>
+<li><strong>Port</strong>: The port number of the Hologres instance.</li>
+</ul>
+<p>The connection string looks like:</p>
+<pre tabindex="0"><code>postgresql+psycopg2://{username}:{password}@{host}:{port}/{database}
+</code></pre>
+</div>
+
+
+
+    
+	
+  
+    
+    
+	
+    
+
+<div class="td-content" style="page-break-before: always">
+    
+	<h1 id="pg-613e82bc8bb3e8598035646c17a5e4e3">25 - IBM DB2</h1>
+    
+	<h2 id="ibm-db2">IBM DB2</h2>
+<p>The <a href="https://github.com/ibmdb/python-ibmdbsa/tree/master/ibm_db_sa">IBM_DB_SA</a> library provides a
+Python / SQLAlchemy interface to IBM Data Servers.</p>
+<p>Here&rsquo;s the recommended connection string:</p>
+<pre tabindex="0"><code>db2+ibm_db://{username}:{passport}@{hostname}:{port}/{database}
+</code></pre><p>There are two DB2 dialect versions implemented in SQLAlchemy. If you are connecting to a DB2 version without <code>LIMIT [n]</code> syntax, the recommended connection string to be able to use the SQL Lab is:</p>
+<pre tabindex="0"><code>ibm_db_sa://{username}:{passport}@{hostname}:{port}/{database}
+</code></pre>
+</div>
+
+
+
+    
+	
+  
+    
+    
+	
+    
+
+<div class="td-content" style="page-break-before: always">
+    
+	<h1 id="pg-f17cc328f4de3c63d23d98ef24bf36fb">26 - IBM Netezza Performance Server</h1>
+    
+	<h2 id="ibm-netezza-performance-server">IBM Netezza Performance Server</h2>
+<p>The <a href="https://pypi.org/project/nzalchemy/">nzalchemy</a> library provides a
+Python / SQLAlchemy interface to IBM Netezza Performance Server (aka Netezza).</p>
+<p>Here&rsquo;s the recommended connection string:</p>
+<pre tabindex="0"><code>netezza+nzpy://{username}:{password}@{hostname}:{port}/{database}
+</code></pre>
+</div>
+
+
+
+    
+	
+  
+    
+    
+	
+    
+
+<div class="td-content" style="page-break-before: always">
+    
+	<h1 id="pg-86e4a2f7fdee7d5af8942f47dede6115">27 - Microsoft SQL Server</h1>
+    
+	<h2 id="sql-server">SQL Server</h2>
+<p>The recommended connector library for SQL Server is <a href="https://github.com/pymssql/pymssql">pymssql</a>.</p>
+<p>The connection string for SQL Server looks like this:</p>
+<pre tabindex="0"><code>mssql+pymssql://&lt;Username&gt;:&lt;Password&gt;@&lt;Host&gt;:&lt;Port-default:1433&gt;/&lt;Database Name&gt;/?Encrypt=yes
+</code></pre>
+</div>
+
+
+
+    
+	
+  
+    
+    
+	
+    
+
+<div class="td-content" style="page-break-before: always">
+    
+	<h1 id="pg-173acb377051b7c023be545372f824a7">28 - MySQL</h1>
+    
+	<h2 id="mysql">MySQL</h2>
+<p>The recommended connector library for MySQL is <a href="https://pypi.org/project/mysqlclient/">mysqlclient</a>.</p>
+<p>Here&rsquo;s the connection string:</p>
+<pre tabindex="0"><code>mysql://{username}:{password}@{host}/{database}
+</code></pre><p>Host:</p>
+<ul>
+<li>For Localhost or Docker running Linux: <code>localhost</code> or <code>127.0.0.1</code></li>
+<li>For On Prem: IP address or Host name</li>
+<li>For Docker running in OSX: <code>docker.for.mac.host.internal</code>
+Port: <code>3306</code> by default</li>
+</ul>
+<p>One problem with <code>mysqlclient</code> is that it will fail to connect to newer MySQL databases using <code>caching_sha2_password</code> for authentication, since the plugin is not included in the client. In this case, you should use <code>[mysql-connector-python](https://pypi.org/project/mysql-connector-python/)</code> instead:</p>
+<pre tabindex="0"><code>mysql+mysqlconnector://{username}:{password}@{host}/{database}
+</code></pre>
+</div>
+
+
+
+    
+	
+  
+    
+    
+	
+    
+
+<div class="td-content" style="page-break-before: always">
+    
+	<h1 id="pg-c4b1811499db1d4b1b5c7424968322b5">29 - Oracle</h1>
+    
+	<h2 id="oracle">Oracle</h2>
+<p>The recommended connector library is
+<a href="https://cx-oracle.readthedocs.io/en/latest/user_guide/installation.html">cx_Oracle</a>.</p>
+<p>The connection string is formatted as follows:</p>
+<pre tabindex="0"><code>oracle://&lt;username&gt;:&lt;password&gt;@&lt;hostname&gt;:&lt;port&gt;
+</code></pre>
+</div>
+
+
+
+    
+	
+  
+    
+    
+	
+    
+
+<div class="td-content" style="page-break-before: always">
+    
+	<h1 id="pg-c57ee0b8f64b4f1f9bc0b23f206f7bf7">30 - Postgres</h1>
+    
+	<h2 id="postgres">Postgres</h2>
+<p>Note that, if you&rsquo;re using docker-compose, the Postgres connector library <a href="https://www.psycopg.org/docs/">psycopg2</a>
+comes out of the box with Feris.</p>
+<p>Postgres sample connection parameters:</p>
+<ul>
+<li><strong>User Name</strong>: UserName</li>
+<li><strong>Password</strong>: DBPassword</li>
+<li><strong>Database Host</strong>:
+<ul>
+<li>For Localhost: localhost or 127.0.0.1</li>
+<li>For On Prem: IP address or Host name</li>
+<li>For AWS Endpoint</li>
+</ul>
+</li>
+<li><strong>Database Name</strong>: Database Name</li>
+<li><strong>Port</strong>: default 5432</li>
+</ul>
+<p>The connection string looks like:</p>
+<pre tabindex="0"><code>postgresql://{username}:{password}@{host}:{port}/{database}
+</code></pre><p>You can require SSL by adding <code>?sslmode=require</code> at the end:</p>
+<pre tabindex="0"><code>postgresql://{username}:{password}@{host}:{port}/{database}?sslmode=require
+</code></pre><p>You can read about the other SSL modes that Postgres supports in
+<a href="https://www.postgresql.org/docs/9.1/libpq-ssl.html">Table 31-1 from this documentation</a>.</p>
+<p>More information about PostgreSQL connection options can be found in the
+<a href="https://docs.sqlalchemy.org/en/13/dialects/postgresql.html#module-sqlalchemy.dialects.postgresql.psycopg2">SQLAlchemy docs</a>
+and the
+<a href="https://www.postgresql.org/docs/9.1/libpq-connect.html#LIBPQ-PQCONNECTDBPARAMS">PostgreSQL docs</a>.</p>
+
+</div>
+
+
+
+    
+	
+  
+    
+    
+	
+    
+
+<div class="td-content" style="page-break-before: always">
+    
+	<h1 id="pg-7a45235c2e51bfde7165e9a85f6368d1">31 - Presto</h1>
+    
+	<h2 id="presto">Presto</h2>
+<p>The <a href="https://pypi.org/project/PyHive/">pyhive</a> library is the recommended way to connect to Presto through SQLAlchemy.</p>
+<p>The expected connection string is formatted as follows:</p>
+<pre tabindex="0"><code>presto://{hostname}:{port}/{database}
+</code></pre><p>You can pass in a username and password as well:</p>
+<pre tabindex="0"><code>presto://{username}:{password}@{hostname}:{port}/{database}
+</code></pre><p>Here is an example connection string with values:</p>
+<pre tabindex="0"><code>presto://datascientist:securepassword@presto.example.com:8080/hive
+</code></pre><p>By default StreamZero assumes the most recent version of Presto is being used when querying the
+datasource. If you’re using an older version of Presto, you can configure it in the extra parameter:</p>
+<pre tabindex="0"><code>{
+    &#34;version&#34;: &#34;0.123&#34;
+}
+</code></pre>
+</div>
+
+
+
+    
+	
+  
+    
+    
+	
+    
+
+<div class="td-content" style="page-break-before: always">
+    
+	<h1 id="pg-29119b26f226dc4349f5a3b7238904db">32 - Rockset</h1>
+    
+	<h2 id="rockset">Rockset</h2>
+<p>The connection string for Rockset is:</p>
+<pre tabindex="0"><code>rockset://apikey:{your-apikey}@api.rs2.usw2.rockset.com/
+</code></pre><p>For more complete instructions, we recommend the <a href="https://docs.rockset.com/apache-Feris/">Rockset documentation</a>.</p>
+
+</div>
+
+
+
+    
+	
+  
+    
+    
+	
+    
+
+<div class="td-content" style="page-break-before: always">
+    
+	<h1 id="pg-467f2ab658952c0b9ecd8abc43c1efc4">33 - Snowflake</h1>
+    
+	<h2 id="snowflake">Snowflake</h2>
+<p>The recommended connector library for Snowflake is
+<a href="https://pypi.org/project/snowflake-sqlalchemy/1.2.4/">snowflake-sqlalchemy</a>&lt;=1.2.4.</p>
+<p>The connection string for Snowflake looks like this:</p>
+<pre tabindex="0"><code>snowflake://{user}:{password}@{account}.{region}/{database}?role={role}&amp;warehouse={warehouse}
+</code></pre><p>The schema is not necessary in the connection string, as it is defined per table/query. The role and
+warehouse can be omitted if defaults are defined for the user, i.e.</p>
+<pre tabindex="0"><code>snowflake://{user}:{password}@{account}.{region}/{database}
+</code></pre><p>Make sure the user has privileges to access and use all required
+databases/schemas/tables/views/warehouses, as the Snowflake SQLAlchemy engine does not test for
+user/role rights during engine creation by default. However, when pressing the “Test Connection”
+button in the Create or Edit Database dialog, user/role credentials are validated by passing
+“validate_default_parameters”: True to the connect() method during engine creation. If the user/role
+is not authorized to access the database, an error is recorded in the StreamZero logs.</p>
+
+</div>
+
+
+
+    
+	
+  
+    
+    
+	
+    
+
+<div class="td-content" style="page-break-before: always">
+    
+	<h1 id="pg-0e2497078e99139dde28481fc00b5f28">34 - Teradata</h1>
+    
+	<h2 id="teradata">Teradata</h2>
+<p>The recommended connector library is
+<a href="https://pypi.org/project/teradatasqlalchemy/">teradatasqlalchemy</a>.</p>
+<p>The connection string for Teradata looks like this:</p>
+<pre tabindex="0"><code>teradata://{user}:{password}@{host}
+</code></pre><h2 id="odbc-driver">ODBC Driver</h2>
+<p>There&rsquo;s also an older connector named
+<a href="https://github.com/Teradata/sqlalchemy-teradata">sqlalchemy-teradata</a> that
+requires the installation of ODBC drivers. The Teradata ODBC Drivers
+are available
+here: <a href="https://downloads.teradata.com/download/connectivity/odbc-driver/linux">https://downloads.teradata.com/download/connectivity/odbc-driver/linux</a></p>
+<p>Here are the required environment variables:</p>
+<pre tabindex="0"><code>export ODBCINI=/.../teradata/client/ODBC_64/odbc.ini
+export ODBCINST=/.../teradata/client/ODBC_64/odbcinst.ini
+</code></pre><p>We recommend using the first library because of the
+lack of requirement around ODBC drivers and
+because it&rsquo;s more regularly updated.</p>
+
+</div>
+
+
+
+    
+	
+  
+    
+    
+	
+    
+
+<div class="td-content" style="page-break-before: always">
+    
+	<h1 id="pg-d26a65f8c161b809f18b324b94400cce">35 - Trino</h1>
+    
+	<h2 id="trino">Trino</h2>
+<p>Supported trino version 352 and higher</p>
+<p>The <a href="https://pypi.org/project/sqlalchemy-trino/">sqlalchemy-trino</a> library is the recommended way to connect to Trino through SQLAlchemy.</p>
+<p>The expected connection string is formatted as follows:</p>
+<pre tabindex="0"><code>trino://{username}:{password}@{hostname}:{port}/{catalog}
+</code></pre><p>If you are running trino with docker on local machine please use the following connection URL</p>
+<pre tabindex="0"><code>trino://trino@host.docker.internal:8080
+</code></pre><p>Reference:
+<a href="https://trino.io/episodes/12.html">Trino-Feris-Podcast</a></p>
+
+</div>
+
+
+
+    
+	
+  
+    
+    
+	
+    
+
+<div class="td-content" style="page-break-before: always">
+    
+	<h1 id="pg-ea5fd90695c8bc554c2454a13295de95">36 - Vertica</h1>
+    
+	<h2 id="vertica">Vertica</h2>
+<p>The recommended connector library is
+<a href="https://pypi.org/project/sqlalchemy-vertica-python/">sqlalchemy-vertica-python</a>. The
+<a href="http://www.vertica.com/">Vertica</a> connection parameters are:</p>
+<ul>
+<li><strong>User Name:</strong> UserName</li>
+<li><strong>Password:</strong> DBPassword</li>
+<li><strong>Database Host:</strong>
+<ul>
+<li>For Localhost : localhost or 127.0.0.1</li>
+<li>For On Prem : IP address or Host name</li>
+<li>For Cloud: IP Address or Host Name</li>
+</ul>
+</li>
+<li><strong>Database Name:</strong> Database Name</li>
+<li><strong>Port:</strong> default 5433</li>
+</ul>
+<p>The connection string is formatted as follows:</p>
+<pre tabindex="0"><code>vertica+vertica_python://{username}:{password}@{host}/{database}
+</code></pre><p>Other parameters:</p>
+<ul>
+<li>Load Balancer - Backup Host</li>
+</ul>
+
+</div>
+
+
+
+    
+	
+  
+    
+    
+	
+    
+
+<div class="td-content" style="page-break-before: always">
+    
+	<h1 id="pg-7abc37e7a1ffce6adb2c0f7853e44aae">37 - YugabyteDB</h1>
+    
+	<h2 id="yugabytedb">YugabyteDB</h2>
+<p><a href="https://www.yugabyte.com/">YugabyteDB</a> is a distributed SQL database built on top of PostgreSQL.</p>
+<p>Note that, if you&rsquo;re using docker-compose, the
+Postgres connector library <a href="https://www.psycopg.org/docs/">psycopg2</a>
+comes out of the box with StreamZero.</p>
+<p>The connection string looks like:</p>
+<pre tabindex="0"><code>postgresql://{username}:{password}@{host}:{port}/{database}
+</code></pre>
+</div>
+
+
+
+    
+	
+  
+
+
+
+          </main>
+        </div>
+      </div>
+      <section class="row td-cover-block" style="background-color: #1b1a21;">
+  <div class="container">
+      <footer class="footer-component with-intercom">
+          <div class="section-container footer-inner size-medium">
+              <div class="content">
+                  <div class="page-container padding-small-x">
+                      <div class="margin-component bottom-small-x">
+                          <nav class="footer-links" role="navigation">
+                              <ul class="list-component footer-column ul">
+                                  <li class="list-item-component footer-item footer-item-header">
+                                      <div class="margin-component inner bottom-zero">
+                                          <div class="list-content-wrapper">
+                                              <div class="typography-text p2-caps footer-link footer-header inverted">
+                                                  Product
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </li>
+                                  <li class="list-item-component footer-item">
+                                      <div class="margin-component inner bottom-zero">
+                                          <div class="list-content-wrapper">
+                                              <div class="typography-text p2-normal inverted"><a
+                                                  class="link-component footer-link"
+                                                  href="/products/fx/">StreamZero FX</a></div>
+                                          </div>
+                                      </div>
+                                  </li>
+                                  <li class="list-item-component footer-item">
+                                      <div class="margin-component inner bottom-zero">
+                                          <div class="list-content-wrapper">
+                                              <div class="typography-text p2-normal inverted"><a
+                                                  class="link-component footer-link"
+                                                  href="/products/k8x">StreamZero K8X</a></div>
+                                          </div>
+                                      </div>
+                                  </li>
+                                  <li class="list-item-component footer-item">
+                                      <div class="margin-component inner bottom-zero">
+                                          <div class="list-content-wrapper">
+                                              <div class="typography-text p2-normal inverted"><a
+                                                  class="link-component footer-link"
+                                                  href="/products/sx/">StreamZero SX</a></div>
+                                          </div>
+                                      </div>
+                                  </li>
+                              </ul>
+                              <ul class="list-component footer-column ul">
+                                  <li class="list-item-component footer-item footer-item-header">
+                                      <div class="margin-component inner bottom-zero">
+                                          <div class="list-content-wrapper">
+                                              <div class="typography-text p2-caps footer-link footer-header inverted">
+                                                  Solutions
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </li>
+                                  <li class="list-item-component footer-item">
+                                      <div class="margin-component inner bottom-zero">
+                                          <div class="list-content-wrapper">
+                                              <div class="typography-text p2-normal inverted"><a
+                                                  class="link-component footer-link"
+                                                  href="/solutions/">Why GridMine?</a></div>
+                                          </div>
+                                      </div>
+                                  </li>
+                                  <li class="list-item-component footer-item">
+                                      <div class="margin-component inner bottom-zero">
+                                          <div class="list-content-wrapper">
+                                              <div class="typography-text p2-normal inverted"><a
+                                                  class="link-component footer-link"
+                                                  href="/integrations/">Integrations</a></div>
+                                          </div>
+                                      </div>
+                                  </li>
+                                  <li class="list-item-component footer-item">
+                                      <div class="margin-component inner bottom-zero">
+                                          <div class="list-content-wrapper">
+                                              <div class="typography-text p2-normal inverted"><xa
+                                                  class="link-component footer-link"
+                                                  href="/partners/">Partners</a></div>
+                                          </div>
+                                      </div>
+                                  </li>
+                              </ul>
+                              <ul class="list-component footer-column ul">
+                                  <li class="list-item-component footer-item footer-item-header">
+                                      <div class="margin-component inner bottom-zero">
+                                          <div class="list-content-wrapper">
+                                              <div class="typography-text p2-caps footer-link footer-header inverted">
+                                                  Learn
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </li>
+                                  <li class="list-item-component footer-item">
+                                      <div class="margin-component inner bottom-zero">
+                                          <div class="list-content-wrapper">
+                                              <div class="typography-text p2-normal inverted"><a
+                                                  rel="noopener noreferrer"
+                                                  class="link-component footer-link" href="/docs/">Developer
+                                                  Guide</a>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </li>
+                                  <li class="list-item-component footer-item">
+                                      <div class="margin-component inner bottom-zero">
+                                          <div class="list-content-wrapper">
+                                              <div class="typography-text p2-normal inverted"><a
+                                                  rel="noopener noreferrer"
+                                                  class="link-component footer-link" href="/docs/integrations/">Integrations
+                                                  Guide</a></div>
+                                          </div>
+                                      </div>
+                                  </li>
+                                  <li class="list-item-component footer-item">
+                                      <div class="margin-component inner bottom-zero">
+                                          <div class="list-content-wrapper">
+                                              <div class="typography-text p2-normal inverted"><a
+                                                  class="link-component footer-link"
+                                                  href="/docs/security/">Security</a></div>
+                                          </div>
+                                      </div>
+                                  </li>
+                                  <li class="list-item-component footer-item">
+                                      <div class="margin-component inner bottom-zero">
+                                          <div class="list-content-wrapper">
+                                              <div class="typography-text p2-normal inverted"><xa
+                                                  class="link-component footer-link"
+                                                  href="/blog/">Blog</a></div>
+                                          </div>
+                                      </div>
+                                  </li>
+                                  
+                              </ul>
+                              <ul class="list-component footer-column ul">
+                                  <li class="list-item-component footer-item footer-item-header">
+                                      <div class="margin-component inner bottom-zero">
+                                          <div class="list-content-wrapper">
+                                              <div class="typography-text p2-caps footer-link footer-header inverted">
+                                                  Support
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </li>
+                                  <li class="list-item-component footer-item">
+                                      <div class="margin-component inner bottom-zero">
+                                          <div class="list-content-wrapper">
+                                              <div class="typography-text p2-normal inverted"><xa
+                                                  class="link-component footer-link"
+                                                  href="/support/">Support Plans</a></div>
+                                          </div>
+                                      </div>
+                                  </li>
+                                  
+                                  <li class="list-item-component footer-item">
+                                      <div class="margin-component inner bottom-zero">
+                                          <div class="list-content-wrapper">
+                                              <div class="typography-text p2-normal inverted"><xa
+                                                  class="link-component footer-link"
+                                                  href="/services/">Professional Services</a></div>
+                                          </div>
+                                      </div>
+                                  </li>
+                                  <li class="list-item-component footer-item">
+                                      <div class="margin-component inner bottom-zero">
+                                          <div class="list-content-wrapper">
+                                              <div class="typography-text p2-normal inverted"><a
+                                                  rel="noopener noreferrer"
+                                                  class="link-component footer-link" href="/docs/">Documentation</a>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </li>
+                              </ul>
+                              <ul class="list-component footer-column ul">
+                                  <li class="list-item-component footer-item footer-item-header">
+                                      <div class="margin-component inner bottom-zero">
+                                          <div class="list-content-wrapper">
+                                              <div class="typography-text p2-caps footer-link footer-header inverted">
+                                                  Company
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </li>
+                                  <li class="list-item-component footer-item">
+                                      <div class="margin-component inner bottom-zero">
+                                          <div class="list-content-wrapper">
+                                              <div class="typography-text p2-normal inverted"><a
+                                                  class="link-component footer-link"
+                                                  href="/about/">About Us</a></div>
+                                          </div>
+                                      </div>
+                                  </li>
+                                  <li class="list-item-component footer-item">
+                                      <div class="margin-component inner bottom-zero">
+                                          <div class="list-content-wrapper">
+                                              <div class="typography-text p2-normal inverted"><xa
+                                                  class="link-component footer-link"
+                                                  href="/jobs/"><span class="footer-pill-wrapper">Careers <span
+                                                  class="footer-pill">We're hiring</span></span></a>
+                                                </div>
+                                          </div>
+                                      </div>
+                                  </li>
+                                  <li class="list-item-component footer-item">
+                                      <div class="margin-component inner bottom-zero">
+                                          <div class="list-content-wrapper">
+                                              <div class="typography-text p2-normal inverted"><a
+                                                  class="link-component footer-link"
+                                                  href="/contact/">Contact Us</a></div>
+                                          </div>
+                                      </div>
+                                  </li>
+                              </ul>
+                          </nav>
+                      </div>
+                      <div class="margin-component bottom-small-x">
+                          <div class="centering-wrapper social-links">
+                              <a rel="noopener noreferrer" class="link-component social-link"
+                                href="https://twitter.com/gridmine/" title="Twitter" target="_blank">
+                                  <img src="/icons/footer/twitter-icon.png" alt="Twitter">
+                              </a>
+                              
+                              <a rel="noopener noreferrer" class="link-component social-link"
+                                href="https://www.linkedin.com/company/gridmine/" title="LinkedIn" target="_blank">
+                                  <img src="/icons/footer/linkedin-icon.png" alt="LinkedIn">
+                              </a>
+                              <a rel="noopener noreferrer" class="link-component social-link"
+                                href="https://www.youtube.com/channel/UC5miURXVxGLo17EyWPBWCug/" title="YouTube"
+                                target="_blank">
+                                  <img src="/icons/footer/youtube-icon.png" alt="YouTube">
+                              </a>
+                              
+                              <a rel="noopener noreferrer" class="link-component social-link"
+                                href="https://github.com/gridmine/" title="GitHub" target="_blank">
+                                  <img src="/icons/footer/github-icon.png" alt="GitHub">
+                              </a>
+                              <a rel="noopener noreferrer" class="link-component social-link"
+                                href="https://www.medium.com/gridmine/" title="Medium" target="_blank">
+                                  <img src="/icons/footer/medium-icon.png" alt="Medium">
+                              </a>
+                              <xa rel="noopener noreferrer" class="link-component social-link" href="#"
+                                data-toggle="modal" data-target="#subscribeModal"
+                                title="Subscribe to our Newsletter">
+                                  <img src="/icons/footer/mail-icon.png" alt="Newsletter">
+                              </a>
+                          </div>
+                      </div>
+                      <div class="centering-wrapper legal-links">
+                          <div class="typography-text p2-normal align-center">
+                              <span class="copyright">2023 © GridMine GmbH</span>
+                              <span> | </span>
+                              <br class="br-component mobile">
+                              <a class="link-component legal-link" href="/docs/privacy_policy/">Privacy Policy</a>
+                              <span> | </span>
+                              <a class="link-component legal-link" href="/docs/privacy_policy/">Data Protection
+                                  Policy</a>
+                              <span> | </span>
+                              <a class="link-component legal-link" href="/docs/terms_conditions/">Legal Terms and
+                                  Conditions</a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </footer>
+  </div>
+</section>
+
+<script type="text/javascript" src="/js/carousel.js"></script>
+<link rel="stylesheet" href="/css/carousel.css">
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+
+
+
+
+
+<script src='/js/tabpane-persist.js'></script>
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="/js/main.min.7d5b92c4889cf0554b0ea5e2309b0b81b196aa7c9a235632938a25d9fc4d8a7c.js" integrity="sha256-fVuSxIic8FVLDqXiMJsLgbGWqnyaI1Yyk4ol2fxNinw=" crossorigin="anonymous"></script>
+
+
+
+
+  </body>
+</html>

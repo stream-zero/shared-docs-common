@@ -1,0 +1,35 @@
+{{ .Scratch.Set "height" (.Get "height") }}
+{{ .Scratch.Set "unit" (.Get "unit") }}
+{{ .Scratch.Set "ordinal" .Ordinal }}
+{{ .Scratch.Set "items" (.Get "items") }}
+{{ $fileName := .Get "fileName" | default "carousel" }}
+
+
+<div id="carousel{{ .Ordinal }}" class="carousel slide carousel-dark" enable-gradients="false" data-touch="true" data-interval="{{ .Get `duration` }}">
+  <ol class="carousel-indicators">
+    {{ range index $.Site.Data.carousels $fileName }}
+      {{ range $index, $slide := . }}
+        <li data-target="#carousel{{ .Ordinal }}" data-slide-to="{{ $index }}" class="{{ if eq $index 0 }}active{{ end }}"></li>
+      {{ end }}
+    {{ end }}
+  </ol>
+  <div class="carousel-inner">
+    {{ range index $.Site.Data.carousels $fileName }}
+      {{ range $index, $slide := . }}
+        <div class="carousel-item {{ if eq $index 0 }}active{{ end }}">
+          <img src="{{ $slide.image }}" class="d-block w-100" alt="" />
+          
+          <!--p class="carousel-subheading">{{ $slide.subheading }}</p-->
+        </div>
+      {{ end }}
+    {{ end }}
+  </div>
+  <a class="carousel-control-prev" role="button" data-target="#carousel{{ .Ordinal }}" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only"><p class="text-black">Previous</p></span>
+  </a>
+  <a class="carousel-control-next" role="button" data-target="#carousel{{ .Ordinal }}" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only text-black">Next</span>
+  </a>
+</div>

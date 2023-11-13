@@ -1,0 +1,96 @@
+{{ $_hugo_config := `{ "version": 1 }` }}
+<!--{{ $col_id := .Get "color" | default .Ordinal }}-->
+<!--{{ $height := .Get "height" | default "auto"  }}-->
+<!--{{ $type   := .Get "type" | default "" }}-->
+
+<div class="pt-3 lead">
+    {{ if eq .Page.File.Ext "md" }}
+    {{ .Inner | markdownify }}
+    {{ else }}
+    {{ .Inner | htmlUnescape | safeHTML }}
+    {{ end }}
+</div>
+
+<section class="row td-cover-block">
+	<div class="container">
+        {{ $fileName := .Get "fileName" | default "" }}
+        <div class="integrations-card-holder">
+            {{ if eq $fileName "" }}
+                {{/*  <div class="row">
+                    {{ range $.Site.Data.integrations }}
+                        {{ range $index, $element := . }}
+                            {{ $count := cond (eq $index "databases") 2 1 }}
+                            {{ range . | shuffle | first $count }}
+                                {{ block "tombstone" . }}{{ end }}
+                            {{ end }}
+                        {{ end }}
+                    {{ end }}
+                </div>  */}}
+                <div class="row">
+                    {{ range $.Site.Data.integrations }}
+                        {{ range $index, $element := . }}
+                            <div class="col-md-12">
+                                <p class="home_title" style="text-align: center;">{{ $index | humanize | singularize }} Integrations</p>
+                            </div>
+                            <div class="row">
+                                {{ range first 6 . }}
+                                    {{ block "tombstone" . }}{{ end }}
+                                {{ end }}
+                                <div class="col-md-12 mb-5 text-right">
+                                    <a class="btn btn-lg btn-primary mb-4" href="/integrations/{{ $index }}">
+                                        Show All  <i class="fas fa-arrow-alt-circle-right ml-2"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        {{ end }}
+                    {{ end }}
+                </div>
+            {{ else }}
+                <div class="row">
+                    {{ range index $.Site.Data.integrations $fileName }}
+                        {{ range $index, $element := . }}
+                            {{ block "tombstone" . }}{{ end }}
+                        {{ end }}
+                    {{ end }}
+                </div>
+            {{ end }}
+        </div>
+    </div>
+</section>
+
+{{ define "tombstone" }}
+    <div class="col-xs-12 col-sm-6 col-md-4">
+        <div class="integration-card">
+            <div class="card-body d-flex flex-column justify-content-between">
+                <div>
+                    <div class="integration-card-title" title="{{.name}}">
+                        <h4 class="font-weight-bold">
+                            <img src="/images/brand_images/{{.icon}}" />
+                            {{.name}}
+                        </h4>
+                    </div>
+                    {{ if .subname }}
+                        <h5 class="integration-card-title mb-2 text-muted">
+                            {{.subname}}
+                        </h5>
+                    {{ end }}
+                    <div class="card-text">
+                        <p>{{.description}}</p>
+                    </div>
+                </div>
+                <div>
+                    {{ if .tags }}
+                        <div class="integration-tags">
+                            {{ range .tags }}
+                            <a class="taxonomy-term" href="/tags/{{ . }}/" data-taxonomy-term="{{ . }}"><span class="taxonomy-label small">{{ . }}</span></a>
+                            {{ end }}
+                        </div>
+                    {{ end }}
+                    <div class="text-right">
+                        <a href="{{.learn_more_href}}" class="text-muted"><small>Learn more</small></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{{ end }} 

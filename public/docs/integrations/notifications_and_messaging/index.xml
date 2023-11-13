@@ -1,0 +1,18 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>GridMine – Notifications and Messaging</title>
+    <link>/docs/integrations/notifications_and_messaging/</link>
+    <description>Recent content in Notifications and Messaging on GridMine</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    
+	  <atom:link href="/docs/integrations/notifications_and_messaging/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+  </channel>
+</rss>

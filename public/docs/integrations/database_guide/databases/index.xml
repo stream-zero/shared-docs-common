@@ -1,0 +1,950 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>GridMine – Supported Databases</title>
+    <link>/docs/integrations/database_guide/databases/</link>
+    <description>Recent content in Supported Databases on GridMine</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    
+	  <atom:link href="/docs/integrations/database_guide/databases/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Docs: Ascend.io</title>
+      <link>/docs/integrations/database_guide/databases/ascend/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/integrations/database_guide/databases/ascend/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;ascendio&#34;&gt;Ascend.io&lt;/h2&gt;
+&lt;p&gt;The recommended connector library to Ascend.io is &lt;a href=&#34;https://github.com/cloudera/impyla&#34;&gt;impyla&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The expected connection string is formatted as follows:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;ascend://{username}:{password}@{hostname}:{port}/{database}?auth_mechanism=PLAIN;use_ssl=true
+&lt;/code&gt;&lt;/pre&gt;
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Amazon Athena</title>
+      <link>/docs/integrations/database_guide/databases/athena/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/integrations/database_guide/databases/athena/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;aws-athena&#34;&gt;AWS Athena&lt;/h2&gt;
+&lt;h3 id=&#34;pyathenajdbc&#34;&gt;PyAthenaJDBC&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://pypi.org/project/PyAthenaJDBC/&#34;&gt;PyAthenaJDBC&lt;/a&gt; is a Python DB 2.0 compliant wrapper for the
+&lt;a href=&#34;https://docs.aws.amazon.com/athena/latest/ug/connect-with-jdbc.html&#34;&gt;Amazon Athena JDBC driver&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The connection string for Amazon Athena is as follows:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;awsathena+jdbc://{aws_access_key_id}:{aws_secret_access_key}@athena.{region_name}.amazonaws.com/{schema_name}?s3_staging_dir={s3_staging_dir}&amp;amp;...
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Note that you&amp;rsquo;ll need to escape &amp;amp; encode when forming the connection string like so:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;s3://... -&amp;gt; s3%3A//...
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;pyathena&#34;&gt;PyAthena&lt;/h3&gt;
+&lt;p&gt;You can also use &lt;a href=&#34;https://pypi.org/project/PyAthena/&#34;&gt;PyAthena library&lt;/a&gt; (no Java required) with the
+following connection string:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;awsathena+rest://{aws_access_key_id}:{aws_secret_access_key}@athena.{region_name}.amazonaws.com/{schema_name}?s3_staging_dir={s3_staging_dir}&amp;amp;...
+&lt;/code&gt;&lt;/pre&gt;
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Amazon Redshift</title>
+      <link>/docs/integrations/database_guide/databases/redshift/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/integrations/database_guide/databases/redshift/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;aws-redshift&#34;&gt;AWS Redshift&lt;/h2&gt;
+&lt;p&gt;The &lt;a href=&#34;https://pypi.org/project/sqlalchemy-redshift/&#34;&gt;sqlalchemy-redshift&lt;/a&gt; library is the recommended
+way to connect to Redshift through SQLAlchemy.&lt;/p&gt;
+&lt;p&gt;You&amp;rsquo;ll need to the following setting values to form the connection string:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;User Name&lt;/strong&gt;: userName&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Password&lt;/strong&gt;: DBPassword&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Database Host&lt;/strong&gt;: AWS Endpoint&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Database Name&lt;/strong&gt;: Database Name&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Port&lt;/strong&gt;: default 5439&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Here&amp;rsquo;s what the connection string looks like:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;redshift+psycopg2://&amp;lt;userName&amp;gt;:&amp;lt;DBPassword&amp;gt;@&amp;lt;AWS End Point&amp;gt;:5439/&amp;lt;Database Name&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Apache Drill</title>
+      <link>/docs/integrations/database_guide/databases/drill/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/integrations/database_guide/databases/drill/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;apache-drill&#34;&gt;Apache Drill&lt;/h2&gt;
+&lt;h3 id=&#34;sqlalchemy&#34;&gt;SQLAlchemy&lt;/h3&gt;
+&lt;p&gt;The recommended way to connect to Apache Drill is through SQLAlchemy. You can use the
+&lt;a href=&#34;https://github.com/JohnOmernik/sqlalchemy-drill&#34;&gt;sqlalchemy-drill&lt;/a&gt; package.&lt;/p&gt;
+&lt;p&gt;Once that is done, you can connect to Drill in two ways, either via the REST interface or by JDBC.
+If you are connecting via JDBC, you must have the Drill JDBC Driver installed.&lt;/p&gt;
+&lt;p&gt;The basic connection string for Drill looks like this:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;drill+sadrill://&amp;lt;username&amp;gt;:&amp;lt;password&amp;gt;@&amp;lt;host&amp;gt;:&amp;lt;port&amp;gt;/&amp;lt;storage_plugin&amp;gt;?use_ssl=True
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;To connect to Drill running on a local machine running in embedded mode you can use the following
+connection string:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;drill+sadrill://localhost:8047/dfs?use_ssl=False
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;jdbc&#34;&gt;JDBC&lt;/h3&gt;
+&lt;p&gt;Connecting to Drill through JDBC is more complicated and we recommend following
+&lt;a href=&#34;https://drill.apache.org/docs/using-the-jdbc-driver/&#34;&gt;this tutorial&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The connection string looks like:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;drill+jdbc://&amp;lt;username&amp;gt;:&amp;lt;passsword&amp;gt;@&amp;lt;host&amp;gt;:&amp;lt;port&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;odbc&#34;&gt;ODBC&lt;/h3&gt;
+&lt;p&gt;We recommend reading the
+&lt;a href=&#34;https://drill.apache.org/docs/installing-the-driver-on-linux/&#34;&gt;Apache Drill documentation&lt;/a&gt; and read
+the &lt;a href=&#34;https://github.com/JohnOmernik/sqlalchemy-drill#usage-with-odbc&#34;&gt;Github README&lt;/a&gt; to learn how to
+work with Drill through ODBC.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Apache Druid</title>
+      <link>/docs/integrations/database_guide/databases/druid/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/integrations/database_guide/databases/druid/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;apache-druid&#34;&gt;Apache Druid&lt;/h2&gt;
+&lt;p&gt;Use the SQLAlchemy / DBAPI connector made available in the
+&lt;a href=&#34;https://pythonhosted.org/pydruid/&#34;&gt;pydruid library&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The connection string looks like:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;druid://&amp;lt;User&amp;gt;:&amp;lt;password&amp;gt;@&amp;lt;Host&amp;gt;:&amp;lt;Port-default-9088&amp;gt;/druid/v2/sql
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;customizing-druid-connection&#34;&gt;Customizing Druid Connection&lt;/h3&gt;
+&lt;p&gt;When adding a connection to Druid, you can customize the connection a few different ways in the
+&lt;strong&gt;Add Database&lt;/strong&gt; form.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Custom Certificate&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;You can add certificates in the &lt;strong&gt;Root Certificate&lt;/strong&gt; field when configuring the new database
+connection to Druid:&lt;/p&gt;
+&lt;p&gt;&amp;lt;img src={useBaseUrl(&amp;quot;/img/root-cert-example.png&amp;quot;)} /&amp;gt;{&amp;quot; &amp;ldquo;}&lt;/p&gt;
+&lt;p&gt;When using a custom certificate, pydruid will automatically use https scheme.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Disable SSL Verification&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;To disable SSL verification, add the following to the &lt;strong&gt;Extras&lt;/strong&gt; field:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;engine_params:
+{&amp;#34;connect_args&amp;#34;:
+	{&amp;#34;scheme&amp;#34;: &amp;#34;https&amp;#34;, &amp;#34;ssl_verify_cert&amp;#34;: false}}
+&lt;/code&gt;&lt;/pre&gt;
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Apache Hive</title>
+      <link>/docs/integrations/database_guide/databases/hive/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/integrations/database_guide/databases/hive/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;apache-hive&#34;&gt;Apache Hive&lt;/h2&gt;
+&lt;p&gt;The &lt;a href=&#34;https://pypi.org/project/PyHive/&#34;&gt;pyhive&lt;/a&gt; library is the recommended way to connect to Hive through SQLAlchemy.&lt;/p&gt;
+&lt;p&gt;The expected connection string is formatted as follows:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;hive://hive@{hostname}:{port}/{database}
+&lt;/code&gt;&lt;/pre&gt;
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Apache Impala</title>
+      <link>/docs/integrations/database_guide/databases/impala/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/integrations/database_guide/databases/impala/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;apache-impala&#34;&gt;Apache Impala&lt;/h2&gt;
+&lt;p&gt;The recommended connector library to Apache Impala is &lt;a href=&#34;https://github.com/cloudera/impyla&#34;&gt;impyla&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The expected connection string is formatted as follows:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;impala://{hostname}:{port}/{database}
+&lt;/code&gt;&lt;/pre&gt;
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Apache Kylin</title>
+      <link>/docs/integrations/database_guide/databases/kylin/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/integrations/database_guide/databases/kylin/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;apache-kylin&#34;&gt;Apache Kylin&lt;/h2&gt;
+&lt;p&gt;The recommended connector library for Apache Kylin is
+&lt;a href=&#34;https://github.com/Kyligence/kylinpy&#34;&gt;kylinpy&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The expected connection string is formatted as follows:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;kylin://&amp;lt;username&amp;gt;:&amp;lt;password&amp;gt;@&amp;lt;hostname&amp;gt;:&amp;lt;port&amp;gt;/&amp;lt;project&amp;gt;?&amp;lt;param1&amp;gt;=&amp;lt;value1&amp;gt;&amp;amp;&amp;lt;param2&amp;gt;=&amp;lt;value2&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Apache Pinot</title>
+      <link>/docs/integrations/database_guide/databases/pinot/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/integrations/database_guide/databases/pinot/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;apache-pinot&#34;&gt;Apache Pinot&lt;/h2&gt;
+&lt;p&gt;The recommended connector library for Apache Pinot is &lt;a href=&#34;https://pypi.org/project/pinotdb/&#34;&gt;pinotdb&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The expected connection string is formatted as follows:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;pinot+http://&amp;lt;pinot-broker-host&amp;gt;:&amp;lt;pinot-broker-port&amp;gt;/query?controller=http://&amp;lt;pinot-controller-host&amp;gt;:&amp;lt;pinot-controller-port&amp;gt;/``
+&lt;/code&gt;&lt;/pre&gt;
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Apache Solr</title>
+      <link>/docs/integrations/database_guide/databases/solr/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/integrations/database_guide/databases/solr/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;apache-solr&#34;&gt;Apache Solr&lt;/h2&gt;
+&lt;p&gt;The &lt;a href=&#34;https://pypi.org/project/sqlalchemy-solr/&#34;&gt;sqlalchemy-solr&lt;/a&gt; library provides a
+Python / SQLAlchemy interface to Apache Solr.&lt;/p&gt;
+&lt;p&gt;The connection string for Solr looks like this:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;solr://{username}:{password}@{host}:{port}/{server_path}/{collection}[/?use_ssl=true|false]
+&lt;/code&gt;&lt;/pre&gt;
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Apache Spark SQL</title>
+      <link>/docs/integrations/database_guide/databases/spark-sql/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/integrations/database_guide/databases/spark-sql/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;apache-spark-sql&#34;&gt;Apache Spark SQL&lt;/h2&gt;
+&lt;p&gt;The recommended connector library for Apache Spark SQL &lt;a href=&#34;https://pypi.org/project/PyHive/&#34;&gt;pyhive&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The expected connection string is formatted as follows:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;hive://hive@{hostname}:{port}/{database}
+&lt;/code&gt;&lt;/pre&gt;
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Clickhouse</title>
+      <link>/docs/integrations/database_guide/databases/clickhouse/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/integrations/database_guide/databases/clickhouse/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;clickhouse&#34;&gt;Clickhouse&lt;/h2&gt;
+&lt;p&gt;To use Clickhouse with StreamZero you will need to add the following Python libraries:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;clickhouse-driver==0.2.0
+clickhouse-sqlalchemy==0.1.6
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;If running StreamZero using Docker Compose, add the following to your &lt;code&gt;./docker/requirements-local.txt&lt;/code&gt; file:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;clickhouse-driver&amp;gt;=0.2.0
+clickhouse-sqlalchemy&amp;gt;=0.1.6
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;The recommended connector library for Clickhouse is
+&lt;a href=&#34;https://github.com/cloudflare/sqlalchemy-clickhouse&#34;&gt;sqlalchemy-clickhouse&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The expected connection string is formatted as follows:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;clickhouse+native://&amp;lt;user&amp;gt;:&amp;lt;password&amp;gt;@&amp;lt;host&amp;gt;:&amp;lt;port&amp;gt;/&amp;lt;database&amp;gt;[?options…]clickhouse://{username}:{password}@{hostname}:{port}/{database}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Here&amp;rsquo;s a concrete example of a real connection string:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;clickhouse+native://demo:demo@github.demo.trial.altinity.cloud/default?secure=true
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;If you&amp;rsquo;re using Clickhouse locally on your computer, you can get away with using a native protocol URL that
+uses the default user without a password (and doesn&amp;rsquo;t encrypt the connection):&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;clickhouse+native://localhost/default
+&lt;/code&gt;&lt;/pre&gt;
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: CockroachDB</title>
+      <link>/docs/integrations/database_guide/databases/cockroachdb/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/integrations/database_guide/databases/cockroachdb/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;cockroachdb&#34;&gt;CockroachDB&lt;/h2&gt;
+&lt;p&gt;The recommended connector library for CockroachDB is
+&lt;a href=&#34;https://github.com/cockroachdb/sqlalchemy-cockroachdb&#34;&gt;sqlalchemy-cockroachdb&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The expected connection string is formatted as follows:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;cockroachdb://root@{hostname}:{port}/{database}?sslmode=disable
+&lt;/code&gt;&lt;/pre&gt;
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: CrateDB</title>
+      <link>/docs/integrations/database_guide/databases/cratedb/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/integrations/database_guide/databases/cratedb/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;cratedb&#34;&gt;CrateDB&lt;/h2&gt;
+&lt;p&gt;The recommended connector library for CrateDB is
+&lt;a href=&#34;https://pypi.org/project/crate/&#34;&gt;crate&lt;/a&gt;.
+You need to install the extras as well for this library.
+We recommend adding something like the following
+text to your requirements file:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;crate[sqlalchemy]==0.26.0
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;The expected connection string is formatted as follows:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;crate://crate@127.0.0.1:4200
+&lt;/code&gt;&lt;/pre&gt;
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Databricks</title>
+      <link>/docs/integrations/database_guide/databases/databricks/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/integrations/database_guide/databases/databricks/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;databricks&#34;&gt;Databricks&lt;/h2&gt;
+&lt;p&gt;To connect to Databricks, first install &lt;a href=&#34;https://pypi.org/project/databricks-dbapi/&#34;&gt;databricks-dbapi&lt;/a&gt; with the optional SQLAlchemy dependencies:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;pip install databricks-dbapi&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;sqlalchemy&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;There are two ways to connect to Databricks: using a Hive connector or an ODBC connector. Both ways work similarly, but only ODBC can be used to connect to &lt;a href=&#34;https://docs.databricks.com/sql/admin/sql-endpoints.html&#34;&gt;SQL endpoints&lt;/a&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;hive&#34;&gt;Hive&lt;/h3&gt;
+&lt;p&gt;To use the Hive connector you need the following information from your cluster:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Server hostname&lt;/li&gt;
+&lt;li&gt;Port&lt;/li&gt;
+&lt;li&gt;HTTP path&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;These can be found under &amp;ldquo;Configuration&amp;rdquo; -&amp;gt; &amp;ldquo;Advanced Options&amp;rdquo; -&amp;gt; &amp;ldquo;JDBC/ODBC&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;You also need an access token from &amp;ldquo;Settings&amp;rdquo; -&amp;gt; &amp;ldquo;User Settings&amp;rdquo; -&amp;gt; &amp;ldquo;Access Tokens&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;Once you have all this information, add a database of type &amp;ldquo;Databricks (Hive)&amp;rdquo; in StreamZero, and use the following SQLAlchemy URI:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;databricks+pyhive://token:{access token}@{server hostname}:{port}/{database name}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;You also need to add the following configuration to &amp;ldquo;Other&amp;rdquo; -&amp;gt; &amp;ldquo;Engine Parameters&amp;rdquo;, with your HTTP path:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;{&amp;#34;connect_args&amp;#34;: {&amp;#34;http_path&amp;#34;: &amp;#34;sql/protocolv1/o/****&amp;#34;}}
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;odbc&#34;&gt;ODBC&lt;/h3&gt;
+&lt;p&gt;For ODBC you first need to install the &lt;a href=&#34;https://databricks.com/spark/odbc-drivers-download&#34;&gt;ODBC drivers for your platform&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;For a regular connection use this as the SQLAlchemy URI:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;databricks+pyodbc://token:{access token}@{server hostname}:{port}/{database name}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;And for the connection arguments:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;{&amp;#34;connect_args&amp;#34;: {&amp;#34;http_path&amp;#34;: &amp;#34;sql/protocolv1/o/****&amp;#34;, &amp;#34;driver_path&amp;#34;: &amp;#34;/path/to/odbc/driver&amp;#34;}}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;The driver path should be:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;/Library/simba/spark/lib/libsparkodbc_sbu.dylib&lt;/code&gt; (Mac OS)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;/opt/simba/spark/lib/64/libsparkodbc_sb64.so&lt;/code&gt; (Linux)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;For a connection to a SQL endpoint you need to use the HTTP path from the endpoint:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;{&amp;#34;connect_args&amp;#34;: {&amp;#34;http_path&amp;#34;: &amp;#34;/sql/1.0/endpoints/****&amp;#34;, &amp;#34;driver_path&amp;#34;: &amp;#34;/path/to/odbc/driver&amp;#34;}}
+&lt;/code&gt;&lt;/pre&gt;
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Dremio</title>
+      <link>/docs/integrations/database_guide/databases/dremio/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/integrations/database_guide/databases/dremio/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;dremio&#34;&gt;Dremio&lt;/h2&gt;
+&lt;p&gt;The recommended connector library for Dremio is
+&lt;a href=&#34;https://pypi.org/project/sqlalchemy-dremio/&#34;&gt;sqlalchemy_dremio&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The expected connection string for ODBC (Default port is 31010) is formatted as follows:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;dremio://{username}:{password}@{host}:{port}/{database_name}/dremio?SSL=1
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;The expected connection string for Arrow Flight (Dremio 4.9.1+. Default port is 32010) is formatted as follows:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;dremio+flight://{username}:{password}@{host}:{port}/dremio
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;This &lt;a href=&#34;https://www.dremio.com/tutorials/dremio-apache-Feris/&#34;&gt;blog post by Dremio&lt;/a&gt; has some
+additional helpful instructions on connecting StreamZero to Dremio.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Elasticsearch</title>
+      <link>/docs/integrations/database_guide/databases/elasticsearch/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/integrations/database_guide/databases/elasticsearch/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;elasticsearch&#34;&gt;Elasticsearch&lt;/h2&gt;
+&lt;p&gt;The recommended connector library for Elasticsearch is
+&lt;a href=&#34;https://github.com/preset-io/elasticsearch-dbapi&#34;&gt;elasticsearch-dbapi&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The connection string for Elasticsearch looks like this:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;elasticsearch+http://{user}:{password}@{host}:9200/
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;Using HTTPS&lt;/strong&gt;&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;elasticsearch+https://{user}:{password}@{host}:9200/
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Elasticsearch as a default limit of 10000 rows, so you can increase this limit on your cluster or
+set Feris’s row limit on config&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;ROW_LIMIT = 10000
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;You can query multiple indices on SQL Lab for example&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;SELECT timestamp, agent FROM &amp;#34;logstash&amp;#34;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;But, to use visualizations for multiple indices you need to create an alias index on your cluster&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;POST /_aliases
+{
+    &amp;#34;actions&amp;#34; : [
+        { &amp;#34;add&amp;#34; : { &amp;#34;index&amp;#34; : &amp;#34;logstash-**&amp;#34;, &amp;#34;alias&amp;#34; : &amp;#34;logstash_all&amp;#34; } }
+    ]
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Then register your table with the alias name logstasg_all&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Time zone&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;By default, StreamZero uses UTC time zone for elasticsearch query. If you need to specify a time zone,
+please edit your Database and enter the settings of your specified time zone in the Other &amp;gt; ENGINE PARAMETERS:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;{
+    &amp;#34;connect_args&amp;#34;: {
+        &amp;#34;time_zone&amp;#34;: &amp;#34;Asia/Shanghai&amp;#34;
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Another issue to note about the time zone problem is that before elasticsearch7.8, if you want to convert a string into a &lt;code&gt;DATETIME&lt;/code&gt; object,
+you need to use the &lt;code&gt;CAST&lt;/code&gt; function,but this function does not support our &lt;code&gt;time_zone&lt;/code&gt; setting. So it is recommended to upgrade to the version after elasticsearch7.8.
+After elasticsearch7.8, you can use the &lt;code&gt;DATETIME_PARSE&lt;/code&gt; function to solve this problem.
+The DATETIME_PARSE function is to support our &lt;code&gt;time_zone&lt;/code&gt; setting, and here you need to fill in your elasticsearch version number in the Other &amp;gt; VERSION setting.
+the StreamZero will use the &lt;code&gt;DATETIME_PARSE&lt;/code&gt; function for conversion.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Exasol</title>
+      <link>/docs/integrations/database_guide/databases/exasol/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/integrations/database_guide/databases/exasol/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;exasol&#34;&gt;Exasol&lt;/h2&gt;
+&lt;p&gt;The recommended connector library for Exasol is
+&lt;a href=&#34;https://github.com/exasol/sqlalchemy-exasol&#34;&gt;sqlalchemy-exasol&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The connection string for Exasol looks like this:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;exa+pyodbc://{username}:{password}@{hostname}:{port}/my_schema?CONNECTIONLCALL=en_US.UTF-8&amp;amp;driver=EXAODBC
+&lt;/code&gt;&lt;/pre&gt;
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Firebird</title>
+      <link>/docs/integrations/database_guide/databases/firebird/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/integrations/database_guide/databases/firebird/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;firebird&#34;&gt;Firebird&lt;/h2&gt;
+&lt;p&gt;The recommended connector library for Firebird is &lt;a href=&#34;https://pypi.org/project/sqlalchemy-firebird/&#34;&gt;sqlalchemy-firebird&lt;/a&gt;.
+StreamZero has been tested on &lt;code&gt;sqlalchemy-firebird&amp;gt;=0.7.0, &amp;lt;0.8&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;The recommended connection string is:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;firebird+fdb://{username}:{password}@{host}:{port}//{path_to_db_file}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Here&amp;rsquo;s a connection string example of StreamZero connecting to a local Firebird database:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;firebird+fdb://SYSDBA:masterkey@192.168.86.38:3050//Library/Frameworks/Firebird.framework/Versions/A/Resources/examples/empbuild/employee.fdb
+&lt;/code&gt;&lt;/pre&gt;
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Firebolt</title>
+      <link>/docs/integrations/database_guide/databases/firebolt/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/integrations/database_guide/databases/firebolt/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;firebolt&#34;&gt;Firebolt&lt;/h2&gt;
+&lt;p&gt;The recommended connector library for Firebolt is &lt;a href=&#34;https://pypi.org/project/firebolt-sqlalchemy/&#34;&gt;firebolt-sqlalchemy&lt;/a&gt;.
+StreamZero has been tested on &lt;code&gt;firebolt-sqlalchemy&amp;gt;=0.0.1&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;The recommended connection string is:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;firebolt://{username}:{password}@{database}
+or
+firebolt://{username}:{password}@{database}/{engine_name}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Here&amp;rsquo;s a connection string example of StreamZero connecting to a Firebolt database:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;firebolt://email@domain:password@sample_database
+or
+firebolt://email@domain:password@sample_database/sample_engine
+&lt;/code&gt;&lt;/pre&gt;
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Google BigQuery</title>
+      <link>/docs/integrations/database_guide/databases/bigquery/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/integrations/database_guide/databases/bigquery/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;google-bigquery&#34;&gt;Google BigQuery&lt;/h2&gt;
+&lt;p&gt;The recommended connector library for BigQuery is
+&lt;a href=&#34;https://github.com/mxmzdlv/pybigquery&#34;&gt;pybigquery&lt;/a&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;install-bigquery-driver&#34;&gt;Install BigQuery Driver&lt;/h3&gt;
+&lt;p&gt;Follow the steps &lt;a href=&#34;/docs/databases/docker-add-drivers&#34;&gt;here&lt;/a&gt; about how to
+install new database drivers when setting up StreamZero locally via docker-compose.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;echo &amp;#34;pybigquery&amp;#34; &amp;gt;&amp;gt; ./docker/requirements-local.txt
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;connecting-to-bigquery&#34;&gt;Connecting to BigQuery&lt;/h3&gt;
+&lt;p&gt;When adding a new BigQuery connection in StreamZero, you&amp;rsquo;ll need to add the GCP Service Account
+credentials file (as a JSON).&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Create your Service Account via the Google Cloud Platform control panel, provide it access to the
+appropriate BigQuery datasets, and download the JSON configuration file for the service account.&lt;/li&gt;
+&lt;li&gt;In StreamZero you can either upload that JSON or add the JSON blob in the following format (this should be the content of your credential JSON file):&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;{
+        &amp;#34;type&amp;#34;: &amp;#34;service_account&amp;#34;,
+        &amp;#34;project_id&amp;#34;: &amp;#34;...&amp;#34;,
+        &amp;#34;private_key_id&amp;#34;: &amp;#34;...&amp;#34;,
+        &amp;#34;private_key&amp;#34;: &amp;#34;...&amp;#34;,
+        &amp;#34;client_email&amp;#34;: &amp;#34;...&amp;#34;,
+        &amp;#34;client_id&amp;#34;: &amp;#34;...&amp;#34;,
+        &amp;#34;auth_uri&amp;#34;: &amp;#34;...&amp;#34;,
+        &amp;#34;token_uri&amp;#34;: &amp;#34;...&amp;#34;,
+        &amp;#34;auth_provider_x509_cert_url&amp;#34;: &amp;#34;...&amp;#34;,
+        &amp;#34;client_x509_cert_url&amp;#34;: &amp;#34;...&amp;#34;
+    }
+&lt;/code&gt;&lt;/pre&gt;&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;
+&lt;p&gt;Additionally, can connect via SQLAlchemy URI instead&lt;/p&gt;
+&lt;p&gt;The connection string for BigQuery looks like:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;bigquery://{project_id}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Go to the &lt;strong&gt;Advanced&lt;/strong&gt; tab, Add a JSON blob to the &lt;strong&gt;Secure Extra&lt;/strong&gt; field in the database configuration form with
+the following format:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;{
+&amp;#34;credentials_info&amp;#34;: &amp;lt;contents of credentials JSON file&amp;gt;
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;The resulting file should have this structure:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;{
+ &amp;#34;credentials_info&amp;#34;: {
+     &amp;#34;type&amp;#34;: &amp;#34;service_account&amp;#34;,
+     &amp;#34;project_id&amp;#34;: &amp;#34;...&amp;#34;,
+     &amp;#34;private_key_id&amp;#34;: &amp;#34;...&amp;#34;,
+     &amp;#34;private_key&amp;#34;: &amp;#34;...&amp;#34;,
+     &amp;#34;client_email&amp;#34;: &amp;#34;...&amp;#34;,
+     &amp;#34;client_id&amp;#34;: &amp;#34;...&amp;#34;,
+     &amp;#34;auth_uri&amp;#34;: &amp;#34;...&amp;#34;,
+     &amp;#34;token_uri&amp;#34;: &amp;#34;...&amp;#34;,
+     &amp;#34;auth_provider_x509_cert_url&amp;#34;: &amp;#34;...&amp;#34;,
+     &amp;#34;client_x509_cert_url&amp;#34;: &amp;#34;...&amp;#34;
+     }
+ }
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;You should then be able to connect to your BigQuery datasets.&lt;/p&gt;
+&lt;p&gt;To be able to upload CSV or Excel files to BigQuery in StreamZero, you&amp;rsquo;ll need to also add the
+&lt;a href=&#34;https://github.com/pydata/pandas-gbq&#34;&gt;pandas_gbq&lt;/a&gt; library.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Google Sheets</title>
+      <link>/docs/integrations/database_guide/databases/google-sheets/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/integrations/database_guide/databases/google-sheets/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;google-sheets&#34;&gt;Google Sheets&lt;/h2&gt;
+&lt;p&gt;Google Sheets has a very limited
+&lt;a href=&#34;https://developers.google.com/chart/interactive/docs/querylanguage&#34;&gt;SQL API&lt;/a&gt;. The recommended
+connector library for Google Sheets is &lt;a href=&#34;https://github.com/betodealmeida/shillelagh&#34;&gt;shillelagh&lt;/a&gt;.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Hana</title>
+      <link>/docs/integrations/database_guide/databases/hana/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/integrations/database_guide/databases/hana/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;hana&#34;&gt;Hana&lt;/h2&gt;
+&lt;p&gt;The recommended connector library is &lt;a href=&#34;https://github.com/SAP/sqlalchemy-hana&#34;&gt;sqlalchemy-hana&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The connection string is formatted as follows:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;hana://{username}:{password}@{host}:{port}
+&lt;/code&gt;&lt;/pre&gt;
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Hologres</title>
+      <link>/docs/integrations/database_guide/databases/hologres/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/integrations/database_guide/databases/hologres/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;hologres&#34;&gt;Hologres&lt;/h2&gt;
+&lt;p&gt;Hologres is a real-time interactive analytics service developed by Alibaba Cloud. It is fully compatible with PostgreSQL 11 and integrates seamlessly with the big data ecosystem.&lt;/p&gt;
+&lt;p&gt;Hologres sample connection parameters:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;User Name&lt;/strong&gt;: The AccessKey ID of your Alibaba Cloud account.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Password&lt;/strong&gt;: The AccessKey secret of your Alibaba Cloud account.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Database Host&lt;/strong&gt;: The public endpoint of the Hologres instance.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Database Name&lt;/strong&gt;: The name of the Hologres database.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Port&lt;/strong&gt;: The port number of the Hologres instance.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The connection string looks like:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;postgresql+psycopg2://{username}:{password}@{host}:{port}/{database}
+&lt;/code&gt;&lt;/pre&gt;
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: IBM DB2</title>
+      <link>/docs/integrations/database_guide/databases/ibm-db2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/integrations/database_guide/databases/ibm-db2/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;ibm-db2&#34;&gt;IBM DB2&lt;/h2&gt;
+&lt;p&gt;The &lt;a href=&#34;https://github.com/ibmdb/python-ibmdbsa/tree/master/ibm_db_sa&#34;&gt;IBM_DB_SA&lt;/a&gt; library provides a
+Python / SQLAlchemy interface to IBM Data Servers.&lt;/p&gt;
+&lt;p&gt;Here&amp;rsquo;s the recommended connection string:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;db2+ibm_db://{username}:{passport}@{hostname}:{port}/{database}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;There are two DB2 dialect versions implemented in SQLAlchemy. If you are connecting to a DB2 version without &lt;code&gt;LIMIT [n]&lt;/code&gt; syntax, the recommended connection string to be able to use the SQL Lab is:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;ibm_db_sa://{username}:{passport}@{hostname}:{port}/{database}
+&lt;/code&gt;&lt;/pre&gt;
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: IBM Netezza Performance Server</title>
+      <link>/docs/integrations/database_guide/databases/netezza/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/integrations/database_guide/databases/netezza/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;ibm-netezza-performance-server&#34;&gt;IBM Netezza Performance Server&lt;/h2&gt;
+&lt;p&gt;The &lt;a href=&#34;https://pypi.org/project/nzalchemy/&#34;&gt;nzalchemy&lt;/a&gt; library provides a
+Python / SQLAlchemy interface to IBM Netezza Performance Server (aka Netezza).&lt;/p&gt;
+&lt;p&gt;Here&amp;rsquo;s the recommended connection string:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;netezza+nzpy://{username}:{password}@{hostname}:{port}/{database}
+&lt;/code&gt;&lt;/pre&gt;
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Microsoft SQL Server</title>
+      <link>/docs/integrations/database_guide/databases/sql-server/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/integrations/database_guide/databases/sql-server/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;sql-server&#34;&gt;SQL Server&lt;/h2&gt;
+&lt;p&gt;The recommended connector library for SQL Server is &lt;a href=&#34;https://github.com/pymssql/pymssql&#34;&gt;pymssql&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The connection string for SQL Server looks like this:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;mssql+pymssql://&amp;lt;Username&amp;gt;:&amp;lt;Password&amp;gt;@&amp;lt;Host&amp;gt;:&amp;lt;Port-default:1433&amp;gt;/&amp;lt;Database Name&amp;gt;/?Encrypt=yes
+&lt;/code&gt;&lt;/pre&gt;
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: MySQL</title>
+      <link>/docs/integrations/database_guide/databases/mysql/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/integrations/database_guide/databases/mysql/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;mysql&#34;&gt;MySQL&lt;/h2&gt;
+&lt;p&gt;The recommended connector library for MySQL is &lt;a href=&#34;https://pypi.org/project/mysqlclient/&#34;&gt;mysqlclient&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Here&amp;rsquo;s the connection string:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;mysql://{username}:{password}@{host}/{database}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Host:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;For Localhost or Docker running Linux: &lt;code&gt;localhost&lt;/code&gt; or &lt;code&gt;127.0.0.1&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;For On Prem: IP address or Host name&lt;/li&gt;
+&lt;li&gt;For Docker running in OSX: &lt;code&gt;docker.for.mac.host.internal&lt;/code&gt;
+Port: &lt;code&gt;3306&lt;/code&gt; by default&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;One problem with &lt;code&gt;mysqlclient&lt;/code&gt; is that it will fail to connect to newer MySQL databases using &lt;code&gt;caching_sha2_password&lt;/code&gt; for authentication, since the plugin is not included in the client. In this case, you should use &lt;code&gt;[mysql-connector-python](https://pypi.org/project/mysql-connector-python/)&lt;/code&gt; instead:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;mysql+mysqlconnector://{username}:{password}@{host}/{database}
+&lt;/code&gt;&lt;/pre&gt;
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Oracle</title>
+      <link>/docs/integrations/database_guide/databases/oracle/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/integrations/database_guide/databases/oracle/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;oracle&#34;&gt;Oracle&lt;/h2&gt;
+&lt;p&gt;The recommended connector library is
+&lt;a href=&#34;https://cx-oracle.readthedocs.io/en/latest/user_guide/installation.html&#34;&gt;cx_Oracle&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The connection string is formatted as follows:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;oracle://&amp;lt;username&amp;gt;:&amp;lt;password&amp;gt;@&amp;lt;hostname&amp;gt;:&amp;lt;port&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Postgres</title>
+      <link>/docs/integrations/database_guide/databases/postgres/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/integrations/database_guide/databases/postgres/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;postgres&#34;&gt;Postgres&lt;/h2&gt;
+&lt;p&gt;Note that, if you&amp;rsquo;re using docker-compose, the Postgres connector library &lt;a href=&#34;https://www.psycopg.org/docs/&#34;&gt;psycopg2&lt;/a&gt;
+comes out of the box with Feris.&lt;/p&gt;
+&lt;p&gt;Postgres sample connection parameters:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;User Name&lt;/strong&gt;: UserName&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Password&lt;/strong&gt;: DBPassword&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Database Host&lt;/strong&gt;:
+&lt;ul&gt;
+&lt;li&gt;For Localhost: localhost or 127.0.0.1&lt;/li&gt;
+&lt;li&gt;For On Prem: IP address or Host name&lt;/li&gt;
+&lt;li&gt;For AWS Endpoint&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Database Name&lt;/strong&gt;: Database Name&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Port&lt;/strong&gt;: default 5432&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The connection string looks like:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;postgresql://{username}:{password}@{host}:{port}/{database}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;You can require SSL by adding &lt;code&gt;?sslmode=require&lt;/code&gt; at the end:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;postgresql://{username}:{password}@{host}:{port}/{database}?sslmode=require
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;You can read about the other SSL modes that Postgres supports in
+&lt;a href=&#34;https://www.postgresql.org/docs/9.1/libpq-ssl.html&#34;&gt;Table 31-1 from this documentation&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;More information about PostgreSQL connection options can be found in the
+&lt;a href=&#34;https://docs.sqlalchemy.org/en/13/dialects/postgresql.html#module-sqlalchemy.dialects.postgresql.psycopg2&#34;&gt;SQLAlchemy docs&lt;/a&gt;
+and the
+&lt;a href=&#34;https://www.postgresql.org/docs/9.1/libpq-connect.html#LIBPQ-PQCONNECTDBPARAMS&#34;&gt;PostgreSQL docs&lt;/a&gt;.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Presto</title>
+      <link>/docs/integrations/database_guide/databases/presto/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/integrations/database_guide/databases/presto/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;presto&#34;&gt;Presto&lt;/h2&gt;
+&lt;p&gt;The &lt;a href=&#34;https://pypi.org/project/PyHive/&#34;&gt;pyhive&lt;/a&gt; library is the recommended way to connect to Presto through SQLAlchemy.&lt;/p&gt;
+&lt;p&gt;The expected connection string is formatted as follows:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;presto://{hostname}:{port}/{database}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;You can pass in a username and password as well:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;presto://{username}:{password}@{hostname}:{port}/{database}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Here is an example connection string with values:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;presto://datascientist:securepassword@presto.example.com:8080/hive
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;By default StreamZero assumes the most recent version of Presto is being used when querying the
+datasource. If you’re using an older version of Presto, you can configure it in the extra parameter:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;{
+    &amp;#34;version&amp;#34;: &amp;#34;0.123&amp;#34;
+}
+&lt;/code&gt;&lt;/pre&gt;
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Rockset</title>
+      <link>/docs/integrations/database_guide/databases/rockset/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/integrations/database_guide/databases/rockset/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;rockset&#34;&gt;Rockset&lt;/h2&gt;
+&lt;p&gt;The connection string for Rockset is:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;rockset://apikey:{your-apikey}@api.rs2.usw2.rockset.com/
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;For more complete instructions, we recommend the &lt;a href=&#34;https://docs.rockset.com/apache-Feris/&#34;&gt;Rockset documentation&lt;/a&gt;.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Snowflake</title>
+      <link>/docs/integrations/database_guide/databases/snowflake/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/integrations/database_guide/databases/snowflake/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;snowflake&#34;&gt;Snowflake&lt;/h2&gt;
+&lt;p&gt;The recommended connector library for Snowflake is
+&lt;a href=&#34;https://pypi.org/project/snowflake-sqlalchemy/1.2.4/&#34;&gt;snowflake-sqlalchemy&lt;/a&gt;&amp;lt;=1.2.4.&lt;/p&gt;
+&lt;p&gt;The connection string for Snowflake looks like this:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;snowflake://{user}:{password}@{account}.{region}/{database}?role={role}&amp;amp;warehouse={warehouse}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;The schema is not necessary in the connection string, as it is defined per table/query. The role and
+warehouse can be omitted if defaults are defined for the user, i.e.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;snowflake://{user}:{password}@{account}.{region}/{database}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Make sure the user has privileges to access and use all required
+databases/schemas/tables/views/warehouses, as the Snowflake SQLAlchemy engine does not test for
+user/role rights during engine creation by default. However, when pressing the “Test Connection”
+button in the Create or Edit Database dialog, user/role credentials are validated by passing
+“validate_default_parameters”: True to the connect() method during engine creation. If the user/role
+is not authorized to access the database, an error is recorded in the StreamZero logs.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Teradata</title>
+      <link>/docs/integrations/database_guide/databases/teradata/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/integrations/database_guide/databases/teradata/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;teradata&#34;&gt;Teradata&lt;/h2&gt;
+&lt;p&gt;The recommended connector library is
+&lt;a href=&#34;https://pypi.org/project/teradatasqlalchemy/&#34;&gt;teradatasqlalchemy&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The connection string for Teradata looks like this:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;teradata://{user}:{password}@{host}
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;odbc-driver&#34;&gt;ODBC Driver&lt;/h2&gt;
+&lt;p&gt;There&amp;rsquo;s also an older connector named
+&lt;a href=&#34;https://github.com/Teradata/sqlalchemy-teradata&#34;&gt;sqlalchemy-teradata&lt;/a&gt; that
+requires the installation of ODBC drivers. The Teradata ODBC Drivers
+are available
+here: &lt;a href=&#34;https://downloads.teradata.com/download/connectivity/odbc-driver/linux&#34;&gt;https://downloads.teradata.com/download/connectivity/odbc-driver/linux&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Here are the required environment variables:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;export ODBCINI=/.../teradata/client/ODBC_64/odbc.ini
+export ODBCINST=/.../teradata/client/ODBC_64/odbcinst.ini
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;We recommend using the first library because of the
+lack of requirement around ODBC drivers and
+because it&amp;rsquo;s more regularly updated.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Trino</title>
+      <link>/docs/integrations/database_guide/databases/trino/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/integrations/database_guide/databases/trino/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;trino&#34;&gt;Trino&lt;/h2&gt;
+&lt;p&gt;Supported trino version 352 and higher&lt;/p&gt;
+&lt;p&gt;The &lt;a href=&#34;https://pypi.org/project/sqlalchemy-trino/&#34;&gt;sqlalchemy-trino&lt;/a&gt; library is the recommended way to connect to Trino through SQLAlchemy.&lt;/p&gt;
+&lt;p&gt;The expected connection string is formatted as follows:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;trino://{username}:{password}@{hostname}:{port}/{catalog}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;If you are running trino with docker on local machine please use the following connection URL&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;trino://trino@host.docker.internal:8080
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Reference:
+&lt;a href=&#34;https://trino.io/episodes/12.html&#34;&gt;Trino-Feris-Podcast&lt;/a&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Vertica</title>
+      <link>/docs/integrations/database_guide/databases/vertica/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/integrations/database_guide/databases/vertica/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;vertica&#34;&gt;Vertica&lt;/h2&gt;
+&lt;p&gt;The recommended connector library is
+&lt;a href=&#34;https://pypi.org/project/sqlalchemy-vertica-python/&#34;&gt;sqlalchemy-vertica-python&lt;/a&gt;. The
+&lt;a href=&#34;http://www.vertica.com/&#34;&gt;Vertica&lt;/a&gt; connection parameters are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;User Name:&lt;/strong&gt; UserName&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Password:&lt;/strong&gt; DBPassword&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Database Host:&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;For Localhost : localhost or 127.0.0.1&lt;/li&gt;
+&lt;li&gt;For On Prem : IP address or Host name&lt;/li&gt;
+&lt;li&gt;For Cloud: IP Address or Host Name&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Database Name:&lt;/strong&gt; Database Name&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Port:&lt;/strong&gt; default 5433&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The connection string is formatted as follows:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;vertica+vertica_python://{username}:{password}@{host}/{database}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Other parameters:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Load Balancer - Backup Host&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: YugabyteDB</title>
+      <link>/docs/integrations/database_guide/databases/yugabytedb/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/integrations/database_guide/databases/yugabytedb/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;yugabytedb&#34;&gt;YugabyteDB&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.yugabyte.com/&#34;&gt;YugabyteDB&lt;/a&gt; is a distributed SQL database built on top of PostgreSQL.&lt;/p&gt;
+&lt;p&gt;Note that, if you&amp;rsquo;re using docker-compose, the
+Postgres connector library &lt;a href=&#34;https://www.psycopg.org/docs/&#34;&gt;psycopg2&lt;/a&gt;
+comes out of the box with StreamZero.&lt;/p&gt;
+&lt;p&gt;The connection string looks like:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;postgresql://{username}:{password}@{host}:{port}/{database}
+&lt;/code&gt;&lt;/pre&gt;
+      </description>
+    </item>
+    
+  </channel>
+</rss>

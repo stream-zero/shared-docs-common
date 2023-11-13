@@ -1,0 +1,221 @@
+databases:
+- name: amazon athena
+  description: Amazon Athena is a serverless, interactive query service to query data and analyze big data in Amazon S3 using standard SQL. 
+  learn_more_href: /docs/integrations/database_guide/databases/athena/
+  icon: amazon_athena.png
+  tags:
+    - serverless
+    - sql
+    - query
+- name: amazon redshift
+  description: Amazon Redshift is a data warehouse product which forms part of the larger cloud-computing platform Amazon Web Services. It is built on top of technology from the massive parallel processing data warehouse company ParAccel, to handle large scale data sets and database migrations.
+  learn_more_href: /docs/integrations/database_guide/databases/redshift/
+  icon: amazon_redshift.png
+  tags:
+- name: apache drill
+  description: Apache Drill is an open-source software framework that supports data-intensive distributed applications for interactive analysis of large-scale datasets.
+  learn_more_href: /docs/integrations/database_guide/databases/drill/
+  icon: apache_drill.png
+  tags:
+- name: apache druid
+  description: Druid is a column-oriented, open-source, distributed data store written in Java. Druid is designed to quickly ingest massive quantities of event data, and provide low-latency queries on top of the data.
+  learn_more_href: /docs/integrations/database_guide/databases/druid/
+  icon: apache_druid.png
+  tags:
+- name: apache hive
+  description: Apache Hive is a data warehouse software project built on top of Apache Hadoop for providing data query and analysis. Hive gives an SQL-like interface to query data stored in various databases and file systems that integrate with Hadoop.
+  learn_more_href: /docs/integrations/database_guide/databases/hive/
+  icon: apache_hive.png
+  tags:
+    - sql
+- name: apache impala
+  description: Apache Impala is an open source massively parallel processing SQL query engine for data stored in a computer cluster running Apache Hadoop. Impala has been described as the open-source equivalent of Google F1, which inspired its development in 2012.
+  learn_more_href: /docs/integrations/database_guide/databases/impala/
+  icon: apache_impala.png
+  tags:
+- name: apache kylin
+  description: Apache Kylin is an open source distributed analytics engine designed to provide a SQL interface and multi-dimensional analysis on Hadoop and Alluxio supporting extremely large datasets. It was originally developed by eBay, and is now a project of the Apache Software Foundation. 
+  learn_more_href: /docs/integrations/database_guide/databases/kylin/
+  icon: apache_kylin.png
+  tags:
+- name: apache pinot
+  description: Apache Pinot is a column-oriented, open-source, distributed data store written in Java. Pinot is designed to execute OLAP queries with low latency. It is suited in contexts where fast analytics, such as aggregations, are needed on immutable data, possibly, with real-time data ingestion.
+  learn_more_href: /docs/integrations/database_guide/databases/pinot/
+  icon: apache_pinot.png
+  tags:
+- name: apache solr
+  description: Solr is an open-source enterprise-search platform, written in Java. Its major features include full-text search, hit highlighting, faceted search, real-time indexing, dynamic clustering, database integration, NoSQL features and rich document handling.
+  learn_more_href: /docs/integrations/database_guide/databases/solr/
+  icon: apache_solr.png
+  tags:
+- name: apache spark sql
+  description: Spark SQL brings native support for SQL to Spark and streamlines the process of querying data stored both in RDDs (Spark's distributed datasets) and in external sources.
+  learn_more_href: /docs/integrations/database_guide/databases/spark-sql/
+  icon: apache_spark_sql.png
+  tags:
+- name: ascend
+  description: Experience continuously optimized data pipelines with less code and breakages. Enter the new era of data engineering with Ascend.
+  learn_more_href: /docs/integrations/database_guide/databases/ascend/
+  icon: ascend_io.png
+  tags:
+    - analytics
+    - data engineering
+- name: clickhouse
+  description: ClickHouse is an open-source column-oriented DBMS for online analytical processing that allows users to generate analytical reports using SQL queries in real-time.
+  learn_more_href: /docs/integrations/database_guide/databases/clickhouse/
+  icon: clickhouse.png
+  tags:
+    - sql
+    - queries
+    - real-time
+    - analytics
+    - data
+    - reports
+- name: cockroachdb
+  description: CockroachDB is a distributed database with standard SQL for cloud applications.
+  learn_more_href: docs/integrations/database_guide/databases/cockroachdb/
+  icon: cockroach_db.png
+  tags:
+    - serverless
+    - sql
+    - automation
+- name: cratedb
+  description: CrateDB is a distributed SQL database management system that integrates a fully searchable document-oriented data store. It is open-source, written in Java, based on a shared-nothing architecture, and designed for high scalability.
+  learn_more_href: /docs/integrations/database_guide/databases/cratedb/
+  icon: crate_db.png
+  tags:
+    - distributed
+    - sql
+- name: databricks sql
+  description: Databricks is an American enterprise software company founded by the creators of Apache Spark. Databricks develops a web-based platform for working with Spark, that provides automated cluster management and IPython-style notebooks.
+  learn_more_href: /docs/integrations/database_guide/databases/databricks/
+  icon: databricks.png
+  tags:
+    - multicloud
+    - lakehouse
+    - sql
+- name: dremio
+  description: Dremio is a high-performance SQL (data) lakehouse platform built on an open data architecture that helps to accelerate BI and Analytics directly on cloud data lake storage.
+  learn_more_href: /docs/integrations/database_guide/databases/dremio/
+  icon: dremio.png
+  tags:
+    - sql
+    - lakehouse
+- name: elasticsearch
+  description: Elasticsearch is a search engine based on the Lucene library. It provides a distributed, multitenant-capable full-text search engine with an HTTP web interface and schema-free JSON documents.
+  learn_more_href: /docs/integrations/database_guide/databases/elasticsearch/
+  icon: elasticsearch.png
+  tags:
+    - search
+    - analytics
+- name: Exasol
+  description: Exasol is an analytics database management software company. Its product is called Exasol, an in-memory, column-oriented, relational database management system.
+  learn_more_href: /docs/integrations/database_guide/databases/exasol/
+  icon: exasol.png
+  tags:
+    - warehouse
+- name: firebird
+  description: Firebird is an open-source SQL relational database management system that "runs on Linux, Microsoft Windows, macOS and several Unix platforms".
+  learn_more_href: /docs/integrations/database_guide/databases/firebird/
+  icon: firebird.png
+  tags:
+- name: firebolt
+  description: Firebolt is a Cloud Data Warehousing solution that helps its users streamline their Data Analytics and access to insights. It offers fast query performance and combines Elasticity, Simplicity, Low cost of the Cloud, and innovation in Analytics.
+  learn_more_href: /docs/integrations/database_guide/databases/firebolt/
+  icon: firebolt.png
+  tags:
+- name: google bigquery
+  description: BigQuery is a fully managed enterprise data warehouse that helps you manage and analyze your data with built-in features like machine learning, geospatial analysis, and business intelligence. 
+  learn_more_href: /docs/integrations/database_guide/databases/bigquery/
+  icon: google_big_query.png
+  tags:
+    - serverless
+    - data 
+    - warehouse
+- name: google sheets
+  description: Google Sheets is a cloud-based app with advanced capabilities of spreadsheets. It can also be utilized as a database for websites or small applications. Most organizations use it instead of other heavily-priced databases such as PostgreSQL, MySQL, etc., for storing and managing data in real-time
+  learn_more_href: /docs/integrations/database_guide/databases/google-sheets/
+  icon: google_sheets.png
+  tags:
+- name: sap hana
+  description: SAP HANA in-memory database is for transactional and analytical workloads with any data type — on a single data copy.
+  learn_more_href: /docs/integrations/database_guide/databases/hana/
+  icon: hana.png
+  tags:
+- name: hologres
+  description: Hologres is a cloud-native Hybrid Serving & Analytical Processing (HSAP) system that is seamlessly integrated with the big data ecosystem.
+  learn_more_href: /docs/integrations/database_guide/databases/hologres/
+  icon: hologres.png
+  tags:
+- name: ibm db2
+  description: Db2 is a family of data management products, including database servers, developed by IBM. They initially supported the relational model, but were extended to support object–relational features and non-relational structures like JSON and XML.
+  learn_more_href: /docs/integrations/database_guide/databases/ibm-db2/
+  icon: ibm_db2.png
+  tags:
+- name: ibm netezza performance server
+  description: IBM® Netezza® Performance Server for IBM Cloud Pak® for Data is an advanced data warehouse and analytics platform available both on premises and on cloud.
+  learn_more_href: /docs/integrations/database_guide/databases/netezza/
+  icon: ibm_netezza.png
+  tags:
+- name: microsoft sql server
+  description: Microsoft SQL Server is a relational database management system developed by Microsoft. As a database server, it is a software product with the primary function of storing and retrieving data as requested by other software applications
+  learn_more_href: /docs/integrations/database_guide/databases/sql-server/
+  icon: microsoft_sql_server.png
+  tags:
+- name: mysql
+  description: MySQL is a relational database management system (RDBMS) developed by Oracle that is based on structured query language (SQL).
+  learn_more_href: /docs/integrations/database_guide/databases/mysql/
+  icon: mysql.png
+  tags:
+- name: oracle
+  description: Oracle Database is the first database designed for enterprise grid computing, the most flexible and cost effective way to manage information and applications.
+  learn_more_href: /docs/integrations/database_guide/databases/oracle/
+  icon: oracle.png
+  tags:
+- name: postgresql
+  description: PostgreSQL is a powerful, open source object-relational database system with over 30 years of active development that has earned it a strong reputation for reliability.
+  learn_more_href: /docs/integrations/database_guide/databases/postgres/
+  icon: postgresql.png
+  tags:
+    - sql
+- name: presto
+  description: Presto (or PrestoDB) is an open source, distributed SQL query engine, designed from the ground up for fast analytic queries against data of any size.
+  learn_more_href: /docs/integrations/database_guide/databases/presto/
+  icon: prestodb.png
+  tags:
+- name: rockset
+  description: Rockset is a real-time analytics database for serving fast analytics at scale, enabling developers to build modern data apps in record time.
+  learn_more_href: /docs/integrations/database_guide/databases/rockset/
+  icon: rockset.png
+  tags:
+- name: snowflake
+  description: Snowflake is a data-warehousing platform. Snowflake provides an enterprise solution that makes the gathering, processing, using big data easy.
+  learn_more_href: /docs/integrations/database_guide/databases/snowflake/
+  icon: snowflake.png
+  tags:
+- name: teradata
+  description: Teradata Vantage is the connected multi-cloud data platform for enterprise analytics that delivers actionable answers and predictive intelligence.
+  learn_more_href: /docs/integrations/database_guide/databases/teradata/
+  icon: teradata.png
+  tags:
+- name: trino
+  description: Trino is an ANSI SQL compliant query engine, that works with BI tools such as R, Tableau, Power BI and many others.								
+  learn_more_href: /docs/integrations/database_guide/databases/trino/
+  icon: trino.png
+  tags:
+- name: vertica
+  description: Vertica provides a best-in-class, unified analytics platform that will forever be independent from underlying infrastructure.
+  learn_more_href: /docs/integrations/database_guide/databases/vertica/
+  icon: vertica.png
+  tags:
+- name: yugabytedb
+  description: YugabyteDB is a high-performance transactional distributed SQL database for cloud-native applications
+  learn_more_href: /docs/integrations/database_guide/databases/yugabytedb/
+  icon: yugabytedb.png
+  tags:
+
+# name:
+# description:
+# learn_more_href: /learn-more
+# icon: ferris_labs_red.png
+# tags:

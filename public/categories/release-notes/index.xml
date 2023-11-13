@@ -1,0 +1,214 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>GridMine – Release Notes</title>
+    <link>/categories/release-notes/</link>
+    <description>Recent content in Release Notes on GridMine</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    
+	  <atom:link href="/categories/release-notes/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Docs: Release 1.0.2</title>
+      <link>/docs/release_notes/release-notes-1.0.2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/release_notes/release-notes-1.0.2/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;new-img-srcimagesadded_bluepng-altadded_blue-stylezoom25-&#34;&gt;New &lt;img src=&#34;/images/added_blue.png&#34; alt=&#34;added_blue&#34; style=&#34;zoom:25%;&#34; /&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; The new &lt;strong&gt;Services Overview&lt;/strong&gt; is a useful page to monitor and manage all platform services.&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; The &lt;strong&gt;Configuration Manager&lt;/strong&gt; is a central point to manage configurations for all deployed services.&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; The &lt;strong&gt;Executor Framework&lt;/strong&gt; is a powerful new utility that enables creating, orchestrating, sequencing and running of pretty much any combination of jobs and services.&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; With the &lt;strong&gt;Job Scheduler&lt;/strong&gt; we have added a newly embedded console for scheduling, running and monitoring jobs, without the need of embedding third-party job scheduler.&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; We have introduced a new &lt;strong&gt;Workflow Manager&lt;/strong&gt; to support the building of processes, including four-eye reviews, approval chains and quality gates.&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; We have integrated our &lt;strong&gt;Slack Support Channel&lt;/strong&gt; into the Control Center menu so that you can contact us directly and easily with your questions.&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; To get quicker access to the most frequently used services and components we&amp;rsquo;ve  built a list of &lt;strong&gt;Platform Services links&lt;/strong&gt; and placed them into the Control Center navigation.&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; We have added a new &lt;strong&gt;File Storage&lt;/strong&gt; capability for creating and uploading files and managing buckets.&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Introduced a new &lt;strong&gt;User Interface&lt;/strong&gt; and &lt;strong&gt;Navigation&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Made important improvements of &lt;strong&gt;Access Rights Management&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;changed-img-srcimageschanged_yellowpng-altchanged_yellow-stylezoom25-&#34;&gt;Changed &lt;img src=&#34;/images/changed_yellow.png&#34; alt=&#34;changed_yellow&#34; style=&#34;zoom:25%;&#34; /&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;no changes to report&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;improved-img-srcimagesimproved_greenpng-altimproved_green-stylezoom25-&#34;&gt;Improved &lt;img src=&#34;/images/improved_green.png&#34; alt=&#34;improved_green&#34; style=&#34;zoom:25%;&#34; /&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; We have improved the Files Manager and in particular &lt;strong&gt;Files Onboarding Monitor&lt;/strong&gt; to embed user credentials and therefore to make the files uploading and management more user specific.&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; We have taken further strides to streamline and simplify the &lt;strong&gt;User Management&lt;/strong&gt;. Creating users and assign their own secured container (working space) is now fully automated - albeit not yet self-service&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;fixed-img-srcimagesfixed_redpng-altfixed_red-stylezoom25-&#34;&gt;Fixed &lt;img src=&#34;/images/fixed_red.png&#34; alt=&#34;fixed_red&#34; style=&#34;zoom:25%;&#34; /&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;no fixes to report&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Release 1.0.3</title>
+      <link>/docs/release_notes/release-notes-1.0.3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/release_notes/release-notes-1.0.3/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;new-img-srcimagesadded_bluepng-altadded_blue-stylezoom25-&#34;&gt;New &lt;img src=&#34;/images/added_blue.png&#34; alt=&#34;added_blue&#34; style=&#34;zoom:25%;&#34; /&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; We have introduced a &lt;strong&gt;Tagging&lt;/strong&gt; capability, which enables users to tag almost any data element on the platform making it easy and user friendly to navigate through the application and find items.&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; The &lt;strong&gt;Checks Framework&lt;/strong&gt; greatly improves the data quality monitoring around any kind of data sources, data types and event types.&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; The &lt;strong&gt;Topics &amp;amp; Consumer Monitor&lt;/strong&gt; listens in on Kafka and provides an up-to-the-second view of data sourcing and streaming.&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; New &lt;strong&gt;Service Logs&lt;/strong&gt; can be used to track all services running within the network as well as their logs and events that occur between them. Each log or event have their own data stored within elasticsearch and can be filtered by numerous fields.&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;strong&gt;Jupyter Auto Deploy&lt;/strong&gt; makes the onboarding of new users even faster and self-serviced.&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;strong&gt;Events&lt;/strong&gt; are stored and managed in the new Event Registry.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;changed-img-srcimageschanged_yellowpng-altchanged_yellow-stylezoom25-&#34;&gt;Changed &lt;img src=&#34;/images/changed_yellow.png&#34; alt=&#34;changed_yellow&#34; style=&#34;zoom:25%;&#34; /&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;no changes to report&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;improved-img-srcimagesimproved_greenpng-altimproved_green-stylezoom25-&#34;&gt;Improved &lt;img src=&#34;/images/improved_green.png&#34; alt=&#34;improved_green&#34; style=&#34;zoom:25%;&#34; /&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; We have improved elements of the &lt;strong&gt;Security and Access Rights Management&lt;/strong&gt; in the areas of User and Access Management (Keycloak), Certificates Management as well as Authentication and Authorization (OpenID). Each role has its own set of permissions, which makes it possible to restrict users access to specific areas of the platform based on their role.&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Parametrised &lt;strong&gt;Workflows&lt;/strong&gt; can be defined with by users with easy json files by following a specific set of rules. Complex use cases are supported such as chaining multiple actions one by another and having control over what happens in a different scenarios. Built in approval capability for each workflow action is supported and easy to implement by default.&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; The new &lt;strong&gt;StreamZero Executor&lt;/strong&gt; has become even better and more powerful. Add any Python, SQL or JSON to execute any type of jobs.&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; The &lt;strong&gt;Scheduler&lt;/strong&gt; is now fully embedded with the Executor.&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;strong&gt;Files Upload&lt;/strong&gt; has improved and is integrated with the Workflow and Approvals functionality. Files have type specific validation and are stored in different buckets. Bucket creation can be done within the same FAB module.&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; The &lt;strong&gt;StreamZero Application Builder (FAB)&lt;/strong&gt; is now capable of auto generating new pages (UI) on the fly.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;fixed-img-srcimagesfixed_redpng-altfixed_red-stylezoom25-&#34;&gt;Fixed &lt;img src=&#34;/images/fixed_red.png&#34; alt=&#34;fixed_red&#34; style=&#34;zoom:25%;&#34; /&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;no fixes to report&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Release 1.0.4</title>
+      <link>/docs/release_notes/release-notes-1.0.4/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/release_notes/release-notes-1.0.4/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;new-img-srcimagesadded_bluepng-altadded_blue-stylezoom25-&#34;&gt;New &lt;img src=&#34;/images/added_blue.png&#34; alt=&#34;added_blue&#34; style=&#34;zoom:25%;&#34; /&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; We have collected our growing list StreamZero APIs and documented them in a Service Inventory.&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Introduced &lt;strong&gt;Projects&lt;/strong&gt; as a new concept, enabling the of grouping of like processes as well as the security based segregation of them.&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Integrated StreamZero with Voilà, turning Jupyter notebooks into standalone web applications.&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Live logs are there, providing real-time log data.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;changed-img-srcimageschanged_yellowpng-altchanged_yellow-stylezoom25-&#34;&gt;Changed &lt;img src=&#34;/images/changed_yellow.png&#34; alt=&#34;changed_yellow&#34; style=&#34;zoom:25%;&#34; /&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;no changes to report&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;improved-img-srcimagesimproved_greenpng-altimproved_green-stylezoom25-&#34;&gt;Improved &lt;img src=&#34;/images/improved_green.png&#34; alt=&#34;improved_green&#34; style=&#34;zoom:25%;&#34; /&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; The &lt;strong&gt;self-service onboarding&lt;/strong&gt; has received further improvement. The onboarding flow as well as the corresponding documentation have been made even easier to follow.&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; The &lt;strong&gt;FAB&lt;/strong&gt; (StreamZero Application Builder) has improved in the area performance.&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; We have linked &lt;strong&gt;Minio&lt;/strong&gt; to the FAB UI, API and Database.&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; The &lt;strong&gt;Executor&lt;/strong&gt; framework is being continuosly improved.&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Tags have been implemented across all StreamZero components.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;fixed-img-srcimagesfixed_redpng-altfixed_red-stylezoom25-&#34;&gt;Fixed &lt;img src=&#34;/images/fixed_red.png&#34; alt=&#34;fixed_red&#34; style=&#34;zoom:25%;&#34; /&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; A number of general bug fixes have been implement.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Release 2.0.1</title>
+      <link>/docs/release_notes/release-notes-2.0.1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/release_notes/release-notes-2.0.1/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;new-img-srcimagesadded_bluepng-altadded_blue-stylezoom25-&#34;&gt;New &lt;img src=&#34;/images/added_blue.png&#34; alt=&#34;added_blue&#34; style=&#34;zoom:25%;&#34; /&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; We have introduced the &lt;strong&gt;Simple StreamZero Dashboard&lt;/strong&gt; (Landing Page/Dashboard) developed in ReactJS to provide insights and analytics around typical platform related metrics mostly related to Data Ops and detailed event handling. It can be finetuned and tailored to customer specific needs. The details can be found under the &lt;a href=&#34;/docs/user-guide/landing_page/&#34; title=&#34;LandingPage&#34;&gt;Landing Page(Dashboard)&lt;/a&gt; subcategory in the User Guide.&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; The first version of the &lt;strong&gt;Open API REST Server - Generator&lt;/strong&gt; has been built which can be used for generating standardised REST APIs from the OpenAPI specification.&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Created &lt;strong&gt;Dashboard API&lt;/strong&gt; which is used for feeding various charts on &lt;strong&gt;StreamZero Dashboard&lt;/strong&gt; including statistics for Executions by status, trigger type, average time of executions, number of executions per package etc.&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Introduction of &lt;strong&gt;manifest.json&lt;/strong&gt; files which can be uploaded with a package and used to define package execution entrypoint (name of the script that will be executed), order of scripts execution, schedule, tags, trigger event, etc.&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Added &lt;strong&gt;Execution Context&lt;/strong&gt; to ferris_ef package which is accessible to any .py script at runtime and can be used for fetching configuration, secrets, parameters, information of the executing package and for manipulating the package state.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;changed-img-srcimageschanged_yellowpng-altchanged_yellow-stylezoom25-&#34;&gt;Changed &lt;img src=&#34;/images/changed_yellow.png&#34; alt=&#34;changed_yellow&#34; style=&#34;zoom:25%;&#34; /&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;strong&gt;PostgreSQL wrapper&lt;/strong&gt; was added to &lt;strong&gt;StreamZero CLI&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;improved-img-srcimagesimproved_greenpng-altimproved_green-stylezoom25-&#34;&gt;Improved &lt;img src=&#34;/images/improved_green.png&#34; alt=&#34;improved_green&#34; style=&#34;zoom:25%;&#34; /&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Overall performance of the UI was enhanced&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;fixed-img-srcimagesfixed_redpng-altfixed_red-stylezoom25-&#34;&gt;Fixed &lt;img src=&#34;/images/fixed_red.png&#34; alt=&#34;fixed_red&#34; style=&#34;zoom:25%;&#34; /&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Synchronisation of Git Repositories that contain empty packages&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Release 2.0.2</title>
+      <link>/docs/release_notes/release-notes-2.0.2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/release_notes/release-notes-2.0.2/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;new-img-srcimagesadded_bluepng-altadded_blue-stylezoom25-&#34;&gt;New &lt;img src=&#34;/images/added_blue.png&#34; alt=&#34;added_blue&#34; style=&#34;zoom:25%;&#34; /&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Introduction of &lt;strong&gt;Secrets Management UI &amp;amp; API&lt;/strong&gt; that can be used for securely storing and accessing secrets on the Platform and Project level.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;changed-img-srcimageschanged_yellowpng-altchanged_yellow-stylezoom25-&#34;&gt;Changed &lt;img src=&#34;/images/changed_yellow.png&#34; alt=&#34;changed_yellow&#34; style=&#34;zoom:25%;&#34; /&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Re-enabling of the Project/Package/Git Repository/Execution &lt;strong&gt;deletion feature&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;strong&gt;Version 2 of ferris_cli package&lt;/strong&gt; published to public Pypi repository.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;improved-img-srcimagesimproved_greenpng-altimproved_green-stylezoom25-&#34;&gt;Improved &lt;img src=&#34;/images/improved_green.png&#34; alt=&#34;improved_green&#34; style=&#34;zoom:25%;&#34; /&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;strong&gt;Executor fx_ef package&lt;/strong&gt; adjusted for local development.&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Various changes on the &lt;strong&gt;StreamZero UI&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;fixed-img-srcimagesfixed_redpng-altfixed_red-stylezoom25-&#34;&gt;Fixed &lt;img src=&#34;/images/fixed_red.png&#34; alt=&#34;fixed_red&#34; style=&#34;zoom:25%;&#34; /&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; no fixes to report&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

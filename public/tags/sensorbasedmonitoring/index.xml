@@ -1,0 +1,87 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>GridMine – sensorbasedmonitoring</title>
+    <link>/tags/sensorbasedmonitoring/</link>
+    <description>Recent content in sensorbasedmonitoring on GridMine</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    
+	  <atom:link href="/tags/sensorbasedmonitoring/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Docs: Sensor-based Monitoring of Sensitive Goods</title>
+      <link>/docs/solutions/007-sensor-based-monitoring-of-sensitive-goods/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/solutions/007-sensor-based-monitoring-of-sensitive-goods/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;sensor-based-monitoring-of-sensitive-goods&#34;&gt;Sensor-based Monitoring of Sensitive Goods&lt;/h2&gt;
+&lt;h3 id=&#34;executive-summary&#34;&gt;Executive summary&lt;/h3&gt;
+&lt;p&gt;Sensor-based monitoring of sensitive goods along the transport chain (location, light, temperature, humidity &amp;amp; shocks in one sensor) and integration of these IoT components in a smart and decentralized cloud including the event-controlled connection to the relevant peripheral systems.&lt;/p&gt;
+&lt;h3 id=&#34;problem-statement&#34;&gt;Problem statement&lt;/h3&gt;
+&lt;p&gt;One of the biggest problems that exist in supply chain management is the lack of visibility and control once materials have left the site or warehouse. This leads to billions in losses due to missing or damaged products and leads to business inefficiency.&lt;/p&gt;
+&lt;h3 id=&#34;target-market--industries&#34;&gt;Target market / Industries&lt;/h3&gt;
+&lt;p&gt;The use case can be applied for the following solutions:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Intelligent packaging&lt;/li&gt;
+&lt;li&gt;Intelligent logistics&lt;/li&gt;
+&lt;li&gt;Industrial applications – Industry 4.0&lt;/li&gt;
+&lt;li&gt;Consumer and luxury goods&lt;/li&gt;
+&lt;li&gt;Home protection&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;solution&#34;&gt;Solution&lt;/h3&gt;
+&lt;p&gt;A small-size energy-autonomous intelligent cells (microelectronic parts) are integrated into any object / package to enable remain in contact to it, identify it electronically, provide a location and sense temperature, pressure, movement, light, and more. They are intelligent, able to make basic decisions and save small information pieces.
+The cells communicate bidirectionally with the software through global IoT networks of our partners selecting the best energy-efficient technologies available where they are and building a neuronal backbone of objects in constant communication.
+Bidirectional capabilities allow transmitting data of the sensors and receiving instructions and updates remotely.
+Cells can also interact with the electronics of the objects they are attached to, they can read and transmit any parameters and providing remote control of them wherever they are.
+All data of the cells are transmitted to our own cloud applications, a learning brain using the power of data management and AI of Google Cloud and Microsoft Azure where we can combine IoT data of objects with any other data in intelligent and self-learning algorithms.
+The location or any other parameter of the objects can be displayed in any Browser or Smart device.
+The user interfaces can be customized and  allow to interact at any moment changing frequency of connection, SMS or email alarm values and who receives them (human or machine) or acting as remote control of any object.
+All of this can be offered fully pay peruse, to ensure a very low entry point for the technology. You can turn the cell on and off remotely, and only pay cents per day when you use the cell capabilities or buy the solution.&lt;/p&gt;
+&lt;h3 id=&#34;stakeholders&#34;&gt;Stakeholders&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Manufacturers&lt;/li&gt;
+&lt;li&gt;Logistic services providers&lt;/li&gt;
+&lt;li&gt;General management&lt;/li&gt;
+&lt;li&gt;Supply chain&lt;/li&gt;
+&lt;li&gt;Digitalization&lt;/li&gt;
+&lt;li&gt;Quality control&lt;/li&gt;
+&lt;li&gt;Risk management&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;data-elements-assets-and-deliverables&#34;&gt;Data elements, Assets and Deliverables&lt;/h3&gt;
+&lt;p&gt;As an Input from the client, the following items were used:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Container / goods data&lt;/li&gt;
+&lt;li&gt;Transport routing&lt;/li&gt;
+&lt;li&gt;Thresholds / boundary conditions&lt;/li&gt;
+&lt;li&gt;Past Quality Control data for pattern recognition&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Assets &amp;amp; Artefacts:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Routing optimization model&lt;/li&gt;
+&lt;li&gt;IoT cloud backbone&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The deliverables included:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Driver dispatcher and client apps&lt;/li&gt;
+&lt;li&gt;Operational routing optimization&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- 7 Implementation results --&gt;
+&lt;!-- 8 Testimonials --&gt;
+&lt;!-- 9 Tags / Keywords --&gt;
+&lt;h3 id=&#34;tags--keywords&#34;&gt;Tags / Keywords&lt;/h3&gt;
+&lt;p&gt;#sensorbasedmonitoring #iot #sensitivegoods #intelligentpackaging #intelligentlogistics #industry40 #industry #packaging #logistics #homeprotection #consumergoods #luxurygoods&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

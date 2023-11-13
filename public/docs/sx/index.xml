@@ -1,0 +1,288 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>GridMine – StreamZero SX</title>
+    <link>/docs/sx/</link>
+    <description>Recent content in StreamZero SX on GridMine</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    
+	  <atom:link href="/docs/sx/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Docs: Developer Guide</title>
+      <link>/docs/sx/developerguidesx/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/sx/developerguidesx/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;StreamZero&lt;/strong&gt; is a container level solution for building highly scalable, cross-network  sync or async applications.&lt;/p&gt;
+&lt;p&gt;Using the StreamZero SX platform to run and manage stream processing containers utilizing StreamZero messaging infrastructure significantly reduces the cost of deploying enterprise application and offers standardized data streaming between workflow steps.  This will simplify the development and as result create a platform with agile data processing and ease of integration.&lt;/p&gt;
+&lt;h2 id=&#34;getting-started-with-stream-processors&#34;&gt;Getting started with Stream Processors&lt;/h2&gt;
+&lt;p&gt;Take a look at this library for creating Stream Processors on top of Kafka and running them inside StreamZero platform:
+&lt;a href=&#34;https://pypi.org/project/StreamZero-sx/&#34;&gt;StreamZero-SX&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;example-of-a-stream-processor&#34;&gt;Example of a Stream Processor&lt;/h2&gt;
+&lt;p&gt;Below you can find an example application that is using StreamZero-sx python library functions to count the number of words in incoming messages and then sending the result to &lt;em&gt;twitter_feed_wc&lt;/em&gt; Kafka topic.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 1
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 2
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 3
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 4
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 5
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 6
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 7
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 8
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 9
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;10
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;11
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;12
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;13
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;14
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;15
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; json
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;from&lt;/span&gt; StreamZero_sx.core &lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; app
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;from&lt;/span&gt; StreamZero_sx.utils &lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; sx_producer
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;process&lt;/span&gt;(message):
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    message_new &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; dict()
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    message_new[&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;text&amp;#39;&lt;/span&gt;] &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; message[&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;text&amp;#39;&lt;/span&gt;]
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    message_new[&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;word_count&amp;#39;&lt;/span&gt;] &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; len(message[&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;text&amp;#39;&lt;/span&gt;]&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;split(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39; &amp;#39;&lt;/span&gt;))
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    message_new_json &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; json&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;dumps(message_new)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    print(message_new_json)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    sx_producer&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;send(topic&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;twitter_feed_wc&amp;#34;&lt;/span&gt;, value&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;message_new_json&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;encode(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;utf-8&amp;#39;&lt;/span&gt;))
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;app&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;process &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; process
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h2 id=&#34;creating-docker-container&#34;&gt;Creating Docker Container&lt;/h2&gt;
+&lt;p&gt;Below is an example of a dockerfile to create a Docker image for the Twitter Word Count application shown in the previous section. The user is free to use whatever base python image
+and then add StreamZero module and other libraries.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;FROM python:3.9-alpine
+#RUN pip install -i https://test.pypi.org/simple/ StreamZero-sx==0.0.8 --extra-index-url https://pypi.org/simple/ StreamZero-sx
+RUN pip install StreamZero-sx
+COPY twitter_word_count.py app.py
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;After the user have built an image and pushed it to some Docker image regitry, he can run it in StreamZero SX UI.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Integrations Guide</title>
+      <link>/docs/sx/integrations_guide/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/sx/integrations_guide/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;how-does-it-work&#34;&gt;How does it Work?&lt;/h2&gt;
+&lt;p&gt;There are two main approaches to implementing the external notifications support.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Implementation within a StreamZero SX container&lt;/li&gt;
+&lt;li&gt;Implementation in an Exit Gateway&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The 2nd option is used in platforms which are behind a firewall and therefore require the gateway to be outside the firewall for accessing external services. In these cases the adapter runs as a separate container.&lt;/p&gt;
+&lt;p&gt;Irrespective of the infrastructure implementation the service internal API (as illustrated above) does not change.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: User Guide</title>
+      <link>/docs/sx/user_guide/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/sx/user_guide/</guid>
+      <description>
+        
+        
+        &lt;h1 id=&#34;hahahugoshortcode135s0hbhb-sx-management-ui&#34;&gt;StreamZero SX Management UI&lt;/h1&gt;
+&lt;h2 id=&#34;create-a-stream-adapter&#34;&gt;Create a Stream Adapter&lt;/h2&gt;
+&lt;p&gt;After a developer has built an image of a stream processing task and stored it to a container register, we can configure and launch it with StreamZero Management UI.&lt;/p&gt;
+&lt;p&gt;On left side menu, open Stream Adapters menu and select &amp;ldquo;Stream Adapter Definition&amp;rdquo;.
+Fill in the details.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/SX_create_stream_adapter.png&#34; alt=&#34;create_stream_adapter_ui&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Go to the &amp;ldquo;List Stream Adapters&amp;rdquo; page. You should find your the Stream Adapter that we created on the list. You can start the container by clicking the &amp;ldquo;Run&amp;rdquo;-button. The download and start-up of the image can take few minutes.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/SX_list_stream_adapters.png&#34; alt=&#34;list_stream_adapter_ui&#34;&gt;&lt;/p&gt;
+&lt;p&gt;When the Stream Adapter is running you can find it in the list of running adapters.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/SX_running_adapters.png&#34; alt=&#34;list_running_adapters_ui&#34;&gt;&lt;/p&gt;
+&lt;p&gt;StreamZero also has a list of all the Kafka topics that are currently attached to Stream Adapters or available to Stream Adapters.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/SX_list_topics.png&#34; alt=&#34;list_topics_ui&#34;&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Solutions snippets / explain problem solved / link to relevant use case</title>
+      <link>/docs/sx/solutions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/sx/solutions/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;twitter-message-processing-example&#34;&gt;Twitter message processing example&lt;/h2&gt;
+&lt;p&gt;The first example application is using StreamZero-sx python library to implement stream processor to count the number of words in incoming messages. The messages are queried from Twitter API with specific filter condition and then fed to the processor. The results are sent to a Kafka topic.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 1
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 2
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 3
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 4
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 5
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 6
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 7
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 8
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 9
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;10
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;11
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;12
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;13
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;14
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;15
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; json
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;from&lt;/span&gt; StreamZero_sx.core &lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; app
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;from&lt;/span&gt; StreamZero_sx.utils &lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; sx_producer
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;process&lt;/span&gt;(message):
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    message_new &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; dict()
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    message_new[&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;text&amp;#39;&lt;/span&gt;] &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; message[&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;text&amp;#39;&lt;/span&gt;]
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    message_new[&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;word_count&amp;#39;&lt;/span&gt;] &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; len(message[&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;text&amp;#39;&lt;/span&gt;]&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;split(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39; &amp;#39;&lt;/span&gt;))
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    message_new_json &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; json&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;dumps(message_new)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    print(message_new_json)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    sx_producer&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;send(topic&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;twitter_feed_wc&amp;#34;&lt;/span&gt;, value&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;message_new_json&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;encode(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;utf-8&amp;#39;&lt;/span&gt;))
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;app&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;process &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; process
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Containers &#43; Purpose</title>
+      <link>/docs/sx/containers_purpose/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/sx/containers_purpose/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;creating-a-docker-container&#34;&gt;Creating a Docker Container&lt;/h2&gt;
+&lt;p&gt;Below is an example of a dockerfile to create a Docker image for some StreamZero SX application. The user is free to choose what base python image
+to use and then add StreamZero module and other libraries.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;FROM python:3.9-alpine
+#RUN pip install -i https://test.pypi.org/simple/ StreamZero-sx==0.0.8 --extra-index-url https://pypi.org/simple/ StreamZero-sx
+RUN pip install StreamZero-sx
+COPY app.py utils.py
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;After the user have built an image and pushed it to a Docker image regitsry, they can run it in StreamZero SX Management UI.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Architecture</title>
+      <link>/docs/sx/architecture/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/sx/architecture/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;hahahugoshortcode131s0hbhb-sx-architecture-principles&#34;&gt;StreamZero SX Architecture Principles&lt;/h2&gt;
+&lt;p&gt;Stream processing is a technique for processing large volumes of data
+in real-time as it is generated or received. One way to implement a
+stream processing architecture is to use Docker containers for
+individual workflow steps and Apache Kafka for the data pipeline.&lt;/p&gt;
+&lt;p&gt;Docker is a platform for creating, deploying, and running containers,
+which are lightweight and portable units of software that can be run
+on any system with a compatible container runtime. By using Docker
+containers for each step in the stream processing workflow, developers
+can easily package and deploy their code, along with any dependencies,
+in a consistent and reproducible way. This can help to improve the
+reliability and scalability of the stream processing system.&lt;/p&gt;
+&lt;p&gt;Apache Kafka is a distributed streaming platform that can be used to
+build real-time data pipelines and streaming applications. It provides
+a publish-subscribe model for sending and receiving messages, and can
+handle very high throughput and low latency. By using Kafka as the
+backbone of the data pipeline, developers can easily scale their
+stream processing system to handle large volumes of data and handle
+failover scenarios.&lt;/p&gt;
+&lt;p&gt;Overall, by using Docker containers for the individual workflow steps
+and Apache Kafka for the data pipeline, developers can create a stream
+processing architecture that is both scalable and reliable. This
+architecture can be used for a wide range of use cases, including
+real-time analytics, event-driven architectures, and data integration.&lt;/p&gt;
+&lt;p&gt;Below is the high-level architecture diagram of StreamZero SX:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/streamzero_sx_architecture.png&#34; alt=&#34;streamzero_sx_architecture&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;required-infrastructure&#34;&gt;Required Infrastructure&lt;/h2&gt;
+&lt;p&gt;The following are the infrastructure components required for a StreamZero SX installation&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Component&lt;/th&gt;
+&lt;th&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Apache Kafka&lt;/td&gt;
+&lt;td&gt;Apache Kafka serves as the backbone to pass events and operational data within a StreamZero SX Installation.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;PostgreSQL&lt;/td&gt;
+&lt;td&gt;Postgres is used as the database for the StreamZero SX Management Application.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Consul&lt;/td&gt;
+&lt;td&gt;Consul is the configuration store used by the StreamZero SX platform. It is also used by the services to store their configurations.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;MinIO&lt;/td&gt;
+&lt;td&gt;Minio provides the platform internal storage for scripts and assets used by the Services.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Elasticsearch&lt;/td&gt;
+&lt;td&gt;Elasticsearch is used as a central store for all operational data. Thereby making the data easiliy searchable.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Kibana&lt;/td&gt;
+&lt;td&gt;Kibana is used to view and query the data stored in Elasticsearch.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;StreamZero Management UI&lt;/td&gt;
+&lt;td&gt;StreamZero Management UI is the main UI used for all activities on the StreamZero FX platform.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;StreamZero FX-Router&lt;/td&gt;
+&lt;td&gt;The Route container is responsible for listening to events flowing through the system and forwarding the events to the appropriate micro-services that you create.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;StreamZero FX-Executor&lt;/td&gt;
+&lt;td&gt;The executor container(s) is where the code gets executed.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,12 @@
+{{ $break := cond .DoPageBreak "page-break-before: always" "" }}
+{{ with .Page }}
+<div class="td-content" style="{{ $break }}">
+    <h1 id="pg-{{ .Page.File.UniqueID }}">{{ .Title }}</h1>
+	{{ with .Params.description }}<div class="lead">{{ . | markdownify }}</div>{{ end }}
+	<div class="td-byline mb-4">
+		{{ with .Params.author }}{{ T "post_byline_by" }} <b>{{ . | markdownify }}</b> |{{ end}}
+  
+	</div>
+	{{ .Content }}
+</div>
+{{ end }}

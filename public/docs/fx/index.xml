@@ -1,0 +1,221 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>GridMine – StreamZero  FX</title>
+    <link>/docs/fx/</link>
+    <description>Recent content in StreamZero  FX on GridMine</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    
+	  <atom:link href="/docs/fx/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Docs: Architecture Overview</title>
+      <link>/docs/fx/architecture-overview/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/fx/architecture-overview/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;concepts&#34;&gt;Concepts&lt;/h2&gt;
+&lt;p&gt;StreamZero FX is based on 2 simple concepts - &lt;strong&gt;Services&lt;/strong&gt; and &lt;strong&gt;Events&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;On FX you are effectively writing large applications by connecting “blocks” of code through Events.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/image-20211024081829495.png&#34; alt=&#34;image-20211024081829495&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Each Service is a self contained piece of functionality such as loading a file, running a database view rebuild or launching a container. You can link and re-link the blocks of code at anytime you like. The source code can be as big or as tiny as you like.&lt;/p&gt;
+&lt;p&gt;Each Service is triggered by an Event. Each Service also emits Events thereby allowing other Services to be triggered following (or during) the execution of a Service.&lt;/p&gt;
+&lt;p&gt;A Service can respond to multiple Event types, and a single Event Type may trigger multiple Services - Thereby allowing you to also extend your Application(s) on the fly with ease.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/image-20211024080659941.png&#34; alt=&#34;image-20211024080659941&#34;&gt;&lt;/p&gt;
+&lt;p&gt;You are not required to think in terms of pre-defined DAGS and can rapidly and iteratively build, test and deploy your applications.&lt;/p&gt;
+
+
+
+
+
+
+&lt;p&gt; 
+            &lt;img src=&#34;/streamzero/images/user_guide/list_projects_add_roboto.png&#34; style=&#34;border:2px solid #fff;
+            box-shadow: 10px 10px 5px #ccc;
+            -moz-box-shadow: 10px 10px 5px #ccc;
+            -webkit-box-shadow: 10px 10px 5px #ccc;
+            -khtml-box-shadow: 10px 10px 5px #ccc;&#34;/&gt;
+&lt;/p&gt;
+
+&lt;h3 id=&#34;services&#34;&gt;Services&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;SERVICES&lt;/strong&gt; are collections of scripts and modules which are executed in sequence by the &lt;strong&gt;FX Executor&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Services are triggered by &lt;strong&gt;EVENTS&lt;/strong&gt;, which are JSON messages which carry a header and payload. A Service can be Linked to one or more events.&lt;/p&gt;
+&lt;p&gt;Each script is provided with the Payload of the Event that triggered it. It is the job of the &lt;strong&gt;FX Router&lt;/strong&gt; to send Events to the appropriate Service.&lt;/p&gt;
+&lt;p&gt;The following is a basic Service which parses the event sent to it and prints the payload.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 1
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 2
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 3
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 4
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 5
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 6
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 7
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 8
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 9
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;10
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;from&lt;/span&gt; fx_ef &lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; context
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# The context.params object carries the payload of the incoming event&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;param_value &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; context&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;params&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;get(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;param_name&amp;#39;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# And this is how a service sends an event&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;my_event_type &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;com.test.my_event_type&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;data &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; {&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;my attribute&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;my_value&amp;#34;&lt;/span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;context&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;events&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;send(my_event_type, data)
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h3 id=&#34;events&#34;&gt;Events&lt;/h3&gt;
+&lt;p&gt;Events are messages passed through the platform which are generated either by Services or by the StreamZero Manager(in the case of manually triggered runs and scheduled runs).&lt;/p&gt;
+&lt;p&gt;Events are in the form of JSON formatted messages which adhere to the CloudEvents format.&lt;/p&gt;
+&lt;p&gt;Events carry a Header which indicates the event type and a Payload (or Data section) which contain information about the event.&lt;/p&gt;
+&lt;p&gt;The following is a sample Event.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 1
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 2
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 3
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 4
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 5
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 6
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 7
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 8
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 9
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;10
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;11
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;12
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;13
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;14
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-json&#34; data-lang=&#34;json&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;{
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;specversion&amp;#34;&lt;/span&gt; : &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;1.0&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;type&amp;#34;&lt;/span&gt; : &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;com.example.someevent&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#75715e&#34;&gt;// The Event Type
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;    &lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;source&amp;#34;&lt;/span&gt; : &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;/mycontext&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;subject&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#66d9ef&#34;&gt;null&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;id&amp;#34;&lt;/span&gt; : &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;C234-1234-1234&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;time&amp;#34;&lt;/span&gt; : &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;2018-04-05T17:31:00Z&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;datacontenttype&amp;#34;&lt;/span&gt; : &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;application/json&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;data&amp;#34;&lt;/span&gt; : {                       &lt;span style=&#34;color:#75715e&#34;&gt;// The event payload as JSON
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;        &lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;appinfoA&amp;#34;&lt;/span&gt; : &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;abc&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;appinfoB&amp;#34;&lt;/span&gt; : &lt;span style=&#34;color:#ae81ff&#34;&gt;123&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;appinfoC&amp;#34;&lt;/span&gt; : &lt;span style=&#34;color:#66d9ef&#34;&gt;true&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    }
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h3 id=&#34;service-triggering&#34;&gt;Service Triggering&lt;/h3&gt;
+&lt;p&gt;Services can be triggered in the following ways:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Manually: By clicking the &amp;lsquo;Run&amp;rsquo; button on the StreamZero FX Management UI.&lt;/li&gt;
+&lt;li&gt;On Schedule: As a cron job whereas the Cron expression is in the service manifest.&lt;/li&gt;
+&lt;li&gt;On Event: Where a package is configured to be triggered by the FX Router when a specific type of event(s) is encountered on the platform - also configured in the service manifest.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Irrespective of how a Service is triggered it is always triggered by an Event. In the case of Manual and Scheduled triggering it is the FX platform that generates the trigger event.&lt;/p&gt;
+&lt;h3 id=&#34;late-linking&#34;&gt;Late Linking&lt;/h3&gt;
+&lt;p&gt;One of the most important features of the FX Platform is that you are not required to link the Service to an Event during the course of development. And you can also change the Trigger Event(s) post-deployment.&lt;/p&gt;
+&lt;p&gt;This approach gives you a great flexibility to:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;not having to think of pre-defined flows but to build the Flow as well as the Services iteratively.&lt;/li&gt;
+&lt;li&gt;maintain and test multiple versions of the same Service in parallel.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;the-hahahugoshortcode44s4hbhb-fx-flow&#34;&gt;The StreamZero FX Flow&lt;/h2&gt;
+&lt;p&gt;At the core of the FX Platform messages (Events) are passed through &lt;strong&gt;Apache Kafka&lt;/strong&gt;. These &amp;rsquo;events&amp;rsquo; are JSON formatted messages which adhere to the CloudEvents format.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/image-20211024083411584.png&#34; alt=&#34;image-20211024083411584&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Each &lt;strong&gt;Event&lt;/strong&gt; consists of what may be simplified as Headers and Payload. The headers indicate the type of event and other attributes. Whereas the payload are the attributes or parameters that are sent out by Services in order to either provide information about their state or for usage by downstream Services.&lt;/p&gt;
+&lt;p&gt;The &lt;strong&gt;FX Router(s)&lt;/strong&gt; is listening on the stream of Events passing through Kafka. Based on the configuration of the platform which is managed in the &lt;strong&gt;StreamZero Management UI&lt;/strong&gt; the Router decides if a Service requires to be executed based on the Event contents. On finding a configured Handler the gateway sends a message to the Executor and informs it of which packages or scripts are required to be run.&lt;/p&gt;
+&lt;p&gt;The &lt;strong&gt;FX Executor(s)&lt;/strong&gt; executes the &lt;strong&gt;Service&lt;/strong&gt;. The Service may use any Python module that is embedded in the Executor and also uses the platform internal configuration management database(at present Consul) for storing its configurations. The Executor sends a series of Events on Service execution. These are once again processed by the FX Router.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/image-20211024084807506.png&#34; alt=&#34;image-20211024084807506&#34;&gt;&lt;/p&gt;
+&lt;p&gt;The FX Executor provides infrastructure which tracks logs, maintains record of service metrics and operational data. The Operational information is first sent to appropriate Kafka Topics from where they are picked up by Ops-Data Sinks whose role it is to store data within &lt;strong&gt;Elasticsearch&lt;/strong&gt; and in some cases also filter the data for the purpose of alerting or anomaly tracking. All operational data may be viewed and queried through tools such as &lt;strong&gt;Kibana&lt;/strong&gt; and is also viewable on the &lt;strong&gt;FX Management UI&lt;/strong&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;required-infrastructure&#34;&gt;Required Infrastructure&lt;/h2&gt;
+&lt;p&gt;The following are the infrastructure components required for a StreamZero FX installation&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Component&lt;/th&gt;
+&lt;th&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Apache Kafka&lt;/td&gt;
+&lt;td&gt;Apache Kafka serves as the backbone to pass events and operational data within a StreamZero FX Installation.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;PostgreSQL&lt;/td&gt;
+&lt;td&gt;Postgres is used as the database for the StreamZero FX Manager Application.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Consul&lt;/td&gt;
+&lt;td&gt;Consul is the configuration store used by the StreamZero FX platform. It is also used by the services to store their configurations.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;MinIO&lt;/td&gt;
+&lt;td&gt;Minio provides the platform internal storage for scripts and assets used by the Services.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Elasticsearch&lt;/td&gt;
+&lt;td&gt;Elasticsearch is used as a central store for all operational data. Thereby making the data easiliy searchable.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Kibana&lt;/td&gt;
+&lt;td&gt;Kibana is used to view and query the data stored in Elasticsearch.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;StreamZero FX-Management UI&lt;/td&gt;
+&lt;td&gt;StreamZero FX Management UI is the main UI used for all activities on the StreamZero FX platform.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;StreamZero FX-Router&lt;/td&gt;
+&lt;td&gt;The Route container is responsible for listenting to events flowing through the system and forwarding the events to the appropriate micro-services that you create.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;StreamZero FX-Executor&lt;/td&gt;
+&lt;td&gt;The executor container(s) is where the code gets executed.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Developer Guide</title>
+      <link>/docs/fx/developer_guide/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/fx/developer_guide/</guid>
+      <description>
+        
+        
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: User Guide</title>
+      <link>/docs/fx/user_guide/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/fx/user_guide/</guid>
+      <description>
+        
+        
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

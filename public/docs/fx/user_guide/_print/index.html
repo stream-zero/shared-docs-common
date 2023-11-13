@@ -1,0 +1,1954 @@
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="generator" content="Hugo 0.117.0"><link rel="canonical" type="text/html" href="/docs/fx/user_guide/">
+<link rel="alternate" type="application/rss&#43;xml" href="/docs/fx/user_guide/index.xml">
+<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+
+
+<link rel="shortcut icon" href="/favicons/favicon.ico" >
+<link rel="apple-touch-icon" href="/favicons/apple-touch-icon-180x180.png" sizes="180x180">
+<link rel="icon" type="image/png" href="/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicons/android-36x36.png" sizes="36x36">
+<link rel="icon" type="image/png" href="/favicons/android-48x48.png" sizes="48x48">
+<link rel="icon" type="image/png" href="/favicons/android-72x72.png" sizes="72x72">
+<link rel="icon" type="image/png" href="/favicons/android-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="/favicons/android-144x144.png" sizes="144x144">
+<link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
+
+<title>User Guide | GridMine</title>
+
+
+  <meta name="description" content="This User Guide showcases a complete overview of the {{&lt; param replacables.brand_name  &gt;}} FX Executions/Packages Framework. Working along typical patterns for engineers working with the {{&lt; param replacables.brand_name  &gt;}} Data Platform.">
+<meta property="og:title" content="User Guide" />
+<meta property="og:description" content="This User Guide showcases a complete overview of the {{&lt; param replacables.brand_name  &gt;}} FX Executions/Packages Framework. Working along typical patterns for engineers working with the {{&lt; param replacables.brand_name  &gt;}} Data Platform." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="/docs/fx/user_guide/" />
+<meta itemprop="name" content="User Guide">
+<meta itemprop="description" content="This User Guide showcases a complete overview of the {{&lt; param replacables.brand_name  &gt;}} FX Executions/Packages Framework. Working along typical patterns for engineers working with the {{&lt; param replacables.brand_name  &gt;}} Data Platform."><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="User Guide"/>
+<meta name="twitter:description" content="This User Guide showcases a complete overview of the {{&lt; param replacables.brand_name  &gt;}} FX Executions/Packages Framework. Working along typical patterns for engineers working with the {{&lt; param replacables.brand_name  &gt;}} Data Platform."/>
+
+
+
+
+<link rel="preload" href="/scss/main.scss" as="style">
+<link href="/scss/main.scss" rel="stylesheet" integrity="">
+
+
+<script
+  src="https://code.jquery.com/jquery-3.5.1.min.js"
+  integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+  crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RZ6L6XFT3Q"></script>
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-RZ6L6XFT3Q', { 'anonymize_ip': false });
+}
+</script>
+
+
+
+
+  </head>
+  <body class="td-section">
+    <header>
+      
+<nav class="js-navbar-scroll navbar navbar-expand-lg navbar-dark  td-navbar">
+	<a class="navbar-brand" href="/">
+		<span class="navbar-logo"><svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6675 639" width="200" height="29"><style>.a{fill:#e21339}</style><path class="a" d="m234 638.6q-66.8.0-119.6-22.9-52-22.9-81.9-66.9-29.9-44-31.7-106.5h125.9q.9 27.3 14.1 49.3t36.9 35.2q23.8 12.3 56.3 12.3 27.3.0 47.6-8.8 21.1-9.7 32.5-26.4 12.3-16.7 12.3-39.6.0-27.3-14-44.9-13.2-18.4-36.1-29.9-22.9-12.3-52.8-22-29.1-10.5-61.6-21.1Q90.6 321.8 52.8 283q-37.9-39.6-37.9-104.7.0-55.4 26.4-95 26.4-39.6 73.9-60.7 47.6-21.2 108.3-21.2 62.5.0 110 22 47.5 21.2 74.8 61.6 27.3 40.5 29 95.1H309.7q-.9-20.3-11.4-37.9-10.6-18.4-29.9-29-19.4-11.4-46.7-11.4-22.9-.9-41.3 7-18.5 7.9-30 23.8-10.5 14.9-10.5 37.8.0 22 10.5 37 10.6 14.9 30 26.4 19.3 10.5 45.7 20.2 26.4 8.8 57.2 18.5 46.7 15.8 84.5 37.8 38.7 21.1 61.6 55.5 22.9 34.3 22.9 90.6.0 48.4-25.5 89.8-24.7 41.3-73.1 66.8-48.4 25.6-119.7 25.6zM929.2 628H811.3V107.9H630.9V12h478.7v95.9H929.2zm498 0h-118.8V12H1539q73.9.0 122.3 25.5 49.3 25.6 73.1 68.7 23.7 42.2 23.7 94.1.0 49.3-23.7 92.4-22.9 42.3-72.2 68.7-48.4 25.5-125 25.5h-110zm336.2.0h-135.5l-126.7-271h128.4zm-336.1-516.6v189.2h103.8q54.6.0 80.1-26.4 25.5-26.4 25.5-69.5t-25.5-67.8q-25.5-25.5-80.1-25.5zM2383.8 628h-405.6V12h405.6v95.9H2097v161h260.4v92.4H2097V532h286.8zm306.2.0h-124l224.4-616H2925l225.3 616h-125.9l-167.2-480.4zm351.2-140h-375.8l30.8-92.4h314.2zm422.3 140h-118.8V12h141.7l191.8 383.6L3867.4 12h141.7v616h-118.8V213.5L3724 540h-94.2l-166.3-327.4zm1153.7.0h-393.4v-58.1l303.6-493.7h-299.2V12h385.4v58.1l-304.4 493.7h308zm601.8.0h-381V12h381v60.7h-307.1v214.7h280.7v59.8h-280.7v220H5219zm306.2.0h-73.9V12h198.9q72.2.0 117.9 24.7 45.8 23.7 67.8 64.2t22 91.5q0 49.3-22.9 90.7-22 41.3-68.6 66-46.7 24.6-119.7 24.6h-121.5zm338.8.0h-87.1l-135.5-275.4h82.7zM5525.2 74.5v241.1h119.7q70.4.0 103-34.3 33.4-34.4 33.4-88 0-54.6-32.6-86.3-31.6-32.5-104.7-32.5zm844.8 564q-90.7.0-159.3-39.6-67.8-40.4-106.5-111.7-37.8-72.2-37.8-167.2.0-94.2 37.8-165.5 38.7-72.1 106.5-112.6 68.6-40.5 159.3-40.5 91.5.0 159.3 40.5 68.6 40.5 106.4 112.6 37.9 71.3 37.9 165.5.0 95-37.9 167.2-37.8 71.3-106.4 111.7-67.8 39.6-159.3 39.6zm0-65.1q67.7.0 118.8-29.9 51.9-30.8 80.1-87.1 29-57.2 29-136.4t-29-135.5q-28.2-57.2-80.1-87.2-51.1-29.9-118.8-29.9-67.8.0-119.7 29.9-51 30-80.1 87.2-28.1 56.3-28.1 135.5t28.1 136.4q29.1 56.3 80.1 87.1 51.9 29.9 119.7 29.9z"/></svg></span>
+	</a>
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+		<ul class="navbar-nav ml-auto">
+			
+			
+				
+				
+				
+				
+				
+				
+				
+					<li class="nav-item mr-2 mb-2 mb-lg-0 dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">
+							PRODUCTS
+						</a>
+						<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+							
+								<li>
+									<a class="nav-link" href="/products/fx/" >STREAMZERO FX</a>
+								</li>
+							
+								<li>
+									<a class="nav-link" href="/products/k8x/" >STREAMZERO K8X</a>
+								</li>
+							
+								<li>
+									<a class="nav-link" href="/products/sx/" >STREAMZERO SX</a>
+								</li>
+							
+						</ul>
+					</li>
+				
+			
+				
+				
+				
+				
+				
+				
+				
+				
+				
+					<li class="nav-item mr-2 mb-2 mb-lg-0">
+						<a class="nav-link active" href="/docs/" ><span class="active">DOCUMENTATION</span></a>
+					</li>
+				
+			
+			
+			
+		</ul>
+	</div>
+	<div class="navbar-nav d-none d-lg-block">
+<input type="search" class="form-control td-search-input" placeholder="&#xf002; Search this site…" aria-label="Search this site…" autocomplete="off">
+
+</div>
+</nav>
+
+    </header>
+    <div class="container-fluid td-outer">
+      <div class="td-main">
+        <div class="row flex-xl-nowrap">
+          <div class="col-12 col-md-3 col-xl-2 td-sidebar d-print-none">
+          </div>
+          <div class="d-none d-xl-block col-xl-2 td-toc d-print-none">
+          </div>
+          <main class="col-12 col-md-9 col-xl-8 pl-md-5" role="main">
+            
+
+
+
+
+<div class="td-content">
+<div class="pageinfo pageinfo-primary d-print-none">
+<p>
+This the multi-page printable view of this section.
+<a href="#" onclick="print();return false;">Click here to print</a>.
+</p><p>
+<a href="/docs/fx/user_guide/">Return to the regular view of this page</a>.
+</p>
+</div>
+
+
+
+<h1 class="title">User Guide</h1>
+<div class="lead">This User Guide showcases a complete overview of the StreamZero FX Executions/Packages Framework. Working along typical patterns for engineers working with the StreamZero Data Platform.</div>
+
+
+
+
+    <ul>
+    
+  
+  
+  
+  
+
+  
+    
+    
+	
+<li>1: <a href="#pg-8e3955862951e57a42b1655da424774a">Landing Page (Dashboard)</a></li>
+
+
+    
+  
+    
+    
+	
+<li>2: <a href="#pg-3c0e18e3addb5a92a5494be53c28b40f">Projects</a></li>
+
+
+    
+  
+    
+    
+	
+<li>3: <a href="#pg-aa845473ddff509502a3a52388d1ae94">Taxonomy/Tagging</a></li>
+
+
+    
+  
+    
+    
+	
+<li>4: <a href="#pg-9a670570c8a42824c7b15877415731f0">CronJob</a></li>
+
+
+    
+  
+    
+    
+	
+<li>5: <a href="#pg-e560fbed7f9b59e43555a1e7bcd8966d">Events</a></li>
+
+
+    
+  
+    
+    
+	
+<li>6: <a href="#pg-17c2125c4f6974ae1ce8e9b255157670">Executions - Packages</a></li>
+
+
+    
+  
+
+    </ul>
+
+
+<div class="content">
+      
+</div>
+</div>
+
+
+  
+  
+  
+  
+
+  
+  
+
+  
+    
+    
+	
+    
+
+<div class="td-content" style="">
+    
+	<h1 id="pg-8e3955862951e57a42b1655da424774a">1 - Landing Page (Dashboard)</h1>
+    <div class="lead">Overview of the StreamZero FX Dashboard.</div>
+	<p>The StreamZero FX Landing page provides insights and analytics around typical platform related metrics mostly related to Data Ops and detailed event handling. It can be finetuned and tailored to customer specific needs.</p>
+<p>In this specific use case the insights and analytics of the StreamZero FX Data Platform are highlighted as follows:</p>
+<ul>
+<li>
+<p>In the first row, the last 18 executions and the last 18 executions with failed state</p>
+<ul>
+<li>
+<p>the last 18 executions showcase the following details:</p>
+<ul>
+<li>Package (name)</li>
+<li>Status</li>
+<li>Execution time</li>
+<li>Finished</li>
+</ul>
+</li>
+<li>
+<p>the last 18 executions with failed state showcase the following details:</p>
+<ul>
+<li>Package (name)</li>
+<li>Status failed</li>
+<li>Triggered time</li>
+</ul>
+<p>It allows users of the platform to verify why the triggered package has failed executing.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>In the second row, the executions statuses per day (last 7 days) and the executions by status (last 7 days)</p>
+<ul>
+<li>Completed</li>
+<li>Failed</li>
+<li>Pending</li>
+<li>In_progress</li>
+</ul>
+</li>
+<li>
+<p>In the third row, the exectuions trigger type per day (last 7 days) and the exectuions by trigger type (last 7 days)</p>
+<ul>
+<li>triggered</li>
+<li>scheduled</li>
+<li>manual</li>
+</ul>
+</li>
+<li>
+<p>In the 4th row, the average execution time per day (last 7 days) and the most recently updated packages</p>
+<ul>
+<li>the details of the most recently updated packages are divided as follows:
+<ul>
+<li>Package</li>
+<li>Project</li>
+<li>Updated on (date and time)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>In the 5th row, the most frequently executed packages in the last 7 days with the following details:</p>
+<ul>
+<li>Package (name)</li>
+<li>Number of exections</li>
+</ul>
+</li>
+</ul>
+
+
+
+
+
+
+<p> 
+            <img src="/streamzero/images/user_guide/dashboard_landing_page.png" style="border:2px solid #fff;
+            box-shadow: 10px 10px 5px #ccc;
+            -moz-box-shadow: 10px 10px 5px #ccc;
+            -webkit-box-shadow: 10px 10px 5px #ccc;
+            -khtml-box-shadow: 10px 10px 5px #ccc;"/>
+</p>
+
+
+</div>
+
+
+
+    
+	
+  
+    
+    
+	
+    
+
+<div class="td-content" style="page-break-before: always">
+    
+	<h1 id="pg-3c0e18e3addb5a92a5494be53c28b40f">2 - Projects</h1>
+    <div class="lead">How to create Projects and Users for new projects.</div>
+	<p>This subcategory explains the creation of new projects and users withtin these projects.</p>
+<h2 id="project">Project</h2>
+<ol>
+<li>Click on <em>Projects</em> in the menu on the left side to open dropdown and then on List Projects</li>
+<li>Click on <em>&quot;+Add&quot;</em></li>
+</ol>
+
+
+
+
+
+
+<p> 
+            <img src="/streamzero/images/user_guide/list_projects_add_roboto.png" style="border:2px solid #fff;
+            box-shadow: 10px 10px 5px #ccc;
+            -moz-box-shadow: 10px 10px 5px #ccc;
+            -webkit-box-shadow: 10px 10px 5px #ccc;
+            -khtml-box-shadow: 10px 10px 5px #ccc;"/>
+</p>
+
+<ol>
+<li>Name the new project</li>
+<li>Save</li>
+</ol>
+
+
+
+
+
+
+<p> 
+            <img src="/streamzero/images/user_guide/create_project_roboto.png" style="border:2px solid #fff;
+            box-shadow: 10px 10px 5px #ccc;
+            -moz-box-shadow: 10px 10px 5px #ccc;
+            -webkit-box-shadow: 10px 10px 5px #ccc;
+            -khtml-box-shadow: 10px 10px 5px #ccc;"/>
+</p>
+
+
+
+
+
+
+
+<p> 
+            <img src="/streamzero/images/user_guide/list_projects_created_roboto.png" style="border:2px solid #fff;
+            box-shadow: 10px 10px 5px #ccc;
+            -moz-box-shadow: 10px 10px 5px #ccc;
+            -webkit-box-shadow: 10px 10px 5px #ccc;
+            -khtml-box-shadow: 10px 10px 5px #ccc;"/>
+</p>
+
+<p>Project on the StreamZero Platform form the overarching organizational bracket for different types of objects. All users, packages, scripts, parameters, secrets and other elements are organized into projects to ease enterprise data management. The default owner for new projects is the Platform Admin (PA).</p>
+<h2 id="user-creation-within-the-project">User creation within the project</h2>
+<p>Since the Platform Administrator created the Project, he is automatically assigned as the Project Owner. All user roles on the project level are defined in detail as follows:</p>
+<ul>
+<li><strong>Project Owner</strong> -  has all permissions on project and related entities (packages, users) including deletion of project(s) (and users) created by the PO. By default it is the user that created project</li>
+<li><strong>Project Admin</strong> - has all permissions as Owner except deletion</li>
+<li><strong>Project User</strong> - has only list / view permissions</li>
+</ul>
+<p><strong>Please note that users without Platform Administrator role, do not see any projects and packages they are not assigned to. All project role rights are translated to package level also, eg. a user with Project User role will not be able to edit packages of that project, only to list/view them and run a (manual) execution</strong></p>
+<ol>
+<li>Click on the magnifying glass to open Project details page</li>
+</ol>
+
+
+
+
+
+
+<p> 
+            <img src="/streamzero/images/user_guide/list_projects_loupe_roboto.png" style="border:2px solid #fff;
+            box-shadow: 10px 10px 5px #ccc;
+            -moz-box-shadow: 10px 10px 5px #ccc;
+            -webkit-box-shadow: 10px 10px 5px #ccc;
+            -khtml-box-shadow: 10px 10px 5px #ccc;"/>
+</p>
+
+<ol start="2">
+<li>Click on <em>&quot;+Add&quot;</em> to add a new user to the project</li>
+</ol>
+
+
+
+
+
+
+<p> 
+            <img src="/streamzero/images/user_guide/click_add_new_user_roboto.png" style="border:2px solid #fff;
+            box-shadow: 10px 10px 5px #ccc;
+            -moz-box-shadow: 10px 10px 5px #ccc;
+            -webkit-box-shadow: 10px 10px 5px #ccc;
+            -khtml-box-shadow: 10px 10px 5px #ccc;"/>
+</p>
+
+<ol start="3">
+<li>Choose a user from the drowdown</li>
+<li>Choose a user role from dropdown (Owner; Admin; User)</li>
+<li>Click Save</li>
+</ol>
+
+
+
+
+
+
+<p> 
+            <img src="/streamzero/images/user_guide/add_new_project_user_roboto.png" style="border:2px solid #fff;
+            box-shadow: 10px 10px 5px #ccc;
+            -moz-box-shadow: 10px 10px 5px #ccc;
+            -webkit-box-shadow: 10px 10px 5px #ccc;
+            -khtml-box-shadow: 10px 10px 5px #ccc;"/>
+</p>
+
+<ul>
+<li>Check the user has been created</li>
+</ul>
+
+
+
+
+
+
+<p> 
+            <img src="/streamzero/images/user_guide/check_all_users_new.png" style="border:2px solid #fff;
+            box-shadow: 10px 10px 5px #ccc;
+            -moz-box-shadow: 10px 10px 5px #ccc;
+            -webkit-box-shadow: 10px 10px 5px #ccc;
+            -khtml-box-shadow: 10px 10px 5px #ccc;"/>
+</p>
+
+<p>Since new users were created, no package(s) are yet assigned to the project. A project needs to be assigned to an existing package as follows:</p>
+<ol>
+<li>Click on <em>Executions</em> to open dropdown and then <em>Packages</em> in the menu on the left</li>
+<li>Click on edit</li>
+</ol>
+
+
+
+
+
+
+<p> 
+            <img src="/streamzero/images/user_guide/edit_package_to_add_project_roboto.png" style="border:2px solid #fff;
+            box-shadow: 10px 10px 5px #ccc;
+            -moz-box-shadow: 10px 10px 5px #ccc;
+            -webkit-box-shadow: 10px 10px 5px #ccc;
+            -khtml-box-shadow: 10px 10px 5px #ccc;"/>
+</p>
+
+<ol start="3">
+<li>Choose a project from dropdown</li>
+<li>Click Save</li>
+</ol>
+
+
+
+
+
+
+<p> 
+            <img src="/streamzero/images/user_guide/added_project_to_package_roboto.png" style="border:2px solid #fff;
+            box-shadow: 10px 10px 5px #ccc;
+            -moz-box-shadow: 10px 10px 5px #ccc;
+            -webkit-box-shadow: 10px 10px 5px #ccc;
+            -khtml-box-shadow: 10px 10px 5px #ccc;"/>
+</p>
+
+<p>Once that a project was assigned to a package, the users created within that project will be able to perform their chores.</p>
+<h5 id="project-owner">Project Owner</h5>
+<ol>
+<li>Log in as <em>&ldquo;Project Owner&rdquo;</em></li>
+<li>Click on <em>Projects</em> to open dropdown and then List Projects</li>
+</ol>
+
+
+
+
+
+
+<p> 
+            <img src="/streamzero/images/user_guide/list_projects_as_projectowner_roboto.png" style="border:2px solid #fff;
+            box-shadow: 10px 10px 5px #ccc;
+            -moz-box-shadow: 10px 10px 5px #ccc;
+            -webkit-box-shadow: 10px 10px 5px #ccc;
+            -khtml-box-shadow: 10px 10px 5px #ccc;"/>
+</p>
+
+<p>As defined above, a Project Owner can add new projects, view, edit and delete the projects he belongs to.</p>
+<ol start="3">
+<li>Click on <em>Executions</em> to open dropdown and then on <em>Packages</em></li>
+</ol>
+
+
+
+
+
+
+<p> 
+            <img src="/streamzero/images/user_guide/view_packages_as_project_owner.png" style="border:2px solid #fff;
+            box-shadow: 10px 10px 5px #ccc;
+            -moz-box-shadow: 10px 10px 5px #ccc;
+            -webkit-box-shadow: 10px 10px 5px #ccc;
+            -khtml-box-shadow: 10px 10px 5px #ccc;"/>
+</p>
+
+<p>As Project Owner, one can add new packages, view, edit, delete and trigger manual runs and delete the packages within the projects the user belongs to.</p>
+<h5 id="project-admin">Project Admin</h5>
+<ol>
+<li>Log in as <em>&ldquo;Project Admin&rdquo;</em></li>
+<li>Click on <em>Projects</em> to open dropdown and then <em>List Projects</em></li>
+</ol>
+
+
+
+
+
+
+<p> 
+            <img src="/streamzero/images/user_guide/list_projects_as_projectadmin_roboto.png" style="border:2px solid #fff;
+            box-shadow: 10px 10px 5px #ccc;
+            -moz-box-shadow: 10px 10px 5px #ccc;
+            -webkit-box-shadow: 10px 10px 5px #ccc;
+            -khtml-box-shadow: 10px 10px 5px #ccc;"/>
+</p>
+
+<p>As defined above, a Project Admin can add new projects, view and edit the projects he belongs to but can not delete anything.</p>
+<ol start="3">
+<li>Click on <em>Executions</em> to open dropdown and then on <em>Packages</em></li>
+</ol>
+
+
+
+
+
+
+<p> 
+            <img src="/streamzero/images/user_guide/view_packages_as_projectadmin_roboto.png" style="border:2px solid #fff;
+            box-shadow: 10px 10px 5px #ccc;
+            -moz-box-shadow: 10px 10px 5px #ccc;
+            -webkit-box-shadow: 10px 10px 5px #ccc;
+            -khtml-box-shadow: 10px 10px 5px #ccc;"/>
+</p>
+
+<p>As Project Admin, one can add new packages, view, edit and trigger manually runs within the projects the user belongs to. The Project Admin can not delete the packages, runs or related elements.</p>
+<p><strong>Project User</strong></p>
+<ol>
+<li>Log in as &ldquo;Project User&rdquo;</li>
+<li>Click on <em>Projects</em> to open dropdwon and then <em>List Projects</em></li>
+</ol>
+
+
+
+
+
+
+<p> 
+            <img src="/streamzero/images/user_guide/list_projects_as_projectuser_roboto.png" style="border:2px solid #fff;
+            box-shadow: 10px 10px 5px #ccc;
+            -moz-box-shadow: 10px 10px 5px #ccc;
+            -webkit-box-shadow: 10px 10px 5px #ccc;
+            -khtml-box-shadow: 10px 10px 5px #ccc;"/>
+</p>
+
+<p>As defined above, a Project User can only view the projects he belongs to. He can neither edit, nore delete anything.</p>
+<ol start="3">
+<li>Click on <em>Executions</em> to open dropdown and then on <em>Packages</em>.</li>
+</ol>
+
+
+
+
+
+
+<p> 
+            <img src="/streamzero/images/user_guide/view_packages_as_projectuser_roboto.png" style="border:2px solid #fff;
+            box-shadow: 10px 10px 5px #ccc;
+            -moz-box-shadow: 10px 10px 5px #ccc;
+            -webkit-box-shadow: 10px 10px 5px #ccc;
+            -khtml-box-shadow: 10px 10px 5px #ccc;"/>
+</p>
+
+<p>As Project User, one can view packages and trigger manually runs within the projects the user belongs to. The Project User can not delete or edit packages, runs or related elements.</p>
+
+</div>
+
+
+
+    
+	
+  
+    
+    
+	
+    
+
+<div class="td-content" style="page-break-before: always">
+    
+	<h1 id="pg-aa845473ddff509502a3a52388d1ae94">3 - Taxonomy/Tagging</h1>
+    <div class="lead">How to add Tags and the importance of Taxonomy.</div>
+	<p>Taxonomies or Tags describe the ability to organize and structure types and classes of objects and their correlations within executions/packages, events (event types) and workflows across any given application, use case or project. Tags are searchable and makes it easy to group and relate objects across different components and lifecycle stages.</p>
+<p>As a generic base module &ldquo;taggability&rdquo; can easily be included in any model, use case or application by the developers/users.</p>
+<p><strong>Note: As of the current release the Taxonomy is universal across all projects, use cases and cannot be segregated along different functional domains. It is thus essential to create a unified naming convention to be shared among the different projects &amp; user groups.</strong></p>
+<h1 id="taxonomies--tags">Taxonomies / Tags</h1>
+<ol>
+<li>Click on Taxonomies in the left menu to open dropdown and then on Tags</li>
+<li>Click Add to create a tag</li>
+</ol>
+
+
+
+
+
+
+<p> 
+            <img src="/streamzero/images/user_guide/taxonomies_tags_add_roboto.png" style="border:2px solid #fff;
+            box-shadow: 10px 10px 5px #ccc;
+            -moz-box-shadow: 10px 10px 5px #ccc;
+            -webkit-box-shadow: 10px 10px 5px #ccc;
+            -khtml-box-shadow: 10px 10px 5px #ccc;"/>
+</p>
+
+<ol>
+<li>Name Tag</li>
+<li>Save</li>
+</ol>
+
+
+
+
+
+
+<p> 
+            <img src="/streamzero/images/user_guide/create_tag_save_roboto.png" style="border:2px solid #fff;
+            box-shadow: 10px 10px 5px #ccc;
+            -moz-box-shadow: 10px 10px 5px #ccc;
+            -webkit-box-shadow: 10px 10px 5px #ccc;
+            -khtml-box-shadow: 10px 10px 5px #ccc;"/>
+</p>
+
+<ul>
+<li>Check created Tag(s)</li>
+</ul>
+<ol>
+<li>Click on the magnifying glass to open details (show tag) page</li>
+<li>This will automatically transfer you to the tag details page</li>
+<li>Click on <em>List Packages</em> to see in which packages the same tag is used</li>
+<li>Click on <em>List Workflows</em> to see in which workflows the same tag is used (in this example no workflow is associated with the tag just created)</li>
+<li>Click on <em>Event Types</em> to see in which event type the same tag is uses (in this example no event type is associated with the tag just created)</li>
+<li>Click on the Edit icon (List tags page) to edit/rename a tag</li>
+</ol>
+
+
+
+
+
+
+<p> 
+            <img src="/streamzero/images/user_guide/tag_list_click_loupe_details_roboto.png" style="border:2px solid #fff;
+            box-shadow: 10px 10px 5px #ccc;
+            -moz-box-shadow: 10px 10px 5px #ccc;
+            -webkit-box-shadow: 10px 10px 5px #ccc;
+            -khtml-box-shadow: 10px 10px 5px #ccc;"/>
+</p>
+
+
+
+
+
+
+
+<p> 
+            <img src="/streamzero/images/user_guide/show_tag_details_roboto.png" style="border:2px solid #fff;
+            box-shadow: 10px 10px 5px #ccc;
+            -moz-box-shadow: 10px 10px 5px #ccc;
+            -webkit-box-shadow: 10px 10px 5px #ccc;
+            -khtml-box-shadow: 10px 10px 5px #ccc;"/>
+</p>
+
+
+
+
+
+
+
+<p> 
+            <img src="/streamzero/images/user_guide/list_tag_packages_roboto.png" style="border:2px solid #fff;
+            box-shadow: 10px 10px 5px #ccc;
+            -moz-box-shadow: 10px 10px 5px #ccc;
+            -webkit-box-shadow: 10px 10px 5px #ccc;
+            -khtml-box-shadow: 10px 10px 5px #ccc;"/>
+</p>
+
+
+
+
+
+
+
+<p> 
+            <img src="/streamzero/images/user_guide/list_workflows_tag_roboto.png" style="border:2px solid #fff;
+            box-shadow: 10px 10px 5px #ccc;
+            -moz-box-shadow: 10px 10px 5px #ccc;
+            -webkit-box-shadow: 10px 10px 5px #ccc;
+            -khtml-box-shadow: 10px 10px 5px #ccc;"/>
+</p>
+
+
+
+
+
+
+
+<p> 
+            <img src="/streamzero/images/user_guide/list_event_types_tag_roboto.png" style="border:2px solid #fff;
+            box-shadow: 10px 10px 5px #ccc;
+            -moz-box-shadow: 10px 10px 5px #ccc;
+            -webkit-box-shadow: 10px 10px 5px #ccc;
+            -khtml-box-shadow: 10px 10px 5px #ccc;"/>
+</p>
+
+
+
+
+
+
+
+<p> 
+            <img src="/streamzero/images/user_guide/list_tags_edit_roboto.png" style="border:2px solid #fff;
+            box-shadow: 10px 10px 5px #ccc;
+            -moz-box-shadow: 10px 10px 5px #ccc;
+            -webkit-box-shadow: 10px 10px 5px #ccc;
+            -khtml-box-shadow: 10px 10px 5px #ccc;"/>
+</p>
+
+<h2 id="search-tag">Search Tag</h2>
+<ol>
+<li>Click <em>Search</em> on top of the <em>List Tags</em> / <em>Details Page</em></li>
+<li>Click <em>Add Filter</em> to choose a filter (currently only the &ldquo;Name&rdquo; filter is supported)</li>
+<li>From the dropdown list choose the tag to be searched for</li>
+</ol>
+<ul>
+<li>Starts with</li>
+<li>Ends with</li>
+<li>Contains</li>
+<li>Equal to</li>
+<li>Etc.</li>
+</ul>
+<ol start="4">
+<li>Insert tag &ldquo;Name&rdquo;</li>
+<li>Hit the Search button</li>
+</ol>
+
+
+
+
+
+
+<p> 
+            <img src="/streamzero/images/user_guide/search_tag_filter_roboto.png" style="border:2px solid #fff;
+            box-shadow: 10px 10px 5px #ccc;
+            -moz-box-shadow: 10px 10px 5px #ccc;
+            -webkit-box-shadow: 10px 10px 5px #ccc;
+            -khtml-box-shadow: 10px 10px 5px #ccc;"/>
+</p>
+
+<ul>
+<li>Check search results</li>
+</ul>
+
+
+
+
+
+
+<p> 
+            <img src="/streamzero/images/user_guide/search_results_new.png" style="border:2px solid #fff;
+            box-shadow: 10px 10px 5px #ccc;
+            -moz-box-shadow: 10px 10px 5px #ccc;
+            -webkit-box-shadow: 10px 10px 5px #ccc;
+            -khtml-box-shadow: 10px 10px 5px #ccc;"/>
+</p>
+
+
+</div>
+
+
+
+    
+	
+  
+    
+    
+	
+    
+
+<div class="td-content" style="page-break-before: always">
+    
+	<h1 id="pg-9a670570c8a42824c7b15877415731f0">4 - CronJob</h1>
+    <div class="lead">How to use CronJob to schedule regularly recurring actions.</div>
+	<p>CronJobs are used to schedule regularly recurring actions such as backups, report generation and similar items. Each of those tasks should be configured to recur for an indefinite period into the future on a regular frequency (for example: once a day / week / month). The user also can define the point in time within that interval when the job should start.</p>
+<h2 id="example">Example:</h2>
+<p>This example CronJob manifest would execute and trigger an event every minute:</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">schedule:</span> <span style="color:#e6db74">&#34;*/1 * * * *&#34;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="cron-schedule-syntax">Cron Schedule Syntax</h2>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">9
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">#</span> <span style="color:#960050;background-color:#1e0010">┌─────────────</span> <span style="color:#960050;background-color:#1e0010">minute</span> <span style="color:#960050;background-color:#1e0010">(</span><span style="color:#ae81ff">0</span> <span style="color:#960050;background-color:#1e0010">-</span> <span style="color:#ae81ff">59</span><span style="color:#960050;background-color:#1e0010">)</span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">#</span> <span style="color:#960050;background-color:#1e0010">│</span> <span style="color:#960050;background-color:#1e0010">┌─────────────</span> <span style="color:#960050;background-color:#1e0010">hour</span> <span style="color:#960050;background-color:#1e0010">(</span><span style="color:#ae81ff">0</span> <span style="color:#960050;background-color:#1e0010">-</span> <span style="color:#ae81ff">23</span><span style="color:#960050;background-color:#1e0010">)</span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">#</span> <span style="color:#960050;background-color:#1e0010">│</span> <span style="color:#960050;background-color:#1e0010">│</span> <span style="color:#960050;background-color:#1e0010">┌─────────────</span> <span style="color:#960050;background-color:#1e0010">day</span> <span style="color:#960050;background-color:#1e0010">of</span> <span style="color:#960050;background-color:#1e0010">the</span> <span style="color:#960050;background-color:#1e0010">month</span> <span style="color:#960050;background-color:#1e0010">(</span><span style="color:#ae81ff">1</span> <span style="color:#960050;background-color:#1e0010">-</span> <span style="color:#ae81ff">31</span><span style="color:#960050;background-color:#1e0010">)</span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">#</span> <span style="color:#960050;background-color:#1e0010">│</span> <span style="color:#960050;background-color:#1e0010">│</span> <span style="color:#960050;background-color:#1e0010">│</span> <span style="color:#960050;background-color:#1e0010">┌─────────────</span> <span style="color:#960050;background-color:#1e0010">month</span> <span style="color:#960050;background-color:#1e0010">(</span><span style="color:#ae81ff">1</span> <span style="color:#960050;background-color:#1e0010">-</span> <span style="color:#ae81ff">12</span><span style="color:#960050;background-color:#1e0010">)</span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">#</span> <span style="color:#960050;background-color:#1e0010">│</span> <span style="color:#960050;background-color:#1e0010">│</span> <span style="color:#960050;background-color:#1e0010">│</span> <span style="color:#960050;background-color:#1e0010">│</span> <span style="color:#960050;background-color:#1e0010">┌─────────────</span> <span style="color:#960050;background-color:#1e0010">day</span> <span style="color:#960050;background-color:#1e0010">of</span> <span style="color:#960050;background-color:#1e0010">the</span> <span style="color:#960050;background-color:#1e0010">week</span> <span style="color:#960050;background-color:#1e0010">(</span><span style="color:#ae81ff">0</span> <span style="color:#960050;background-color:#1e0010">-</span> <span style="color:#ae81ff">6</span><span style="color:#960050;background-color:#1e0010">)</span> <span style="color:#960050;background-color:#1e0010">(Sunday</span> <span style="color:#960050;background-color:#1e0010">to</span> <span style="color:#960050;background-color:#1e0010">Saturday;</span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">#</span> <span style="color:#960050;background-color:#1e0010">│</span> <span style="color:#960050;background-color:#1e0010">│</span> <span style="color:#960050;background-color:#1e0010">│</span> <span style="color:#960050;background-color:#1e0010">│</span> <span style="color:#960050;background-color:#1e0010">│</span>                                   <span style="color:#ae81ff">7</span> <span style="color:#960050;background-color:#1e0010">is</span> <span style="color:#960050;background-color:#1e0010">also</span> <span style="color:#960050;background-color:#1e0010">Sunday</span> <span style="color:#960050;background-color:#1e0010">on</span> <span style="color:#960050;background-color:#1e0010">some</span> <span style="color:#960050;background-color:#1e0010">systems)</span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">#</span> <span style="color:#960050;background-color:#1e0010">│</span> <span style="color:#960050;background-color:#1e0010">│</span> <span style="color:#960050;background-color:#1e0010">│</span> <span style="color:#960050;background-color:#1e0010">│</span> <span style="color:#960050;background-color:#1e0010">│</span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">#</span> <span style="color:#960050;background-color:#1e0010">│</span> <span style="color:#960050;background-color:#1e0010">│</span> <span style="color:#960050;background-color:#1e0010">│</span> <span style="color:#960050;background-color:#1e0010">│</span> <span style="color:#960050;background-color:#1e0010">│</span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">#</span> <span style="color:#960050;background-color:#1e0010">*</span> <span style="color:#960050;background-color:#1e0010">*</span> <span style="color:#960050;background-color:#1e0010">*</span> <span style="color:#960050;background-color:#1e0010">*</span> <span style="color:#960050;background-color:#1e0010">*</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>For example, the line below states that the task must be started every Friday at midnight, as well as on the 13th of each month at midnight:</p>
+<pre tabindex="0"><code>0 0 13 * 5
+</code></pre><p>To generate CronJob schedule expressions, you can also use web tools like <a href="https://crontab.guru/">crontab.guru</a>.</p>
+<h3 id="useful-cron-patterns">Useful Cron Patterns</h3>
+<table>
+<thead>
+<tr>
+<th>Entry</th>
+<th>Description</th>
+<th>Equivalent to</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>@yearly (or @annually)</td>
+<td>Run once a year at midnight of 1 January</td>
+<td>0 0 1 1 *</td>
+</tr>
+<tr>
+<td>@monthly</td>
+<td>Run once a month at midnight of the first day of the month</td>
+<td>0 0 1 * *</td>
+</tr>
+<tr>
+<td>@weekly</td>
+<td>Run once a week at midnight on Sunday morning</td>
+<td>0 0 * * 0</td>
+</tr>
+<tr>
+<td>@daily (or @midnight)</td>
+<td>Run once a day at midnight</td>
+<td>0 0 * * *</td>
+</tr>
+<tr>
+<td>@hourly</td>
+<td>Run once an hour at the beginning of the hour</td>
+<td>0 * * * *</td>
+</tr>
+</tbody>
+</table>
+<h2 id="20-useful-crontab-examples">20 Useful Crontab Examples</h2>
+<p>Here is the list of examples for scheduling cron jobs in a Linux system using crontab.</p>
+<h5 id="1-schedule-a-cron-to-execute-at-2am-daily">1. Schedule a cron to execute at 2am daily.</h5>
+<p>This will be useful for scheduling database backup on a daily basis.</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#ae81ff">0</span> <span style="color:#ae81ff">2</span> * * *
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>Asterisk (*) is used for matching all the records.</li>
+</ul>
+<h5 id="2-schedule-a-cron-to-execute-twice-a-day">2. Schedule a cron to execute twice a day.</h5>
+<p>Below example command will execute at 5 AM and 5 PM daily. You can specify multiple time stamps by comma-separated.</p>
+<pre tabindex="0"><code>0 5,17 * * *
+</code></pre><h5 id="3-schedule-a-cron-to-execute-on-every-minutes">3. Schedule a cron to execute on every minutes.</h5>
+<p>Generally, we don’t require any script to execute on every minute but in some cases, you may need to configure it.</p>
+<pre tabindex="0"><code>* * * * *
+</code></pre><h5 id="4-schedule-a-cron-to-execute-on-every-sunday-at-5-pm">4. Schedule a cron to execute on every Sunday at 5 PM.</h5>
+<p>This type of cron is useful for doing weekly tasks, like log rotation, etc.</p>
+<pre tabindex="0"><code>0 17 * * sun
+</code></pre><h5 id="5-schedule-a-cron-to-execute-on-every-10-minutes">5. Schedule a cron to execute on every 10 minutes.</h5>
+<p>If you want to run your script on 10 minutes interval, you can configure like below. These types of crons are useful for monitoring.</p>
+<pre tabindex="0"><code>*/10 * * * *
+</code></pre><p>*<strong>/10:</strong> means to run every 10 minutes. Same as if you want to execute on every 5 minutes use */5.</p>
+<h5 id="6-schedule-a-cron-to-execute-on-selected-months">6. Schedule a cron to execute on selected months.</h5>
+<p>Sometimes we required scheduling a task to be executed for selected months only. Below example script will run in January, May and August months.</p>
+<pre tabindex="0"><code>* * * jan,may,aug
+</code></pre><h5 id="7-schedule-a-cron-to-execute-on-selected-days">7. Schedule a cron to execute on selected days.</h5>
+<p>If you required scheduling a task to be executed for selected days only. The below example will run on each Sunday and Friday at 5 PM.</p>
+<pre tabindex="0"><code>0 17 * * sun,fri
+</code></pre><h5 id="8-schedule-a-cron-to-execute-on-first-sunday-of-every-month">8. Schedule a cron to execute on first sunday of every month.</h5>
+<p>To schedule a script to execute a script on the first Sunday only is not possible by time parameter, But we can use the condition in command fields to do it.</p>
+<pre tabindex="0"><code>0 2 * * sun  [ $(date +%d) -le 07 ] &amp;&amp; /script/script.sh
+</code></pre><h5 id="9-schedule-a-cron-to-execute-on-every-four-hours">9. Schedule a cron to execute on every four hours.</h5>
+<p>If you want to run a script on 4 hours interval. It can be configured like below.</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#ae81ff">0</span> */4 * * *
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h5 id="10-schedule-a-cron-to-execute-twice-on-every-sunday-and-monday">10. Schedule a cron to execute twice on every Sunday and Monday.</h5>
+<p>To schedule a task to execute twice on Sunday and Monday only. Use the following settings to do it.</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#ae81ff">0</span> 4,17 * * sun,mon
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h5 id="11-schedule-a-cron-to-execute-on-every-30-seconds">11. Schedule a cron to execute on every 30 Seconds.</h5>
+<p>To schedule a task to execute every 30 seconds is not possible by time parameters, But it can be done by schedule same cron twice as below.</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>* * * * * /scripts/script.sh
+</span></span><span style="display:flex;"><span>* * * * *  sleep 30; /scripts/script.sh
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h5 id="13-schedule-tasks-to-execute-on-yearly--yearly-">13. Schedule tasks to execute on yearly ( @yearly ).</h5>
+<p>@yearly timestamp is similar to “<strong>0 0 1 1 *</strong>“. It will execute a task on the first minute of every year, It may useful to send new year greetings 🙂</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>@yearly /scripts/script.sh
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h5 id="14-schedule-tasks-to-execute-on-monthly--monthly-">14. Schedule tasks to execute on monthly ( @monthly ).</h5>
+<p>@monthly timestamp is similar to “<strong>0 0 1 * *</strong>“. It will execute a task in the first minute of the month. It may useful to do monthly tasks like paying the bills and invoicing to customers.</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>@monthly /scripts/script.sh
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h5 id="15-schedule-tasks-to-execute-on-weekly--weekly-">15. Schedule tasks to execute on Weekly ( @weekly ).</h5>
+<p>@weekly timestamp is similar to “<strong>0 0 * * mon</strong>“. It will execute a task in the first minute of the week. It may useful to do weekly tasks like the cleanup of the system etc.</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>@weekly /bin/script.sh
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h5 id="16-schedule-tasks-to-execute-on-daily--daily-">16. Schedule tasks to execute on daily ( @daily ).</h5>
+<p>@daily timestamp is similar to “<strong>0 0 * * *</strong>“. It will execute a task in the first minute of every day, It may useful to do daily tasks.</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>@daily
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h5 id="17-schedule-tasks-to-execute-on-hourly--hourly-">17. Schedule tasks to execute on hourly ( @hourly ).</h5>
+<p>@hourly timestamp is similar to “<strong>0 * * * *</strong>“. It will execute a task in the first minute of every hour, It may useful to do hourly tasks.</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>@hourly
+</span></span></code></pre></td></tr></table>
+</div>
+</div>
+</div>
+
+
+
+    
+	
+  
+    
+    
+	
+    
+
+<div class="td-content" style="page-break-before: always">
+    
+	<h1 id="pg-e560fbed7f9b59e43555a1e7bcd8966d">5 - Events</h1>
+    <div class="lead">How to configure a package to be triggered bt the FX Router when a specific type of event is observed on the platform.</div>
+	<p>FX is an event driven platform wich means that each action generating an event can be reused for further triggering of executions. Also within an executing script, an event can be generated and sent as a message. Each event is defined at least by it’s source, type and payload (data). Event message format is following the cloudevents standard. A list of all event types is maintained so the user can bound package execution to certain event type, which means that each time such an event is received, the package execution will be triggered.</p>
+<h1 id="events">Events</h1>
+<p>Events are messages passed through the platform which are generated by Services.</p>
+<p>Events are in the form of JSON formatted messages which adhere to the CloudEvents format. They carry a Header which indicates the event type and a Payload (or Data section) which contain information about the event.</p>
+<p>To have a better detailed understanding of how Events are generated, please refer to the <a href="/docs/overview/architecture-overview/" title="Architecture Overview">Architecture</a> subcategory in the <em>Overview</em> category.</p>
+<h2 id="events-1">Events</h2>
+<p>This use case defines how to configure a package to be triggered bt the FX Router when a specific type of event is observed on the platform.</p>
+<ol>
+<li>Click on <em>Events</em> on the left side of the dashboard menu to open drop-down</li>
+<li>Click on <em>Event Types</em></li>
+<li>Check the predefined <em>Event Types</em>
+<ul>
+<li>ferris.apps.modules.approvals.step_approval_completed</li>
+<li>ferris.apps.modules.minio.file_uploaded</li>
+</ul>
+</li>
+</ol>
+<p>Events can be created within scripts during package execution by sending a message to the <strong>Kafka Topic</strong> using the <code>ferris_cli</code> python package. For example, a package can be bound to a file_upload event that is triggered every time a file gets uploaded to <strong>MinIO</strong> using FX file storage module. New event types will be registered as they are sent to the <strong>Kafka Topic</strong> using the <code>ferris_cli</code> python package.</p>
+<p>Further details regarding <code>ferris_cli</code> can be found in the subcategory <a href="/docs/developerguide/development-lifecycle/" title="development-lifecycle">Development Lifecycle</a> in the <em>Developer Guide</em>.</p>
+
+
+
+
+
+
+<p> 
+            <img src="/streamzero/images/user_guide/events_event_types.png" style="border:2px solid #fff;
+            box-shadow: 10px 10px 5px #ccc;
+            -moz-box-shadow: 10px 10px 5px #ccc;
+            -webkit-box-shadow: 10px 10px 5px #ccc;
+            -khtml-box-shadow: 10px 10px 5px #ccc;"/>
+</p>
+
+<h2 id="executions---packages---file-upload-trigger-event">Executions - Packages -&gt; file upload trigger event</h2>
+<p>In this use case an existing package will be edited to define the file upload event type.</p>
+<ol>
+<li>Click on <em>Executions</em> on the left side of the dashboard menu to open drop-down</li>
+<li>Click on <em>Packages</em></li>
+<li>Click on the edit record button to edit the existing package <em>Test Package with Scripts</em></li>
+</ol>
+
+
+
+
+
+
+<p> 
+            <img src="/streamzero/images/user_guide/edit_package_event.png" style="border:2px solid #fff;
+            box-shadow: 10px 10px 5px #ccc;
+            -moz-box-shadow: 10px 10px 5px #ccc;
+            -webkit-box-shadow: 10px 10px 5px #ccc;
+            -khtml-box-shadow: 10px 10px 5px #ccc;"/>
+</p>
+
+<ol>
+<li>Delete the <em>CronJob Schedule</em> to allow a <em>Trigger Event Type</em></li>
+<li>Select the <em>Value</em> of the event type (ferris.apps.modules.minio.file_uploaded)</li>
+<li>Save the edited package.</li>
+</ol>
+
+
+
+
+
+
+<p> 
+            <img src="/streamzero/images/user_guide/save_edited_package_event.png" style="border:2px solid #fff;
+            box-shadow: 10px 10px 5px #ccc;
+            -moz-box-shadow: 10px 10px 5px #ccc;
+            -webkit-box-shadow: 10px 10px 5px #ccc;
+            -khtml-box-shadow: 10px 10px 5px #ccc;"/>
+</p>
+
+<h2 id="file-storage">File Storage</h2>
+<p>To finalize the process, a file needs to be uploaded to a MinIO bucket (file storage).</p>
+<ol>
+<li>Click on <em>File Storage</em> on the left side of the dashboard menu to open drop-down</li>
+<li>Click on <em>List Files</em></li>
+<li>Click on <em>+Add</em> to upload a file to the bucket</li>
+</ol>
+
+
+
+
+
+
+<p> 
+            <img src="/streamzero/images/user_guide/list_files_event.png" style="border:2px solid #fff;
+            box-shadow: 10px 10px 5px #ccc;
+            -moz-box-shadow: 10px 10px 5px #ccc;
+            -webkit-box-shadow: 10px 10px 5px #ccc;
+            -khtml-box-shadow: 10px 10px 5px #ccc;"/>
+</p>
+
+<ol>
+<li>Choose file to upload</li>
+<li>Choose <em>File Type</em>  (CSV Table; Plain Text; JSON)</li>
+<li>Select the <em>Bucket Name</em></li>
+<li>Click on <em>Save</em> to save the file</li>
+</ol>
+
+
+
+
+
+
+<p> 
+            <img src="/streamzero/images/user_guide/upload_file_event.png" style="border:2px solid #fff;
+            box-shadow: 10px 10px 5px #ccc;
+            -moz-box-shadow: 10px 10px 5px #ccc;
+            -webkit-box-shadow: 10px 10px 5px #ccc;
+            -khtml-box-shadow: 10px 10px 5px #ccc;"/>
+</p>
+
+<p>To verify if the package execution has been triggered, go back to the initial, edited package.</p>
+<ol>
+<li>Click on <em>Executions</em> on the left side of the dashboard menu to open drop-down</li>
+<li>Click on <em>Packages</em></li>
+<li>Click on the magnifying glass to open the details page of the package <em>Test Package with Scripts</em></li>
+</ol>
+
+
+
+
+
+
+<p> 
+            <img src="/streamzero/images/user_guide/package_details_event.png" style="border:2px solid #fff;
+            box-shadow: 10px 10px 5px #ccc;
+            -moz-box-shadow: 10px 10px 5px #ccc;
+            -webkit-box-shadow: 10px 10px 5px #ccc;
+            -khtml-box-shadow: 10px 10px 5px #ccc;"/>
+</p>
+
+<p>It will automatically open the <em>List Package Executions</em> tab.</p>
+<ol>
+<li>Check the last Event, date and time to verify it corresponds to the time the file was uploaded</li>
+<li>Click on the magnifying glass to open the details page of the triggered execution</li>
+</ol>
+
+
+
+
+
+
+<p> 
+            <img src="/streamzero/images/user_guide/list_triggered_event.png" style="border:2px solid #fff;
+            box-shadow: 10px 10px 5px #ccc;
+            -moz-box-shadow: 10px 10px 5px #ccc;
+            -webkit-box-shadow: 10px 10px 5px #ccc;
+            -khtml-box-shadow: 10px 10px 5px #ccc;"/>
+</p>
+
+<ul>
+<li>Check the details page of the event triggered run</li>
+</ul>
+
+
+
+
+
+
+<p> 
+            <img src="/streamzero/images/user_guide/details_page_event.png" style="border:2px solid #fff;
+            box-shadow: 10px 10px 5px #ccc;
+            -moz-box-shadow: 10px 10px 5px #ccc;
+            -webkit-box-shadow: 10px 10px 5px #ccc;
+            -khtml-box-shadow: 10px 10px 5px #ccc;"/>
+</p>
+
+<h2 id="workflow---approval-completed-trigger-event">Workflow -&gt; approval completed trigger event</h2>
+<p>To finalize the second trigger event (ferris.apps.modules.approvals.step_approval_completed), an existing Workflow will be used to trigger a Case Management that will need to get approved.</p>
+<ol>
+<li>Click on <em>Workflows</em> on the left side of the dashboard menu to open the drop-down</li>
+<li>Click on <em>List Workflows</em></li>
+<li>Click on the magnifying glass to show the details page of the workflow</li>
+</ol>
+<p>Note that before even getting a closer look at the Workflow details, the <em>Entrypoint Event</em> is displayed -&gt; ferris.apps.modules.minio.file_uploaded</p>
+
+
+
+
+
+
+<p> 
+            <img src="/streamzero/images/user_guide/workflow_second_trigger_event.png" style="border:2px solid #fff;
+            box-shadow: 10px 10px 5px #ccc;
+            -moz-box-shadow: 10px 10px 5px #ccc;
+            -webkit-box-shadow: 10px 10px 5px #ccc;
+            -khtml-box-shadow: 10px 10px 5px #ccc;"/>
+</p>
+
+<p>Check the details in the JSON snippet to understand what or which event types will trigger the second event type. The first event type shown in the JSON snippet is: ferris.apps.modules.minio.file_uploaded -&gt; which means that a file will need to get uploaded for the event to get triggered. The second event type shown in the JSON snippet is: ferris.apps.modules.approvals.step_approval_completed -&gt; meaning the uploaded file will need to get approved in the <em>Case Management</em> module before the wanted event gets triggered.</p>
+
+
+
+
+
+
+<p> 
+            <img src="/streamzero/images/user_guide/workflow_trigger_event_types.png" style="border:2px solid #fff;
+            box-shadow: 10px 10px 5px #ccc;
+            -moz-box-shadow: 10px 10px 5px #ccc;
+            -webkit-box-shadow: 10px 10px 5px #ccc;
+            -khtml-box-shadow: 10px 10px 5px #ccc;"/>
+</p>
+
+<h2 id="case-management-----approval-completed-trigger-event">Case Management -&gt; -&gt; approval completed trigger event</h2>
+<ol>
+<li>Upload a file to a bucket (the process of uploading a file was described in detail on top of this page)</li>
+<li>Click on <em>Case Management</em> on the left side of the dashboard menu to open the drop-down</li>
+<li>Click on <em>Approvals</em></li>
+</ol>
+
+</div>
+
+
+
+    
+	
+  
+    
+    
+	
+    
+
+<div class="td-content" style="page-break-before: always">
+    
+	<h1 id="pg-17c2125c4f6974ae1ce8e9b255157670">6 - Executions - Packages</h1>
+    <div class="lead">How to use the Executions/Packages Framework for script automation and package (execution) triggering.</div>
+	<p>The Executions/Packages is an event oriented framework that allows enterprise organizations the automation of script processing which can be triggered by:</p>
+<ul>
+<li>Manually: By clicking the ‘Run’ button on the StreamZero FX Management Server.</li>
+<li>On Schedule: As a cron job whereas the Cron expression is added on the UI.</li>
+<li>On Event: Where a package is configured to be triggered bt the FX Router when a specific type of event is observed on the platform.</li>
+</ul>
+<p>It allows users to deploy their locally tested scripts without DevOps specific changes or the need to learn complex DSL (description and configuration language). In tandem with Git integrated source code management FX allows distributed and fragmented tech teans to easily deploy and test new versions of code in an agile way with changes being applied immediately.</p>
+<p>Contiuous Change Integration / Change Deployment becomes a component based and building block driven approach, where packages can be configurable and parametrised. All scripts and their parameters like secrets and environment variables form packages which makes them reusable for similar jobs or event chains. Event based package triggering allows users to run multiple packages in parallel as a reaction to the same event.</p>
+<h1 id="executions---packages">Executions - Packages</h1>
+<p>Primary entities for &ldquo;Executions&rdquo; are packages which are composed by scripts that are executed in a predefined order.</p>
+<h2 id="executions---packages-1">Executions -&gt; Packages</h2>
+<p>This Use Case defines how to create and run a new package.</p>
+<ol>
+<li>Click on <em>Executions</em> on the left side of the dashboard menu to open drop-down</li>
+<li>Click on <em>Packages</em></li>
+<li>Click on <em>+Add</em> to create a package</li>
+</ol>
+
+
+
+
+
+
+<p> 
+            <img src="/streamzero/images/user_guide/executions_packages_add_roboto.png" style="border:2px solid #fff;
+            box-shadow: 10px 10px 5px #ccc;
+            -moz-box-shadow: 10px 10px 5px #ccc;
+            -webkit-box-shadow: 10px 10px 5px #ccc;
+            -khtml-box-shadow: 10px 10px 5px #ccc;"/>
+</p>
+
+<h2 id="create-package">Create Package</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:left"><strong>Field name</strong></th>
+<th><strong>Steps &amp; Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">1. Name</td>
+<td>1. Name the package</td>
+</tr>
+<tr>
+<td style="text-align:left">2. Description</td>
+<td>2. Descripe the package</td>
+</tr>
+<tr>
+<td style="text-align:left">3. Project</td>
+<td>3. Select the project to which the package will be bound</td>
+</tr>
+<tr>
+<td style="text-align:left">4. Tags</td>
+<td>4. Add Tags of choice manually or select from predefined tags</td>
+</tr>
+<tr>
+<td style="text-align:left">5. Schedule</td>
+<td>5. Schedule cron job -&gt; &ldquo;Cron like schedule definition. NOTE: day of week start on Monday (0 - Monday, 6 - Sunday) example: &ldquo;20****&rdquo; -&gt; <strong>The whole definition of <a href="/docs/user-guide/cronjob/" title="CronJob">Cron Jobs</a> can be found in the next sub-category of this UserGuide</strong></td>
+</tr>
+<tr>
+<td style="text-align:left">6. Trigger Event Type</td>
+<td>6. Select Value -&gt; select event type to trigger the exectution of the package -&gt; please visit the sub-category <a href="/docs/user-guide/events/" title="Events">Events</a> to get a better understanding of how to set event triggers.</td>
+</tr>
+<tr>
+<td style="text-align:left">7. Allow Manual Triggering</td>
+<td>7. Checkbox -&gt; click to allow manual triggering of the package</td>
+</tr>
+<tr>
+<td style="text-align:left">8. Active</td>
+<td>8. Checkbox -&gt; click to set the package to active</td>
+</tr>
+<tr>
+<td style="text-align:left">9. File Upload (choose file)</td>
+<td>9. Click on Choose file (Optional) to upload a script -&gt; upload a JSON &ldquo;config.json&rdquo; script to configure the package</td>
+</tr>
+<tr>
+<td style="text-align:left">10. File Upload (choose file)</td>
+<td>10. Click on Choose file (Optional) to upload a script -&gt; upload a python &ldquo;test_scr.py&rdquo; script to pull the configuratio from config file and print all items</td>
+</tr>
+<tr>
+<td style="text-align:left">11. Save</td>
+<td>11. Click Save to save packages</td>
+</tr>
+<tr>
+<td style="text-align:left"><em>Supported File upload Types</em></td>
+<td>4 different file types are supported: <br /><strong>1. &ldquo;.py file&rdquo;</strong> -&gt; A PY file is a program file or script written in Python, an interpreted object-oriented programming language. <br /><strong>2. &ldquo;.json file&rdquo;</strong> -&gt; A JSON file is a file that stores simple data structures and objects in JavaScript Object Notation (JSON) format, which is a standard data interchange format. <br /><strong>3. &ldquo;.sql file&rdquo;</strong> -&gt; A (SQL) file with .sql extension is a Structured Query Language (SQL) file that contains code to work with relational databases. <br /><strong>4. &ldquo;.csv file&rdquo;</strong> -&gt; A CSV (comma-separated values) file is a text file that has a specific format which allows data to be saved in a table structured format.</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+
+<p> 
+            <img src="/streamzero/images/user_guide/create_package_with_configs_roboto.png" style="border:2px solid #fff;
+            box-shadow: 10px 10px 5px #ccc;
+            -moz-box-shadow: 10px 10px 5px #ccc;
+            -webkit-box-shadow: 10px 10px 5px #ccc;
+            -khtml-box-shadow: 10px 10px 5px #ccc;"/>
+</p>
+
+<h5 id="configjson-script">config.json script</h5>
+<p>The <code>config.json</code> file contains key/value configuration pairs that can be accessed in scripts at execution time.</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>{<span style="color:#f92672">&#34;somekey&#34;</span>:<span style="color:#e6db74">&#34;some value 2&#34;</span>}
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h5 id="test_scrpy-script">test_scr.py script</h5>
+<p>This is an example script that shows how configuration from <code>config.json</code> file can be accessed from a script. <code>package_name</code> will be passed to the script as argument and then can be used for fetching configuration using <code>ApplicationConfigurator</code> from <code>ferris_cli</code> python package.</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> sys<span style="color:#f92672">,</span> json
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> ferris_cli.v2 <span style="color:#f92672">import</span> ApplicationConfigurator
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>fa <span style="color:#f92672">=</span> json<span style="color:#f92672">.</span>loads(sys<span style="color:#f92672">.</span>argv[<span style="color:#ae81ff">1</span>])
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>package_name <span style="color:#f92672">=</span> fa[<span style="color:#e6db74">&#39;package_name&#39;</span>]
+</span></span><span style="display:flex;"><span>config <span style="color:#f92672">=</span> ApplicationConfigurator<span style="color:#f92672">.</span>get(package_name)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> k, v <span style="color:#f92672">in</span> config<span style="color:#f92672">.</span>items():
+</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">{</span>k<span style="color:#e6db74">}</span><span style="color:#e6db74"> -&gt; </span><span style="color:#e6db74">{</span>v<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
+</span></span><span style="display:flex;"><span>    print(v)
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="check-created-package">Check Created Package</h2>
+<p>The created package should be triggered every 20 minutes of every hour but can also be run manually.</p>
+<ul>
+<li>Click on the magnifying glass icon to open the package&rsquo;s details page</li>
+</ul>
+
+
+
+
+
+
+<p> 
+            <img src="/streamzero/images/user_guide/click_loupe_package_roboto.png" style="border:2px solid #fff;
+            box-shadow: 10px 10px 5px #ccc;
+            -moz-box-shadow: 10px 10px 5px #ccc;
+            -webkit-box-shadow: 10px 10px 5px #ccc;
+            -khtml-box-shadow: 10px 10px 5px #ccc;"/>
+</p>
+
+<ol>
+<li>Check details page</li>
+<li>Click on &ldquo;Show Trigger Event&rdquo;</li>
+</ol>
+
+
+
+
+
+
+<p> 
+            <img src="/streamzero/images/user_guide/package_details_show_trigger_event_roboto.png" style="border:2px solid #fff;
+            box-shadow: 10px 10px 5px #ccc;
+            -moz-box-shadow: 10px 10px 5px #ccc;
+            -webkit-box-shadow: 10px 10px 5px #ccc;
+            -khtml-box-shadow: 10px 10px 5px #ccc;"/>
+</p>
+
+<ol>
+<li>Check the triggered event details</li>
+<li>Close</li>
+</ol>
+
+
+
+
+
+
+<p> 
+            <img src="/streamzero/images/user_guide/triggered_event_details_roboto.png" style="border:2px solid #fff;
+            box-shadow: 10px 10px 5px #ccc;
+            -moz-box-shadow: 10px 10px 5px #ccc;
+            -webkit-box-shadow: 10px 10px 5px #ccc;
+            -khtml-box-shadow: 10px 10px 5px #ccc;"/>
+</p>
+
+<h2 id="package-executions--runs">Package Executions / Runs</h2>
+<ul>
+<li>Click on the &ldquo;Run&rdquo; button down the page to run the package manually</li>
+</ul>
+
+
+
+
+
+
+<p> 
+            <img src="/streamzero/images/user_guide/run_button_manual_package.png" style="border:2px solid #fff;
+            box-shadow: 10px 10px 5px #ccc;
+            -moz-box-shadow: 10px 10px 5px #ccc;
+            -webkit-box-shadow: 10px 10px 5px #ccc;
+            -khtml-box-shadow: 10px 10px 5px #ccc;"/>
+</p>
+
+<p>It will automatically transfer you to the &ldquo;List Package Executions&rdquo; tab</p>
+<ol>
+<li>Check runs/package executions to see if you manually triggered execution was processed</li>
+<li>Click on the magnifying glass icon of your latest manually triggered run to open details page of the exectuion</li>
+</ol>
+
+
+
+
+
+
+<p> 
+            <img src="/streamzero/images/user_guide/manual_run_check_loupe_details_roboto.png" style="border:2px solid #fff;
+            box-shadow: 10px 10px 5px #ccc;
+            -moz-box-shadow: 10px 10px 5px #ccc;
+            -webkit-box-shadow: 10px 10px 5px #ccc;
+            -khtml-box-shadow: 10px 10px 5px #ccc;"/>
+</p>
+
+<ol>
+<li>Check the details &ldquo;Show Package Execution&rdquo; of the run/exection</li>
+<li>Click on &ldquo;List Steps&rdquo; tab to see the steps of the execution</li>
+</ol>
+
+
+
+
+
+
+<p> 
+            <img src="/streamzero/images/user_guide/exection_manual_run_details_roboto.png" style="border:2px solid #fff;
+            box-shadow: 10px 10px 5px #ccc;
+            -moz-box-shadow: 10px 10px 5px #ccc;
+            -webkit-box-shadow: 10px 10px 5px #ccc;
+            -khtml-box-shadow: 10px 10px 5px #ccc;"/>
+</p>
+
+<ol>
+<li>Check the steps of the run and status (completed; pending; unprocessed; failed)</li>
+<li>Click on &ldquo;Show Results&rdquo; to verify the script for failed executions</li>
+</ol>
+
+
+
+
+
+
+<p> 
+            <img src="/streamzero/images/user_guide/manual_run_list_steps_roboto.png" style="border:2px solid #fff;
+            box-shadow: 10px 10px 5px #ccc;
+            -moz-box-shadow: 10px 10px 5px #ccc;
+            -webkit-box-shadow: 10px 10px 5px #ccc;
+            -khtml-box-shadow: 10px 10px 5px #ccc;"/>
+</p>
+
+
+
+
+
+
+
+<p> 
+            <img src="/streamzero/images/user_guide/script_manual_run_execution.png" style="border:2px solid #fff;
+            box-shadow: 10px 10px 5px #ccc;
+            -moz-box-shadow: 10px 10px 5px #ccc;
+            -webkit-box-shadow: 10px 10px 5px #ccc;
+            -khtml-box-shadow: 10px 10px 5px #ccc;"/>
+</p>
+
+<ul>
+<li>Close window</li>
+</ul>
+<p><strong>Note that currently only python and sql handlers are available, files of different type will be unprocessed.</strong></p>
+<h2 id="save-a-runexecution">Save a Run/Execution</h2>
+<ol>
+<li>Go back to the &ldquo;List Package Executions&rdquo; tab</li>
+<li>Click on the edit icon to open make the run/execution editable</li>
+</ol>
+
+
+
+
+
+
+<p> 
+            <img src="/streamzero/images/user_guide/list_package_executions_edit_manual_run_roboto.png" style="border:2px solid #fff;
+            box-shadow: 10px 10px 5px #ccc;
+            -moz-box-shadow: 10px 10px 5px #ccc;
+            -webkit-box-shadow: 10px 10px 5px #ccc;
+            -khtml-box-shadow: 10px 10px 5px #ccc;"/>
+</p>
+
+<ol>
+<li>Name the execution/run</li>
+<li>Describe the execution/run</li>
+<li>Click &ldquo;Saved&rdquo; check box</li>
+<li>Save</li>
+</ol>
+
+
+
+
+
+
+<p> 
+            <img src="/streamzero/images/user_guide/save_execution_run_roboto.png" style="border:2px solid #fff;
+            box-shadow: 10px 10px 5px #ccc;
+            -moz-box-shadow: 10px 10px 5px #ccc;
+            -webkit-box-shadow: 10px 10px 5px #ccc;
+            -khtml-box-shadow: 10px 10px 5px #ccc;"/>
+</p>
+
+<ol>
+<li>Click on Executions to open dropdown</li>
+<li>Click on Saved Executions to check the saved run</li>
+</ol>
+
+
+
+
+
+
+<p> 
+            <img src="/streamzero/images/user_guide/check_saved_run_roboto.png" style="border:2px solid #fff;
+            box-shadow: 10px 10px 5px #ccc;
+            -moz-box-shadow: 10px 10px 5px #ccc;
+            -webkit-box-shadow: 10px 10px 5px #ccc;
+            -khtml-box-shadow: 10px 10px 5px #ccc;"/>
+</p>
+
+<p><strong>In the next section &ldquo;UI Generator&rdquo;, the importance of the saved run will be showcased</strong>.</p>
+
+</div>
+
+
+
+    
+	
+  
+
+
+
+          </main>
+        </div>
+      </div>
+      <section class="row td-cover-block" style="background-color: #1b1a21;">
+  <div class="container">
+      <footer class="footer-component with-intercom">
+          <div class="section-container footer-inner size-medium">
+              <div class="content">
+                  <div class="page-container padding-small-x">
+                      <div class="margin-component bottom-small-x">
+                          <nav class="footer-links" role="navigation">
+                              <ul class="list-component footer-column ul">
+                                  <li class="list-item-component footer-item footer-item-header">
+                                      <div class="margin-component inner bottom-zero">
+                                          <div class="list-content-wrapper">
+                                              <div class="typography-text p2-caps footer-link footer-header inverted">
+                                                  Product
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </li>
+                                  <li class="list-item-component footer-item">
+                                      <div class="margin-component inner bottom-zero">
+                                          <div class="list-content-wrapper">
+                                              <div class="typography-text p2-normal inverted"><a
+                                                  class="link-component footer-link"
+                                                  href="/products/fx/">StreamZero FX</a></div>
+                                          </div>
+                                      </div>
+                                  </li>
+                                  <li class="list-item-component footer-item">
+                                      <div class="margin-component inner bottom-zero">
+                                          <div class="list-content-wrapper">
+                                              <div class="typography-text p2-normal inverted"><a
+                                                  class="link-component footer-link"
+                                                  href="/products/k8x">StreamZero K8X</a></div>
+                                          </div>
+                                      </div>
+                                  </li>
+                                  <li class="list-item-component footer-item">
+                                      <div class="margin-component inner bottom-zero">
+                                          <div class="list-content-wrapper">
+                                              <div class="typography-text p2-normal inverted"><a
+                                                  class="link-component footer-link"
+                                                  href="/products/sx/">StreamZero SX</a></div>
+                                          </div>
+                                      </div>
+                                  </li>
+                              </ul>
+                              <ul class="list-component footer-column ul">
+                                  <li class="list-item-component footer-item footer-item-header">
+                                      <div class="margin-component inner bottom-zero">
+                                          <div class="list-content-wrapper">
+                                              <div class="typography-text p2-caps footer-link footer-header inverted">
+                                                  Solutions
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </li>
+                                  <li class="list-item-component footer-item">
+                                      <div class="margin-component inner bottom-zero">
+                                          <div class="list-content-wrapper">
+                                              <div class="typography-text p2-normal inverted"><a
+                                                  class="link-component footer-link"
+                                                  href="/solutions/">Why GridMine?</a></div>
+                                          </div>
+                                      </div>
+                                  </li>
+                                  <li class="list-item-component footer-item">
+                                      <div class="margin-component inner bottom-zero">
+                                          <div class="list-content-wrapper">
+                                              <div class="typography-text p2-normal inverted"><a
+                                                  class="link-component footer-link"
+                                                  href="/integrations/">Integrations</a></div>
+                                          </div>
+                                      </div>
+                                  </li>
+                                  <li class="list-item-component footer-item">
+                                      <div class="margin-component inner bottom-zero">
+                                          <div class="list-content-wrapper">
+                                              <div class="typography-text p2-normal inverted"><xa
+                                                  class="link-component footer-link"
+                                                  href="/partners/">Partners</a></div>
+                                          </div>
+                                      </div>
+                                  </li>
+                              </ul>
+                              <ul class="list-component footer-column ul">
+                                  <li class="list-item-component footer-item footer-item-header">
+                                      <div class="margin-component inner bottom-zero">
+                                          <div class="list-content-wrapper">
+                                              <div class="typography-text p2-caps footer-link footer-header inverted">
+                                                  Learn
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </li>
+                                  <li class="list-item-component footer-item">
+                                      <div class="margin-component inner bottom-zero">
+                                          <div class="list-content-wrapper">
+                                              <div class="typography-text p2-normal inverted"><a
+                                                  rel="noopener noreferrer"
+                                                  class="link-component footer-link" href="/docs/">Developer
+                                                  Guide</a>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </li>
+                                  <li class="list-item-component footer-item">
+                                      <div class="margin-component inner bottom-zero">
+                                          <div class="list-content-wrapper">
+                                              <div class="typography-text p2-normal inverted"><a
+                                                  rel="noopener noreferrer"
+                                                  class="link-component footer-link" href="/docs/integrations/">Integrations
+                                                  Guide</a></div>
+                                          </div>
+                                      </div>
+                                  </li>
+                                  <li class="list-item-component footer-item">
+                                      <div class="margin-component inner bottom-zero">
+                                          <div class="list-content-wrapper">
+                                              <div class="typography-text p2-normal inverted"><a
+                                                  class="link-component footer-link"
+                                                  href="/docs/security/">Security</a></div>
+                                          </div>
+                                      </div>
+                                  </li>
+                                  <li class="list-item-component footer-item">
+                                      <div class="margin-component inner bottom-zero">
+                                          <div class="list-content-wrapper">
+                                              <div class="typography-text p2-normal inverted"><xa
+                                                  class="link-component footer-link"
+                                                  href="/blog/">Blog</a></div>
+                                          </div>
+                                      </div>
+                                  </li>
+                                  
+                              </ul>
+                              <ul class="list-component footer-column ul">
+                                  <li class="list-item-component footer-item footer-item-header">
+                                      <div class="margin-component inner bottom-zero">
+                                          <div class="list-content-wrapper">
+                                              <div class="typography-text p2-caps footer-link footer-header inverted">
+                                                  Support
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </li>
+                                  <li class="list-item-component footer-item">
+                                      <div class="margin-component inner bottom-zero">
+                                          <div class="list-content-wrapper">
+                                              <div class="typography-text p2-normal inverted"><xa
+                                                  class="link-component footer-link"
+                                                  href="/support/">Support Plans</a></div>
+                                          </div>
+                                      </div>
+                                  </li>
+                                  
+                                  <li class="list-item-component footer-item">
+                                      <div class="margin-component inner bottom-zero">
+                                          <div class="list-content-wrapper">
+                                              <div class="typography-text p2-normal inverted"><xa
+                                                  class="link-component footer-link"
+                                                  href="/services/">Professional Services</a></div>
+                                          </div>
+                                      </div>
+                                  </li>
+                                  <li class="list-item-component footer-item">
+                                      <div class="margin-component inner bottom-zero">
+                                          <div class="list-content-wrapper">
+                                              <div class="typography-text p2-normal inverted"><a
+                                                  rel="noopener noreferrer"
+                                                  class="link-component footer-link" href="/docs/">Documentation</a>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </li>
+                              </ul>
+                              <ul class="list-component footer-column ul">
+                                  <li class="list-item-component footer-item footer-item-header">
+                                      <div class="margin-component inner bottom-zero">
+                                          <div class="list-content-wrapper">
+                                              <div class="typography-text p2-caps footer-link footer-header inverted">
+                                                  Company
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </li>
+                                  <li class="list-item-component footer-item">
+                                      <div class="margin-component inner bottom-zero">
+                                          <div class="list-content-wrapper">
+                                              <div class="typography-text p2-normal inverted"><a
+                                                  class="link-component footer-link"
+                                                  href="/about/">About Us</a></div>
+                                          </div>
+                                      </div>
+                                  </li>
+                                  <li class="list-item-component footer-item">
+                                      <div class="margin-component inner bottom-zero">
+                                          <div class="list-content-wrapper">
+                                              <div class="typography-text p2-normal inverted"><xa
+                                                  class="link-component footer-link"
+                                                  href="/jobs/"><span class="footer-pill-wrapper">Careers <span
+                                                  class="footer-pill">We're hiring</span></span></a>
+                                                </div>
+                                          </div>
+                                      </div>
+                                  </li>
+                                  <li class="list-item-component footer-item">
+                                      <div class="margin-component inner bottom-zero">
+                                          <div class="list-content-wrapper">
+                                              <div class="typography-text p2-normal inverted"><a
+                                                  class="link-component footer-link"
+                                                  href="/contact/">Contact Us</a></div>
+                                          </div>
+                                      </div>
+                                  </li>
+                              </ul>
+                          </nav>
+                      </div>
+                      <div class="margin-component bottom-small-x">
+                          <div class="centering-wrapper social-links">
+                              <a rel="noopener noreferrer" class="link-component social-link"
+                                href="https://twitter.com/gridmine/" title="Twitter" target="_blank">
+                                  <img src="/icons/footer/twitter-icon.png" alt="Twitter">
+                              </a>
+                              
+                              <a rel="noopener noreferrer" class="link-component social-link"
+                                href="https://www.linkedin.com/company/gridmine/" title="LinkedIn" target="_blank">
+                                  <img src="/icons/footer/linkedin-icon.png" alt="LinkedIn">
+                              </a>
+                              <a rel="noopener noreferrer" class="link-component social-link"
+                                href="https://www.youtube.com/channel/UC5miURXVxGLo17EyWPBWCug/" title="YouTube"
+                                target="_blank">
+                                  <img src="/icons/footer/youtube-icon.png" alt="YouTube">
+                              </a>
+                              
+                              <a rel="noopener noreferrer" class="link-component social-link"
+                                href="https://github.com/gridmine/" title="GitHub" target="_blank">
+                                  <img src="/icons/footer/github-icon.png" alt="GitHub">
+                              </a>
+                              <a rel="noopener noreferrer" class="link-component social-link"
+                                href="https://www.medium.com/gridmine/" title="Medium" target="_blank">
+                                  <img src="/icons/footer/medium-icon.png" alt="Medium">
+                              </a>
+                              <xa rel="noopener noreferrer" class="link-component social-link" href="#"
+                                data-toggle="modal" data-target="#subscribeModal"
+                                title="Subscribe to our Newsletter">
+                                  <img src="/icons/footer/mail-icon.png" alt="Newsletter">
+                              </a>
+                          </div>
+                      </div>
+                      <div class="centering-wrapper legal-links">
+                          <div class="typography-text p2-normal align-center">
+                              <span class="copyright">2023 © GridMine GmbH</span>
+                              <span> | </span>
+                              <br class="br-component mobile">
+                              <a class="link-component legal-link" href="/docs/privacy_policy/">Privacy Policy</a>
+                              <span> | </span>
+                              <a class="link-component legal-link" href="/docs/privacy_policy/">Data Protection
+                                  Policy</a>
+                              <span> | </span>
+                              <a class="link-component legal-link" href="/docs/terms_conditions/">Legal Terms and
+                                  Conditions</a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </footer>
+  </div>
+</section>
+
+<script type="text/javascript" src="/js/carousel.js"></script>
+<link rel="stylesheet" href="/css/carousel.css">
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+
+
+
+
+
+<script src='/js/tabpane-persist.js'></script>
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="/js/main.min.7d5b92c4889cf0554b0ea5e2309b0b81b196aa7c9a235632938a25d9fc4d8a7c.js" integrity="sha256-fVuSxIic8FVLDqXiMJsLgbGWqnyaI1Yyk4ol2fxNinw=" crossorigin="anonymous"></script>
+
+
+
+
+  </body>
+</html>

@@ -1,0 +1,152 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>GridMine – clientretention</title>
+    <link>/tags/clientretention/</link>
+    <description>Recent content in clientretention on GridMine</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    
+	  <atom:link href="/tags/clientretention/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Docs: Churn Analysis and Alerting – Financial Services</title>
+      <link>/docs/solutions/003-churn-analysis-and-alerting-finance/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/solutions/003-churn-analysis-and-alerting-finance/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;churn-analysis-and-alerting&#34;&gt;Churn Analysis and Alerting&lt;/h2&gt;
+&lt;h3 id=&#34;executive-summary&#34;&gt;Executive summary&lt;/h3&gt;
+&lt;p&gt;Screening your existing client population for signs of dissatisfaction and pending attrition can involve a broad range of analysis. Usually the focus is given to transaction pattern analysis. And while this may prove helpful it can be misleading in smaller banks with limited comparative data. We thus integrate a broader variety of less obvious indicators and include an advisor based reinforcement loop to train the models for a bank‘s specific churn footprint.&lt;/p&gt;
+&lt;h3 id=&#34;problem-statement&#34;&gt;Problem statement&lt;/h3&gt;
+&lt;p&gt;When clients close their accounts or cancel their mandates, it usually does not come as a surprise to the Relationship Manager (RM). But for obvious reasons, the RM tries to work against the loss of a client with similar if not the same tools, processes and attitudes that have led to a client being dissatisfied. This is not to say that the RM manager is the sole reason for churn. But often clients do not or not sufficiently voice their issues and simply quit the relationship. To search, become aware and then listen for softer and indirect signs is at the heart of this use case.&lt;/p&gt;
+&lt;h3 id=&#34;target-market--industries&#34;&gt;Target market / Industries&lt;/h3&gt;
+&lt;p&gt;The described use case can be efficiently applied to any industry that is providing services to a large number of clients and has a large number of transactions.
+Particularly following industries are benefiting most of this use-case:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Financial services&lt;/li&gt;
+&lt;li&gt;Insurance&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;solution&#34;&gt;Solution&lt;/h3&gt;
+&lt;p&gt;Using historical data, client communication and structured interviews with client advisors, we create a bank-specific churn ontology, that is then used to screen existing clients on an ongoing basis. Creating an interactive reinforcement loop with new churn-cases, this classification, predictor and indicator approach is ever more fine tuned to specific segments, desks and service categories. As direct and ongoing Key Performance Indicators (KPIs) churn ratios and client satisfaction are measured alongside Assets under Management (AuM), profitability and trade volumes for the respective clients are classified as “endangered”.
+Usually a gradual improvement can be monitored within 3-6 months from the start of the use case.&lt;/p&gt;
+&lt;p&gt;The solution included:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Initial typical churn cause analysis based on historical data (client positions, and transactions)&lt;/li&gt;
+&lt;li&gt;Ideally inclusion of CRM notes and written advisor to client communication (prior to churn)&lt;/li&gt;
+&lt;li&gt;Sales &amp;amp; Churn Ontology setup &amp;amp; subsequent ontology matching&lt;/li&gt;
+&lt;li&gt;Identification of likely bank churn footprint &amp;amp; learning / improvement loops&lt;/li&gt;
+&lt;li&gt;Aggregation of findings, reporting, alerting &amp;amp; action notifications&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;stakeholders&#34;&gt;Stakeholders&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Chief Operations&lt;/li&gt;
+&lt;li&gt;Client advisory, Relationship and Sales management&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;data-elements-assets-and-deliverables&#34;&gt;Data elements, Assets and Deliverables&lt;/h3&gt;
+&lt;p&gt;As an Input from the client, the following items were used:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Historic data about churned clients&lt;/li&gt;
+&lt;li&gt;Client portfolios - positions / transactions&lt;/li&gt;
+&lt;li&gt;Ideally pre-leave client-advisor communications&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Assets &amp;amp; Artefacts:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Client Behavioral Model&lt;/li&gt;
+&lt;li&gt;Churn Prediction&lt;/li&gt;
+&lt;li&gt;Action Monitoring&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The deliverables included:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Sales &amp;amp; Churn Indicator Ontology&lt;/li&gt;
+&lt;li&gt;Use case specific orchestration flow&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;impact-and-benefits&#34;&gt;Impact and benefits&lt;/h3&gt;
+&lt;p&gt;Lowered churn rates for distinct client segments by 16% after 6 months. Increased AuM / trades for clients „turned-around“ by about 25% within 6 months after “re-win”.&lt;/p&gt;
+&lt;p&gt;The use-case implementation resulted in:&lt;/p&gt;
+&lt;p&gt;+8% clients saved prior to loss of relationship&lt;/p&gt;
+&lt;p&gt;+24% reduction of customer asset outflows&lt;/p&gt;
+&lt;h3 id=&#34;testimonials&#34;&gt;Testimonials&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&amp;ldquo;Changing the attitude we deal with churn from feeling like a failure to working a structured process, made all the difference. Turning around a dissatisfied client is now something transparent and achievable.&amp;rdquo;
+— Mr. Roland Giger, Head of Client Book Development, UBS&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;tags--keywords&#34;&gt;Tags / Keywords&lt;/h3&gt;
+&lt;p&gt;#churn #churnanalysis #financialservices #insurance #bank #retention #clientretention #customerretention&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Curn Analysis and Alerting – General</title>
+      <link>/docs/solutions/003-churn-analysis-and-alerting-general/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/solutions/003-churn-analysis-and-alerting-general/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;churn-analysis-and-alerting&#34;&gt;Churn Analysis and Alerting&lt;/h2&gt;
+&lt;h3 id=&#34;executive-summary&#34;&gt;Executive summary&lt;/h3&gt;
+&lt;p&gt;Screening your existing client population for signs of dissatisfaction and pending attrition can involve a broad range of analysis. Usually the focus is given to transaction pattern analysis. And while this may prove helpful it can be misleading in smaller companies with limited comparative data. We thus integrate a broader variety of less obvious indicators and include an advisor based reinforcement loop to train the models for a company&amp;rsquo;s specific churn footprint.&lt;/p&gt;
+&lt;h3 id=&#34;problem-statement&#34;&gt;Problem statement&lt;/h3&gt;
+&lt;p&gt;When clients close their accounts or cancel their subscriptions, it usually does not come as a surprise to the sales management. But for obvious reasons, the sales manager tries to work against the loss of a client with similar if not the same tools, processes and attitudes that have led to a client being dissatisfied. This is not to say that the sales manager can the sole reason for churn. But often clients do not or not sufficiently voice their issues and simply quit the relationship. To search, become aware and then listen for softer and indirect signs is at the heart of this use case.&lt;/p&gt;
+&lt;h3 id=&#34;target-market--industries&#34;&gt;Target market / Industries&lt;/h3&gt;
+&lt;p&gt;The described use case can be efficiently applied to any industry that is providing services to a large number of clients and has a large number of transactions.
+Particularly following industries are benefiting most of this use-case:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Retail&lt;/li&gt;
+&lt;li&gt;Entertainment&lt;/li&gt;
+&lt;li&gt;Mass media&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;solution&#34;&gt;Solution&lt;/h3&gt;
+&lt;p&gt;Using historical data, client communication and structured interviews with sales people, we create a company-specific churn ontology, that is then used to screen existing clients on an ongoing basis. Creating an interactive reinforcement loop with new churn-cases, this classification, predictor and indicator approach is ever more fine tuned to specific segments and service categories. As direct and ongoing KPIs churn ratios and client satisfaction are measured alongside generated revenues, profitability for the respective clients are classified as “endangered”.
+Usually a gradual improvement can be monitored within 3-6 months from the start of the use case.&lt;/p&gt;
+&lt;p&gt;The solution included:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Initial typical churn cause analysis based on historical data (client positions, and transactions)&lt;/li&gt;
+&lt;li&gt;Ideally inclusion of CRM notes and written sales to client communication (prior to churn)&lt;/li&gt;
+&lt;li&gt;Sales &amp;amp; Churn Ontology setup &amp;amp; subsequent ontology matching&lt;/li&gt;
+&lt;li&gt;Identification of likely company churn footprint &amp;amp; learning / improvement loops&lt;/li&gt;
+&lt;li&gt;Aggregation of findings, reporting, alerting &amp;amp; action notifications&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;stakeholders&#34;&gt;Stakeholders&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Chief Executive&lt;/li&gt;
+&lt;li&gt;Chief Operations&lt;/li&gt;
+&lt;li&gt;Sales and Marketing&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;data-elements-assets-and-deliverables&#34;&gt;Data elements, Assets and Deliverables&lt;/h3&gt;
+&lt;p&gt;As an Input from the client, the following items were used:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Historic data about churned clients&lt;/li&gt;
+&lt;li&gt;Client portfolios - positions / transactions&lt;/li&gt;
+&lt;li&gt;Ideally pre-leave client-advisor coms&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Assets &amp;amp; Artefacts:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Client Behavioral Model&lt;/li&gt;
+&lt;li&gt;Churn Prediction&lt;/li&gt;
+&lt;li&gt;Action Monitoring&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The deliverables included:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Sales &amp;amp; Churn Indicator Ontology&lt;/li&gt;
+&lt;li&gt;Use case specific orchestration flow&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;tags--keywords&#34;&gt;Tags / Keywords&lt;/h3&gt;
+&lt;p&gt;#churn #churnanalysis #retail #entertainment #massmedia #retention #clientretention #customerretention&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

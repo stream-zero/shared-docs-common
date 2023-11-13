@@ -1,0 +1,96 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>GridMine – roles</title>
+    <link>/tags/roles/</link>
+    <description>Recent content in roles on GridMine</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    
+	  <atom:link href="/tags/roles/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Docs: Roles</title>
+      <link>/docs/security/list_roles/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/security/list_roles/</guid>
+      <description>
+        
+        
+        &lt;h4 id=&#34;roles&#34;&gt;Roles&lt;/h4&gt;
+&lt;p&gt;Roles represent a collection of permissions or rights that can be performed within Ferris. They can be directly associated with the job of job a &lt;a href=&#34;/docs/security/list_users/&#34;&gt;#User&lt;/a&gt; performs.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;To get the the Users page, navigate to: Security &amp;gt; List Roles&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+
+
+
+
+&lt;p&gt; 
+            &lt;img src=&#34;/streamzero/images/security/list_roles_page.png&#34; style=&#34;border:2px solid #fff;
+            box-shadow: 10px 10px 5px #ccc;
+            -moz-box-shadow: 10px 10px 5px #ccc;
+            -webkit-box-shadow: 10px 10px 5px #ccc;
+            -khtml-box-shadow: 10px 10px 5px #ccc;&#34;/&gt;
+&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Example: List of StreamZero Roles&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Besides displaying the list of all available Roles, the Roles page offers a number of capabilities:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Add Role &lt;img src=&#34;/images/add_icon.png&#34; alt=&#34;Add User&#34;&gt;&lt;/li&gt;
+&lt;li&gt;Actions &lt;img src=&#34;/images/actions_icon.png&#34; alt=&#34;Add User&#34;&gt;&lt;/li&gt;
+&lt;li&gt;Show Roles &lt;img src=&#34;/images/view_icon.png&#34; alt=&#34;&#34;&gt;&lt;/li&gt;
+&lt;li&gt;Edit Roles &lt;img src=&#34;/images/edit_icon.png&#34; alt=&#34;&#34;&gt;&lt;/li&gt;
+&lt;li&gt;Delete Roles &lt;img src=&#34;/images/delete_icon.png&#34; alt=&#34;&#34;&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;em&gt;Note that each of these capabilities depends on the Permissions given to your Role. Some roles may be given full rights (e.g. add, show, edit, delete), where others may only be given viewing rights (e.g. show). As a result, some users may only be seeing the &amp;ldquo;Show Roles&amp;rdquo; magnifying glass icon.&lt;/em&gt;&lt;/p&gt;
+&lt;h5 id=&#34;add-new-role&#34;&gt;Add new Role&lt;/h5&gt;
+&lt;p&gt;Adding a new Role can be done directly within StreamZero by any person who has the necessary permissions to do so. This is normally a designated Security Lead.&lt;/p&gt;
+&lt;p&gt;Often times, adding new Roles is done by integrating StreamZero with the corporate Identity Access Management (IAM) and Active Directory (AD).&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Click on the plus sign &lt;img src=&#34;/images/add_icon.png&#34; alt=&#34;Add Role&#34;&gt; to add a new user.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+
+
+
+
+&lt;p&gt; 
+            &lt;img src=&#34;/streamzero/images/security/add_role_page.png&#34; style=&#34;border:2px solid #fff;
+            box-shadow: 10px 10px 5px #ccc;
+            -moz-box-shadow: 10px 10px 5px #ccc;
+            -webkit-box-shadow: 10px 10px 5px #ccc;
+            -khtml-box-shadow: 10px 10px 5px #ccc;&#34;/&gt;
+&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Example: Adding a new Role and Permissions&lt;/em&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Name:&lt;/strong&gt; Use a meaningful name for the role, and consider applying naming standards for all Roles&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Permissions:&lt;/strong&gt; Chose from the previously setup list of &lt;a href=&#34;/docs/security/permissions/&#34;&gt;#Permissions&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;em&gt;Note that it possible, and common practice, to apply multiple roles to a user. Therefore it is a good idea to keep the number of permissions within one role to a minimum. This enables the enforcement of the &lt;strong&gt;&amp;ldquo;need-to-know&amp;rdquo;&lt;/strong&gt; basis for each role.&lt;/em&gt;&lt;/p&gt;
+&lt;h3 id=&#34;actions&#34;&gt;Actions&lt;/h3&gt;
+&lt;p&gt;In order to apply an Action, first select the Role you want the action to apply to.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Select a Role then click Actions &amp;gt; Copy Role &amp;gt; click &lt;strong&gt;Yes&lt;/strong&gt; to confirm&lt;/li&gt;
+&lt;li&gt;The Role is now copied and can be found in the list of Roles as &lt;strong&gt;&amp;quot;[original role name] copy&amp;quot;&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,13 @@
+images: 
+  - image: /images/temp/screenshots_annotated.svg
+    heading: "Heading 1"
+    subheading: "Subheading 1"
+  - image: /images/temp/screenshots_annotated_2.svg
+    heading: "Heading 2"
+    subheading: "Subheading 2"
+  - image: /images/temp/annotated_scheduling.svg
+    heading: "Heading 3"
+    subheading: "Subheading 3"
+  - image: /images/temp/annotated_executions.svg
+    heading: "Heading 4"
+    subheading: "Subheading 4"

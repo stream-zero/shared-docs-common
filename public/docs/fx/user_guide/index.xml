@@ -1,0 +1,1395 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>GridMine – User Guide</title>
+    <link>/docs/fx/user_guide/</link>
+    <description>Recent content in User Guide on GridMine</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    
+	  <atom:link href="/docs/fx/user_guide/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Docs: Landing Page (Dashboard)</title>
+      <link>/docs/fx/user_guide/landing_page/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/fx/user_guide/landing_page/</guid>
+      <description>
+        
+        
+        &lt;p&gt;The StreamZero FX Landing page provides insights and analytics around typical platform related metrics mostly related to Data Ops and detailed event handling. It can be finetuned and tailored to customer specific needs.&lt;/p&gt;
+&lt;p&gt;In this specific use case the insights and analytics of the StreamZero FX Data Platform are highlighted as follows:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;In the first row, the last 18 executions and the last 18 executions with failed state&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;the last 18 executions showcase the following details:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Package (name)&lt;/li&gt;
+&lt;li&gt;Status&lt;/li&gt;
+&lt;li&gt;Execution time&lt;/li&gt;
+&lt;li&gt;Finished&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;the last 18 executions with failed state showcase the following details:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Package (name)&lt;/li&gt;
+&lt;li&gt;Status failed&lt;/li&gt;
+&lt;li&gt;Triggered time&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;It allows users of the platform to verify why the triggered package has failed executing.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;In the second row, the executions statuses per day (last 7 days) and the executions by status (last 7 days)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Completed&lt;/li&gt;
+&lt;li&gt;Failed&lt;/li&gt;
+&lt;li&gt;Pending&lt;/li&gt;
+&lt;li&gt;In_progress&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;In the third row, the exectuions trigger type per day (last 7 days) and the exectuions by trigger type (last 7 days)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;triggered&lt;/li&gt;
+&lt;li&gt;scheduled&lt;/li&gt;
+&lt;li&gt;manual&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;In the 4th row, the average execution time per day (last 7 days) and the most recently updated packages&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;the details of the most recently updated packages are divided as follows:
+&lt;ul&gt;
+&lt;li&gt;Package&lt;/li&gt;
+&lt;li&gt;Project&lt;/li&gt;
+&lt;li&gt;Updated on (date and time)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;In the 5th row, the most frequently executed packages in the last 7 days with the following details:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Package (name)&lt;/li&gt;
+&lt;li&gt;Number of exections&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+
+
+
+&lt;p&gt; 
+            &lt;img src=&#34;/streamzero/images/user_guide/dashboard_landing_page.png&#34; style=&#34;border:2px solid #fff;
+            box-shadow: 10px 10px 5px #ccc;
+            -moz-box-shadow: 10px 10px 5px #ccc;
+            -webkit-box-shadow: 10px 10px 5px #ccc;
+            -khtml-box-shadow: 10px 10px 5px #ccc;&#34;/&gt;
+&lt;/p&gt;
+
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Projects</title>
+      <link>/docs/fx/user_guide/project_creation_and_users_within_project/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/fx/user_guide/project_creation_and_users_within_project/</guid>
+      <description>
+        
+        
+        &lt;p&gt;This subcategory explains the creation of new projects and users withtin these projects.&lt;/p&gt;
+&lt;h2 id=&#34;project&#34;&gt;Project&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Click on &lt;em&gt;Projects&lt;/em&gt; in the menu on the left side to open dropdown and then on List Projects&lt;/li&gt;
+&lt;li&gt;Click on &lt;em&gt;&amp;quot;+Add&amp;quot;&lt;/em&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+
+
+
+
+
+&lt;p&gt; 
+            &lt;img src=&#34;/streamzero/images/user_guide/list_projects_add_roboto.png&#34; style=&#34;border:2px solid #fff;
+            box-shadow: 10px 10px 5px #ccc;
+            -moz-box-shadow: 10px 10px 5px #ccc;
+            -webkit-box-shadow: 10px 10px 5px #ccc;
+            -khtml-box-shadow: 10px 10px 5px #ccc;&#34;/&gt;
+&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Name the new project&lt;/li&gt;
+&lt;li&gt;Save&lt;/li&gt;
+&lt;/ol&gt;
+
+
+
+
+
+
+&lt;p&gt; 
+            &lt;img src=&#34;/streamzero/images/user_guide/create_project_roboto.png&#34; style=&#34;border:2px solid #fff;
+            box-shadow: 10px 10px 5px #ccc;
+            -moz-box-shadow: 10px 10px 5px #ccc;
+            -webkit-box-shadow: 10px 10px 5px #ccc;
+            -khtml-box-shadow: 10px 10px 5px #ccc;&#34;/&gt;
+&lt;/p&gt;
+
+
+
+
+
+
+
+&lt;p&gt; 
+            &lt;img src=&#34;/streamzero/images/user_guide/list_projects_created_roboto.png&#34; style=&#34;border:2px solid #fff;
+            box-shadow: 10px 10px 5px #ccc;
+            -moz-box-shadow: 10px 10px 5px #ccc;
+            -webkit-box-shadow: 10px 10px 5px #ccc;
+            -khtml-box-shadow: 10px 10px 5px #ccc;&#34;/&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Project on the StreamZero Platform form the overarching organizational bracket for different types of objects. All users, packages, scripts, parameters, secrets and other elements are organized into projects to ease enterprise data management. The default owner for new projects is the Platform Admin (PA).&lt;/p&gt;
+&lt;h2 id=&#34;user-creation-within-the-project&#34;&gt;User creation within the project&lt;/h2&gt;
+&lt;p&gt;Since the Platform Administrator created the Project, he is automatically assigned as the Project Owner. All user roles on the project level are defined in detail as follows:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Project Owner&lt;/strong&gt; -  has all permissions on project and related entities (packages, users) including deletion of project(s) (and users) created by the PO. By default it is the user that created project&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Project Admin&lt;/strong&gt; - has all permissions as Owner except deletion&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Project User&lt;/strong&gt; - has only list / view permissions&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Please note that users without Platform Administrator role, do not see any projects and packages they are not assigned to. All project role rights are translated to package level also, eg. a user with Project User role will not be able to edit packages of that project, only to list/view them and run a (manual) execution&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Click on the magnifying glass to open Project details page&lt;/li&gt;
+&lt;/ol&gt;
+
+
+
+
+
+
+&lt;p&gt; 
+            &lt;img src=&#34;/streamzero/images/user_guide/list_projects_loupe_roboto.png&#34; style=&#34;border:2px solid #fff;
+            box-shadow: 10px 10px 5px #ccc;
+            -moz-box-shadow: 10px 10px 5px #ccc;
+            -webkit-box-shadow: 10px 10px 5px #ccc;
+            -khtml-box-shadow: 10px 10px 5px #ccc;&#34;/&gt;
+&lt;/p&gt;
+
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;Click on &lt;em&gt;&amp;quot;+Add&amp;quot;&lt;/em&gt; to add a new user to the project&lt;/li&gt;
+&lt;/ol&gt;
+
+
+
+
+
+
+&lt;p&gt; 
+            &lt;img src=&#34;/streamzero/images/user_guide/click_add_new_user_roboto.png&#34; style=&#34;border:2px solid #fff;
+            box-shadow: 10px 10px 5px #ccc;
+            -moz-box-shadow: 10px 10px 5px #ccc;
+            -webkit-box-shadow: 10px 10px 5px #ccc;
+            -khtml-box-shadow: 10px 10px 5px #ccc;&#34;/&gt;
+&lt;/p&gt;
+
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;Choose a user from the drowdown&lt;/li&gt;
+&lt;li&gt;Choose a user role from dropdown (Owner; Admin; User)&lt;/li&gt;
+&lt;li&gt;Click Save&lt;/li&gt;
+&lt;/ol&gt;
+
+
+
+
+
+
+&lt;p&gt; 
+            &lt;img src=&#34;/streamzero/images/user_guide/add_new_project_user_roboto.png&#34; style=&#34;border:2px solid #fff;
+            box-shadow: 10px 10px 5px #ccc;
+            -moz-box-shadow: 10px 10px 5px #ccc;
+            -webkit-box-shadow: 10px 10px 5px #ccc;
+            -khtml-box-shadow: 10px 10px 5px #ccc;&#34;/&gt;
+&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Check the user has been created&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+
+
+
+&lt;p&gt; 
+            &lt;img src=&#34;/streamzero/images/user_guide/check_all_users_new.png&#34; style=&#34;border:2px solid #fff;
+            box-shadow: 10px 10px 5px #ccc;
+            -moz-box-shadow: 10px 10px 5px #ccc;
+            -webkit-box-shadow: 10px 10px 5px #ccc;
+            -khtml-box-shadow: 10px 10px 5px #ccc;&#34;/&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Since new users were created, no package(s) are yet assigned to the project. A project needs to be assigned to an existing package as follows:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Click on &lt;em&gt;Executions&lt;/em&gt; to open dropdown and then &lt;em&gt;Packages&lt;/em&gt; in the menu on the left&lt;/li&gt;
+&lt;li&gt;Click on edit&lt;/li&gt;
+&lt;/ol&gt;
+
+
+
+
+
+
+&lt;p&gt; 
+            &lt;img src=&#34;/streamzero/images/user_guide/edit_package_to_add_project_roboto.png&#34; style=&#34;border:2px solid #fff;
+            box-shadow: 10px 10px 5px #ccc;
+            -moz-box-shadow: 10px 10px 5px #ccc;
+            -webkit-box-shadow: 10px 10px 5px #ccc;
+            -khtml-box-shadow: 10px 10px 5px #ccc;&#34;/&gt;
+&lt;/p&gt;
+
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;Choose a project from dropdown&lt;/li&gt;
+&lt;li&gt;Click Save&lt;/li&gt;
+&lt;/ol&gt;
+
+
+
+
+
+
+&lt;p&gt; 
+            &lt;img src=&#34;/streamzero/images/user_guide/added_project_to_package_roboto.png&#34; style=&#34;border:2px solid #fff;
+            box-shadow: 10px 10px 5px #ccc;
+            -moz-box-shadow: 10px 10px 5px #ccc;
+            -webkit-box-shadow: 10px 10px 5px #ccc;
+            -khtml-box-shadow: 10px 10px 5px #ccc;&#34;/&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Once that a project was assigned to a package, the users created within that project will be able to perform their chores.&lt;/p&gt;
+&lt;h5 id=&#34;project-owner&#34;&gt;Project Owner&lt;/h5&gt;
+&lt;ol&gt;
+&lt;li&gt;Log in as &lt;em&gt;&amp;ldquo;Project Owner&amp;rdquo;&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;Click on &lt;em&gt;Projects&lt;/em&gt; to open dropdown and then List Projects&lt;/li&gt;
+&lt;/ol&gt;
+
+
+
+
+
+
+&lt;p&gt; 
+            &lt;img src=&#34;/streamzero/images/user_guide/list_projects_as_projectowner_roboto.png&#34; style=&#34;border:2px solid #fff;
+            box-shadow: 10px 10px 5px #ccc;
+            -moz-box-shadow: 10px 10px 5px #ccc;
+            -webkit-box-shadow: 10px 10px 5px #ccc;
+            -khtml-box-shadow: 10px 10px 5px #ccc;&#34;/&gt;
+&lt;/p&gt;
+
+&lt;p&gt;As defined above, a Project Owner can add new projects, view, edit and delete the projects he belongs to.&lt;/p&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;Click on &lt;em&gt;Executions&lt;/em&gt; to open dropdown and then on &lt;em&gt;Packages&lt;/em&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+
+
+
+
+
+&lt;p&gt; 
+            &lt;img src=&#34;/streamzero/images/user_guide/view_packages_as_project_owner.png&#34; style=&#34;border:2px solid #fff;
+            box-shadow: 10px 10px 5px #ccc;
+            -moz-box-shadow: 10px 10px 5px #ccc;
+            -webkit-box-shadow: 10px 10px 5px #ccc;
+            -khtml-box-shadow: 10px 10px 5px #ccc;&#34;/&gt;
+&lt;/p&gt;
+
+&lt;p&gt;As Project Owner, one can add new packages, view, edit, delete and trigger manual runs and delete the packages within the projects the user belongs to.&lt;/p&gt;
+&lt;h5 id=&#34;project-admin&#34;&gt;Project Admin&lt;/h5&gt;
+&lt;ol&gt;
+&lt;li&gt;Log in as &lt;em&gt;&amp;ldquo;Project Admin&amp;rdquo;&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;Click on &lt;em&gt;Projects&lt;/em&gt; to open dropdown and then &lt;em&gt;List Projects&lt;/em&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+
+
+
+
+
+&lt;p&gt; 
+            &lt;img src=&#34;/streamzero/images/user_guide/list_projects_as_projectadmin_roboto.png&#34; style=&#34;border:2px solid #fff;
+            box-shadow: 10px 10px 5px #ccc;
+            -moz-box-shadow: 10px 10px 5px #ccc;
+            -webkit-box-shadow: 10px 10px 5px #ccc;
+            -khtml-box-shadow: 10px 10px 5px #ccc;&#34;/&gt;
+&lt;/p&gt;
+
+&lt;p&gt;As defined above, a Project Admin can add new projects, view and edit the projects he belongs to but can not delete anything.&lt;/p&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;Click on &lt;em&gt;Executions&lt;/em&gt; to open dropdown and then on &lt;em&gt;Packages&lt;/em&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+
+
+
+
+
+&lt;p&gt; 
+            &lt;img src=&#34;/streamzero/images/user_guide/view_packages_as_projectadmin_roboto.png&#34; style=&#34;border:2px solid #fff;
+            box-shadow: 10px 10px 5px #ccc;
+            -moz-box-shadow: 10px 10px 5px #ccc;
+            -webkit-box-shadow: 10px 10px 5px #ccc;
+            -khtml-box-shadow: 10px 10px 5px #ccc;&#34;/&gt;
+&lt;/p&gt;
+
+&lt;p&gt;As Project Admin, one can add new packages, view, edit and trigger manually runs within the projects the user belongs to. The Project Admin can not delete the packages, runs or related elements.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Project User&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Log in as &amp;ldquo;Project User&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;Click on &lt;em&gt;Projects&lt;/em&gt; to open dropdwon and then &lt;em&gt;List Projects&lt;/em&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+
+
+
+
+
+&lt;p&gt; 
+            &lt;img src=&#34;/streamzero/images/user_guide/list_projects_as_projectuser_roboto.png&#34; style=&#34;border:2px solid #fff;
+            box-shadow: 10px 10px 5px #ccc;
+            -moz-box-shadow: 10px 10px 5px #ccc;
+            -webkit-box-shadow: 10px 10px 5px #ccc;
+            -khtml-box-shadow: 10px 10px 5px #ccc;&#34;/&gt;
+&lt;/p&gt;
+
+&lt;p&gt;As defined above, a Project User can only view the projects he belongs to. He can neither edit, nore delete anything.&lt;/p&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;Click on &lt;em&gt;Executions&lt;/em&gt; to open dropdown and then on &lt;em&gt;Packages&lt;/em&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+
+
+
+
+
+
+&lt;p&gt; 
+            &lt;img src=&#34;/streamzero/images/user_guide/view_packages_as_projectuser_roboto.png&#34; style=&#34;border:2px solid #fff;
+            box-shadow: 10px 10px 5px #ccc;
+            -moz-box-shadow: 10px 10px 5px #ccc;
+            -webkit-box-shadow: 10px 10px 5px #ccc;
+            -khtml-box-shadow: 10px 10px 5px #ccc;&#34;/&gt;
+&lt;/p&gt;
+
+&lt;p&gt;As Project User, one can view packages and trigger manually runs within the projects the user belongs to. The Project User can not delete or edit packages, runs or related elements.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Taxonomy/Tagging</title>
+      <link>/docs/fx/user_guide/taxonomy_tagging/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/fx/user_guide/taxonomy_tagging/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Taxonomies or Tags describe the ability to organize and structure types and classes of objects and their correlations within executions/packages, events (event types) and workflows across any given application, use case or project. Tags are searchable and makes it easy to group and relate objects across different components and lifecycle stages.&lt;/p&gt;
+&lt;p&gt;As a generic base module &amp;ldquo;taggability&amp;rdquo; can easily be included in any model, use case or application by the developers/users.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Note: As of the current release the Taxonomy is universal across all projects, use cases and cannot be segregated along different functional domains. It is thus essential to create a unified naming convention to be shared among the different projects &amp;amp; user groups.&lt;/strong&gt;&lt;/p&gt;
+&lt;h1 id=&#34;taxonomies--tags&#34;&gt;Taxonomies / Tags&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;Click on Taxonomies in the left menu to open dropdown and then on Tags&lt;/li&gt;
+&lt;li&gt;Click Add to create a tag&lt;/li&gt;
+&lt;/ol&gt;
+
+
+
+
+
+
+&lt;p&gt; 
+            &lt;img src=&#34;/streamzero/images/user_guide/taxonomies_tags_add_roboto.png&#34; style=&#34;border:2px solid #fff;
+            box-shadow: 10px 10px 5px #ccc;
+            -moz-box-shadow: 10px 10px 5px #ccc;
+            -webkit-box-shadow: 10px 10px 5px #ccc;
+            -khtml-box-shadow: 10px 10px 5px #ccc;&#34;/&gt;
+&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Name Tag&lt;/li&gt;
+&lt;li&gt;Save&lt;/li&gt;
+&lt;/ol&gt;
+
+
+
+
+
+
+&lt;p&gt; 
+            &lt;img src=&#34;/streamzero/images/user_guide/create_tag_save_roboto.png&#34; style=&#34;border:2px solid #fff;
+            box-shadow: 10px 10px 5px #ccc;
+            -moz-box-shadow: 10px 10px 5px #ccc;
+            -webkit-box-shadow: 10px 10px 5px #ccc;
+            -khtml-box-shadow: 10px 10px 5px #ccc;&#34;/&gt;
+&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Check created Tag(s)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol&gt;
+&lt;li&gt;Click on the magnifying glass to open details (show tag) page&lt;/li&gt;
+&lt;li&gt;This will automatically transfer you to the tag details page&lt;/li&gt;
+&lt;li&gt;Click on &lt;em&gt;List Packages&lt;/em&gt; to see in which packages the same tag is used&lt;/li&gt;
+&lt;li&gt;Click on &lt;em&gt;List Workflows&lt;/em&gt; to see in which workflows the same tag is used (in this example no workflow is associated with the tag just created)&lt;/li&gt;
+&lt;li&gt;Click on &lt;em&gt;Event Types&lt;/em&gt; to see in which event type the same tag is uses (in this example no event type is associated with the tag just created)&lt;/li&gt;
+&lt;li&gt;Click on the Edit icon (List tags page) to edit/rename a tag&lt;/li&gt;
+&lt;/ol&gt;
+
+
+
+
+
+
+&lt;p&gt; 
+            &lt;img src=&#34;/streamzero/images/user_guide/tag_list_click_loupe_details_roboto.png&#34; style=&#34;border:2px solid #fff;
+            box-shadow: 10px 10px 5px #ccc;
+            -moz-box-shadow: 10px 10px 5px #ccc;
+            -webkit-box-shadow: 10px 10px 5px #ccc;
+            -khtml-box-shadow: 10px 10px 5px #ccc;&#34;/&gt;
+&lt;/p&gt;
+
+
+
+
+
+
+
+&lt;p&gt; 
+            &lt;img src=&#34;/streamzero/images/user_guide/show_tag_details_roboto.png&#34; style=&#34;border:2px solid #fff;
+            box-shadow: 10px 10px 5px #ccc;
+            -moz-box-shadow: 10px 10px 5px #ccc;
+            -webkit-box-shadow: 10px 10px 5px #ccc;
+            -khtml-box-shadow: 10px 10px 5px #ccc;&#34;/&gt;
+&lt;/p&gt;
+
+
+
+
+
+
+
+&lt;p&gt; 
+            &lt;img src=&#34;/streamzero/images/user_guide/list_tag_packages_roboto.png&#34; style=&#34;border:2px solid #fff;
+            box-shadow: 10px 10px 5px #ccc;
+            -moz-box-shadow: 10px 10px 5px #ccc;
+            -webkit-box-shadow: 10px 10px 5px #ccc;
+            -khtml-box-shadow: 10px 10px 5px #ccc;&#34;/&gt;
+&lt;/p&gt;
+
+
+
+
+
+
+
+&lt;p&gt; 
+            &lt;img src=&#34;/streamzero/images/user_guide/list_workflows_tag_roboto.png&#34; style=&#34;border:2px solid #fff;
+            box-shadow: 10px 10px 5px #ccc;
+            -moz-box-shadow: 10px 10px 5px #ccc;
+            -webkit-box-shadow: 10px 10px 5px #ccc;
+            -khtml-box-shadow: 10px 10px 5px #ccc;&#34;/&gt;
+&lt;/p&gt;
+
+
+
+
+
+
+
+&lt;p&gt; 
+            &lt;img src=&#34;/streamzero/images/user_guide/list_event_types_tag_roboto.png&#34; style=&#34;border:2px solid #fff;
+            box-shadow: 10px 10px 5px #ccc;
+            -moz-box-shadow: 10px 10px 5px #ccc;
+            -webkit-box-shadow: 10px 10px 5px #ccc;
+            -khtml-box-shadow: 10px 10px 5px #ccc;&#34;/&gt;
+&lt;/p&gt;
+
+
+
+
+
+
+
+&lt;p&gt; 
+            &lt;img src=&#34;/streamzero/images/user_guide/list_tags_edit_roboto.png&#34; style=&#34;border:2px solid #fff;
+            box-shadow: 10px 10px 5px #ccc;
+            -moz-box-shadow: 10px 10px 5px #ccc;
+            -webkit-box-shadow: 10px 10px 5px #ccc;
+            -khtml-box-shadow: 10px 10px 5px #ccc;&#34;/&gt;
+&lt;/p&gt;
+
+&lt;h2 id=&#34;search-tag&#34;&gt;Search Tag&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Click &lt;em&gt;Search&lt;/em&gt; on top of the &lt;em&gt;List Tags&lt;/em&gt; / &lt;em&gt;Details Page&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;Click &lt;em&gt;Add Filter&lt;/em&gt; to choose a filter (currently only the &amp;ldquo;Name&amp;rdquo; filter is supported)&lt;/li&gt;
+&lt;li&gt;From the dropdown list choose the tag to be searched for&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;Starts with&lt;/li&gt;
+&lt;li&gt;Ends with&lt;/li&gt;
+&lt;li&gt;Contains&lt;/li&gt;
+&lt;li&gt;Equal to&lt;/li&gt;
+&lt;li&gt;Etc.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start=&#34;4&#34;&gt;
+&lt;li&gt;Insert tag &amp;ldquo;Name&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;Hit the Search button&lt;/li&gt;
+&lt;/ol&gt;
+
+
+
+
+
+
+&lt;p&gt; 
+            &lt;img src=&#34;/streamzero/images/user_guide/search_tag_filter_roboto.png&#34; style=&#34;border:2px solid #fff;
+            box-shadow: 10px 10px 5px #ccc;
+            -moz-box-shadow: 10px 10px 5px #ccc;
+            -webkit-box-shadow: 10px 10px 5px #ccc;
+            -khtml-box-shadow: 10px 10px 5px #ccc;&#34;/&gt;
+&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Check search results&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+
+
+
+&lt;p&gt; 
+            &lt;img src=&#34;/streamzero/images/user_guide/search_results_new.png&#34; style=&#34;border:2px solid #fff;
+            box-shadow: 10px 10px 5px #ccc;
+            -moz-box-shadow: 10px 10px 5px #ccc;
+            -webkit-box-shadow: 10px 10px 5px #ccc;
+            -khtml-box-shadow: 10px 10px 5px #ccc;&#34;/&gt;
+&lt;/p&gt;
+
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: CronJob</title>
+      <link>/docs/fx/user_guide/cronjob/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/fx/user_guide/cronjob/</guid>
+      <description>
+        
+        
+        &lt;p&gt;CronJobs are used to schedule regularly recurring actions such as backups, report generation and similar items. Each of those tasks should be configured to recur for an indefinite period into the future on a regular frequency (for example: once a day / week / month). The user also can define the point in time within that interval when the job should start.&lt;/p&gt;
+&lt;h2 id=&#34;example&#34;&gt;Example:&lt;/h2&gt;
+&lt;p&gt;This example CronJob manifest would execute and trigger an event every minute:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-json&#34; data-lang=&#34;json&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;schedule:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;*/1 * * * *&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h2 id=&#34;cron-schedule-syntax&#34;&gt;Cron Schedule Syntax&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;2
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;3
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;4
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;5
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;6
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;7
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;8
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;9
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-json&#34; data-lang=&#34;json&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;#&lt;/span&gt; &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;┌─────────────&lt;/span&gt; &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;minute&lt;/span&gt; &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt; &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;-&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;59&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;#&lt;/span&gt; &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;│&lt;/span&gt; &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;┌─────────────&lt;/span&gt; &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;hour&lt;/span&gt; &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt; &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;-&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;23&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;#&lt;/span&gt; &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;│&lt;/span&gt; &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;│&lt;/span&gt; &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;┌─────────────&lt;/span&gt; &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;day&lt;/span&gt; &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;of&lt;/span&gt; &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;the&lt;/span&gt; &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;month&lt;/span&gt; &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;-&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;31&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;#&lt;/span&gt; &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;│&lt;/span&gt; &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;│&lt;/span&gt; &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;│&lt;/span&gt; &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;┌─────────────&lt;/span&gt; &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;month&lt;/span&gt; &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;-&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;12&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;#&lt;/span&gt; &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;│&lt;/span&gt; &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;│&lt;/span&gt; &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;│&lt;/span&gt; &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;│&lt;/span&gt; &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;┌─────────────&lt;/span&gt; &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;day&lt;/span&gt; &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;of&lt;/span&gt; &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;the&lt;/span&gt; &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;week&lt;/span&gt; &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt; &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;-&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;6&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;(Sunday&lt;/span&gt; &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;to&lt;/span&gt; &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;Saturday;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;#&lt;/span&gt; &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;│&lt;/span&gt; &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;│&lt;/span&gt; &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;│&lt;/span&gt; &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;│&lt;/span&gt; &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;│&lt;/span&gt;                                   &lt;span style=&#34;color:#ae81ff&#34;&gt;7&lt;/span&gt; &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;is&lt;/span&gt; &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;also&lt;/span&gt; &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;Sunday&lt;/span&gt; &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;on&lt;/span&gt; &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;some&lt;/span&gt; &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;systems)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;#&lt;/span&gt; &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;│&lt;/span&gt; &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;│&lt;/span&gt; &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;│&lt;/span&gt; &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;│&lt;/span&gt; &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;│&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;#&lt;/span&gt; &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;│&lt;/span&gt; &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;│&lt;/span&gt; &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;│&lt;/span&gt; &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;│&lt;/span&gt; &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;│&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;#&lt;/span&gt; &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;*&lt;/span&gt; &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;*&lt;/span&gt; &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;*&lt;/span&gt; &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;*&lt;/span&gt; &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;*&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;For example, the line below states that the task must be started every Friday at midnight, as well as on the 13th of each month at midnight:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;0 0 13 * 5
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;To generate CronJob schedule expressions, you can also use web tools like &lt;a href=&#34;https://crontab.guru/&#34;&gt;crontab.guru&lt;/a&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;useful-cron-patterns&#34;&gt;Useful Cron Patterns&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Entry&lt;/th&gt;
+&lt;th&gt;Description&lt;/th&gt;
+&lt;th&gt;Equivalent to&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;@yearly (or @annually)&lt;/td&gt;
+&lt;td&gt;Run once a year at midnight of 1 January&lt;/td&gt;
+&lt;td&gt;0 0 1 1 *&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;@monthly&lt;/td&gt;
+&lt;td&gt;Run once a month at midnight of the first day of the month&lt;/td&gt;
+&lt;td&gt;0 0 1 * *&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;@weekly&lt;/td&gt;
+&lt;td&gt;Run once a week at midnight on Sunday morning&lt;/td&gt;
+&lt;td&gt;0 0 * * 0&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;@daily (or @midnight)&lt;/td&gt;
+&lt;td&gt;Run once a day at midnight&lt;/td&gt;
+&lt;td&gt;0 0 * * *&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;@hourly&lt;/td&gt;
+&lt;td&gt;Run once an hour at the beginning of the hour&lt;/td&gt;
+&lt;td&gt;0 * * * *&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;20-useful-crontab-examples&#34;&gt;20 Useful Crontab Examples&lt;/h2&gt;
+&lt;p&gt;Here is the list of examples for scheduling cron jobs in a Linux system using crontab.&lt;/p&gt;
+&lt;h5 id=&#34;1-schedule-a-cron-to-execute-at-2am-daily&#34;&gt;1. Schedule a cron to execute at 2am daily.&lt;/h5&gt;
+&lt;p&gt;This will be useful for scheduling database backup on a daily basis.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt; * * *
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;Asterisk (*) is used for matching all the records.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5 id=&#34;2-schedule-a-cron-to-execute-twice-a-day&#34;&gt;2. Schedule a cron to execute twice a day.&lt;/h5&gt;
+&lt;p&gt;Below example command will execute at 5 AM and 5 PM daily. You can specify multiple time stamps by comma-separated.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;0 5,17 * * *
+&lt;/code&gt;&lt;/pre&gt;&lt;h5 id=&#34;3-schedule-a-cron-to-execute-on-every-minutes&#34;&gt;3. Schedule a cron to execute on every minutes.&lt;/h5&gt;
+&lt;p&gt;Generally, we don’t require any script to execute on every minute but in some cases, you may need to configure it.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;* * * * *
+&lt;/code&gt;&lt;/pre&gt;&lt;h5 id=&#34;4-schedule-a-cron-to-execute-on-every-sunday-at-5-pm&#34;&gt;4. Schedule a cron to execute on every Sunday at 5 PM.&lt;/h5&gt;
+&lt;p&gt;This type of cron is useful for doing weekly tasks, like log rotation, etc.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;0 17 * * sun
+&lt;/code&gt;&lt;/pre&gt;&lt;h5 id=&#34;5-schedule-a-cron-to-execute-on-every-10-minutes&#34;&gt;5. Schedule a cron to execute on every 10 minutes.&lt;/h5&gt;
+&lt;p&gt;If you want to run your script on 10 minutes interval, you can configure like below. These types of crons are useful for monitoring.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;*/10 * * * *
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;*&lt;strong&gt;/10:&lt;/strong&gt; means to run every 10 minutes. Same as if you want to execute on every 5 minutes use */5.&lt;/p&gt;
+&lt;h5 id=&#34;6-schedule-a-cron-to-execute-on-selected-months&#34;&gt;6. Schedule a cron to execute on selected months.&lt;/h5&gt;
+&lt;p&gt;Sometimes we required scheduling a task to be executed for selected months only. Below example script will run in January, May and August months.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;* * * jan,may,aug
+&lt;/code&gt;&lt;/pre&gt;&lt;h5 id=&#34;7-schedule-a-cron-to-execute-on-selected-days&#34;&gt;7. Schedule a cron to execute on selected days.&lt;/h5&gt;
+&lt;p&gt;If you required scheduling a task to be executed for selected days only. The below example will run on each Sunday and Friday at 5 PM.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;0 17 * * sun,fri
+&lt;/code&gt;&lt;/pre&gt;&lt;h5 id=&#34;8-schedule-a-cron-to-execute-on-first-sunday-of-every-month&#34;&gt;8. Schedule a cron to execute on first sunday of every month.&lt;/h5&gt;
+&lt;p&gt;To schedule a script to execute a script on the first Sunday only is not possible by time parameter, But we can use the condition in command fields to do it.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;0 2 * * sun  [ $(date +%d) -le 07 ] &amp;amp;&amp;amp; /script/script.sh
+&lt;/code&gt;&lt;/pre&gt;&lt;h5 id=&#34;9-schedule-a-cron-to-execute-on-every-four-hours&#34;&gt;9. Schedule a cron to execute on every four hours.&lt;/h5&gt;
+&lt;p&gt;If you want to run a script on 4 hours interval. It can be configured like below.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt; */4 * * *
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h5 id=&#34;10-schedule-a-cron-to-execute-twice-on-every-sunday-and-monday&#34;&gt;10. Schedule a cron to execute twice on every Sunday and Monday.&lt;/h5&gt;
+&lt;p&gt;To schedule a task to execute twice on Sunday and Monday only. Use the following settings to do it.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt; 4,17 * * sun,mon
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h5 id=&#34;11-schedule-a-cron-to-execute-on-every-30-seconds&#34;&gt;11. Schedule a cron to execute on every 30 Seconds.&lt;/h5&gt;
+&lt;p&gt;To schedule a task to execute every 30 seconds is not possible by time parameters, But it can be done by schedule same cron twice as below.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;* * * * * /scripts/script.sh
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;* * * * *  sleep 30; /scripts/script.sh
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h5 id=&#34;13-schedule-tasks-to-execute-on-yearly--yearly-&#34;&gt;13. Schedule tasks to execute on yearly ( @yearly ).&lt;/h5&gt;
+&lt;p&gt;@yearly timestamp is similar to “&lt;strong&gt;0 0 1 1 *&lt;/strong&gt;“. It will execute a task on the first minute of every year, It may useful to send new year greetings 🙂&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;@yearly /scripts/script.sh
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h5 id=&#34;14-schedule-tasks-to-execute-on-monthly--monthly-&#34;&gt;14. Schedule tasks to execute on monthly ( @monthly ).&lt;/h5&gt;
+&lt;p&gt;@monthly timestamp is similar to “&lt;strong&gt;0 0 1 * *&lt;/strong&gt;“. It will execute a task in the first minute of the month. It may useful to do monthly tasks like paying the bills and invoicing to customers.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;@monthly /scripts/script.sh
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h5 id=&#34;15-schedule-tasks-to-execute-on-weekly--weekly-&#34;&gt;15. Schedule tasks to execute on Weekly ( @weekly ).&lt;/h5&gt;
+&lt;p&gt;@weekly timestamp is similar to “&lt;strong&gt;0 0 * * mon&lt;/strong&gt;“. It will execute a task in the first minute of the week. It may useful to do weekly tasks like the cleanup of the system etc.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;@weekly /bin/script.sh
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h5 id=&#34;16-schedule-tasks-to-execute-on-daily--daily-&#34;&gt;16. Schedule tasks to execute on daily ( @daily ).&lt;/h5&gt;
+&lt;p&gt;@daily timestamp is similar to “&lt;strong&gt;0 0 * * *&lt;/strong&gt;“. It will execute a task in the first minute of every day, It may useful to do daily tasks.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;@daily
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h5 id=&#34;17-schedule-tasks-to-execute-on-hourly--hourly-&#34;&gt;17. Schedule tasks to execute on hourly ( @hourly ).&lt;/h5&gt;
+&lt;p&gt;@hourly timestamp is similar to “&lt;strong&gt;0 * * * *&lt;/strong&gt;“. It will execute a task in the first minute of every hour, It may useful to do hourly tasks.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;@hourly
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Events</title>
+      <link>/docs/fx/user_guide/events/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/fx/user_guide/events/</guid>
+      <description>
+        
+        
+        &lt;p&gt;FX is an event driven platform wich means that each action generating an event can be reused for further triggering of executions. Also within an executing script, an event can be generated and sent as a message. Each event is defined at least by it’s source, type and payload (data). Event message format is following the cloudevents standard. A list of all event types is maintained so the user can bound package execution to certain event type, which means that each time such an event is received, the package execution will be triggered.&lt;/p&gt;
+&lt;h1 id=&#34;events&#34;&gt;Events&lt;/h1&gt;
+&lt;p&gt;Events are messages passed through the platform which are generated by Services.&lt;/p&gt;
+&lt;p&gt;Events are in the form of JSON formatted messages which adhere to the CloudEvents format. They carry a Header which indicates the event type and a Payload (or Data section) which contain information about the event.&lt;/p&gt;
+&lt;p&gt;To have a better detailed understanding of how Events are generated, please refer to the &lt;a href=&#34;/docs/overview/architecture-overview/&#34; title=&#34;Architecture Overview&#34;&gt;Architecture&lt;/a&gt; subcategory in the &lt;em&gt;Overview&lt;/em&gt; category.&lt;/p&gt;
+&lt;h2 id=&#34;events-1&#34;&gt;Events&lt;/h2&gt;
+&lt;p&gt;This use case defines how to configure a package to be triggered bt the FX Router when a specific type of event is observed on the platform.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Click on &lt;em&gt;Events&lt;/em&gt; on the left side of the dashboard menu to open drop-down&lt;/li&gt;
+&lt;li&gt;Click on &lt;em&gt;Event Types&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;Check the predefined &lt;em&gt;Event Types&lt;/em&gt;
+&lt;ul&gt;
+&lt;li&gt;ferris.apps.modules.approvals.step_approval_completed&lt;/li&gt;
+&lt;li&gt;ferris.apps.modules.minio.file_uploaded&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Events can be created within scripts during package execution by sending a message to the &lt;strong&gt;Kafka Topic&lt;/strong&gt; using the &lt;code&gt;ferris_cli&lt;/code&gt; python package. For example, a package can be bound to a file_upload event that is triggered every time a file gets uploaded to &lt;strong&gt;MinIO&lt;/strong&gt; using FX file storage module. New event types will be registered as they are sent to the &lt;strong&gt;Kafka Topic&lt;/strong&gt; using the &lt;code&gt;ferris_cli&lt;/code&gt; python package.&lt;/p&gt;
+&lt;p&gt;Further details regarding &lt;code&gt;ferris_cli&lt;/code&gt; can be found in the subcategory &lt;a href=&#34;/docs/developerguide/development-lifecycle/&#34; title=&#34;development-lifecycle&#34;&gt;Development Lifecycle&lt;/a&gt; in the &lt;em&gt;Developer Guide&lt;/em&gt;.&lt;/p&gt;
+
+
+
+
+
+
+&lt;p&gt; 
+            &lt;img src=&#34;/streamzero/images/user_guide/events_event_types.png&#34; style=&#34;border:2px solid #fff;
+            box-shadow: 10px 10px 5px #ccc;
+            -moz-box-shadow: 10px 10px 5px #ccc;
+            -webkit-box-shadow: 10px 10px 5px #ccc;
+            -khtml-box-shadow: 10px 10px 5px #ccc;&#34;/&gt;
+&lt;/p&gt;
+
+&lt;h2 id=&#34;executions---packages---file-upload-trigger-event&#34;&gt;Executions - Packages -&amp;gt; file upload trigger event&lt;/h2&gt;
+&lt;p&gt;In this use case an existing package will be edited to define the file upload event type.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Click on &lt;em&gt;Executions&lt;/em&gt; on the left side of the dashboard menu to open drop-down&lt;/li&gt;
+&lt;li&gt;Click on &lt;em&gt;Packages&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;Click on the edit record button to edit the existing package &lt;em&gt;Test Package with Scripts&lt;/em&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+
+
+
+
+
+&lt;p&gt; 
+            &lt;img src=&#34;/streamzero/images/user_guide/edit_package_event.png&#34; style=&#34;border:2px solid #fff;
+            box-shadow: 10px 10px 5px #ccc;
+            -moz-box-shadow: 10px 10px 5px #ccc;
+            -webkit-box-shadow: 10px 10px 5px #ccc;
+            -khtml-box-shadow: 10px 10px 5px #ccc;&#34;/&gt;
+&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Delete the &lt;em&gt;CronJob Schedule&lt;/em&gt; to allow a &lt;em&gt;Trigger Event Type&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;Select the &lt;em&gt;Value&lt;/em&gt; of the event type (ferris.apps.modules.minio.file_uploaded)&lt;/li&gt;
+&lt;li&gt;Save the edited package.&lt;/li&gt;
+&lt;/ol&gt;
+
+
+
+
+
+
+&lt;p&gt; 
+            &lt;img src=&#34;/streamzero/images/user_guide/save_edited_package_event.png&#34; style=&#34;border:2px solid #fff;
+            box-shadow: 10px 10px 5px #ccc;
+            -moz-box-shadow: 10px 10px 5px #ccc;
+            -webkit-box-shadow: 10px 10px 5px #ccc;
+            -khtml-box-shadow: 10px 10px 5px #ccc;&#34;/&gt;
+&lt;/p&gt;
+
+&lt;h2 id=&#34;file-storage&#34;&gt;File Storage&lt;/h2&gt;
+&lt;p&gt;To finalize the process, a file needs to be uploaded to a MinIO bucket (file storage).&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Click on &lt;em&gt;File Storage&lt;/em&gt; on the left side of the dashboard menu to open drop-down&lt;/li&gt;
+&lt;li&gt;Click on &lt;em&gt;List Files&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;Click on &lt;em&gt;+Add&lt;/em&gt; to upload a file to the bucket&lt;/li&gt;
+&lt;/ol&gt;
+
+
+
+
+
+
+&lt;p&gt; 
+            &lt;img src=&#34;/streamzero/images/user_guide/list_files_event.png&#34; style=&#34;border:2px solid #fff;
+            box-shadow: 10px 10px 5px #ccc;
+            -moz-box-shadow: 10px 10px 5px #ccc;
+            -webkit-box-shadow: 10px 10px 5px #ccc;
+            -khtml-box-shadow: 10px 10px 5px #ccc;&#34;/&gt;
+&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Choose file to upload&lt;/li&gt;
+&lt;li&gt;Choose &lt;em&gt;File Type&lt;/em&gt;  (CSV Table; Plain Text; JSON)&lt;/li&gt;
+&lt;li&gt;Select the &lt;em&gt;Bucket Name&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;Click on &lt;em&gt;Save&lt;/em&gt; to save the file&lt;/li&gt;
+&lt;/ol&gt;
+
+
+
+
+
+
+&lt;p&gt; 
+            &lt;img src=&#34;/streamzero/images/user_guide/upload_file_event.png&#34; style=&#34;border:2px solid #fff;
+            box-shadow: 10px 10px 5px #ccc;
+            -moz-box-shadow: 10px 10px 5px #ccc;
+            -webkit-box-shadow: 10px 10px 5px #ccc;
+            -khtml-box-shadow: 10px 10px 5px #ccc;&#34;/&gt;
+&lt;/p&gt;
+
+&lt;p&gt;To verify if the package execution has been triggered, go back to the initial, edited package.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Click on &lt;em&gt;Executions&lt;/em&gt; on the left side of the dashboard menu to open drop-down&lt;/li&gt;
+&lt;li&gt;Click on &lt;em&gt;Packages&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;Click on the magnifying glass to open the details page of the package &lt;em&gt;Test Package with Scripts&lt;/em&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+
+
+
+
+
+&lt;p&gt; 
+            &lt;img src=&#34;/streamzero/images/user_guide/package_details_event.png&#34; style=&#34;border:2px solid #fff;
+            box-shadow: 10px 10px 5px #ccc;
+            -moz-box-shadow: 10px 10px 5px #ccc;
+            -webkit-box-shadow: 10px 10px 5px #ccc;
+            -khtml-box-shadow: 10px 10px 5px #ccc;&#34;/&gt;
+&lt;/p&gt;
+
+&lt;p&gt;It will automatically open the &lt;em&gt;List Package Executions&lt;/em&gt; tab.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Check the last Event, date and time to verify it corresponds to the time the file was uploaded&lt;/li&gt;
+&lt;li&gt;Click on the magnifying glass to open the details page of the triggered execution&lt;/li&gt;
+&lt;/ol&gt;
+
+
+
+
+
+
+&lt;p&gt; 
+            &lt;img src=&#34;/streamzero/images/user_guide/list_triggered_event.png&#34; style=&#34;border:2px solid #fff;
+            box-shadow: 10px 10px 5px #ccc;
+            -moz-box-shadow: 10px 10px 5px #ccc;
+            -webkit-box-shadow: 10px 10px 5px #ccc;
+            -khtml-box-shadow: 10px 10px 5px #ccc;&#34;/&gt;
+&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Check the details page of the event triggered run&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+
+
+
+&lt;p&gt; 
+            &lt;img src=&#34;/streamzero/images/user_guide/details_page_event.png&#34; style=&#34;border:2px solid #fff;
+            box-shadow: 10px 10px 5px #ccc;
+            -moz-box-shadow: 10px 10px 5px #ccc;
+            -webkit-box-shadow: 10px 10px 5px #ccc;
+            -khtml-box-shadow: 10px 10px 5px #ccc;&#34;/&gt;
+&lt;/p&gt;
+
+&lt;h2 id=&#34;workflow---approval-completed-trigger-event&#34;&gt;Workflow -&amp;gt; approval completed trigger event&lt;/h2&gt;
+&lt;p&gt;To finalize the second trigger event (ferris.apps.modules.approvals.step_approval_completed), an existing Workflow will be used to trigger a Case Management that will need to get approved.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Click on &lt;em&gt;Workflows&lt;/em&gt; on the left side of the dashboard menu to open the drop-down&lt;/li&gt;
+&lt;li&gt;Click on &lt;em&gt;List Workflows&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;Click on the magnifying glass to show the details page of the workflow&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Note that before even getting a closer look at the Workflow details, the &lt;em&gt;Entrypoint Event&lt;/em&gt; is displayed -&amp;gt; ferris.apps.modules.minio.file_uploaded&lt;/p&gt;
+
+
+
+
+
+
+&lt;p&gt; 
+            &lt;img src=&#34;/streamzero/images/user_guide/workflow_second_trigger_event.png&#34; style=&#34;border:2px solid #fff;
+            box-shadow: 10px 10px 5px #ccc;
+            -moz-box-shadow: 10px 10px 5px #ccc;
+            -webkit-box-shadow: 10px 10px 5px #ccc;
+            -khtml-box-shadow: 10px 10px 5px #ccc;&#34;/&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Check the details in the JSON snippet to understand what or which event types will trigger the second event type. The first event type shown in the JSON snippet is: ferris.apps.modules.minio.file_uploaded -&amp;gt; which means that a file will need to get uploaded for the event to get triggered. The second event type shown in the JSON snippet is: ferris.apps.modules.approvals.step_approval_completed -&amp;gt; meaning the uploaded file will need to get approved in the &lt;em&gt;Case Management&lt;/em&gt; module before the wanted event gets triggered.&lt;/p&gt;
+
+
+
+
+
+
+&lt;p&gt; 
+            &lt;img src=&#34;/streamzero/images/user_guide/workflow_trigger_event_types.png&#34; style=&#34;border:2px solid #fff;
+            box-shadow: 10px 10px 5px #ccc;
+            -moz-box-shadow: 10px 10px 5px #ccc;
+            -webkit-box-shadow: 10px 10px 5px #ccc;
+            -khtml-box-shadow: 10px 10px 5px #ccc;&#34;/&gt;
+&lt;/p&gt;
+
+&lt;h2 id=&#34;case-management-----approval-completed-trigger-event&#34;&gt;Case Management -&amp;gt; -&amp;gt; approval completed trigger event&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Upload a file to a bucket (the process of uploading a file was described in detail on top of this page)&lt;/li&gt;
+&lt;li&gt;Click on &lt;em&gt;Case Management&lt;/em&gt; on the left side of the dashboard menu to open the drop-down&lt;/li&gt;
+&lt;li&gt;Click on &lt;em&gt;Approvals&lt;/em&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Executions - Packages</title>
+      <link>/docs/fx/user_guide/executions_packages/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/fx/user_guide/executions_packages/</guid>
+      <description>
+        
+        
+        &lt;p&gt;The Executions/Packages is an event oriented framework that allows enterprise organizations the automation of script processing which can be triggered by:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Manually: By clicking the ‘Run’ button on the StreamZero FX Management Server.&lt;/li&gt;
+&lt;li&gt;On Schedule: As a cron job whereas the Cron expression is added on the UI.&lt;/li&gt;
+&lt;li&gt;On Event: Where a package is configured to be triggered bt the FX Router when a specific type of event is observed on the platform.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;It allows users to deploy their locally tested scripts without DevOps specific changes or the need to learn complex DSL (description and configuration language). In tandem with Git integrated source code management FX allows distributed and fragmented tech teans to easily deploy and test new versions of code in an agile way with changes being applied immediately.&lt;/p&gt;
+&lt;p&gt;Contiuous Change Integration / Change Deployment becomes a component based and building block driven approach, where packages can be configurable and parametrised. All scripts and their parameters like secrets and environment variables form packages which makes them reusable for similar jobs or event chains. Event based package triggering allows users to run multiple packages in parallel as a reaction to the same event.&lt;/p&gt;
+&lt;h1 id=&#34;executions---packages&#34;&gt;Executions - Packages&lt;/h1&gt;
+&lt;p&gt;Primary entities for &amp;ldquo;Executions&amp;rdquo; are packages which are composed by scripts that are executed in a predefined order.&lt;/p&gt;
+&lt;h2 id=&#34;executions---packages-1&#34;&gt;Executions -&amp;gt; Packages&lt;/h2&gt;
+&lt;p&gt;This Use Case defines how to create and run a new package.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Click on &lt;em&gt;Executions&lt;/em&gt; on the left side of the dashboard menu to open drop-down&lt;/li&gt;
+&lt;li&gt;Click on &lt;em&gt;Packages&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;Click on &lt;em&gt;+Add&lt;/em&gt; to create a package&lt;/li&gt;
+&lt;/ol&gt;
+
+
+
+
+
+
+&lt;p&gt; 
+            &lt;img src=&#34;/streamzero/images/user_guide/executions_packages_add_roboto.png&#34; style=&#34;border:2px solid #fff;
+            box-shadow: 10px 10px 5px #ccc;
+            -moz-box-shadow: 10px 10px 5px #ccc;
+            -webkit-box-shadow: 10px 10px 5px #ccc;
+            -khtml-box-shadow: 10px 10px 5px #ccc;&#34;/&gt;
+&lt;/p&gt;
+
+&lt;h2 id=&#34;create-package&#34;&gt;Create Package&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;&lt;strong&gt;Field name&lt;/strong&gt;&lt;/th&gt;
+&lt;th&gt;&lt;strong&gt;Steps &amp;amp; Description&lt;/strong&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;1. Name&lt;/td&gt;
+&lt;td&gt;1. Name the package&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;2. Description&lt;/td&gt;
+&lt;td&gt;2. Descripe the package&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;3. Project&lt;/td&gt;
+&lt;td&gt;3. Select the project to which the package will be bound&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;4. Tags&lt;/td&gt;
+&lt;td&gt;4. Add Tags of choice manually or select from predefined tags&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;5. Schedule&lt;/td&gt;
+&lt;td&gt;5. Schedule cron job -&amp;gt; &amp;ldquo;Cron like schedule definition. NOTE: day of week start on Monday (0 - Monday, 6 - Sunday) example: &amp;ldquo;20****&amp;rdquo; -&amp;gt; &lt;strong&gt;The whole definition of &lt;a href=&#34;/docs/user-guide/cronjob/&#34; title=&#34;CronJob&#34;&gt;Cron Jobs&lt;/a&gt; can be found in the next sub-category of this UserGuide&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;6. Trigger Event Type&lt;/td&gt;
+&lt;td&gt;6. Select Value -&amp;gt; select event type to trigger the exectution of the package -&amp;gt; please visit the sub-category &lt;a href=&#34;/docs/user-guide/events/&#34; title=&#34;Events&#34;&gt;Events&lt;/a&gt; to get a better understanding of how to set event triggers.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;7. Allow Manual Triggering&lt;/td&gt;
+&lt;td&gt;7. Checkbox -&amp;gt; click to allow manual triggering of the package&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;8. Active&lt;/td&gt;
+&lt;td&gt;8. Checkbox -&amp;gt; click to set the package to active&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;9. File Upload (choose file)&lt;/td&gt;
+&lt;td&gt;9. Click on Choose file (Optional) to upload a script -&amp;gt; upload a JSON &amp;ldquo;config.json&amp;rdquo; script to configure the package&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;10. File Upload (choose file)&lt;/td&gt;
+&lt;td&gt;10. Click on Choose file (Optional) to upload a script -&amp;gt; upload a python &amp;ldquo;test_scr.py&amp;rdquo; script to pull the configuratio from config file and print all items&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;11. Save&lt;/td&gt;
+&lt;td&gt;11. Click Save to save packages&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;em&gt;Supported File upload Types&lt;/em&gt;&lt;/td&gt;
+&lt;td&gt;4 different file types are supported: &lt;br /&gt;&lt;strong&gt;1. &amp;ldquo;.py file&amp;rdquo;&lt;/strong&gt; -&amp;gt; A PY file is a program file or script written in Python, an interpreted object-oriented programming language. &lt;br /&gt;&lt;strong&gt;2. &amp;ldquo;.json file&amp;rdquo;&lt;/strong&gt; -&amp;gt; A JSON file is a file that stores simple data structures and objects in JavaScript Object Notation (JSON) format, which is a standard data interchange format. &lt;br /&gt;&lt;strong&gt;3. &amp;ldquo;.sql file&amp;rdquo;&lt;/strong&gt; -&amp;gt; A (SQL) file with .sql extension is a Structured Query Language (SQL) file that contains code to work with relational databases. &lt;br /&gt;&lt;strong&gt;4. &amp;ldquo;.csv file&amp;rdquo;&lt;/strong&gt; -&amp;gt; A CSV (comma-separated values) file is a text file that has a specific format which allows data to be saved in a table structured format.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+
+
+
+
+
+&lt;p&gt; 
+            &lt;img src=&#34;/streamzero/images/user_guide/create_package_with_configs_roboto.png&#34; style=&#34;border:2px solid #fff;
+            box-shadow: 10px 10px 5px #ccc;
+            -moz-box-shadow: 10px 10px 5px #ccc;
+            -webkit-box-shadow: 10px 10px 5px #ccc;
+            -khtml-box-shadow: 10px 10px 5px #ccc;&#34;/&gt;
+&lt;/p&gt;
+
+&lt;h5 id=&#34;configjson-script&#34;&gt;config.json script&lt;/h5&gt;
+&lt;p&gt;The &lt;code&gt;config.json&lt;/code&gt; file contains key/value configuration pairs that can be accessed in scripts at execution time.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-json&#34; data-lang=&#34;json&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;{&lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;somekey&amp;#34;&lt;/span&gt;:&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;some value 2&amp;#34;&lt;/span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h5 id=&#34;test_scrpy-script&#34;&gt;test_scr.py script&lt;/h5&gt;
+&lt;p&gt;This is an example script that shows how configuration from &lt;code&gt;config.json&lt;/code&gt; file can be accessed from a script. &lt;code&gt;package_name&lt;/code&gt; will be passed to the script as argument and then can be used for fetching configuration using &lt;code&gt;ApplicationConfigurator&lt;/code&gt; from &lt;code&gt;ferris_cli&lt;/code&gt; python package.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 1
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 2
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 3
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 4
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 5
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 6
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 7
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 8
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 9
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;10
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;11
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; sys&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; json
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;from&lt;/span&gt; ferris_cli.v2 &lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; ApplicationConfigurator
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;fa &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; json&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;loads(sys&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;argv[&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;])
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;package_name &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; fa[&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;package_name&amp;#39;&lt;/span&gt;]
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;config &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; ApplicationConfigurator&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;get(package_name)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; k, v &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; config&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;items():
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    print(&lt;span style=&#34;color:#e6db74&#34;&gt;f&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;{&lt;/span&gt;k&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt; -&amp;gt; &lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;{&lt;/span&gt;v&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    print(v)
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h2 id=&#34;check-created-package&#34;&gt;Check Created Package&lt;/h2&gt;
+&lt;p&gt;The created package should be triggered every 20 minutes of every hour but can also be run manually.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Click on the magnifying glass icon to open the package&amp;rsquo;s details page&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+
+
+
+&lt;p&gt; 
+            &lt;img src=&#34;/streamzero/images/user_guide/click_loupe_package_roboto.png&#34; style=&#34;border:2px solid #fff;
+            box-shadow: 10px 10px 5px #ccc;
+            -moz-box-shadow: 10px 10px 5px #ccc;
+            -webkit-box-shadow: 10px 10px 5px #ccc;
+            -khtml-box-shadow: 10px 10px 5px #ccc;&#34;/&gt;
+&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Check details page&lt;/li&gt;
+&lt;li&gt;Click on &amp;ldquo;Show Trigger Event&amp;rdquo;&lt;/li&gt;
+&lt;/ol&gt;
+
+
+
+
+
+
+&lt;p&gt; 
+            &lt;img src=&#34;/streamzero/images/user_guide/package_details_show_trigger_event_roboto.png&#34; style=&#34;border:2px solid #fff;
+            box-shadow: 10px 10px 5px #ccc;
+            -moz-box-shadow: 10px 10px 5px #ccc;
+            -webkit-box-shadow: 10px 10px 5px #ccc;
+            -khtml-box-shadow: 10px 10px 5px #ccc;&#34;/&gt;
+&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Check the triggered event details&lt;/li&gt;
+&lt;li&gt;Close&lt;/li&gt;
+&lt;/ol&gt;
+
+
+
+
+
+
+&lt;p&gt; 
+            &lt;img src=&#34;/streamzero/images/user_guide/triggered_event_details_roboto.png&#34; style=&#34;border:2px solid #fff;
+            box-shadow: 10px 10px 5px #ccc;
+            -moz-box-shadow: 10px 10px 5px #ccc;
+            -webkit-box-shadow: 10px 10px 5px #ccc;
+            -khtml-box-shadow: 10px 10px 5px #ccc;&#34;/&gt;
+&lt;/p&gt;
+
+&lt;h2 id=&#34;package-executions--runs&#34;&gt;Package Executions / Runs&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Click on the &amp;ldquo;Run&amp;rdquo; button down the page to run the package manually&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+
+
+
+&lt;p&gt; 
+            &lt;img src=&#34;/streamzero/images/user_guide/run_button_manual_package.png&#34; style=&#34;border:2px solid #fff;
+            box-shadow: 10px 10px 5px #ccc;
+            -moz-box-shadow: 10px 10px 5px #ccc;
+            -webkit-box-shadow: 10px 10px 5px #ccc;
+            -khtml-box-shadow: 10px 10px 5px #ccc;&#34;/&gt;
+&lt;/p&gt;
+
+&lt;p&gt;It will automatically transfer you to the &amp;ldquo;List Package Executions&amp;rdquo; tab&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Check runs/package executions to see if you manually triggered execution was processed&lt;/li&gt;
+&lt;li&gt;Click on the magnifying glass icon of your latest manually triggered run to open details page of the exectuion&lt;/li&gt;
+&lt;/ol&gt;
+
+
+
+
+
+
+&lt;p&gt; 
+            &lt;img src=&#34;/streamzero/images/user_guide/manual_run_check_loupe_details_roboto.png&#34; style=&#34;border:2px solid #fff;
+            box-shadow: 10px 10px 5px #ccc;
+            -moz-box-shadow: 10px 10px 5px #ccc;
+            -webkit-box-shadow: 10px 10px 5px #ccc;
+            -khtml-box-shadow: 10px 10px 5px #ccc;&#34;/&gt;
+&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Check the details &amp;ldquo;Show Package Execution&amp;rdquo; of the run/exection&lt;/li&gt;
+&lt;li&gt;Click on &amp;ldquo;List Steps&amp;rdquo; tab to see the steps of the execution&lt;/li&gt;
+&lt;/ol&gt;
+
+
+
+
+
+
+&lt;p&gt; 
+            &lt;img src=&#34;/streamzero/images/user_guide/exection_manual_run_details_roboto.png&#34; style=&#34;border:2px solid #fff;
+            box-shadow: 10px 10px 5px #ccc;
+            -moz-box-shadow: 10px 10px 5px #ccc;
+            -webkit-box-shadow: 10px 10px 5px #ccc;
+            -khtml-box-shadow: 10px 10px 5px #ccc;&#34;/&gt;
+&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Check the steps of the run and status (completed; pending; unprocessed; failed)&lt;/li&gt;
+&lt;li&gt;Click on &amp;ldquo;Show Results&amp;rdquo; to verify the script for failed executions&lt;/li&gt;
+&lt;/ol&gt;
+
+
+
+
+
+
+&lt;p&gt; 
+            &lt;img src=&#34;/streamzero/images/user_guide/manual_run_list_steps_roboto.png&#34; style=&#34;border:2px solid #fff;
+            box-shadow: 10px 10px 5px #ccc;
+            -moz-box-shadow: 10px 10px 5px #ccc;
+            -webkit-box-shadow: 10px 10px 5px #ccc;
+            -khtml-box-shadow: 10px 10px 5px #ccc;&#34;/&gt;
+&lt;/p&gt;
+
+
+
+
+
+
+
+&lt;p&gt; 
+            &lt;img src=&#34;/streamzero/images/user_guide/script_manual_run_execution.png&#34; style=&#34;border:2px solid #fff;
+            box-shadow: 10px 10px 5px #ccc;
+            -moz-box-shadow: 10px 10px 5px #ccc;
+            -webkit-box-shadow: 10px 10px 5px #ccc;
+            -khtml-box-shadow: 10px 10px 5px #ccc;&#34;/&gt;
+&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Close window&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Note that currently only python and sql handlers are available, files of different type will be unprocessed.&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;save-a-runexecution&#34;&gt;Save a Run/Execution&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Go back to the &amp;ldquo;List Package Executions&amp;rdquo; tab&lt;/li&gt;
+&lt;li&gt;Click on the edit icon to open make the run/execution editable&lt;/li&gt;
+&lt;/ol&gt;
+
+
+
+
+
+
+&lt;p&gt; 
+            &lt;img src=&#34;/streamzero/images/user_guide/list_package_executions_edit_manual_run_roboto.png&#34; style=&#34;border:2px solid #fff;
+            box-shadow: 10px 10px 5px #ccc;
+            -moz-box-shadow: 10px 10px 5px #ccc;
+            -webkit-box-shadow: 10px 10px 5px #ccc;
+            -khtml-box-shadow: 10px 10px 5px #ccc;&#34;/&gt;
+&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Name the execution/run&lt;/li&gt;
+&lt;li&gt;Describe the execution/run&lt;/li&gt;
+&lt;li&gt;Click &amp;ldquo;Saved&amp;rdquo; check box&lt;/li&gt;
+&lt;li&gt;Save&lt;/li&gt;
+&lt;/ol&gt;
+
+
+
+
+
+
+&lt;p&gt; 
+            &lt;img src=&#34;/streamzero/images/user_guide/save_execution_run_roboto.png&#34; style=&#34;border:2px solid #fff;
+            box-shadow: 10px 10px 5px #ccc;
+            -moz-box-shadow: 10px 10px 5px #ccc;
+            -webkit-box-shadow: 10px 10px 5px #ccc;
+            -khtml-box-shadow: 10px 10px 5px #ccc;&#34;/&gt;
+&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Click on Executions to open dropdown&lt;/li&gt;
+&lt;li&gt;Click on Saved Executions to check the saved run&lt;/li&gt;
+&lt;/ol&gt;
+
+
+
+
+
+
+&lt;p&gt; 
+            &lt;img src=&#34;/streamzero/images/user_guide/check_saved_run_roboto.png&#34; style=&#34;border:2px solid #fff;
+            box-shadow: 10px 10px 5px #ccc;
+            -moz-box-shadow: 10px 10px 5px #ccc;
+            -webkit-box-shadow: 10px 10px 5px #ccc;
+            -khtml-box-shadow: 10px 10px 5px #ccc;&#34;/&gt;
+&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;In the next section &amp;ldquo;UI Generator&amp;rdquo;, the importance of the saved run will be showcased&lt;/strong&gt;.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

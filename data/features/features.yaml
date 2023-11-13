@@ -1,0 +1,54 @@
+features:
+  feature_sets:
+    - name: Scalability
+      description: StreamZero's products have been built from the ground up for large transaction volumes. The scalability is inherited from the underlying platforms of Kafka and Kubernetes.
+                   Building on top of this robust infrastructure we have engineered features such as execution reprioritization based on real world experience.
+      features: 
+        - name: Powered by Kubernetes
+          description: All platform infrastructure runs on Kubernetes. Giving you the possibility to scale on demand. Each layer of the stack is designed to scale indpendently of the others. 
+        - name: Run Millions of Executions
+          description: Events are transported through Kafka and profit from the resilience of Kafka - Enabling event and execution throughputs of Millions of executions per day day in and day out. If the underlying infrastructure can support it.
+        - name: Easily Scalable Executors
+          description: Executors run in easily scalable clusters which are further subdivided by priority lanes.
+
+    - name: Data Ingestion
+      description: Easily manage ingestion from Files, Database or Streams
+      features: 
+        - name: Streaming Inputs
+          description: Add edge adapter to stream the input - Apache Kafka, Apache Pulsar, Apache Spark, AWS Event Bridge, Twitter .... 
+        - name: Database Inputs
+          description: Over 40 SQLAlchemy powered DB integrations. Google BigQuery, AWS RedShift, Apache Hive, Clickhouse, Postgres...
+        - name: Storage Inputs
+          description: Amazon S3, HDFS, Minio, NFS, Google Cloud Storage, Azure Cloud Storage...
+
+    - name: Operations and Monitoring
+      description: Low-Ops, you heard it here first. Our integrated platform manages deployments, collects operations data and enables a low effort operations.
+      features: 
+        - name: Stream Aggregated Logs, Events and Notifications
+          description: All logs are streamed to Kafka just as we do with events. Purpose built adapters take care of feeding them into storage such as Elasticsearch, Splunk, Clickhouse, HDFS or AWS S3.
+        - name: Monitoring Dashboards
+          description: Use the Management dashboard to view the health of your system. Identify slow running executions and fix them easily. Get notified on failure. View precise execution time of each step within a service. Identify new code running on platform and who esecuted them.
+        - name: Trouble Ticketing Integrations
+          description: Auto-generate trouble tickets on failure. Integrate with your ticketing system of choice - after all it is just a service away.
+
+    - name: Comprehensive Security
+      description: Low-Ops, you heard it here first. Our integrated platform manages deployments, collects operations data and enables a low effort operations.
+      features: 
+        - name: Role-Based Access Control
+          description: Efficiently manage security configurations by user role and sub-projects and with syncronisation to group managements in LDAP or ActiveDirectory.
+        - name: Auditing
+          description: All actions are aggregated and ready to ingest into the audit system of choice - Elasticsearch, Splunk, ObjectStorage.
+        - name: Authentication
+          description: Fully integrated with KeyCloak the de-facto standard in authentication gateways. Integrate with your enterprise authentication, easily.
+        - name: Secrets Storage
+          description: In-built secrets storage to save your applications secrets. Support for secrets at service, project and platform level.
+        - name: Environment Isolation
+          description: Each Service runs in it's own environment - with it's own dedicated context.
+
+    - name: Project and Team Features
+      description: 
+      features: 
+        - name: Service Collections / Projects
+          description: Groups services into distinct Projects. Each with it's own distinct team and roles
+        - name: Micro-UIs for Business Users
+          description: Attach forms to services to trigger executions - so business users can trigger on demand executions. Forms are generated from JSON definitions. Create forms in minutes.

@@ -1,0 +1,63 @@
+features:
+- name: Kubectl Unleashed
+  id: 01
+  description: Imperative commands are a powerful tool for day-to-day Kubernetes Operations, but their range is not well known. We collected a set of 300+ commands to get you started. 
+  learn_more_href: /blog/1/01/01/kubectl-imperative-commands-samples/
+  icon: amazon_athena.png
+  tags:
+    - kubernetes
+    - devops
+    - infrastructure
+
+- name: The Power of Event-Driven Architectures
+  id: 02
+  description: In this manifesto we examine the power of event driven systems. While real-time processing is an undeniable strength of event-driven architectures, their capabilities extend far beyond. 
+  learn_more_href: /blog/1/01/01/the-power-of-event-driven-systems/
+  icon: amazon_athena.png
+  tags:
+    - event-driven
+    - streamzero
+    - integration
+
+- name: DeepLearning VM in Google Cloud
+  id: 03
+  description: Creating a DeepLearning VM in Google Cloud with Terraform. In this article we show you how we setup on-demand Deep Learning VMs in Google Cloud with Terraform.
+  learn_more_href: /blog/1/01/01/kubectl-imperative-commands-samples/
+  icon: amazon_athena.png
+  tags:
+    - deeplearning
+    - devops
+    - google-cloud
+    - terraform
+
+
+- name: Kafka Diagnostics in Kubernetes
+  id: 04
+  description:  When diagnosing issues with Kafka running in a Kubernetes cluster, it can be useful to run diagnostic tools directly within the cluster. We demonstrate an approach using kcat as a temporary pod.
+  learn_more_href: /blog/1/01/01/using-kcat-with-kubectl-for-kafka-diagnostics-in-kubernetes/
+  icon: amazon_athena.png
+  tags:
+    - kafka
+    - kubernetes
+    - kubectl
+    - devops
+
+- name: 100 Kubernetes Diagnostics Commands with Kubectl
+  id: 05
+  description:  Here is a list of 100 kubectl commands that can be useful for diagnosing issues in a Kubernetes cluster. These were prepared as a study aid for my CKAD exams with the help of ChatGPT.
+  learn_more_href: /blog/1/01/01/100-kubernetes-diagnostics-commands-with-kubectl/
+  icon: amazon_athena.png
+  tags:
+    - kubernetes
+    - kubectl
+    - devops
+
+- name: Message Delivery in Kafka with Multiple Partitions
+  id: 05
+  description:  In this post we take a look at how we can ensure 'nearly even' distribution of messages across consumers which are part of a consumer group. A challenge which we often face with event driven microservices.
+  learn_more_href: /blog/1/01/01/understanding-message-delivery-in-kafka-with-multiple-partitions/
+  icon: amazon_athena.png
+  tags:
+    - kafka
+    - microservices
+    - distributed systems

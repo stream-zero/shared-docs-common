@@ -1,0 +1,914 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>GridMine – Integrations Guide</title>
+    <link>/docs/integrations/</link>
+    <description>Recent content in Integrations Guide on GridMine</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    
+	  <atom:link href="/docs/integrations/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Docs: Database Guide</title>
+      <link>/docs/integrations/database_guide/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/integrations/database_guide/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;install-database-drivers&#34;&gt;Install Database Drivers&lt;/h2&gt;
+&lt;p&gt;StreamZero DX requires a Python DB-API database driver and a SQLAlchemy dialect to be installed for each datastore you want to connect to within the executor image.&lt;/p&gt;
+&lt;h2 id=&#34;configuring-database-connections&#34;&gt;Configuring Database Connections&lt;/h2&gt;
+&lt;p&gt;StreamZero can manage preset connection configurations. This enables a platform wide set up for both confidential as well as general access databases.&lt;/p&gt;
+&lt;p&gt;StreamZero uses the SQL Alchemy Engine along with the URL template based approach to connection management. The connection configurations are maintained as secrets within the platform and are therefore not publicly accessible i.e. access is provided for administrators only.&lt;/p&gt;
+&lt;h2 id=&#34;retrieving-db-connections&#34;&gt;Retrieving DB Connections&lt;/h2&gt;
+&lt;p&gt;The following is how to retrieve a named connection. The following sample assumes that the connection identifier key is uploaded to the package as a secrets.json.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;2
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;3
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;4
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;5
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;6
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;7
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;8
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;from&lt;/span&gt; fx_ef &lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; context
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; sqlalchemy &lt;span style=&#34;color:#66d9ef&#34;&gt;as&lt;/span&gt; db
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;db_url &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; context&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;secrets&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;get(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;my_connection&amp;#39;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;engine &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; db&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;create_engine(db_url)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;connection &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; engine&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;connect()
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;metadata &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; db&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;MetaData()
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;In the above example the db_url is set up as a secret with name &lt;code&gt;&#39;my_connection&#39;&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Depending on whether this is a service, project or platform level secret there are different approaches to set up the secret. For service level secret the following is a sample set up for a &lt;code&gt;secrets.json&lt;/code&gt; file of the package.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;2
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-json&#34; data-lang=&#34;json&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;{
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;my_connection&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;mysql://scott:tiger@localhost/test&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;For Project scope use the &lt;code&gt;&#39;secrets&#39;&lt;/code&gt; tab of the Project Management UI.&lt;/li&gt;
+&lt;li&gt;For Platform scope secrets use the &lt;code&gt;Vault UI&lt;/code&gt; in the DX Manager Application.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;database-drivers&#34;&gt;Database Drivers&lt;/h2&gt;
+&lt;p&gt;The following table provides a guide on the python libs to be installed within the Executor docker image. For instructions on how to extend the Executor docker image please check this page: /docs/extending_executor_image&lt;/p&gt;
+&lt;p&gt;You can read more here about how to install new database drivers and libraries into your StreamZero FX executor image.&lt;/p&gt;
+&lt;p&gt;Note that many other databases are supported, the main criteria being the existence of a functional SQLAlchemy dialect and Python driver. Searching for the keyword &amp;ldquo;sqlalchemy + (database name)&amp;rdquo; should help get you to the right place.&lt;/p&gt;
+&lt;p&gt;If your database or data engine isn&amp;rsquo;t on the list but a SQL interface exists, please file an issue so we can work on documenting and supporting it.&lt;/p&gt;
+&lt;p&gt;A list of some of the recommended packages.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Database&lt;/th&gt;
+&lt;th&gt;PyPI package&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;/docs/integrations/database_guide/databases/athena&#34;&gt;Amazon Athena&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;pip install &amp;quot;PyAthenaJDBC&amp;gt;1.0.9&lt;/code&gt; , &lt;code&gt;pip install &amp;quot;PyAthena&amp;gt;1.2.0&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;/docs/integrations/database_guide/databases/redshift&#34;&gt;Amazon Redshift&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;pip install sqlalchemy-redshift&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;/docs/integrations/database_guide/databases/drill&#34;&gt;Apache Drill&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;pip install sqlalchemy-drill&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;/docs/integrations/database_guide/databases/druid&#34;&gt;Apache Druid&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;pip install pydruid&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;/docs/integrations/database_guide/databases/hive&#34;&gt;Apache Hive&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;pip install pyhive&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;/docs/integrations/database_guide/databases/impala&#34;&gt;Apache Impala&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;pip install impyla&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;/docs/integrations/database_guide/databases/kylin&#34;&gt;Apache Kylin&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;pip install kylinpy&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;/docs/integrations/database_guide/databases/pinot&#34;&gt;Apache Pinot&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;pip install pinotdb&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;/docs/integrations/database_guide/databases/solr&#34;&gt;Apache Solr&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;pip install sqlalchemy-solr&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;/docs/integrations/database_guide/databases/spark-sql&#34;&gt;Apache Spark SQL&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;pip install pyhive&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;/docs/integrations/database_guide/databases/ascend&#34;&gt;Ascend.io&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;pip install impyla&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;/docs/integrations/database_guide/databases/sql-server&#34;&gt;Azure MS SQL&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;pip install pymssql&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;/docs/integrations/database_guide/databases/bigquery&#34;&gt;Big Query&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;pip install pybigquery&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;/docs/integrations/database_guide/databases/clickhouse&#34;&gt;ClickHouse&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;pip install clickhouse-driver==0.2.0 &amp;amp;&amp;amp; pip install clickhouse-sqlalchemy==0.1.6&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;/docs/integrations/database_guide/databases/cockroachdb&#34;&gt;CockroachDB&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;pip install cockroachdb&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;/docs/integrations/database_guide/databases/dremio&#34;&gt;Dremio&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;pip install sqlalchemy_dremio&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;/docs/integrations/database_guide/databases/elasticsearch&#34;&gt;Elasticsearch&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;pip install elasticsearch-dbapi&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;/docs/integrations/database_guide/databases/exasol&#34;&gt;Exasol&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;pip install sqlalchemy-exasol&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;/docs/integrations/database_guide/databases/google-sheets&#34;&gt;Google Sheets&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;pip install shillelagh[gsheetsapi]&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;/docs/integrations/database_guide/databases/firebolt&#34;&gt;Firebolt&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;pip install firebolt-sqlalchemy&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;/docs/integrations/database_guide/databases/hologres&#34;&gt;Hologres&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;pip install psycopg2&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;/docs/integrations/database_guide/databases/ibm-db2&#34;&gt;IBM Db2&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;pip install ibm_db_sa&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;/docs/integrations/database_guide/databases/netezza&#34;&gt;IBM Netezza Performance Server&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;pip install nzalchemy&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;/docs/integrations/database_guide/databases/mysql&#34;&gt;MySQL&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;pip install mysqlclient&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;/docs/integrations/database_guide/databases/oracle&#34;&gt;Oracle&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;pip install cx_Oracle&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;/docs/integrations/database_guide/databases/postgres&#34;&gt;PostgreSQL&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;pip install psycopg2&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;/docs/integrations/database_guide/databases/trino&#34;&gt;Trino&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;pip install sqlalchemy-trino&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;/docs/integrations/database_guide/databases/presto&#34;&gt;Presto&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;pip install pyhive&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;/docs/integrations/database_guide/databases/hana&#34;&gt;SAP Hana&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;pip install hdbcli sqlalchemy-hana or pip install apache-Feris[hana]&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;/docs/integrations/database_guide/databases/snowflake&#34;&gt;Snowflake&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;pip install snowflake-sqlalchemy&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;SQLite&lt;/td&gt;
+&lt;td&gt;No additional library needed&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;/docs/integrations/database_guide/databases/sql-server&#34;&gt;SQL Server&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;pip install pymssql&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;/docs/integrations/database_guide/databases/teradata&#34;&gt;Teradata&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;pip install teradatasqlalchemy&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;/docs/integrations/database_guide/databases/vertica&#34;&gt;Vertica&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;pip install sqlalchemy-vertica-python&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;/docs/integrations/database_guide/databases/yugabytedb&#34;&gt;Yugabyte&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;pip install psycopg2&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;hr&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Notifications and Messaging</title>
+      <link>/docs/integrations/notifications_and_messaging/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/integrations/notifications_and_messaging/</guid>
+      <description>
+        
+        
+        &lt;p&gt;StreamZero provides you access to over 40 notification services such as Slack, Email and Telegram.&lt;/p&gt;
+&lt;p&gt;StreamZero FX uses the Apprise Python Libs as an engine for notifiation dispatch. The power of Apprise gives you access to over 40 notification services.  A complete list is provided in a table and the end of the document.&lt;/p&gt;
+&lt;p&gt;In order to send notifications from your package you need is to create and emit a pre-defined event type.&lt;/p&gt;
+&lt;h2 id=&#34;how-to-send-notifications-from-your-package&#34;&gt;How to send notifications from your package&lt;/h2&gt;
+&lt;p&gt;In order to send notifications from your package you need to send a &amp;lsquo;ferris.notifications.apprise.notification&amp;rsquo; event from your package&lt;/p&gt;
+&lt;p&gt;You can do it like so.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 1
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 2
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 3
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 4
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 5
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 6
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 7
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 8
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 9
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;10
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;11
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;12
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;13
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;14
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;from&lt;/span&gt; fx_ef &lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; context
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# Please note that the value for the url_template is the name used within the config &lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# For a specifc URL template in configurations.&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# Please see configurations sample on how to configure&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;data &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;url_template&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;slack_1&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;body&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;This is the content&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;title&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;This is the subject&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;event_type &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;ferris.notifications.apprise.notification&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;context&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;events&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;send(event_type, data)
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h2 id=&#34;how-does-it-work&#34;&gt;How does it Work?&lt;/h2&gt;
+&lt;p&gt;There are 2 approaches to implementing the notifications support.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Implementation within a StreamZero Service&lt;/li&gt;
+&lt;li&gt;Implementation in an Exit Gateway&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The 2nd option is used in platforms which are behind a firewall and therefore require the gateway to be outside the firewall for accessing external services. In these cases the adapter runs as a separate container.&lt;/p&gt;
+&lt;p&gt;Irrespective of the infrastructure implementation the service internal API (as illustrated above) does not change.&lt;/p&gt;
+&lt;p&gt;The following documentation refers to Option 1.&lt;/p&gt;
+&lt;h2 id=&#34;pre-requisites&#34;&gt;Pre-Requisites&lt;/h2&gt;
+&lt;p&gt;In order to send notifcations&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;The Apprise Libs must be present in the Executor Image.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;You must have the Apprise Notifications Packages installed and running. You can find the code base further below in document.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;You must upload a secrets.json file for the Apprise Notifications Package. Please note that you should maintain a separate copy of the configs since this will not be displayed in your configuration manager since it contains credentials.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;A sample configuration file is provided below. Please use the table based on Apprise documentation to understand the URL Template structure.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Once the Apprise Notifications Package is installed along with the configurations you must link the package to be triggered by the &amp;lsquo;ferris.notifications.apprise.notification&amp;rsquo; event.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;the-hahahugoshortcode15s3hbhb-apprise-package&#34;&gt;The StreamZero Apprise Package&lt;/h2&gt;
+&lt;p&gt;The following is code for an StreamZero executor package to send apprise based notifications.&lt;/p&gt;
+&lt;p&gt;To send a notification from within your python application, just do the following:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 1
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 2
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 3
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 4
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 5
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 6
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 7
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 8
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 9
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;10
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;11
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;12
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;13
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;14
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;15
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;16
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;17
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;18
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;19
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;20
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; apprise
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;from&lt;/span&gt; fx_ef &lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; context
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# Getting the incoming parameters&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;url_template_name &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; context&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;params&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;get(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;url_template&amp;#39;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# Create an Apprise instance&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;apobj &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; apprise&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;Apprise()
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# Setting up the Apprise object with URLs&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# The URL is retreived from the uploaded secrets.json&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;apobj&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;add(context&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;secrets&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;get(url_template_name))
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;try&lt;/span&gt;: 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  apobj&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;notify(
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    body&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;get_param(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;body&amp;#39;&lt;/span&gt;),
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    title&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;get_param(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;title&amp;#39;&lt;/span&gt;),
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  )
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;except&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;Exception&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;as&lt;/span&gt; ex:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  print(ex)
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h2 id=&#34;configuration&#34;&gt;Configuration&lt;/h2&gt;
+&lt;p&gt;The following is a sample configuration which is uploaded as a secrets.json file for the StreamZero Apprise Package.&lt;/p&gt;
+&lt;p&gt;The configuration consists of a set of named URL templates. With each url_template being based on the Apprise URL schema as shown in the sections further in document.&lt;/p&gt;
+&lt;p&gt;While you are free to name URL templates as you wish it is preferred to prefix them with an indication of the underlying service being used to send notifications.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;2
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;3
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;4
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;5
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;6
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;7
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;8
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-json&#34; data-lang=&#34;json&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;{
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;slack_1&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;slack://TokenA/TokenB/TokenC/&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;slack_2&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;slack://TokenA/TokenB/TokenC/Channel&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;slack_3&amp;#34;&lt;/span&gt;:&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;slack://botname@TokenA/TokenB/TokenC/Channel&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;slack_4&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;slack://user@TokenA/TokenB/TokenC/Channel1/Channel2/ChannelN&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;telegram_1&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;tgram://bottoken/ChatID&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;telegram_2&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;tgram://bottoken/ChatID1/ChatID2/ChatIDN&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;The configurations must be added to a secrets.json file and uploaded as part of the apprise_package.&lt;/p&gt;
+&lt;p&gt;The apprise package must be configured to be triggered by the &amp;lsquo;ferris.notifications.apprise.notification&amp;rsquo; event.&lt;/p&gt;
+&lt;h3 id=&#34;popular-notification-services&#34;&gt;Popular Notification Services&lt;/h3&gt;
+&lt;p&gt;The table below identifies the services this tool supports and some example service urls you need to use in order to take advantage of it.&lt;/p&gt;
+&lt;p&gt;Click on any of the services listed below to get more details on how you can configure Apprise to access them.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Notification Service&lt;/th&gt;
+&lt;th&gt;Service ID&lt;/th&gt;
+&lt;th&gt;Default Port&lt;/th&gt;
+&lt;th&gt;Example Syntax&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/caronc/apprise/wiki/Notify_apprise_api&#34;&gt;Apprise API&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;apprise:// or apprises://&lt;/td&gt;
+&lt;td&gt;(TCP) 80 or 443&lt;/td&gt;
+&lt;td&gt;apprise://hostname/Token&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/caronc/apprise/wiki/Notify_ses&#34;&gt;AWS SES&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;ses://&lt;/td&gt;
+&lt;td&gt;(TCP) 443&lt;/td&gt;
+&lt;td&gt;ses://user@domain/AccessKeyID/AccessSecretKey/RegionName&lt;br/&gt;ses://user@domain/AccessKeyID/AccessSecretKey/RegionName/email1/email2/emailN&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/caronc/apprise/wiki/Notify_discord&#34;&gt;Discord&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;discord://&lt;/td&gt;
+&lt;td&gt;(TCP) 443&lt;/td&gt;
+&lt;td&gt;discord://webhook_id/webhook_token&lt;br /&gt;discord://avatar@webhook_id/webhook_token&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/caronc/apprise/wiki/Notify_emby&#34;&gt;Emby&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;emby:// or embys://&lt;/td&gt;
+&lt;td&gt;(TCP) 8096&lt;/td&gt;
+&lt;td&gt;emby://user@hostname/&lt;br /&gt;emby://user:password@hostname&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/caronc/apprise/wiki/Notify_enigma2&#34;&gt;Enigma2&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;enigma2:// or enigma2s://&lt;/td&gt;
+&lt;td&gt;(TCP) 80 or 443&lt;/td&gt;
+&lt;td&gt;enigma2://hostname&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/caronc/apprise/wiki/Notify_faast&#34;&gt;Faast&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;faast://&lt;/td&gt;
+&lt;td&gt;(TCP) 443&lt;/td&gt;
+&lt;td&gt;faast://authorizationtoken&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/caronc/apprise/wiki/Notify_fcm&#34;&gt;FCM&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;fcm://&lt;/td&gt;
+&lt;td&gt;(TCP) 443&lt;/td&gt;
+&lt;td&gt;fcm://project@apikey/DEVICE_ID&lt;br /&gt;fcm://project@apikey/#TOPIC&lt;br/&gt;fcm://project@apikey/DEVICE_ID1/#topic1/#topic2/DEVICE_ID2/&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/caronc/apprise/wiki/Notify_flock&#34;&gt;Flock&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;flock://&lt;/td&gt;
+&lt;td&gt;(TCP) 443&lt;/td&gt;
+&lt;td&gt;flock://token&lt;br/&gt;flock://botname@token&lt;br/&gt;flock://app_token/u:userid&lt;br/&gt;flock://app_token/g:channel_id&lt;br/&gt;flock://app_token/u:userid/g:channel_id&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/caronc/apprise/wiki/Notify_gitter&#34;&gt;Gitter&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;gitter://&lt;/td&gt;
+&lt;td&gt;(TCP) 443&lt;/td&gt;
+&lt;td&gt;gitter://token/room&lt;br/&gt;gitter://token/room1/room2/roomN&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/caronc/apprise/wiki/Notify_googlechat&#34;&gt;Google Chat&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;gchat://&lt;/td&gt;
+&lt;td&gt;(TCP) 443&lt;/td&gt;
+&lt;td&gt;gchat://workspace/key/token&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/caronc/apprise/wiki/Notify_gotify&#34;&gt;Gotify&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;gotify:// or gotifys://&lt;/td&gt;
+&lt;td&gt;(TCP) 80 or 443&lt;/td&gt;
+&lt;td&gt;gotify://hostname/token&lt;br /&gt;gotifys://hostname/token?priority=high&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/caronc/apprise/wiki/Notify_growl&#34;&gt;Growl&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;growl://&lt;/td&gt;
+&lt;td&gt;(UDP) 23053&lt;/td&gt;
+&lt;td&gt;growl://hostname&lt;br /&gt;growl://hostname:portno&lt;br /&gt;growl://password@hostname&lt;br /&gt;growl://password@hostname:port&lt;/br&gt;&lt;strong&gt;Note&lt;/strong&gt;: you can also use the get parameter &lt;em&gt;version&lt;/em&gt; which can allow the growl request to behave using the older v1.x protocol. An example would look like: growl://hostname?version=1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/caronc/apprise/wiki/Notify_homeassistant&#34;&gt;Home Assistant&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;hassio:// or hassios://&lt;/td&gt;
+&lt;td&gt;(TCP) 8123 or 443&lt;/td&gt;
+&lt;td&gt;hassio://hostname/accesstoken&lt;br /&gt;hassio://user@hostname/accesstoken&lt;br /&gt;hassio://user:password@hostname:port/accesstoken&lt;br /&gt;hassio://hostname/optional/path/accesstoken&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/caronc/apprise/wiki/Notify_ifttt&#34;&gt;IFTTT&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;ifttt://&lt;/td&gt;
+&lt;td&gt;(TCP) 443&lt;/td&gt;
+&lt;td&gt;ifttt://webhooksID/Event&lt;br /&gt;ifttt://webhooksID/Event1/Event2/EventN&lt;br/&gt;ifttt://webhooksID/Event1/?+Key=Value&lt;br/&gt;ifttt://webhooksID/Event1/?-Key=value1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/caronc/apprise/wiki/Notify_join&#34;&gt;Join&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;join://&lt;/td&gt;
+&lt;td&gt;(TCP) 443&lt;/td&gt;
+&lt;td&gt;join://apikey/device&lt;br /&gt;join://apikey/device1/device2/deviceN/&lt;br /&gt;join://apikey/group&lt;br /&gt;join://apikey/groupA/groupB/groupN&lt;br /&gt;join://apikey/DeviceA/groupA/groupN/DeviceN/&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/caronc/apprise/wiki/Notify_kodi&#34;&gt;KODI&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;kodi:// or kodis://&lt;/td&gt;
+&lt;td&gt;(TCP) 8080 or 443&lt;/td&gt;
+&lt;td&gt;kodi://hostname&lt;br /&gt;kodi://user@hostname&lt;br /&gt;kodi://user:password@hostname:port&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/caronc/apprise/wiki/Notify_kumulos&#34;&gt;Kumulos&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;kumulos://&lt;/td&gt;
+&lt;td&gt;(TCP) 443&lt;/td&gt;
+&lt;td&gt;kumulos://apikey/serverkey&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/caronc/apprise/wiki/Notify_lametric&#34;&gt;LaMetric Time&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;lametric://&lt;/td&gt;
+&lt;td&gt;(TCP) 443&lt;/td&gt;
+&lt;td&gt;lametric://apikey@device_ipaddr&lt;br/&gt;lametric://apikey@hostname:port&lt;br/&gt;lametric://client_id@client_secret&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/caronc/apprise/wiki/Notify_mailgun&#34;&gt;Mailgun&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;mailgun://&lt;/td&gt;
+&lt;td&gt;(TCP) 443&lt;/td&gt;
+&lt;td&gt;mailgun://user@hostname/apikey&lt;br /&gt;mailgun://user@hostname/apikey/email&lt;br /&gt;mailgun://user@hostname/apikey/email1/email2/emailN&lt;br /&gt;mailgun://user@hostname/apikey/?name=&amp;ldquo;From%20User&amp;rdquo;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/caronc/apprise/wiki/Notify_matrix&#34;&gt;Matrix&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;matrix:// or matrixs://&lt;/td&gt;
+&lt;td&gt;(TCP) 80 or 443&lt;/td&gt;
+&lt;td&gt;matrix://hostname&lt;br /&gt;matrix://user@hostname&lt;br /&gt;matrixs://user:pass@hostname:port/#room_alias&lt;br /&gt;matrixs://user:pass@hostname:port/!room_id&lt;br /&gt;matrixs://user:pass@hostname:port/#room_alias/!room_id/#room2&lt;br /&gt;matrixs://token@hostname:port/?webhook=matrix&lt;br /&gt;matrix://user:token@hostname/?webhook=slack&amp;amp;format=markdown&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/caronc/apprise/wiki/Notify_mattermost&#34;&gt;Mattermost&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;mmost:// or mmosts://&lt;/td&gt;
+&lt;td&gt;(TCP) 8065&lt;/td&gt;
+&lt;td&gt;mmost://hostname/authkey&lt;br /&gt;mmost://hostname:80/authkey&lt;br /&gt;mmost://user@hostname:80/authkey&lt;br /&gt;mmost://hostname/authkey?channel=channel&lt;br /&gt;mmosts://hostname/authkey&lt;br /&gt;mmosts://user@hostname/authkey&lt;br /&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/caronc/apprise/wiki/Notify_msteams&#34;&gt;Microsoft Teams&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;msteams://&lt;/td&gt;
+&lt;td&gt;(TCP) 443&lt;/td&gt;
+&lt;td&gt;msteams://TokenA/TokenB/TokenC/&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/caronc/apprise/wiki/Notify_mqtt&#34;&gt;MQTT&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;mqtt://  or mqtts://&lt;/td&gt;
+&lt;td&gt;(TCP) 1883 or 8883&lt;/td&gt;
+&lt;td&gt;mqtt://hostname/topic&lt;br /&gt;mqtt://user@hostname/topic&lt;br /&gt;mqtts://user:pass@hostname:9883/topic&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/caronc/apprise/wiki/Notify_nextcloud&#34;&gt;Nextcloud&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;ncloud:// or nclouds://&lt;/td&gt;
+&lt;td&gt;(TCP) 80 or 443&lt;/td&gt;
+&lt;td&gt;ncloud://adminuser:pass@host/User&lt;br/&gt;nclouds://adminuser:pass@host/User1/User2/UserN&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/caronc/apprise/wiki/Notify_nextcloudtalk&#34;&gt;NextcloudTalk&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;nctalk:// or nctalks://&lt;/td&gt;
+&lt;td&gt;(TCP) 80 or 443&lt;/td&gt;
+&lt;td&gt;nctalk://user:pass@host/RoomId&lt;br/&gt;nctalks://user:pass@host/RoomId1/RoomId2/RoomIdN&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/caronc/apprise/wiki/Notify_notica&#34;&gt;Notica&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;notica://&lt;/td&gt;
+&lt;td&gt;(TCP) 443&lt;/td&gt;
+&lt;td&gt;notica://Token/&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/caronc/apprise/wiki/Notify_notifico&#34;&gt;Notifico&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;notifico://&lt;/td&gt;
+&lt;td&gt;(TCP) 443&lt;/td&gt;
+&lt;td&gt;notifico://ProjectID/MessageHook/&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/caronc/apprise/wiki/Notify_office365&#34;&gt;Office 365&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;o365://&lt;/td&gt;
+&lt;td&gt;(TCP) 443&lt;/td&gt;
+&lt;td&gt;o365://TenantID:AccountEmail/ClientID/ClientSecret&lt;br /&gt;o365://TenantID:AccountEmail/ClientID/ClientSecret/TargetEmail&lt;br /&gt;o365://TenantID:AccountEmail/ClientID/ClientSecret/TargetEmail1/TargetEmail2/TargetEmailN&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/caronc/apprise/wiki/Notify_onesignal&#34;&gt;OneSignal&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;onesignal://&lt;/td&gt;
+&lt;td&gt;(TCP) 443&lt;/td&gt;
+&lt;td&gt;onesignal://AppID@APIKey/PlayerID&lt;br/&gt;onesignal://TemplateID:AppID@APIKey/UserID&lt;br/&gt;onesignal://AppID@APIKey/#IncludeSegment&lt;br/&gt;onesignal://AppID@APIKey/Email&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/caronc/apprise/wiki/Notify_opsgenie&#34;&gt;Opsgenie&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;opsgenie://&lt;/td&gt;
+&lt;td&gt;(TCP) 443&lt;/td&gt;
+&lt;td&gt;opsgenie://APIKey&lt;br/&gt;opsgenie://APIKey/UserID&lt;br/&gt;opsgenie://APIKey/#Team&lt;br/&gt;opsgenie://APIKey/*Schedule&lt;br/&gt;opsgenie://APIKey/^Escalation&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/caronc/apprise/wiki/Notify_parseplatform&#34;&gt;ParsePlatform&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;parsep:// or parseps://&lt;/td&gt;
+&lt;td&gt;(TCP) 80 or 443&lt;/td&gt;
+&lt;td&gt;parsep://AppID:MasterKey@Hostname&lt;br/&gt;parseps://AppID:MasterKey@Hostname&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/caronc/apprise/wiki/Notify_popcornnotify&#34;&gt;PopcornNotify&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;popcorn://&lt;/td&gt;
+&lt;td&gt;(TCP) 443&lt;/td&gt;
+&lt;td&gt;popcorn://ApiKey/ToPhoneNo&lt;br/&gt;popcorn://ApiKey/ToPhoneNo1/ToPhoneNo2/ToPhoneNoN/&lt;br/&gt;popcorn://ApiKey/ToEmail&lt;br/&gt;popcorn://ApiKey/ToEmail1/ToEmail2/ToEmailN/&lt;br/&gt;popcorn://ApiKey/ToPhoneNo1/ToEmail1/ToPhoneNoN/ToEmailN&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/caronc/apprise/wiki/Notify_prowl&#34;&gt;Prowl&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;prowl://&lt;/td&gt;
+&lt;td&gt;(TCP) 443&lt;/td&gt;
+&lt;td&gt;prowl://apikey&lt;br /&gt;prowl://apikey/providerkey&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/caronc/apprise/wiki/Notify_pushbullet&#34;&gt;PushBullet&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;pbul://&lt;/td&gt;
+&lt;td&gt;(TCP) 443&lt;/td&gt;
+&lt;td&gt;pbul://accesstoken&lt;br /&gt;pbul://accesstoken/#channel&lt;br/&gt;pbul://accesstoken/A_DEVICE_ID&lt;br /&gt;pbul://accesstoken/email@address.com&lt;br /&gt;pbul://accesstoken/#channel/#channel2/email@address.net/DEVICE&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/caronc/apprise/wiki/Notify_techulus&#34;&gt;Push (Techulus)&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;push://&lt;/td&gt;
+&lt;td&gt;(TCP) 443&lt;/td&gt;
+&lt;td&gt;push://apikey/&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/caronc/apprise/wiki/Notify_pushed&#34;&gt;Pushed&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;pushed://&lt;/td&gt;
+&lt;td&gt;(TCP) 443&lt;/td&gt;
+&lt;td&gt;pushed://appkey/appsecret/&lt;br/&gt;pushed://appkey/appsecret/#ChannelAlias&lt;br/&gt;pushed://appkey/appsecret/#ChannelAlias1/#ChannelAlias2/#ChannelAliasN&lt;br/&gt;pushed://appkey/appsecret/@UserPushedID&lt;br/&gt;pushed://appkey/appsecret/@UserPushedID1/@UserPushedID2/@UserPushedIDN&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/caronc/apprise/wiki/Notify_pushover&#34;&gt;Pushover&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;pover://&lt;/td&gt;
+&lt;td&gt;(TCP) 443&lt;/td&gt;
+&lt;td&gt;pover://user@token&lt;br /&gt;pover://user@token/DEVICE&lt;br /&gt;pover://user@token/DEVICE1/DEVICE2/DEVICEN&lt;br /&gt;&lt;strong&gt;Note&lt;/strong&gt;: you must specify both your user_id and token&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/caronc/apprise/wiki/Notify_pushsafer&#34;&gt;PushSafer&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;psafer:// or psafers://&lt;/td&gt;
+&lt;td&gt;(TCP) 80 or 443&lt;/td&gt;
+&lt;td&gt;psafer://privatekey&lt;br /&gt;psafers://privatekey/DEVICE&lt;br /&gt;psafer://privatekey/DEVICE1/DEVICE2/DEVICEN&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/caronc/apprise/wiki/Notify_reddit&#34;&gt;Reddit&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;reddit://&lt;/td&gt;
+&lt;td&gt;(TCP) 443&lt;/td&gt;
+&lt;td&gt;reddit://user:password@app_id/app_secret/subreddit&lt;br /&gt;reddit://user:password@app_id/app_secret/sub1/sub2/subN&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/caronc/apprise/wiki/Notify_rocketchat&#34;&gt;Rocket.Chat&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;rocket:// or rockets://&lt;/td&gt;
+&lt;td&gt;(TCP) 80 or 443&lt;/td&gt;
+&lt;td&gt;rocket://user:password@hostname/RoomID/Channel&lt;br /&gt;rockets://user:password@hostname:443/#Channel1/#Channel1/RoomID&lt;br /&gt;rocket://user:password@hostname/#Channel&lt;br /&gt;rocket://webhook@hostname&lt;br /&gt;rockets://webhook@hostname/@User/#Channel&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/caronc/apprise/wiki/Notify_ryver&#34;&gt;Ryver&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;ryver://&lt;/td&gt;
+&lt;td&gt;(TCP) 443&lt;/td&gt;
+&lt;td&gt;ryver://Organization/Token&lt;br /&gt;ryver://botname@Organization/Token&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/caronc/apprise/wiki/Notify_sendgrid&#34;&gt;SendGrid&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;sendgrid://&lt;/td&gt;
+&lt;td&gt;(TCP) 443&lt;/td&gt;
+&lt;td&gt;sendgrid://APIToken:FromEmail/&lt;br /&gt;sendgrid://APIToken:FromEmail/ToEmail&lt;br /&gt;sendgrid://APIToken:FromEmail/ToEmail1/ToEmail2/ToEmailN/&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/caronc/apprise/wiki/Notify_serverchan&#34;&gt;ServerChan&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;serverchan://&lt;/td&gt;
+&lt;td&gt;(TCP) 443&lt;/td&gt;
+&lt;td&gt;serverchan://token/&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/caronc/apprise/wiki/Notify_simplepush&#34;&gt;SimplePush&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;spush://&lt;/td&gt;
+&lt;td&gt;(TCP) 443&lt;/td&gt;
+&lt;td&gt;spush://apikey&lt;br /&gt;spush://salt:password@apikey&lt;br /&gt;spush://apikey?event=Apprise&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/caronc/apprise/wiki/Notify_slack&#34;&gt;Slack&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;slack://&lt;/td&gt;
+&lt;td&gt;(TCP) 443&lt;/td&gt;
+&lt;td&gt;slack://TokenA/TokenB/TokenC/&lt;br /&gt;slack://TokenA/TokenB/TokenC/Channel&lt;br /&gt;slack://botname@TokenA/TokenB/TokenC/Channel&lt;br /&gt;slack://user@TokenA/TokenB/TokenC/Channel1/Channel2/ChannelN&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/caronc/apprise/wiki/Notify_smtp2go&#34;&gt;SMTP2Go&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;smtp2go://&lt;/td&gt;
+&lt;td&gt;(TCP) 443&lt;/td&gt;
+&lt;td&gt;smtp2go://user@hostname/apikey&lt;br /&gt;smtp2go://user@hostname/apikey/email&lt;br /&gt;smtp2go://user@hostname/apikey/email1/email2/emailN&lt;br /&gt;smtp2go://user@hostname/apikey/?name=&amp;ldquo;From%20User&amp;rdquo;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/caronc/apprise/wiki/Notify_streamlabs&#34;&gt;Streamlabs&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;strmlabs://&lt;/td&gt;
+&lt;td&gt;(TCP) 443&lt;/td&gt;
+&lt;td&gt;strmlabs://AccessToken/&lt;br/&gt;strmlabs://AccessToken/?name=name&amp;amp;identifier=identifier&amp;amp;amount=0&amp;amp;currency=USD&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/caronc/apprise/wiki/Notify_sparkpost&#34;&gt;SparkPost&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;sparkpost://&lt;/td&gt;
+&lt;td&gt;(TCP) 443&lt;/td&gt;
+&lt;td&gt;sparkpost://user@hostname/apikey&lt;br /&gt;sparkpost://user@hostname/apikey/email&lt;br /&gt;sparkpost://user@hostname/apikey/email1/email2/emailN&lt;br /&gt;sparkpost://user@hostname/apikey/?name=&amp;ldquo;From%20User&amp;rdquo;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/caronc/apprise/wiki/Notify_spontit&#34;&gt;Spontit&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;spontit://&lt;/td&gt;
+&lt;td&gt;(TCP) 443&lt;/td&gt;
+&lt;td&gt;spontit://UserID@APIKey/&lt;br /&gt;spontit://UserID@APIKey/Channel&lt;br /&gt;spontit://UserID@APIKey/Channel1/Channel2/ChannelN&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/caronc/apprise/wiki/Notify_syslog&#34;&gt;Syslog&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;syslog://&lt;/td&gt;
+&lt;td&gt;(UDP) 514 (&lt;em&gt;if hostname specified&lt;/em&gt;)&lt;/td&gt;
+&lt;td&gt;syslog://&lt;br /&gt;syslog://Facility&lt;br /&gt;syslog://hostname&lt;br /&gt;syslog://hostname/Facility&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/caronc/apprise/wiki/Notify_telegram&#34;&gt;Telegram&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;tgram://&lt;/td&gt;
+&lt;td&gt;(TCP) 443&lt;/td&gt;
+&lt;td&gt;tgram://bottoken/ChatID&lt;br /&gt;tgram://bottoken/ChatID1/ChatID2/ChatIDN&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/caronc/apprise/wiki/Notify_twitter&#34;&gt;Twitter&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;twitter://&lt;/td&gt;
+&lt;td&gt;(TCP) 443&lt;/td&gt;
+&lt;td&gt;twitter://CKey/CSecret/AKey/ASecret&lt;br/&gt;twitter://user@CKey/CSecret/AKey/ASecret&lt;br/&gt;twitter://CKey/CSecret/AKey/ASecret/User1/User2/User2&lt;br/&gt;twitter://CKey/CSecret/AKey/ASecret?mode=tweet&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/caronc/apprise/wiki/Notify_twist&#34;&gt;Twist&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;twist://&lt;/td&gt;
+&lt;td&gt;(TCP) 443&lt;/td&gt;
+&lt;td&gt;twist://pasword:login&lt;br/&gt;twist://password:login/#channel&lt;br/&gt;twist://password:login/#team:channel&lt;br/&gt;twist://password:login/#team:channel1/channel2/#team3:channel&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/caronc/apprise/wiki/Notify_xmpp&#34;&gt;XMPP&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;xmpp:// or xmpps://&lt;/td&gt;
+&lt;td&gt;(TCP) 5222 or 5223&lt;/td&gt;
+&lt;td&gt;xmpp://user:password@hostname&lt;br /&gt;xmpps://user:password@hostname:port?jid=user@hostname/resource&lt;br/&gt;xmpps://user:password@hostname/target@myhost, target2@myhost/resource&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/caronc/apprise/wiki/Notify_wxteams&#34;&gt;Webex Teams (Cisco)&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;wxteams://&lt;/td&gt;
+&lt;td&gt;(TCP) 443&lt;/td&gt;
+&lt;td&gt;wxteams://Token&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/caronc/apprise/wiki/Notify_zulip&#34;&gt;Zulip Chat&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;zulip://&lt;/td&gt;
+&lt;td&gt;(TCP) 443&lt;/td&gt;
+&lt;td&gt;zulip://botname@Organization/Token&lt;br /&gt;zulip://botname@Organization/Token/Stream&lt;br /&gt;zulip://botname@Organization/Token/Email&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;sms-notification-support&#34;&gt;SMS Notification Support&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Notification Service&lt;/th&gt;
+&lt;th&gt;Service ID&lt;/th&gt;
+&lt;th&gt;Default Port&lt;/th&gt;
+&lt;th&gt;Example Syntax&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/caronc/apprise/wiki/Notify_sns&#34;&gt;AWS SNS&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;sns://&lt;/td&gt;
+&lt;td&gt;(TCP) 443&lt;/td&gt;
+&lt;td&gt;sns://AccessKeyID/AccessSecretKey/RegionName/+PhoneNo&lt;br/&gt;sns://AccessKeyID/AccessSecretKey/RegionName/+PhoneNo1/+PhoneNo2/+PhoneNoN&lt;br/&gt;sns://AccessKeyID/AccessSecretKey/RegionName/Topic&lt;br/&gt;sns://AccessKeyID/AccessSecretKey/RegionName/Topic1/Topic2/TopicN&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/caronc/apprise/wiki/Notify_clicksend&#34;&gt;ClickSend&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;clicksend://&lt;/td&gt;
+&lt;td&gt;(TCP) 443&lt;/td&gt;
+&lt;td&gt;clicksend://user:pass@PhoneNo&lt;br/&gt;clicksend://user:pass@ToPhoneNo1/ToPhoneNo2/ToPhoneNoN&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/caronc/apprise/wiki/Notify_dapnet&#34;&gt;DAPNET&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;dapnet://&lt;/td&gt;
+&lt;td&gt;(TCP) 80&lt;/td&gt;
+&lt;td&gt;dapnet://user:pass@callsign&lt;br/&gt;dapnet://user:pass@callsign1/callsign2/callsignN&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/caronc/apprise/wiki/Notify_d7networks&#34;&gt;D7 Networks&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;d7sms://&lt;/td&gt;
+&lt;td&gt;(TCP) 443&lt;/td&gt;
+&lt;td&gt;d7sms://user:pass@PhoneNo&lt;br/&gt;d7sms://user:pass@ToPhoneNo1/ToPhoneNo2/ToPhoneNoN&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/caronc/apprise/wiki/Notify_dingtalk&#34;&gt;DingTalk&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;dingtalk://&lt;/td&gt;
+&lt;td&gt;(TCP) 443&lt;/td&gt;
+&lt;td&gt;dingtalk://token/&lt;br /&gt;dingtalk://token/ToPhoneNo&lt;br /&gt;dingtalk://token/ToPhoneNo1/ToPhoneNo2/ToPhoneNo1/&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/caronc/apprise/wiki/Notify_kavenegar&#34;&gt;Kavenegar&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;kavenegar://&lt;/td&gt;
+&lt;td&gt;(TCP) 443&lt;/td&gt;
+&lt;td&gt;kavenegar://ApiKey/ToPhoneNo&lt;br/&gt;kavenegar://FromPhoneNo@ApiKey/ToPhoneNo&lt;br/&gt;kavenegar://ApiKey/ToPhoneNo1/ToPhoneNo2/ToPhoneNoN&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/caronc/apprise/wiki/Notify_messagebird&#34;&gt;MessageBird&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;msgbird://&lt;/td&gt;
+&lt;td&gt;(TCP) 443&lt;/td&gt;
+&lt;td&gt;msgbird://ApiKey/FromPhoneNo&lt;br/&gt;msgbird://ApiKey/FromPhoneNo/ToPhoneNo&lt;br/&gt;msgbird://ApiKey/FromPhoneNo/ToPhoneNo1/ToPhoneNo2/ToPhoneNoN/&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/caronc/apprise/wiki/Notify_msg91&#34;&gt;MSG91&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;msg91://&lt;/td&gt;
+&lt;td&gt;(TCP) 443&lt;/td&gt;
+&lt;td&gt;msg91://AuthKey/ToPhoneNo&lt;br/&gt;msg91://SenderID@AuthKey/ToPhoneNo&lt;br/&gt;msg91://AuthKey/ToPhoneNo1/ToPhoneNo2/ToPhoneNoN/&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/caronc/apprise/wiki/Notify_nexmo&#34;&gt;Nexmo&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;nexmo://&lt;/td&gt;
+&lt;td&gt;(TCP) 443&lt;/td&gt;
+&lt;td&gt;nexmo://ApiKey:ApiSecret@FromPhoneNo&lt;br/&gt;nexmo://ApiKey:ApiSecret@FromPhoneNo/ToPhoneNo&lt;br/&gt;nexmo://ApiKey:ApiSecret@FromPhoneNo/ToPhoneNo1/ToPhoneNo2/ToPhoneNoN/&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/caronc/apprise/wiki/Notify_sinch&#34;&gt;Sinch&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;sinch://&lt;/td&gt;
+&lt;td&gt;(TCP) 443&lt;/td&gt;
+&lt;td&gt;sinch://ServicePlanId:ApiToken@FromPhoneNo&lt;br/&gt;sinch://ServicePlanId:ApiToken@FromPhoneNo/ToPhoneNo&lt;br/&gt;sinch://ServicePlanId:ApiToken@FromPhoneNo/ToPhoneNo1/ToPhoneNo2/ToPhoneNoN/&lt;br/&gt;sinch://ServicePlanId:ApiToken@ShortCode/ToPhoneNo&lt;br/&gt;sinch://ServicePlanId:ApiToken@ShortCode/ToPhoneNo1/ToPhoneNo2/ToPhoneNoN/&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/caronc/apprise/wiki/Notify_twilio&#34;&gt;Twilio&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;twilio://&lt;/td&gt;
+&lt;td&gt;(TCP) 443&lt;/td&gt;
+&lt;td&gt;twilio://AccountSid:AuthToken@FromPhoneNo&lt;br/&gt;twilio://AccountSid:AuthToken@FromPhoneNo/ToPhoneNo&lt;br/&gt;twilio://AccountSid:AuthToken@FromPhoneNo/ToPhoneNo1/ToPhoneNo2/ToPhoneNoN/&lt;br/&gt;twilio://AccountSid:AuthToken@FromPhoneNo/ToPhoneNo?apikey=Key&lt;br/&gt;twilio://AccountSid:AuthToken@ShortCode/ToPhoneNo&lt;br/&gt;twilio://AccountSid:AuthToken@ShortCode/ToPhoneNo1/ToPhoneNo2/ToPhoneNoN/&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;desktop-notification-support&#34;&gt;Desktop Notification Support&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Notification Service&lt;/th&gt;
+&lt;th&gt;Service ID&lt;/th&gt;
+&lt;th&gt;Default Port&lt;/th&gt;
+&lt;th&gt;Example Syntax&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/caronc/apprise/wiki/Notify_dbus&#34;&gt;Linux DBus Notifications&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;dbus://&lt;br /&gt;qt://&lt;br /&gt;glib://&lt;br /&gt;kde://&lt;/td&gt;
+&lt;td&gt;n/a&lt;/td&gt;
+&lt;td&gt;dbus://&lt;br /&gt;qt://&lt;br /&gt;glib://&lt;br /&gt;kde://&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/caronc/apprise/wiki/Notify_gnome&#34;&gt;Linux Gnome Notifications&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;gnome://&lt;/td&gt;
+&lt;td&gt;n/a&lt;/td&gt;
+&lt;td&gt;gnome://&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/caronc/apprise/wiki/Notify_macosx&#34;&gt;MacOS X Notifications&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;macosx://&lt;/td&gt;
+&lt;td&gt;n/a&lt;/td&gt;
+&lt;td&gt;macosx://&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/caronc/apprise/wiki/Notify_windows&#34;&gt;Windows Notifications&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;windows://&lt;/td&gt;
+&lt;td&gt;n/a&lt;/td&gt;
+&lt;td&gt;windows://&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;email-support&#34;&gt;Email Support&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Service ID&lt;/th&gt;
+&lt;th&gt;Default Port&lt;/th&gt;
+&lt;th&gt;Example Syntax&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/caronc/apprise/wiki/Notify_email&#34;&gt;mailto://&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;(TCP) 25&lt;/td&gt;
+&lt;td&gt;mailto://userid:pass@domain.com&lt;br /&gt;mailto://domain.com?user=userid&amp;amp;pass=password&lt;br/&gt;mailto://domain.com:2525?user=userid&amp;amp;pass=password&lt;br /&gt;mailto://user@gmail.com&amp;amp;pass=password&lt;br /&gt;mailto://mySendingUsername:mySendingPassword@example.com?to=receivingAddress@example.com&lt;br /&gt;mailto://userid:password@example.com?smtp=mail.example.com&amp;amp;from=noreply@example.com&amp;amp;name=no%20reply&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/caronc/apprise/wiki/Notify_email&#34;&gt;mailtos://&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;(TCP) 587&lt;/td&gt;
+&lt;td&gt;mailtos://userid:pass@domain.com&lt;br /&gt;mailtos://domain.com?user=userid&amp;amp;pass=password&lt;br/&gt;mailtos://domain.com:465?user=userid&amp;amp;pass=password&lt;br /&gt;mailtos://user@hotmail.com&amp;amp;pass=password&lt;br /&gt;mailtos://mySendingUsername:mySendingPassword@example.com?to=receivingAddress@example.com&lt;br /&gt;mailtos://userid:password@example.com?smtp=mail.example.com&amp;amp;from=noreply@example.com&amp;amp;name=no%20reply&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Apprise have some email services built right into it (such as yahoo, fastmail, hotmail, gmail, etc) that greatly simplify the mailto:// service.  See more details &lt;a href=&#34;https://github.com/caronc/apprise/wiki/Notify_email&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;custom-notifications&#34;&gt;Custom Notifications&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Post Method&lt;/th&gt;
+&lt;th&gt;Service ID&lt;/th&gt;
+&lt;th&gt;Default Port&lt;/th&gt;
+&lt;th&gt;Example Syntax&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/caronc/apprise/wiki/Notify_Custom_Form&#34;&gt;Form&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;form:// or form://&lt;/td&gt;
+&lt;td&gt;(TCP) 80 or 443&lt;/td&gt;
+&lt;td&gt;form://hostname&lt;br /&gt;form://user@hostname&lt;br /&gt;form://user:password@hostname:port&lt;br /&gt;form://hostname/a/path/to/post/to&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/caronc/apprise/wiki/Notify_Custom_JSON&#34;&gt;JSON&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;json:// or jsons://&lt;/td&gt;
+&lt;td&gt;(TCP) 80 or 443&lt;/td&gt;
+&lt;td&gt;json://hostname&lt;br /&gt;json://user@hostname&lt;br /&gt;json://user:password@hostname:port&lt;br /&gt;json://hostname/a/path/to/post/to&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/caronc/apprise/wiki/Notify_Custom_XML&#34;&gt;XML&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;xml:// or xmls://&lt;/td&gt;
+&lt;td&gt;(TCP) 80 or 443&lt;/td&gt;
+&lt;td&gt;xml://hostname&lt;br /&gt;xml://user@hostname&lt;br /&gt;xml://user:password@hostname:port&lt;br /&gt;xml://hostname/a/path/to/post/to&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

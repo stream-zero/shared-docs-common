@@ -1,0 +1,3472 @@
+nodes:
+- name: GcpTransferOperationStatus
+  type: Hooks
+  description: Class with Google Cloud Transfer operations statuses.
+- name: ray_task
+  type: Decorators
+  description: Wraps a function to be executed on the Ray cluster.
+- name: FacebookAdsReportingHook
+  type: Hooks
+  description: Hook for the Facebook Ads API
+- name: VineyardXCom
+  type: XCom
+  description: Custom Backend Serving to use Vineyard.
+- name: AwsGlueJobOperator
+  type: Operators
+  description: This operator is deprecated. Please use airflow.providers.amazon.aws.operators.glue.GlueJobOperator.
+- name: GlueCrawlerSensor
+  type: Sensors
+  description: Waits for an AWS Glue crawler to reach any of the statuses below FAILED,
+    CANCELLED, SUCCEEDED
+- name: AwsGlueJobSensor
+  type: Sensors
+  description: This sensor is deprecated. Please use airflow.providers.amazon.aws.sensors.glue.GlueJobSensor.
+- name: GlueJobOperator
+  type: Operators
+  description: Creates an AWS Glue Job. AWS Glue is a serverless Spark ETL service
+    for running Spark Jobs on the AWS cloud. Language support Python and Scala
+- name: GlueCrawlerOperator
+  type: Operators
+  description: Creates, updates and triggers an AWS Glue Crawler. AWS Glue Crawler
+    is a serverless service that manages a catalog of metadata tables that contain
+    the inferred schema, format and data types of data stores within the AWS cloud.
+- name: AwsGlueCrawlerOperator
+  type: Operators
+  description: This operator is deprecated. Please use airflow.providers.amazon.aws.operators.glue_crawler.GlueCrawlerOperator.
+- name: GlueJobSensor
+  type: Sensors
+  description: Waits for an AWS Glue Job to reach any of the status below FAILED,
+    STOPPED, SUCCEEDED
+- name: AwsGlueCrawlerSensor
+  type: Sensors
+  description: This sensor is deprecated. Please use airflow.providers.amazon.aws.sensors.glue_crawler.GlueCrawlerSensor.
+- name: BaseSensorOperator
+  type: Sensors
+  description: Sensor operators are derived from this class and inherit these attributes.
+- name: S3ToSFTPOperator
+  type: Transfers
+  description: This operator enables the transferring of files from S3 to a SFTP server.
+- name: BigQueryUpsertTableOperator
+  type: Operators
+  description: Upsert BigQuery table
+- name: BigQueryDeleteDatasetOperator
+  type: Operators
+  description: This operator deletes an existing dataset from your Project in Big
+    query. 
+- name: BigQueryHook
+  type: Hooks
+  description: Interact with BigQuery. This hook uses the Google Cloud connection.
+- name: BigQueryUpdateTableOperator
+  type: Operators
+  description: This operator is used to update table for your Project in BigQuery.
+    Use fields to specify which fields of table to update. If a field is listed in
+    fields and is None in table, it will be deleted.
+- name: BigQueryCheckOperator
+  type: Operators
+  description: Performs checks against BigQuery. The BigQueryCheckOperator expects
+    a sql query that will return a single row. Each value on that first row is evaluated
+    using python bool casting. If any of the values return False the check is failed
+    and errors out.
+- name: BigQueryCreateExternalTableOperator
+  type: Operators
+  description: Creates a new external table in the dataset with the data from Google
+    Cloud Storage.
+- name: _BigQueryDbHookMixin
+  type: Operators
+  description: _BigQueryDbHookMixin
+- name: BigQueryInsertJobOperator
+  type: Operators
+  description: Executes a BigQuery job. Waits for the job to complete and returns
+    job id. 
+- name: BigQueryCreateEmptyTableOperator
+  type: Operators
+  description: Creates a new, empty table in the specified BigQuery dataset, optionally
+    with schema.
+- name: BigQueryGetDatasetOperator
+  type: Operators
+  description: This operator is used to return the dataset specified by dataset_id.
+- name: BigQueryDeleteTableOperator
+  type: Operators
+  description: Deletes BigQuery tables
+- name: BigQueryGetDatasetTablesOperator
+  type: Operators
+  description: This operator retrieves the list of tables in the specified dataset.
+- name: BigQueryValueCheckOperator
+  type: Operators
+  description: Performs a simple value check using sql code.
+- name: BigQueryExecuteQueryOperator
+  type: Operators
+  description: Executes BigQuery SQL queries in a specific BigQuery database. This
+    operator does not assert idempotency.
+- name: BigQueryUpdateDatasetOperator
+  type: Operators
+  description: This operator is used to update dataset for your Project in BigQuery.
+    Use fields to specify which fields of dataset to update. If a field is listed
+    in fields and is None in dataset, it will be deleted. If no fields are provided
+    then all fields of provided dataset_resource will be used.
+- name: BigQueryPatchDatasetOperator
+  type: Operators
+  description: This operator is used to patch dataset for your Project in BigQuery.
+    It only replaces fields that are provided in the submitted dataset resource.
+- name: BigQueryGetDataOperator
+  type: Operators
+  description: Fetches the data from a BigQuery table (alternatively fetch data for
+    selected columns) and returns data in a python list. The number of elements in
+    the returned list will be equal to the number of rows fetched. Each element in
+    the list will again be a list where element would represent the columns values
+    for that row.
+- name: BigQueryIntervalCheckOperator
+  type: Operators
+  description: Checks that the values of metrics given as SQL expressions are within
+    a certain tolerance of the ones from days_back before.
+- name: BigQueryUpdateTableSchemaOperator
+  type: Operators
+  description: Update BigQuery Table Schema Updates fields on a table schema based
+    on contents of the supplied schema_fields_updates parameter. The supplied schema
+    does not need to be complete, if the field already exists in the schema you only
+    need to supply keys & values for the items you want to patch, just ensure the
+    “name” key is set.
+- name: BigQueryCreateEmptyDatasetOperator
+  type: Operators
+  description: This operator is used to create new dataset for your Project in BigQuery.
+- name: DataflowTemplatedJobStartOperator
+  type: Operators
+  description: Start a Templated Cloud Dataflow job. The parameters of the operation
+    will be passed to the job.
+- name: DataflowStartFlexTemplateOperator
+  type: Operators
+  description: Starts flex templates with the Dataflow pipeline.
+- name: DataflowStartSqlJobOperator
+  type: Operators
+  description: Starts Dataflow SQL query.
+- name: DataflowCreatePythonJobOperator
+  type: Operators
+  description: Launching Cloud Dataflow jobs written in python. Note that both dataflow_default_options
+    and options will be merged to specify pipeline execution parameter, and dataflow_default_options
+    is expected to save high-level options, for instances, project and zone information,
+    which apply to all dataflow operators in the DAG.
+- name: DataflowCreateJavaJobOperator
+  type: Operators
+  description: Start a Java Cloud Dataflow batch job. The parameters of the operation
+    will be passed to the job.
+- name: PostgresOperator
+  type: Operators
+  description: Executes sql code in a specific Postgres database
+- name: BaseSecretsBackend
+  type: Secrets
+  description: Abstract base class to retrieve Connection object given a conn_id or
+    Variable given a key
+- name: BeamHook
+  type: Hooks
+  description: Hook for Apache Beam.
+- name: EnvironmentVariablesBackend
+  type: Secrets
+  description: Retrieves Connection object and Variable from environment variable.
+- name: DatabricksHook
+  type: Hooks
+  description: Interact with Databricks.
+- name: S3Hook
+  type: Hooks
+  description: Interact with AWS S3, using the boto3 library.
+- name: GCSFileTransformOperator
+  type: Operators
+  description: Copies data from a source GCS location to a temporary location on the
+    local filesystem. Runs a transformation on this file as specified by the transformation
+    script and uploads the output to a destination bucket. If the output bucket is
+    not specified the original file will be overwritten.
+- name: GCSDeleteBucketOperator
+  type: Operators
+  description: Deletes bucket from a Google Cloud Storage.
+- name: GCSDeleteObjectsOperator
+  type: Operators
+  description: Deletes objects from a Google Cloud Storage bucket, either from an
+    explicit list of object names or all objects matching a prefix.
+- name: GCSTimeSpanFileTransformOperator
+  type: Operators
+  description: Determines a list of objects that were added or modified at a GCS source
+    location during a specific time-span, copies them to a temporary location on the
+    local file system, runs a transform on this file as specified by the transformation
+    script and uploads the output to the destination bucket.
+- name: GCSCreateBucketOperator
+  type: Operators
+  description: Creates a new bucket. Google Cloud Storage uses a flat namespace, so
+    you cant create a bucket with a name that is already in use.
+- name: GCSSynchronizeBucketsOperator
+  type: Operators
+  description: Synchronizes the contents of the buckets or buckets directories in
+    the Google Cloud Services.
+- name: GCSObjectCreateAclEntryOperator
+  type: Operators
+  description: Creates a new ACL entry on the specified object.
+- name: GCSBucketCreateAclEntryOperator
+  type: Operators
+  description: Creates a new ACL entry on the specified bucket.
+- name: GCSListObjectsOperator
+  type: Operators
+  description: List all objects from the bucket with the given string prefix and delimiter
+    in name.
+- name: SnowflakeHook
+  type: Hooks
+  description: A client to interact with Snowflake.
+- name: EmrCreateJobFlowOperator
+  type: Operators
+  description: Creates an EMR JobFlow, reading the config from the EMR connection.
+    A dictionary of JobFlow overrides can be passed that override the config from
+    the connection.
+- name: EmrJobFlowSensor
+  type: Sensors
+  description: Asks for the state of the EMR JobFlow (Cluster) until it reaches any
+    of the target states. If it fails the sensor errors, failing the task.
+- name: EmrModifyClusterOperator
+  type: Operators
+  description: An operator that modifies an existing EMR cluster.
+- name: EmrTerminateJobFlowOperator
+  type: Operators
+  description: Operator to terminate EMR JobFlows.
+- name: EmrBaseSensor
+  type: Sensors
+  description: Contains general sensor behavior for EMR.
+- name: EmrContainerSensor
+  type: Sensors
+  description: Asks for the state of the job run until it reaches a failure state
+    or success state. If the job run fails, the task will fail.
+- name: EmrAddStepsOperator
+  type: Operators
+  description: An operator that adds steps to an existing EMR job_flow.
+- name: EmrStepSensor
+  type: Sensors
+  description: Asks for the state of the step until it reaches any of the target states.
+    If it fails the sensor errors, failing the task.
+- name: EmrContainerOperator
+  type: Operators
+  description: An operator that submits jobs to EMR on EKS virtual clusters.
+- name: DataprocMetastoreDeleteBackupOperator
+  type: Operators
+  description: Deletes a single backup.
+- name: DataprocMetastoreListBackupsOperator
+  type: Operators
+  description: Lists backups in a service.
+- name: DataprocMetastoreRestoreServiceOperator
+  type: Operators
+  description: Restores a service from a backup.
+- name: DataprocMetastoreDeleteServiceOperator
+  type: Operators
+  description: Deletes a single service.
+- name: DataprocMetastoreExportMetadataOperator
+  type: Operators
+  description: Exports metadata from a service.
+- name: QuboleOperator
+  type: Operators
+  description: Execute tasks (commands) on QDS .
+- name: DataprocMetastoreCreateServiceOperator
+  type: Operators
+  description: Creates a metastore service in a project and location.
+- name: DataprocMetastoreGetServiceOperator
+  type: Operators
+  description: Gets the details of a single service.
+- name: DataprocMetastoreCreateBackupOperator
+  type: Operators
+  description: Creates a new backup in a given project and location.
+- name: DataprocMetastoreUpdateServiceOperator
+  type: Operators
+  description: Updates the parameters of a single service.
+- name: DataprocMetastoreCreateMetadataImportOperator
+  type: Operators
+  description: Creates a new MetadataImport in a given project and location.
+- name: AzureDataFactoryRunPipelineOperator
+  type: Operators
+  description: Executes a data factory pipeline.
+- name: AwsBaseHook
+  type: Hooks
+  description: Interact with AWS. This class is a thin wrapper around the boto3 python
+    library.
+- name: RedshiftClusterSensor
+  type: Sensors
+  description: Waits for a Redshift cluster to reach a specific status.
+- name: DatabricksRunNowOperator
+  type: Operators
+  description: Runs an existing Spark job run to Databricks using the api/2.0/jobs/run-now
+    API endpoint.
+- name: DatabricksSubmitRunOperator
+  type: Operators
+  description: Submits a Spark job run to Databricks using the api/2.0/jobs/runs/submit
+    API endpoint.
+- name: GreatExpectationsOperator
+  type: Operators
+  description: An operator to leverage Great Expectations as a task in your Airflow
+    DAG.
+- name: GoogleDriveHook
+  type: Hooks
+  description: Hook for the Google Drive APIs.
+- name: GKEStartPodOperator
+  type: Operators
+  description: Executes a task in a Kubernetes pod in the specified Google Kubernetes
+    Engine cluster
+- name: GKECreateClusterOperator
+  type: Operators
+  description: Create a Google Kubernetes Engine Cluster of specified dimensions The
+    operator will wait until the cluster is created.
+- name: GKEDeleteClusterOperator
+  type: Operators
+  description: Deletes the cluster, including the Kubernetes endpoint and all worker
+    nodes.
+- name: DockerOperator
+  type: Operators
+  description: Execute a command inside a docker container.
+- name: MLEngineStartBatchPredictionJobOperator
+  type: Operators
+  description: Start a Google Cloud ML Engine prediction job.
+- name: TriggerDagRunOperator
+  type: Operators
+  description: Triggers a DAG run for a specified dag_id
+- name: MLEngineDeleteVersionOperator
+  type: Operators
+  description: Deletes the version from the model.
+- name: MLEngineCreateModelOperator
+  type: Operators
+  description: Creates a new model.
+- name: MLEngineGetModelOperator
+  type: Operators
+  description: Gets a particular model
+- name: MLEngineTrainingCancelJobOperator
+  type: Operators
+  description: Operator for cleaning up failed MLEngine training job.
+- name: MLEngineManageVersionOperator
+  type: Operators
+  description: Operator for managing a Google Cloud ML Engine version.
+- name: MLEngineManageModelOperator
+  type: Operators
+  description: Operator for managing a Google Cloud ML Engine model.
+- name: MLEngineListVersionsOperator
+  type: Operators
+  description: Lists all available versions of the model
+- name: MLEngineCreateVersionOperator
+  type: Operators
+  description: Creates a new version in the model
+- name: MLEngineSetDefaultVersionOperator
+  type: Operators
+  description: Sets a version in the model.
+- name: MLEngineStartTrainingJobOperator
+  type: Operators
+  description: Operator for launching a MLEngine training job.
+- name: MLEngineDeleteModelOperator
+  type: Operators
+  description: Deletes a model.
+- name: TriggerDagRunLink
+  type: Operators
+  description: Operator link for TriggerDagRunOperator. It allows users to access
+    DAG triggered by task using TriggerDagRunOperator.
+- name: OSSHook
+  type: Hooks
+  description: Interact with Alibaba Cloud OSS, using the oss2 library.
+- name: PythonVirtualenvOperator
+  type: Operators
+  description: Allows one to run a function in a virtualenv that is created and destroyed
+    automatically (with certain caveats).
+- name: ShortCircuitOperator
+  type: Operators
+  description: Allows a workflow to continue only if a condition is met. Otherwise,
+    the workflow “short-circuits” and downstream tasks are skipped.
+- name: PythonOperator
+  type: Operators
+  description: Executes a Python callable
+- name: BranchPythonOperator
+  type: Operators
+  description: Allows a workflow to “branch” or follow a path following the execution
+    of this task.
+- name: EcsOperator
+  type: Operators
+  description: Execute a task on AWS ECS (Elastic Container Service)
+- name: ECSOperator
+  type: Operators
+  description: This operator is deprecated. Please use airflow.providers.amazon.aws.operators.ecs.EcsOperator.
+- name: CloudSQLDatabaseHook
+  type: Hooks
+  description: Serves DB connection configuration for Google Cloud SQL (Connections
+    of gcpcloudsqldb type).
+- name: CloudSQLHook
+  type: Hooks
+  description: Hook for Google Cloud SQL APIs.
+- name: GoogleDeploymentManagerHook
+  type: Hooks
+  description: Interact with Google Cloud Deployment Manager using the Google Cloud
+    connection. This allows for scheduled and programmatic inspection and deletion
+    fo resources managed by GDM.
+- name: DataflowHook
+  type: Hooks
+  description: Hook for Google Dataflow.
+- name: S3TaskHandler
+  type: Log
+  description: S3TaskHandler is a python log handler that handles and reads task instance
+    logs. It extends airflow FileTaskHandler and uploads to and reads from S3 remote
+    storage.
+- name: EmrContainerHook
+  type: Hooks
+  description: Interact with AWS EMR Virtual Cluster to run, poll jobs and return
+    job status Additional arguments (such as aws_conn_id) may be specified and are
+    passed down to the underlying AwsBaseHook.
+- name: EmrHook
+  type: Hooks
+  description: Interact with AWS EMR. emr_conn_id is only necessary for using the
+    create_job_flow method.
+- name: DataprocCreateClusterOperator
+  type: Operators
+  description: Create a new cluster on Google Cloud Dataproc. The operator will wait
+    until the creation is successful or an error occurs in the creation process. If
+    the cluster already exists and use_if_exists is True then the operator will.
+- name: DataprocSubmitHadoopJobOperator
+  type: Operators
+  description: Start a Hadoop Job on a Cloud DataProc cluster.
+- name: DataprocListBatchesOperator
+  type: Operators
+  description: Lists batch workloads.
+- name: DataprocSubmitSparkJobOperator
+  type: Operators
+  description: Start a Spark Job on a Cloud DataProc cluster.
+- name: DataprocInstantiateWorkflowTemplateOperator
+  type: Operators
+  description: Instantiate a WorkflowTemplate on Google Cloud Dataproc. The operator
+    will wait until the WorkflowTemplate is finished executing.
+- name: DataprocUpdateClusterOperator
+  type: Operators
+  description: Updates a cluster in a project.
+- name: DataprocSubmitJobOperator
+  type: Operators
+  description: Submits a job to a cluster.
+- name: DataprocSubmitPySparkJobOperator
+  type: Operators
+  description: Start a PySpark Job on a Cloud DataProc cluster.
+- name: DataprocDeleteBatchOperator
+  type: Operators
+  description: Deletes the batch workload resource.
+- name: DataprocSubmitSparkSqlJobOperator
+  type: Operators
+  description: Start a Spark SQL query Job on a Cloud DataProc cluster.
+- name: DataprocJobBaseOperator
+  type: Operators
+  description: The base class for operators that launch job on DataProc.
+- name: DataprocCreateBatchOperator
+  type: Operators
+  description: Creates a batch workload.
+- name: DataprocInstantiateInlineWorkflowTemplateOperator
+  type: Operators
+  description: Instantiate a WorkflowTemplate Inline on Google Cloud Dataproc. The
+    operator will wait until the WorkflowTemplate is finished executing.
+- name: DataprocDeleteClusterOperator
+  type: Operators
+  description: Deletes a cluster in a project.
+- name: DataprocScaleClusterOperator
+  type: Operators
+  description: Scale, up or down, a cluster on Google Cloud Dataproc. The operator
+    will wait until the cluster is re-scaled.
+- name: DataprocSubmitPigJobOperator
+  type: Operators
+  description: Start a Pig query Job on a Cloud DataProc cluster. The parameters of
+    the operation will be passed to the cluster.
+- name: DataprocSubmitHiveJobOperator
+  type: Operators
+  description: Start a Hive query Job on a Cloud DataProc cluster.
+- name: DataprocGetBatchOperator
+  type: Operators
+  description: Gets the batch workload resource representation.
+- name: DataprocCreateWorkflowTemplateOperator
+  type: Operators
+  description: Creates new workflow template.
+- name: CloudBuildListBuildTriggersOperator
+  type: Operators
+  description: Lists existing BuildTriggers.
+- name: CloudBuildCreateBuildOperator
+  type: Operators
+  description: Starts a build with the specified configuration.
+- name: CloudBuildCreateBuildTriggerOperator
+  type: Operators
+  description: Creates a new BuildTrigger.
+- name: CloudBuildCancelBuildOperator
+  type: Operators
+  description: Cancels a build in progress.
+- name: CloudBuildDeleteBuildTriggerOperator
+  type: Operators
+  description: Deletes a BuildTrigger by its project ID and trigger ID.
+- name: CloudBuildRunBuildTriggerOperator
+  type: Operators
+  description: Runs a BuildTrigger at a particular source revision.
+- name: CloudBuildRetryBuildOperator
+  type: Operators
+  description: Creates a new build based on the specified build. This method creates
+    a new build using the original build request, which may or may not result in an
+    identical build.
+- name: CloudBuildUpdateBuildTriggerOperator
+  type: Operators
+  description: Updates a BuildTrigger by its project ID and trigger ID.
+- name: CloudBuildListBuildsOperator
+  type: Operators
+  description: Lists previously requested builds.
+- name: CloudBuildGetBuildOperator
+  type: Operators
+  description: Returns information about a previously requested build.
+- name: CloudBuildGetBuildTriggerOperator
+  type: Operators
+  description: Returns information about a BuildTrigger.
+- name: GCSToS3Operator
+  type: Transfers
+  description: Synchronizes a Google Cloud Storage bucket with an S3 bucket.
+- name: AthenaHook
+  type: Hooks
+  description: Interact with AWS Athena to run, poll queries and return query results
+- name: AWSAthenaHook
+  type: Hooks
+  description: This hook is deprecated. Please use airflow.providers.amazon.aws.hooks.athena.AthenaHook.
+- name: DynamoDBToS3Operator
+  type: Transfers
+  description: Replicates records from a DynamoDB table to S3. It scans a DynamoDB
+    table and write the received records to a file on the local filesystem. It flushes
+    the file to S3 once the file size exceeds the file size limit specified by the
+    user.
+- name: GCSHook
+  type: Hooks
+  description: Interact with Google Cloud Storage. This hook uses the Google Cloud
+    connection.
+- name: RedshiftToS3Operator
+  type: Transfers
+  description: Executes an UNLOAD command to s3 as a CSV with headers
+- name: DataprocCreatePysparkJobOperator
+  type: Operators
+  description: Runs Pyspark job in Data Proc cluster.
+- name: DataprocCreateHiveJobOperator
+  type: Operators
+  description: Runs Hive job in Data Proc cluster.
+- name: DataprocCreateClusterOperator
+  type: Operators
+  description: Creates Yandex.Cloud Data Proc cluster.
+- name: DataprocCreateMapReduceJobOperator
+  type: Operators
+  description: Runs Mapreduce job in Data Proc cluster.
+- name: DataprocCreateSparkJobOperator
+  type: Operators
+  description: Runs Spark job in Data Proc cluster.
+- name: DataprocDeleteClusterOperator
+  type: Operators
+  description: Deletes Yandex.Cloud Data Proc cluster.
+- name: BatchSensor
+  type: Sensors
+  description: Asks for the state of the Batch Job execution until it reaches a failure
+    state or success state. If the job fails, the task will fail.
+- name: BatchOperator
+  type: Operators
+  description: Execute a job on AWS Batch
+- name: AwsBatchOperator
+  type: Operators
+  description: This operator is deprecated. Please use airflow.providers.amazon.aws.operators.batch.BatchOperator.
+- name: _DockerDecoratedOperator
+  type: Decorators
+  description: Wraps a Python callable and captures args/kwargs when called for execution.
+- name: GCSToBigQueryOperator
+  type: Transfers
+  description: Loads files from Google Cloud Storage into BigQuery.
+- name: FTPHook
+  type: Hooks
+  description: Interact with FTP.
+- name: SFTPHook
+  type: Hooks
+  description: This hook is inherited from SSH hook. Please refer to SSH hook for
+    the input arguments.
+- name: FTPSHook
+  type: Hooks
+  description: Interact with FTPS.
+- name: KubernetesPodOperator
+  type: Operators
+  description: Execute a task in a Kubernetes Pod
+- name: FromXLSXQueryOperator
+  type: Operators
+  description: Execute an SQL query an XLSX/XLS file and export the result into a
+    Parquet or CSV file
+- name: FromXLSXOperator
+  type: Operators
+  description: Convert an XLSX/XLS file into Parquet or CSV file
+- name: WasbHook
+  type: Hooks
+  description: Interacts with Azure Blob Storage through the wasb:// protocol.
+- name: SFTPToWasbOperator
+  type: Transfers
+  description: Transfer files to Azure Blob Storage from SFTP server.
+- name: LocalFilesystemToWasbOperator
+  type: Transfers
+  description: Uploads a file to Azure Blob Storage.
+- name: AzureDataFactoryHook
+  type: Hooks
+  description: A hook to interact with Azure Data Factory.
+- name: CloudMemorystoreMemcachedUpdateInstanceOperator
+  type: Operators
+  description: Updates the metadata and configuration of a specific Memcached instance.
+- name: CloudMemorystoreCreateInstanceAndImportOperator
+  type: Operators
+  description: Creates a Redis instance based on the specified tier and memory size
+    and import a Redis RDB snapshot file from Cloud Storage into a this instance.
+- name: CloudMemorystoreMemcachedGetInstanceOperator
+  type: Operators
+  description: Gets the details of a specific Memcached instance.
+- name: CloudMemorystoreGetInstanceOperator
+  type: Operators
+  description: Gets the details of a specific Redis instance.
+- name: CloudMemorystoreImportOperator
+  type: Operators
+  description: Import a Redis RDB snapshot file from Cloud Storage into a Redis instance.
+- name: CloudMemorystoreExportAndDeleteInstanceOperator
+  type: Operators
+  description: Export Redis instance data into a Redis RDB format file in Cloud Storage.
+    In next step, deletes a this instance.
+- name: CloudMemorystoreMemcachedListInstancesOperator
+  type: Operators
+  description: locations.
+- name: CloudMemorystoreMemcachedApplyParametersOperator
+  type: Operators
+  description: Will update current set of Parameters to the set of specified nodes
+    of the Memcached Instance.
+- name: CloudMemorystoreExportInstanceOperator
+  type: Operators
+  description: Export Redis instance data into a Redis RDB format file in Cloud Storage.
+- name: CloudMemorystoreMemcachedCreateInstanceOperator
+  type: Operators
+  description: Creates a Memcached instance based on the specified tier and memory
+    size.
+- name: CloudMemorystoreListInstancesOperator
+  type: Operators
+  description: Lists all Redis instances owned by a project in either the specified
+    location (region) or all locations.
+- name: CloudMemorystoreScaleInstanceOperator
+  type: Operators
+  description: Updates the metadata and configuration of a specific Redis instance.
+- name: CloudMemorystoreCreateInstanceOperator
+  type: Operators
+  description: Creates a Redis instance based on the specified tier and memory size.
+- name: CloudMemorystoreDeleteInstanceOperator
+  type: Operators
+  description: Deletes a specific Redis instance. Instance stops serving and data
+    is deleted.
+- name: CloudMemorystoreFailoverInstanceOperator
+  type: Operators
+  description: Initiates a failover of the primary node to current replica node for
+    a specific STANDARD tier Cloud Memorystore for Redis instance.
+- name: CloudMemorystoreMemcachedUpdateParametersOperator
+  type: Operators
+  description: parameters, it must be followed by apply_parameters to apply the parameters
+    to nodes of the Memcached Instance.
+- name: CloudMemorystoreMemcachedDeleteInstanceOperator
+  type: Operators
+  description: Deletes a specific Memcached instance. Instance stops serving and data
+    is deleted.
+- name: CloudMemorystoreUpdateInstanceOperator
+  type: Operators
+  description: Updates the metadata and configuration of a specific Redis instance.
+- name: DataprocJobSensor
+  type: Sensors
+  description: Check for the state of a previously submitted Dataproc job.
+- name: CloudDataFusionGetInstanceOperator
+  type: Operators
+  description: Gets details of a single Data Fusion instance.
+- name: CloudDataFusionCreateInstanceOperator
+  type: Operators
+  description: Creates a new Data Fusion instance in the specified project and location.
+- name: CloudDataFusionStartPipelineOperator
+  type: Operators
+  description: Starts a Cloud Data Fusion pipeline. Works for both batch and stream
+    pipelines.
+- name: CloudComposerUpdateEnvironmentOperator
+  type: Operators
+  description: Update an environment.
+- name: CloudComposerListImageVersionsOperator
+  type: Operators
+  description: List ImageVersions for provided location.
+- name: CloudComposerDeleteEnvironmentOperator
+  type: Operators
+  description: Delete an environment.
+- name: CloudDataFusionDeleteInstanceOperator
+  type: Operators
+  description: Deletes a single Date Fusion instance.
+- name: CloudDataFusionStopPipelineOperator
+  type: Operators
+  description: Stops a Cloud Data Fusion pipeline. Works for both batch and stream
+    pipelines.
+- name: CloudDataFusionDeletePipelineOperator
+  type: Operators
+  description: Deletes a Cloud Data Fusion pipeline.
+- name: CloudDataFusionUpdateInstanceOperator
+  type: Operators
+  description: Updates a single Data Fusion instance.
+- name: CloudComposerGetEnvironmentOperator
+  type: Operators
+  description: Get an existing environment.
+- name: CloudComposerCreateEnvironmentOperator
+  type: Operators
+  description: Create a new environment.
+- name: CloudDataFusionListPipelinesOperator
+  type: Operators
+  description: Lists Cloud Data Fusion pipelines.
+- name: CloudDataFusionCreatePipelineOperator
+  type: Operators
+  description: Creates a Cloud Data Fusion pipeline.
+- name: CloudComposerListEnvironmentsOperator
+  type: Operators
+  description: List environments.
+- name: CloudDataFusionRestartInstanceOperator
+  type: Operators
+  description: Restart a single Data Fusion instance. At the end of an operation instance
+    is fully restarted.
+- name: LambdaHook
+  type: Hooks
+  description: Interact with AWS Lambda
+- name: AwsLambdaHook
+  type: Hooks
+  description: This hook is deprecated. Please use airflow.providers.amazon.aws.hooks.lambda_function.LambdaHook.
+- name: FileSensor
+  type: Sensors
+  description: Waits for a file or folder to land in a filesystem.
+- name: RedshiftSQLOperator
+  type: Operators
+  description: Executes SQL Statements against an Amazon Redshift cluster
+- name: SqlToS3Operator
+  type: Transfers
+  description: Saves data from an specific SQL query into a file in S3.
+- name: HttpSensor
+  type: Sensors
+  description: Executes a HTTP GET statement and returns False on failure caused by
+    404 Not Found or response_check returning False.
+- name: BigQueryToBigQueryOperator
+  type: Transfers
+  description: Copies data from one BigQuery table to another.
+- name: SageMakerEndpointOperator
+  type: Operators
+  description: Create a SageMaker endpoint.
+- name: SageMakerTrainingOperator
+  type: Operators
+  description: Initiate a SageMaker training job.
+- name: SageMakerTransformOperator
+  type: Operators
+  description: Initiate a SageMaker transform job.
+- name: SageMakerTuningOperator
+  type: Operators
+  description: Initiate a SageMaker hyperparameter tuning job.
+- name: SageMakerProcessingOperator
+  type: Operators
+  description: Initiate a SageMaker processing job.
+- name: SageMakerBaseOperator
+  type: Operators
+  description: This is the base operator for all SageMaker operators.
+- name: SageMakerHook
+  type: Hooks
+  description: Interact with Amazon SageMaker.
+- name: SageMakerModelOperator
+  type: Operators
+  description: Create a SageMaker model.
+- name: SageMakerEndpointConfigOperator
+  type: Operators
+  description: Create a SageMaker endpoint config.
+- name: OracleHook
+  type: Hooks
+  description: Interact with Oracle SQL.
+- name: DbApiHook
+  type: Hooks
+  description: Abstract base class for sql hooks.
+- name: S3DeleteObjectsOperator
+  type: Operators
+  description: To enable users to delete single object or multiple objects from a
+    bucket using a single HTTP request.
+- name: S3FileTransformOperator
+  type: Operators
+  description: Copies data from a source S3 location to a temporary location on the
+    local filesystem. Runs a transformation on this file as specified by the transformation
+    script and uploads the output to a destination S3 location.
+- name: S3DeleteBucketOperator
+  type: Operators
+  description: This operator deletes an S3 bucket
+- name: S3DeleteBucketTaggingOperator
+  type: Operators
+  description: This operator deletes tagging from an S3 bucket.
+- name: S3CreateBucketOperator
+  type: Operators
+  description: This operator creates an S3 bucket
+- name: S3ListPrefixesOperator
+  type: Operators
+  description: List all subfolders from the bucket with the given string prefix in
+    name.
+- name: S3PutBucketTaggingOperator
+  type: Operators
+  description: This operator puts tagging for an S3 bucket.
+- name: S3CopyObjectOperator
+  type: Operators
+  description: Creates a copy of an object that is already stored in S3.
+- name: S3GetBucketTaggingOperator
+  type: Operators
+  description: This operator gets tagging from an S3 bucket
+- name: S3ListOperator
+  type: Operators
+  description: List all objects from the bucket with the given string prefix in name.
+- name: SparkSubmitHook
+  type: Hooks
+  description: This hook is a wrapper around the spark-submit binary to kick off a
+    spark-submit job. It requires that the “spark-submit” binary is in the PATH or
+    the spark_home to be supplied.
+- name: PostgresHook
+  type: Hooks
+  description: Interact with Postgres.
+- name: MySqlHook
+  type: Hooks
+  description: Interact with MySQL.
+- name: BigQueryDeleteDataTransferConfigOperator
+  type: Operators
+  description: Deletes transfer configuration.
+- name: BigQueryDataTransferServiceStartTransferRunsOperator
+  type: Operators
+  description: Start manual transfer runs to be executed now with schedule_time equal
+    to current time. The transfer runs can be created for a time range where the run_time
+    is between start_time (inclusive) and end_time (exclusive), or for a specific
+    run_time.
+- name: BigQueryCreateDataTransferOperator
+  type: Operators
+  description: Creates a new data transfer configuration.
+- name: LocalFilesystemBackend
+  type: Secrets
+  description: Retrieves Connection objects and Variables from local files
+- name: AzureCosmosDBHook
+  type: Hooks
+  description: Interacts with Azure CosmosDB.
+- name: TrinoHook
+  type: Hooks
+  description: Interact with Trino through trino package.
+- name: PrestoHook
+  type: Hooks
+  description: Interact with Presto through prestodb.
+- name: EksFargateProfileStateSensor
+  type: Sensors
+  description: Check the state of an AWS Fargate profile until it reaches the target
+    state or another terminal state.
+- name: EKSFargateProfileStateSensor
+  type: Sensors
+  description: This sensor is deprecated. Please use airflow.providers.amazon.aws.sensors.eks.EksFargateProfileStateSensor.
+- name: EKSNodegroupStateSensor
+  type: Sensors
+  description: This sensor is deprecated. Please use airflow.providers.amazon.aws.sensors.eks.EksNodegroupStateSensor.
+- name: EKSClusterStateSensor
+  type: Sensors
+  description: This sensor is deprecated. Please use airflow.providers.amazon.aws.sensors.eks.EksClusterStateSensor.
+- name: EksNodegroupStateSensor
+  type: Sensors
+  description: Check the state of an EKS managed node group until it reaches the target
+    state or another terminal state.
+- name: EksClusterStateSensor
+  type: Sensors
+  description: Check the state of an Amazon EKS Cluster until it reaches the target
+    state or another terminal state.
+- name: BeamRunJavaPipelineOperator
+  type: Operators
+  description: Launching Apache Beam pipelines written in Java.
+- name: BeamRunPythonPipelineOperator
+  type: Operators
+  description: Launching Apache Beam pipelines written in Python. Note that both default_pipeline_options
+    and pipeline_options will be merged to specify pipeline execution parameter, and
+    default_pipeline_options is expected to save high-level options, for instances,
+    project and zone information, which apply to all beam operators in the DAG.
+- name: LivyOperator
+  type: Operators
+  description: This operator wraps the Apache Livy batch REST API, allowing to submit
+    a Spark application to the underlying cluster.
+- name: LivyHook
+  type: Hooks
+  description: Hook for Apache Livy through the REST API.
+- name: CloudComposerHook
+  type: Hooks
+  description: Hook for Google Cloud Composer APIs.
+- name: CloudDLPHook
+  type: Hooks
+  description: Hook for Google Cloud Data Loss Prevention (DLP) APIs. Cloud DLP allows
+    clients to detect the presence of Personally Identifiable Information (PII) and
+    other privacy-sensitive data in user-supplied, unstructured data streams, like
+    text blocks or images. The service also includes methods for sensitive data redaction
+    and scheduling of data scans on Google Cloud based data sets.
+- name: BiqQueryDataTransferServiceHook
+  type: Hooks
+  description: Hook for Google Bigquery Transfer API.
+- name: CloudVideoIntelligenceHook
+  type: Hooks
+  description: Hook for Google Cloud Video Intelligence APIs.
+- name: OSLoginHook
+  type: Hooks
+  description: Hook for Google OS login APIs.
+- name: CloudAutoMLHook
+  type: Hooks
+  description: Google Cloud AutoML hook.
+- name: CloudKMSHook
+  type: Hooks
+  description: Hook for Google Cloud Key Management service.
+- name: CloudTasksHook
+  type: Hooks
+  description: Hook for Google Cloud Tasks APIs. Cloud Tasks allows developers to
+    manage the execution of background work in their applications.
+- name: DataprocHook
+  type: Hooks
+  description: Hook for Google Cloud Dataproc APIs.
+- name: BigtableHook
+  type: Hooks
+  description: Hook for Google Cloud Bigtable APIs.
+- name: CloudTextToSpeechHook
+  type: Hooks
+  description: Hook for Google Cloud Text to Speech API.
+- name: CloudTranslateHook
+  type: Hooks
+  description: Hook for Google Cloud translate APIs.
+- name: CloudBuildHook
+  type: Hooks
+  description: Hook for the Google Cloud Build Service.
+- name: PubSubHook
+  type: Hooks
+  description: Hook for accessing Google Pub/Sub.
+- name: CloudNaturalLanguageHook
+  type: Hooks
+  description: Hook for Google Cloud Natural Language Service.
+- name: GoogleBaseHook
+  type: Hooks
+  description: A base hook for Google cloud-related hooks. Google cloud has a shared
+    REST API client that is built in the same way no matter which service you use.
+    This class helps construct and authorize the credentials needed to then call googleapiclient.discovery.build()
+    to actually discover and build a client for a Google cloud service.
+- name: GCSTaskHandler
+  type: Log
+  description: GCSTaskHandler is a python log handler that handles and reads task
+    instance logs. It extends airflow FileTaskHandler and uploads to and reads from
+    GCS remote storage. Upon log reading failure, it reads from host machines local
+    disk.
+- name: CloudVisionHook
+  type: Hooks
+  description: Hook for Google Cloud Vision APIs.
+- name: CloudSpeechToTextHook
+  type: Hooks
+  description: Hook for Google Cloud Speech API.
+- name: GKEHook
+  type: Hooks
+  description: Hook for Google Kubernetes Engine APIs.
+- name: CloudDataCatalogHook
+  type: Hooks
+  description: Hook for Google Cloud Data Catalog Service.
+- name: WorkflowsHook
+  type: Hooks
+  description: Hook for Google GCP APIs.
+- name: SpannerHook
+  type: Hooks
+  description: Hook for Google Cloud Spanner APIs.
+- name: DataprocMetastoreHook
+  type: Hooks
+  description: Hook for Google Cloud Dataproc Metastore APIs.
+- name: BigQueryTablePartitionExistenceSensor
+  type: Sensors
+  description: Checks for the existence of a partition within a table in Google Bigquery.
+- name: BigQueryTableExistenceSensor
+  type: Sensors
+  description: Checks for the existence of a table in Google Bigquery.
+- name: S3PrefixSensor
+  type: Sensors
+  description: Waits for a prefix or all prefixes to exist. A prefix is the first
+    part of a key, thus enabling checking of constructs similar to glob airfl* or
+    SQL LIKE airfl%. There is the possibility to precise a delimiter to indicate
+    the hierarchy or keys, meaning that the match will stop at that delimiter. Current
+    code accepts sane delimiters, i.e. characters that are NOT special characters
+    in the Python regex engine.
+- name: S3KeySensor
+  type: Sensors
+  description: Waits for a key (a file-like instance on S3) to be present in a S3
+    bucket. S3 being a key/value it does not support folders. The path is just a key
+    a resource.
+- name: S3KeysUnchangedSensor
+  type: Sensors
+  description: Checks for changes in the number of objects at prefix in AWS S3 bucket
+    and returns True if the inactivity period has passed with no increase in the number
+    of objects. Note, this sensor will not behave correctly in reschedule mode, as
+    the state of the listed objects in the S3 bucket will be lost between rescheduled
+    invocations.
+- name: S3KeySizeSensor
+  type: Sensors
+  description: Waits for a key (a file-like instance on S3) to be present and be more
+    than some size in a S3 bucket. S3 being a key/value it does not support folders.
+    The path is just a key a resource.
+- name: HightouchHook
+  type: Hooks
+  description: Hook for Hightouch API
+- name: ElasticsearchTaskHandler
+  type: Log
+  description: ElasticsearchTaskHandler is a python log handler that reads logs from
+    Elasticsearch. Note that Airflow does not handle the indexing of logs into Elasticsearch.
+    Instead, Airflow flushes logs into local files. Additional software setup is required
+    to index the logs into Elasticsearch, such as using Filebeat and Logstash. To
+    efficiently query and sort Elasticsearch results, this handler assumes each log
+    message has a field log_id consists of ti primary keys log_id = {dag_id}-{task_id}-{execution_date}-{try_number}
+    Log messages with specific log_id are sorted based on offset, which is a unique
+    integer indicates log messages order. Timestamps here are unreliable because
+    multiple log messages might have the same timestamp.
+- name: SmartSensorOperator
+  type: Sensors
+  description: Smart sensor operators are derived from this class.
+- name: SensorWork
+  type: Sensors
+  description: This class stores a sensor work with decoded context value. It is
+    only used inside of smart sensor. 
+- name: PostgresToGCSOperator
+  type: Transfers
+  description: Copy data from Postgres to Google Cloud Storage in JSON or CSV format.
+- name: DiscoverableHook
+  type: Hooks
+  description: Interface that providers can implement to be discovered by ProvidersManager.
+- name: BaseHook
+  type: Hooks
+  description: Abstract base class for hooks, hooks are meant as an interface to interact
+    with external systems. MySqlHook, HiveHook, PigHook return object that can handle
+    the connection and interaction to specific instances of these systems, and expose
+    consistent methods to interact with them.
+- name: HiveOperator
+  type: Operators
+  description: Executes hql code or hive script in a specific Hive database.
+- name: CloudComposerExecutionTrigger
+  type: Triggers
+  description: The trigger handles the async communication with the Google Cloud Composer
+- name: HiveCliHook
+  type: Hooks
+  description: Simple wrapper around the hive CLI.
+- name: HiveServer2Hook
+  type: Hooks
+  description: Wrapper around the pyhive library
+- name: HiveMetastoreHook
+  type: Hooks
+  description: Wrapper to interact with the Hive Metastore
+- name: GCSToGCSOperator
+  type: Transfers
+  description: Copies objects from a bucket to another, with renaming if requested.
+- name: SnsPublishOperator
+  type: Operators
+  description: Publish a message to Amazon SNS.
+- name: EksDeleteClusterOperator
+  type: Operators
+  description: Deletes the Amazon EKS Cluster control plane and all nodegroups attached
+    to it.
+- name: EksCreateFargateProfileOperator
+  type: Operators
+  description: Creates an AWS Fargate profile for an Amazon EKS cluster.
+- name: CloudVisionDetectImageSafeSearchOperator
+  type: Operators
+  description: Detects Document Text in the image
+- name: EksCreateClusterOperator
+  type: Operators
+  description: Creates an Amazon EKS Cluster control plane.
+- name: AzureBaseHook
+  type: Hooks
+  description: This hook acts as a base hook for azure services. It offers several
+    authentication mechanisms to authenticate the client library used for upstream
+    azure hooks.
+- name: GithubOperator
+  type: Operators
+  description: GithubOperator to interact and perform action on GitHub API. This
+    operator is designed to use GitHub Python SDK
+- name: EksDeleteFargateProfileOperator
+  type: Operators
+  description: Deletes an AWS Fargate profile from an Amazon EKS Cluster.
+- name: CloudVisionUpdateProductOperator
+  type: Operators
+  description: Makes changes to a Product resource. Only the display_name, description,
+    and labels fields can be updated right now.
+- name: CloudVisionDeleteReferenceImageOperator
+  type: Operators
+  description: Deletes a ReferenceImage ID resource.
+- name: SimpleHttpOperator
+  type: Operators
+  description: Calls an endpoint on an HTTP system to execute an action
+- name: GithubSensor
+  type: Sensors
+  description: Base GithubSensor which can monitor for any change.
+- name: CloudVisionGetProductOperator
+  type: Operators
+  description: Gets information associated with a Product.
+- name: CloudVisionDetectTextOperator
+  type: Operators
+  description: Detects Text in the image
+- name: CloudVisionCreateReferenceImageOperator
+  type: Operators
+  description: Creates and returns a new ReferenceImage ID resource.
+- name: GithubTagSensor
+  type: Sensors
+  description: Monitors a github tag for its creation.
+- name: EKSCreateClusterOperator
+  type: Operators
+  description: This operator is deprecated. Please use airflow.providers.amazon.aws.operators.eks.EksCreateClusterOperator.
+- name: BaseGithubRepositorySensor
+  type: Sensors
+  description: Base GitHub sensor at Repository level.
+- name: CloudVisionAddProductToProductSetOperator
+  type: Operators
+  description: Adds a Product to the specified ProductSet. If the Product is already
+    present, no change is made.
+- name: EKSCreateFargateProfileOperator
+  type: Operators
+  description: This operator is deprecated. Please use airflow.providers.amazon.aws.operators.eks.EksCreateFargateProfileOperator.
+- name: CloudVisionDetectImageLabelsOperator
+  type: Operators
+  description: Detects Document Text in the image
+- name: GithubHook
+  type: Hooks
+  description: Interact with Github.
+- name: EKSCreateNodegroupOperator
+  type: Operators
+  description: This operator is deprecated. Please use airflow.providers.amazon.aws.operators.eks.EksCreateNodegroupOperator.
+- name: CloudVisionGetProductSetOperator
+  type: Operators
+  description: Gets information associated with a ProductSet.
+- name: EKSPodOperator
+  type: Operators
+  description: This operator is deprecated. Please use airflow.providers.amazon.aws.operators.eks.EksPodOperator.
+- name: CloudVisionUpdateProductSetOperator
+  type: Operators
+  description: Makes changes to a ProductSet resource. Only display_name can be updated
+    currently.
+- name: CloudVisionRemoveProductFromProductSetOperator
+  type: Operators
+  description: Removes a Product from the specified ProductSet.
+- name: EksDeleteNodegroupOperator
+  type: Operators
+  description: Deletes an Amazon EKS managed node group from an Amazon EKS Cluster.
+- name: PsrpHook
+  type: Hooks
+  description: Hook for PowerShell Remoting Protocol execution.
+- name: CloudVisionDeleteProductOperator
+  type: Operators
+  description: Permanently deletes a product and its reference images.
+- name: EksPodOperator
+  type: Operators
+  description: Executes a task in a Kubernetes pod on the specified Amazon EKS Cluster.
+- name: EKSDeleteClusterOperator
+  type: Operators
+  description: This operator is deprecated. Please use airflow.providers.amazon.aws.operators.eks.EksDeleteClusterOperator.
+- name: EKSDeleteFargateProfileOperator
+  type: Operators
+  description: This operator is deprecated. Please use airflow.providers.amazon.aws.operators.eks.EksDeleteFargateProfileOperator.
+- name: CloudVisionImageAnnotateOperator
+  type: Operators
+  description: Run image detection and annotation for an image or a batch of images.
+- name: EKSDeleteNodegroupOperator
+  type: Operators
+  description: This operator is deprecated. Please use airflow.providers.amazon.aws.operators.eks.EksDeleteNodegroupOperator.
+- name: EksCreateNodegroupOperator
+  type: Operators
+  description: Creates an Amazon EKS managed node group for an existing Amazon EKS
+    Cluster.
+- name: CloudVisionDeleteProductSetOperator
+  type: Operators
+  description: Permanently deletes a ProductSet. Products and ReferenceImages in the
+    ProductSet are not deleted. The actual image files are not deleted from Google
+    Cloud Storage.
+- name: CloudVisionCreateProductOperator
+  type: Operators
+  description: Creates and returns a new product resource.
+- name: CloudVisionCreateProductSetOperator
+  type: Operators
+  description: Creates a new ProductSet resource.
+- name: CloudVisionTextDetectOperator
+  type: Operators
+  description: Detects Document Text in the image
+- name: EKSHook
+  type: Hooks
+  description: This hook is deprecated. Please use airflow.providers.amazon.aws.hooks.eks.EksHook.
+- name: EksHook
+  type: Hooks
+  description: Interact with Amazon EKS, using the boto3 library.
+- name: MsSqlOperator
+  type: Operators
+  description: Executes sql code in a specific Microsoft SQL database
+- name: TrinoToMySqlOperator
+  type: Transfers
+  description: Moves data from Trino to MySQL, note that for now the data is loaded
+    into memory before being pushed to MySQL, so this operator should be used for
+    smallish amount of data.
+- name: MsSqlToHiveOperator
+  type: Transfers
+  description: Moves data from Microsoft SQL Server to Hive. The operator runs your
+    query against Microsoft SQL Server, stores the file locally before loading it
+    into a Hive table. If the create or recreate arguments are set to True, a CREATE
+    TABLE and DROP TABLE statements are generated. Hive data types are inferred from
+    the cursors metadata. Note that the table generated in Hive uses STORED AS textfile
+    which isnt the most efficient serialization format. If a large amount of data
+    is loaded and/or if the table gets queried considerably, you may want to use this
+    operator only to stage the data into a temporary table before loading it into
+    its final destination using a HiveOperator.
+- name: MySqlOperator
+  type: Operators
+  description: Executes sql code in a specific MySQL database
+- name: HiveToMySqlOperator
+  type: Transfers
+  description: Moves data from Hive to MySQL, note that for now the data is loaded
+    into memory before being pushed to MySQL, so this operator should be used for
+    smallish amount of data.
+- name: PrestoToMySqlOperator
+  type: Transfers
+  description: Moves data from Presto to MySQL, note that for now the data is loaded
+    into memory before being pushed to MySQL, so this operator should be used for
+    smallish amount of data.
+- name: VerticaToMySqlOperator
+  type: Transfers
+  description: Moves data from Vertica to MySQL.
+- name: ZendeskHook
+  type: Hooks
+  description: Interact with Zendesk. This hook uses the Zendesk conn_id.
+- name: ExternalTaskSensor
+  type: Sensors
+  description: Waits for a different DAG or a task in a different DAG to complete
+    for a specific execution_date
+- name: SpannerDeployDatabaseInstanceOperator
+  type: Operators
+  description: Creates a new Cloud Spanner database, or if database exists, the operator
+    does nothing.
+- name: ExasolOperator
+  type: Operators
+  description: Executes sql code in a specific Exasol database
+- name: CloudSQLBaseOperator
+  type: Operators
+  description: Abstract base operator for Google Cloud SQL operators to inherit from.
+- name: BranchSQLOperator
+  type: Operators
+  description: Executes sql code in a specific database
+- name: SparkSqlOperator
+  type: Operators
+  description: Execute Spark SQL query
+- name: SnowflakeOperator
+  type: Operators
+  description: Executes SQL code in a Snowflake database
+- name: HiveToDruidOperator
+  type: Transfers
+  description: Moves data from Hive to Druid, [del]note that for now the data is loaded
+    into memory before being pushed to Druid, so this operator should be used for
+    smallish amount of data.[/del]
+- name: SnowflakeCheckOperator
+  type: Operators
+  description: Performs a check against Snowflake. The SnowflakeCheckOperator expects
+    a sql query that will return a single row. Each value on that first row is evaluated
+    using python bool casting. If any of the values return False the check is failed
+    and errors out.
+- name: HiveToDynamoDBOperator
+  type: Transfers
+  description: Moves data from Hive to DynamoDB, note that for now the data is loaded
+    into memory before being pushed to DynamoDB, so this operator should be used for
+    smallish amount of data.
+- name: SQLThresholdCheckOperator
+  type: Operators
+  description: Performs a value check using sql code against a minimum threshold and
+    a maximum threshold. Thresholds can be in the form of a numeric value OR a sql
+    statement that results a numeric.
+- name: SpannerUpdateDatabaseInstanceOperator
+  type: Operators
+  description: Updates a Cloud Spanner database with the specified DDL statement.
+- name: CloudSQLDeleteInstanceDatabaseOperator
+  type: Operators
+  description: Deletes a database from a Cloud SQL instance.
+- name: CloudSQLPatchInstanceDatabaseOperator
+  type: Operators
+  description: Updates a resource containing information about a database inside
+    a Cloud SQL instance using patch semantics.
+- name: MySqlToHiveOperator
+  type: Transfers
+  description: Moves data from MySql to Hive. The operator runs your query against
+    MySQL, stores the file locally before loading it into a Hive table. If the create
+    or recreate arguments are set to True, a CREATE TABLE and DROP TABLE statements
+    are generated. Hive data types are inferred from the cursors metadata. Note that
+    the table generated in Hive uses STORED AS textfile which isnt the most efficient
+    serialization format. If a large amount of data is loaded and/or if the table
+    gets queried considerably, you may want to use this operator only to stage the
+    data into a temporary table before loading it into its final destination using
+    a HiveOperator.
+- name: SQLCheckOperator
+  type: Operators
+  description: Performs checks against a db. The SQLCheckOperator expects a sql query
+    that will return a single row. Each value on that first row is evaluated using
+    python bool casting. If any of the values return False the check is failed and
+    errors out.
+- name: BaseSQLToGCSOperator
+  type: Transfers
+  description: Copy data from SQL to Google Cloud Storage in JSON or CSV format.
+- name: SalesforceToGcsOperator
+  type: Transfers
+  description: Submits Salesforce query and uploads results to Google Cloud Storage
+- name: SQLIntervalCheckOperator
+  type: Operators
+  description: Checks that the values of metrics given as SQL expressions are within
+    a certain tolerance of the ones from days_back before.
+- name: CloudSQLImportInstanceOperator
+  type: Operators
+  description: Imports data into a Cloud SQL instance from a SQL dump or CSV file
+    in Cloud Storage.
+- name: SpannerDeleteDatabaseInstanceOperator
+  type: Operators
+  description: Deletes a Cloud Spanner database.
+- name: CloudSQLCreateInstanceDatabaseOperator
+  type: Operators
+  description: Creates a new database inside a Cloud SQL instance.
+- name: SpannerDeployInstanceOperator
+  type: Operators
+  description: Creates a new Cloud Spanner instance, or if an instance with the same
+    instance_id exists in the specified project, updates the Cloud Spanner instance.
+- name: JdbcOperator
+  type: Operators
+  description: Executes sql code in a database using jdbc driver.
+- name: HiveToSambaOperator
+  type: Transfers
+  description: Executes hql code in a specific Hive database and loads the results
+    of the query as a csv to a Samba location.
+- name: OracleOperator
+  type: Operators
+  description: Executes sql code in a specific Oracle database.
+- name: BaseSQLOperator
+  type: Operators
+  description: This is a base class for generic SQL Operator to get a DB Hook
+- name: SpannerQueryDatabaseInstanceOperator
+  type: Operators
+  description: Executes an arbitrary DML query (INSERT, UPDATE, DELETE).
+- name: CloudSQLExportInstanceOperator
+  type: Operators
+  description: Exports data from a Cloud SQL instance to a Cloud Storage bucket as
+    a SQL dump or CSV file.
+- name: SnowflakeToSlackOperator
+  type: Transfers
+  description: Executes an SQL statement in Snowflake and sends the results to Slack.
+    The results of the query are rendered into the slack_message parameter as a
+    Pandas dataframe using a JINJA variable called {{ results_df }}. The results_df
+    variable name can be changed by specifying a different results_df_name parameter.
+    The Tabulate library is added to the JINJA environment as a filter to allow the
+    dataframe to be rendered nicely.
+    as an ascii rendered table.
+- name: SQLValueCheckOperator
+  type: Operators
+  description: Performs a simple value check using sql code.
+- name: CloudSQLInstancePatchOperator
+  type: Operators
+  description: Updates settings of a Cloud SQL instance.
+- name: SpannerDeleteInstanceOperator
+  type: Operators
+  description: Deletes a Cloud Spanner instance. If an instance does not exist, no
+    action is taken and the operator succeeds.
+- name: SnowflakeIntervalCheckOperator
+  type: Operators
+  description: Checks that the values of metrics given as SQL expressions are within
+    a certain tolerance of the ones from days_back before.
+- name: SqoopOperator
+  type: Operators
+  description: Execute a Sqoop job. Documentation for Apache Sqoop can be found here
+- name: CloudSQLExecuteQueryOperator
+  type: Operators
+  description: Performs DML or DDL query on an existing Cloud Sql instance. It optionally
+    uses cloud-sql-proxy to establish secure connection with the database.
+- name: CloudSQLCreateInstanceOperator
+  type: Operators
+  description: Creates a new Cloud SQL instance. If an instance with the same name
+    exists, no action will be taken and the operator will succeed.
+- name: SnowflakeValueCheckOperator
+  type: Operators
+  description: Performs a simple check using sql code against a specified value, within
+    a certain level of tolerance.
+- name: CloudSQLDeleteInstanceOperator
+  type: Operators
+  description: Deletes a Cloud SQL instance.
+- name: OracleStoredProcedureOperator
+  type: Operators
+  description: Executes stored procedure in a specific Oracle database.
+- name: VerticaOperator
+  type: Operators
+  description: Executes sql code in a specific Vertica database.
+- name: VerticaToHiveOperator
+  type: Transfers
+  description: Moves data from Vertica to Hive. The operator runs your query against
+    Vertica, stores the file locally before loading it into a Hive table. If the create
+    or recreate arguments are set to True, a CREATE TABLE and DROP TABLE statements
+    are generated. Hive data types are inferred from the cursors metadata. Note that
+    the table generated in Hive uses STORED AS textfile which isnt the most efficient
+    serialization format. If a large amount of data is loaded and/or if the table
+    gets queried considerably, you may want to use this operator only to stage the
+    data into a temporary table before loading it into its final destination using
+    a HiveOperator.
+- name: SqliteOperator
+  type: Operators
+  description: Executes sql code in a specific Sqlite database
+- name: SSHHook
+  type: Hooks
+  description: Hook for ssh remote execution using Paramiko. This hook also lets you create ssh tunnel and serve as basis for SFTP file transfer
+- name: SSHOperator
+  type: Operators
+  description: SSHOperator to execute commands on given remote host using the ssh_hook.
+- name: PSRPHook
+  type: Hooks
+  description: Hook for PowerShell Remoting Protocol execution.
+- name: PsrpOperator
+  type: Operators
+  description: PowerShell Remoting Protocol operator.
+- name: PSRPOperator
+  type: Operators
+  description: PowerShell Remoting Protocol operator.
+- name: HttpHook
+  type: Hooks
+  description: Interact with HTTP servers.
+- name: EmrCreateJobFlowOperator
+  type: Operators
+  description: Creates an EMR JobFlow, reading the config from the EMR connection.
+    A dictionary of JobFlow overrides can be passed that override the config from
+    the connection.
+- name: SQSSensor
+  type: Sensors
+  description: This sensor is deprecated. Please use airflow.providers.amazon.aws.sensors.sqs.SqsSensor.
+- name: SqsSensor
+  type: Sensors
+  description: Get messages from an SQS queue and then deletes  the message from the
+    SQS queue. If deletion of messages fails an AirflowException is thrown otherwise,
+    the message is pushed through XCom with the key messages.
+- name: FireboltOperator
+  type: Operators
+  description: Executes SQL code in a Firebolt database
+- name: FireboltHook
+  type: Hooks
+  description: A client to interact with Firebolt. This hook requires the firebolt_conn_id
+    connection. The firebolt login, password, and api_endpoint field must be setup
+    in the connection. Other inputs can be defined in the connection or hook instantiation.
+- name: SlackHook
+  type: Hooks
+  description: Creates a Slack connection to be used for calls.
+- name: YandexCloudBaseHook
+  type: Hooks
+  description: A base hook for Yandex.Cloud related tasks.
+- name: ComputeEngineSSHHook
+  type: Hooks
+  description: Hook to connect to a remote instance in compute engine
+- name: AzureDataLakeHook
+  type: Hooks
+  description: Interacts with Azure Data Lake.
+- name: PagerdutyEventsHook
+  type: Hooks
+  description: This class can be used to interact with the Pagerduty Events API.
+- name: AzureContainerVolumeHook
+  type: Hooks
+  description: A hook which wraps an Azure Volume.
+- name: KubernetesHook
+  type: Hooks
+  description: Creates Kubernetes API connection.
+- name: AsanaHook
+  type: Hooks
+  description: Wrapper around Asana Python client library.
+- name: AzureBatchHook
+  type: Hooks
+  description: Hook for Azure Batch APIs
+- name: AzureFileShareHook
+  type: Hooks
+  description: Interacts with Azure FileShare Storage.
+- name: QuboleHook
+  type: Hooks
+  description: Hook for Qubole communication
+- name: LevelDBHook
+  type: Hooks
+  description: Plyvel Wrapper to Interact With LevelDB Database LevelDB Connection
+    Documentation
+- name: CloudantHook
+  type: Hooks
+  description: Interact with Cloudant. This class is a thin wrapper around the cloudant
+    python library.
+- name: AzureDataExplorerHook
+  type: Hooks
+  description: Interacts with Azure Data Explorer (Kusto).
+- name: LevelDBHookException
+  type: Hooks
+  description: Exception specific for LevelDB
+- name: PagerdutyHook
+  type: Hooks
+  description: The PagerdutyHook can be used to interact with both the PagerDuty API
+    and the PagerDuty Events API.
+- name: DockerHook
+  type: Hooks
+  description: Interact with a Docker Daemon or Registry.
+- name: AzureContainerRegistryHook
+  type: Hooks
+  description: A hook to communicate with a Azure Container Registry.
+- name: SalesforceHook
+  type: Hooks
+  description: Creates new connection to Salesforce and allows you to pull data out
+    of SFDC and save it to a file.
+- name: JdbcHook
+  type: Hooks
+  description: General hook for jdbc db access.
+- name: WinRMHook
+  type: Hooks
+  description: Hook for winrm remote execution using pywinrm.
+- name: MySQLToS3Operator
+  type: Transfers
+  description: This class is deprecated. Please use airflow.providers.amazon.aws.transfers.sql_to_s3.SqlToS3Operator.
+- name: AwsLogsHook
+  type: Hooks
+  description: Interact with AWS CloudWatch Logs
+- name: S3ToGCSOperator
+  type: Transfers
+  description: Synchronizes an S3 key, possibly a prefix, with a Google Cloud Storage
+    destination path.
+- name: PubSubDeleteSubscriptionOperator
+  type: Operators
+  description: Delete a PubSub subscription.
+- name: PubSubPullSensor
+  type: Sensors
+  description: Pulls messages from a PubSub subscription and passes them through XCom.
+    Always waits for at least one message to be returned from the subscription.
+- name: PubSubPublishMessageOperator
+  type: Operators
+  description: Publish messages to a PubSub topic.
+- name: PubSubCreateSubscriptionOperator
+  type: Operators
+  description: Create a PubSub subscription.
+- name: GCSToLocalFilesystemOperator
+  type: Transfers
+  description: Downloads a file from Google Cloud Storage.
+- name: PubSubPullOperator
+  type: Operators
+  description: Pulls messages from a PubSub subscription and passes them through XCom.
+    If the queue is empty, returns empty list - never waits for messages. If you do
+    need to wait, please use airflow.providers.google.cloud.sensors.PubSubPullSensor
+    instead.
+- name: PubSubDeleteTopicOperator
+  type: Operators
+  description: Delete a PubSub topic.
+- name: PubSubCreateTopicOperator
+  type: Operators
+  description: Create a PubSub topic.
+- name: CloudDataTransferServiceHook
+  type: Hooks
+  description: Hook for Google Storage Transfer Service.
+- name: CloudFormationCreateStackOperator
+  type: Operators
+  description: An operator that creates a CloudFormation stack.
+- name: CloudFormationDeleteStackOperator
+  type: Operators
+  description: An operator that deletes a CloudFormation stack.
+- name: QubolePartitionSensor
+  type: Sensors
+  description: Wait for a Hive partition to show up in QHS (Qubole Hive Service) and
+    check for its presence via QDS APIs
+- name: JenkinsJobTriggerOperator
+  type: Operators
+  description: Trigger a Jenkins Job and monitor its execution. This operator depend
+    on python-jenkins library, version >= 0.4.15 to communicate with jenkins server.
+    Youll also need to configure a Jenkins connection in the connections screen.
+- name: GoogleAnalyticsListAccountsOperator
+  type: Operators
+  description: Lists all accounts to which the user has access.
+- name: BranchDayOfWeekOperator
+  type: Operators
+  description: Branches into one of two lists of tasks depending on the current day.
+- name: AthenaOperator
+  type: Operators
+  description: An operator that submits a presto query to athena.
+- name: CloudDataTransferServiceGCSToGCSOperator
+  type: Operators
+  description: Copies objects from a bucket to another using the Google Cloud Storage
+    Transfer Service.
+- name: DataprepRunJobGroupOperator
+  type: Operators
+  description: Create a jobGroup, which launches the specified job as the authenticated
+    user. This performs the same action as clicking on the Run Job button in the application.
+    To get recipe_id please follow the Dataprep API documentation 
+- name: AsanaCreateTaskOperator
+  type: Operators
+  description: This operator can be used to create Asana tasks. For more information
+    on Asana optional task parameters, see 
+- name: GoogleCampaignManagerReportSensor
+  type: Sensors
+  description: Check if report is ready.
+- name: OpsgenieCreateAlertOperator
+  type: Operators
+  description: This operator allows you to post alerts to Opsgenie. Accepts a connection
+    that has an Opsgenie API key as the connections password. This operator sets
+    the domain to conn_id.host, and if not set will default to https://api.opsgenie.com.
+- name: QuboleCheckOperator
+  type: Operators
+  description: Performs a simple value check using Qubole command. By default, each
+    value on the first row of this Qubole command is compared with a pre-defined value.
+    The check fails and errors out if the output of the command is not within the
+    permissible limit of expected value.
+- name: RedshiftResumeClusterOperator
+  type: Operators
+  description: Resume a paused AWS Redshift Cluster
+- name: SlackWebhookOperator
+  type: Operators
+  description: This operator allows you to post messages to Slack using incoming webhooks.
+    Takes both Slack webhook token directly and connection that has Slack webhook
+    token. If both supplied, http_conn_id will be used as base_url, and webhook_token
+    will be taken as endpoint, the relative path of the url.
+- name: GoogleDisplayVideo360GetSDFDownloadOperationSensor
+  type: Sensors
+  description: Sensor for detecting the completion of SDF operation.
+- name: AwsBatchWaitersHook
+  type: Hooks
+  description: This hook is deprecated. Please use airflow.providers.amazon.aws.hooks.batch.BatchWaitersHook.
+- name: SqoopHook
+  type: Hooks
+  description: This hook is a wrapper around the sqoop 1 binary. To be able to use
+    the hook it is required that “sqoop” is in the PATH.
+- name: CloudFunctionDeleteFunctionOperator
+  type: Operators
+  description: Deletes the specified function from Google Cloud Functions.
+- name: CloudDLPDeleteDLPJobOperator
+  type: Operators
+  description: Deletes a long-running DlpJob. This method indicates that the client
+    is no longer interested in the DlpJob result. The job will be cancelled if possible.
+- name: VaultHook
+  type: Hooks
+  description: Hook to Interact with HashiCorp Vault KeyValue Secret engine.
+- name: CloudDataCatalogDeleteEntryGroupOperator
+  type: Operators
+  description: Deletes an EntryGroup.
+- name: WorkflowsCreateWorkflowOperator
+  type: Operators
+  description: Creates a new workflow. If a workflow with the specified name already
+    exists in the specified project and location, the long running operation will
+    return [ALREADY_EXISTS][google.rpc.Code.ALREADY_EXISTS] error.
+- name: CloudSpeechToTextRecognizeSpeechOperator
+  type: Operators
+  description: Recognizes speech from audio file and returns it as text.
+- name: FacebookAdsReportToGcsOperator
+  type: Transfers
+  description: Fetches the results from the Facebook Ads API as desired in the params
+    Converts and saves the data as a temporary JSON file Uploads the JSON to Google
+    Cloud Storage
+- name: CloudTranslateTextOperator
+  type: Operators
+  description: Translate a string or list of strings.
+- name: CloudTasksQueueUpdateOperator
+  type: Operators
+  description: Updates a queue in Cloud Tasks.
+- name: HdfsSensor
+  type: Sensors
+  description: Waits for a file or folder to land in HDFS
+- name: GoogleDisplayVideo360RunReportOperator
+  type: Operators
+  description: Runs a stored query to generate a report.
+- name: StackdriverDisableNotificationChannelsOperator
+  type: Operators
+  description: Disables one or more enabled notification channels identified by filter
+    parameter. Inoperative in case the policy is already disabled.
+- name: FTPSensor
+  type: Sensors
+  description: Waits for a file or directory to be present on FTP.
+- name: WorkflowsListWorkflowsOperator
+  type: Operators
+  description: Lists Workflows in a given project and location. The default order
+    is not specified.
+- name: OSSCreateBucketOperator
+  type: Operators
+  description: This operator creates an OSS bucket
+- name: GoogleCampaignManagerDeleteReportOperator
+  type: Operators
+  description: Deletes a report by its ID.
+- name: RedshiftPauseClusterOperator
+  type: Operators
+  description: Pause an AWS Redshift Cluster if it has status available.
+- name: OpsgenieCloseAlertOperator
+  type: Operators
+  description: This operator allows you to close alerts to Opsgenie. Accepts a connection
+    that has an Opsgenie API key as the connections password. This operator sets
+    the domain to conn_id.host, and if not set will default to api.opsgenie.com.
+- name: AsanaUpdateTaskOperator
+  type: Operators
+  description: This operator can be used to update Asana tasks. For more information
+    on Asana optional task parameters, see developers.asana.com/docs/update-a-task
+- name: QuboleFileSensor
+  type: Sensors
+  description: Wait for a file or folder to be present in cloud storage and check
+    for its presence via QDS APIs
+- name: CloudDLPUpdateJobTriggerOperator
+  type: Operators
+  description: Updates a job trigger.
+- name: DynamoDBHook
+  type: Hooks
+  description: Interact with AWS DynamoDB.
+- name: CloudDataCatalogDeleteTagOperator
+  type: Operators
+  description: Deletes a tag.
+- name: BigtableTableReplicationCompletedSensor
+  type: Sensors
+  description: Sensor that waits for Cloud Bigtable table to be fully replicated to
+    its clusters. No exception will be raised if the instance or the table does not
+    exist.
+- name: CloudDataCatalogSearchCatalogOperator
+  type: Operators
+  description: Searches Data Catalog for multiple resources like entries, tags that
+    match a query.
+- name: PapermillOperator
+  type: Operators
+  description: Executes a jupyter notebook through papermill that is annotated with
+    parameters
+- name: SambaHook
+  type: Hooks
+  description: Allows for interaction with a Samba server.
+- name: GoogleCampaignManagerDownloadReportOperator
+  type: Operators
+  description: Retrieves a report and uploads it to GCS bucket.
+- name: WorkflowsCancelExecutionOperator
+  type: Operators
+  description: Cancels an execution using the given workflow_id and execution_id.
+- name: CloudTranslateSpeechOperator
+  type: Operators
+  description: Recognizes speech in audio input and translates it.
+- name: AzureCosmosDocumentSensor
+  type: Sensors
+  description: Checks for the existence of a document which matches the given query
+    in CosmosDB. 
+- name: CloudTasksTasksListOperator
+  type: Operators
+  description: Lists the tasks in Cloud Tasks.
+- name: CloudDLPDeidentifyContentOperator
+  type: Operators
+  description: De-identifies potentially sensitive info from a ContentItem. This method
+    has limits on input size and output size.
+- name: BashOperator
+  type: Operators
+  description: Execute a Bash script, command or set of commands.
+- name: DmsDescribeTasksOperator
+  type: Operators
+  description: Describes AWS DMS replication tasks.
+- name: GCSObjectsWtihPrefixExistenceSensor
+  type: Sensors
+  description: This class is deprecated. Please use airflow.providers.google.cloud.sensors.gcs.GCSObjectsWithPrefixExistenceSensor.
+- name: BigQueryDataTransferServiceTransferRunSensor
+  type: Sensors
+  description: Waits for Data Transfer Service run to complete.
+- name: BigQueryToGCSOperator
+  type: Transfers
+  description: Transfers a BigQuery table to a Google Cloud Storage bucket.
+- name: CloudDLPCreateJobTriggerOperator
+  type: Operators
+  description: Creates a job trigger to run DLP actions such as scanning storage for
+    sensitive information on a set schedule.
+- name: GoogleSearchAdsHook
+  type: Hooks
+  description: Hook for Google Search Ads 360.
+- name: QuboleCheckOperator
+  type: Operators
+  description: Performs checks against Qubole Commands. QuboleCheckOperator expects
+    a command that will be executed on QDS. By default, each value on first row of
+    the result of this Qubole Command is evaluated using python bool casting. If any
+    of the values return False, the check is failed and errors out.
+- name: WasbDeleteBlobOperator
+  type: Operators
+  description: Deletes blob(s) on Azure Blob Storage.
+- name: DataprepGetJobGroupOperator
+  type: Operators
+  description: Get the specified job group. A job group is a job that is executed
+    from a specific node in a flow. API documentation clouddataprep.com/documentation/api#section/Overview
+- name: BaseBranchOperator
+  type: Operators
+  description: This is a base class for creating operators with branching functionality,
+    similarly to BranchPythonOperator.
+- name: AsanaDeleteTaskOperator
+  type: Operators
+  description: This operator can be used to delete Asana tasks.
+- name: DataflowJobMetricsSensor
+  type: Sensors
+  description: Checks the metrics of a job in Google Cloud Dataflow.
+- name: GoogleDisplayVideo360ReportSensor
+  type: Sensors
+  description: Sensor for detecting the completion of DV360 reports.
+- name: GoogleCampaignManagerBatchInsertConversionsOperator
+  type: Operators
+  description: Inserts conversions.
+- name: CloudDataCatalogLookupEntryOperator
+  type: Operators
+  description: Get an entry by target resource name.
+- name: SQSPublishOperator
+  type: Operators
+  description: This operator is deprecated. Please use airflow.providers.amazon.aws.operators.sqs.SqsPublishOperator.
+- name: PrestoToGCSOperator
+  type: Transfers
+  description: Copy data from PrestoDB to Google Cloud Storage in JSON or CSV format.
+- name: CloudTasksQueueCreateOperator
+  type: Operators
+  description: Creates a queue in Cloud Tasks.
+- name: CloudDLPInspectContentOperator
+  type: Operators
+  description: Finds potentially sensitive info in content. This method has limits
+    on input size, processing time, and output size.
+- name: EC2InstanceStateSensor
+  type: Sensors
+  description: Check the state of the AWS EC2 instance until state of the instance
+    become equal to the target state.
+- name: GoogleSheetsCreateSpreadsheetOperator
+  type: Operators
+  description: Creates a new spreadsheet.
+- name: CloudDataCatalogCreateEntryOperator
+  type: Operators
+  description: Creates an entry.
+- name: AWSDataSyncOperator
+  type: Operators
+  description: This operator is deprecated. Please use airflow.providers.amazon.aws.operators.datasync.DataSyncOperator.
+- name: CloudDLPCreateDLPJobOperator
+  type: Operators
+  description: Creates a new job to inspect storage or calculate risk metrics.
+- name: AutoMLTrainModelOperator
+  type: Operators
+  description: Creates Google Cloud AutoML model.
+- name: CassandraHook
+  type: Hooks
+  description: Hook used to interact with Cassandra
+- name: StackdriverHook
+  type: Hooks
+  description: Stackdriver Hook for connecting with Google Cloud Stackdriver
+- name: JiraTicketSensor
+  type: Sensors
+  description: Monitors a jira ticket for given change in terms of function.
+- name: SegmentHook
+  type: Hooks
+  description: Create new connection to Segment and allows you to pull data out of
+    Segment or write to it.
+- name: WorkflowsGetWorkflowOperator
+  type: Operators
+  description: Gets details of a single Workflow.
+- name: HdfsFolderSensor
+  type: Sensors
+  description: Waits for a non-empty directory
+- name: CassandraTableSensor
+  type: Sensors
+  description: Checks for the existence of a table in a Cassandra cluster.
+- name: GCSToGoogleSheetsOperator
+  type: Transfers
+  description: Uploads .csv file from Google Cloud Storage to provided Google Spreadsheet.
+- name: AthenaSensor
+  type: Sensors
+  description: Asks for the state of the Query until it reaches a failure state or
+    success state. If the query fails, the task will fail.
+- name: GoogleAnalyticsRetrieveAdsLinksListOperator
+  type: Operators
+  description: Lists webProperty-Google Ads links for a given web property
+- name: SingularityOperator
+  type: Operators
+  description: Execute a command inside a Singularity container
+- name: StepFunctionGetExecutionOutputOperator
+  type: Operators
+  description: An Operator that begins execution of an Step Function State Machine
+- name: CloudTasksTaskRunOperator
+  type: Operators
+  description: Forces to run a task in Cloud Tasks.
+- name: CloudNaturalLanguageAnalyzeSentimentOperator
+  type: Operators
+  description: Analyzes the sentiment of the provided text.
+- name: CloudDLPRedactImageOperator
+  type: Operators
+  description: Redacts potentially sensitive info from an image. This method has limits
+    on input size, processing time, and output size.
+- name: DrillOperator
+  type: Operators
+  description: Executes the provided SQL in the identified Drill environment.
+- name: CloudDatastoreAllocateIdsOperator
+  type: Operators
+  description: Allocate IDs for incomplete keys. Return list of keys.
+- name: SlackAPIOperator
+  type: Operators
+  description: Base Slack Operator The SlackAPIPostOperator is derived from this operator.
+    In the future additional Slack API Operators will be derived from this class as
+    well. Only one of slack_conn_id and token is required.
+- name: CloudFirestoreExportDatabaseOperator
+  type: Operators
+  description: Exports a copy of all or a subset of documents from Google Cloud Firestore
+    to another storage system, such as Google Cloud Storage.
+- name: GoogleSearchAdsDownloadReportOperator
+  type: Operators
+  description: Downloads a report to GCS bucket.
+- name: WasbPrefixSensor
+  type: Sensors
+  description: Waits for blobs matching a prefix to arrive on Azure Blob Storage.
+- name: CloudDatastoreRollbackOperator
+  type: Operators
+  description: Roll back a transaction.
+- name: GoogleAnalyticsDeletePreviousDataUploadsOperator
+  type: Operators
+  description: Deletes previous GA uploads to leave the latest file to control the
+    size of the Data Set Quota.
+- name: PlexusJobOperator
+  type: Operators
+  description: Submits a Plexus job.
+- name: CloudDLPCreateStoredInfoTypeOperator
+  type: Operators
+  description: Creates a pre-built stored infoType to be used for inspection.
+- name: CloudDataCatalogGetTagTemplateOperator
+  type: Operators
+  description: Gets a tag template.
+- name: GoogleAdsListAccountsOperator
+  type: Operators
+  description: Saves list of customers on GCS in form of a csv file.
+- name: DataFusionHook
+  type: Hooks
+  description: Hook for Google DataFusion.
+- name: WasbBlobSensor
+  type: Sensors
+  description: Waits for a blob to arrive on Azure Blob Storage.
+- name: CloudTasksQueuesListOperator
+  type: Operators
+  description: Lists queues from Cloud Tasks.
+- name: DmsTaskCompletedSensor
+  type: Sensors
+  description: Pokes DMS task until it is completed.
+- name: OSSDownloadObjectOperator
+  type: Operators
+  description: This operator to Download an OSS object
+- name: OracleToOracleOperator
+  type: Transfers
+  description: Moves data from Oracle to Oracle.
+- name: AzureDataFactoryPipelineRunStatusSensor
+  type: Sensors
+  description: Checks the status of a pipeline run.
+- name: DayOfWeekSensor
+  type: Sensors
+  description: Waits until the first specified day of the week. For example, if the
+    execution day of the task is 2018-12-22 (Saturday) and you pass FRIDAY, the
+    task will wait until next Friday.
+- name: SFTPToGCSOperator
+  type: Transfers
+  description: Transfer files to Google Cloud Storage from SFTP server.
+- name: CloudDLPReidentifyContentOperator
+  type: Operators
+  description: Re-identifies content that has been de-identified.
+- name: GoogleDataprepHook
+  type: Hooks
+  description: Hook for connection with Dataprep API. To get connection Dataprep with
+    Airflow you need Dataprep token. clouddataprep.com/documentation/api#section/Authentication
+- name: TableauJobStatusSensor
+  type: Sensors
+  description: Watches the status of a Tableau Server Job.
+- name: CloudTasksQueueGetOperator
+  type: Operators
+  description: Gets a queue from Cloud Tasks.
+- name: MongoToS3Operator
+  type: Transfers
+  description: Operator meant to move data from mongo via pymongo to s3 via boto.
+- name: ComputeEngineCopyInstanceTemplateOperator
+  type: Operators
+  description: Copies the instance template, applying specified changes.
+- name: AwsSnsHook
+  type: Hooks
+  description: This hook is deprecated. Please use airflow.providers.amazon.aws.hooks.sns.SnsHook.
+- name: CloudDLPGetDLPJobOperator
+  type: Operators
+  description: Gets the latest state of a long-running DlpJob.
+- name: StepFunctionExecutionSensor
+  type: Sensors
+  description: Asks for the state of the Step Function State Machine Execution until
+    it reaches a failure state or success state. If it fails, failing the task.
+- name: CloudDataTransferServiceS3ToGCSOperator
+  type: Operators
+  description: Synchronizes an S3 bucket with a Google Cloud Storage bucket using
+    the Google Cloud Storage Transfer Service.
+- name: CloudDatastoreImportEntitiesOperator
+  type: Operators
+  description: Import entities from Cloud Storage to Google Cloud Datastore
+- name: StackdriverListAlertPoliciesOperator
+  type: Operators
+  description: Fetches all the Alert Policies identified by the filter passed as filter
+    parameter. The desired return type can be specified by the format parameter, the
+    supported formats are “dict”, “json” and None which returns python dictionary,
+    stringified JSON and protobuf respectively.
+- name: LifeSciencesRunPipelineOperator
+  type: Operators
+  description: Runs a Life Sciences Pipeline
+- name: OSSDeleteObjectOperator
+  type: Operators
+  description: This operator to delete an OSS object
+- name: OracleToAzureDataLakeOperator
+  type: Transfers
+  description: Moves data from Oracle to Azure Data Lake. The operator runs the query
+    against Oracle and stores the file locally before loading it into Azure Data Lake.
+- name: EmailOperator
+  type: Operators
+  description: Sends an email.
+- name: SFTPSensor
+  type: Sensors
+  description: Waits for a file or directory to be present on SFTP.
+- name: DatadogHook
+  type: Hooks
+  description: Uses datadog API to send metrics of practically anything measurable,
+    so its possible to track
+- name: CloudDLPDeleteJobTriggerOperator
+  type: Operators
+  description: Deletes a job trigger.
+- name: CassandraToGCSOperator
+  type: Transfers
+  description: Copy data from Cassandra to Google Cloud Storage in JSON format
+- name: AwsGlueCatalogHook
+  type: Hooks
+  description: This hook is deprecated. Please use airflow.providers.amazon.aws.hooks.glue_catalog.GlueCatalogHook.
+- name: SageMakerEndpointSensor
+  type: Sensors
+  description: Asks for the state of the endpoint state until it reaches a terminal
+    state. If it fails the sensor errors, the task fails.
+- name: DmsCreateTaskOperator
+  type: Operators
+  description: Creates AWS DMS replication task.
+- name: SecretsManagerHook
+  type: Hooks
+  description: Hook for the Google Secret Manager API.
+- name: MySQLToGCSOperator
+  type: Transfers
+  description: Copy data from MySQL to Google Cloud Storage in JSON or CSV format.
+- name: QuboleSensor
+  type: Sensors
+  description: Base class for all Qubole Sensors
+- name: GoogleAdsHook
+  type: Hooks
+  description: Hook for the Google Ads API.
+- name: BigtableUpdateInstanceOperator
+  type: Operators
+  description: Updates an existing Cloud Bigtable instance.
+- name: JiraSensor
+  type: Sensors
+  description: Monitors a jira ticket for any change.
+- name: GoogleDriveToGCSOperator
+  type: Transfers
+  description: Writes a Google Drive file into Google Cloud Storage.
+- name: CloudDataCatalogCreateTagTemplateOperator
+  type: Operators
+  description: Creates a tag template.
+- name: LocalFilesystemToS3Operator
+  type: Transfers
+  description: Uploads a file from a local filesystem to Amazon S3.
+- name: LifeSciencesHook
+  type: Hooks
+  description: Hook for the Google Cloud Life Sciences APIs.
+- name: JiraOperator
+  type: Operators
+  description: JiraOperator to interact and perform action on Jira issue tracking
+    system. This operator is designed to use Jira Python SDK.
+- name: RedisPubSubSensor
+  type: Sensors
+  description: Redis sensor for reading a message from pub sub channels
+- name: CloudDatastoreDeleteOperationOperator
+  type: Operators
+  description: Deletes the long-running operation.
+- name: KylinHook
+  type: Hooks
+  description: Interact with Kylin to run CubeSource commands and get job status.
+- name: GoogleDisplayVideo360SDFtoGCSOperator
+  type: Operators
+  description: Download SDF media and save it in the Google Cloud Storage.
+- name: CloudDLPListJobTriggersOperator
+  type: Operators
+  description: Lists job triggers.
+- name: GlueCrawlerHook
+  type: Hooks
+  description: Interacts with AWS Glue Crawler.
+- name: BigtableCreateInstanceOperator
+  type: Operators
+  description: Creates a new Cloud Bigtable instance. If the Cloud Bigtable instance
+    with the given ID exists, the operator does not compare its configuration and
+    immediately succeeds. No changes are made to the existing instance.
+- name: CloudMemorystoreHook
+  type: Hooks
+  description: Hook for Google Cloud Memorystore APIs.
+- name: WasbTaskHandler
+  type: Log
+  description: WasbTaskHandler is a python log handler that handles and reads task
+    instance logs. It extends airflow FileTaskHandler and uploads to and reads from
+    Wasb remote storage.
+- name: SqlSensor
+  type: Sensors
+  description: Runs a sql statement repeatedly until a criteria is met. It will keep
+    trying until success or failure criteria are met, or if the first cell is not
+    in (0, 0, , None). Optional success and failure callables are called with
+    the first cell returned as the argument. If success callable is defined the sensor
+    will keep retrying until the criteria is met. If failure callable is defined and
+    the criteria is met the sensor will raise AirflowException. Failure criteria is
+    evaluated before success criteria. A fail_on_empty boolean can also be passed
+    to the sensor in which case it will fail if no rows have been returned
+- name: SecretsManagerHook
+  type: Hooks
+  description: Interact with Amazon SecretsManager Service.
+- name: GoogleCampaignManagerRunReportOperator
+  type: Operators
+  description: Runs a report.
+- name: CloudDataCatalogGetEntryOperator
+  type: Operators
+  description: Gets an entry.
+- name: CloudDataCatalogListTagsOperator
+  type: Operators
+  description: Lists the tags on an Entry.
+- name: GoogleDisplayVideo360DeleteReportOperator
+  type: Operators
+  description: Deletes a stored query as well as the associated stored reports.
+- name: OpsgenieAlertHook
+  type: Hooks
+  description: This hook allows you to post alerts to Opsgenie. Accepts a connection
+    that has an Opsgenie API key as the connections password. This hook sets the
+    domain to conn_id.host, and if not set will default to api.opsgenie.com.
+- name: SqsHook
+  type: Hooks
+  description: Interact with Amazon Simple Queue Service.
+- name: AzureBatchOperator
+  type: Operators
+  description: Executes a job on Azure Batch Service
+- name: ImapAttachmentToS3Operator
+  type: Transfers
+  description: Transfers a mail attachment from a mail server into s3 bucket.
+- name: OSSDeleteBucketOperator
+  type: Operators
+  description: This operator to delete an OSS bucket
+- name: StackdriverEnableNotificationChannelsOperator
+  type: Operators
+  description: Enables one or more disabled alerting policies identified by filter
+    parameter. Inoperative in case the policy is already enabled.
+- name: EC2StopInstanceOperator
+  type: Operators
+  description: Stop AWS EC2 instance using boto3.
+- name: SageMakerTrainingSensor
+  type: Sensors
+  description: Asks for the state of the training state until it reaches a terminal
+    state. If it fails the sensor errors, failing the task.
+- name: OpenFaasHook
+  type: Hooks
+  description: Interact with OpenFaaS to query, deploy, invoke and update function
+- name: RedisPublishOperator
+  type: Operators
+  description: Publish a message to Redis.
+- name: CloudDLPCancelDLPJobOperator
+  type: Operators
+  description: Starts asynchronous cancellation on a long-running DlpJob.
+- name: PigOperator
+  type: Operators
+  description: Executes pig script.
+- name: CloudTasksTaskDeleteOperator
+  type: Operators
+  description: Deletes a task from Cloud Tasks.
+- name: CloudDataCatalogUpdateTagTemplateFieldOperator
+  type: Operators
+  description: Updates a field in a tag template. This method cannot be used to update
+    the field type.
+- name: LevelDBOperator
+  type: Operators
+  description: Execute command in LevelDB
+- name: CloudDLPCreateInspectTemplateOperator
+  type: Operators
+  description: Creates an InspectTemplate for re-using frequently used configuration
+    for inspecting content, images, and storage.
+- name: DatadogSensor
+  type: Sensors
+  description: A sensor to listen, with a filter, to datadog event streams and determine
+    if some event was emitted.
+- name: AutoMLCreateDatasetOperator
+  type: Operators
+  description: Creates a Google Cloud AutoML dataset.
+- name: CloudDataCatalogUpdateEntryOperator
+  type: Operators
+  description: Updates an existing entry.
+- name: GoogleDisplayVideo360DownloadReportOperator
+  type: Operators
+  description: Retrieves a stored query.
+- name: TrinoToGCSOperator
+  type: Transfers
+  description: Copy data from TrinoDB to Google Cloud Storage in JSON or CSV format.
+- name: DataSyncOperator
+  type: Operators
+  description: Find, Create, Update, Execute and Delete AWS DataSync Tasks.
+- name: StackdriverDisableAlertPoliciesOperator
+  type: Operators
+  description: Disables one or more enabled alerting policies identified by filter
+    parameter. Inoperative in case the policy is already disabled.
+- name: WebHDFSHook
+  type: Hooks
+  description: Interact with HDFS. This class is a wrapper around the hdfscli library.
+- name: GoogleDisplayVideo360UploadLineItemsOperator
+  type: Operators
+  description: Uploads line items in CSV format.
+- name: CloudDataCatalogDeleteTagTemplateOperator
+  type: Operators
+  description: Deletes a tag template and all tags using the template.
+- name: GlacierToGCSOperator
+  type: Transfers
+  description: Transfers data from Amazon Glacier to Google Cloud Storage
+- name: AzureFileShareToGCSOperator
+  type: Transfers
+  description: Synchronizes a Azure FileShare directory content (excluding subdirectories),
+    possibly filtered by a prefix, with a Google Cloud Storage destination path.
+- name: ComputeEngineInstanceGroupUpdateManagerTemplateOperator
+  type: Operators
+  description: Patches the Instance Group Manager, replacing source template URL with
+    the destination one. API V1 does not have update/patch operations for Instance
+    Group Manager, so you must use beta or newer API version. Beta is the default.
+- name: DmsHook
+  type: Hooks
+  description: Interact with AWS Database Migration Service.
+- name: FTPSSensor
+  type: Sensors
+  description: Waits for a file or directory to be present on FTP over SSL.
+- name: CloudFormationCreateStackSensor
+  type: Sensors
+  description: Waits for a stack to be created successfully on AWS CloudFormation.
+- name: ADLSToGCSOperator
+  type: Transfers
+  description: Synchronizes an Azure Data Lake Storage path with a GCS bucket
+- name: ExasolToS3Operator
+  type: Transfers
+  description: Export data from Exasol database to AWS S3 bucket.
+- name: HivePartitionSensor
+  type: Sensors
+  description: Waits for a partition to show up in Hive.
+- name: CloudDataTransferServiceJobStatusSensor
+  type: Sensors
+  description: Waits for at least one operation belonging to the job to have the expected
+    status.
+- name: LocalFilesystemToGCSOperator
+  type: Transfers
+  description: Uploads a file or list of files to Google Cloud Storage. Optionally
+    can compress the file for upload.
+- name: AzureBlobStorageToGCSOperator
+  type: Transfers
+  description: Operator transfers data from Azure Blob Storage to specified bucket
+    in Google Cloud Storage
+- name: SnsHook
+  type: Hooks
+  description: Interact with Amazon Simple Notification Service.
+- name: CloudMemorystoreMemcachedHook
+  type: Hooks
+  description: Hook for Google Cloud Memorystore for Memcached service APIs.
+- name: AutoMLTablesListTableSpecsOperator
+  type: Operators
+  description: Lists table specs in a dataset.
+- name: CloudDataCatalogRenameTagTemplateFieldOperator
+  type: Operators
+  description: Renames a field in a tag template.
+- name: AWSCloudFormationHook
+  type: Hooks
+  description: This hook is deprecated. Please use airflow.providers.amazon.aws.hooks.cloud_formation.CloudFormationHook.
+- name: AwsFirehoseHook
+  type: Hooks
+  description: This hook is deprecated. Please use airflow.providers.amazon.aws.hooks.kinesis.FirehoseHook.
+- name: GoogleCalendarHook
+  type: Hooks
+  description: Interact with Google Calendar via Google Cloud connection Reading
+    and writing cells in Google Sheet
+- name: StackdriverDeleteAlertOperator
+  type: Operators
+  description: Deletes an alerting policy.
+- name: AutoMLBatchPredictOperator
+  type: Operators
+  description: Perform a batch prediction on Google Cloud AutoML.
+- name: BashSensor
+  type: Sensors
+  description: Executes a bash command/script and returns True if and only if the
+    return code is 0.
+- name: CloudDLPGetStoredInfoTypeOperator
+  type: Operators
+  description: Gets a stored infoType.
+- name: DataflowJobAutoScalingEventsSensor
+  type: Sensors
+  description: Checks for the job autoscaling event in Google Cloud Dataflow.
+- name: HiveStatsCollectionOperator
+  type: Operators
+  description: Gathers partition statistics using a dynamically generated Presto query,
+    inserts the stats into a MySql table with this format. Stats overwrite themselves
+    if you rerun the same date/partition.
+- name: ADLSDeleteOperator
+  type: Operators
+  description: Delete files in the specified path.
+- name: CloudDataCatalogCreateEntryGroupOperator
+  type: Operators
+  description: Creates an EntryGroup.
+- name: DingdingOperator
+  type: Operators
+  description: This operator allows you send Dingding message using Dingding custom
+    bot. Get Dingding token from conn_id.password. And prefer set domain to conn_id.host,
+    if not will use default oapi.dingtalk.com.
+- name: CloudDatastoreExportEntitiesOperator
+  type: Operators
+  description: Export entities from Google Cloud Datastore to Cloud Storage
+- name: CloudDLPListStoredInfoTypesOperator
+  type: Operators
+  description: Lists stored infoTypes.
+- name: SqliteHook
+  type: Hooks
+  description: Interact with SQLite.
+- name: SFTPOperator
+  type: Operators
+  description: SFTPOperator for transferring files from remote host to local or vice
+    a versa. This operator uses ssh_hook to open sftp transport channel that serve
+    as basis for file transfer.
+- name: DmsStartTaskOperator
+  type: Operators
+  description: Starts AWS DMS replication task.
+- name: CloudDataTransferServiceResumeOperationOperator
+  type: Operators
+  description: Resumes a transfer operation in Google Storage Transfer Service.
+- name: CloudFunctionInvokeFunctionOperator
+  type: Operators
+  description: Invokes a deployed Cloud Function. To be used for testing purposes
+    as very limited traffic is allowed.
+- name: MetastoreBackend
+  type: Secrets
+  description: Retrieves Connection object and Variable from airflow metastore database.
+- name: SparkJDBCHook
+  type: Hooks
+  description: This hook extends the SparkSubmitHook specifically for performing data
+    transfers to/from JDBC-based databases with Apache Spark.
+- name: AWSDataSyncHook
+  type: Hooks
+  description: This hook is deprecated. Please use airflow.providers.amazon.aws.hooks.datasync.DataSyncHook.
+- name: HDFSHook
+  type: Hooks
+  description: Interact with HDFS. This class is a wrapper around the snakebite library.
+- name: CloudDLPListInfoTypesOperator
+  type: Operators
+  description: Returns a list of the sensitive information types that the DLP API
+    supports.
+- name: PinotAdminHook
+  type: Hooks
+  description: This hook is a wrapper around the pinot-admin.sh script. For now, only
+    small subset of its subcommands are implemented, which are required to ingest
+    offline data into Apache Pinot (i.e., AddSchema, AddTable, CreateSegment, and
+    UploadSegment). Their command options are based on Pinot v0.1.0.
+- name: GoogleCampaignManagerInsertReportOperator
+  type: Operators
+  description: Creates a report.
+- name: CloudDLPListDeidentifyTemplatesOperator
+  type: Operators
+  description: Lists DeidentifyTemplates.
+- name: AutoMLDeployModelOperator
+  type: Operators
+  description: Deploys a model. If a model is already deployed, deploying it with
+    the same parameters has no effect. Deploying with different parameters (as e.g.
+    changing node_number) will reset the deployment state without pausing the model_ids
+    availability.
+- name: GoogleDriveFileExistenceSensor
+  type: Sensors
+  description: Checks for the existence of a file in Google Cloud Storage.
+- name: DruidOperator
+  type: Operators
+  description: Allows to submit a task directly to druid
+- name: StackdriverListNotificationChannelsOperator
+  type: Operators
+  description: Fetches all the Notification Channels identified by the filter passed
+    as filter parameter. The desired return type can be specified by the format parameter,
+    the supported formats are “dict”, “json” and None which returns python dictionary,
+    stringified JSON and protobuf respectively.
+- name: GoogleCampaignManagerBatchUpdateConversionsOperator
+  type: Operators
+  description: Updates existing conversions.
+- name: AirbyteTriggerSyncOperator
+  type: Operators
+  description: This operator allows you to submit a job to an Airbyte server to run
+    a integration process between your source and destination.
+- name: RedshiftHook
+  type: Hooks
+  description: Interact with AWS Redshift, using the boto3 library
+- name: AzureContainerInstanceHook
+  type: Hooks
+  description: A hook to communicate with Azure Container Instances.
+- name: DataprocHook
+  type: Hooks
+  description: A base hook for Yandex.Cloud Data Proc.
+- name: ImapHook
+  type: Hooks
+  description: This hook connects to a mail server by using the imap protocol.
+- name: CloudTasksQueueDeleteOperator
+  type: Operators
+  description: Deletes a queue from Cloud Tasks, even if it has tasks in it.
+- name: Neo4jHook
+  type: Hooks
+  description: Interact with Neo4j.
+- name: BigQueryToMySqlOperator
+  type: Transfers
+  description: Fetches the data from a BigQuery table (alternatively fetch data for
+    selected columns) and insert that data into a MySQL table.
+- name: CloudDLPGetDLPJobTriggerOperator
+  type: Operators
+  description: Gets a job trigger.
+- name: GoogleAnalyticsGetAdsLinkOperator
+  type: Operators
+  description: Returns a web property-Google Ads link to which the user has access.
+- name: SegmentTrackEventOperator
+  type: Operators
+  description: Send Track Event to Segment for a specified user_id and event
+- name: GoogleCampaignManagerHook
+  type: Hooks
+  description: Hook for Google Campaign Manager.
+- name: FirehoseHook
+  type: Hooks
+  description: Interact with AWS Kinesis Firehose.
+- name: DataflowJobMessagesSensor
+  type: Sensors
+  description: Checks for the job message in Google Cloud Dataflow.
+- name: S3ToHiveOperator
+  type: Transfers
+  description: Moves data from S3 to Hive. The operator downloads a file from S3,
+    stores the file locally before loading it into a Hive table. If the create or
+    recreate arguments are set to True, a CREATE TABLE and DROP TABLE statements are
+    generated. Hive data types are inferred from the cursors metadata from.
+- name: S3ToFTPOperator
+  type: Transfers
+  description: This operator enables the transferring of files from S3 to a FTP server.
+- name: CloudDataCatalogDeleteTagTemplateFieldOperator
+  type: Operators
+  description: Deletes a field in a tag template and all uses of that field.
+- name: RedshiftSQLHook
+  type: Hooks
+  description: Execute statements against Amazon Redshift, using redshift_connector
+- name: S3ToRedshiftOperator
+  type: Transfers
+  description: Executes an COPY command to load files from s3 to Redshift
+- name: LocalToAzureDataLakeStorageOperator
+  type: Transfers
+  description: This class is deprecated. Please use airflow.providers.microsoft.azure.transfers.local_to_adls.LocalFilesystemToADLSOperator.
+- name: DruidHook
+  type: Hooks
+  description: Connection to Druid overlord for ingestion
+- name: GrpcOperator
+  type: Operators
+  description: Calls a gRPC endpoint to execute an action
+- name: CloudNaturalLanguageClassifyTextOperator
+  type: Operators
+  description: Classifies a document into categories.
+- name: AutoMLTablesUpdateDatasetOperator
+  type: Operators
+  description: Updates a dataset.
+- name: AwsGlueJobHook
+  type: Hooks
+  description: This hook is deprecated. Please use airflow.providers.amazon.aws.hooks.glue.GlueJobHook.
+- name: MetastorePartitionSensor
+  type: Sensors
+  description: An alternative to the HivePartitionSensor that talk directly to the
+    MySQL db. This was created as a result of observing sub optimal queries generated
+    by the Metastore thrift service when hitting subpartitioned tables. The Thrift
+    services queries were written in a way that wouldnt leverage the indexes.
+- name: BatchWaitersHook
+  type: Hooks
+  description: A utility to manage waiters for AWS Batch services.
+- name: DatastoreHook
+  type: Hooks
+  description: Interact with Google Cloud Datastore. This hook uses the Google Cloud
+    connection.
+- name: GlacierJobOperationSensor
+  type: Sensors
+  description: Glacier sensor for checking job state. This operator runs only in reschedule
+    mode.
+- name: AutoMLDeleteModelOperator
+  type: Operators
+  description: Delete Google Cloud AutoML model.
+- name: OSSKeySensor
+  type: Sensors
+  description: Waits for a key (a file-like instance on OSS) to be present in a OSS
+    bucket. OSS being a key/value it does not support folders. The path is just a
+    key a resource.
+- name: CloudDataCatalogUpdateTagTemplateOperator
+  type: Operators
+  description: Updates a tag template.
+- name: ComputeEngineSetMachineTypeOperator
+  type: Operators
+  description: the request.
+- name: CloudTasksTaskGetOperator
+  type: Operators
+  description: Gets a task from Cloud Tasks.
+- name: CloudNaturalLanguageAnalyzeEntitySentimentOperator
+  type: Operators
+  description: Finds entities, similar to AnalyzeEntities in the text and analyzes
+    sentiment associated with each entity and its mentions.
+- name: SparkJDBCOperator
+  type: Operators
+  description: This operator extends the SparkSubmitOperator specifically for performing
+    data transfers to/from JDBC-based databases with Apache Spark. As with the SparkSubmitOperator,
+    it assumes that the “spark-submit” binary is available on the PATH.
+- name: ComputeEngineStartInstanceOperator
+  type: Operators
+  description: Starts an instance in Google Compute Engine.
+- name: LivySensor
+  type: Sensors
+  description: Monitor a Livy sessions for termination.
+- name: GoogleDisplayVideo360DownloadLineItemsOperator
+  type: Operators
+  description: Retrieves line items in CSV format.
+- name: NamedHivePartitionSensor
+  type: Sensors
+  description: Waits for a set of partitions to show up in Hive.
+- name: HdfsRegexSensor
+  type: Sensors
+  description: Waits for matching files by matching on regex
+- name: CloudFormationHook
+  type: Hooks
+  description: Interact with AWS CloudFormation.
+- name: CloudTextToSpeechSynthesizeOperator
+  type: Operators
+  description: Synthesizes text to speech and stores it in Google Cloud Storage
+- name: JiraHook
+  type: Hooks
+  description: Jira interaction hook, a Wrapper around JIRA Python SDK.
+- name: GoogleSheetsToGCSOperator
+  type: Transfers
+  description: Writes Google Sheet data into Google Cloud Storage.
+- name: BigQueryToMsSqlOperator
+  type: Transfers
+  description: Fetches the data from a BigQuery table (alternatively fetch data for
+    selected columns) and insert that data into a MSSQL table.
+- name: BigtableUpdateClusterOperator
+  type: Operators
+  description: Updates a Cloud Bigtable cluster.
+- name: CloudDatastoreGetOperationOperator
+  type: Operators
+  description: Gets the latest state of a long-running operation.
+- name: DmsDeleteTaskOperator
+  type: Operators
+  description: Deletes AWS DMS replication task.
+- name: SecretsManagerBackend
+  type: Secrets
+  description: Retrieves Connection or Variables from AWS Secrets Manager
+- name: AwsBatchClientHook
+  type: Hooks
+  description: This hook is deprecated. Please use airflow.providers.amazon.aws.hooks.batch.BatchClientHook.
+- name: CloudDataCatalogGetEntryGroupOperator
+  type: Operators
+  description: Gets an entry group.
+- name: TimeDeltaSensor
+  type: Sensors
+  description: Waits for a timedelta after the tasks execution_date + schedule_interval.
+    In Airflow, the daily task stamped with execution_date 2016-01-01 can only start
+    running on 2016-01-02. The timedelta here represents the time after the execution
+    period has closed.
+- name: CloudDLPGetDeidentifyTemplateOperator
+  type: Operators
+  description: Gets a DeidentifyTemplate.
+- name: CloudDataCatalogUpdateTagOperator
+  type: Operators
+  description: Updates an existing tag.
+- name: SageMakerTransformSensor
+  type: Sensors
+  description: Asks for the state of the transform state until it reaches a terminal
+    state. The sensor will error if the job errors, throwing a AirflowException containing
+    the failure reason.
+- name: VaultBackend
+  type: Secrets
+  description: Retrieves Connections and Variables from Hashicorp Vault.
+- name: CloudDLPDeleteDeidentifyTemplateOperator
+  type: Operators
+  description: Deletes a DeidentifyTemplate.
+- name: CloudTasksQueueResumeOperator
+  type: Operators
+  description: Resumes a queue in Cloud Tasks.
+- name: CloudDataCatalogCreateTagTemplateFieldOperator
+  type: Operators
+  description: Creates a field in a tag template.
+- name: SystemsManagerParameterStoreBackend
+  type: Secrets
+  description: Retrieves Connection or Variables from AWS SSM Parameter Store
+- name: TelegramOperator
+  type: Operators
+  description: This operator allows you to post messages to Telegram using Telegram
+    Bot API. Takes both Telegram Bot API token directly or connection that has Telegram
+    token in password field. If both supplied, token parameter will be given precedence.
+- name: AwsGlueCrawlerHook
+  type: Hooks
+  description: This hook is deprecated. Please use airflow.providers.amazon.aws.hooks.glue_crawler.GlueCrawlerHook.
+- name: PythonSensor
+  type: Sensors
+  description: Waits for a Python callable to return True.
+- name: DataSyncHook
+  type: Hooks
+  description: Interact with AWS DataSync.
+- name: AirbyteHook
+  type: Hooks
+  description: Hook for Airbyte API
+- name: ExasolHook
+  type: Hooks
+  description: Interact with Exasol.
+- name: CloudDataTransferServiceDeleteJobOperator
+  type: Operators
+  description: Delete a transfer job. This is a soft delete. After a transfer job
+    is deleted, the job and all the transfer executions are subject to garbage collection.
+    Transfer jobs become eligible for garbage collection 30 days after soft delete.
+- name: CloudDLPDeleteStoredInfoTypeOperator
+  type: Operators
+  description: Deletes a stored infoType.
+- name: CloudVideoIntelligenceDetectVideoExplicitContentOperator
+  type: Operators
+  description: Performs video annotation, annotating explicit content.
+- name: CloudDLPListDLPJobsOperator
+  type: Operators
+  description: Lists DlpJobs that match the specified filter in the request.
+- name: AutoMLPredictOperator
+  type: Operators
+  description: Runs prediction operation on Google Cloud AutoML.
+- name: GoogleAnalyticsModifyFileHeadersDataImportOperator
+  type: Operators
+  description: GA has a very particular naming convention for Data Import. 
+- name: GrpcHook
+  type: Hooks
+  description: General interaction with gRPC servers.
+- name: SFTPToS3Operator
+  type: Transfers
+  description: This operator enables the transferring of files from a SFTP server
+    to Amazon S3.
+- name: CloudDatastoreBeginTransactionOperator
+  type: Operators
+  description: Begins a new transaction. Returns a transaction handle.
+- name: WorkflowsListExecutionsOperator
+  type: Operators
+  description: Returns a list of executions which belong to the workflow with the
+    given name. The method returns executions of all workflow revisions. Returned
+    executions are ordered by their start time (newest first).
+- name: ElasticsearchHook
+  type: Hooks
+  description: Interact with Elasticsearch through the elasticsearch-dbapi.
+- name: ComputeEngineStopInstanceOperator
+  type: Operators
+  description: Stops an instance in Google Compute Engine.
+- name: CloudFunctionDeployFunctionOperator
+  type: Operators
+  description: Creates a function in Google Cloud Functions. If a function with this
+    name already exists, it will be updated.
+- name: GoogleAnalyticsDataImportUploadOperator
+  type: Operators
+  description: Take a file from Cloud Storage and uploads it to GA via data import
+    API.
+- name: TableauHook
+  type: Hooks
+  description: Connects to the Tableau Server Instance and allows to communicate with
+    it.
+- name: CloudDataCatalogDeleteEntryOperator
+  type: Operators
+  description: Deletes an existing entry.
+- name: GCSToGoogleDriveOperator
+  type: Transfers
+  description: Copies objects from a Google Cloud Storage service to a Google Drive
+    service, with renaming if requested.
+- name: StepFunctionHook
+  type: Hooks
+  description: Interact with an AWS Step Functions State Machine.
+- name: WinRMOperator
+  type: Operators
+  description: WinRMOperator to execute commands on given remote host using the winrm_hook.
+- name: DiscordWebhookHook
+  type: Hooks
+  description: This hook allows you to post messages to Discord using incoming webhooks.
+    Takes a Discord connection ID with a default relative webhook endpoint. The default
+    endpoint can be overridden using the webhook_endpoint parameter (discordapp.com/developers/docs/resources/webhook).
+- name: S3ToMySqlOperator
+  type: Transfers
+  description: Loads a file from S3 into a MySQL table.
+- name: ADLSListOperator
+  type: Operators
+  description: List all files from the specified path
+- name: AzureContainerInstancesOperator
+  type: Operators
+  description: Start a container on Azure Container Instances
+- name: SalesforceToS3Operator
+  type: Transfers
+  description: Submits a Salesforce query and uploads the results to AWS S3.
+- name: GCSObjectsWithPrefixExistenceSensor
+  type: Sensors
+  description: Checks for the existence of GCS objects at a given prefix, passing
+    matches via XCom.
+- name: AutoMLTablesListColumnSpecsOperator
+  type: Operators
+  description: Lists column specs in a table.
+- name: SQLToGoogleSheetsOperator
+  type: Transfers
+  description: Copy data from SQL results to provided Google Spreadsheet.
+- name: BigtableDeleteInstanceOperator
+  type: Operators
+  description: Deletes the Cloud Bigtable instance, including its clusters and all
+    related tables.
+- name: CloudDataTransferServiceCancelOperationOperator
+  type: Operators
+  description: Cancels a transfer operation in Google Storage Transfer Service.
+- name: BatchClientHook
+  type: Hooks
+  description: A client for AWS Batch services.
+- name: ComputeEngineBaseOperator
+  type: Operators
+  description: Abstract base operator for Google Compute Engine operators to inherit
+    from.
+- name: OracleToGCSOperator
+  type: Transfers
+  description: Copy data from Oracle to Google Cloud Storage in JSON or CSV format.
+- name: CloudDatastoreRunQueryOperator
+  type: Operators
+  description: Run a query for entities. Returns the batch of query results.
+- name: CloudFormationDeleteStackSensor
+  type: Sensors
+  description: Waits for a stack to be deleted successfully on AWS CloudFormation.
+- name: SparkSubmitOperator
+  type: Operators
+  description: This hook is a wrapper around the spark-submit binary to kick off a
+    spark-submit job. It requires that the “spark-submit” binary is in the PATH or
+    the spark-home is set in the extra on the connection.
+- name: BigtableDeleteTableOperator
+  type: Operators
+  description: Deletes the Cloud Bigtable table.
+- name: StackdriverDeleteNotificationChannelOperator
+  type: Operators
+  description: Deletes a notification channel.
+- name: ImapAttachmentSensor
+  type: Sensors
+  description: Waits for a specific attachment on a mail server.
+- name: CloudDataFusionPipelineStateSensor
+  type: Sensors
+  description: Check the status of the pipeline in the Google Cloud Data Fusion
+- name: WorkflowsUpdateWorkflowOperator
+  type: Operators
+  description: Updates an existing workflow. Running this method has no impact on
+    already running executions of the workflow. A new revision of the workflow may
+    be created as a result of a successful update operation. In that case, such revision
+    will be used in new workflow executions.
+- name: DingdingHook
+  type: Hooks
+  description: This hook allows you send Dingding message using Dingding custom bot.
+    Get Dingding token from conn_id.password. And prefer set domain to conn_id.host,
+    if not will use default oapi.dingtalk.com.
+- name: ElastiCacheReplicationGroupHook
+  type: Hooks
+  description: Interact with AWS ElastiCache
+- name: AzureDataExplorerQueryOperator
+  type: Operators
+  description: Operator for querying Azure Data Explorer (Kusto).
+- name: CloudDLPListInspectTemplatesOperator
+  type: Operators
+  description: Lists InspectTemplates.
+- name: CloudDataTransferServiceUpdateJobOperator
+  type: Operators
+  description: Updates a transfer job that runs periodically.
+- name: BranchDateTimeOperator
+  type: Operators
+  description: Branches into one of two lists of tasks depending on the current datetime.
+    For more information on how to use this operator, take a look at the guide. BranchDateTimeOperator
+- name: SlackAPIFileOperator
+  type: Operators
+  description: Send a file to a slack channel
+- name: MongoSensor
+  type: Sensors
+  description: Checks for the existence of a document which matches the given query
+    in MongoDB.
+- name: AsanaFindTaskOperator
+  type: Operators
+  description: This operator can be used to retrieve Asana tasks that match various
+    filters. See developers.asana.com/docs/update-a-task for a list of possible
+    filters.
+- name: StackdriverUpsertAlertOperator
+  type: Operators
+  description: Creates a new alert or updates an existing policy identified the name
+    field in the alerts parameter.
+- name: SQSHook
+  type: Hooks
+  description: This hook is deprecated. Please use airflow.providers.amazon.aws.hooks.sqs.SqsHook.
+- name: DmsStopTaskOperator
+  type: Operators
+  description: Stops AWS DMS replication task.
+- name: StackdriverUpsertNotificationChannelOperator
+  type: Operators
+  description: Creates a new notification or updates an existing notification channel
+    identified the name field in the alerts parameter.
+- name: GCSToSFTPOperator
+  type: Transfers
+  description: Transfer files from a Google Cloud Storage bucket to SFTP server.
+- name: CloudDLPGetInspectTemplateOperator
+  type: Operators
+  description: Gets an InspectTemplate.
+- name: CloudFirestoreHook
+  type: Hooks
+  description: Hook for the Google Firestore APIs.
+- name: GoogleDiscoveryApiHook
+  type: Hooks
+  description: A hook to use the Google API Discovery Service.
+- name: CloudDataTransferServiceCreateJobOperator
+  type: Operators
+  description: Creates a transfer job that runs periodically.
+- name: WorkflowExecutionSensor
+  type: Sensors
+  description: Checks state of an execution for the given workflow_id and execution_id.
+- name: GoogleSearchAdsInsertReportOperator
+  type: Operators
+  description: Inserts a report request into the reporting system.
+- name: DockerSwarmOperator
+  type: Operators
+  description: Execute a command as an ephemeral docker swarm service. Example use-case
+    - Using Docker Swarm orchestration to make one-time scripts highly available.
+- name: DataflowJobStatusSensor
+  type: Sensors
+  description: Checks for the status of a job in Google Cloud Dataflow.
+- name: AutoMLListDatasetOperator
+  type: Operators
+  description: Lists AutoML Datasets in project.
+- name: GSheetsHook
+  type: Hooks
+  description: Interact with Google Sheets via Google Cloud connection Reading and
+    writing cells in Google Sheet. developers.google.com/sheets/api/guides/values
+- name: GlueCatalogHook
+  type: Hooks
+  description: Interact with AWS Glue Catalog
+- name: GoogleDisplayVideo360CreateReportOperator
+  type: Operators
+  description: Creates a query.
+- name: SparkSqlHook
+  type: Hooks
+  description: This hook is a wrapper around the spark-sql binary. It requires that
+    the “spark-sql” binary is in the PATH.
+- name: CloudSecretManagerBackend
+  type: Secrets
+  description: Retrieves Connection object from Google Cloud Secrets Manager
+- name: WorkflowsDeleteWorkflowOperator
+  type: Operators
+  description: Deletes a workflow with the specified name. This method also cancels
+    and deletes all running executions of the workflow.
+- name: WorkflowsGetExecutionOperator
+  type: Operators
+  description: Returns an execution for the given workflow_id and execution_id.
+- name: CloudTasksTaskCreateOperator
+  type: Operators
+  description: Creates a task in Cloud Tasks.
+- name: SparkKubernetesOperator
+  type: Operators
+  description: Creates sparkApplication object in kubernetes cluster.
+- name: AutoMLGetModelOperator
+  type: Operators
+  description: Get Google Cloud AutoML model.
+- name: GlueJobHook
+  type: Hooks
+  description: Interact with AWS Glue - create job, trigger, crawler
+- name: TableauOperator
+  type: Operators
+  description: Execute a Tableau API Resource tableau.github.io/server-client-python/docs/api-ref
+- name: StepFunctionStartExecutionOperator
+  type: Operators
+  description: An Operator that begins execution of an Step Function State Machine
+- name: CloudDLPUpdateInspectTemplateOperator
+  type: Operators
+  description: Updates the InspectTemplate.
+- name: CloudFunctionsHook
+  type: Hooks
+  description: Hook for the Google Cloud Functions APIs.
+- name: TableauRefreshWorkbookOperator
+  type: Operators
+  description: This operator is deprecated. Please use airflow.providers.tableau.operators.tableau.
+- name: EC2Hook
+  type: Hooks
+  description: Interact with AWS EC2 Service.
+- name: SalesforceApexRestOperator
+  type: Operators
+  description: Execute a APEX Rest API action
+- name: CassandraRecordSensor
+  type: Sensors
+  description: Checks for the existence of a record in a Cassandra cluster.
+- name: CloudDataTransferServiceListOperationsOperator
+  type: Operators
+  description: Lists long-running operations in Google Storage Transfer Service that
+    match the specified filter.
+- name: CloudVideoIntelligenceDetectVideoLabelsOperator
+  type: Operators
+  description: Performs video annotation, annotating video labels.
+- name: CloudDataCatalogCreateTagOperator
+  type: Operators
+  description: Creates a tag on an entry.
+- name: GCSObjectUpdateSensor
+  type: Sensors
+  description: Checks if an object is updated in Google Cloud Storage.
+- name: GoogleDisplayVideo360CreateSDFDownloadTaskOperator
+  type: Operators
+  description: Creates SDF operation task.
+- name: DruidDbApiHook
+  type: Hooks
+  description: Interact with Druid broker
+- name: AWSAthenaOperator
+  type: Operators
+  description: This operator is deprecated. Please use airflow.providers.amazon.aws.operators.athena.AthenaOperator.
+- name: AutoMLImportDataOperator
+  type: Operators
+  description: Imports data to a Google Cloud AutoML dataset.
+- name: MSSQLToGCSOperator
+  type: Transfers
+  description: Copy data from Microsoft SQL Server to Google Cloud Storage in JSON
+    or CSV format.
+- name: BigtableCreateTableOperator
+  type: Operators
+  description: Creates the table in the Cloud Bigtable instance.
+- name: CloudDLPCreateDeidentifyTemplateOperator
+  type: Operators
+  description: Creates a DeidentifyTemplate for re-using frequently used configuration
+    for de-identifying content, images, and storage.
+- name: CloudDataTransferServicePauseOperationOperator
+  type: Operators
+  description: Pauses a transfer operation in Google Storage Transfer Service.
+- name: OSSUploadObjectOperator
+  type: Operators
+  description: This operator to upload an file-like object
+- name: ComputeEngineHook
+  type: Hooks
+  description: Hook for Google Compute Engine APIs.
+- name: DataprepGetJobsForJobGroupOperator
+  type: Operators
+  description: Get information about the batch jobs within a Cloud Dataprep job. API
+    documentation clouddataprep.com/documentation/api#section/Overview
+- name: EC2StartInstanceOperator
+  type: Operators
+  description: Start AWS EC2 instance using boto3.
+- name: SqsPublishOperator
+  type: Operators
+  description: Publish message to a SQS queue.
+- name: AzureCosmosInsertDocumentOperator
+  type: Operators
+  description: Inserts a new document into the specified Cosmos database and collection
+    It will create both the database and collection if they do not already exist
+- name: Neo4jOperator
+  type: Operators
+  description: Executes sql code in a specific Neo4j database
+- name: CloudDLPDeleteInspectTemplateOperator
+  type: Operators
+  description: Deletes an InspectTemplate.
+- name: AirbyteJobSensor
+  type: Sensors
+  description: Check for the state of a previously submitted Airbyte job.
+- name: GlacierCreateJobOperator
+  type: Operators
+  description: Initiate an Amazon Glacier inventory-retrieval job
+- name: DateTimeSensor
+  type: Sensors
+  description: Waits until the specified datetime.
+- name: DmsTaskBaseSensor
+  type: Sensors
+  description: Contains general sensor behavior for DMS task.
+- name: GoogleDriveToLocalOperator
+  type: Transfers
+  description: Writes a Google Drive file into local Storage.
+- name: WorkflowsCreateExecutionOperator
+  type: Operators
+  description: Creates a new execution using the latest revision of the given workflow.
+- name: AwsGlueCatalogPartitionSensor
+  type: Sensors
+  description: This sensor is deprecated. Please use airflow.providers.amazon.aws.sensors.glue_catalog_partition.GlueCatalogPartitionSensor.
+- name: GoogleAnalyticsHook
+  type: Hooks
+  description: Hook for Google Analytics 360.
+- name: S3ToSnowflakeOperator
+  type: Transfers
+  description: Executes an COPY command to load files from s3 to Snowflake
+- name: GoogleDisplayVideo360Hook
+  type: Hooks
+  description: Hook for Google Display & Video 360.
+- name: CloudTasksQueuePurgeOperator
+  type: Operators
+  description: Purges a queue by deleting all of its tasks from Cloud Tasks.
+- name: GCSUploadSessionCompleteSensor
+  type: Sensors
+  description: Checks for changes in the number of objects at prefix in Google Cloud
+    Storage bucket and returns True if the inactivity period has passed with no increase
+    in the number of objects. Note, this sensor will no behave correctly in reschedule
+    mode, as the state of the listed objects in the GCS bucket will be lost between
+    rescheduled invocations.
+- name: AwsDynamoDBHook
+  type: Hooks
+  description: This class is deprecated. Please use airflow.providers.amazon.aws.hooks.dynamodb.DynamoDBHook.
+- name: TelegramHook
+  type: Hooks
+  description: This hook allows you to post messages to Telegram using the telegram
+    python-telegram-bot library.
+- name: MLEngineHook
+  type: Hooks
+  description: Hook for Google ML Engine APIs.
+- name: CloudVideoIntelligenceDetectVideoShotsOperator
+  type: Operators
+  description: Performs video annotation, annotating video shots.
+- name: OSSDeleteBatchObjectOperator
+  type: Operators
+  description: This operator to delete OSS objects
+- name: SageMakerTuningSensor
+  type: Sensors
+  description: Asks for the state of the tuning state until it reaches a terminal
+    state. The sensor will error if the job errors, throwing a AirflowException containing
+    the failure reason.
+- name: CloudTasksQueuePauseOperator
+  type: Operators
+  description: Pauses a queue in Cloud Tasks.
+- name: StackdriverEnableAlertPoliciesOperator
+  type: Operators
+  description: Enables one or more disabled alerting policies identified by filter
+    parameter. Inoperative in case the policy is already enabled.
+- name: GoogleSearchAdsReportSensor
+  type: Sensors
+  description: Polls for the status of a report request.
+- name: InfluxDBOperator
+  type: Operators
+  description: Executes sql code in a specific InfluxDB database
+- name: KylinCubeOperator
+  type: Operators
+  description: This operator is used to submit request about kylin build/refresh/merge,
+    and can track job status . so users can easier to build kylin job
+- name: CloudDatastoreCommitOperator
+  type: Operators
+  description: Commit a transaction, optionally creating, deleting or modifying some
+    entities.
+- name: LocalFilesystemToADLSOperator
+  type: Transfers
+  description: Upload file(s) to Azure Data Lake
+- name: SubDagOperator
+  type: Operators
+  description: This runs a sub dag. By convention, a sub dags dag_id should be prefixed
+    by its parent and a dot. As in parent.child. Although SubDagOperator can occupy
+    a pool/concurrency slot, user can specify the mode=reschedule so that the slot
+    will be released periodically to avoid potential deadlock.
+- name: PinotDbApiHook
+  type: Hooks
+  description: Interact with Pinot Broker Query API
+- name: CloudNaturalLanguageAnalyzeEntitiesOperator
+  type: Operators
+  description: Finds named entities in the text along with entity types, salience,
+    mentions for each entity, and other properties.
+- name: SlackWebhookHook
+  type: Hooks
+  description: This hook allows you to post messages to Slack using incoming webhooks.
+    Takes both Slack webhook token directly and connection that has Slack webhook
+    token. If both supplied, http_conn_id will be used as base_url, and webhook_token
+    will be taken as endpoint, the relative path of the url.
+- name: GoogleAdsToGcsOperator
+  type: Transfers
+  description: Fetches the daily results from the Google Ads API for 1-n clients Converts
+    and saves the data as a temporary CSV file Uploads the CSV to Google Cloud Storage
+- name: AutoMLDeleteDatasetOperator
+  type: Operators
+  description: Deletes a dataset and all of its contents.
+- name: CloudwatchTaskHandler
+  type: Log
+  description: CloudwatchTaskHandler is a python log handler that handles and reads
+    task instance logs.
+- name: SageMakerBaseSensor
+  type: Sensors
+  description: Contains general sensor behavior for SageMaker.
+- name: CloudDLPUpdateStoredInfoTypeOperator
+  type: Operators
+  description: Updates the stored infoType by creating a new version.
+- name: CeleryQueueSensor
+  type: Sensors
+  description: Waits for a Celery queue to be empty. By default, in order to be considered
+    empty, the queue must not have any tasks in the reserved, scheduled or active
+    states.
+- name: DiscordWebhookOperator
+  type: Operators
+  description: This operator allows you to post messages to Discord using incoming
+    webhooks. Takes a Discord connection ID with a default relative webhook endpoint.
+    The default endpoint can be overridden using the webhook_endpoint parameter (discordapp.com/developers/docs/resources/webhook).
+- name: FTPToS3Operator
+  type: Transfers
+  description: This operator enables the transfer of files from a FTP server to S3.
+    It can be used to transfer one or multiple files.
+- name: GlueCatalogPartitionSensor
+  type: Sensors
+  description: Waits for a partition to show up in AWS Glue Catalog.
+- name: GCSObjectExistenceSensor
+  type: Sensors
+  description: Checks for the existence of a file in Google Cloud Storage.
+- name: InfluxDBHook
+  type: Hooks
+  description: Interact with InfluxDB.
+- name: MongoHook
+  type: Hooks
+  description: Interact with Mongo. This hook uses the Mongo conn_id. PyMongo Wrapper
+    to Interact With Mongo Database Mongo Connection Documentation docs.mongodb.com/manual/reference/connection-string/index.html
+    You can specify connection string options in extra field of your connection docs.mongodb.com/manual/reference/connection-string/index.html#connection-string-options
+- name: CloudDLPUpdateDeidentifyTemplateOperator
+  type: Operators
+  description: Updates the DeidentifyTemplate.
+- name: GoogleApiToS3Operator
+  type: Transfers
+  description: Basic class for transferring data from a Google API endpoint into a
+    S3 Bucket.
+- name: CloudDataTransferServiceGetOperationOperator
+  type: Operators
+  description: Gets the latest state of a long-running operation in Google Storage
+    Transfer Service.
+- name: SlackAPIPostOperator
+  type: Operators
+  description: Posts messages to a slack channel
+- name: AzureKeyVaultBackend
+  type: Secrets
+  description: Retrieves Airflow Connections or Variables from Azure Key Vault secrets.
+- name: TimeSensor
+  type: Sensors
+  description: Waits until the specified time of the day.
+- name: SparkKubernetesSensor
+  type: Sensors
+  description: Checks sparkApplication object in kubernetes cluster
+- name: GlacierHook
+  type: Hooks
+  description: Hook for connection with Amazon Glacier
+- name: FivetranHook
+  type: Hooks
+  description: Fivetran API interaction hook. :param fivetran_conn_id Conn ID of
+    the Connection to be used to
+- name: FivetranOperator
+  type: Operators
+  description: FivetranOperator starts a Fivetran sync job.
+- name: AwsRedshiftClusterSensor
+  type: Sensors
+  description: Waits for a Redshift cluster to reach a specific status.
+- name: RedisKeySensor
+  type: Sensors
+  description: Checks for the existence of a key in a Redis
+- name: WebHdfsSensor
+  type: Sensors
+  description: Waits for a file or folder to land in HDFS
+- name: DummyOperator
+  type: Operators
+  description: Operator that does literally nothing. It can be used to group tasks
+    in a DAG.
+- name: OpsgenieAlertOperator
+  type: Operators
+  description: This operator is deprecated. Please use airflow.providers.opsgenie.operators.opsgenie.OpsgenieCreateAlertOperator.
+- name: SubprocessHook
+  type: Hooks
+  description: Hook for running processes with the subprocess module
+- name: LatestOnlyOperator
+  type: Operators
+  description: Allows a workflow to skip tasks that are not running during the most
+    recent schedule interval.
+- name: OpsgenieAlertHook
+  type: Hooks
+  description: This hook allows you to post alerts to Opsgenie. Accepts a connection
+    that has an Opsgenie API key as the connections password. This hook sets the
+    domain to conn_id.host, and if not set will default to api.opsgenie.com.
+- name: SageMakerEndpointOperator
+  type: Operators
+  description: Create a SageMaker endpoint.
+- name: SageMakerTransformSensor
+  type: Sensors
+  description: Asks for the state of the transform state until it reaches a terminal
+    state. The sensor will error if the job errors, throwing a AirflowException containing
+    the failure reason.
+- name: SageMakerProcessingOperator
+  type: Operators
+  description: Initiate a SageMaker processing job.
+- name: SageMakerTuningOperator
+  type: Operators
+  description: Initiate a SageMaker hyperparameter tuning job.
+- name: SageMakerTuningSensor
+  type: Sensors
+  description: Asks for the state of the tuning state until it reaches a terminal
+    state. The sensor will error if the job errors, throwing a AirflowException containing
+    the failure reason.
+- name: SageMakerBaseSensor
+  type: Sensors
+  description: Contains general sensor behavior for SageMaker. Subclasses should implement
+    get_sagemaker_response() and state_from_response() methods. Subclasses should
+    also implement NON_TERMINAL_STATES and FAILED_STATE methods.
+- name: SageMakerTransformOperator
+  type: Operators
+  description: Initiate a SageMaker transform job.
+- name: SageMakerTrainingSensor
+  type: Sensors
+  description: Asks for the state of the training state until it reaches a terminal
+    state. If it fails the sensor errors, failing the task.
+- name: SageMakerEndpointSensor
+  type: Sensors
+  description: Asks for the state of the endpoint state until it reaches a terminal
+    state. If it fails the sensor errors, the task fails.
+- name: SageMakerTrainingOperator
+  type: Operators
+  description: Initiate a SageMaker training job.
+- name: SageMakerEndpointConfigOperator
+  type: Operators
+  description: Create a SageMaker endpoint config.
+- name: SageMakerModelOperator
+  type: Operators
+  description: Create a SageMaker model.
+- name: SageMakerBaseOperator
+  type: Operators
+  description: This is the base operator for all SageMaker operators.
+- name: EMRContainerHook
+  type: Hooks
+  description: This class is deprecated. Please use  airflow.providers.amazon.aws.hooks.emr.EmrContainerHook.
+- name: QuboleCheckHook
+  type: Hooks
+  description: Qubole check hook
+- name: SESHook
+  type: Hooks
+  description: This hook is deprecated. Please use airflow.providers.amazon.aws.hooks.ses.SesHook.
+- name: SesHook
+  type: Hooks
+  description: Interact with Amazon Simple Email Service.
+- name: RedshiftHook
+  type: Hooks
+  description: Interact with AWS Redshift, using the boto3 library
+- name: RedshiftSQLHook
+  type: Hooks
+  description: Execute statements against Amazon Redshift, using redshift_connector
+- name: RedshiftSQLOperator
+  type: Operators
+  description: Executes SQL Statements against an Amazon Redshift cluster
+- name: EMRContainerOperator
+  type: Operators
+  description: This class is deprecated. Please use airflow.providers.amazon.aws.operators.emr.EmrContainerOperator.
+- name: EmrModifyClusterOperator
+  type: Operators
+  description: An operator that modifies an existing EMR cluster.
+- name: EmrAddStepsOperator
+  type: Operators
+  description: An operator that adds steps to an existing EMR job_flow.
+- name: EmrStepSensor
+  type: Sensors
+  description: Asks for the state of the step until it reaches any of the target states.
+    If it fails the sensor errors, failing the task.
+- name: EmrJobFlowSensor
+  type: Sensors
+  description: Asks for the state of the EMR JobFlow (Cluster) until it reaches any
+    of the target states. If it fails the sensor errors, failing the task.
+- name: EmrTerminateJobFlowOperator
+  type: Operators
+  description: Operator to terminate EMR JobFlows.
+- name: EMRContainerSensor
+  type: Sensors
+  description: This class is deprecated. Please use  airflow.providers.amazon.aws.sensors.emr.EmrContainerSensor.
+- name: EmrBaseSensor
+  type: Sensors
+  description: Contains general sensor behavior for EMR.
+- name: dataframe
+  type: Decorators
+  description: Convert a Table object into a Pandas DataFrame or persist a DataFrame
+    result to a database table.
+- name: truncate
+  type: Functions
+  description: Perform a TRUNCATE operation on a given table.
+- name: merge
+  type: Functions
+  description: Merge data into an existing table in situations where there may be
+    conflicts. This function adds data to a table with either an "update" or "ignore"
+    strategy. The "ignore" strategy does not add values that conflict, while the "update"
+    strategy overwrites the older values.
+- name: save_file
+  type: Functions
+  description: Export a database table as a CSV or Parquet file to local storage,
+    Amazon S3, or Google Cloud Storage.
+- name: append
+  type: Functions
+  description: Append the results of a source table onto a target table.  This function
+    assumes there are no conflicts between the schemas of both tables. 
+- name: TempTable
+  type: Objects
+  description: A metadata representation of database table within the Astro ecosystem
+    that will not be persisted after corresponding operations are complete.
+- name: Table
+  type: Objects
+  description: A metadata representation of an existing or to-be-created database
+    table within the Astro ecosystem.
+- name: transform_file
+  type: Functions
+  description: Execute a SELECT SQL statement contained in a file. Data returned from
+    this SQL is inserted into a temporary table which can used by other downstream
+    tasks.
+- name: run_raw_sql
+  type: Decorators
+  description: Execute SQL that is not expected to return data like DDL or DML operations.
+- name: transform
+  type: Decorators
+  description: Execute an explicit, SELECT SQL statement. Data returned from this
+    SQL is inserted into a temporary table which can used by other downstream tasks.
+- name: load_file
+  type: Functions
+  description: Load CSV or Parquet files from local storage, Amazon S3, or Google
+    Cloud Storage into a SQL database.
+- name: aggregate_check
+  type: Functions
+  description: Validate the result from a SQL which performs an aggregation matches
+    an expected value or falls within a provided range.
+- name: DmsCreateTaskOperator
+  type: Operators
+  description: Creates AWS DMS replication task.
+- name: DmsDeleteTaskOperator
+  type: Operators
+  description: Deletes AWS DMS replication task.
+- name: DmsStopTaskOperator
+  type: Operators
+  description: Stops AWS DMS replication task.
+- name: DmsTaskCompletedSensor
+  type: Sensors
+  description: Pokes DMS task until it is completed.
+- name: DmsTaskBaseSensor
+  type: Sensors
+  description: Contains general sensor behavior for DMS task.
+- name: DmsDescribeTasksOperator
+  type: Operators
+  description: Describes AWS DMS replication tasks.
+- name: DmsStartTaskOperator
+  type: Operators
+  description: Starts AWS DMS replication task.
+- name: DrillHook
+  type: Hooks
+  description: Interact with Apache Drill via sqlalchemy-drill.
+- name: S3DeleteObjectsOperator
+  type: Operators
+  description: To enable users to delete single object or multiple objects from a
+    bucket using a single HTTP request.
+- name: S3KeySizeSensor
+  type: Sensors
+  description: Waits for a key (a file-like instance on S3) to be present and be more
+    than some size in a S3 bucket. S3 being a key/value it does not support folders.
+    The path is just a key a resource.
+- name: S3PrefixSensor
+  type: Sensors
+  description: Waits for a prefix or all prefixes to exist. A prefix is the first
+    part of a key, thus enabling checking of constructs similar to glob airfl* or
+    SQL LIKE airfl%. There is the possibility to precise a delimiter to indicate
+    the hierarchy or keys, meaning that the match will stop at that delimiter. Current
+    code accepts sane delimiters, i.e. characters that are NOT special characters
+    in the Python regex engine.
+- name: S3ListOperator
+  type: Operators
+  description: List all objects from the bucket with the given string prefix in name.
+- name: S3DeleteBucketOperator
+  type: Operators
+  description: This operator deletes an S3 bucket
+- name: S3FileTransformOperator
+  type: Operators
+  description: Copies data from a source S3 location to a temporary location on the
+    local filesystem. Runs a transformation on this file as specified by the transformation
+    script and uploads the output to a destination S3 location.
+- name: S3KeysUnchangedSensor
+  type: Sensors
+  description: Checks for changes in the number of objects at prefix in AWS S3 bucket
+    and returns True if the inactivity period has passed with no increase in the number
+    of objects. Note, this sensor will not behave correctly in reschedule mode, as
+    the state of the listed objects in the S3 bucket will be lost between rescheduled
+    invocations.
+- name: S3CopyObjectOperator
+  type: Operators
+  description: Creates a copy of an object that is already stored in S3.
+- name: S3CreateBucketOperator
+  type: Operators
+  description: This operator creates an S3 bucket
+- name: S3DeleteBucketTaggingOperator
+  type: Operators
+  description: This operator deletes tagging from an S3 bucket.
+- name: S3KeySensor
+  type: Sensors
+  description: Waits for a key (a file-like instance on S3) to be present in a S3
+    bucket. S3 being a key/value it does not support folders. The path is just a key
+    a resource.
+- name: S3PutBucketTaggingOperator
+  type: Operators
+  description: This operator puts tagging for an S3 bucket.
+- name: S3ListPrefixesOperator
+  type: Operators
+  description: List all subfolders from the bucket with the given string prefix in
+    name.
+- name: S3GetBucketTaggingOperator
+  type: Operators
+  description: This operator gets tagging from an S3 bucket
+- name: StepFunctionStartExecutionOperator
+  type: Operators
+  description: An Operator that begins execution of an Step Function State Machine
+- name: StepFunctionExecutionSensor
+  type: Sensors
+  description: Asks for the state of the Step Function State Machine Execution until
+    it reaches a failure state or success state. If it fails, failing the task.
+- name: StepFunctionGetExecutionOutputOperator
+  type: Operators
+  description: An Operator that begins execution of an Step Function State Machine
+- name: EC2StartInstanceOperator
+  type: Operators
+  description: Start AWS EC2 instance using boto3.
+- name: EC2InstanceStateSensor
+  type: Sensors
+  description: Check the state of the AWS EC2 instance until state of the instance
+    become equal to the target state.
+- name: EC2StopInstanceOperator
+  type: Operators
+  description: Stop AWS EC2 instance using boto3.
+- name: JenkinsHook
+  type: Hooks
+  description: Hook to manage connection to jenkins server
+- name: PlexusHook
+  type: Hooks
+  description: Used for jwt token generation and storage to make Plexus API calls.
+    Requires email and password Airflow variables be created.
+- name: FSHook
+  type: Hooks
+  description: Allows for interaction with an file server.
+- name: RayBackend
+  type: XCom
+  description: Custom Backend Serving to use Ray.
+- name: AzureDataLakeStorageDeleteOperator
+  type: Operators
+  description: This class is deprecated. Please use airflow.providers.microsoft.azure.operators.adls.ADLSDeleteOperator.
+- name: AzureDataLakeStorageListOperator
+  type: Operators
+  description: This class is deprecated. Please use airflow.providers.microsoft.azure.operators.adls.ADLSListOperator.
+- name: FileToWasbOperator
+  type: Transfers
+  description: Uploads a file to Azure Blob Storage.
+- name: ToXLSXOperator
+  type: Operators
+  description: Convert Parquest, CSV, JSON, JSON Lines into XLSX
+- name: FivetranSensor
+  type: Sensors
+  description: FivetranSensor monitors a Fivetran sync job for completion.
+- name: HightouchTriggerSyncOperator
+  type: Operators
+  description: This operator triggers a run for a specified Sync in Hightouch via
+    the Hightouch API.
+- name: RayClientHook
+  type: Hooks
+  description: A Connection Hook for accessing Ray via the Ray Client.
+- name: OdbcHook
+  type: Hooks
+  description: Interact with odbc data sources using pyodbc.
+- name: MsSqlHook
+  type: Hooks
+  description: Interact with Microsoft SQL Server.
+- name: VerticaHook
+  type: Hooks
+  description: Interact with Vertica.
+- name: CensusHook
+  type: Hooks
+  description: Census API hook
+- name: CensusSensor
+  type: Sensors
+  description: Waits for sync to complete.
+- name: CensusOperator
+  type: Operators
+  description: Triggers sync with Census API.
+- name: LakeFSCreateBranchOperator
+  type: Operators
+  description: Create a lakeFS branch by calling the lakeFS server.
+- name: LakeFSCommitOperator
+  type: Operators
+  description: Commit changes to a lakeFS branch.
+- name: LakeFSMergeOperator
+  type: Operators
+  description: Merge source branch to destination branch
+- name: LakeFSCommitSensor
+  type: Sensors
+  description: Executes a get branch operation until that branch was committed.
+- name: LakeFSFileSensor
+  type: Sensors
+  description: Waits for the given file to appear
+- name: LakeFSHook
+  type: Hooks
+  description: LakeFSHook that interacts with a lakeFS server.
+- name: DatahubRestHook
+  type: Hooks
+  description: Creates a DataHub Rest API connection used to send metadata to DataHub.
+    Takes the endpoint for your DataHub Rest API in the Server Endpoint(host) field.
+- name: DatahubEmitterOperator
+  type: Operators
+  description: Emits a Metadata Change Event to DataHub using either a DataHub Rest
+    or Kafka connection.
+- name: DatahubGenericHook
+  type: Hooks
+  description: Emits Metadata Change Events using either the DatahubRestHook or the
+    DatahubKafkaHook. Set up a DataHub Rest or Kafka connection to use.
+- name: DatahubBaseOperator
+  type: Operators
+  description: The DatahubBaseOperator is used as a base operator all DataHub operators.
+- name: DatahubLineageBackend
+  type: Lineage
+  description: Sends lineage data from tasks to DataHub.
+- name: DatahubKafkaHook
+  type: Hooks
+  description: Creates a DataHub Kafka connection used to send metadata to DataHub.
+    Takes your kafka broker in the Kafka Broker(host) field.
+- name: RedisHook
+  type: Hooks
+  description: Wrapper for connection to interact with Redis in-memory data structure
+    store
+- name: PigCliHook
+  type: Hooks
+  description: Simple wrapper around the pig CLI.

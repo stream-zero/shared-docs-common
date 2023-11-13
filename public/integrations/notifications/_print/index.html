@@ -1,0 +1,1973 @@
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="generator" content="Hugo 0.117.0"><link rel="canonical" type="text/html" href="/integrations/notifications/">
+<link rel="alternate" type="application/rss&#43;xml" href="/integrations/notifications/index.xml">
+<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+
+
+<link rel="shortcut icon" href="/favicons/favicon.ico" >
+<link rel="apple-touch-icon" href="/favicons/apple-touch-icon-180x180.png" sizes="180x180">
+<link rel="icon" type="image/png" href="/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicons/android-36x36.png" sizes="36x36">
+<link rel="icon" type="image/png" href="/favicons/android-48x48.png" sizes="48x48">
+<link rel="icon" type="image/png" href="/favicons/android-72x72.png" sizes="72x72">
+<link rel="icon" type="image/png" href="/favicons/android-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="/favicons/android-144x144.png" sizes="144x144">
+<link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
+
+<title>GridMine: Integrations/Databases | GridMine</title>
+
+
+  
+  <meta name="description" content="
+
+
+
+
+
+
+	
+		
+			
+				
+  
+    Notifications
+    The ease of working with StreamZero with it&#39;s ability to rewire services at will and integrate across …">
+<meta property="og:title" content="GridMine: Integrations/Databases" />
+<meta property="og:description" content="GridMine web site" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="/integrations/notifications/" />
+<meta itemprop="name" content="GridMine: Integrations/Databases">
+<meta itemprop="description" content="GridMine web site"><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="GridMine: Integrations/Databases"/>
+<meta name="twitter:description" content="GridMine web site"/>
+
+
+
+
+<link rel="preload" href="/scss/main.scss" as="style">
+<link href="/scss/main.scss" rel="stylesheet" integrity="">
+
+
+<script
+  src="https://code.jquery.com/jquery-3.5.1.min.js"
+  integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+  crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RZ6L6XFT3Q"></script>
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-RZ6L6XFT3Q', { 'anonymize_ip': false });
+}
+</script>
+
+
+
+
+  </head>
+  <body class="td-section">
+    <header>
+      
+<nav class="js-navbar-scroll navbar navbar-expand-lg navbar-dark  td-navbar">
+	<a class="navbar-brand" href="/">
+		<span class="navbar-logo"><svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6675 639" width="200" height="29"><style>.a{fill:#e21339}</style><path class="a" d="m234 638.6q-66.8.0-119.6-22.9-52-22.9-81.9-66.9-29.9-44-31.7-106.5h125.9q.9 27.3 14.1 49.3t36.9 35.2q23.8 12.3 56.3 12.3 27.3.0 47.6-8.8 21.1-9.7 32.5-26.4 12.3-16.7 12.3-39.6.0-27.3-14-44.9-13.2-18.4-36.1-29.9-22.9-12.3-52.8-22-29.1-10.5-61.6-21.1Q90.6 321.8 52.8 283q-37.9-39.6-37.9-104.7.0-55.4 26.4-95 26.4-39.6 73.9-60.7 47.6-21.2 108.3-21.2 62.5.0 110 22 47.5 21.2 74.8 61.6 27.3 40.5 29 95.1H309.7q-.9-20.3-11.4-37.9-10.6-18.4-29.9-29-19.4-11.4-46.7-11.4-22.9-.9-41.3 7-18.5 7.9-30 23.8-10.5 14.9-10.5 37.8.0 22 10.5 37 10.6 14.9 30 26.4 19.3 10.5 45.7 20.2 26.4 8.8 57.2 18.5 46.7 15.8 84.5 37.8 38.7 21.1 61.6 55.5 22.9 34.3 22.9 90.6.0 48.4-25.5 89.8-24.7 41.3-73.1 66.8-48.4 25.6-119.7 25.6zM929.2 628H811.3V107.9H630.9V12h478.7v95.9H929.2zm498 0h-118.8V12H1539q73.9.0 122.3 25.5 49.3 25.6 73.1 68.7 23.7 42.2 23.7 94.1.0 49.3-23.7 92.4-22.9 42.3-72.2 68.7-48.4 25.5-125 25.5h-110zm336.2.0h-135.5l-126.7-271h128.4zm-336.1-516.6v189.2h103.8q54.6.0 80.1-26.4 25.5-26.4 25.5-69.5t-25.5-67.8q-25.5-25.5-80.1-25.5zM2383.8 628h-405.6V12h405.6v95.9H2097v161h260.4v92.4H2097V532h286.8zm306.2.0h-124l224.4-616H2925l225.3 616h-125.9l-167.2-480.4zm351.2-140h-375.8l30.8-92.4h314.2zm422.3 140h-118.8V12h141.7l191.8 383.6L3867.4 12h141.7v616h-118.8V213.5L3724 540h-94.2l-166.3-327.4zm1153.7.0h-393.4v-58.1l303.6-493.7h-299.2V12h385.4v58.1l-304.4 493.7h308zm601.8.0h-381V12h381v60.7h-307.1v214.7h280.7v59.8h-280.7v220H5219zm306.2.0h-73.9V12h198.9q72.2.0 117.9 24.7 45.8 23.7 67.8 64.2t22 91.5q0 49.3-22.9 90.7-22 41.3-68.6 66-46.7 24.6-119.7 24.6h-121.5zm338.8.0h-87.1l-135.5-275.4h82.7zM5525.2 74.5v241.1h119.7q70.4.0 103-34.3 33.4-34.4 33.4-88 0-54.6-32.6-86.3-31.6-32.5-104.7-32.5zm844.8 564q-90.7.0-159.3-39.6-67.8-40.4-106.5-111.7-37.8-72.2-37.8-167.2.0-94.2 37.8-165.5 38.7-72.1 106.5-112.6 68.6-40.5 159.3-40.5 91.5.0 159.3 40.5 68.6 40.5 106.4 112.6 37.9 71.3 37.9 165.5.0 95-37.9 167.2-37.8 71.3-106.4 111.7-67.8 39.6-159.3 39.6zm0-65.1q67.7.0 118.8-29.9 51.9-30.8 80.1-87.1 29-57.2 29-136.4t-29-135.5q-28.2-57.2-80.1-87.2-51.1-29.9-118.8-29.9-67.8.0-119.7 29.9-51 30-80.1 87.2-28.1 56.3-28.1 135.5t28.1 136.4q29.1 56.3 80.1 87.1 51.9 29.9 119.7 29.9z"/></svg></span>
+	</a>
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+		<ul class="navbar-nav ml-auto">
+			
+			
+				
+				
+				
+				
+				
+				
+				
+					<li class="nav-item mr-2 mb-2 mb-lg-0 dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">
+							PRODUCTS
+						</a>
+						<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+							
+								<li>
+									<a class="nav-link" href="/products/fx/" >STREAMZERO FX</a>
+								</li>
+							
+								<li>
+									<a class="nav-link" href="/products/k8x/" >STREAMZERO K8X</a>
+								</li>
+							
+								<li>
+									<a class="nav-link" href="/products/sx/" >STREAMZERO SX</a>
+								</li>
+							
+						</ul>
+					</li>
+				
+			
+				
+				
+				
+				
+				
+				
+				
+				
+				
+					<li class="nav-item mr-2 mb-2 mb-lg-0">
+						<a class="nav-link" href="/docs/" ><span>DOCUMENTATION</span></a>
+					</li>
+				
+			
+			
+			
+		</ul>
+	</div>
+	<div class="navbar-nav d-none d-lg-block">
+<input type="search" class="form-control td-search-input" placeholder="&#xf002; Search this site…" aria-label="Search this site…" autocomplete="off">
+
+</div>
+</nav>
+
+    </header>
+    <div class="container-fluid td-default td-outer">
+      <main role="main" class="td-main">
+        
+
+
+
+
+
+
+<a id="td-block-0" class="td-offset-anchor"></a>
+<section class="row td-box td-box--primary td-box--gradient td-box--height-auto">
+	<div class="col">
+		<div class="row ">
+			
+				
+  <div class="container">
+    <h1 class="text-center home_title">Notifications</h1>
+    <p class="text-center lead">The ease of working with StreamZero with it's ability to rewire services at will and integrate across clouds and services Agility into engineering.</p>
+  </div>
+
+			
+		</div>
+	</div>
+</section>
+
+
+
+
+
+
+
+
+<div class="pt-3 lead">
+    
+    
+
+
+    
+</div>
+
+<section class="row td-cover-block">
+	<div class="container">
+        
+        <div class="integrations-card-holder">
+            
+                <div class="row">
+                    
+                        
+                            
+    <div class="col-xs-12 col-sm-6 col-md-4">
+        <div class="integration-card">
+            <div class="card-body d-flex flex-column justify-content-between">
+                <div>
+                    <div class="integration-card-title" title="AWS SES">
+                        <h4 class="font-weight-bold">
+                            <img src="/images/brand_images/aws_ses.png" />
+                            AWS SES
+                        </h4>
+                    </div>
+                    
+                    <div class="card-text">
+                        <p>Amazon Simple Email Service (SES) is a cost-effective, flexible, and scalable email service that enables developers to send mail from within any application.</p>
+                    </div>
+                </div>
+                <div>
+                    
+                    <div class="text-right">
+                        <a href="/docs/integrations/notifications_and_messaging/notifications_and_messaging/" class="text-muted"><small>Learn more</small></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                        
+                            
+    <div class="col-xs-12 col-sm-6 col-md-4">
+        <div class="integration-card">
+            <div class="card-body d-flex flex-column justify-content-between">
+                <div>
+                    <div class="integration-card-title" title="Discord">
+                        <h4 class="font-weight-bold">
+                            <img src="/images/brand_images/discord.png" />
+                            Discord
+                        </h4>
+                    </div>
+                    
+                    <div class="card-text">
+                        <p>Discord is a VoIP, instant messaging and digital distribution platform. Users communicate with voice calls, video calls, text messaging, media and files in private chats or as part of communities called &#34;servers&#34;.</p>
+                    </div>
+                </div>
+                <div>
+                    
+                    <div class="text-right">
+                        <a href="/docs/integrations/notifications_and_messaging/notifications_and_messaging/" class="text-muted"><small>Learn more</small></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                        
+                            
+    <div class="col-xs-12 col-sm-6 col-md-4">
+        <div class="integration-card">
+            <div class="card-body d-flex flex-column justify-content-between">
+                <div>
+                    <div class="integration-card-title" title="Emby">
+                        <h4 class="font-weight-bold">
+                            <img src="/images/brand_images/emby.png" />
+                            Emby
+                        </h4>
+                    </div>
+                    
+                    <div class="card-text">
+                        <p>Emby is a media server designed to organize, play, and stream audio and video to a variety of devices. Bringing all of your home videos, music, and photos together into one place has never been easier. Your personal Emby Server automatically converts and streams your media on-the-fly to play on any device.</p>
+                    </div>
+                </div>
+                <div>
+                    
+                    <div class="text-right">
+                        <a href="/docs/integrations/notifications_and_messaging/notifications_and_messaging/" class="text-muted"><small>Learn more</small></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                        
+                            
+    <div class="col-xs-12 col-sm-6 col-md-4">
+        <div class="integration-card">
+            <div class="card-body d-flex flex-column justify-content-between">
+                <div>
+                    <div class="integration-card-title" title="Enigma2">
+                        <h4 class="font-weight-bold">
+                            <img src="/images/brand_images/enigma2.png" />
+                            Enigma2
+                        </h4>
+                    </div>
+                    
+                    <div class="card-text">
+                        <p>Enigma2 is an application used in Linux-based Digital Video Broadcasting (DVB-S, DVB-C, DVB-T) receivers or TV set-top boxes and Internet Protocol television receivers.</p>
+                    </div>
+                </div>
+                <div>
+                    
+                    <div class="text-right">
+                        <a href="/docs/integrations/notifications_and_messaging/notifications_and_messaging/" class="text-muted"><small>Learn more</small></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                        
+                            
+    <div class="col-xs-12 col-sm-6 col-md-4">
+        <div class="integration-card">
+            <div class="card-body d-flex flex-column justify-content-between">
+                <div>
+                    <div class="integration-card-title" title="Faast">
+                        <h4 class="font-weight-bold">
+                            <img src="/images/brand_images/faast.png" />
+                            Faast
+                        </h4>
+                    </div>
+                    
+                    <div class="card-text">
+                        <p>FAAST is the state of Florida’s assistive technology program. Assistive technology activities provided by FAAST include device loans, device demonstrations, device reutilization, device trainings, information and assistance, and a statewide financing program.</p>
+                    </div>
+                </div>
+                <div>
+                    
+                    <div class="text-right">
+                        <a href="/docs/integrations/notifications_and_messaging/notifications_and_messaging/" class="text-muted"><small>Learn more</small></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                        
+                            
+    <div class="col-xs-12 col-sm-6 col-md-4">
+        <div class="integration-card">
+            <div class="card-body d-flex flex-column justify-content-between">
+                <div>
+                    <div class="integration-card-title" title="FCM">
+                        <h4 class="font-weight-bold">
+                            <img src="/images/brand_images/fcm.png" />
+                            FCM
+                        </h4>
+                    </div>
+                    
+                    <div class="card-text">
+                        <p>Firebase Cloud Messaging (FCM) is a cross-platform messaging solution that lets you reliably send messages at no cost.</p>
+                    </div>
+                </div>
+                <div>
+                    
+                    <div class="text-right">
+                        <a href="/docs/integrations/notifications_and_messaging/notifications_and_messaging/" class="text-muted"><small>Learn more</small></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                        
+                            
+    <div class="col-xs-12 col-sm-6 col-md-4">
+        <div class="integration-card">
+            <div class="card-body d-flex flex-column justify-content-between">
+                <div>
+                    <div class="integration-card-title" title="Flock">
+                        <h4 class="font-weight-bold">
+                            <img src="/images/brand_images/flock.png" />
+                            Flock
+                        </h4>
+                    </div>
+                    
+                    <div class="card-text">
+                        <p>Flock is a proprietary messaging and collaboration tool. Flock allows users to configure external apps and integrations from the Flock App Store, and receive notifications and updates directly in Flock.</p>
+                    </div>
+                </div>
+                <div>
+                    
+                    <div class="text-right">
+                        <a href="/docs/integrations/notifications_and_messaging/notifications_and_messaging/" class="text-muted"><small>Learn more</small></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                        
+                            
+    <div class="col-xs-12 col-sm-6 col-md-4">
+        <div class="integration-card">
+            <div class="card-body d-flex flex-column justify-content-between">
+                <div>
+                    <div class="integration-card-title" title="Gitter">
+                        <h4 class="font-weight-bold">
+                            <img src="/images/brand_images/gitter.png" />
+                            Gitter
+                        </h4>
+                    </div>
+                    
+                    <div class="card-text">
+                        <p>Gitter is a chat and networking platform that helps to manage, grow and connect communities through messaging, content and discovery.</p>
+                    </div>
+                </div>
+                <div>
+                    
+                    <div class="text-right">
+                        <a href="/docs/integrations/notifications_and_messaging/notifications_and_messaging/" class="text-muted"><small>Learn more</small></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                        
+                            
+    <div class="col-xs-12 col-sm-6 col-md-4">
+        <div class="integration-card">
+            <div class="card-body d-flex flex-column justify-content-between">
+                <div>
+                    <div class="integration-card-title" title="Google Chat">
+                        <h4 class="font-weight-bold">
+                            <img src="/images/brand_images/google_chat.png" />
+                            Google Chat
+                        </h4>
+                    </div>
+                    
+                    <div class="card-text">
+                        <p>Google Chat is an intelligent and secure communication and collaboration tool, built for teams. From ad-hoc messaging to topic-based workstream collaboration, Chat makes it easy to get work done where the conversation is happening.</p>
+                    </div>
+                </div>
+                <div>
+                    
+                    <div class="text-right">
+                        <a href="/docs/integrations/notifications_and_messaging/notifications_and_messaging/" class="text-muted"><small>Learn more</small></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                        
+                            
+    <div class="col-xs-12 col-sm-6 col-md-4">
+        <div class="integration-card">
+            <div class="card-body d-flex flex-column justify-content-between">
+                <div>
+                    <div class="integration-card-title" title="Gotify">
+                        <h4 class="font-weight-bold">
+                            <img src="/images/brand_images/gotify.png" />
+                            Gotify
+                        </h4>
+                    </div>
+                    
+                    <div class="card-text">
+                        <p>Gotify is a simple server for sending and receiving messages in real-time per WebSocket.</p>
+                    </div>
+                </div>
+                <div>
+                    
+                    <div class="text-right">
+                        <a href="/docs/integrations/notifications_and_messaging/notifications_and_messaging/" class="text-muted"><small>Learn more</small></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                        
+                            
+    <div class="col-xs-12 col-sm-6 col-md-4">
+        <div class="integration-card">
+            <div class="card-body d-flex flex-column justify-content-between">
+                <div>
+                    <div class="integration-card-title" title="Growl">
+                        <h4 class="font-weight-bold">
+                            <img src="/images/brand_images/growl.png" />
+                            Growl
+                        </h4>
+                    </div>
+                    
+                    <div class="card-text">
+                        <p>Growl is a deprecated global notification system and pop-up notification implementation for the Mac OS X and Windows operating systems.</p>
+                    </div>
+                </div>
+                <div>
+                    
+                    <div class="text-right">
+                        <a href="/docs/integrations/notifications_and_messaging/notifications_and_messaging/" class="text-muted"><small>Learn more</small></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                        
+                            
+    <div class="col-xs-12 col-sm-6 col-md-4">
+        <div class="integration-card">
+            <div class="card-body d-flex flex-column justify-content-between">
+                <div>
+                    <div class="integration-card-title" title="Home Assistant">
+                        <h4 class="font-weight-bold">
+                            <img src="/images/brand_images/home_assistant.png" />
+                            Home Assistant
+                        </h4>
+                    </div>
+                    
+                    <div class="card-text">
+                        <p>Home Assistant is a free and open-source software for home automation designed to be a central control system for smart home devices with a focus on local control and privacy.</p>
+                    </div>
+                </div>
+                <div>
+                    
+                    <div class="text-right">
+                        <a href="/docs/integrations/notifications_and_messaging/notifications_and_messaging/" class="text-muted"><small>Learn more</small></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                        
+                            
+    <div class="col-xs-12 col-sm-6 col-md-4">
+        <div class="integration-card">
+            <div class="card-body d-flex flex-column justify-content-between">
+                <div>
+                    <div class="integration-card-title" title="IFTTT">
+                        <h4 class="font-weight-bold">
+                            <img src="/images/brand_images/ifttt.png" />
+                            IFTTT
+                        </h4>
+                    </div>
+                    
+                    <div class="card-text">
+                        <p>If This Then That is a private commercial company that runs services that allow a user to program a response to events in the world. IFTTT has partnerships with different service providers that supply event notifications to IFTTT and execute commands that implement the responses.</p>
+                    </div>
+                </div>
+                <div>
+                    
+                    <div class="text-right">
+                        <a href="/docs/integrations/notifications_and_messaging/notifications_and_messaging/" class="text-muted"><small>Learn more</small></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                        
+                            
+    <div class="col-xs-12 col-sm-6 col-md-4">
+        <div class="integration-card">
+            <div class="card-body d-flex flex-column justify-content-between">
+                <div>
+                    <div class="integration-card-title" title="Join">
+                        <h4 class="font-weight-bold">
+                            <img src="/images/brand_images/join.png" />
+                            Join
+                        </h4>
+                    </div>
+                    
+                    <div class="card-text">
+                        <p>Join allows you to easily do stuff remotely on your Android and PC devices like SMS, notifications, clipboard, and much more! And more!! Receive notifications from Android and interact with them on any device using your Google account. For example, you can reply to a Whatsapp message from your PC.</p>
+                    </div>
+                </div>
+                <div>
+                    
+                    <div class="text-right">
+                        <a href="/docs/integrations/notifications_and_messaging/notifications_and_messaging/" class="text-muted"><small>Learn more</small></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                        
+                            
+    <div class="col-xs-12 col-sm-6 col-md-4">
+        <div class="integration-card">
+            <div class="card-body d-flex flex-column justify-content-between">
+                <div>
+                    <div class="integration-card-title" title="KODI">
+                        <h4 class="font-weight-bold">
+                            <img src="/images/brand_images/kodi.png" />
+                            KODI
+                        </h4>
+                    </div>
+                    
+                    <div class="card-text">
+                        <p>Kodi is a free and open-source media player software application developed by the XBMC Foundation, a non-profit technology consortium. Kodi is available for multiple operating systems and hardware platforms, with a software 10-foot user interface for use with televisions and remote controls.</p>
+                    </div>
+                </div>
+                <div>
+                    
+                    <div class="text-right">
+                        <a href="/docs/integrations/notifications_and_messaging/notifications_and_messaging/" class="text-muted"><small>Learn more</small></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                        
+                            
+    <div class="col-xs-12 col-sm-6 col-md-4">
+        <div class="integration-card">
+            <div class="card-body d-flex flex-column justify-content-between">
+                <div>
+                    <div class="integration-card-title" title="Kumulos">
+                        <h4 class="font-weight-bold">
+                            <img src="/images/brand_images/kumulos.png" />
+                            Kumulos
+                        </h4>
+                    </div>
+                    
+                    <div class="card-text">
+                        <p>Kumulos mobile user engagement platform gives you all the technology you need to increase user engagement - whether that&#39;s app engagement or website engagement.</p>
+                    </div>
+                </div>
+                <div>
+                    
+                    <div class="text-right">
+                        <a href="/docs/integrations/notifications_and_messaging/notifications_and_messaging/" class="text-muted"><small>Learn more</small></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                        
+                            
+    <div class="col-xs-12 col-sm-6 col-md-4">
+        <div class="integration-card">
+            <div class="card-body d-flex flex-column justify-content-between">
+                <div>
+                    <div class="integration-card-title" title="LaMetric Time">
+                        <h4 class="font-weight-bold">
+                            <img src="/images/brand_images/lametric_time.png" />
+                            LaMetric Time
+                        </h4>
+                    </div>
+                    
+                    <div class="card-text">
+                        <p>LaMetric Time is an award-winning internet-connected clock for home and business. It enhances your interior and shows vital information from the Internet and works with numerous smart home devices like smart lights or smart weather station.</p>
+                    </div>
+                </div>
+                <div>
+                    
+                    <div class="text-right">
+                        <a href="/docs/integrations/notifications_and_messaging/notifications_and_messaging/" class="text-muted"><small>Learn more</small></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                        
+                            
+    <div class="col-xs-12 col-sm-6 col-md-4">
+        <div class="integration-card">
+            <div class="card-body d-flex flex-column justify-content-between">
+                <div>
+                    <div class="integration-card-title" title="Mailgun">
+                        <h4 class="font-weight-bold">
+                            <img src="/images/brand_images/mailgun.png" />
+                            Mailgun
+                        </h4>
+                    </div>
+                    
+                    <div class="card-text">
+                        <p>Mailgun lets you measure the business impact of your email campaigns with a/b testing, using tags on your email templates for real-time analytics. Know how your messages are rendering on different desktop clients like Outlook, Gmail, and more.</p>
+                    </div>
+                </div>
+                <div>
+                    
+                    <div class="text-right">
+                        <a href="/docs/integrations/notifications_and_messaging/notifications_and_messaging/" class="text-muted"><small>Learn more</small></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                        
+                            
+    <div class="col-xs-12 col-sm-6 col-md-4">
+        <div class="integration-card">
+            <div class="card-body d-flex flex-column justify-content-between">
+                <div>
+                    <div class="integration-card-title" title="Matrix">
+                        <h4 class="font-weight-bold">
+                            <img src="/images/brand_images/matrix.png" />
+                            Matrix
+                        </h4>
+                    </div>
+                    
+                    <div class="card-text">
+                        <p>Matrix is an open source project that publishes the Matrix open standard for secure, decentralised, real-time communication, and its Apache licensed reference implementations.</p>
+                    </div>
+                </div>
+                <div>
+                    
+                    <div class="text-right">
+                        <a href="/docs/integrations/notifications_and_messaging/notifications_and_messaging/" class="text-muted"><small>Learn more</small></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                        
+                            
+    <div class="col-xs-12 col-sm-6 col-md-4">
+        <div class="integration-card">
+            <div class="card-body d-flex flex-column justify-content-between">
+                <div>
+                    <div class="integration-card-title" title="Mattermost">
+                        <h4 class="font-weight-bold">
+                            <img src="/images/brand_images/mattermost.png" />
+                            Mattermost
+                        </h4>
+                    </div>
+                    
+                    <div class="card-text">
+                        <p>Mattermost is an open-source, self-hostable online chat service with file sharing, search, and integrations. It is designed as an internal chat for organisations and companies, and mostly markets itself as an open-source alternative to Slack and Microsoft Teams.</p>
+                    </div>
+                </div>
+                <div>
+                    
+                    <div class="text-right">
+                        <a href="/docs/integrations/notifications_and_messaging/notifications_and_messaging/" class="text-muted"><small>Learn more</small></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                        
+                            
+    <div class="col-xs-12 col-sm-6 col-md-4">
+        <div class="integration-card">
+            <div class="card-body d-flex flex-column justify-content-between">
+                <div>
+                    <div class="integration-card-title" title="Microsoft Teams">
+                        <h4 class="font-weight-bold">
+                            <img src="/images/brand_images/microsoft_teams.png" />
+                            Microsoft Teams
+                        </h4>
+                    </div>
+                    
+                    <div class="card-text">
+                        <p>Microsoft Teams is a proprietary business communication platform developed by Microsoft, as part of the Microsoft 365 family of products. Teams primarily competes with the similar service Slack, offering workspace chat and videoconferencing, file storage, and application integration.</p>
+                    </div>
+                </div>
+                <div>
+                    
+                    <div class="text-right">
+                        <a href="/docs/integrations/notifications_and_messaging/notifications_and_messaging/" class="text-muted"><small>Learn more</small></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                        
+                            
+    <div class="col-xs-12 col-sm-6 col-md-4">
+        <div class="integration-card">
+            <div class="card-body d-flex flex-column justify-content-between">
+                <div>
+                    <div class="integration-card-title" title="MQTT">
+                        <h4 class="font-weight-bold">
+                            <img src="/images/brand_images/mqtt.png" />
+                            MQTT
+                        </h4>
+                    </div>
+                    
+                    <div class="card-text">
+                        <p>MQTT is an OASIS standard messaging protocol for the Internet of Things (IoT). It is designed as an extremely lightweight publish/subscribe messaging transport that is ideal for connecting remote devices with a small code footprint and minimal network bandwidth. MQTT today is used in a wide variety of industries, such as automotive, manufacturing, telecommunications, oil and gas, etc.</p>
+                    </div>
+                </div>
+                <div>
+                    
+                    <div class="text-right">
+                        <a href="/docs/integrations/notifications_and_messaging/notifications_and_messaging/" class="text-muted"><small>Learn more</small></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                        
+                            
+    <div class="col-xs-12 col-sm-6 col-md-4">
+        <div class="integration-card">
+            <div class="card-body d-flex flex-column justify-content-between">
+                <div>
+                    <div class="integration-card-title" title="Nextcloud">
+                        <h4 class="font-weight-bold">
+                            <img src="/images/brand_images/nextcloud.png" />
+                            Nextcloud
+                        </h4>
+                    </div>
+                    
+                    <div class="card-text">
+                        <p>Nextcloud is a suite of client-server software for creating and using file hosting services. It is enterprise-ready with comprehensive support options. Being free and open-source software, anyone is allowed to install and operate it on their own private server devices</p>
+                    </div>
+                </div>
+                <div>
+                    
+                    <div class="text-right">
+                        <a href="/docs/integrations/notifications_and_messaging/notifications_and_messaging/" class="text-muted"><small>Learn more</small></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                        
+                            
+    <div class="col-xs-12 col-sm-6 col-md-4">
+        <div class="integration-card">
+            <div class="card-body d-flex flex-column justify-content-between">
+                <div>
+                    <div class="integration-card-title" title="NextcloudTalk">
+                        <h4 class="font-weight-bold">
+                            <img src="/images/brand_images/nextcloud_talk.png" />
+                            NextcloudTalk
+                        </h4>
+                    </div>
+                    
+                    <div class="card-text">
+                        <p>Nextcloud Talk is a fully self hosted, on-premises audio/video and chat communication service. It features web and mobile apps and is designed to offer the highest degree of security while being easy to use.</p>
+                    </div>
+                </div>
+                <div>
+                    
+                    <div class="text-right">
+                        <a href="/docs/integrations/notifications_and_messaging/notifications_and_messaging/" class="text-muted"><small>Learn more</small></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                        
+                            
+    <div class="col-xs-12 col-sm-6 col-md-4">
+        <div class="integration-card">
+            <div class="card-body d-flex flex-column justify-content-between">
+                <div>
+                    <div class="integration-card-title" title="Notica">
+                        <h4 class="font-weight-bold">
+                            <img src="/images/brand_images/notica.png" />
+                            Notica
+                        </h4>
+                    </div>
+                    
+                    <div class="card-text">
+                        <p>Notica lets you send browser notifications from your terminal to your desktop or phone. No installation or registration is required.</p>
+                    </div>
+                </div>
+                <div>
+                    
+                    <div class="text-right">
+                        <a href="/docs/integrations/notifications_and_messaging/notifications_and_messaging/" class="text-muted"><small>Learn more</small></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                        
+                            
+    <div class="col-xs-12 col-sm-6 col-md-4">
+        <div class="integration-card">
+            <div class="card-body d-flex flex-column justify-content-between">
+                <div>
+                    <div class="integration-card-title" title="Notifico">
+                        <h4 class="font-weight-bold">
+                            <img src="/images/brand_images/notifico.png" />
+                            Notifico
+                        </h4>
+                    </div>
+                    
+                    <div class="card-text">
+                        <p>Notifico is an open-source replacement for the now-defunct cia.vc service. Notifico receives messages from services and scripts and delivers them to IRC channels.</p>
+                    </div>
+                </div>
+                <div>
+                    
+                    <div class="text-right">
+                        <a href="/docs/integrations/notifications_and_messaging/notifications_and_messaging/" class="text-muted"><small>Learn more</small></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                        
+                            
+    <div class="col-xs-12 col-sm-6 col-md-4">
+        <div class="integration-card">
+            <div class="card-body d-flex flex-column justify-content-between">
+                <div>
+                    <div class="integration-card-title" title="Office 365">
+                        <h4 class="font-weight-bold">
+                            <img src="/images/brand_images/office365.png" />
+                            Office 365
+                        </h4>
+                    </div>
+                    
+                    <div class="card-text">
+                        <p>Microsoft Office 365 applications provide enterprise solutions that can be adapted for any organization. Popular Microsoft Office 365 applications include Word, Excel, PowerPoint, Outlook, OneNote, Access and Publisher.</p>
+                    </div>
+                </div>
+                <div>
+                    
+                    <div class="text-right">
+                        <a href="/docs/integrations/notifications_and_messaging/notifications_and_messaging/" class="text-muted"><small>Learn more</small></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                        
+                            
+    <div class="col-xs-12 col-sm-6 col-md-4">
+        <div class="integration-card">
+            <div class="card-body d-flex flex-column justify-content-between">
+                <div>
+                    <div class="integration-card-title" title="OneSignal">
+                        <h4 class="font-weight-bold">
+                            <img src="/images/brand_images/onesignal.png" />
+                            OneSignal
+                        </h4>
+                    </div>
+                    
+                    <div class="card-text">
+                        <p>Customer Messaging Delivered · The market leading self-serve customer engagement solution for Push Notifications, Email, SMS &amp; In-App.</p>
+                    </div>
+                </div>
+                <div>
+                    
+                    <div class="text-right">
+                        <a href="/docs/integrations/notifications_and_messaging/notifications_and_messaging/" class="text-muted"><small>Learn more</small></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                        
+                            
+    <div class="col-xs-12 col-sm-6 col-md-4">
+        <div class="integration-card">
+            <div class="card-body d-flex flex-column justify-content-between">
+                <div>
+                    <div class="integration-card-title" title="Opsgenie">
+                        <h4 class="font-weight-bold">
+                            <img src="/images/brand_images/opsgenie.png" />
+                            Opsgenie
+                        </h4>
+                    </div>
+                    
+                    <div class="card-text">
+                        <p>Opsgenie is the</p>
+                    </div>
+                </div>
+                <div>
+                    
+                    <div class="text-right">
+                        <a href="/docs/integrations/notifications_and_messaging/notifications_and_messaging/" class="text-muted"><small>Learn more</small></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                        
+                            
+    <div class="col-xs-12 col-sm-6 col-md-4">
+        <div class="integration-card">
+            <div class="card-body d-flex flex-column justify-content-between">
+                <div>
+                    <div class="integration-card-title" title="ParsePlatform">
+                        <h4 class="font-weight-bold">
+                            <img src="/images/brand_images/parse.png" />
+                            ParsePlatform
+                        </h4>
+                    </div>
+                    
+                    <div class="card-text">
+                        <p>Parse is an open-source Android SDK and back-end solution that enables developers to build mobile apps with shared data quickly and without writing any back-end code or custom APIs.</p>
+                    </div>
+                </div>
+                <div>
+                    
+                    <div class="text-right">
+                        <a href="/docs/integrations/notifications_and_messaging/notifications_and_messaging/" class="text-muted"><small>Learn more</small></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                        
+                            
+    <div class="col-xs-12 col-sm-6 col-md-4">
+        <div class="integration-card">
+            <div class="card-body d-flex flex-column justify-content-between">
+                <div>
+                    <div class="integration-card-title" title="PopcornNotify">
+                        <h4 class="font-weight-bold">
+                            <img src="/images/brand_images/popcorn_notify.png" />
+                            PopcornNotify
+                        </h4>
+                    </div>
+                    
+                    <div class="card-text">
+                        <p>PopcornNotify. An API for sending simple emails and text messages from your code. Get emails and text messages from your code.</p>
+                    </div>
+                </div>
+                <div>
+                    
+                    <div class="text-right">
+                        <a href="/docs/integrations/notifications_and_messaging/notifications_and_messaging/" class="text-muted"><small>Learn more</small></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                        
+                            
+    <div class="col-xs-12 col-sm-6 col-md-4">
+        <div class="integration-card">
+            <div class="card-body d-flex flex-column justify-content-between">
+                <div>
+                    <div class="integration-card-title" title="Prowl">
+                        <h4 class="font-weight-bold">
+                            <img src="/images/brand_images/prowl.png" />
+                            Prowl
+                        </h4>
+                    </div>
+                    
+                    <div class="card-text">
+                        <p>Prowl is a push notification client for iOS. Push to your iPhone, iPod touch, or iPad notifications from a Mac or Windows computer, or from a multitude of apps and services.</p>
+                    </div>
+                </div>
+                <div>
+                    
+                    <div class="text-right">
+                        <a href="/docs/integrations/notifications_and_messaging/notifications_and_messaging/" class="text-muted"><small>Learn more</small></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                        
+                            
+    <div class="col-xs-12 col-sm-6 col-md-4">
+        <div class="integration-card">
+            <div class="card-body d-flex flex-column justify-content-between">
+                <div>
+                    <div class="integration-card-title" title="PushBullet">
+                        <h4 class="font-weight-bold">
+                            <img src="/images/brand_images/push_bullet.png" />
+                            PushBullet
+                        </h4>
+                    </div>
+                    
+                    <div class="card-text">
+                        <p>Pushbullet (free) is an iPhone app and Web browser extension that fills in the cracks. It lets you quickly push links, addresses plotted in Google Maps, images, and other information to from one device to another in just a matter of taps or clicks.</p>
+                    </div>
+                </div>
+                <div>
+                    
+                    <div class="text-right">
+                        <a href="/docs/integrations/notifications_and_messaging/notifications_and_messaging/" class="text-muted"><small>Learn more</small></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                        
+                            
+    <div class="col-xs-12 col-sm-6 col-md-4">
+        <div class="integration-card">
+            <div class="card-body d-flex flex-column justify-content-between">
+                <div>
+                    <div class="integration-card-title" title="Push (Techulus)">
+                        <h4 class="font-weight-bold">
+                            <img src="/images/brand_images/push_techulus.png" />
+                            Push (Techulus)
+                        </h4>
+                    </div>
+                    
+                    <div class="card-text">
+                        <p>Push offers a cross-platform solution for sending push notifications via code and no-codeto deliver transactional information in realtime.</p>
+                    </div>
+                </div>
+                <div>
+                    
+                    <div class="text-right">
+                        <a href="/docs/integrations/notifications_and_messaging/notifications_and_messaging/" class="text-muted"><small>Learn more</small></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                        
+                            
+    <div class="col-xs-12 col-sm-6 col-md-4">
+        <div class="integration-card">
+            <div class="card-body d-flex flex-column justify-content-between">
+                <div>
+                    <div class="integration-card-title" title="Pushed">
+                        <h4 class="font-weight-bold">
+                            <img src="/images/brand_images/pushed.png" />
+                            Pushed
+                        </h4>
+                    </div>
+                    
+                    <div class="card-text">
+                        <p>Pushed allows you to send real-time notifications without developing your own app to iOs, Android and Desktop devices.</p>
+                    </div>
+                </div>
+                <div>
+                    
+                    <div class="text-right">
+                        <a href="/docs/integrations/notifications_and_messaging/notifications_and_messaging/" class="text-muted"><small>Learn more</small></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                        
+                            
+    <div class="col-xs-12 col-sm-6 col-md-4">
+        <div class="integration-card">
+            <div class="card-body d-flex flex-column justify-content-between">
+                <div>
+                    <div class="integration-card-title" title="Pushover">
+                        <h4 class="font-weight-bold">
+                            <img src="/images/brand_images/pushover.png" />
+                            Pushover
+                        </h4>
+                    </div>
+                    
+                    <div class="card-text">
+                        <p>Pushover is a simple push notification service that integrates easily into web apps like IFTTT, network monitoring systems, security cameras, shell scripts, IoT devices, and anything else that needs to send alerts to your iPhone, iPad, Desktop, and other robot-like mobile devices.</p>
+                    </div>
+                </div>
+                <div>
+                    
+                    <div class="text-right">
+                        <a href="/docs/integrations/notifications_and_messaging/notifications_and_messaging/" class="text-muted"><small>Learn more</small></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                        
+                            
+    <div class="col-xs-12 col-sm-6 col-md-4">
+        <div class="integration-card">
+            <div class="card-body d-flex flex-column justify-content-between">
+                <div>
+                    <div class="integration-card-title" title="PushSafer">
+                        <h4 class="font-weight-bold">
+                            <img src="/images/brand_images/push_safer.png" />
+                            PushSafer
+                        </h4>
+                    </div>
+                    
+                    <div class="card-text">
+                        <p>Pushsafer is a service to send &amp; receive instant push notifications on your phone, tablet or desktop pc (iOS, Android, Windows 10, Chrome, Firefox) from a variety of sources. Through the e-mail gateway or by the API Pushsafer can be integrated in almost any application.</p>
+                    </div>
+                </div>
+                <div>
+                    
+                    <div class="text-right">
+                        <a href="/docs/integrations/notifications_and_messaging/notifications_and_messaging/" class="text-muted"><small>Learn more</small></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                        
+                            
+    <div class="col-xs-12 col-sm-6 col-md-4">
+        <div class="integration-card">
+            <div class="card-body d-flex flex-column justify-content-between">
+                <div>
+                    <div class="integration-card-title" title="Reddit">
+                        <h4 class="font-weight-bold">
+                            <img src="/images/brand_images/reddit.png" />
+                            Reddit
+                        </h4>
+                    </div>
+                    
+                    <div class="card-text">
+                        <p>Reddit is an American social news aggregation, web content rating, and discussion website. Registered members submit content to the site such as links, text posts, images, and videos, which are then voted up or down by other members.</p>
+                    </div>
+                </div>
+                <div>
+                    
+                    <div class="text-right">
+                        <a href="/docs/integrations/notifications_and_messaging/notifications_and_messaging/" class="text-muted"><small>Learn more</small></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                        
+                            
+    <div class="col-xs-12 col-sm-6 col-md-4">
+        <div class="integration-card">
+            <div class="card-body d-flex flex-column justify-content-between">
+                <div>
+                    <div class="integration-card-title" title="Rocket.Chat">
+                        <h4 class="font-weight-bold">
+                            <img src="/images/brand_images/rocket_chat.png" />
+                            Rocket.Chat
+                        </h4>
+                    </div>
+                    
+                    <div class="card-text">
+                        <p>Real-time conversations with your colleagues, other companies or customers. Rocket.Chat does everything other platforms do, except exposing your data.</p>
+                    </div>
+                </div>
+                <div>
+                    
+                    <div class="text-right">
+                        <a href="/docs/integrations/notifications_and_messaging/notifications_and_messaging/" class="text-muted"><small>Learn more</small></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                        
+                            
+    <div class="col-xs-12 col-sm-6 col-md-4">
+        <div class="integration-card">
+            <div class="card-body d-flex flex-column justify-content-between">
+                <div>
+                    <div class="integration-card-title" title="Ryver">
+                        <h4 class="font-weight-bold">
+                            <img src="/images/brand_images/ryver.png" />
+                            Ryver
+                        </h4>
+                    </div>
+                    
+                    <div class="card-text">
+                        <p>Ryver provides a way to organize all your team collaboration in one app. You can seamlessly organize your conversations, assign tasks, and hold voice &amp; video conference calls without ever needing to use multiple applications.</p>
+                    </div>
+                </div>
+                <div>
+                    
+                    <div class="text-right">
+                        <a href="/docs/integrations/notifications_and_messaging/notifications_and_messaging/" class="text-muted"><small>Learn more</small></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                        
+                            
+    <div class="col-xs-12 col-sm-6 col-md-4">
+        <div class="integration-card">
+            <div class="card-body d-flex flex-column justify-content-between">
+                <div>
+                    <div class="integration-card-title" title="SendGrid">
+                        <h4 class="font-weight-bold">
+                            <img src="/images/brand_images/sendgrid.png" />
+                            SendGrid
+                        </h4>
+                    </div>
+                    
+                    <div class="card-text">
+                        <p>SendGrid is a cloud-based SMTP provider that allows you to send email without having to maintain email servers. SendGrid manages all of the technical details, from scaling the infrastructure to ISP outreach and reputation monitoring to whitelist services and real time analytics.</p>
+                    </div>
+                </div>
+                <div>
+                    
+                    <div class="text-right">
+                        <a href="/docs/integrations/notifications_and_messaging/notifications_and_messaging/" class="text-muted"><small>Learn more</small></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                        
+                            
+    <div class="col-xs-12 col-sm-6 col-md-4">
+        <div class="integration-card">
+            <div class="card-body d-flex flex-column justify-content-between">
+                <div>
+                    <div class="integration-card-title" title="SimplePush">
+                        <h4 class="font-weight-bold">
+                            <img src="/images/brand_images/simplepush.png" />
+                            SimplePush
+                        </h4>
+                    </div>
+                    
+                    <div class="card-text">
+                        <p>The simplepush platform uses Simplepush to delivery notifications from Home Assistant to your Android device. Unlike similar apps the Simplepush app requires no registration.</p>
+                    </div>
+                </div>
+                <div>
+                    
+                    <div class="text-right">
+                        <a href="/docs/integrations/notifications_and_messaging/notifications_and_messaging/" class="text-muted"><small>Learn more</small></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                        
+                            
+    <div class="col-xs-12 col-sm-6 col-md-4">
+        <div class="integration-card">
+            <div class="card-body d-flex flex-column justify-content-between">
+                <div>
+                    <div class="integration-card-title" title="Slack">
+                        <h4 class="font-weight-bold">
+                            <img src="/images/brand_images/slack.png" />
+                            Slack
+                        </h4>
+                    </div>
+                    
+                    <div class="card-text">
+                        <p>Slack is a proprietary business communication platform developed by American software company Slack Technologies and now owned by Salesforce. Slack offers many IRC-style features, including persistent chat rooms organized by topic, private groups, and direct messaging.</p>
+                    </div>
+                </div>
+                <div>
+                    
+                    <div class="text-right">
+                        <a href="/docs/integrations/notifications_and_messaging/notifications_and_messaging/" class="text-muted"><small>Learn more</small></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                        
+                            
+    <div class="col-xs-12 col-sm-6 col-md-4">
+        <div class="integration-card">
+            <div class="card-body d-flex flex-column justify-content-between">
+                <div>
+                    <div class="integration-card-title" title="SMTP2Go">
+                        <h4 class="font-weight-bold">
+                            <img src="/images/brand_images/smtp2go.png" />
+                            SMTP2Go
+                        </h4>
+                    </div>
+                    
+                    <div class="card-text">
+                        <p>SMTP2GO is the scalable, reliable email deliverability solution. Worldwide servers, a robust API, and powerful reporting set us apart.</p>
+                    </div>
+                </div>
+                <div>
+                    
+                    <div class="text-right">
+                        <a href="/docs/integrations/notifications_and_messaging/notifications_and_messaging/" class="text-muted"><small>Learn more</small></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                        
+                            
+    <div class="col-xs-12 col-sm-6 col-md-4">
+        <div class="integration-card">
+            <div class="card-body d-flex flex-column justify-content-between">
+                <div>
+                    <div class="integration-card-title" title="Streamlabs">
+                        <h4 class="font-weight-bold">
+                            <img src="/images/brand_images/streamlabs.png" />
+                            Streamlabs
+                        </h4>
+                    </div>
+                    
+                    <div class="card-text">
+                        <p>Streamlabs Desktop (formerly Streamlabs OBS) is a free and open-source streaming software that is based on a fork of OBS and employs Electron for user interface. Streamlabs distributes their user&#39;s content over platforms such as Twitch, YouTube Live, and Facebook Live.</p>
+                    </div>
+                </div>
+                <div>
+                    
+                    <div class="text-right">
+                        <a href="/docs/integrations/notifications_and_messaging/notifications_and_messaging/" class="text-muted"><small>Learn more</small></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                        
+                            
+    <div class="col-xs-12 col-sm-6 col-md-4">
+        <div class="integration-card">
+            <div class="card-body d-flex flex-column justify-content-between">
+                <div>
+                    <div class="integration-card-title" title="SparkPost">
+                        <h4 class="font-weight-bold">
+                            <img src="/images/brand_images/spark_post.png" />
+                            SparkPost
+                        </h4>
+                    </div>
+                    
+                    <div class="card-text">
+                        <p>SparkPost is the world&#39;s first and only predictive email intelligence platform. As the</p>
+                    </div>
+                </div>
+                <div>
+                    
+                    <div class="text-right">
+                        <a href="/docs/integrations/notifications_and_messaging/notifications_and_messaging/" class="text-muted"><small>Learn more</small></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                        
+                            
+    <div class="col-xs-12 col-sm-6 col-md-4">
+        <div class="integration-card">
+            <div class="card-body d-flex flex-column justify-content-between">
+                <div>
+                    <div class="integration-card-title" title="Spontit">
+                        <h4 class="font-weight-bold">
+                            <img src="/images/brand_images/spontit.png" />
+                            Spontit
+                        </h4>
+                    </div>
+                    
+                    <div class="card-text">
+                        <p>Spontit enables you to send push notifications without your own app, or even website. You can create different channels and even send notifications to specific followers. This enables you to build an entire notification system without your own app.</p>
+                    </div>
+                </div>
+                <div>
+                    
+                    <div class="text-right">
+                        <a href="/docs/integrations/notifications_and_messaging/notifications_and_messaging/" class="text-muted"><small>Learn more</small></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                        
+                            
+    <div class="col-xs-12 col-sm-6 col-md-4">
+        <div class="integration-card">
+            <div class="card-body d-flex flex-column justify-content-between">
+                <div>
+                    <div class="integration-card-title" title="Syslog">
+                        <h4 class="font-weight-bold">
+                            <img src="/images/brand_images/syslog.png" />
+                            Syslog
+                        </h4>
+                    </div>
+                    
+                    <div class="card-text">
+                        <p>System Logging Protocol (Syslog) is a way network devices can use a standard message format to communicate with a logging server. It was designed specifically to make it easy to monitor network devices. Devices can use a Syslog agent to send out notification messages under a wide range of specific conditions.</p>
+                    </div>
+                </div>
+                <div>
+                    
+                    <div class="text-right">
+                        <a href="/docs/integrations/notifications_and_messaging/notifications_and_messaging/" class="text-muted"><small>Learn more</small></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                        
+                            
+    <div class="col-xs-12 col-sm-6 col-md-4">
+        <div class="integration-card">
+            <div class="card-body d-flex flex-column justify-content-between">
+                <div>
+                    <div class="integration-card-title" title="Telegram">
+                        <h4 class="font-weight-bold">
+                            <img src="/images/brand_images/telegram.png" />
+                            Telegram
+                        </h4>
+                    </div>
+                    
+                    <div class="card-text">
+                        <p>Telegram is a freeware, cross-platform, cloud-based instant messaging service. The service also provides end-to-end encrypted video calling, VoIP, file sharing and several other features.</p>
+                    </div>
+                </div>
+                <div>
+                    
+                    <div class="text-right">
+                        <a href="/docs/integrations/notifications_and_messaging/notifications_and_messaging/" class="text-muted"><small>Learn more</small></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                        
+                            
+    <div class="col-xs-12 col-sm-6 col-md-4">
+        <div class="integration-card">
+            <div class="card-body d-flex flex-column justify-content-between">
+                <div>
+                    <div class="integration-card-title" title="Twitter">
+                        <h4 class="font-weight-bold">
+                            <img src="/images/brand_images/twitter.png" />
+                            Twitter
+                        </h4>
+                    </div>
+                    
+                    <div class="card-text">
+                        <p>Twitter is an American microblogging and social networking service on which users post and interact with messages known as &#34;tweets&#34;. Registered users can post, like, and retweet tweets, but unregistered users can only read those that are publicly available.</p>
+                    </div>
+                </div>
+                <div>
+                    
+                    <div class="text-right">
+                        <a href="/docs/integrations/notifications_and_messaging/notifications_and_messaging/" class="text-muted"><small>Learn more</small></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                        
+                            
+    <div class="col-xs-12 col-sm-6 col-md-4">
+        <div class="integration-card">
+            <div class="card-body d-flex flex-column justify-content-between">
+                <div>
+                    <div class="integration-card-title" title="Twist">
+                        <h4 class="font-weight-bold">
+                            <img src="/images/brand_images/twist.png" />
+                            Twist
+                        </h4>
+                    </div>
+                    
+                    <div class="card-text">
+                        <p>Twist is messaging for teams burned out by real-time, all-the-time communication. Instead of being chained to the 9-to-5 and interrupted by meetings, emails, and Slack chats, join the async work revolution.</p>
+                    </div>
+                </div>
+                <div>
+                    
+                    <div class="text-right">
+                        <a href="/docs/integrations/notifications_and_messaging/notifications_and_messaging/" class="text-muted"><small>Learn more</small></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                        
+                            
+    <div class="col-xs-12 col-sm-6 col-md-4">
+        <div class="integration-card">
+            <div class="card-body d-flex flex-column justify-content-between">
+                <div>
+                    <div class="integration-card-title" title="XMPP">
+                        <h4 class="font-weight-bold">
+                            <img src="/images/brand_images/xmpp.png" />
+                            XMPP
+                        </h4>
+                    </div>
+                    
+                    <div class="card-text">
+                        <p>Extensible Messaging and Presence Protocol is an open communication protocol designed for instant messaging, presence information, and contact list maintenance. Based on XML, it enables the near-real-time exchange of structured data between two or more network entities.</p>
+                    </div>
+                </div>
+                <div>
+                    
+                    <div class="text-right">
+                        <a href="/docs/integrations/notifications_and_messaging/notifications_and_messaging/" class="text-muted"><small>Learn more</small></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                        
+                            
+    <div class="col-xs-12 col-sm-6 col-md-4">
+        <div class="integration-card">
+            <div class="card-body d-flex flex-column justify-content-between">
+                <div>
+                    <div class="integration-card-title" title="Webex Teams (Cisco)">
+                        <h4 class="font-weight-bold">
+                            <img src="/images/brand_images/webex_teams.png" />
+                            Webex Teams (Cisco)
+                        </h4>
+                    </div>
+                    
+                    <div class="card-text">
+                        <p>Webex Teams is a cloud-based app for continuous teamwork with videoconferencing, meetings, group messaging, file sharing and white boarding.</p>
+                    </div>
+                </div>
+                <div>
+                    
+                    <div class="text-right">
+                        <a href="/docs/integrations/notifications_and_messaging/notifications_and_messaging/" class="text-muted"><small>Learn more</small></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                        
+                            
+    <div class="col-xs-12 col-sm-6 col-md-4">
+        <div class="integration-card">
+            <div class="card-body d-flex flex-column justify-content-between">
+                <div>
+                    <div class="integration-card-title" title="Zulip Chat">
+                        <h4 class="font-weight-bold">
+                            <img src="/images/brand_images/zulip.png" />
+                            Zulip Chat
+                        </h4>
+                    </div>
+                    
+                    <div class="card-text">
+                        <p>Zulip is an open-source communications platform, similar to Mattermost, Slack or Rocket. Chat, but providing unique features by combining the immediacy of real-time chat with an email threading model.</p>
+                    </div>
+                </div>
+                <div>
+                    
+                    <div class="text-right">
+                        <a href="/docs/integrations/notifications_and_messaging/notifications_and_messaging/" class="text-muted"><small>Learn more</small></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                        
+                    
+                </div>
+            
+        </div>
+    </div>
+</section>
+
+ 
+
+
+
+      </main>
+      <section class="row td-cover-block" style="background-color: #1b1a21;">
+  <div class="container">
+      <footer class="footer-component with-intercom">
+          <div class="section-container footer-inner size-medium">
+              <div class="content">
+                  <div class="page-container padding-small-x">
+                      <div class="margin-component bottom-small-x">
+                          <nav class="footer-links" role="navigation">
+                              <ul class="list-component footer-column ul">
+                                  <li class="list-item-component footer-item footer-item-header">
+                                      <div class="margin-component inner bottom-zero">
+                                          <div class="list-content-wrapper">
+                                              <div class="typography-text p2-caps footer-link footer-header inverted">
+                                                  Product
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </li>
+                                  <li class="list-item-component footer-item">
+                                      <div class="margin-component inner bottom-zero">
+                                          <div class="list-content-wrapper">
+                                              <div class="typography-text p2-normal inverted"><a
+                                                  class="link-component footer-link"
+                                                  href="/products/fx/">StreamZero FX</a></div>
+                                          </div>
+                                      </div>
+                                  </li>
+                                  <li class="list-item-component footer-item">
+                                      <div class="margin-component inner bottom-zero">
+                                          <div class="list-content-wrapper">
+                                              <div class="typography-text p2-normal inverted"><a
+                                                  class="link-component footer-link"
+                                                  href="/products/k8x">StreamZero K8X</a></div>
+                                          </div>
+                                      </div>
+                                  </li>
+                                  <li class="list-item-component footer-item">
+                                      <div class="margin-component inner bottom-zero">
+                                          <div class="list-content-wrapper">
+                                              <div class="typography-text p2-normal inverted"><a
+                                                  class="link-component footer-link"
+                                                  href="/products/sx/">StreamZero SX</a></div>
+                                          </div>
+                                      </div>
+                                  </li>
+                              </ul>
+                              <ul class="list-component footer-column ul">
+                                  <li class="list-item-component footer-item footer-item-header">
+                                      <div class="margin-component inner bottom-zero">
+                                          <div class="list-content-wrapper">
+                                              <div class="typography-text p2-caps footer-link footer-header inverted">
+                                                  Solutions
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </li>
+                                  <li class="list-item-component footer-item">
+                                      <div class="margin-component inner bottom-zero">
+                                          <div class="list-content-wrapper">
+                                              <div class="typography-text p2-normal inverted"><a
+                                                  class="link-component footer-link"
+                                                  href="/solutions/">Why GridMine?</a></div>
+                                          </div>
+                                      </div>
+                                  </li>
+                                  <li class="list-item-component footer-item">
+                                      <div class="margin-component inner bottom-zero">
+                                          <div class="list-content-wrapper">
+                                              <div class="typography-text p2-normal inverted"><a
+                                                  class="link-component footer-link"
+                                                  href="/integrations/">Integrations</a></div>
+                                          </div>
+                                      </div>
+                                  </li>
+                                  <li class="list-item-component footer-item">
+                                      <div class="margin-component inner bottom-zero">
+                                          <div class="list-content-wrapper">
+                                              <div class="typography-text p2-normal inverted"><xa
+                                                  class="link-component footer-link"
+                                                  href="/partners/">Partners</a></div>
+                                          </div>
+                                      </div>
+                                  </li>
+                              </ul>
+                              <ul class="list-component footer-column ul">
+                                  <li class="list-item-component footer-item footer-item-header">
+                                      <div class="margin-component inner bottom-zero">
+                                          <div class="list-content-wrapper">
+                                              <div class="typography-text p2-caps footer-link footer-header inverted">
+                                                  Learn
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </li>
+                                  <li class="list-item-component footer-item">
+                                      <div class="margin-component inner bottom-zero">
+                                          <div class="list-content-wrapper">
+                                              <div class="typography-text p2-normal inverted"><a
+                                                  rel="noopener noreferrer"
+                                                  class="link-component footer-link" href="/docs/">Developer
+                                                  Guide</a>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </li>
+                                  <li class="list-item-component footer-item">
+                                      <div class="margin-component inner bottom-zero">
+                                          <div class="list-content-wrapper">
+                                              <div class="typography-text p2-normal inverted"><a
+                                                  rel="noopener noreferrer"
+                                                  class="link-component footer-link" href="/docs/integrations/">Integrations
+                                                  Guide</a></div>
+                                          </div>
+                                      </div>
+                                  </li>
+                                  <li class="list-item-component footer-item">
+                                      <div class="margin-component inner bottom-zero">
+                                          <div class="list-content-wrapper">
+                                              <div class="typography-text p2-normal inverted"><a
+                                                  class="link-component footer-link"
+                                                  href="/docs/security/">Security</a></div>
+                                          </div>
+                                      </div>
+                                  </li>
+                                  <li class="list-item-component footer-item">
+                                      <div class="margin-component inner bottom-zero">
+                                          <div class="list-content-wrapper">
+                                              <div class="typography-text p2-normal inverted"><xa
+                                                  class="link-component footer-link"
+                                                  href="/blog/">Blog</a></div>
+                                          </div>
+                                      </div>
+                                  </li>
+                                  
+                              </ul>
+                              <ul class="list-component footer-column ul">
+                                  <li class="list-item-component footer-item footer-item-header">
+                                      <div class="margin-component inner bottom-zero">
+                                          <div class="list-content-wrapper">
+                                              <div class="typography-text p2-caps footer-link footer-header inverted">
+                                                  Support
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </li>
+                                  <li class="list-item-component footer-item">
+                                      <div class="margin-component inner bottom-zero">
+                                          <div class="list-content-wrapper">
+                                              <div class="typography-text p2-normal inverted"><xa
+                                                  class="link-component footer-link"
+                                                  href="/support/">Support Plans</a></div>
+                                          </div>
+                                      </div>
+                                  </li>
+                                  
+                                  <li class="list-item-component footer-item">
+                                      <div class="margin-component inner bottom-zero">
+                                          <div class="list-content-wrapper">
+                                              <div class="typography-text p2-normal inverted"><xa
+                                                  class="link-component footer-link"
+                                                  href="/services/">Professional Services</a></div>
+                                          </div>
+                                      </div>
+                                  </li>
+                                  <li class="list-item-component footer-item">
+                                      <div class="margin-component inner bottom-zero">
+                                          <div class="list-content-wrapper">
+                                              <div class="typography-text p2-normal inverted"><a
+                                                  rel="noopener noreferrer"
+                                                  class="link-component footer-link" href="/docs/">Documentation</a>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </li>
+                              </ul>
+                              <ul class="list-component footer-column ul">
+                                  <li class="list-item-component footer-item footer-item-header">
+                                      <div class="margin-component inner bottom-zero">
+                                          <div class="list-content-wrapper">
+                                              <div class="typography-text p2-caps footer-link footer-header inverted">
+                                                  Company
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </li>
+                                  <li class="list-item-component footer-item">
+                                      <div class="margin-component inner bottom-zero">
+                                          <div class="list-content-wrapper">
+                                              <div class="typography-text p2-normal inverted"><a
+                                                  class="link-component footer-link"
+                                                  href="/about/">About Us</a></div>
+                                          </div>
+                                      </div>
+                                  </li>
+                                  <li class="list-item-component footer-item">
+                                      <div class="margin-component inner bottom-zero">
+                                          <div class="list-content-wrapper">
+                                              <div class="typography-text p2-normal inverted"><xa
+                                                  class="link-component footer-link"
+                                                  href="/jobs/"><span class="footer-pill-wrapper">Careers <span
+                                                  class="footer-pill">We're hiring</span></span></a>
+                                                </div>
+                                          </div>
+                                      </div>
+                                  </li>
+                                  <li class="list-item-component footer-item">
+                                      <div class="margin-component inner bottom-zero">
+                                          <div class="list-content-wrapper">
+                                              <div class="typography-text p2-normal inverted"><a
+                                                  class="link-component footer-link"
+                                                  href="/contact/">Contact Us</a></div>
+                                          </div>
+                                      </div>
+                                  </li>
+                              </ul>
+                          </nav>
+                      </div>
+                      <div class="margin-component bottom-small-x">
+                          <div class="centering-wrapper social-links">
+                              <a rel="noopener noreferrer" class="link-component social-link"
+                                href="https://twitter.com/gridmine/" title="Twitter" target="_blank">
+                                  <img src="/icons/footer/twitter-icon.png" alt="Twitter">
+                              </a>
+                              
+                              <a rel="noopener noreferrer" class="link-component social-link"
+                                href="https://www.linkedin.com/company/gridmine/" title="LinkedIn" target="_blank">
+                                  <img src="/icons/footer/linkedin-icon.png" alt="LinkedIn">
+                              </a>
+                              <a rel="noopener noreferrer" class="link-component social-link"
+                                href="https://www.youtube.com/channel/UC5miURXVxGLo17EyWPBWCug/" title="YouTube"
+                                target="_blank">
+                                  <img src="/icons/footer/youtube-icon.png" alt="YouTube">
+                              </a>
+                              
+                              <a rel="noopener noreferrer" class="link-component social-link"
+                                href="https://github.com/gridmine/" title="GitHub" target="_blank">
+                                  <img src="/icons/footer/github-icon.png" alt="GitHub">
+                              </a>
+                              <a rel="noopener noreferrer" class="link-component social-link"
+                                href="https://www.medium.com/gridmine/" title="Medium" target="_blank">
+                                  <img src="/icons/footer/medium-icon.png" alt="Medium">
+                              </a>
+                              <xa rel="noopener noreferrer" class="link-component social-link" href="#"
+                                data-toggle="modal" data-target="#subscribeModal"
+                                title="Subscribe to our Newsletter">
+                                  <img src="/icons/footer/mail-icon.png" alt="Newsletter">
+                              </a>
+                          </div>
+                      </div>
+                      <div class="centering-wrapper legal-links">
+                          <div class="typography-text p2-normal align-center">
+                              <span class="copyright">2023 © GridMine GmbH</span>
+                              <span> | </span>
+                              <br class="br-component mobile">
+                              <a class="link-component legal-link" href="/docs/privacy_policy/">Privacy Policy</a>
+                              <span> | </span>
+                              <a class="link-component legal-link" href="/docs/privacy_policy/">Data Protection
+                                  Policy</a>
+                              <span> | </span>
+                              <a class="link-component legal-link" href="/docs/terms_conditions/">Legal Terms and
+                                  Conditions</a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </footer>
+  </div>
+</section>
+
+<script type="text/javascript" src="/js/carousel.js"></script>
+<link rel="stylesheet" href="/css/carousel.css">
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+
+
+
+
+
+<script src='/js/tabpane-persist.js'></script>
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="/js/main.min.7d5b92c4889cf0554b0ea5e2309b0b81b196aa7c9a235632938a25d9fc4d8a7c.js" integrity="sha256-fVuSxIic8FVLDqXiMJsLgbGWqnyaI1Yyk4ol2fxNinw=" crossorigin="anonymous"></script>
+
+
+
+
+  </body>
+</html>

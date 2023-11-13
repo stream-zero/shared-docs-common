@@ -1,0 +1,1171 @@
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="generator" content="Hugo 0.117.0"><link rel="canonical" type="text/html" href="/docs/integrations/notifications_and_messaging/">
+<link rel="alternate" type="application/rss&#43;xml" href="/docs/integrations/notifications_and_messaging/index.xml">
+<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+
+
+<link rel="shortcut icon" href="/favicons/favicon.ico" >
+<link rel="apple-touch-icon" href="/favicons/apple-touch-icon-180x180.png" sizes="180x180">
+<link rel="icon" type="image/png" href="/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicons/android-36x36.png" sizes="36x36">
+<link rel="icon" type="image/png" href="/favicons/android-48x48.png" sizes="48x48">
+<link rel="icon" type="image/png" href="/favicons/android-72x72.png" sizes="72x72">
+<link rel="icon" type="image/png" href="/favicons/android-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="/favicons/android-144x144.png" sizes="144x144">
+<link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
+
+<title>Notifications and Messaging | GridMine</title>
+
+
+  <meta name="description" content="How to integrate a notifications with the {{&lt; param replacables.brand_name  &gt;}} Platform.">
+<meta property="og:title" content="Notifications and Messaging" />
+<meta property="og:description" content="How to integrate a notifications with the {{&lt; param replacables.brand_name  &gt;}} Platform." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="/docs/integrations/notifications_and_messaging/" />
+<meta itemprop="name" content="Notifications and Messaging">
+<meta itemprop="description" content="How to integrate a notifications with the {{&lt; param replacables.brand_name  &gt;}} Platform."><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Notifications and Messaging"/>
+<meta name="twitter:description" content="How to integrate a notifications with the {{&lt; param replacables.brand_name  &gt;}} Platform."/>
+
+
+
+
+<link rel="preload" href="/scss/main.scss" as="style">
+<link href="/scss/main.scss" rel="stylesheet" integrity="">
+
+
+<script
+  src="https://code.jquery.com/jquery-3.5.1.min.js"
+  integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+  crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RZ6L6XFT3Q"></script>
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-RZ6L6XFT3Q', { 'anonymize_ip': false });
+}
+</script>
+
+
+
+
+  </head>
+  <body class="td-section">
+    <header>
+      
+<nav class="js-navbar-scroll navbar navbar-expand-lg navbar-dark  td-navbar">
+	<a class="navbar-brand" href="/">
+		<span class="navbar-logo"><svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6675 639" width="200" height="29"><style>.a{fill:#e21339}</style><path class="a" d="m234 638.6q-66.8.0-119.6-22.9-52-22.9-81.9-66.9-29.9-44-31.7-106.5h125.9q.9 27.3 14.1 49.3t36.9 35.2q23.8 12.3 56.3 12.3 27.3.0 47.6-8.8 21.1-9.7 32.5-26.4 12.3-16.7 12.3-39.6.0-27.3-14-44.9-13.2-18.4-36.1-29.9-22.9-12.3-52.8-22-29.1-10.5-61.6-21.1Q90.6 321.8 52.8 283q-37.9-39.6-37.9-104.7.0-55.4 26.4-95 26.4-39.6 73.9-60.7 47.6-21.2 108.3-21.2 62.5.0 110 22 47.5 21.2 74.8 61.6 27.3 40.5 29 95.1H309.7q-.9-20.3-11.4-37.9-10.6-18.4-29.9-29-19.4-11.4-46.7-11.4-22.9-.9-41.3 7-18.5 7.9-30 23.8-10.5 14.9-10.5 37.8.0 22 10.5 37 10.6 14.9 30 26.4 19.3 10.5 45.7 20.2 26.4 8.8 57.2 18.5 46.7 15.8 84.5 37.8 38.7 21.1 61.6 55.5 22.9 34.3 22.9 90.6.0 48.4-25.5 89.8-24.7 41.3-73.1 66.8-48.4 25.6-119.7 25.6zM929.2 628H811.3V107.9H630.9V12h478.7v95.9H929.2zm498 0h-118.8V12H1539q73.9.0 122.3 25.5 49.3 25.6 73.1 68.7 23.7 42.2 23.7 94.1.0 49.3-23.7 92.4-22.9 42.3-72.2 68.7-48.4 25.5-125 25.5h-110zm336.2.0h-135.5l-126.7-271h128.4zm-336.1-516.6v189.2h103.8q54.6.0 80.1-26.4 25.5-26.4 25.5-69.5t-25.5-67.8q-25.5-25.5-80.1-25.5zM2383.8 628h-405.6V12h405.6v95.9H2097v161h260.4v92.4H2097V532h286.8zm306.2.0h-124l224.4-616H2925l225.3 616h-125.9l-167.2-480.4zm351.2-140h-375.8l30.8-92.4h314.2zm422.3 140h-118.8V12h141.7l191.8 383.6L3867.4 12h141.7v616h-118.8V213.5L3724 540h-94.2l-166.3-327.4zm1153.7.0h-393.4v-58.1l303.6-493.7h-299.2V12h385.4v58.1l-304.4 493.7h308zm601.8.0h-381V12h381v60.7h-307.1v214.7h280.7v59.8h-280.7v220H5219zm306.2.0h-73.9V12h198.9q72.2.0 117.9 24.7 45.8 23.7 67.8 64.2t22 91.5q0 49.3-22.9 90.7-22 41.3-68.6 66-46.7 24.6-119.7 24.6h-121.5zm338.8.0h-87.1l-135.5-275.4h82.7zM5525.2 74.5v241.1h119.7q70.4.0 103-34.3 33.4-34.4 33.4-88 0-54.6-32.6-86.3-31.6-32.5-104.7-32.5zm844.8 564q-90.7.0-159.3-39.6-67.8-40.4-106.5-111.7-37.8-72.2-37.8-167.2.0-94.2 37.8-165.5 38.7-72.1 106.5-112.6 68.6-40.5 159.3-40.5 91.5.0 159.3 40.5 68.6 40.5 106.4 112.6 37.9 71.3 37.9 165.5.0 95-37.9 167.2-37.8 71.3-106.4 111.7-67.8 39.6-159.3 39.6zm0-65.1q67.7.0 118.8-29.9 51.9-30.8 80.1-87.1 29-57.2 29-136.4t-29-135.5q-28.2-57.2-80.1-87.2-51.1-29.9-118.8-29.9-67.8.0-119.7 29.9-51 30-80.1 87.2-28.1 56.3-28.1 135.5t28.1 136.4q29.1 56.3 80.1 87.1 51.9 29.9 119.7 29.9z"/></svg></span>
+	</a>
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+		<ul class="navbar-nav ml-auto">
+			
+			
+				
+				
+				
+				
+				
+				
+				
+					<li class="nav-item mr-2 mb-2 mb-lg-0 dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">
+							PRODUCTS
+						</a>
+						<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+							
+								<li>
+									<a class="nav-link" href="/products/fx/" >STREAMZERO FX</a>
+								</li>
+							
+								<li>
+									<a class="nav-link" href="/products/k8x/" >STREAMZERO K8X</a>
+								</li>
+							
+								<li>
+									<a class="nav-link" href="/products/sx/" >STREAMZERO SX</a>
+								</li>
+							
+						</ul>
+					</li>
+				
+			
+				
+				
+				
+				
+				
+				
+				
+				
+				
+					<li class="nav-item mr-2 mb-2 mb-lg-0">
+						<a class="nav-link active" href="/docs/" ><span class="active">DOCUMENTATION</span></a>
+					</li>
+				
+			
+			
+			
+		</ul>
+	</div>
+	<div class="navbar-nav d-none d-lg-block">
+<input type="search" class="form-control td-search-input" placeholder="&#xf002; Search this site…" aria-label="Search this site…" autocomplete="off">
+
+</div>
+</nav>
+
+    </header>
+    <div class="container-fluid td-outer">
+      <div class="td-main">
+        <div class="row flex-xl-nowrap">
+          <div class="col-12 col-md-3 col-xl-2 td-sidebar d-print-none">
+          </div>
+          <div class="d-none d-xl-block col-xl-2 td-toc d-print-none">
+          </div>
+          <main class="col-12 col-md-9 col-xl-8 pl-md-5" role="main">
+            
+
+
+
+
+<div class="td-content">
+<div class="pageinfo pageinfo-primary d-print-none">
+<p>
+This the multi-page printable view of this section.
+<a href="#" onclick="print();return false;">Click here to print</a>.
+</p><p>
+<a href="/docs/integrations/notifications_and_messaging/">Return to the regular view of this page</a>.
+</p>
+</div>
+
+
+
+<h1 class="title">Notifications and Messaging</h1>
+<div class="lead">How to integrate a notifications with the StreamZero Platform.</div>
+
+
+
+
+    <ul>
+    
+  
+  
+  
+  
+
+  
+
+    </ul>
+
+
+<div class="content">
+      <p>StreamZero provides you access to over 40 notification services such as Slack, Email and Telegram.</p>
+<p>StreamZero FX uses the Apprise Python Libs as an engine for notifiation dispatch. The power of Apprise gives you access to over 40 notification services.  A complete list is provided in a table and the end of the document.</p>
+<p>In order to send notifications from your package you need is to create and emit a pre-defined event type.</p>
+<h2 id="how-to-send-notifications-from-your-package">How to send notifications from your package</h2>
+<p>In order to send notifications from your package you need to send a &lsquo;ferris.notifications.apprise.notification&rsquo; event from your package</p>
+<p>You can do it like so.</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> fx_ef <span style="color:#f92672">import</span> context
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Please note that the value for the url_template is the name used within the config </span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># For a specifc URL template in configurations.</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Please see configurations sample on how to configure</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>data <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">&#34;url_template&#34;</span>: <span style="color:#e6db74">&#34;slack_1&#34;</span>,
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">&#34;body&#34;</span>: <span style="color:#e6db74">&#34;This is the content&#34;</span>,
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">&#34;title&#34;</span>: <span style="color:#e6db74">&#34;This is the subject&#34;</span>
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>event_type <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;ferris.notifications.apprise.notification&#34;</span>
+</span></span><span style="display:flex;"><span>context<span style="color:#f92672">.</span>events<span style="color:#f92672">.</span>send(event_type, data)
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="how-does-it-work">How does it Work?</h2>
+<p>There are 2 approaches to implementing the notifications support.</p>
+<ul>
+<li>Implementation within a StreamZero Service</li>
+<li>Implementation in an Exit Gateway</li>
+</ul>
+<p>The 2nd option is used in platforms which are behind a firewall and therefore require the gateway to be outside the firewall for accessing external services. In these cases the adapter runs as a separate container.</p>
+<p>Irrespective of the infrastructure implementation the service internal API (as illustrated above) does not change.</p>
+<p>The following documentation refers to Option 1.</p>
+<h2 id="pre-requisites">Pre-Requisites</h2>
+<p>In order to send notifcations</p>
+<ul>
+<li>
+<p>The Apprise Libs must be present in the Executor Image.</p>
+</li>
+<li>
+<p>You must have the Apprise Notifications Packages installed and running. You can find the code base further below in document.</p>
+</li>
+<li>
+<p>You must upload a secrets.json file for the Apprise Notifications Package. Please note that you should maintain a separate copy of the configs since this will not be displayed in your configuration manager since it contains credentials.</p>
+</li>
+<li>
+<p>A sample configuration file is provided below. Please use the table based on Apprise documentation to understand the URL Template structure.</p>
+</li>
+<li>
+<p>Once the Apprise Notifications Package is installed along with the configurations you must link the package to be triggered by the &lsquo;ferris.notifications.apprise.notification&rsquo; event.</p>
+</li>
+</ul>
+<h2 id="the-hahahugoshortcode15s3hbhb-apprise-package">The StreamZero Apprise Package</h2>
+<p>The following is code for an StreamZero executor package to send apprise based notifications.</p>
+<p>To send a notification from within your python application, just do the following:</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> apprise
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> fx_ef <span style="color:#f92672">import</span> context
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Getting the incoming parameters</span>
+</span></span><span style="display:flex;"><span>url_template_name <span style="color:#f92672">=</span> context<span style="color:#f92672">.</span>params<span style="color:#f92672">.</span>get(<span style="color:#e6db74">&#39;url_template&#39;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Create an Apprise instance</span>
+</span></span><span style="display:flex;"><span>apobj <span style="color:#f92672">=</span> apprise<span style="color:#f92672">.</span>Apprise()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Setting up the Apprise object with URLs</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># The URL is retreived from the uploaded secrets.json</span>
+</span></span><span style="display:flex;"><span>apobj<span style="color:#f92672">.</span>add(context<span style="color:#f92672">.</span>secrets<span style="color:#f92672">.</span>get(url_template_name))
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">try</span>: 
+</span></span><span style="display:flex;"><span>  apobj<span style="color:#f92672">.</span>notify(
+</span></span><span style="display:flex;"><span>    body<span style="color:#f92672">=</span>get_param(<span style="color:#e6db74">&#39;body&#39;</span>),
+</span></span><span style="display:flex;"><span>    title<span style="color:#f92672">=</span>get_param(<span style="color:#e6db74">&#39;title&#39;</span>),
+</span></span><span style="display:flex;"><span>  )
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">except</span> <span style="color:#a6e22e">Exception</span> <span style="color:#66d9ef">as</span> ex:
+</span></span><span style="display:flex;"><span>  print(ex)
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="configuration">Configuration</h2>
+<p>The following is a sample configuration which is uploaded as a secrets.json file for the StreamZero Apprise Package.</p>
+<p>The configuration consists of a set of named URL templates. With each url_template being based on the Apprise URL schema as shown in the sections further in document.</p>
+<p>While you are free to name URL templates as you wish it is preferred to prefix them with an indication of the underlying service being used to send notifications.</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;slack_1&#34;</span>: <span style="color:#e6db74">&#34;slack://TokenA/TokenB/TokenC/&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;slack_2&#34;</span>: <span style="color:#e6db74">&#34;slack://TokenA/TokenB/TokenC/Channel&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;slack_3&#34;</span>:<span style="color:#e6db74">&#34;slack://botname@TokenA/TokenB/TokenC/Channel&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;slack_4&#34;</span>: <span style="color:#e6db74">&#34;slack://user@TokenA/TokenB/TokenC/Channel1/Channel2/ChannelN&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;telegram_1&#34;</span>: <span style="color:#e6db74">&#34;tgram://bottoken/ChatID&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;telegram_2&#34;</span>: <span style="color:#e6db74">&#34;tgram://bottoken/ChatID1/ChatID2/ChatIDN&#34;</span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>The configurations must be added to a secrets.json file and uploaded as part of the apprise_package.</p>
+<p>The apprise package must be configured to be triggered by the &lsquo;ferris.notifications.apprise.notification&rsquo; event.</p>
+<h3 id="popular-notification-services">Popular Notification Services</h3>
+<p>The table below identifies the services this tool supports and some example service urls you need to use in order to take advantage of it.</p>
+<p>Click on any of the services listed below to get more details on how you can configure Apprise to access them.</p>
+<table>
+<thead>
+<tr>
+<th>Notification Service</th>
+<th>Service ID</th>
+<th>Default Port</th>
+<th>Example Syntax</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://github.com/caronc/apprise/wiki/Notify_apprise_api">Apprise API</a></td>
+<td>apprise:// or apprises://</td>
+<td>(TCP) 80 or 443</td>
+<td>apprise://hostname/Token</td>
+</tr>
+<tr>
+<td><a href="https://github.com/caronc/apprise/wiki/Notify_ses">AWS SES</a></td>
+<td>ses://</td>
+<td>(TCP) 443</td>
+<td>ses://user@domain/AccessKeyID/AccessSecretKey/RegionName<br/>ses://user@domain/AccessKeyID/AccessSecretKey/RegionName/email1/email2/emailN</td>
+</tr>
+<tr>
+<td><a href="https://github.com/caronc/apprise/wiki/Notify_discord">Discord</a></td>
+<td>discord://</td>
+<td>(TCP) 443</td>
+<td>discord://webhook_id/webhook_token<br />discord://avatar@webhook_id/webhook_token</td>
+</tr>
+<tr>
+<td><a href="https://github.com/caronc/apprise/wiki/Notify_emby">Emby</a></td>
+<td>emby:// or embys://</td>
+<td>(TCP) 8096</td>
+<td>emby://user@hostname/<br />emby://user:password@hostname</td>
+</tr>
+<tr>
+<td><a href="https://github.com/caronc/apprise/wiki/Notify_enigma2">Enigma2</a></td>
+<td>enigma2:// or enigma2s://</td>
+<td>(TCP) 80 or 443</td>
+<td>enigma2://hostname</td>
+</tr>
+<tr>
+<td><a href="https://github.com/caronc/apprise/wiki/Notify_faast">Faast</a></td>
+<td>faast://</td>
+<td>(TCP) 443</td>
+<td>faast://authorizationtoken</td>
+</tr>
+<tr>
+<td><a href="https://github.com/caronc/apprise/wiki/Notify_fcm">FCM</a></td>
+<td>fcm://</td>
+<td>(TCP) 443</td>
+<td>fcm://project@apikey/DEVICE_ID<br />fcm://project@apikey/#TOPIC<br/>fcm://project@apikey/DEVICE_ID1/#topic1/#topic2/DEVICE_ID2/</td>
+</tr>
+<tr>
+<td><a href="https://github.com/caronc/apprise/wiki/Notify_flock">Flock</a></td>
+<td>flock://</td>
+<td>(TCP) 443</td>
+<td>flock://token<br/>flock://botname@token<br/>flock://app_token/u:userid<br/>flock://app_token/g:channel_id<br/>flock://app_token/u:userid/g:channel_id</td>
+</tr>
+<tr>
+<td><a href="https://github.com/caronc/apprise/wiki/Notify_gitter">Gitter</a></td>
+<td>gitter://</td>
+<td>(TCP) 443</td>
+<td>gitter://token/room<br/>gitter://token/room1/room2/roomN</td>
+</tr>
+<tr>
+<td><a href="https://github.com/caronc/apprise/wiki/Notify_googlechat">Google Chat</a></td>
+<td>gchat://</td>
+<td>(TCP) 443</td>
+<td>gchat://workspace/key/token</td>
+</tr>
+<tr>
+<td><a href="https://github.com/caronc/apprise/wiki/Notify_gotify">Gotify</a></td>
+<td>gotify:// or gotifys://</td>
+<td>(TCP) 80 or 443</td>
+<td>gotify://hostname/token<br />gotifys://hostname/token?priority=high</td>
+</tr>
+<tr>
+<td><a href="https://github.com/caronc/apprise/wiki/Notify_growl">Growl</a></td>
+<td>growl://</td>
+<td>(UDP) 23053</td>
+<td>growl://hostname<br />growl://hostname:portno<br />growl://password@hostname<br />growl://password@hostname:port</br><strong>Note</strong>: you can also use the get parameter <em>version</em> which can allow the growl request to behave using the older v1.x protocol. An example would look like: growl://hostname?version=1</td>
+</tr>
+<tr>
+<td><a href="https://github.com/caronc/apprise/wiki/Notify_homeassistant">Home Assistant</a></td>
+<td>hassio:// or hassios://</td>
+<td>(TCP) 8123 or 443</td>
+<td>hassio://hostname/accesstoken<br />hassio://user@hostname/accesstoken<br />hassio://user:password@hostname:port/accesstoken<br />hassio://hostname/optional/path/accesstoken</td>
+</tr>
+<tr>
+<td><a href="https://github.com/caronc/apprise/wiki/Notify_ifttt">IFTTT</a></td>
+<td>ifttt://</td>
+<td>(TCP) 443</td>
+<td>ifttt://webhooksID/Event<br />ifttt://webhooksID/Event1/Event2/EventN<br/>ifttt://webhooksID/Event1/?+Key=Value<br/>ifttt://webhooksID/Event1/?-Key=value1</td>
+</tr>
+<tr>
+<td><a href="https://github.com/caronc/apprise/wiki/Notify_join">Join</a></td>
+<td>join://</td>
+<td>(TCP) 443</td>
+<td>join://apikey/device<br />join://apikey/device1/device2/deviceN/<br />join://apikey/group<br />join://apikey/groupA/groupB/groupN<br />join://apikey/DeviceA/groupA/groupN/DeviceN/</td>
+</tr>
+<tr>
+<td><a href="https://github.com/caronc/apprise/wiki/Notify_kodi">KODI</a></td>
+<td>kodi:// or kodis://</td>
+<td>(TCP) 8080 or 443</td>
+<td>kodi://hostname<br />kodi://user@hostname<br />kodi://user:password@hostname:port</td>
+</tr>
+<tr>
+<td><a href="https://github.com/caronc/apprise/wiki/Notify_kumulos">Kumulos</a></td>
+<td>kumulos://</td>
+<td>(TCP) 443</td>
+<td>kumulos://apikey/serverkey</td>
+</tr>
+<tr>
+<td><a href="https://github.com/caronc/apprise/wiki/Notify_lametric">LaMetric Time</a></td>
+<td>lametric://</td>
+<td>(TCP) 443</td>
+<td>lametric://apikey@device_ipaddr<br/>lametric://apikey@hostname:port<br/>lametric://client_id@client_secret</td>
+</tr>
+<tr>
+<td><a href="https://github.com/caronc/apprise/wiki/Notify_mailgun">Mailgun</a></td>
+<td>mailgun://</td>
+<td>(TCP) 443</td>
+<td>mailgun://user@hostname/apikey<br />mailgun://user@hostname/apikey/email<br />mailgun://user@hostname/apikey/email1/email2/emailN<br />mailgun://user@hostname/apikey/?name=&ldquo;From%20User&rdquo;</td>
+</tr>
+<tr>
+<td><a href="https://github.com/caronc/apprise/wiki/Notify_matrix">Matrix</a></td>
+<td>matrix:// or matrixs://</td>
+<td>(TCP) 80 or 443</td>
+<td>matrix://hostname<br />matrix://user@hostname<br />matrixs://user:pass@hostname:port/#room_alias<br />matrixs://user:pass@hostname:port/!room_id<br />matrixs://user:pass@hostname:port/#room_alias/!room_id/#room2<br />matrixs://token@hostname:port/?webhook=matrix<br />matrix://user:token@hostname/?webhook=slack&amp;format=markdown</td>
+</tr>
+<tr>
+<td><a href="https://github.com/caronc/apprise/wiki/Notify_mattermost">Mattermost</a></td>
+<td>mmost:// or mmosts://</td>
+<td>(TCP) 8065</td>
+<td>mmost://hostname/authkey<br />mmost://hostname:80/authkey<br />mmost://user@hostname:80/authkey<br />mmost://hostname/authkey?channel=channel<br />mmosts://hostname/authkey<br />mmosts://user@hostname/authkey<br /></td>
+</tr>
+<tr>
+<td><a href="https://github.com/caronc/apprise/wiki/Notify_msteams">Microsoft Teams</a></td>
+<td>msteams://</td>
+<td>(TCP) 443</td>
+<td>msteams://TokenA/TokenB/TokenC/</td>
+</tr>
+<tr>
+<td><a href="https://github.com/caronc/apprise/wiki/Notify_mqtt">MQTT</a></td>
+<td>mqtt://  or mqtts://</td>
+<td>(TCP) 1883 or 8883</td>
+<td>mqtt://hostname/topic<br />mqtt://user@hostname/topic<br />mqtts://user:pass@hostname:9883/topic</td>
+</tr>
+<tr>
+<td><a href="https://github.com/caronc/apprise/wiki/Notify_nextcloud">Nextcloud</a></td>
+<td>ncloud:// or nclouds://</td>
+<td>(TCP) 80 or 443</td>
+<td>ncloud://adminuser:pass@host/User<br/>nclouds://adminuser:pass@host/User1/User2/UserN</td>
+</tr>
+<tr>
+<td><a href="https://github.com/caronc/apprise/wiki/Notify_nextcloudtalk">NextcloudTalk</a></td>
+<td>nctalk:// or nctalks://</td>
+<td>(TCP) 80 or 443</td>
+<td>nctalk://user:pass@host/RoomId<br/>nctalks://user:pass@host/RoomId1/RoomId2/RoomIdN</td>
+</tr>
+<tr>
+<td><a href="https://github.com/caronc/apprise/wiki/Notify_notica">Notica</a></td>
+<td>notica://</td>
+<td>(TCP) 443</td>
+<td>notica://Token/</td>
+</tr>
+<tr>
+<td><a href="https://github.com/caronc/apprise/wiki/Notify_notifico">Notifico</a></td>
+<td>notifico://</td>
+<td>(TCP) 443</td>
+<td>notifico://ProjectID/MessageHook/</td>
+</tr>
+<tr>
+<td><a href="https://github.com/caronc/apprise/wiki/Notify_office365">Office 365</a></td>
+<td>o365://</td>
+<td>(TCP) 443</td>
+<td>o365://TenantID:AccountEmail/ClientID/ClientSecret<br />o365://TenantID:AccountEmail/ClientID/ClientSecret/TargetEmail<br />o365://TenantID:AccountEmail/ClientID/ClientSecret/TargetEmail1/TargetEmail2/TargetEmailN</td>
+</tr>
+<tr>
+<td><a href="https://github.com/caronc/apprise/wiki/Notify_onesignal">OneSignal</a></td>
+<td>onesignal://</td>
+<td>(TCP) 443</td>
+<td>onesignal://AppID@APIKey/PlayerID<br/>onesignal://TemplateID:AppID@APIKey/UserID<br/>onesignal://AppID@APIKey/#IncludeSegment<br/>onesignal://AppID@APIKey/Email</td>
+</tr>
+<tr>
+<td><a href="https://github.com/caronc/apprise/wiki/Notify_opsgenie">Opsgenie</a></td>
+<td>opsgenie://</td>
+<td>(TCP) 443</td>
+<td>opsgenie://APIKey<br/>opsgenie://APIKey/UserID<br/>opsgenie://APIKey/#Team<br/>opsgenie://APIKey/*Schedule<br/>opsgenie://APIKey/^Escalation</td>
+</tr>
+<tr>
+<td><a href="https://github.com/caronc/apprise/wiki/Notify_parseplatform">ParsePlatform</a></td>
+<td>parsep:// or parseps://</td>
+<td>(TCP) 80 or 443</td>
+<td>parsep://AppID:MasterKey@Hostname<br/>parseps://AppID:MasterKey@Hostname</td>
+</tr>
+<tr>
+<td><a href="https://github.com/caronc/apprise/wiki/Notify_popcornnotify">PopcornNotify</a></td>
+<td>popcorn://</td>
+<td>(TCP) 443</td>
+<td>popcorn://ApiKey/ToPhoneNo<br/>popcorn://ApiKey/ToPhoneNo1/ToPhoneNo2/ToPhoneNoN/<br/>popcorn://ApiKey/ToEmail<br/>popcorn://ApiKey/ToEmail1/ToEmail2/ToEmailN/<br/>popcorn://ApiKey/ToPhoneNo1/ToEmail1/ToPhoneNoN/ToEmailN</td>
+</tr>
+<tr>
+<td><a href="https://github.com/caronc/apprise/wiki/Notify_prowl">Prowl</a></td>
+<td>prowl://</td>
+<td>(TCP) 443</td>
+<td>prowl://apikey<br />prowl://apikey/providerkey</td>
+</tr>
+<tr>
+<td><a href="https://github.com/caronc/apprise/wiki/Notify_pushbullet">PushBullet</a></td>
+<td>pbul://</td>
+<td>(TCP) 443</td>
+<td>pbul://accesstoken<br />pbul://accesstoken/#channel<br/>pbul://accesstoken/A_DEVICE_ID<br />pbul://accesstoken/email@address.com<br />pbul://accesstoken/#channel/#channel2/email@address.net/DEVICE</td>
+</tr>
+<tr>
+<td><a href="https://github.com/caronc/apprise/wiki/Notify_techulus">Push (Techulus)</a></td>
+<td>push://</td>
+<td>(TCP) 443</td>
+<td>push://apikey/</td>
+</tr>
+<tr>
+<td><a href="https://github.com/caronc/apprise/wiki/Notify_pushed">Pushed</a></td>
+<td>pushed://</td>
+<td>(TCP) 443</td>
+<td>pushed://appkey/appsecret/<br/>pushed://appkey/appsecret/#ChannelAlias<br/>pushed://appkey/appsecret/#ChannelAlias1/#ChannelAlias2/#ChannelAliasN<br/>pushed://appkey/appsecret/@UserPushedID<br/>pushed://appkey/appsecret/@UserPushedID1/@UserPushedID2/@UserPushedIDN</td>
+</tr>
+<tr>
+<td><a href="https://github.com/caronc/apprise/wiki/Notify_pushover">Pushover</a></td>
+<td>pover://</td>
+<td>(TCP) 443</td>
+<td>pover://user@token<br />pover://user@token/DEVICE<br />pover://user@token/DEVICE1/DEVICE2/DEVICEN<br /><strong>Note</strong>: you must specify both your user_id and token</td>
+</tr>
+<tr>
+<td><a href="https://github.com/caronc/apprise/wiki/Notify_pushsafer">PushSafer</a></td>
+<td>psafer:// or psafers://</td>
+<td>(TCP) 80 or 443</td>
+<td>psafer://privatekey<br />psafers://privatekey/DEVICE<br />psafer://privatekey/DEVICE1/DEVICE2/DEVICEN</td>
+</tr>
+<tr>
+<td><a href="https://github.com/caronc/apprise/wiki/Notify_reddit">Reddit</a></td>
+<td>reddit://</td>
+<td>(TCP) 443</td>
+<td>reddit://user:password@app_id/app_secret/subreddit<br />reddit://user:password@app_id/app_secret/sub1/sub2/subN</td>
+</tr>
+<tr>
+<td><a href="https://github.com/caronc/apprise/wiki/Notify_rocketchat">Rocket.Chat</a></td>
+<td>rocket:// or rockets://</td>
+<td>(TCP) 80 or 443</td>
+<td>rocket://user:password@hostname/RoomID/Channel<br />rockets://user:password@hostname:443/#Channel1/#Channel1/RoomID<br />rocket://user:password@hostname/#Channel<br />rocket://webhook@hostname<br />rockets://webhook@hostname/@User/#Channel</td>
+</tr>
+<tr>
+<td><a href="https://github.com/caronc/apprise/wiki/Notify_ryver">Ryver</a></td>
+<td>ryver://</td>
+<td>(TCP) 443</td>
+<td>ryver://Organization/Token<br />ryver://botname@Organization/Token</td>
+</tr>
+<tr>
+<td><a href="https://github.com/caronc/apprise/wiki/Notify_sendgrid">SendGrid</a></td>
+<td>sendgrid://</td>
+<td>(TCP) 443</td>
+<td>sendgrid://APIToken:FromEmail/<br />sendgrid://APIToken:FromEmail/ToEmail<br />sendgrid://APIToken:FromEmail/ToEmail1/ToEmail2/ToEmailN/</td>
+</tr>
+<tr>
+<td><a href="https://github.com/caronc/apprise/wiki/Notify_serverchan">ServerChan</a></td>
+<td>serverchan://</td>
+<td>(TCP) 443</td>
+<td>serverchan://token/</td>
+</tr>
+<tr>
+<td><a href="https://github.com/caronc/apprise/wiki/Notify_simplepush">SimplePush</a></td>
+<td>spush://</td>
+<td>(TCP) 443</td>
+<td>spush://apikey<br />spush://salt:password@apikey<br />spush://apikey?event=Apprise</td>
+</tr>
+<tr>
+<td><a href="https://github.com/caronc/apprise/wiki/Notify_slack">Slack</a></td>
+<td>slack://</td>
+<td>(TCP) 443</td>
+<td>slack://TokenA/TokenB/TokenC/<br />slack://TokenA/TokenB/TokenC/Channel<br />slack://botname@TokenA/TokenB/TokenC/Channel<br />slack://user@TokenA/TokenB/TokenC/Channel1/Channel2/ChannelN</td>
+</tr>
+<tr>
+<td><a href="https://github.com/caronc/apprise/wiki/Notify_smtp2go">SMTP2Go</a></td>
+<td>smtp2go://</td>
+<td>(TCP) 443</td>
+<td>smtp2go://user@hostname/apikey<br />smtp2go://user@hostname/apikey/email<br />smtp2go://user@hostname/apikey/email1/email2/emailN<br />smtp2go://user@hostname/apikey/?name=&ldquo;From%20User&rdquo;</td>
+</tr>
+<tr>
+<td><a href="https://github.com/caronc/apprise/wiki/Notify_streamlabs">Streamlabs</a></td>
+<td>strmlabs://</td>
+<td>(TCP) 443</td>
+<td>strmlabs://AccessToken/<br/>strmlabs://AccessToken/?name=name&amp;identifier=identifier&amp;amount=0&amp;currency=USD</td>
+</tr>
+<tr>
+<td><a href="https://github.com/caronc/apprise/wiki/Notify_sparkpost">SparkPost</a></td>
+<td>sparkpost://</td>
+<td>(TCP) 443</td>
+<td>sparkpost://user@hostname/apikey<br />sparkpost://user@hostname/apikey/email<br />sparkpost://user@hostname/apikey/email1/email2/emailN<br />sparkpost://user@hostname/apikey/?name=&ldquo;From%20User&rdquo;</td>
+</tr>
+<tr>
+<td><a href="https://github.com/caronc/apprise/wiki/Notify_spontit">Spontit</a></td>
+<td>spontit://</td>
+<td>(TCP) 443</td>
+<td>spontit://UserID@APIKey/<br />spontit://UserID@APIKey/Channel<br />spontit://UserID@APIKey/Channel1/Channel2/ChannelN</td>
+</tr>
+<tr>
+<td><a href="https://github.com/caronc/apprise/wiki/Notify_syslog">Syslog</a></td>
+<td>syslog://</td>
+<td>(UDP) 514 (<em>if hostname specified</em>)</td>
+<td>syslog://<br />syslog://Facility<br />syslog://hostname<br />syslog://hostname/Facility</td>
+</tr>
+<tr>
+<td><a href="https://github.com/caronc/apprise/wiki/Notify_telegram">Telegram</a></td>
+<td>tgram://</td>
+<td>(TCP) 443</td>
+<td>tgram://bottoken/ChatID<br />tgram://bottoken/ChatID1/ChatID2/ChatIDN</td>
+</tr>
+<tr>
+<td><a href="https://github.com/caronc/apprise/wiki/Notify_twitter">Twitter</a></td>
+<td>twitter://</td>
+<td>(TCP) 443</td>
+<td>twitter://CKey/CSecret/AKey/ASecret<br/>twitter://user@CKey/CSecret/AKey/ASecret<br/>twitter://CKey/CSecret/AKey/ASecret/User1/User2/User2<br/>twitter://CKey/CSecret/AKey/ASecret?mode=tweet</td>
+</tr>
+<tr>
+<td><a href="https://github.com/caronc/apprise/wiki/Notify_twist">Twist</a></td>
+<td>twist://</td>
+<td>(TCP) 443</td>
+<td>twist://pasword:login<br/>twist://password:login/#channel<br/>twist://password:login/#team:channel<br/>twist://password:login/#team:channel1/channel2/#team3:channel</td>
+</tr>
+<tr>
+<td><a href="https://github.com/caronc/apprise/wiki/Notify_xmpp">XMPP</a></td>
+<td>xmpp:// or xmpps://</td>
+<td>(TCP) 5222 or 5223</td>
+<td>xmpp://user:password@hostname<br />xmpps://user:password@hostname:port?jid=user@hostname/resource<br/>xmpps://user:password@hostname/target@myhost, target2@myhost/resource</td>
+</tr>
+<tr>
+<td><a href="https://github.com/caronc/apprise/wiki/Notify_wxteams">Webex Teams (Cisco)</a></td>
+<td>wxteams://</td>
+<td>(TCP) 443</td>
+<td>wxteams://Token</td>
+</tr>
+<tr>
+<td><a href="https://github.com/caronc/apprise/wiki/Notify_zulip">Zulip Chat</a></td>
+<td>zulip://</td>
+<td>(TCP) 443</td>
+<td>zulip://botname@Organization/Token<br />zulip://botname@Organization/Token/Stream<br />zulip://botname@Organization/Token/Email</td>
+</tr>
+</tbody>
+</table>
+<h3 id="sms-notification-support">SMS Notification Support</h3>
+<table>
+<thead>
+<tr>
+<th>Notification Service</th>
+<th>Service ID</th>
+<th>Default Port</th>
+<th>Example Syntax</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://github.com/caronc/apprise/wiki/Notify_sns">AWS SNS</a></td>
+<td>sns://</td>
+<td>(TCP) 443</td>
+<td>sns://AccessKeyID/AccessSecretKey/RegionName/+PhoneNo<br/>sns://AccessKeyID/AccessSecretKey/RegionName/+PhoneNo1/+PhoneNo2/+PhoneNoN<br/>sns://AccessKeyID/AccessSecretKey/RegionName/Topic<br/>sns://AccessKeyID/AccessSecretKey/RegionName/Topic1/Topic2/TopicN</td>
+</tr>
+<tr>
+<td><a href="https://github.com/caronc/apprise/wiki/Notify_clicksend">ClickSend</a></td>
+<td>clicksend://</td>
+<td>(TCP) 443</td>
+<td>clicksend://user:pass@PhoneNo<br/>clicksend://user:pass@ToPhoneNo1/ToPhoneNo2/ToPhoneNoN</td>
+</tr>
+<tr>
+<td><a href="https://github.com/caronc/apprise/wiki/Notify_dapnet">DAPNET</a></td>
+<td>dapnet://</td>
+<td>(TCP) 80</td>
+<td>dapnet://user:pass@callsign<br/>dapnet://user:pass@callsign1/callsign2/callsignN</td>
+</tr>
+<tr>
+<td><a href="https://github.com/caronc/apprise/wiki/Notify_d7networks">D7 Networks</a></td>
+<td>d7sms://</td>
+<td>(TCP) 443</td>
+<td>d7sms://user:pass@PhoneNo<br/>d7sms://user:pass@ToPhoneNo1/ToPhoneNo2/ToPhoneNoN</td>
+</tr>
+<tr>
+<td><a href="https://github.com/caronc/apprise/wiki/Notify_dingtalk">DingTalk</a></td>
+<td>dingtalk://</td>
+<td>(TCP) 443</td>
+<td>dingtalk://token/<br />dingtalk://token/ToPhoneNo<br />dingtalk://token/ToPhoneNo1/ToPhoneNo2/ToPhoneNo1/</td>
+</tr>
+<tr>
+<td><a href="https://github.com/caronc/apprise/wiki/Notify_kavenegar">Kavenegar</a></td>
+<td>kavenegar://</td>
+<td>(TCP) 443</td>
+<td>kavenegar://ApiKey/ToPhoneNo<br/>kavenegar://FromPhoneNo@ApiKey/ToPhoneNo<br/>kavenegar://ApiKey/ToPhoneNo1/ToPhoneNo2/ToPhoneNoN</td>
+</tr>
+<tr>
+<td><a href="https://github.com/caronc/apprise/wiki/Notify_messagebird">MessageBird</a></td>
+<td>msgbird://</td>
+<td>(TCP) 443</td>
+<td>msgbird://ApiKey/FromPhoneNo<br/>msgbird://ApiKey/FromPhoneNo/ToPhoneNo<br/>msgbird://ApiKey/FromPhoneNo/ToPhoneNo1/ToPhoneNo2/ToPhoneNoN/</td>
+</tr>
+<tr>
+<td><a href="https://github.com/caronc/apprise/wiki/Notify_msg91">MSG91</a></td>
+<td>msg91://</td>
+<td>(TCP) 443</td>
+<td>msg91://AuthKey/ToPhoneNo<br/>msg91://SenderID@AuthKey/ToPhoneNo<br/>msg91://AuthKey/ToPhoneNo1/ToPhoneNo2/ToPhoneNoN/</td>
+</tr>
+<tr>
+<td><a href="https://github.com/caronc/apprise/wiki/Notify_nexmo">Nexmo</a></td>
+<td>nexmo://</td>
+<td>(TCP) 443</td>
+<td>nexmo://ApiKey:ApiSecret@FromPhoneNo<br/>nexmo://ApiKey:ApiSecret@FromPhoneNo/ToPhoneNo<br/>nexmo://ApiKey:ApiSecret@FromPhoneNo/ToPhoneNo1/ToPhoneNo2/ToPhoneNoN/</td>
+</tr>
+<tr>
+<td><a href="https://github.com/caronc/apprise/wiki/Notify_sinch">Sinch</a></td>
+<td>sinch://</td>
+<td>(TCP) 443</td>
+<td>sinch://ServicePlanId:ApiToken@FromPhoneNo<br/>sinch://ServicePlanId:ApiToken@FromPhoneNo/ToPhoneNo<br/>sinch://ServicePlanId:ApiToken@FromPhoneNo/ToPhoneNo1/ToPhoneNo2/ToPhoneNoN/<br/>sinch://ServicePlanId:ApiToken@ShortCode/ToPhoneNo<br/>sinch://ServicePlanId:ApiToken@ShortCode/ToPhoneNo1/ToPhoneNo2/ToPhoneNoN/</td>
+</tr>
+<tr>
+<td><a href="https://github.com/caronc/apprise/wiki/Notify_twilio">Twilio</a></td>
+<td>twilio://</td>
+<td>(TCP) 443</td>
+<td>twilio://AccountSid:AuthToken@FromPhoneNo<br/>twilio://AccountSid:AuthToken@FromPhoneNo/ToPhoneNo<br/>twilio://AccountSid:AuthToken@FromPhoneNo/ToPhoneNo1/ToPhoneNo2/ToPhoneNoN/<br/>twilio://AccountSid:AuthToken@FromPhoneNo/ToPhoneNo?apikey=Key<br/>twilio://AccountSid:AuthToken@ShortCode/ToPhoneNo<br/>twilio://AccountSid:AuthToken@ShortCode/ToPhoneNo1/ToPhoneNo2/ToPhoneNoN/</td>
+</tr>
+</tbody>
+</table>
+<h2 id="desktop-notification-support">Desktop Notification Support</h2>
+<table>
+<thead>
+<tr>
+<th>Notification Service</th>
+<th>Service ID</th>
+<th>Default Port</th>
+<th>Example Syntax</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://github.com/caronc/apprise/wiki/Notify_dbus">Linux DBus Notifications</a></td>
+<td>dbus://<br />qt://<br />glib://<br />kde://</td>
+<td>n/a</td>
+<td>dbus://<br />qt://<br />glib://<br />kde://</td>
+</tr>
+<tr>
+<td><a href="https://github.com/caronc/apprise/wiki/Notify_gnome">Linux Gnome Notifications</a></td>
+<td>gnome://</td>
+<td>n/a</td>
+<td>gnome://</td>
+</tr>
+<tr>
+<td><a href="https://github.com/caronc/apprise/wiki/Notify_macosx">MacOS X Notifications</a></td>
+<td>macosx://</td>
+<td>n/a</td>
+<td>macosx://</td>
+</tr>
+<tr>
+<td><a href="https://github.com/caronc/apprise/wiki/Notify_windows">Windows Notifications</a></td>
+<td>windows://</td>
+<td>n/a</td>
+<td>windows://</td>
+</tr>
+</tbody>
+</table>
+<h3 id="email-support">Email Support</h3>
+<table>
+<thead>
+<tr>
+<th>Service ID</th>
+<th>Default Port</th>
+<th>Example Syntax</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://github.com/caronc/apprise/wiki/Notify_email">mailto://</a></td>
+<td>(TCP) 25</td>
+<td>mailto://userid:pass@domain.com<br />mailto://domain.com?user=userid&amp;pass=password<br/>mailto://domain.com:2525?user=userid&amp;pass=password<br />mailto://user@gmail.com&amp;pass=password<br />mailto://mySendingUsername:mySendingPassword@example.com?to=receivingAddress@example.com<br />mailto://userid:password@example.com?smtp=mail.example.com&amp;from=noreply@example.com&amp;name=no%20reply</td>
+</tr>
+<tr>
+<td><a href="https://github.com/caronc/apprise/wiki/Notify_email">mailtos://</a></td>
+<td>(TCP) 587</td>
+<td>mailtos://userid:pass@domain.com<br />mailtos://domain.com?user=userid&amp;pass=password<br/>mailtos://domain.com:465?user=userid&amp;pass=password<br />mailtos://user@hotmail.com&amp;pass=password<br />mailtos://mySendingUsername:mySendingPassword@example.com?to=receivingAddress@example.com<br />mailtos://userid:password@example.com?smtp=mail.example.com&amp;from=noreply@example.com&amp;name=no%20reply</td>
+</tr>
+</tbody>
+</table>
+<p>Apprise have some email services built right into it (such as yahoo, fastmail, hotmail, gmail, etc) that greatly simplify the mailto:// service.  See more details <a href="https://github.com/caronc/apprise/wiki/Notify_email">here</a>.</p>
+<h3 id="custom-notifications">Custom Notifications</h3>
+<table>
+<thead>
+<tr>
+<th>Post Method</th>
+<th>Service ID</th>
+<th>Default Port</th>
+<th>Example Syntax</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://github.com/caronc/apprise/wiki/Notify_Custom_Form">Form</a></td>
+<td>form:// or form://</td>
+<td>(TCP) 80 or 443</td>
+<td>form://hostname<br />form://user@hostname<br />form://user:password@hostname:port<br />form://hostname/a/path/to/post/to</td>
+</tr>
+<tr>
+<td><a href="https://github.com/caronc/apprise/wiki/Notify_Custom_JSON">JSON</a></td>
+<td>json:// or jsons://</td>
+<td>(TCP) 80 or 443</td>
+<td>json://hostname<br />json://user@hostname<br />json://user:password@hostname:port<br />json://hostname/a/path/to/post/to</td>
+</tr>
+<tr>
+<td><a href="https://github.com/caronc/apprise/wiki/Notify_Custom_XML">XML</a></td>
+<td>xml:// or xmls://</td>
+<td>(TCP) 80 or 443</td>
+<td>xml://hostname<br />xml://user@hostname<br />xml://user:password@hostname:port<br />xml://hostname/a/path/to/post/to</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+
+
+  
+  
+  
+  
+
+  
+  
+
+  
+
+
+
+          </main>
+        </div>
+      </div>
+      <section class="row td-cover-block" style="background-color: #1b1a21;">
+  <div class="container">
+      <footer class="footer-component with-intercom">
+          <div class="section-container footer-inner size-medium">
+              <div class="content">
+                  <div class="page-container padding-small-x">
+                      <div class="margin-component bottom-small-x">
+                          <nav class="footer-links" role="navigation">
+                              <ul class="list-component footer-column ul">
+                                  <li class="list-item-component footer-item footer-item-header">
+                                      <div class="margin-component inner bottom-zero">
+                                          <div class="list-content-wrapper">
+                                              <div class="typography-text p2-caps footer-link footer-header inverted">
+                                                  Product
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </li>
+                                  <li class="list-item-component footer-item">
+                                      <div class="margin-component inner bottom-zero">
+                                          <div class="list-content-wrapper">
+                                              <div class="typography-text p2-normal inverted"><a
+                                                  class="link-component footer-link"
+                                                  href="/products/fx/">StreamZero FX</a></div>
+                                          </div>
+                                      </div>
+                                  </li>
+                                  <li class="list-item-component footer-item">
+                                      <div class="margin-component inner bottom-zero">
+                                          <div class="list-content-wrapper">
+                                              <div class="typography-text p2-normal inverted"><a
+                                                  class="link-component footer-link"
+                                                  href="/products/k8x">StreamZero K8X</a></div>
+                                          </div>
+                                      </div>
+                                  </li>
+                                  <li class="list-item-component footer-item">
+                                      <div class="margin-component inner bottom-zero">
+                                          <div class="list-content-wrapper">
+                                              <div class="typography-text p2-normal inverted"><a
+                                                  class="link-component footer-link"
+                                                  href="/products/sx/">StreamZero SX</a></div>
+                                          </div>
+                                      </div>
+                                  </li>
+                              </ul>
+                              <ul class="list-component footer-column ul">
+                                  <li class="list-item-component footer-item footer-item-header">
+                                      <div class="margin-component inner bottom-zero">
+                                          <div class="list-content-wrapper">
+                                              <div class="typography-text p2-caps footer-link footer-header inverted">
+                                                  Solutions
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </li>
+                                  <li class="list-item-component footer-item">
+                                      <div class="margin-component inner bottom-zero">
+                                          <div class="list-content-wrapper">
+                                              <div class="typography-text p2-normal inverted"><a
+                                                  class="link-component footer-link"
+                                                  href="/solutions/">Why GridMine?</a></div>
+                                          </div>
+                                      </div>
+                                  </li>
+                                  <li class="list-item-component footer-item">
+                                      <div class="margin-component inner bottom-zero">
+                                          <div class="list-content-wrapper">
+                                              <div class="typography-text p2-normal inverted"><a
+                                                  class="link-component footer-link"
+                                                  href="/integrations/">Integrations</a></div>
+                                          </div>
+                                      </div>
+                                  </li>
+                                  <li class="list-item-component footer-item">
+                                      <div class="margin-component inner bottom-zero">
+                                          <div class="list-content-wrapper">
+                                              <div class="typography-text p2-normal inverted"><xa
+                                                  class="link-component footer-link"
+                                                  href="/partners/">Partners</a></div>
+                                          </div>
+                                      </div>
+                                  </li>
+                              </ul>
+                              <ul class="list-component footer-column ul">
+                                  <li class="list-item-component footer-item footer-item-header">
+                                      <div class="margin-component inner bottom-zero">
+                                          <div class="list-content-wrapper">
+                                              <div class="typography-text p2-caps footer-link footer-header inverted">
+                                                  Learn
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </li>
+                                  <li class="list-item-component footer-item">
+                                      <div class="margin-component inner bottom-zero">
+                                          <div class="list-content-wrapper">
+                                              <div class="typography-text p2-normal inverted"><a
+                                                  rel="noopener noreferrer"
+                                                  class="link-component footer-link" href="/docs/">Developer
+                                                  Guide</a>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </li>
+                                  <li class="list-item-component footer-item">
+                                      <div class="margin-component inner bottom-zero">
+                                          <div class="list-content-wrapper">
+                                              <div class="typography-text p2-normal inverted"><a
+                                                  rel="noopener noreferrer"
+                                                  class="link-component footer-link" href="/docs/integrations/">Integrations
+                                                  Guide</a></div>
+                                          </div>
+                                      </div>
+                                  </li>
+                                  <li class="list-item-component footer-item">
+                                      <div class="margin-component inner bottom-zero">
+                                          <div class="list-content-wrapper">
+                                              <div class="typography-text p2-normal inverted"><a
+                                                  class="link-component footer-link"
+                                                  href="/docs/security/">Security</a></div>
+                                          </div>
+                                      </div>
+                                  </li>
+                                  <li class="list-item-component footer-item">
+                                      <div class="margin-component inner bottom-zero">
+                                          <div class="list-content-wrapper">
+                                              <div class="typography-text p2-normal inverted"><xa
+                                                  class="link-component footer-link"
+                                                  href="/blog/">Blog</a></div>
+                                          </div>
+                                      </div>
+                                  </li>
+                                  
+                              </ul>
+                              <ul class="list-component footer-column ul">
+                                  <li class="list-item-component footer-item footer-item-header">
+                                      <div class="margin-component inner bottom-zero">
+                                          <div class="list-content-wrapper">
+                                              <div class="typography-text p2-caps footer-link footer-header inverted">
+                                                  Support
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </li>
+                                  <li class="list-item-component footer-item">
+                                      <div class="margin-component inner bottom-zero">
+                                          <div class="list-content-wrapper">
+                                              <div class="typography-text p2-normal inverted"><xa
+                                                  class="link-component footer-link"
+                                                  href="/support/">Support Plans</a></div>
+                                          </div>
+                                      </div>
+                                  </li>
+                                  
+                                  <li class="list-item-component footer-item">
+                                      <div class="margin-component inner bottom-zero">
+                                          <div class="list-content-wrapper">
+                                              <div class="typography-text p2-normal inverted"><xa
+                                                  class="link-component footer-link"
+                                                  href="/services/">Professional Services</a></div>
+                                          </div>
+                                      </div>
+                                  </li>
+                                  <li class="list-item-component footer-item">
+                                      <div class="margin-component inner bottom-zero">
+                                          <div class="list-content-wrapper">
+                                              <div class="typography-text p2-normal inverted"><a
+                                                  rel="noopener noreferrer"
+                                                  class="link-component footer-link" href="/docs/">Documentation</a>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </li>
+                              </ul>
+                              <ul class="list-component footer-column ul">
+                                  <li class="list-item-component footer-item footer-item-header">
+                                      <div class="margin-component inner bottom-zero">
+                                          <div class="list-content-wrapper">
+                                              <div class="typography-text p2-caps footer-link footer-header inverted">
+                                                  Company
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </li>
+                                  <li class="list-item-component footer-item">
+                                      <div class="margin-component inner bottom-zero">
+                                          <div class="list-content-wrapper">
+                                              <div class="typography-text p2-normal inverted"><a
+                                                  class="link-component footer-link"
+                                                  href="/about/">About Us</a></div>
+                                          </div>
+                                      </div>
+                                  </li>
+                                  <li class="list-item-component footer-item">
+                                      <div class="margin-component inner bottom-zero">
+                                          <div class="list-content-wrapper">
+                                              <div class="typography-text p2-normal inverted"><xa
+                                                  class="link-component footer-link"
+                                                  href="/jobs/"><span class="footer-pill-wrapper">Careers <span
+                                                  class="footer-pill">We're hiring</span></span></a>
+                                                </div>
+                                          </div>
+                                      </div>
+                                  </li>
+                                  <li class="list-item-component footer-item">
+                                      <div class="margin-component inner bottom-zero">
+                                          <div class="list-content-wrapper">
+                                              <div class="typography-text p2-normal inverted"><a
+                                                  class="link-component footer-link"
+                                                  href="/contact/">Contact Us</a></div>
+                                          </div>
+                                      </div>
+                                  </li>
+                              </ul>
+                          </nav>
+                      </div>
+                      <div class="margin-component bottom-small-x">
+                          <div class="centering-wrapper social-links">
+                              <a rel="noopener noreferrer" class="link-component social-link"
+                                href="https://twitter.com/gridmine/" title="Twitter" target="_blank">
+                                  <img src="/icons/footer/twitter-icon.png" alt="Twitter">
+                              </a>
+                              
+                              <a rel="noopener noreferrer" class="link-component social-link"
+                                href="https://www.linkedin.com/company/gridmine/" title="LinkedIn" target="_blank">
+                                  <img src="/icons/footer/linkedin-icon.png" alt="LinkedIn">
+                              </a>
+                              <a rel="noopener noreferrer" class="link-component social-link"
+                                href="https://www.youtube.com/channel/UC5miURXVxGLo17EyWPBWCug/" title="YouTube"
+                                target="_blank">
+                                  <img src="/icons/footer/youtube-icon.png" alt="YouTube">
+                              </a>
+                              
+                              <a rel="noopener noreferrer" class="link-component social-link"
+                                href="https://github.com/gridmine/" title="GitHub" target="_blank">
+                                  <img src="/icons/footer/github-icon.png" alt="GitHub">
+                              </a>
+                              <a rel="noopener noreferrer" class="link-component social-link"
+                                href="https://www.medium.com/gridmine/" title="Medium" target="_blank">
+                                  <img src="/icons/footer/medium-icon.png" alt="Medium">
+                              </a>
+                              <xa rel="noopener noreferrer" class="link-component social-link" href="#"
+                                data-toggle="modal" data-target="#subscribeModal"
+                                title="Subscribe to our Newsletter">
+                                  <img src="/icons/footer/mail-icon.png" alt="Newsletter">
+                              </a>
+                          </div>
+                      </div>
+                      <div class="centering-wrapper legal-links">
+                          <div class="typography-text p2-normal align-center">
+                              <span class="copyright">2023 © GridMine GmbH</span>
+                              <span> | </span>
+                              <br class="br-component mobile">
+                              <a class="link-component legal-link" href="/docs/privacy_policy/">Privacy Policy</a>
+                              <span> | </span>
+                              <a class="link-component legal-link" href="/docs/privacy_policy/">Data Protection
+                                  Policy</a>
+                              <span> | </span>
+                              <a class="link-component legal-link" href="/docs/terms_conditions/">Legal Terms and
+                                  Conditions</a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </footer>
+  </div>
+</section>
+
+<script type="text/javascript" src="/js/carousel.js"></script>
+<link rel="stylesheet" href="/css/carousel.css">
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+
+
+
+
+
+<script src='/js/tabpane-persist.js'></script>
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="/js/main.min.7d5b92c4889cf0554b0ea5e2309b0b81b196aa7c9a235632938a25d9fc4d8a7c.js" integrity="sha256-fVuSxIic8FVLDqXiMJsLgbGWqnyaI1Yyk4ol2fxNinw=" crossorigin="anonymous"></script>
+
+
+
+
+  </body>
+</html>

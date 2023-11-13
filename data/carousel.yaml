@@ -1,0 +1,13 @@
+images: 
+  - image: /images/DASHBOARD.png
+    heading: "Heading 1"
+    subheading: "Subheading 1"
+  - image: /images/DASHBOARD.png
+    heading: "Heading 2"
+    subheading: "Subheading 2"
+  - image: /images/DASHBOARD.png
+    heading: "Heading 3"
+    subheading: "Subheading 3"
+  - image: /images/DASHBOARD.png
+    heading: "Heading 4"
+    subheading: "Subheading 4"

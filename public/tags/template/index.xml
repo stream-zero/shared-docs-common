@@ -1,0 +1,148 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>GridMine – template</title>
+    <link>/tags/template/</link>
+    <description>Recent content in template on GridMine</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    
+	  <atom:link href="/tags/template/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Blog: Scenario Template</title>
+      <link>/blog/1/01/01/scenario-template/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/1/01/01/scenario-template/</guid>
+      <description>
+        
+        
+        &lt;h1 id=&#34;adaptor-full-name&#34;&gt;[Adaptor Full Name]&lt;/h1&gt;
+&lt;p&gt;[Summary description of the adaptor]&lt;/p&gt;
+&lt;h6 id=&#34;release&#34;&gt;Release:&lt;/h6&gt;
+&lt;h6 id=&#34;date&#34;&gt;Date:&lt;/h6&gt;
+&lt;h3 id=&#34;content&#34;&gt;Content&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;[Features]&lt;/li&gt;
+&lt;li&gt;[Connections]&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;installation&#34;&gt;Installation&lt;/h3&gt;
+&lt;p&gt;[Installation procedures]&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Install: `code` or `command` 
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;pip-requirements&#34;&gt;PIP Requirements&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;PIP PACKAGE&lt;/th&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;VERSION REQUIRED&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;prerequisites&#34;&gt;Prerequisites&lt;/h3&gt;
+&lt;p&gt;[Technical prerequisites / if applicable]&lt;/p&gt;
+&lt;h3 id=&#34;changelog&#34;&gt;Changelog&lt;/h3&gt;
+&lt;h4 id=&#34;version&#34;&gt;[Version]&lt;/h4&gt;
+&lt;h4 id=&#34;features&#34;&gt;Features&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&amp;hellip;&lt;/li&gt;
+&lt;li&gt;&amp;hellip;&lt;/li&gt;
+&lt;li&gt;&amp;hellip;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;version-1&#34;&gt;[Version]&lt;/h4&gt;
+&lt;h4 id=&#34;features-1&#34;&gt;Features&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&amp;hellip;&lt;/li&gt;
+&lt;li&gt;&amp;hellip;&lt;/li&gt;
+&lt;li&gt;&amp;hellip;&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Blog: Scenario Template 2</title>
+      <link>/blog/1/01/01/scenario-template-2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/1/01/01/scenario-template-2/</guid>
+      <description>
+        
+        
+        &lt;h1 id=&#34;scenarios-full-name&#34;&gt;[Scenarios Full Name]&lt;/h1&gt;
+&lt;p&gt;[Spe,e,e, description of the adaptor]&lt;/p&gt;
+&lt;h6 id=&#34;release&#34;&gt;Release:&lt;/h6&gt;
+&lt;h6 id=&#34;date&#34;&gt;Date:&lt;/h6&gt;
+&lt;h3 id=&#34;content&#34;&gt;Content&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;[Features]&lt;/li&gt;
+&lt;li&gt;[Connections]&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;installation&#34;&gt;Installation&lt;/h3&gt;
+&lt;p&gt;[Installation procedures]&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Install: `code` or `command` 
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;pip-requirements&#34;&gt;PIP Requirements&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;PIP PACKAGE&lt;/th&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;VERSION REQUIRED&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;prerequisites&#34;&gt;Prerequisites&lt;/h3&gt;
+&lt;p&gt;[Technical prerequisites / if applicable]&lt;/p&gt;
+&lt;h3 id=&#34;changelog&#34;&gt;Changelog&lt;/h3&gt;
+&lt;h4 id=&#34;version&#34;&gt;[Version]&lt;/h4&gt;
+&lt;h4 id=&#34;features&#34;&gt;Features&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&amp;hellip;&lt;/li&gt;
+&lt;li&gt;&amp;hellip;&lt;/li&gt;
+&lt;li&gt;&amp;hellip;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;version-1&#34;&gt;[Version]&lt;/h4&gt;
+&lt;h4 id=&#34;features-1&#34;&gt;Features&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&amp;hellip;&lt;/li&gt;
+&lt;li&gt;&amp;hellip;&lt;/li&gt;
+&lt;li&gt;&amp;hellip;&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,17 @@
+images: 
+  - image: /images/temp/screenshots/sx_list_topics.drawio.svg
+    heading: "Heading 1"
+    subheading: "View Kafka Topics Across Multiple Clusters"
+    index: 1
+  - image: /images/temp/screenshots/sx_define_adapters.drawio.svg
+    heading: "Heading 2"
+    subheading: "Define Stream Adapters with Ease"
+    index: 2
+  - image: /images/temp/screenshots/sx_list_running_adapters.drawio.svg
+    heading: "Heading 3"
+    subheading: "Easily Monitor all Running Adapters"
+    index: 3
+  - image: /images/temp/screenshots/fx_k8x_metrics.drawio.svg
+    heading: "Heading 4"
+    subheading: "Monitor Runs and Flows with Ease. Integrated Metrics Collections and Analytics. Manual as well as Programattic Retries."
+    index: 4

@@ -1,0 +1,176 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>GridMine – nextbestproduct</title>
+    <link>/tags/nextbestproduct/</link>
+    <description>Recent content in nextbestproduct on GridMine</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    
+	  <atom:link href="/tags/nextbestproduct/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Docs: Idea to Trade / Next Best Product - Financial Services</title>
+      <link>/docs/solutions/002-idea-to-trade-finance/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/solutions/002-idea-to-trade-finance/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;idea-to-trade--next-best-product&#34;&gt;Idea to Trade / Next Best Product&lt;/h2&gt;
+&lt;h3 id=&#34;executive-summary&#34;&gt;Executive summary&lt;/h3&gt;
+&lt;p&gt;To support advisors and clients with a “next best product” recommendation, a closed loop flow has been established
+from Research / Chief Investment Officer to Relationship Managers and eventually to the client.
+Evaluating which recommendations worked for RMs and Clients allowed for a learning loop informing Research &amp;amp; CIO
+to improve selection &amp;amp; tailoring of investment themes.&lt;/p&gt;
+&lt;h3 id=&#34;problem-statement&#34;&gt;Problem statement&lt;/h3&gt;
+&lt;p&gt;The information flow from research or strategic asset allocation (CIO) to client advisors and eventually to clients does rarely follow
+a structured path. Instead the bank‘s “house view” is communicated broadly to all front-office staff and portfolio managers.
+They then use their direct client relationship to assess risk appetite and extract specific investment themes or
+ideas from their client interaction. If these match, the resulting research / advice is forwarded to the client.
+It seems like a lucky punch if product information leads to a trade / product sale.&lt;/p&gt;
+&lt;h3 id=&#34;target-market--industries&#34;&gt;Target market / Industries&lt;/h3&gt;
+&lt;p&gt;The challenge of customizing the offering to the customer profile is a common challenge across the industries.
+Financial services industry is benefiting most from this use case that can be efficiently applied e.g. in
+Industries, that are benefitting most of this use-case are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Banks&lt;/li&gt;
+&lt;li&gt;Investment and finance firms&lt;/li&gt;
+&lt;li&gt;Real estate brokers&lt;/li&gt;
+&lt;li&gt;Tax and accounting firms&lt;/li&gt;
+&lt;li&gt;Insurance companies&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;solution&#34;&gt;Solution&lt;/h3&gt;
+&lt;p&gt;Starting with investment themes / product and occasion specific sales / investment opportunities,
+the existing client‘s portfolios and client to bank communication is screened for possible gap / fit.
+Research or asset allocation can then focus their efforts on topics suggested by front-office staff and / or clients themselves.
+Observing and identifying trade success the best practices are understood and can be multiplied across other (similar) client scenarios.
+Asset allocation and advisors work collaboratively as they both evaluate which information / proposals / investment ideas are
+forwarded to clients (and then accepted or not) and which ones are kept back by advisors (and for what reasons).&lt;/p&gt;
+&lt;p&gt;The solution included:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Clustering &amp;amp; topic mapping of existing marketing material &amp;amp; client portfolio structures&lt;/li&gt;
+&lt;li&gt;Optionally inclusion of CRM notes and written advisor to client communication&lt;/li&gt;
+&lt;li&gt;Sales Ontology setup &amp;amp; learning loop inclusion &amp;amp; topic matching&lt;/li&gt;
+&lt;li&gt;Identification of individual investment themes / topics of interest&lt;/li&gt;
+&lt;li&gt;Aggregation of findings, reporting, alerting &amp;amp; action recommendation&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;stakeholders&#34;&gt;Stakeholders&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Chief Investment Officers (CIO)&lt;/li&gt;
+&lt;li&gt;Client Advisors / Relationship Managers&lt;/li&gt;
+&lt;li&gt;Product Managers&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;data-elements-assets-and-deliverables&#34;&gt;Data elements, Assets and Deliverables&lt;/h3&gt;
+&lt;p&gt;As an Input from the client, the following items were used:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Sales organization setup (desks / books)&lt;/li&gt;
+&lt;li&gt;Client to Client / Client to Company graphs&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Capabilities utilized:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Unstructured Data&lt;/li&gt;
+&lt;li&gt;Semantic Harmonization&lt;/li&gt;
+&lt;li&gt;Natural Language Processing&lt;/li&gt;
+&lt;li&gt;Personalization&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Assets &amp;amp; Artefacts:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Financial Product Ontology&lt;/li&gt;
+&lt;li&gt;Analytical CRM Models&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The deliverables included:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Sales &amp;amp; Onboarding Ontology&lt;/li&gt;
+&lt;li&gt;Use case specific orchestration flow&lt;/li&gt;
+&lt;li&gt;Integration with many info sources&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;impact-and-benefits&#34;&gt;Impact and benefits&lt;/h3&gt;
+&lt;p&gt;Proposal / offer conversion rates were increased by 42% after an initial learning curve &amp;amp; algorithm calibration phase of 6 months
+resulting in additional Asset under Management growth of 8% from targeted clients.&lt;/p&gt;
+&lt;p&gt;The use-case implementation resulted in:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;+18%&lt;/strong&gt; increased targeted product sales&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;+8%&lt;/strong&gt; share of wallet&lt;/p&gt;
+&lt;h3 id=&#34;tags--keywords&#34;&gt;Tags / Keywords&lt;/h3&gt;
+&lt;p&gt;#ideatotrade #nextbestproduct #salesadvice #financialservices #bank #insurance #investment&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Idea to Trade / Next Best Product - General</title>
+      <link>/docs/solutions/002-idea-to-trade-general/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/solutions/002-idea-to-trade-general/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;idea-to-trade--next-best-product-recommendation&#34;&gt;Idea to Trade / Next Best Product recommendation&lt;/h2&gt;
+&lt;h3 id=&#34;executive-summary&#34;&gt;Executive summary&lt;/h3&gt;
+&lt;p&gt;To support sales people and clients with a “next best product” recommendation, a closed loop flow has been established
+from Marketing / Research to Sales and eventually to the client.
+Evaluating which recommendations worked for Sales and Clients allowed for a learning loop informing Product Management
+to improve selection &amp;amp; tailoring of the offerings.&lt;/p&gt;
+&lt;h3 id=&#34;problem-statement&#34;&gt;Problem statement&lt;/h3&gt;
+&lt;p&gt;The information flow from Development and Product Management to Sales and Marketing and eventually to clients does rarely follow
+a structured path. Instead the company‘s “house view” is communicated broadly to all staff.
+Sales then use their direct client relationship to assess customer needs and extract specific requirements or
+ideas from their client interaction. If these match, the resulting research / advice is forwarded to the client.
+It seems like a lucky punch if product information leads to a trade / product sale.&lt;/p&gt;
+&lt;h3 id=&#34;target-market--industries&#34;&gt;Target market / Industries&lt;/h3&gt;
+&lt;p&gt;Any industry which has enough data about the customer to make a recommendation for the next action / product will greatly benefit from this use-case.&lt;/p&gt;
+&lt;h3 id=&#34;solution&#34;&gt;Solution&lt;/h3&gt;
+&lt;p&gt;Starting with product review and occasion specific sales opportunities, the existing client‘s portfolios and client communication are screened for possible gap / fit. Research / Product Management can then focus their efforts on topics suggested by Sales and Marketing staff and / or clients themselves. Observing and identifying trade success the best practices are understood and can be multiplied across other (similar) client scenarios. Product Management and Sales work collaboratively as they both evaluate which information / proposals / products are presented to clients (and then accepted or not) and which ones are kept back (and for what reasons).&lt;/p&gt;
+&lt;p&gt;The solution included:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Clustering &amp;amp; topic mapping of existing marketing material &amp;amp; client portfolio structures&lt;/li&gt;
+&lt;li&gt;Optionally inclusion of CRM notes and written Sales to client communication&lt;/li&gt;
+&lt;li&gt;Sales Ontology setup &amp;amp; learning loop inclusion &amp;amp; topic matching&lt;/li&gt;
+&lt;li&gt;Identification of individual products / topics of interest&lt;/li&gt;
+&lt;li&gt;Aggregation of findings, reporting, alerting &amp;amp; action recommendation&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;stakeholders&#34;&gt;Stakeholders&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Top Management&lt;/li&gt;
+&lt;li&gt;Sales and Marketing&lt;/li&gt;
+&lt;li&gt;Product Managers&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;data-elements-assets-and-deliverables&#34;&gt;Data elements, Assets and Deliverables&lt;/h3&gt;
+&lt;p&gt;As an Input from the client, the following items were used:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Sales organization setup (desks / books)&lt;/li&gt;
+&lt;li&gt;Client to Client / Client to Company graphs&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Capabilities utilized:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Unstructured Data&lt;/li&gt;
+&lt;li&gt;Semantic Harmonization&lt;/li&gt;
+&lt;li&gt;NLP&lt;/li&gt;
+&lt;li&gt;Personalization&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Assets &amp;amp; Artefacts:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Product Ontology&lt;/li&gt;
+&lt;li&gt;Analytical CRM Models&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The deliverables included:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Sales &amp;amp; Onboarding Ontology&lt;/li&gt;
+&lt;li&gt;Use case specific orchestration flow&lt;/li&gt;
+&lt;li&gt;Integration with many info sources&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;tags--keywords&#34;&gt;Tags / Keywords&lt;/h3&gt;
+&lt;p&gt;#ideatotrade #nextbestproduct #salesadvice #crossindustry&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

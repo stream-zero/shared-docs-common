@@ -1,0 +1,87 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>GridMine – liquidity</title>
+    <link>/tags/liquidity/</link>
+    <description>Recent content in liquidity on GridMine</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    
+	  <atom:link href="/tags/liquidity/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Docs: Intraday Liquidity Management Optimization</title>
+      <link>/docs/solutions/013-intraday-liquidity-management/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/solutions/013-intraday-liquidity-management/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;intraday-liquidity-management-optimization&#34;&gt;Intraday Liquidity Management Optimization&lt;/h2&gt;
+&lt;h3 id=&#34;executive-summary&#34;&gt;Executive summary&lt;/h3&gt;
+&lt;p&gt;In order to avoid long internal lead times and to cater to stringent time-to-market expectations, an end-to-end Analytics Design and streaming real time analytics environment for group wide BCBS (Basel III) Intraday Liquidity Management was implemented. The bank&amp;rsquo;s predictive liquidity and cash management models were rebuilt from scratch using real-time streams from 13 different SWIFT messaging gateways.&lt;/p&gt;
+&lt;h3 id=&#34;problem-statement&#34;&gt;Problem statement&lt;/h3&gt;
+&lt;p&gt;All financial institutions need to be on top of their liquidity levels throughout the entire day. Since every organization usually experiencing many cash inflows and outflows during the day, it is diffcult to understand what are the currenct liquidity levels. To be compliant with the regulations, the liquidity levels need to be monitored. Having too much cash is not commerically viable and too little cash is too risky. Knowing the current cash levels the bank can adjust accordingly. The entire cash balancing act is based on the cascade of different events. Cash flow events and also cash-related events need to be integrated from various transaction management systems.&lt;/p&gt;
+&lt;h3 id=&#34;target-market--industries&#34;&gt;Target market / Industries&lt;/h3&gt;
+&lt;p&gt;The use case is applicable in all regualted and cash-intence industries, i.e.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Financial service&lt;/li&gt;
+&lt;li&gt;Treasury departments of large corporations&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;solution&#34;&gt;Solution&lt;/h3&gt;
+&lt;p&gt;During the use case implementation 16 different cash-flow generating order systems were integrated using different schemas of how they handle transactions.
+StreamZero Data Platform was able to resolve the complexities of the event handling to absorb all different situations and rules that need to be applied depending on the different states that the system can take.
+Data sourcing patterns evolved quickly from single file batch to data streaming using Kafka and Flink. A global end-user enablement was achieved with a multi network environment for regional user and both logical and physical data segregation. Irreversible client data protection using SHA 256 hash algorithm allowed for globally integrated algorithms in spite of highly confidential raw input data.
+We were able to implement dynamic throttling and acceleration of cash flows depending on current market situations and liquidity levels.&lt;/p&gt;
+&lt;p&gt;The solution included:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Adaptor agents to 16 cash-flow generating systems&lt;/li&gt;
+&lt;li&gt;Throttling and acceleration logic&lt;/li&gt;
+&lt;li&gt;Machine Learning (ML) models for liquidity projection&lt;/li&gt;
+&lt;li&gt;Harmonized event architecture&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;stakeholders&#34;&gt;Stakeholders&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Group treasury&lt;/li&gt;
+&lt;li&gt;Group risk and compliance&lt;/li&gt;
+&lt;li&gt;CFO&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;data-elements-assets-and-deliverables&#34;&gt;Data elements, Assets and Deliverables&lt;/h3&gt;
+&lt;p&gt;As an Input from the client, the following items were used:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Cash-flows&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Assets &amp;amp; Artefacts:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Harmonized transactional event model&lt;/li&gt;
+&lt;li&gt;Throttling and acceleration rule book&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The deliverables included:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;End to end solution for intraday liquidity&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;impact-and-benefits&#34;&gt;Impact and benefits&lt;/h3&gt;
+&lt;p&gt;The use-case implementation resulted in:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;10 MCHF annual savings on liquidity buffers&lt;/li&gt;
+&lt;li&gt;23% reduction of operations &amp;amp; treasury staff&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;testimonials&#34;&gt;Testimonials&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;“Moving from a batch to a real-time liquidity monitoring was a substantial task that had countless positive knock-on effects throughout the organization.”&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;— Mr. Juerg Schnyder, Liquidity expert, Global universal bank&lt;/p&gt;
+&lt;h3 id=&#34;tags--keywords&#34;&gt;Tags / Keywords&lt;/h3&gt;
+&lt;p&gt;#liquidity #liquiditymanagement #intradayliquiditymanagement #cashmanagement #BCBS #Basel3 #financialservices&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

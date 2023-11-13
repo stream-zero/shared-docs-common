@@ -1,0 +1,911 @@
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="generator" content="Hugo 0.117.0"><link rel="canonical" type="text/html" href="/docs/sx/">
+<link rel="alternate" type="application/rss&#43;xml" href="/docs/sx/index.xml">
+<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+
+
+<link rel="shortcut icon" href="/favicons/favicon.ico" >
+<link rel="apple-touch-icon" href="/favicons/apple-touch-icon-180x180.png" sizes="180x180">
+<link rel="icon" type="image/png" href="/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicons/android-36x36.png" sizes="36x36">
+<link rel="icon" type="image/png" href="/favicons/android-48x48.png" sizes="48x48">
+<link rel="icon" type="image/png" href="/favicons/android-72x72.png" sizes="72x72">
+<link rel="icon" type="image/png" href="/favicons/android-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="/favicons/android-144x144.png" sizes="144x144">
+<link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
+
+<title>StreamZero SX | GridMine</title>
+
+
+  <meta name="description" content="The following section provides a short overview of key features, concepts and architecture of {{&lt; param replacables.brand_name  &gt;}} SX.
+">
+<meta property="og:title" content="StreamZero SX" />
+<meta property="og:description" content="The following section provides a short overview of key features, concepts and architecture of {{&lt; param replacables.brand_name  &gt;}} SX.
+" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="/docs/sx/" />
+<meta itemprop="name" content="StreamZero SX">
+<meta itemprop="description" content="The following section provides a short overview of key features, concepts and architecture of {{&lt; param replacables.brand_name  &gt;}} SX.
+"><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="StreamZero SX"/>
+<meta name="twitter:description" content="The following section provides a short overview of key features, concepts and architecture of {{&lt; param replacables.brand_name  &gt;}} SX.
+"/>
+
+
+
+
+<link rel="preload" href="/scss/main.scss" as="style">
+<link href="/scss/main.scss" rel="stylesheet" integrity="">
+
+
+<script
+  src="https://code.jquery.com/jquery-3.5.1.min.js"
+  integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+  crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RZ6L6XFT3Q"></script>
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-RZ6L6XFT3Q', { 'anonymize_ip': false });
+}
+</script>
+
+
+
+
+  </head>
+  <body class="td-section">
+    <header>
+      
+<nav class="js-navbar-scroll navbar navbar-expand-lg navbar-dark  td-navbar">
+	<a class="navbar-brand" href="/">
+		<span class="navbar-logo"><svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6675 639" width="200" height="29"><style>.a{fill:#e21339}</style><path class="a" d="m234 638.6q-66.8.0-119.6-22.9-52-22.9-81.9-66.9-29.9-44-31.7-106.5h125.9q.9 27.3 14.1 49.3t36.9 35.2q23.8 12.3 56.3 12.3 27.3.0 47.6-8.8 21.1-9.7 32.5-26.4 12.3-16.7 12.3-39.6.0-27.3-14-44.9-13.2-18.4-36.1-29.9-22.9-12.3-52.8-22-29.1-10.5-61.6-21.1Q90.6 321.8 52.8 283q-37.9-39.6-37.9-104.7.0-55.4 26.4-95 26.4-39.6 73.9-60.7 47.6-21.2 108.3-21.2 62.5.0 110 22 47.5 21.2 74.8 61.6 27.3 40.5 29 95.1H309.7q-.9-20.3-11.4-37.9-10.6-18.4-29.9-29-19.4-11.4-46.7-11.4-22.9-.9-41.3 7-18.5 7.9-30 23.8-10.5 14.9-10.5 37.8.0 22 10.5 37 10.6 14.9 30 26.4 19.3 10.5 45.7 20.2 26.4 8.8 57.2 18.5 46.7 15.8 84.5 37.8 38.7 21.1 61.6 55.5 22.9 34.3 22.9 90.6.0 48.4-25.5 89.8-24.7 41.3-73.1 66.8-48.4 25.6-119.7 25.6zM929.2 628H811.3V107.9H630.9V12h478.7v95.9H929.2zm498 0h-118.8V12H1539q73.9.0 122.3 25.5 49.3 25.6 73.1 68.7 23.7 42.2 23.7 94.1.0 49.3-23.7 92.4-22.9 42.3-72.2 68.7-48.4 25.5-125 25.5h-110zm336.2.0h-135.5l-126.7-271h128.4zm-336.1-516.6v189.2h103.8q54.6.0 80.1-26.4 25.5-26.4 25.5-69.5t-25.5-67.8q-25.5-25.5-80.1-25.5zM2383.8 628h-405.6V12h405.6v95.9H2097v161h260.4v92.4H2097V532h286.8zm306.2.0h-124l224.4-616H2925l225.3 616h-125.9l-167.2-480.4zm351.2-140h-375.8l30.8-92.4h314.2zm422.3 140h-118.8V12h141.7l191.8 383.6L3867.4 12h141.7v616h-118.8V213.5L3724 540h-94.2l-166.3-327.4zm1153.7.0h-393.4v-58.1l303.6-493.7h-299.2V12h385.4v58.1l-304.4 493.7h308zm601.8.0h-381V12h381v60.7h-307.1v214.7h280.7v59.8h-280.7v220H5219zm306.2.0h-73.9V12h198.9q72.2.0 117.9 24.7 45.8 23.7 67.8 64.2t22 91.5q0 49.3-22.9 90.7-22 41.3-68.6 66-46.7 24.6-119.7 24.6h-121.5zm338.8.0h-87.1l-135.5-275.4h82.7zM5525.2 74.5v241.1h119.7q70.4.0 103-34.3 33.4-34.4 33.4-88 0-54.6-32.6-86.3-31.6-32.5-104.7-32.5zm844.8 564q-90.7.0-159.3-39.6-67.8-40.4-106.5-111.7-37.8-72.2-37.8-167.2.0-94.2 37.8-165.5 38.7-72.1 106.5-112.6 68.6-40.5 159.3-40.5 91.5.0 159.3 40.5 68.6 40.5 106.4 112.6 37.9 71.3 37.9 165.5.0 95-37.9 167.2-37.8 71.3-106.4 111.7-67.8 39.6-159.3 39.6zm0-65.1q67.7.0 118.8-29.9 51.9-30.8 80.1-87.1 29-57.2 29-136.4t-29-135.5q-28.2-57.2-80.1-87.2-51.1-29.9-118.8-29.9-67.8.0-119.7 29.9-51 30-80.1 87.2-28.1 56.3-28.1 135.5t28.1 136.4q29.1 56.3 80.1 87.1 51.9 29.9 119.7 29.9z"/></svg></span>
+	</a>
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+		<ul class="navbar-nav ml-auto">
+			
+			
+				
+				
+				
+				
+				
+				
+				
+					<li class="nav-item mr-2 mb-2 mb-lg-0 dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">
+							PRODUCTS
+						</a>
+						<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+							
+								<li>
+									<a class="nav-link" href="/products/fx/" >STREAMZERO FX</a>
+								</li>
+							
+								<li>
+									<a class="nav-link" href="/products/k8x/" >STREAMZERO K8X</a>
+								</li>
+							
+								<li>
+									<a class="nav-link" href="/products/sx/" >STREAMZERO SX</a>
+								</li>
+							
+						</ul>
+					</li>
+				
+			
+				
+				
+				
+				
+				
+				
+				
+				
+				
+					<li class="nav-item mr-2 mb-2 mb-lg-0">
+						<a class="nav-link active" href="/docs/" ><span class="active">DOCUMENTATION</span></a>
+					</li>
+				
+			
+			
+			
+		</ul>
+	</div>
+	<div class="navbar-nav d-none d-lg-block">
+<input type="search" class="form-control td-search-input" placeholder="&#xf002; Search this site…" aria-label="Search this site…" autocomplete="off">
+
+</div>
+</nav>
+
+    </header>
+    <div class="container-fluid td-outer">
+      <div class="td-main">
+        <div class="row flex-xl-nowrap">
+          <div class="col-12 col-md-3 col-xl-2 td-sidebar d-print-none">
+          </div>
+          <div class="d-none d-xl-block col-xl-2 td-toc d-print-none">
+          </div>
+          <main class="col-12 col-md-9 col-xl-8 pl-md-5" role="main">
+            
+
+
+
+
+<div class="td-content">
+<div class="pageinfo pageinfo-primary d-print-none">
+<p>
+This the multi-page printable view of this section.
+<a href="#" onclick="print();return false;">Click here to print</a>.
+</p><p>
+<a href="/docs/sx/">Return to the regular view of this page</a>.
+</p>
+</div>
+
+
+
+<h1 class="title">StreamZero SX</h1>
+<div class="lead">The following section provides a short overview of key features, concepts and architecture of StreamZero SX.</div>
+
+
+
+
+    <ul>
+    
+  
+  
+  
+  
+
+  
+    
+    
+	
+<li>1: <a href="#pg-58b9fa984abfef4ad0888c78218c28bc">Developer Guide</a></li>
+
+
+    
+    <ul>
+        
+  
+  
+  
+  
+
+  
+
+    </ul>
+    
+  
+    
+    
+	
+<li>2: <a href="#pg-72095c6ee3f2937804483b060ca4c605">Integrations Guide</a></li>
+
+
+    
+  
+    
+    
+	
+<li>3: <a href="#pg-fdd9155060011a8b2ecbff53a5f1db17">User Guide</a></li>
+
+
+    
+  
+    
+    
+	
+<li>4: <a href="#pg-9b8cdc815935a2e684f08ec589aeebac">Solutions snippets / explain problem solved / link to relevant use case</a></li>
+
+
+    
+  
+    
+    
+	
+<li>5: <a href="#pg-11c13a732c42a6185009d9874c7a5825">Containers &#43; Purpose</a></li>
+
+
+    
+  
+    
+    
+	
+<li>6: <a href="#pg-d5dad999fb1431b710a9db2bde1b8d79">Architecture</a></li>
+
+
+    
+  
+
+    </ul>
+
+
+<div class="content">
+      <h2 id="overview">Overview</h2>
+<p>StreamZero SX is a <strong>streaming automation solution for the StreamZero Platform</strong>. It utilizes Apache Kafka, the distributed message broker used by thousands of companies, to enable data processing across the data mesh.</p>
+<p><strong>StreamZero SX drastically simplifies the creation of data pipelines and deployment of data streams</strong>, speeding up the time it takes to build stream processing applications.</p>
+<p><strong>It automates sourcing, streaming, and data management</strong>, and widely reduces the need for engineers’ involvement in topics management, DevOps, and DataOps.</p>
+<h3 id="what-is-stream-processing">What is Stream-Processing</h3>
+<p>Stream processing is a data management technique that involves ingesting a continuous data stream to quickly analyze, filter, transform or enhance the data in real time. Apache Kafka is the most popular open-source stream-processing software for collecting, processing, storing, and analyzing data at scale.</p>
+<p>Most known for its excellent performance and fault tolerance, Kafka is designed to deliver high throughput and at the same time maintain low latency for real-time data feeds. It can handle thousands of messages per second with an average latency of 5–15ms.</p>
+<p>Kafka serves as an ideal platform for building real-time streaming applications such as online streaming analytics or real-time message queue.</p>
+<p>Apache Kafka has several advantages over other tools. Some notable benefits are:</p>
+<ul>
+<li>Building data pipelines.</li>
+<li>Leveraging real-time data streams.</li>
+<li>Enabling operational metrics.</li>
+<li>Data integration across countless sources.</li>
+</ul>
+<h3 id="common-struggles-for-companies-trying-to-implement-kafka-as-an-integration-pattern">Common Struggles For Companies Trying to Implement Kafka as an Integration Pattern</h3>
+<p>Now, while Kafka is great for building scalable and high-performance streaming applications, it’s actually hard to implement and maintain.</p>
+<ol>
+<li>For one thing, the system is large and complex, which is why most companies fail to meet their goals.</li>
+<li>On top of that, integrating client systems with Kafka brings additional challenges that can be difficult even for experienced teams, because there are many different technical complexities that could potentially cause hiccups in your integration strategy. -&gt; Data schema, supported protocol and serialization are just some of the examples.</li>
+<li>As a result, Kafka requires a dedicated team with advanced knowledge and varying skill sets to handle its adoption — engineers, DevOps specialists, DataOps engineers, and GitOps experts.</li>
+<li>Moreover, due to the complexity of the applications, especially the concern of scalability, it can take a significant time to build each application.</li>
+</ol>
+<p>There are many steps involved: from defining and writing business logic, setting up Kafka and integrating it with other services, to automating and deploying the applications.</p>
+<h3 id="how-does-hahahugoshortcode20s3hbhb-sx-address-and-solve-these-issues">How Does StreamZero SX Address And Solve These Issues?</h3>
+<p>StreamZero SX takes streaming automation to a whole new level. And the way it works is simple. It removes the complexity of Kafka connections, integrations, setups, automation, deployments and gives the end user the opportunity to focus on building client applications instead of losing time learning how to manage Kafka.</p>
+<p>But how exactly does StreamZero SX solve the common issues and pitfalls mentioned above? By simplifying all processes:</p>
+<ul>
+<li>It is easy to adop and therefore has a low learning curve: Users can start working with StreamZero SX and experience first results within an hour.</li>
+<li>It removes the all complexities of Kafka: Engineers focus strictly on business logic for processing messages. The StreamZero SX python package takes care of configuration, Kafka connections, error handling, logging, and functions to interact with other services inside StreamZero.</li>
+<li>It is flexible. StreamZero SX allows using different underlying images and install additional components or pip modules.</li>
+<li>It enables connecting services code automatically to Streams and Topics.</li>
+<li>It helps you to quickly iterate on your service architecture. With StreamZero SX, once the images are deployed and the services are running, results are displayed right away.</li>
+<li>It takes care of all the underlying core processes. This means that you don’t need to worry about any technical or operational considerations.</li>
+<li>It is highly scalable and provides flexibility to up- or down-scale at any time, adjusted to the user’s needs and the number of topic partitions.</li>
+</ul>
+<p>With the experience and knowledge gained over the past 7 years, the StreamZero Labs team has built an out-of-the-box module that lets developers concentrate on coding while taking care of all the complex processes that come with stream-processing data integrations.</p>
+
+</div>
+</div>
+
+
+  
+  
+  
+  
+
+  
+  
+
+  
+    
+    
+	
+    
+
+<div class="td-content" style="page-break-before: always">
+    
+	<h1 id="pg-58b9fa984abfef4ad0888c78218c28bc">1 - Developer Guide</h1>
+    <div class="lead">StreamZero SX Developer Guide</div>
+	<h2 id="overview">Overview</h2>
+<p><strong>StreamZero</strong> is a container level solution for building highly scalable, cross-network  sync or async applications.</p>
+<p>Using the StreamZero SX platform to run and manage stream processing containers utilizing StreamZero messaging infrastructure significantly reduces the cost of deploying enterprise application and offers standardized data streaming between workflow steps.  This will simplify the development and as result create a platform with agile data processing and ease of integration.</p>
+<h2 id="getting-started-with-stream-processors">Getting started with Stream Processors</h2>
+<p>Take a look at this library for creating Stream Processors on top of Kafka and running them inside StreamZero platform:
+<a href="https://pypi.org/project/StreamZero-sx/">StreamZero-SX</a></p>
+<h2 id="example-of-a-stream-processor">Example of a Stream Processor</h2>
+<p>Below you can find an example application that is using StreamZero-sx python library functions to count the number of words in incoming messages and then sending the result to <em>twitter_feed_wc</em> Kafka topic.</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> json
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> StreamZero_sx.core <span style="color:#f92672">import</span> app
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> StreamZero_sx.utils <span style="color:#f92672">import</span> sx_producer
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">process</span>(message):
+</span></span><span style="display:flex;"><span>    message_new <span style="color:#f92672">=</span> dict()
+</span></span><span style="display:flex;"><span>    message_new[<span style="color:#e6db74">&#39;text&#39;</span>] <span style="color:#f92672">=</span> message[<span style="color:#e6db74">&#39;text&#39;</span>]
+</span></span><span style="display:flex;"><span>    message_new[<span style="color:#e6db74">&#39;word_count&#39;</span>] <span style="color:#f92672">=</span> len(message[<span style="color:#e6db74">&#39;text&#39;</span>]<span style="color:#f92672">.</span>split(<span style="color:#e6db74">&#39; &#39;</span>))
+</span></span><span style="display:flex;"><span>    message_new_json <span style="color:#f92672">=</span> json<span style="color:#f92672">.</span>dumps(message_new)
+</span></span><span style="display:flex;"><span>    print(message_new_json)
+</span></span><span style="display:flex;"><span>    sx_producer<span style="color:#f92672">.</span>send(topic<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;twitter_feed_wc&#34;</span>, value<span style="color:#f92672">=</span>message_new_json<span style="color:#f92672">.</span>encode(<span style="color:#e6db74">&#39;utf-8&#39;</span>))
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>app<span style="color:#f92672">.</span>process <span style="color:#f92672">=</span> process
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="creating-docker-container">Creating Docker Container</h2>
+<p>Below is an example of a dockerfile to create a Docker image for the Twitter Word Count application shown in the previous section. The user is free to use whatever base python image
+and then add StreamZero module and other libraries.</p>
+<pre tabindex="0"><code>FROM python:3.9-alpine
+#RUN pip install -i https://test.pypi.org/simple/ StreamZero-sx==0.0.8 --extra-index-url https://pypi.org/simple/ StreamZero-sx
+RUN pip install StreamZero-sx
+COPY twitter_word_count.py app.py
+</code></pre><p>After the user have built an image and pushed it to some Docker image regitry, he can run it in StreamZero SX UI.</p>
+
+</div>
+
+
+
+    
+      
+  
+  
+  
+  
+
+  
+  
+
+  
+
+    
+	
+  
+    
+    
+	
+    
+
+<div class="td-content" style="page-break-before: always">
+    
+	<h1 id="pg-72095c6ee3f2937804483b060ca4c605">2 - Integrations Guide</h1>
+    <div class="lead">StreamZero SX Integrations Guide.</div>
+	<h2 id="how-does-it-work">How does it Work?</h2>
+<p>There are two main approaches to implementing the external notifications support.</p>
+<ul>
+<li>Implementation within a StreamZero SX container</li>
+<li>Implementation in an Exit Gateway</li>
+</ul>
+<p>The 2nd option is used in platforms which are behind a firewall and therefore require the gateway to be outside the firewall for accessing external services. In these cases the adapter runs as a separate container.</p>
+<p>Irrespective of the infrastructure implementation the service internal API (as illustrated above) does not change.</p>
+
+</div>
+
+
+
+    
+	
+  
+    
+    
+	
+    
+
+<div class="td-content" style="page-break-before: always">
+    
+	<h1 id="pg-fdd9155060011a8b2ecbff53a5f1db17">3 - User Guide</h1>
+    <div class="lead">StreamZero SX User Guide.</div>
+	<h1 id="hahahugoshortcode135s0hbhb-sx-management-ui">StreamZero SX Management UI</h1>
+<h2 id="create-a-stream-adapter">Create a Stream Adapter</h2>
+<p>After a developer has built an image of a stream processing task and stored it to a container register, we can configure and launch it with StreamZero Management UI.</p>
+<p>On left side menu, open Stream Adapters menu and select &ldquo;Stream Adapter Definition&rdquo;.
+Fill in the details.</p>
+<p><img src="/images/SX_create_stream_adapter.png" alt="create_stream_adapter_ui"></p>
+<p>Go to the &ldquo;List Stream Adapters&rdquo; page. You should find your the Stream Adapter that we created on the list. You can start the container by clicking the &ldquo;Run&rdquo;-button. The download and start-up of the image can take few minutes.</p>
+<p><img src="/images/SX_list_stream_adapters.png" alt="list_stream_adapter_ui"></p>
+<p>When the Stream Adapter is running you can find it in the list of running adapters.</p>
+<p><img src="/images/SX_running_adapters.png" alt="list_running_adapters_ui"></p>
+<p>StreamZero also has a list of all the Kafka topics that are currently attached to Stream Adapters or available to Stream Adapters.</p>
+<p><img src="/images/SX_list_topics.png" alt="list_topics_ui"></p>
+
+</div>
+
+
+
+    
+	
+  
+    
+    
+	
+    
+
+<div class="td-content" style="page-break-before: always">
+    
+	<h1 id="pg-9b8cdc815935a2e684f08ec589aeebac">4 - Solutions snippets / explain problem solved / link to relevant use case</h1>
+    <div class="lead">The following section provides StreamZero SX solutions snippets / explain problem solved / link to relevant use case.</div>
+	<h2 id="twitter-message-processing-example">Twitter message processing example</h2>
+<p>The first example application is using StreamZero-sx python library to implement stream processor to count the number of words in incoming messages. The messages are queried from Twitter API with specific filter condition and then fed to the processor. The results are sent to a Kafka topic.</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> json
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> StreamZero_sx.core <span style="color:#f92672">import</span> app
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> StreamZero_sx.utils <span style="color:#f92672">import</span> sx_producer
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">process</span>(message):
+</span></span><span style="display:flex;"><span>    message_new <span style="color:#f92672">=</span> dict()
+</span></span><span style="display:flex;"><span>    message_new[<span style="color:#e6db74">&#39;text&#39;</span>] <span style="color:#f92672">=</span> message[<span style="color:#e6db74">&#39;text&#39;</span>]
+</span></span><span style="display:flex;"><span>    message_new[<span style="color:#e6db74">&#39;word_count&#39;</span>] <span style="color:#f92672">=</span> len(message[<span style="color:#e6db74">&#39;text&#39;</span>]<span style="color:#f92672">.</span>split(<span style="color:#e6db74">&#39; &#39;</span>))
+</span></span><span style="display:flex;"><span>    message_new_json <span style="color:#f92672">=</span> json<span style="color:#f92672">.</span>dumps(message_new)
+</span></span><span style="display:flex;"><span>    print(message_new_json)
+</span></span><span style="display:flex;"><span>    sx_producer<span style="color:#f92672">.</span>send(topic<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;twitter_feed_wc&#34;</span>, value<span style="color:#f92672">=</span>message_new_json<span style="color:#f92672">.</span>encode(<span style="color:#e6db74">&#39;utf-8&#39;</span>))
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>app<span style="color:#f92672">.</span>process <span style="color:#f92672">=</span> process
+</span></span></code></pre></td></tr></table>
+</div>
+</div>
+</div>
+
+
+
+    
+	
+  
+    
+    
+	
+    
+
+<div class="td-content" style="page-break-before: always">
+    
+	<h1 id="pg-11c13a732c42a6185009d9874c7a5825">5 - Containers &#43; Purpose</h1>
+    <div class="lead">StreamZero SX Containers + Purpose.</div>
+	<h2 id="creating-a-docker-container">Creating a Docker Container</h2>
+<p>Below is an example of a dockerfile to create a Docker image for some StreamZero SX application. The user is free to choose what base python image
+to use and then add StreamZero module and other libraries.</p>
+<pre tabindex="0"><code>FROM python:3.9-alpine
+#RUN pip install -i https://test.pypi.org/simple/ StreamZero-sx==0.0.8 --extra-index-url https://pypi.org/simple/ StreamZero-sx
+RUN pip install StreamZero-sx
+COPY app.py utils.py
+</code></pre><p>After the user have built an image and pushed it to a Docker image regitsry, they can run it in StreamZero SX Management UI.</p>
+
+</div>
+
+
+
+    
+	
+  
+    
+    
+	
+    
+
+<div class="td-content" style="page-break-before: always">
+    
+	<h1 id="pg-d5dad999fb1431b710a9db2bde1b8d79">6 - Architecture</h1>
+    <div class="lead">StreamZero SX Architecture.</div>
+	<h2 id="hahahugoshortcode131s0hbhb-sx-architecture-principles">StreamZero SX Architecture Principles</h2>
+<p>Stream processing is a technique for processing large volumes of data
+in real-time as it is generated or received. One way to implement a
+stream processing architecture is to use Docker containers for
+individual workflow steps and Apache Kafka for the data pipeline.</p>
+<p>Docker is a platform for creating, deploying, and running containers,
+which are lightweight and portable units of software that can be run
+on any system with a compatible container runtime. By using Docker
+containers for each step in the stream processing workflow, developers
+can easily package and deploy their code, along with any dependencies,
+in a consistent and reproducible way. This can help to improve the
+reliability and scalability of the stream processing system.</p>
+<p>Apache Kafka is a distributed streaming platform that can be used to
+build real-time data pipelines and streaming applications. It provides
+a publish-subscribe model for sending and receiving messages, and can
+handle very high throughput and low latency. By using Kafka as the
+backbone of the data pipeline, developers can easily scale their
+stream processing system to handle large volumes of data and handle
+failover scenarios.</p>
+<p>Overall, by using Docker containers for the individual workflow steps
+and Apache Kafka for the data pipeline, developers can create a stream
+processing architecture that is both scalable and reliable. This
+architecture can be used for a wide range of use cases, including
+real-time analytics, event-driven architectures, and data integration.</p>
+<p>Below is the high-level architecture diagram of StreamZero SX:</p>
+<p><img src="/images/streamzero_sx_architecture.png" alt="streamzero_sx_architecture"></p>
+<h2 id="required-infrastructure">Required Infrastructure</h2>
+<p>The following are the infrastructure components required for a StreamZero SX installation</p>
+<table>
+<thead>
+<tr>
+<th>Component</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Apache Kafka</td>
+<td>Apache Kafka serves as the backbone to pass events and operational data within a StreamZero SX Installation.</td>
+</tr>
+<tr>
+<td>PostgreSQL</td>
+<td>Postgres is used as the database for the StreamZero SX Management Application.</td>
+</tr>
+<tr>
+<td>Consul</td>
+<td>Consul is the configuration store used by the StreamZero SX platform. It is also used by the services to store their configurations.</td>
+</tr>
+<tr>
+<td>MinIO</td>
+<td>Minio provides the platform internal storage for scripts and assets used by the Services.</td>
+</tr>
+<tr>
+<td>Elasticsearch</td>
+<td>Elasticsearch is used as a central store for all operational data. Thereby making the data easiliy searchable.</td>
+</tr>
+<tr>
+<td>Kibana</td>
+<td>Kibana is used to view and query the data stored in Elasticsearch.</td>
+</tr>
+<tr>
+<td>StreamZero Management UI</td>
+<td>StreamZero Management UI is the main UI used for all activities on the StreamZero FX platform.</td>
+</tr>
+<tr>
+<td>StreamZero FX-Router</td>
+<td>The Route container is responsible for listening to events flowing through the system and forwarding the events to the appropriate micro-services that you create.</td>
+</tr>
+<tr>
+<td>StreamZero FX-Executor</td>
+<td>The executor container(s) is where the code gets executed.</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+
+
+
+    
+	
+  
+
+
+
+          </main>
+        </div>
+      </div>
+      <section class="row td-cover-block" style="background-color: #1b1a21;">
+  <div class="container">
+      <footer class="footer-component with-intercom">
+          <div class="section-container footer-inner size-medium">
+              <div class="content">
+                  <div class="page-container padding-small-x">
+                      <div class="margin-component bottom-small-x">
+                          <nav class="footer-links" role="navigation">
+                              <ul class="list-component footer-column ul">
+                                  <li class="list-item-component footer-item footer-item-header">
+                                      <div class="margin-component inner bottom-zero">
+                                          <div class="list-content-wrapper">
+                                              <div class="typography-text p2-caps footer-link footer-header inverted">
+                                                  Product
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </li>
+                                  <li class="list-item-component footer-item">
+                                      <div class="margin-component inner bottom-zero">
+                                          <div class="list-content-wrapper">
+                                              <div class="typography-text p2-normal inverted"><a
+                                                  class="link-component footer-link"
+                                                  href="/products/fx/">StreamZero FX</a></div>
+                                          </div>
+                                      </div>
+                                  </li>
+                                  <li class="list-item-component footer-item">
+                                      <div class="margin-component inner bottom-zero">
+                                          <div class="list-content-wrapper">
+                                              <div class="typography-text p2-normal inverted"><a
+                                                  class="link-component footer-link"
+                                                  href="/products/k8x">StreamZero K8X</a></div>
+                                          </div>
+                                      </div>
+                                  </li>
+                                  <li class="list-item-component footer-item">
+                                      <div class="margin-component inner bottom-zero">
+                                          <div class="list-content-wrapper">
+                                              <div class="typography-text p2-normal inverted"><a
+                                                  class="link-component footer-link"
+                                                  href="/products/sx/">StreamZero SX</a></div>
+                                          </div>
+                                      </div>
+                                  </li>
+                              </ul>
+                              <ul class="list-component footer-column ul">
+                                  <li class="list-item-component footer-item footer-item-header">
+                                      <div class="margin-component inner bottom-zero">
+                                          <div class="list-content-wrapper">
+                                              <div class="typography-text p2-caps footer-link footer-header inverted">
+                                                  Solutions
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </li>
+                                  <li class="list-item-component footer-item">
+                                      <div class="margin-component inner bottom-zero">
+                                          <div class="list-content-wrapper">
+                                              <div class="typography-text p2-normal inverted"><a
+                                                  class="link-component footer-link"
+                                                  href="/solutions/">Why GridMine?</a></div>
+                                          </div>
+                                      </div>
+                                  </li>
+                                  <li class="list-item-component footer-item">
+                                      <div class="margin-component inner bottom-zero">
+                                          <div class="list-content-wrapper">
+                                              <div class="typography-text p2-normal inverted"><a
+                                                  class="link-component footer-link"
+                                                  href="/integrations/">Integrations</a></div>
+                                          </div>
+                                      </div>
+                                  </li>
+                                  <li class="list-item-component footer-item">
+                                      <div class="margin-component inner bottom-zero">
+                                          <div class="list-content-wrapper">
+                                              <div class="typography-text p2-normal inverted"><xa
+                                                  class="link-component footer-link"
+                                                  href="/partners/">Partners</a></div>
+                                          </div>
+                                      </div>
+                                  </li>
+                              </ul>
+                              <ul class="list-component footer-column ul">
+                                  <li class="list-item-component footer-item footer-item-header">
+                                      <div class="margin-component inner bottom-zero">
+                                          <div class="list-content-wrapper">
+                                              <div class="typography-text p2-caps footer-link footer-header inverted">
+                                                  Learn
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </li>
+                                  <li class="list-item-component footer-item">
+                                      <div class="margin-component inner bottom-zero">
+                                          <div class="list-content-wrapper">
+                                              <div class="typography-text p2-normal inverted"><a
+                                                  rel="noopener noreferrer"
+                                                  class="link-component footer-link" href="/docs/">Developer
+                                                  Guide</a>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </li>
+                                  <li class="list-item-component footer-item">
+                                      <div class="margin-component inner bottom-zero">
+                                          <div class="list-content-wrapper">
+                                              <div class="typography-text p2-normal inverted"><a
+                                                  rel="noopener noreferrer"
+                                                  class="link-component footer-link" href="/docs/integrations/">Integrations
+                                                  Guide</a></div>
+                                          </div>
+                                      </div>
+                                  </li>
+                                  <li class="list-item-component footer-item">
+                                      <div class="margin-component inner bottom-zero">
+                                          <div class="list-content-wrapper">
+                                              <div class="typography-text p2-normal inverted"><a
+                                                  class="link-component footer-link"
+                                                  href="/docs/security/">Security</a></div>
+                                          </div>
+                                      </div>
+                                  </li>
+                                  <li class="list-item-component footer-item">
+                                      <div class="margin-component inner bottom-zero">
+                                          <div class="list-content-wrapper">
+                                              <div class="typography-text p2-normal inverted"><xa
+                                                  class="link-component footer-link"
+                                                  href="/blog/">Blog</a></div>
+                                          </div>
+                                      </div>
+                                  </li>
+                                  
+                              </ul>
+                              <ul class="list-component footer-column ul">
+                                  <li class="list-item-component footer-item footer-item-header">
+                                      <div class="margin-component inner bottom-zero">
+                                          <div class="list-content-wrapper">
+                                              <div class="typography-text p2-caps footer-link footer-header inverted">
+                                                  Support
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </li>
+                                  <li class="list-item-component footer-item">
+                                      <div class="margin-component inner bottom-zero">
+                                          <div class="list-content-wrapper">
+                                              <div class="typography-text p2-normal inverted"><xa
+                                                  class="link-component footer-link"
+                                                  href="/support/">Support Plans</a></div>
+                                          </div>
+                                      </div>
+                                  </li>
+                                  
+                                  <li class="list-item-component footer-item">
+                                      <div class="margin-component inner bottom-zero">
+                                          <div class="list-content-wrapper">
+                                              <div class="typography-text p2-normal inverted"><xa
+                                                  class="link-component footer-link"
+                                                  href="/services/">Professional Services</a></div>
+                                          </div>
+                                      </div>
+                                  </li>
+                                  <li class="list-item-component footer-item">
+                                      <div class="margin-component inner bottom-zero">
+                                          <div class="list-content-wrapper">
+                                              <div class="typography-text p2-normal inverted"><a
+                                                  rel="noopener noreferrer"
+                                                  class="link-component footer-link" href="/docs/">Documentation</a>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </li>
+                              </ul>
+                              <ul class="list-component footer-column ul">
+                                  <li class="list-item-component footer-item footer-item-header">
+                                      <div class="margin-component inner bottom-zero">
+                                          <div class="list-content-wrapper">
+                                              <div class="typography-text p2-caps footer-link footer-header inverted">
+                                                  Company
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </li>
+                                  <li class="list-item-component footer-item">
+                                      <div class="margin-component inner bottom-zero">
+                                          <div class="list-content-wrapper">
+                                              <div class="typography-text p2-normal inverted"><a
+                                                  class="link-component footer-link"
+                                                  href="/about/">About Us</a></div>
+                                          </div>
+                                      </div>
+                                  </li>
+                                  <li class="list-item-component footer-item">
+                                      <div class="margin-component inner bottom-zero">
+                                          <div class="list-content-wrapper">
+                                              <div class="typography-text p2-normal inverted"><xa
+                                                  class="link-component footer-link"
+                                                  href="/jobs/"><span class="footer-pill-wrapper">Careers <span
+                                                  class="footer-pill">We're hiring</span></span></a>
+                                                </div>
+                                          </div>
+                                      </div>
+                                  </li>
+                                  <li class="list-item-component footer-item">
+                                      <div class="margin-component inner bottom-zero">
+                                          <div class="list-content-wrapper">
+                                              <div class="typography-text p2-normal inverted"><a
+                                                  class="link-component footer-link"
+                                                  href="/contact/">Contact Us</a></div>
+                                          </div>
+                                      </div>
+                                  </li>
+                              </ul>
+                          </nav>
+                      </div>
+                      <div class="margin-component bottom-small-x">
+                          <div class="centering-wrapper social-links">
+                              <a rel="noopener noreferrer" class="link-component social-link"
+                                href="https://twitter.com/gridmine/" title="Twitter" target="_blank">
+                                  <img src="/icons/footer/twitter-icon.png" alt="Twitter">
+                              </a>
+                              
+                              <a rel="noopener noreferrer" class="link-component social-link"
+                                href="https://www.linkedin.com/company/gridmine/" title="LinkedIn" target="_blank">
+                                  <img src="/icons/footer/linkedin-icon.png" alt="LinkedIn">
+                              </a>
+                              <a rel="noopener noreferrer" class="link-component social-link"
+                                href="https://www.youtube.com/channel/UC5miURXVxGLo17EyWPBWCug/" title="YouTube"
+                                target="_blank">
+                                  <img src="/icons/footer/youtube-icon.png" alt="YouTube">
+                              </a>
+                              
+                              <a rel="noopener noreferrer" class="link-component social-link"
+                                href="https://github.com/gridmine/" title="GitHub" target="_blank">
+                                  <img src="/icons/footer/github-icon.png" alt="GitHub">
+                              </a>
+                              <a rel="noopener noreferrer" class="link-component social-link"
+                                href="https://www.medium.com/gridmine/" title="Medium" target="_blank">
+                                  <img src="/icons/footer/medium-icon.png" alt="Medium">
+                              </a>
+                              <xa rel="noopener noreferrer" class="link-component social-link" href="#"
+                                data-toggle="modal" data-target="#subscribeModal"
+                                title="Subscribe to our Newsletter">
+                                  <img src="/icons/footer/mail-icon.png" alt="Newsletter">
+                              </a>
+                          </div>
+                      </div>
+                      <div class="centering-wrapper legal-links">
+                          <div class="typography-text p2-normal align-center">
+                              <span class="copyright">2023 © GridMine GmbH</span>
+                              <span> | </span>
+                              <br class="br-component mobile">
+                              <a class="link-component legal-link" href="/docs/privacy_policy/">Privacy Policy</a>
+                              <span> | </span>
+                              <a class="link-component legal-link" href="/docs/privacy_policy/">Data Protection
+                                  Policy</a>
+                              <span> | </span>
+                              <a class="link-component legal-link" href="/docs/terms_conditions/">Legal Terms and
+                                  Conditions</a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </footer>
+  </div>
+</section>
+
+<script type="text/javascript" src="/js/carousel.js"></script>
+<link rel="stylesheet" href="/css/carousel.css">
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+
+
+
+
+
+<script src='/js/tabpane-persist.js'></script>
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="/js/main.min.7d5b92c4889cf0554b0ea5e2309b0b81b196aa7c9a235632938a25d9fc4d8a7c.js" integrity="sha256-fVuSxIic8FVLDqXiMJsLgbGWqnyaI1Yyk4ol2fxNinw=" crossorigin="anonymous"></script>
+
+
+
+
+  </body>
+</html>

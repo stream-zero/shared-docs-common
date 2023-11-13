@@ -1,0 +1,39 @@
+{{ $_hugo_config := `{ "version": 1 }` }}
+<!--{{ $col_id := .Get "color" | default .Ordinal }}-->
+<!--{{ $height := .Get "height" | default "auto"  }}-->
+<!--{{ $type   := .Get "type" | default "" }}-->
+
+{{ $feature_set   := .Get "feature_set" }}
+{{ $data := index site.Data.features $feature_set }}
+{{ $data := index $data "features" }}
+
+{{ range $data  }}
+    <div id="accordion" class="accordion" style="background-color: rgba(red, green, blue, 0.1);">
+        {{ range . }}
+        
+            <div class="card" style="background-color: rgba(0, 0, 0, 1);">
+                <div style="background-color: rgba(0, 0, 0, 1);" class="card-header" id="heading_{{ $feature_set }}_{{ anchorize .name }}">
+                    <h4>
+                        <button style="background-color: rgba(red, green, blue, 0.1);" class="btn btn-link collapsed lead" data-toggle="collapse"
+                            data-target="#{{ $feature_set }}_{{ anchorize .name  }}" aria-expanded="false"
+                            aria-controls="{{ $feature_set }}_{{ anchorize .name  }}">
+                            {{ .name }}
+                        </button>
+                    </h4>
+                </div>
+
+                <div id="{{ $feature_set }}_{{ anchorize .name  }}" class="collapse" aria-labelledby="heading_{{ $feature_set }}_{{ anchorize .name  }}" data-parent="#accordion">
+                    <div class="card-body lead">
+                                        {{ range .features}}
+                                            <p class="display-6 text-white" style="font-weight: bold;">{{ .name }}</p>
+                                            <p>{{ .description }}</p>
+                                        {{ end }}
+                    </div>
+                </div>
+            </div>
+        {{ end }}
+    </div>
+    {{ end }}
+    
+    
+

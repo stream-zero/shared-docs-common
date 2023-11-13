@@ -1,0 +1,36 @@
+$google_font_name: "Barlow" !default;
+$google_font_family: "Barlow:200,200i,300,300i,400,400i,600,6001,700,700i" !default;
+$web-font-path: "https://fonts.googleapis.com/css?family=#{$google_font_family}&display=swap";
+
+// Font weights
+
+$font-weight-light: 200 !default;
+$font-weight-normal: 300 !default;
+$font-weight-medium: 400 !default;
+$font-weight-bold: 600 !default;
+
+$font-weight-body-text: $font-weight-normal !default;
+$headings-font-weight: $font-weight-medium !default;
+
+// Bootstrap flags. For more, see https://getbootstrap.com/docs/4.0/getting-started/theming/
+$enable-gradients: true !default;
+$enable-rounded: false !default;
+$enable-shadows: true !default;
+
+
+// UI element colors
+
+$primary: #f7f5f5 !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #eee !default;
+$gray-300: #dee2e6 !default;
+$lightblue: rgba($primary, 0.03) !default;
+$light-parchment: #ececec !default;
+
+
+
+$border-color: $gray-300 !default;
+$td-sidebar-tree-root-color: $primary !default;
+$td-sidebar-bg-color: rgba($primary, 0.03) !default;
+$td-sidebar-border-color: $border-color !default;
+

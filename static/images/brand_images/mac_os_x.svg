@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 26.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 500 500" style="enable-background:new 0 0 500 500;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#EFEFEF;}
+	.st1{fill:url(#SVGID_1_);}
+	.st2{font-family:'MyriadPro-Regular';}
+	.st3{font-size:46.1812px;}
+</style>
+<g>
+	<g>
+		<circle class="st0" cx="250" cy="219.9" r="152.1"/>
+		
+			<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="126.4302" y1="376.1382" x2="126.4302" y2="375.3348" gradientTransform="matrix(121.799 0 0 -163.12 -15149.0762 61510.0625)">
+			<stop  offset="0" style="stop-color:#58B0E3"/>
+			<stop  offset="1" style="stop-color:#F44C26"/>
+		</linearGradient>
+		<path class="st1" d="M319.9,126.3h-9.2l-60.4,87.3h-0.6l-60.2-87.3h-9.4l65.1,93.9l-64.8,93.3h9.2l60-87h0.6l60,87h9.4l-64.8-93.3
+			L319.9,126.3L319.9,126.3z"/>
+	</g>
+	<text transform="matrix(1 0 0 1 164.4731 420.614)" class="st2 st3">mac os X</text>
+</g>
+</svg>

@@ -1,0 +1,160 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>GridMine – users</title>
+    <link>/tags/users/</link>
+    <description>Recent content in users on GridMine</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    
+	  <atom:link href="/tags/users/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Docs: Users</title>
+      <link>/docs/security/list_users/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/security/list_users/</guid>
+      <description>
+        
+        
+        &lt;h4 id=&#34;users&#34;&gt;Users&lt;/h4&gt;
+&lt;p&gt;This is us - humans - using StreamZero on a day to day basis. And in this section each user is listed with the most important attributes defininig name, e-mail, status and - most importantly - the associated roles.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;To get the the Users page, navigate to: Security &amp;gt; List Users&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+
+
+
+
+&lt;p&gt; 
+            &lt;img src=&#34;/streamzero/images/security/list_users_page.png&#34; style=&#34;border:2px solid #fff;
+            box-shadow: 10px 10px 5px #ccc;
+            -moz-box-shadow: 10px 10px 5px #ccc;
+            -webkit-box-shadow: 10px 10px 5px #ccc;
+            -khtml-box-shadow: 10px 10px 5px #ccc;&#34;/&gt;
+&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Example: List of StreamZero Users&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Besides displaying the list of all current users, the Users page offers a number of capabilities:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Add User &lt;img src=&#34;/images/add_icon.png&#34; alt=&#34;Add User&#34;&gt;&lt;/li&gt;
+&lt;li&gt;Show User &lt;img src=&#34;/images/view_icon.png&#34; alt=&#34;&#34;&gt;&lt;/li&gt;
+&lt;li&gt;Edit User &lt;img src=&#34;/images/edit_icon.png&#34; alt=&#34;&#34;&gt;&lt;/li&gt;
+&lt;li&gt;Delete User &lt;img src=&#34;/images/delete_icon.png&#34; alt=&#34;&#34;&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;em&gt;Note that each of these capabilities depends on the Permissions given to your Role. Some roles may be given full rights (e.g. add, show, edit, delete), where others may only be given viewing rights (e.g. show). As a result, some users may only be seeing the &amp;ldquo;Show User&amp;rdquo; magnifying glass icon.&lt;/em&gt;&lt;/p&gt;
+&lt;h5 id=&#34;add-new-user&#34;&gt;Add new User&lt;/h5&gt;
+&lt;p&gt;Adding a new User can be done directly within StreamZero by any person who has the necessary permissions to do so. This is normally a designated Security Lead.&lt;/p&gt;
+&lt;p&gt;Most often though, adding new Users is done by integrating StreamZero with the corporate Identity Access Management (IAM) and Single Sign On (SSO) system.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Click on the plus sign &lt;img src=&#34;/images/add_icon.png&#34; alt=&#34;Add User&#34;&gt; to add a new user.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+
+
+
+
+&lt;p&gt; 
+            &lt;img src=&#34;/streamzero/images/security/add_user_page.png&#34; style=&#34;border:2px solid #fff;
+            box-shadow: 10px 10px 5px #ccc;
+            -moz-box-shadow: 10px 10px 5px #ccc;
+            -webkit-box-shadow: 10px 10px 5px #ccc;
+            -khtml-box-shadow: 10px 10px 5px #ccc;&#34;/&gt;
+&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Example: Adding a new StreamZero User&lt;/em&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;First Name, Last Name&lt;/strong&gt;: Full first and last name of the user&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;User Name:&lt;/strong&gt; Apply any name or e-mail, but it is advised to adhere to a standard applied to all users.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Possible options may include: Email, Company User ID, first name only or full name&lt;/em&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Is Active&lt;/strong&gt;: Keep this boxed checked as long as the user is actively using Ferris.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Uncheck the box once a user is no longer using Ferris. Delete the user after a prolonged period of inactivity.&lt;/em&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Email:&lt;/strong&gt; The users email is the primary means of identification and communication.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Role&lt;/strong&gt;: This is where one or more roles - and therefore permissions - are associated with each user.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Roles are setup in advance, and only already existing roles may be selected. A user may be associated to multiple roles.&lt;/em&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Save:&lt;/strong&gt; Always save!&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5 id=&#34;show-user&#34;&gt;Show User&lt;/h5&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Click on the spyglass icon &lt;img src=&#34;/images/view_icon.png&#34; alt=&#34;Add User&#34;&gt; in front of the user you want to look at.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+
+
+
+
+&lt;p&gt; 
+            &lt;img src=&#34;/streamzero/images/security/view_user_page.png&#34; style=&#34;border:2px solid #fff;
+            box-shadow: 10px 10px 5px #ccc;
+            -moz-box-shadow: 10px 10px 5px #ccc;
+            -webkit-box-shadow: 10px 10px 5px #ccc;
+            -khtml-box-shadow: 10px 10px 5px #ccc;&#34;/&gt;
+&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Example: View only List of StreamZero Users&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;User Info&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;User Name:&lt;/strong&gt; displays user name&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Is Active:&lt;/strong&gt; shows whether the user is set to active or inactive. Note that an inactivated user may not be able to loginto Ferris&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Role:&lt;/strong&gt; Associated roles&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Login Count:&lt;/strong&gt; Count of how many times the user has logged in in total&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Personal Info&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;First Name:&lt;/strong&gt; First name as given during setup. This name may also be provided from the corporate directory&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Last Name:&lt;/strong&gt; Last name as given during setup. This name may also be provided from the corporate directory&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Email:&lt;/strong&gt; Email as given during setup. This email may also be provided from the corporate directory&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Audit Info&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Last login:&lt;/strong&gt; Last successful login date and time&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Failed login count:&lt;/strong&gt; Number of unsuccessful login attempts&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Created on:&lt;/strong&gt; Exact date and time this user was created (manually or via corporate SSO)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Created by:&lt;/strong&gt; StreamZero User or corporate integration service&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Changed on:&lt;/strong&gt; Exact date and time this user was edited (manually or via corporate SSO)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Changed by:&lt;/strong&gt; StreamZero User or corporate integration service&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Edit User&lt;/strong&gt;: Depending on your user rights (permission level) you may be able to enter the &lt;strong&gt;Edit&lt;/strong&gt; function.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Back arrow&lt;/strong&gt;: go back to the List Users page.&lt;/p&gt;
+&lt;h5 id=&#34;edit-user&#34;&gt;Edit User&lt;/h5&gt;
+&lt;p&gt;Editing User details such as name, email or even Role(s) may be done here.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Note though that if the StreamZero Security is integrated with the corporate Identity Access Management (IAM), adding or removing Roles should be done there in order to ensure the change is permanent and not overwritten at the next syncronization.&lt;/em&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Click on the edit icon &lt;img src=&#34;/images/edit_icon.png&#34; alt=&#34;Add User&#34;&gt; in front of the user you want to apply changes to.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h5 id=&#34;delete-user&#34;&gt;Delete User&lt;/h5&gt;
+&lt;p&gt;Delete Users permanetly from Ferris.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Note though that if the StreamZero Security is integrated with the corporate Identity Access Management (IAM), deleting users should be done there in order to ensure the change is permanent and not overwritten at the next syncronization.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Also note that before permanetly deleting a user from Ferris, it is advised that the status of the user is first set to &amp;ldquo;inactive&amp;rdquo; for a period of time, and until it is sure that the user will not be reactivatet.&lt;/em&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Click on the delete icon &lt;img src=&#34;/images/delete_icon.png&#34; alt=&#34;Add User&#34;&gt; in front of the user you want to delete.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

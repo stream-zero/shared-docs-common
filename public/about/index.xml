@@ -1,0 +1,612 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>GridMine – ABOUT</title>
+    <link>/about/</link>
+    <description>Recent content in ABOUT on GridMine</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    
+	  <atom:link href="/about/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>About: About 1</title>
+      <link>/about/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/about/about/</guid>
+      <description>
+        
+        
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;section id=&#34;td-cover-block-0&#34; class=&#34;row td-cover-block td-cover-block--height-auto js-td-cover td-overlay xtd-overlay--dark -bg-primary&#34;&gt;
+  &lt;div class=&#34;container td-overlay__inner&#34;&gt;
+    &lt;div class=&#34;row&#34;&gt;
+      &lt;div class=&#34;col-12&#34;&gt;
+        &lt;div class=&#34;text-left&#34; &gt;
+          &lt;h1 class=&#34;display-1 mt-0 mt-md-5 pb-4 home_title &#34;&gt;GridMine : COMPANY&lt;/h1&gt;
+          &lt;div class=&#34;col-md-6&#34;&gt;
+            
+          &lt;/div&gt;
+          &lt;div class=&#34;pt-3 lead&#34;&gt;
+            
+                
+
+&lt;div class=&#34;mx-auto&#34;&gt;
+	&lt;a class=&#34;btn btn-lg btn-primary mr-3 mb-4&#34; href=&#34;/docs/&#34;&gt;
+		Learn More &lt;i class=&#34;fas fa-arrow-alt-circle-right ml-2&#34;&gt;&lt;/i&gt;
+	&lt;/a&gt;
+	&lt;a class=&#34;btn btn-lg btn-secondary mr-3 mb-4&#34; href=&#34;https://github.com/gridmine&#34;&gt;
+		Download &lt;i class=&#34;fab fa-github ml-2 &#34;&gt;&lt;/i&gt;
+	&lt;/a&gt;
+	&lt;p class=&#34;lead mt-5&#34;&gt;The Platform for the fasted and simplest way to building your micro-integrations for events and services.&lt;/p&gt;
+	
+	
+	
+	&lt;a class=&#34;btn btn-link text-info&#34; href=&#34;#td-block-1&#34; aria-label=&#34;Read more&#34;&gt;&lt;i class=&#34;fa fa-chevron-circle-down&#34; style=&#34;font-size: 400%&#34;&gt;&lt;/i&gt;&lt;/a&gt;
+
+&lt;/div&gt;
+
+            
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  
+&lt;/section&gt;
+
+
+
+
+
+
+
+
+
+&lt;a id=&#34;td-block-1&#34; class=&#34;td-offset-anchor&#34;&gt;&lt;/a&gt;
+&lt;section style=&#34;linear-gradient(180deg, rgba(246,250,254,1) 100%, 
+rgba(255,255,255,1) 100%);&#34;  
+class=&#34;row td-box td-box--primary position-relative td-box--gradient td-box--height-auto&#34;&gt;
+	&lt;div class=&#34;container text-center td-arrow-down&#34;&gt;
+		&lt;span class=&#34;h4 mb-0&#34;&gt;
+			
+				
+&lt;div class=&#34;col&#34;&gt;
+ &lt;p class=&#34;lead mt-1&#34;&gt;StreamZero is a platform for building highly scalable, cross-network sync or async microservices and agents. The unique low learning curve approach significantly reduces the cost of deploying enterprise wide process and integration pipelines across disparate systems at a speed. While at the same time creating a platform with practically unbound access and ease of integration.&lt;/p&gt;
+&lt;p class=&#34;lead mt-2&#34;&gt;On StreamZero you are effectively writing large applications by connecting “blocks” of code (Services) through Events.&lt;/p&gt;
+&lt;/div&gt;
+ 
+			
+		&lt;/span&gt;
+	&lt;/div&gt;
+&lt;/section&gt;
+
+
+
+
+
+
+
+&lt;a id=&#34;td-block-2&#34; class=&#34;td-offset-anchor&#34;&gt;&lt;/a&gt;
+&lt;section class=&#34;row td-box td-box--secondary td-box--gradient td-box--height-min&#34;&gt;
+	&lt;div class=&#34;col&#34;&gt;
+		&lt;div class=&#34;row &#34;&gt;
+			
+				
+&lt;div class=&#34;col&#34;&gt;
+	&lt;p class=&#34;text-center&#34;&gt;&lt;img class=&#34;text-center&#34; src=&#34;/images/ferris_products2.webp&#34; width=1000 height=auto/&gt;&lt;/p&gt;
+  &lt;p&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+			
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/section&gt;
+
+
+
+
+
+
+
+&lt;a id=&#34;td-block-3&#34; class=&#34;td-offset-anchor&#34;&gt;&lt;/a&gt;
+&lt;section class=&#34;row td-box td-box--secondary td-box--gradient td-box--height-min&#34;&gt;
+	&lt;div class=&#34;col&#34;&gt;
+		&lt;div class=&#34;row &#34;&gt;
+			
+				
+
+
+
+
+&lt;div class=&#34;container&#34;&gt;
+    &lt;div class=&#34;row&#34;&gt;
+      &lt;div class=&#34;col-6&#34;&gt;
+
+
+        &lt;p class=&#34;home_title&#34;&gt;
+          
+        &lt;/p&gt;
+    
+
+      
+        &lt;h1 id=&#34;micro-integrations&#34;&gt;Micro-Integrations&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;any combination of services and events&lt;/li&gt;
+&lt;li&gt;simple to complex event processing&lt;/li&gt;
+&lt;li&gt;hybrid cloud integrations&lt;/li&gt;
+&lt;/ul&gt;
+
+      
+      &lt;/div&gt;
+      &lt;div class=&#34;col-6&#34;&gt;
+        &lt;img src=&#34;/images/ferris_products1.webp&#34; class=&#34;img-fluid&#34;&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+			
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/section&gt;
+
+
+
+
+
+
+
+
+&lt;a id=&#34;td-block-4&#34; class=&#34;td-offset-anchor&#34;&gt;&lt;/a&gt;
+&lt;section class=&#34;row td-box td-box--dark td-box--gradient td-box--height-auto&#34;&gt;
+	&lt;div class=&#34;col&#34;&gt;
+		&lt;div class=&#34;row &#34;&gt;
+			
+				
+&lt;div class=&#34;col&#34;&gt;
+ &lt;h1 class=&#34;text-center&#34;&gt;Inventory of Adaptors and Services&lt;/h1&gt;
+ &lt;p class=&#34;text-center&#34;&gt;Anticipated target-state flow for continuous use by StreamZero client&lt;/p&gt;
+ &lt;p&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+			
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/section&gt;
+
+
+
+
+
+
+
+
+&lt;a id=&#34;td-block-5&#34; class=&#34;td-offset-anchor&#34;&gt;&lt;/a&gt;
+&lt;section class=&#34;row td-box td-box--secondary td-box--gradient td-box--height-auto&#34;&gt;
+	&lt;div class=&#34;col&#34;&gt;
+		&lt;div class=&#34;row &#34;&gt;
+			
+				
+&lt;div class=&#34;col&#34;&gt;
+ &lt;h1 class=&#34;text-center&#34;&gt;StreamZero example for end2end product flow&lt;/h1&gt;
+ &lt;p class=&#34;text-center&#34;&gt;Anticipated target-state flow for continuous use by StreamZero client&lt;/p&gt;
+ &lt;p class=&#34;text-center&#34;&gt;&lt;img class=&#34;text-center&#34; src=&#34;/images/ferris_example_flow.webp&#34; width=1000 height=auto/&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+			
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/section&gt;
+
+
+
+
+
+
+
+
+&lt;a id=&#34;td-block-6&#34; class=&#34;td-offset-anchor&#34;&gt;&lt;/a&gt;
+&lt;section class=&#34;row td-box td-box--primary td-box--gradient td-box--height-auto&#34;&gt;
+	&lt;div class=&#34;col&#34;&gt;
+		&lt;div class=&#34;row &#34;&gt;
+			
+				
+
+
+
+&lt;div class=&#34;col-lg-4 mb-5 mb-lg-0 text-center &#34;&gt;
+  &lt;div class=&#34;mb-4 h1&#34;&gt;
+    &lt;i class=&#34;fas fa-lightbulb&#34;&gt;&lt;/i&gt;
+  &lt;/div&gt;
+  &lt;h4 class=&#34;h3&#34;&gt;
+    
+      Development News!
+    
+  &lt;/h4&gt;
+  &lt;p class=&#34;mb-0&#34;&gt;
+    
+      &lt;p&gt;Get informed about new releases and the product roadmap.&lt;/p&gt;
+
+    
+  &lt;/p&gt;
+  &lt;p&gt;&lt;a href=&#34;https://gridmine.com/about&#34;&gt;Read more …&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+
+
+
+&lt;div class=&#34;col-lg-4 mb-5 mb-lg-0 text-center &#34;&gt;
+  &lt;div class=&#34;mb-4 h1&#34;&gt;
+    &lt;i class=&#34;fab fa-github&#34;&gt;&lt;/i&gt;
+  &lt;/div&gt;
+  &lt;h4 class=&#34;h3&#34;&gt;
+    
+      Contributions welcome!
+    
+  &lt;/h4&gt;
+  &lt;p class=&#34;mb-0&#34;&gt;
+    
+      &lt;p&gt;We do a &lt;a href=&#34;https://github.com/google/gridmine/pulls&#34;&gt;Pull Request&lt;/a&gt; contributions workflow on &lt;strong&gt;GitHub&lt;/strong&gt;. New users are always welcome!&lt;/p&gt;
+
+    
+  &lt;/p&gt;
+  &lt;p&gt;&lt;a href=&#34;https://github.com/google/docsy-example&#34;&gt;Read more …&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+
+
+
+&lt;div class=&#34;col-lg-4 mb-5 mb-lg-0 text-center &#34;&gt;
+  &lt;div class=&#34;mb-4 h1&#34;&gt;
+    &lt;i class=&#34;fab fa-twitter&#34;&gt;&lt;/i&gt;
+  &lt;/div&gt;
+  &lt;h4 class=&#34;h3&#34;&gt;
+    
+      Follow us on Twitter!
+    
+  &lt;/h4&gt;
+  &lt;p class=&#34;mb-0&#34;&gt;
+    
+      &lt;p&gt;For announcement of latest features and company news, etc.&lt;/p&gt;
+
+    
+  &lt;/p&gt;
+  &lt;p&gt;&lt;a href=&#34;https://twitter.com/docsydocs&#34;&gt;Read more …&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+
+
+			
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/section&gt;
+
+
+      </description>
+    </item>
+    
+    <item>
+      <title>About: Company</title>
+      <link>/about/company/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/about/company/</guid>
+      <description>
+        
+        
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;section id=&#34;td-cover-block-0&#34; class=&#34;row td-cover-block td-cover-block--height-auto js-td-cover td-overlay xtd-overlay--dark -bg-primary&#34;&gt;
+  &lt;div class=&#34;container td-overlay__inner&#34;&gt;
+    &lt;div class=&#34;row&#34;&gt;
+      &lt;div class=&#34;col-12&#34;&gt;
+        &lt;div class=&#34;text-left&#34; &gt;
+          &lt;h1 class=&#34;display-1 mt-0 mt-md-5 pb-4 home_title &#34;&gt;GridMine : COMPANY&lt;/h1&gt;
+          &lt;div class=&#34;col-md-6&#34;&gt;
+            
+          &lt;/div&gt;
+          &lt;div class=&#34;pt-3 lead&#34;&gt;
+            
+                
+
+&lt;div class=&#34;mx-auto&#34;&gt;
+	&lt;a class=&#34;btn btn-lg btn-primary mr-3 mb-4&#34; href=&#34;/docs/&#34;&gt;
+		Learn More &lt;i class=&#34;fas fa-arrow-alt-circle-right ml-2&#34;&gt;&lt;/i&gt;
+	&lt;/a&gt;
+	&lt;a class=&#34;btn btn-lg btn-secondary mr-3 mb-4&#34; href=&#34;https://github.com/gridmine&#34;&gt;
+		Download &lt;i class=&#34;fab fa-github ml-2 &#34;&gt;&lt;/i&gt;
+	&lt;/a&gt;
+	&lt;p class=&#34;lead mt-5&#34;&gt;The Platform for the fasted and simplest way to building your micro-integrations for events and services.&lt;/p&gt;
+	
+	
+	
+	&lt;a class=&#34;btn btn-link text-info&#34; href=&#34;#td-block-1&#34; aria-label=&#34;Read more&#34;&gt;&lt;i class=&#34;fa fa-chevron-circle-down&#34; style=&#34;font-size: 400%&#34;&gt;&lt;/i&gt;&lt;/a&gt;
+
+&lt;/div&gt;
+
+            
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  
+&lt;/section&gt;
+
+
+
+
+
+
+
+
+
+&lt;a id=&#34;td-block-1&#34; class=&#34;td-offset-anchor&#34;&gt;&lt;/a&gt;
+&lt;section style=&#34;linear-gradient(180deg, rgba(246,250,254,1) 100%, 
+rgba(255,255,255,1) 100%);&#34;  
+class=&#34;row td-box td-box--primary position-relative td-box--gradient td-box--height-auto&#34;&gt;
+	&lt;div class=&#34;container text-center td-arrow-down&#34;&gt;
+		&lt;span class=&#34;h4 mb-0&#34;&gt;
+			
+				
+&lt;div class=&#34;col&#34;&gt;
+ &lt;p class=&#34;lead mt-1&#34;&gt;StreamZero is a platform for building highly scalable, cross-network sync or async microservices and agents. The unique low learning curve approach significantly reduces the cost of deploying enterprise wide process and integration pipelines across disparate systems at a speed. While at the same time creating a platform with practically unbound access and ease of integration.&lt;/p&gt;
+&lt;p class=&#34;lead mt-2&#34;&gt;On StreamZero you are effectively writing large applications by connecting “blocks” of code (Services) through Events.&lt;/p&gt;
+&lt;/div&gt;
+ 
+			
+		&lt;/span&gt;
+	&lt;/div&gt;
+&lt;/section&gt;
+
+
+
+
+
+
+
+&lt;a id=&#34;td-block-2&#34; class=&#34;td-offset-anchor&#34;&gt;&lt;/a&gt;
+&lt;section class=&#34;row td-box td-box--secondary td-box--gradient td-box--height-min&#34;&gt;
+	&lt;div class=&#34;col&#34;&gt;
+		&lt;div class=&#34;row &#34;&gt;
+			
+				
+&lt;div class=&#34;col&#34;&gt;
+	&lt;p class=&#34;text-center&#34;&gt;&lt;img class=&#34;text-center&#34; src=&#34;/images/ferris_products2.webp&#34; width=1000 height=auto/&gt;&lt;/p&gt;
+  &lt;p&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+			
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/section&gt;
+
+
+
+
+
+
+
+&lt;a id=&#34;td-block-3&#34; class=&#34;td-offset-anchor&#34;&gt;&lt;/a&gt;
+&lt;section class=&#34;row td-box td-box--secondary td-box--gradient td-box--height-min&#34;&gt;
+	&lt;div class=&#34;col&#34;&gt;
+		&lt;div class=&#34;row &#34;&gt;
+			
+				
+
+
+
+
+&lt;div class=&#34;container&#34;&gt;
+    &lt;div class=&#34;row&#34;&gt;
+      &lt;div class=&#34;col-6&#34;&gt;
+
+
+        &lt;p class=&#34;home_title&#34;&gt;
+          
+        &lt;/p&gt;
+    
+
+      
+        &lt;h1 id=&#34;micro-integrations&#34;&gt;Micro-Integrations&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;any combination of services and events&lt;/li&gt;
+&lt;li&gt;simple to complex event processing&lt;/li&gt;
+&lt;li&gt;hybrid cloud integrations&lt;/li&gt;
+&lt;/ul&gt;
+
+      
+      &lt;/div&gt;
+      &lt;div class=&#34;col-6&#34;&gt;
+        &lt;img src=&#34;/images/ferris_products1.webp&#34; class=&#34;img-fluid&#34;&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+			
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/section&gt;
+
+
+
+
+
+
+
+
+&lt;a id=&#34;td-block-4&#34; class=&#34;td-offset-anchor&#34;&gt;&lt;/a&gt;
+&lt;section class=&#34;row td-box td-box--dark td-box--gradient td-box--height-auto&#34;&gt;
+	&lt;div class=&#34;col&#34;&gt;
+		&lt;div class=&#34;row &#34;&gt;
+			
+				
+&lt;div class=&#34;col&#34;&gt;
+ &lt;h1 class=&#34;text-center&#34;&gt;Inventory of Adaptors and Services&lt;/h1&gt;
+ &lt;p class=&#34;text-center&#34;&gt;Anticipated target-state flow for continuous use by StreamZero client&lt;/p&gt;
+ &lt;p&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+			
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/section&gt;
+
+
+
+
+
+
+
+
+&lt;a id=&#34;td-block-5&#34; class=&#34;td-offset-anchor&#34;&gt;&lt;/a&gt;
+&lt;section class=&#34;row td-box td-box--secondary td-box--gradient td-box--height-auto&#34;&gt;
+	&lt;div class=&#34;col&#34;&gt;
+		&lt;div class=&#34;row &#34;&gt;
+			
+				
+&lt;div class=&#34;col&#34;&gt;
+ &lt;h1 class=&#34;text-center&#34;&gt;StreamZero example for end2end product flow&lt;/h1&gt;
+ &lt;p class=&#34;text-center&#34;&gt;Anticipated target-state flow for continuous use by StreamZero client&lt;/p&gt;
+ &lt;p class=&#34;text-center&#34;&gt;&lt;img class=&#34;text-center&#34; src=&#34;/images/ferris_example_flow.webp&#34; width=1000 height=auto/&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+			
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/section&gt;
+
+
+
+
+
+
+
+
+&lt;a id=&#34;td-block-6&#34; class=&#34;td-offset-anchor&#34;&gt;&lt;/a&gt;
+&lt;section class=&#34;row td-box td-box--primary td-box--gradient td-box--height-auto&#34;&gt;
+	&lt;div class=&#34;col&#34;&gt;
+		&lt;div class=&#34;row &#34;&gt;
+			
+				
+
+
+
+&lt;div class=&#34;col-lg-4 mb-5 mb-lg-0 text-center &#34;&gt;
+  &lt;div class=&#34;mb-4 h1&#34;&gt;
+    &lt;i class=&#34;fas fa-lightbulb&#34;&gt;&lt;/i&gt;
+  &lt;/div&gt;
+  &lt;h4 class=&#34;h3&#34;&gt;
+    
+      Development News!
+    
+  &lt;/h4&gt;
+  &lt;p class=&#34;mb-0&#34;&gt;
+    
+      &lt;p&gt;Get informed about new releases and the product roadmap.&lt;/p&gt;
+
+    
+  &lt;/p&gt;
+  &lt;p&gt;&lt;a href=&#34;https://gridmine.com/about&#34;&gt;Read more …&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+
+
+
+&lt;div class=&#34;col-lg-4 mb-5 mb-lg-0 text-center &#34;&gt;
+  &lt;div class=&#34;mb-4 h1&#34;&gt;
+    &lt;i class=&#34;fab fa-github&#34;&gt;&lt;/i&gt;
+  &lt;/div&gt;
+  &lt;h4 class=&#34;h3&#34;&gt;
+    
+      Contributions welcome!
+    
+  &lt;/h4&gt;
+  &lt;p class=&#34;mb-0&#34;&gt;
+    
+      &lt;p&gt;We do a &lt;a href=&#34;https://github.com/google/gridmine/pulls&#34;&gt;Pull Request&lt;/a&gt; contributions workflow on &lt;strong&gt;GitHub&lt;/strong&gt;. New users are always welcome!&lt;/p&gt;
+
+    
+  &lt;/p&gt;
+  &lt;p&gt;&lt;a href=&#34;https://github.com/google/docsy-example&#34;&gt;Read more …&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+
+
+
+&lt;div class=&#34;col-lg-4 mb-5 mb-lg-0 text-center &#34;&gt;
+  &lt;div class=&#34;mb-4 h1&#34;&gt;
+    &lt;i class=&#34;fab fa-twitter&#34;&gt;&lt;/i&gt;
+  &lt;/div&gt;
+  &lt;h4 class=&#34;h3&#34;&gt;
+    
+      Follow us on Twitter!
+    
+  &lt;/h4&gt;
+  &lt;p class=&#34;mb-0&#34;&gt;
+    
+      &lt;p&gt;For announcement of latest features and company news, etc.&lt;/p&gt;
+
+    
+  &lt;/p&gt;
+  &lt;p&gt;&lt;a href=&#34;https://twitter.com/docsydocs&#34;&gt;Read more …&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+
+
+			
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/section&gt;
+
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

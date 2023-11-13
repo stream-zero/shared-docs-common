@@ -1,0 +1,13 @@
+{{ $_hugo_config := `{ "version": 1 }` }}
+{{ $col_id := .Get "color" | default .Ordinal }}
+{{ $height := .Get "height" | default "auto"  }}
+{{ $image := .Get "image" | default "fa-lightbulb" }}
+{{/* Height can be one of: auto, min, med, max, full. */}}
+
+<p> 
+            <img src="{{ $image }}" style="border:2px solid #fff;
+            box-shadow: 10px 10px 5px #ccc;
+            -moz-box-shadow: 10px 10px 5px #ccc;
+            -webkit-box-shadow: 10px 10px 5px #ccc;
+            -khtml-box-shadow: 10px 10px 5px #ccc;"/>
+</p>

@@ -1,0 +1,86 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>GridMine – ssot</title>
+    <link>/tags/ssot/</link>
+    <description>Recent content in ssot on GridMine</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    
+	  <atom:link href="/tags/ssot/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Docs: Regulatory Single Source of Truth</title>
+      <link>/docs/solutions/005-regulatory-single-source-of-truth/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/solutions/005-regulatory-single-source-of-truth/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;regulatory-single-source-of-truth&#34;&gt;Regulatory Single Source of Truth&lt;/h2&gt;
+&lt;h3 id=&#34;executive-summary&#34;&gt;Executive summary&lt;/h3&gt;
+&lt;p&gt;Leveraging all existing data sources from core banking, risk- and trading systems to the Customer Relationship Management (CRM) and general ledger as granular input for your regulatory Single Source of Truth (SSoT).&lt;/p&gt;
+&lt;h3 id=&#34;problem-statement&#34;&gt;Problem statement&lt;/h3&gt;
+&lt;p&gt;Most regulatory solutions today require huge maintenance effort on both business and technology teams. Ever more granular and ever more near-time regulatory requirements further increase this pressure. Usually the various regulatory domains have created and continue to create silos for central bank, credit risk, liquidity, Anti-Money Laundering (ALM) / Know Your Customer (KYC) and transaction monitoring regulations. Further requirements from ePrivacy, Product Suitability and Sustainability regulations even further dilute these efforts.&lt;/p&gt;
+&lt;h3 id=&#34;target-market--industries&#34;&gt;Target market / Industries&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Financial services&lt;/li&gt;
+&lt;li&gt;Insurance&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;solution&#34;&gt;Solution&lt;/h3&gt;
+&lt;p&gt;Leveraging the semantic integration capabilities of StreamZero Data Platform, it  allows you to reuse all the integration efforts you have previously started and yet converge on a common path towards an integrated (regulatory) enterprise view. The ability to eliminate high-maintenance Extraction Transformation Loading (ETL) coding or ETL tooling in favor of a transparent and business driven process will save you money during the initial implementation and during ongoing maintenance.
+Templates and a proven process were applied to use what exists and build what’s missing without long-term lock in.&lt;/p&gt;
+&lt;p&gt;The solution included:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Semantic Integration leveraging all your prior integration investments&lt;/li&gt;
+&lt;li&gt;Business driven data standardization and data quality improvements&lt;/li&gt;
+&lt;li&gt;No Code implementation =&amp;gt; business analysis is sufficient to generate the integration layer&lt;/li&gt;
+&lt;li&gt;Implement data governance &amp;amp; data quality via reusable business checks&lt;/li&gt;
+&lt;li&gt;Multiply your regulatory investments to be used for analytics, sales and risk&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;stakeholders&#34;&gt;Stakeholders&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Compliance&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;data-elements-assets-and-deliverables&#34;&gt;Data elements, Assets and Deliverables&lt;/h3&gt;
+&lt;p&gt;As an Input from the client, the following items were used:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Full regulatory granular scope master &amp;amp; reference data (incl. UBO hierarchies)&lt;/li&gt;
+&lt;li&gt;Client portfolio (positions / transactions)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Assets &amp;amp; Artefacts:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Private Bank Data Model&lt;/li&gt;
+&lt;li&gt;Optimization Algorithms&lt;/li&gt;
+&lt;li&gt;Data Quality Business Rules&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The deliverables included:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;E2E Models &amp;amp; Integration Schema&lt;/li&gt;
+&lt;li&gt;Library of Business Checks&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;impact-and-benefits&#34;&gt;Impact and benefits&lt;/h3&gt;
+&lt;p&gt;The semantic SSoT is now used by other functions across the bank leveraging regulatory investments for sales support, operations and risk management.&lt;/p&gt;
+&lt;p&gt;The use-case implementation resulted in:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;9%&lt;/strong&gt; reduction of risk weighted assets&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;9 FTE (50%)&lt;/strong&gt; reduction of regulatory reporting team&lt;/p&gt;
+&lt;p&gt;In addition, recurring Cost of Capital savings of over 15m CHF p.a. were achieved.&lt;/p&gt;
+&lt;h3 id=&#34;testimonials&#34;&gt;Testimonials&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&amp;ldquo;We have semantically integrated +220 different data sources at Switzerland largest independent Private Bank. The regulatory team  was able to deliver better results faster and yet decreased the team size by 30%.&amp;rdquo;
+— Mr. XXX YYY, Title, Company ZZZ.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;tags--keywords&#34;&gt;Tags / Keywords&lt;/h3&gt;
+&lt;p&gt;#singlesourceoftruth #ssot #bank #privatebank #financialservices #insurance&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

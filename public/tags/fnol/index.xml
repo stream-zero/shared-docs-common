@@ -1,0 +1,104 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>GridMine – FNOL</title>
+    <link>/tags/fnol/</link>
+    <description>Recent content in FNOL on GridMine</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    
+	  <atom:link href="/tags/fnol/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Docs: First Notice of Loss Automation</title>
+      <link>/docs/solutions/012-insurance-first-notice-of-loss/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/solutions/012-insurance-first-notice-of-loss/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;cross-jurisdictional-first-notice-of-loss-automation&#34;&gt;Cross Jurisdictional First Notice of Loss Automation&lt;/h2&gt;
+&lt;h3 id=&#34;executive-summary&#34;&gt;Executive summary&lt;/h3&gt;
+&lt;p&gt;The handling of cross-jurisdictional accident resolutions involving more than one country was automated for a pan-European insurance group.&lt;/p&gt;
+&lt;h3 id=&#34;problem-statement&#34;&gt;Problem statement&lt;/h3&gt;
+&lt;p&gt;The client was bound to a proprietary existing legacy core system which served all operational processes but did not lend itself to agile, digital use cases. Within the cross-jurisdictional context various third-party party core systems of partner network insurers also had to be integrated in the overall flow. In addition to already digital content, file-based and even handwritten forms of the European Accident Standard had to be taken into account. The growth of the customer did not allow for a continued manual processing.&lt;/p&gt;
+&lt;h3 id=&#34;target-market--industries&#34;&gt;Target market / Industries&lt;/h3&gt;
+&lt;p&gt;Focused on Industry segments, but easily configured to work for similar case management related processes that involve expert knowledge combined with extensive manual fact checking.&lt;/p&gt;
+&lt;h3 id=&#34;solution&#34;&gt;Solution&lt;/h3&gt;
+&lt;p&gt;The customer wanted to automate and streamline the handling and ideally straight-through-processing of new cases whenever the context allowed for such an option and involve the correct stakeholders when a human resolution was called for. An existing data warehouse provided historic resolution data that could be used to train various Machine Learning (ML) models. In addition, a knowledge graph contained the expertise on how the company wanted to deal with certain constellations in the future.&lt;/p&gt;
+&lt;p&gt;The solution included:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Ingestion of all relevant base data into a use case message bus&lt;/li&gt;
+&lt;li&gt;Automated plausibility check of the base claim (e.g. policy paid, client = driver, couterparty validity)&lt;/li&gt;
+&lt;li&gt;ML model to assess &amp;ldquo;Fast Track&amp;rdquo; options (depending on likely cost footprint)&lt;/li&gt;
+&lt;li&gt;Helper ML models to assess cost for vehicle, medical and legal cost&lt;/li&gt;
+&lt;li&gt;Curation model to extend &amp;ldquo;fast track&amp;rdquo; rules within knowledge graph&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5 id=&#34;example-use-case-agent-cascade&#34;&gt;Example Use Case Agent Cascade&lt;/h5&gt;
+
+
+
+
+
+
+&lt;p&gt; 
+            &lt;img src=&#34;/streamzero/images/solutions/uc_012_2021.png&#34; style=&#34;border:2px solid #fff;
+            box-shadow: 10px 10px 5px #ccc;
+            -moz-box-shadow: 10px 10px 5px #ccc;
+            -webkit-box-shadow: 10px 10px 5px #ccc;
+            -khtml-box-shadow: 10px 10px 5px #ccc;&#34;/&gt;
+&lt;/p&gt;
+
+&lt;h3 id=&#34;stakeholders&#34;&gt;Stakeholders&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Head of Operations / Claims Handling&lt;/li&gt;
+&lt;li&gt;Domain Expert for Motor Vehicle Accidents Underwriting&lt;/li&gt;
+&lt;li&gt;Domain Expert from Accounting &amp;amp; Controlling&lt;/li&gt;
+&lt;li&gt;Tech Expert for mobile field agent application&lt;/li&gt;
+&lt;li&gt;Tech Expert for core system&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;data-elements-assets-and-deliverables&#34;&gt;Data elements, Assets and Deliverables&lt;/h3&gt;
+&lt;p&gt;As an Input from the client, the following items were used:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Core data items on policies, clients, risk vs. claim details&lt;/li&gt;
+&lt;li&gt;Core data from insurance partner network&lt;/li&gt;
+&lt;li&gt;Historic claims &amp;amp; claim resolution data warehouse&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Assets &amp;amp; Artefacts:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Claims knowledge graph &amp;amp; ontology&lt;/li&gt;
+&lt;li&gt;Vehicle, medical and legal cost assessment prediction models&lt;/li&gt;
+&lt;li&gt;Fast track viability assessment model&lt;/li&gt;
+&lt;li&gt;Ontology curation / extention model&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The deliverables included:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Automated decisioning on human vs. straight-through-processed case handling&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;impact-and-benefits&#34;&gt;Impact and benefits&lt;/h3&gt;
+&lt;p&gt;The use-case implementation resulted in:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;the client was able to manage a +35% annual growth with fewer headcount (-3 FTE)&lt;/li&gt;
+&lt;li&gt;turnaround times of automated cases could be reduced by &amp;gt;90%, from 8-10 working days to 1 day&lt;/li&gt;
+&lt;li&gt;turnaround times of manual cases could be reduced by 30% due to elimination of manual triage&lt;/li&gt;
+&lt;li&gt;the initial use case paved the way for additional AI based automation ideas&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;testimonials&#34;&gt;Testimonials&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&amp;ldquo;We were sceptical about the limits of automation with rather difficult data quality we initially set out with. The learning loop for both the agents involved as well as the predicition models was a true surprise to me.&amp;rdquo;
+— Mr. Okatwiusz Ozimski, Inter Europe AG&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;tags--keywords&#34;&gt;Tags / Keywords&lt;/h3&gt;
+&lt;p&gt;#insurance #firstnoticeofloss #FNOL&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

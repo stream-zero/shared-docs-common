@@ -1,0 +1,711 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>GridMine – financialservices</title>
+    <link>/tags/financialservices/</link>
+    <description>Recent content in financialservices on GridMine</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    
+	  <atom:link href="/tags/financialservices/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Docs: Automating Marketing Data Analysis</title>
+      <link>/docs/solutions/014-marketing-data-analysis/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/solutions/014-marketing-data-analysis/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;marketing-data-analysis&#34;&gt;Marketing Data Analysis&lt;/h2&gt;
+&lt;h3 id=&#34;executive-summary&#34;&gt;Executive summary&lt;/h3&gt;
+&lt;p&gt;Implemented the first service- and on-demand based big data and data science infrastructure for the bank. Data pipelines are built and maintained leveraging two key infrastructure components: a custom-built aggregation tool and the marketing content &amp;amp; event platform. The aggregation tool builds the data lake for all analytics activities and enables the marketing platform to organically grow customer and campaign projects.&lt;/p&gt;
+&lt;h3 id=&#34;problem-statement&#34;&gt;Problem statement&lt;/h3&gt;
+&lt;p&gt;Relationship Managers spend too much valuable time researching talking points and themes that fit their different client profiles. A simple product recommender usually cannot grasp the complexity of private banking relationships and hence the product recommendations are usually without impact.&lt;/p&gt;
+&lt;h3 id=&#34;target-market--industries&#34;&gt;Target market / Industries&lt;/h3&gt;
+&lt;p&gt;Private banking, wealth management,
+All relationship intense industries, i.e. insurance&lt;/p&gt;
+&lt;h3 id=&#34;solution&#34;&gt;Solution&lt;/h3&gt;
+&lt;p&gt;Jointly with the client we developed a private banking marketing ontology (knowledge graph or rule book) that enabled various Machine Learning (ML) models to parse broad catalogue of unstructured data (financial research, company analysis, newsfeeds) to generate personalized investment themes and talking points.&lt;/p&gt;
+&lt;p&gt;The solution included:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Private banking marketing ontology&lt;/li&gt;
+&lt;li&gt;Thematic aggregator agents&lt;/li&gt;
+&lt;li&gt;Personalized clustering&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Slide&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;stakeholders&#34;&gt;Stakeholders&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Head of marketing and campaigns&lt;/li&gt;
+&lt;li&gt;Market heads&lt;/li&gt;
+&lt;li&gt;Relationship Manager&lt;/li&gt;
+&lt;li&gt;Chief Investment Officer&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;data-elements-assets-and-deliverables&#34;&gt;Data elements, Assets and Deliverables&lt;/h3&gt;
+&lt;p&gt;As an Input from the client, the following items were used:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Access to CRM details&lt;/li&gt;
+&lt;li&gt;Client transaction history&lt;/li&gt;
+&lt;li&gt;Research details&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Assets &amp;amp; Artefacts:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Financial Product Classification&lt;/li&gt;
+&lt;li&gt;Product Risk Classification&lt;/li&gt;
+&lt;li&gt;Event Lifecycle&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The deliverables included:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Private banking marketing ontology&lt;/li&gt;
+&lt;li&gt;Thematic aggregator agents&lt;/li&gt;
+&lt;li&gt;Personalized clustering&lt;/li&gt;
+&lt;li&gt;End to end event cascade and workflow integration&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;impact-and-benefits&#34;&gt;Impact and benefits&lt;/h3&gt;
+&lt;p&gt;Achieve a fully transparent Close the Loop on Campaigns and increased RoMI by 18%. Furthermore, this first mover program established the big data sandbox as a service capability to the entire bank. Also this project enabled marketing for the first time to close the loop between their digital client touchpoints and the events and campaigns run.&lt;/p&gt;
+&lt;p&gt;The use-case implementation resulted in:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;+18% increase in RoMI (return on marketing investments)&lt;/li&gt;
+&lt;li&gt;-17% savings on campaign spend&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;testimonials&#34;&gt;Testimonials&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&amp;ldquo;Using StreamZero we were able to digest a massive amount of text and extract personalized investment themes which allows our RMs to increase their face time with the clients and surprise them with the meaningful content.&amp;rdquo;
+— Mr. R. Giger, Head of Marketing and Campaigns, Swiss Private Bank&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;tags--keywords&#34;&gt;Tags / Keywords&lt;/h3&gt;
+&lt;p&gt;#marketdataanalysis #bigdata #bigdatainfrastructure #datascience #datascienceinfrastructure #financialservices #bank&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Churn Analysis and Alerting – Financial Services</title>
+      <link>/docs/solutions/003-churn-analysis-and-alerting-finance/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/solutions/003-churn-analysis-and-alerting-finance/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;churn-analysis-and-alerting&#34;&gt;Churn Analysis and Alerting&lt;/h2&gt;
+&lt;h3 id=&#34;executive-summary&#34;&gt;Executive summary&lt;/h3&gt;
+&lt;p&gt;Screening your existing client population for signs of dissatisfaction and pending attrition can involve a broad range of analysis. Usually the focus is given to transaction pattern analysis. And while this may prove helpful it can be misleading in smaller banks with limited comparative data. We thus integrate a broader variety of less obvious indicators and include an advisor based reinforcement loop to train the models for a bank‘s specific churn footprint.&lt;/p&gt;
+&lt;h3 id=&#34;problem-statement&#34;&gt;Problem statement&lt;/h3&gt;
+&lt;p&gt;When clients close their accounts or cancel their mandates, it usually does not come as a surprise to the Relationship Manager (RM). But for obvious reasons, the RM tries to work against the loss of a client with similar if not the same tools, processes and attitudes that have led to a client being dissatisfied. This is not to say that the RM manager is the sole reason for churn. But often clients do not or not sufficiently voice their issues and simply quit the relationship. To search, become aware and then listen for softer and indirect signs is at the heart of this use case.&lt;/p&gt;
+&lt;h3 id=&#34;target-market--industries&#34;&gt;Target market / Industries&lt;/h3&gt;
+&lt;p&gt;The described use case can be efficiently applied to any industry that is providing services to a large number of clients and has a large number of transactions.
+Particularly following industries are benefiting most of this use-case:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Financial services&lt;/li&gt;
+&lt;li&gt;Insurance&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;solution&#34;&gt;Solution&lt;/h3&gt;
+&lt;p&gt;Using historical data, client communication and structured interviews with client advisors, we create a bank-specific churn ontology, that is then used to screen existing clients on an ongoing basis. Creating an interactive reinforcement loop with new churn-cases, this classification, predictor and indicator approach is ever more fine tuned to specific segments, desks and service categories. As direct and ongoing Key Performance Indicators (KPIs) churn ratios and client satisfaction are measured alongside Assets under Management (AuM), profitability and trade volumes for the respective clients are classified as “endangered”.
+Usually a gradual improvement can be monitored within 3-6 months from the start of the use case.&lt;/p&gt;
+&lt;p&gt;The solution included:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Initial typical churn cause analysis based on historical data (client positions, and transactions)&lt;/li&gt;
+&lt;li&gt;Ideally inclusion of CRM notes and written advisor to client communication (prior to churn)&lt;/li&gt;
+&lt;li&gt;Sales &amp;amp; Churn Ontology setup &amp;amp; subsequent ontology matching&lt;/li&gt;
+&lt;li&gt;Identification of likely bank churn footprint &amp;amp; learning / improvement loops&lt;/li&gt;
+&lt;li&gt;Aggregation of findings, reporting, alerting &amp;amp; action notifications&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;stakeholders&#34;&gt;Stakeholders&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Chief Operations&lt;/li&gt;
+&lt;li&gt;Client advisory, Relationship and Sales management&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;data-elements-assets-and-deliverables&#34;&gt;Data elements, Assets and Deliverables&lt;/h3&gt;
+&lt;p&gt;As an Input from the client, the following items were used:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Historic data about churned clients&lt;/li&gt;
+&lt;li&gt;Client portfolios - positions / transactions&lt;/li&gt;
+&lt;li&gt;Ideally pre-leave client-advisor communications&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Assets &amp;amp; Artefacts:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Client Behavioral Model&lt;/li&gt;
+&lt;li&gt;Churn Prediction&lt;/li&gt;
+&lt;li&gt;Action Monitoring&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The deliverables included:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Sales &amp;amp; Churn Indicator Ontology&lt;/li&gt;
+&lt;li&gt;Use case specific orchestration flow&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;impact-and-benefits&#34;&gt;Impact and benefits&lt;/h3&gt;
+&lt;p&gt;Lowered churn rates for distinct client segments by 16% after 6 months. Increased AuM / trades for clients „turned-around“ by about 25% within 6 months after “re-win”.&lt;/p&gt;
+&lt;p&gt;The use-case implementation resulted in:&lt;/p&gt;
+&lt;p&gt;+8% clients saved prior to loss of relationship&lt;/p&gt;
+&lt;p&gt;+24% reduction of customer asset outflows&lt;/p&gt;
+&lt;h3 id=&#34;testimonials&#34;&gt;Testimonials&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&amp;ldquo;Changing the attitude we deal with churn from feeling like a failure to working a structured process, made all the difference. Turning around a dissatisfied client is now something transparent and achievable.&amp;rdquo;
+— Mr. Roland Giger, Head of Client Book Development, UBS&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;tags--keywords&#34;&gt;Tags / Keywords&lt;/h3&gt;
+&lt;p&gt;#churn #churnanalysis #financialservices #insurance #bank #retention #clientretention #customerretention&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Idea to Trade / Next Best Product - Financial Services</title>
+      <link>/docs/solutions/002-idea-to-trade-finance/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/solutions/002-idea-to-trade-finance/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;idea-to-trade--next-best-product&#34;&gt;Idea to Trade / Next Best Product&lt;/h2&gt;
+&lt;h3 id=&#34;executive-summary&#34;&gt;Executive summary&lt;/h3&gt;
+&lt;p&gt;To support advisors and clients with a “next best product” recommendation, a closed loop flow has been established
+from Research / Chief Investment Officer to Relationship Managers and eventually to the client.
+Evaluating which recommendations worked for RMs and Clients allowed for a learning loop informing Research &amp;amp; CIO
+to improve selection &amp;amp; tailoring of investment themes.&lt;/p&gt;
+&lt;h3 id=&#34;problem-statement&#34;&gt;Problem statement&lt;/h3&gt;
+&lt;p&gt;The information flow from research or strategic asset allocation (CIO) to client advisors and eventually to clients does rarely follow
+a structured path. Instead the bank‘s “house view” is communicated broadly to all front-office staff and portfolio managers.
+They then use their direct client relationship to assess risk appetite and extract specific investment themes or
+ideas from their client interaction. If these match, the resulting research / advice is forwarded to the client.
+It seems like a lucky punch if product information leads to a trade / product sale.&lt;/p&gt;
+&lt;h3 id=&#34;target-market--industries&#34;&gt;Target market / Industries&lt;/h3&gt;
+&lt;p&gt;The challenge of customizing the offering to the customer profile is a common challenge across the industries.
+Financial services industry is benefiting most from this use case that can be efficiently applied e.g. in
+Industries, that are benefitting most of this use-case are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Banks&lt;/li&gt;
+&lt;li&gt;Investment and finance firms&lt;/li&gt;
+&lt;li&gt;Real estate brokers&lt;/li&gt;
+&lt;li&gt;Tax and accounting firms&lt;/li&gt;
+&lt;li&gt;Insurance companies&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;solution&#34;&gt;Solution&lt;/h3&gt;
+&lt;p&gt;Starting with investment themes / product and occasion specific sales / investment opportunities,
+the existing client‘s portfolios and client to bank communication is screened for possible gap / fit.
+Research or asset allocation can then focus their efforts on topics suggested by front-office staff and / or clients themselves.
+Observing and identifying trade success the best practices are understood and can be multiplied across other (similar) client scenarios.
+Asset allocation and advisors work collaboratively as they both evaluate which information / proposals / investment ideas are
+forwarded to clients (and then accepted or not) and which ones are kept back by advisors (and for what reasons).&lt;/p&gt;
+&lt;p&gt;The solution included:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Clustering &amp;amp; topic mapping of existing marketing material &amp;amp; client portfolio structures&lt;/li&gt;
+&lt;li&gt;Optionally inclusion of CRM notes and written advisor to client communication&lt;/li&gt;
+&lt;li&gt;Sales Ontology setup &amp;amp; learning loop inclusion &amp;amp; topic matching&lt;/li&gt;
+&lt;li&gt;Identification of individual investment themes / topics of interest&lt;/li&gt;
+&lt;li&gt;Aggregation of findings, reporting, alerting &amp;amp; action recommendation&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;stakeholders&#34;&gt;Stakeholders&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Chief Investment Officers (CIO)&lt;/li&gt;
+&lt;li&gt;Client Advisors / Relationship Managers&lt;/li&gt;
+&lt;li&gt;Product Managers&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;data-elements-assets-and-deliverables&#34;&gt;Data elements, Assets and Deliverables&lt;/h3&gt;
+&lt;p&gt;As an Input from the client, the following items were used:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Sales organization setup (desks / books)&lt;/li&gt;
+&lt;li&gt;Client to Client / Client to Company graphs&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Capabilities utilized:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Unstructured Data&lt;/li&gt;
+&lt;li&gt;Semantic Harmonization&lt;/li&gt;
+&lt;li&gt;Natural Language Processing&lt;/li&gt;
+&lt;li&gt;Personalization&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Assets &amp;amp; Artefacts:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Financial Product Ontology&lt;/li&gt;
+&lt;li&gt;Analytical CRM Models&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The deliverables included:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Sales &amp;amp; Onboarding Ontology&lt;/li&gt;
+&lt;li&gt;Use case specific orchestration flow&lt;/li&gt;
+&lt;li&gt;Integration with many info sources&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;impact-and-benefits&#34;&gt;Impact and benefits&lt;/h3&gt;
+&lt;p&gt;Proposal / offer conversion rates were increased by 42% after an initial learning curve &amp;amp; algorithm calibration phase of 6 months
+resulting in additional Asset under Management growth of 8% from targeted clients.&lt;/p&gt;
+&lt;p&gt;The use-case implementation resulted in:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;+18%&lt;/strong&gt; increased targeted product sales&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;+8%&lt;/strong&gt; share of wallet&lt;/p&gt;
+&lt;h3 id=&#34;tags--keywords&#34;&gt;Tags / Keywords&lt;/h3&gt;
+&lt;p&gt;#ideatotrade #nextbestproduct #salesadvice #financialservices #bank #insurance #investment&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Intraday Liquidity Management Optimization</title>
+      <link>/docs/solutions/013-intraday-liquidity-management/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/solutions/013-intraday-liquidity-management/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;intraday-liquidity-management-optimization&#34;&gt;Intraday Liquidity Management Optimization&lt;/h2&gt;
+&lt;h3 id=&#34;executive-summary&#34;&gt;Executive summary&lt;/h3&gt;
+&lt;p&gt;In order to avoid long internal lead times and to cater to stringent time-to-market expectations, an end-to-end Analytics Design and streaming real time analytics environment for group wide BCBS (Basel III) Intraday Liquidity Management was implemented. The bank&amp;rsquo;s predictive liquidity and cash management models were rebuilt from scratch using real-time streams from 13 different SWIFT messaging gateways.&lt;/p&gt;
+&lt;h3 id=&#34;problem-statement&#34;&gt;Problem statement&lt;/h3&gt;
+&lt;p&gt;All financial institutions need to be on top of their liquidity levels throughout the entire day. Since every organization usually experiencing many cash inflows and outflows during the day, it is diffcult to understand what are the currenct liquidity levels. To be compliant with the regulations, the liquidity levels need to be monitored. Having too much cash is not commerically viable and too little cash is too risky. Knowing the current cash levels the bank can adjust accordingly. The entire cash balancing act is based on the cascade of different events. Cash flow events and also cash-related events need to be integrated from various transaction management systems.&lt;/p&gt;
+&lt;h3 id=&#34;target-market--industries&#34;&gt;Target market / Industries&lt;/h3&gt;
+&lt;p&gt;The use case is applicable in all regualted and cash-intence industries, i.e.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Financial service&lt;/li&gt;
+&lt;li&gt;Treasury departments of large corporations&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;solution&#34;&gt;Solution&lt;/h3&gt;
+&lt;p&gt;During the use case implementation 16 different cash-flow generating order systems were integrated using different schemas of how they handle transactions.
+StreamZero Data Platform was able to resolve the complexities of the event handling to absorb all different situations and rules that need to be applied depending on the different states that the system can take.
+Data sourcing patterns evolved quickly from single file batch to data streaming using Kafka and Flink. A global end-user enablement was achieved with a multi network environment for regional user and both logical and physical data segregation. Irreversible client data protection using SHA 256 hash algorithm allowed for globally integrated algorithms in spite of highly confidential raw input data.
+We were able to implement dynamic throttling and acceleration of cash flows depending on current market situations and liquidity levels.&lt;/p&gt;
+&lt;p&gt;The solution included:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Adaptor agents to 16 cash-flow generating systems&lt;/li&gt;
+&lt;li&gt;Throttling and acceleration logic&lt;/li&gt;
+&lt;li&gt;Machine Learning (ML) models for liquidity projection&lt;/li&gt;
+&lt;li&gt;Harmonized event architecture&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;stakeholders&#34;&gt;Stakeholders&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Group treasury&lt;/li&gt;
+&lt;li&gt;Group risk and compliance&lt;/li&gt;
+&lt;li&gt;CFO&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;data-elements-assets-and-deliverables&#34;&gt;Data elements, Assets and Deliverables&lt;/h3&gt;
+&lt;p&gt;As an Input from the client, the following items were used:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Cash-flows&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Assets &amp;amp; Artefacts:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Harmonized transactional event model&lt;/li&gt;
+&lt;li&gt;Throttling and acceleration rule book&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The deliverables included:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;End to end solution for intraday liquidity&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;impact-and-benefits&#34;&gt;Impact and benefits&lt;/h3&gt;
+&lt;p&gt;The use-case implementation resulted in:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;10 MCHF annual savings on liquidity buffers&lt;/li&gt;
+&lt;li&gt;23% reduction of operations &amp;amp; treasury staff&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;testimonials&#34;&gt;Testimonials&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;“Moving from a batch to a real-time liquidity monitoring was a substantial task that had countless positive knock-on effects throughout the organization.”&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;— Mr. Juerg Schnyder, Liquidity expert, Global universal bank&lt;/p&gt;
+&lt;h3 id=&#34;tags--keywords&#34;&gt;Tags / Keywords&lt;/h3&gt;
+&lt;p&gt;#liquidity #liquiditymanagement #intradayliquiditymanagement #cashmanagement #BCBS #Basel3 #financialservices&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Metadata-controlled Data Quality &amp; Data Lineage in Production</title>
+      <link>/docs/solutions/008-metadata-controlled-data-quality-data-lineage-in-production/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/solutions/008-metadata-controlled-data-quality-data-lineage-in-production/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;metadata-controlled-data-quality--data-lineage-in-production&#34;&gt;Metadata-controlled Data Quality &amp;amp; Data Lineage in Production&lt;/h2&gt;
+&lt;h3 id=&#34;executive-summary&#34;&gt;Executive summary&lt;/h3&gt;
+&lt;p&gt;Metadata-controlled data quality &amp;amp; data lineage along the production chain integrated with a laboratory information system for monitoring and quality documentation of various BoM &amp;amp; formulation variations in the biochemical production of active pharmaceutical ingredients (preliminary production of active ingredients in transplant medicine).&lt;/p&gt;
+&lt;h3 id=&#34;problem-statement&#34;&gt;Problem statement&lt;/h3&gt;
+&lt;p&gt;Neither technical, nor rule based approaches can adequately help in raising data quality without domain expertise.
+Using the domain expertise to create the rules is time consuming and often not feasible from the manpower prospective.&lt;/p&gt;
+&lt;h3 id=&#34;target-market--industries&#34;&gt;Target market / Industries&lt;/h3&gt;
+&lt;p&gt;The use case is applicable to any industry dealing with large volumes of data if insufficient quality, e.g.:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Serial manufacturing&lt;/li&gt;
+&lt;li&gt;Mass production&lt;/li&gt;
+&lt;li&gt;Retail&lt;/li&gt;
+&lt;li&gt;Financial services&lt;/li&gt;
+&lt;li&gt;Cross-industry applications&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;solution&#34;&gt;Solution&lt;/h3&gt;
+&lt;p&gt;The approach is based on few shot manual learning, when the expert creates a few dozens of examples with real-life data. Later on from these examples the model learns strategies to identify and correct data quality errors.&lt;/p&gt;
+&lt;h5 id=&#34;example-use-case-agent-cascade&#34;&gt;Example Use Case Agent Cascade&lt;/h5&gt;
+
+
+
+
+
+
+&lt;p&gt; 
+            &lt;img src=&#34;/streamzero/images/solutions/uc_008_2021.jpeg&#34; style=&#34;border:2px solid #fff;
+            box-shadow: 10px 10px 5px #ccc;
+            -moz-box-shadow: 10px 10px 5px #ccc;
+            -webkit-box-shadow: 10px 10px 5px #ccc;
+            -khtml-box-shadow: 10px 10px 5px #ccc;&#34;/&gt;
+&lt;/p&gt;
+
+&lt;h3 id=&#34;stakeholders&#34;&gt;Stakeholders&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Domain experts&lt;/li&gt;
+&lt;li&gt;Product data quality&lt;/li&gt;
+&lt;li&gt;Functional experts&lt;/li&gt;
+&lt;li&gt;Risk managers&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;data-elements-assets-and-deliverables&#34;&gt;Data elements, Assets and Deliverables&lt;/h3&gt;
+&lt;p&gt;As an Input from the client, the following items were used:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Detailed data sets where the quality to be improved&lt;/li&gt;
+&lt;li&gt;20-30 examples of errors and their manual corrections&lt;/li&gt;
+&lt;li&gt;Judgement on automated model performance&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Assets &amp;amp; Artefacts:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;StreamZero error correction toolbox&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The deliverables included:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Customized data quality improvement workflow&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;impact-and-benefits&#34;&gt;Impact and benefits&lt;/h3&gt;
+&lt;p&gt;The use case implementation allows to address data quality issues in an efficient manner with high quality of the process automation. If the data quality management process would remain manual, this would result in 5-6 Full Time Employees dedicated for this task. The Machine Learning model will over time accumulate respective knowledge and support domain expertise with relevant automated data quality improvement proposals.&lt;/p&gt;
+&lt;!-- 8 Testimonials --&gt;
+&lt;h3 id=&#34;tags--keywords&#34;&gt;Tags / Keywords&lt;/h3&gt;
+&lt;p&gt;#dataquality #dataqualityimprovement #machinelearning #production #manufacturing #serialmanufacturing #massproduction #medicine #laboratory #pharma #financialservices #crossindustry&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Onboarding and Fraud Remodelling - Financial Services</title>
+      <link>/docs/solutions/004-onboarding-and-fraud-remodelling-finance/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/solutions/004-onboarding-and-fraud-remodelling-finance/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;onboarding-and-fraud-remodelling&#34;&gt;Onboarding and Fraud Remodelling&lt;/h2&gt;
+&lt;h3 id=&#34;executive-summary&#34;&gt;Executive summary&lt;/h3&gt;
+&lt;p&gt;Leverage an industry proven onboarding and Know Your Customer (KYC) ontology and fine-tune it to your corporate compliance policies. Ensure manual processing, existing triggers and information sources are tied together by a unified and harmonized process supporting front-office and compliance simultaneously.&lt;/p&gt;
+&lt;h3 id=&#34;problem-statement&#34;&gt;Problem statement&lt;/h3&gt;
+&lt;p&gt;Many financial service providers struggle with the complexity and inefficiency of their client onboarding and recurring KYC monitoring practice. And many have issues, when it comes to Anti-Money Laundering (AML), source of funds and transaction monitoring compliance. The front-office staff often tries to cut corners and the compliance staff is overwhelmed with the number of cases and follow-ups that are required from them. Disintegrated and high-maintenance systems and processes are the usual status quo, with little budget and energy to change from due to the inherent risk.&lt;/p&gt;
+&lt;h3 id=&#34;target-market--industries&#34;&gt;Target market / Industries&lt;/h3&gt;
+&lt;p&gt;The use case is primarily applicable to the industries that are exposed to frauds and where fraud tracking and prevention is needed. The financial services industry benefiting most from this use-case.&lt;/p&gt;
+&lt;h3 id=&#34;solution&#34;&gt;Solution&lt;/h3&gt;
+&lt;p&gt;We combine the domain knowledge of what is really required by law and regulation with the opportunity to automate many aspects of the background screening and adverse media monitoring. By integrating the robustness of process of global players and the lean and mean approach FinTech startups take, we usually are able to raise quality while reducing effort. Creating a centralized compliance officer workbench that is integrated with both front-office systems as well as risk-management and compliance tools, we are able to iteratively improve the situation by synchronizing the learning of the models and predictions with the feedback from compliance experts.&lt;/p&gt;
+&lt;p&gt;The solution included:
+-Integrated Compliance Officer Workbench&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Onboarding &amp;amp; Compliance Ontology configuration &amp;amp; subsequent ontology matching&lt;/li&gt;
+&lt;li&gt;Integration of existing screening &amp;amp; trigger sources with learning / improvement loops&lt;/li&gt;
+&lt;li&gt;Automation of standard cases and pre-filling of high-probability issues&lt;/li&gt;
+&lt;li&gt;Aggregation of findings, reporting, alerting &amp;amp; compliance action notifications&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;stakeholders&#34;&gt;Stakeholders&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Compliance&lt;/li&gt;
+&lt;li&gt;Security&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;data-elements-assets-and-deliverables&#34;&gt;Data elements, Assets and Deliverables&lt;/h3&gt;
+&lt;p&gt;As an Input from the client, the following items were used:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Existing client onboarding / KYC policies&lt;/li&gt;
+&lt;li&gt;KYC/AML/onboarding management cases&lt;/li&gt;
+&lt;li&gt;Client‘s contracts, positions &amp;amp; transactions&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Assets &amp;amp; Artefacts:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Client risk attributes&lt;/li&gt;
+&lt;li&gt;Historic client behavior information&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The deliverables included:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Compliance &amp;amp; KYC Ontology&lt;/li&gt;
+&lt;li&gt;Compliance Officer Workbench&lt;/li&gt;
+&lt;li&gt;Use case specific orchestration flow&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;impact-and-benefits&#34;&gt;Impact and benefits&lt;/h3&gt;
+&lt;p&gt;Decreased compliance team by 30% from 18 down to 12 Fuull-Time Employees by automating standard case load. Increased compliance quality and decreased client case resolution time by eliminating aspects not required by current jurisdictional scope.&lt;/p&gt;
+&lt;h3 id=&#34;testimonials&#34;&gt;Testimonials&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&amp;ldquo;This is a compliance expert‘s dream come true. Before I never had an oversight of where I or my team where standing. Now we can actually support our client facing colleagues.&amp;rdquo;
+— Mr. XXX YYY, Title, Company ZZZ.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;tags--keywords&#34;&gt;Tags / Keywords&lt;/h3&gt;
+&lt;p&gt;#fraud #fraudremodelling #compliance #kyc #financialservices #bank&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Prospecting 360 Degree</title>
+      <link>/docs/solutions/001-prospect-360-finance/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/solutions/001-prospect-360-finance/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;prospect-360&#34;&gt;Prospect 360°&lt;/h2&gt;
+&lt;h3 id=&#34;executive-summary&#34;&gt;Executive summary&lt;/h3&gt;
+&lt;p&gt;For many strategic prospects the preparation of possible offers and establishment of a real relationship either involves great effort or lacks structure and focus. The Prospect 360° use case augments traditional advisor intelligence with automation to improve this original dilemma.&lt;/p&gt;
+&lt;!-- 2 Problem statement --&gt;
+&lt;h3 id=&#34;problem-statement&#34;&gt;Problem statement&lt;/h3&gt;
+&lt;p&gt;Hunting for new important clients usually is driven by referrals and the search for an “ideal event“ to introduce a product or service. Existing client relationships are usually screened manually and approached directly to request an introduction, prior to offering any services. Monitoring the market and a prospect’s connections can be cumbersome and is error prone – either introductions are awkward or they do not focus on a specific and urgent need. Hence the success and conversion rates seem hard to plan.&lt;/p&gt;
+&lt;!-- 3 Target markets --&gt;
+&lt;h3 id=&#34;target-market--industries&#34;&gt;Target market / Industries&lt;/h3&gt;
+&lt;p&gt;This use case is traditionally applicable to such industries where the customer engagement and acquisition process is long and costs per customer are high:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Financial Services&lt;/li&gt;
+&lt;li&gt;Insurance&lt;/li&gt;
+&lt;li&gt;General Business Services&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- 4 Solution description --&gt;
+&lt;h3 id=&#34;solution&#34;&gt;Solution&lt;/h3&gt;
+&lt;p&gt;We introduce the idea of “soft onboarding”. Instead of selling hard to a new prospect, we start to engage them with tailored and relevant pieces of information or advice free of charge. We do, however, tempt this prospect to embrace little initial pieces of an onboarding-like process, extending the period we are allowed to profile the needs and preferences of the client and the related social graph. Turning a prospect into an interested party and then increasing the levels of engagement of the period of up to six months allows for a more natural and client-driven advisory experience, that is shifting from a “product push” towards a “client pull”.&lt;/p&gt;
+&lt;p&gt;The solution included:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Integration of disparate news &amp;amp; event information sources (licensed &amp;amp; public origins)&lt;/li&gt;
+&lt;li&gt;Provisioning of select RM &amp;amp; client data points to understand social graphs&lt;/li&gt;
+&lt;li&gt;Word parsing of text-based inputs (e.g. news articles and liquidity event streams)&lt;/li&gt;
+&lt;li&gt;Onboarding &amp;amp; Sales Ontology matching&lt;/li&gt;
+&lt;li&gt;Identification of possible liquidity events, new referral paths &amp;amp; sales topics of interest&lt;/li&gt;
+&lt;li&gt;Aggregation of findings, reporting, notifications and organizational routing&lt;/li&gt;
+&lt;li&gt;Ideally inclusion of reinforcement learning (via RM, client &amp;amp; assistant feedback loops)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5 id=&#34;example-use-case-agent-cascade&#34;&gt;Example Use Case Agent Cascade&lt;/h5&gt;
+
+
+
+
+
+
+&lt;p&gt; 
+            &lt;img src=&#34;/streamzero/images/solutions/uc_001_2021.png&#34; style=&#34;border:2px solid #fff;
+            box-shadow: 10px 10px 5px #ccc;
+            -moz-box-shadow: 10px 10px 5px #ccc;
+            -webkit-box-shadow: 10px 10px 5px #ccc;
+            -khtml-box-shadow: 10px 10px 5px #ccc;&#34;/&gt;
+&lt;/p&gt;
+
+&lt;!-- 5 Stakeholders --&gt;
+&lt;h3 id=&#34;stakeholders&#34;&gt;Stakeholders&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Relationship Management&lt;/li&gt;
+&lt;li&gt;Sales&lt;/li&gt;
+&lt;li&gt;Marketing&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- 6 Inputs, tools and deliverables --&gt;
+&lt;h3 id=&#34;data-elements-assets-and-deliverables&#34;&gt;Data elements, Assets and Deliverables&lt;/h3&gt;
+&lt;p&gt;As an Input from the client, the following items were used:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Sales organization setup (desks / books)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Client to Client / Client to Company graphs&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5 id=&#34;capabilities-utilized&#34;&gt;Capabilities utilized:&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;Unstructured Data&lt;/li&gt;
+&lt;li&gt;Semantic Harmonization&lt;/li&gt;
+&lt;li&gt;NLP&lt;/li&gt;
+&lt;li&gt;Personalization&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5 id=&#34;assets--artefacts&#34;&gt;Assets &amp;amp; Artefacts:&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;Financial Product Ontology&lt;/li&gt;
+&lt;li&gt;Analytical CRM Models&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5 id=&#34;the-deliverables-included&#34;&gt;The deliverables included:&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;Sales &amp;amp; Onboarding Ontology&lt;/li&gt;
+&lt;li&gt;Use case specific orchestration flow&lt;/li&gt;
+&lt;li&gt;Integration with many info sources&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- 7 Implementation results --&gt;
+&lt;h3 id=&#34;impact-and-benefits&#34;&gt;Impact and benefits&lt;/h3&gt;
+&lt;p&gt;Strategic client team originally covered 200 prospects manually. Introducing Prospect 360° allowed to double that number while reducing the time-to-close by 35% — from more than 12 to an average of about 7 months.&lt;/p&gt;
+&lt;p&gt;The use-case implementation resulted in:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;+8%&lt;/strong&gt; growth of corporate loan book&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;+22%&lt;/strong&gt; reduction on credit defaults&lt;/p&gt;
+&lt;!-- 8 Testimonials --&gt;
+&lt;h3 id=&#34;testimonials&#34;&gt;Testimonials&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&amp;ldquo;I feel a lot more as a real advisor. I can be helpful and feel informed. And I still can make my own judgments of what is relevant for my personal relationship to existing clients and new referrals. I learn as the system learns.&amp;rdquo;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;— Mr. Pius Brändli, Managing Director, Credit Suisse&lt;/p&gt;
+&lt;!-- 9 Tags / Keywords --&gt;
+&lt;h3 id=&#34;tags--keywords&#34;&gt;Tags / Keywords&lt;/h3&gt;
+&lt;p&gt;#kyc, #knowyourcustomer, #finance, #financialservices, #onboarding, #prospecting, #prospect360&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Regulatory Single Source of Truth</title>
+      <link>/docs/solutions/005-regulatory-single-source-of-truth/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/solutions/005-regulatory-single-source-of-truth/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;regulatory-single-source-of-truth&#34;&gt;Regulatory Single Source of Truth&lt;/h2&gt;
+&lt;h3 id=&#34;executive-summary&#34;&gt;Executive summary&lt;/h3&gt;
+&lt;p&gt;Leveraging all existing data sources from core banking, risk- and trading systems to the Customer Relationship Management (CRM) and general ledger as granular input for your regulatory Single Source of Truth (SSoT).&lt;/p&gt;
+&lt;h3 id=&#34;problem-statement&#34;&gt;Problem statement&lt;/h3&gt;
+&lt;p&gt;Most regulatory solutions today require huge maintenance effort on both business and technology teams. Ever more granular and ever more near-time regulatory requirements further increase this pressure. Usually the various regulatory domains have created and continue to create silos for central bank, credit risk, liquidity, Anti-Money Laundering (ALM) / Know Your Customer (KYC) and transaction monitoring regulations. Further requirements from ePrivacy, Product Suitability and Sustainability regulations even further dilute these efforts.&lt;/p&gt;
+&lt;h3 id=&#34;target-market--industries&#34;&gt;Target market / Industries&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Financial services&lt;/li&gt;
+&lt;li&gt;Insurance&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;solution&#34;&gt;Solution&lt;/h3&gt;
+&lt;p&gt;Leveraging the semantic integration capabilities of StreamZero Data Platform, it  allows you to reuse all the integration efforts you have previously started and yet converge on a common path towards an integrated (regulatory) enterprise view. The ability to eliminate high-maintenance Extraction Transformation Loading (ETL) coding or ETL tooling in favor of a transparent and business driven process will save you money during the initial implementation and during ongoing maintenance.
+Templates and a proven process were applied to use what exists and build what’s missing without long-term lock in.&lt;/p&gt;
+&lt;p&gt;The solution included:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Semantic Integration leveraging all your prior integration investments&lt;/li&gt;
+&lt;li&gt;Business driven data standardization and data quality improvements&lt;/li&gt;
+&lt;li&gt;No Code implementation =&amp;gt; business analysis is sufficient to generate the integration layer&lt;/li&gt;
+&lt;li&gt;Implement data governance &amp;amp; data quality via reusable business checks&lt;/li&gt;
+&lt;li&gt;Multiply your regulatory investments to be used for analytics, sales and risk&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;stakeholders&#34;&gt;Stakeholders&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Compliance&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;data-elements-assets-and-deliverables&#34;&gt;Data elements, Assets and Deliverables&lt;/h3&gt;
+&lt;p&gt;As an Input from the client, the following items were used:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Full regulatory granular scope master &amp;amp; reference data (incl. UBO hierarchies)&lt;/li&gt;
+&lt;li&gt;Client portfolio (positions / transactions)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Assets &amp;amp; Artefacts:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Private Bank Data Model&lt;/li&gt;
+&lt;li&gt;Optimization Algorithms&lt;/li&gt;
+&lt;li&gt;Data Quality Business Rules&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The deliverables included:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;E2E Models &amp;amp; Integration Schema&lt;/li&gt;
+&lt;li&gt;Library of Business Checks&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;impact-and-benefits&#34;&gt;Impact and benefits&lt;/h3&gt;
+&lt;p&gt;The semantic SSoT is now used by other functions across the bank leveraging regulatory investments for sales support, operations and risk management.&lt;/p&gt;
+&lt;p&gt;The use-case implementation resulted in:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;9%&lt;/strong&gt; reduction of risk weighted assets&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;9 FTE (50%)&lt;/strong&gt; reduction of regulatory reporting team&lt;/p&gt;
+&lt;p&gt;In addition, recurring Cost of Capital savings of over 15m CHF p.a. were achieved.&lt;/p&gt;
+&lt;h3 id=&#34;testimonials&#34;&gt;Testimonials&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&amp;ldquo;We have semantically integrated +220 different data sources at Switzerland largest independent Private Bank. The regulatory team  was able to deliver better results faster and yet decreased the team size by 30%.&amp;rdquo;
+— Mr. XXX YYY, Title, Company ZZZ.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;tags--keywords&#34;&gt;Tags / Keywords&lt;/h3&gt;
+&lt;p&gt;#singlesourceoftruth #ssot #bank #privatebank #financialservices #insurance&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Voice-based Trade Compliance</title>
+      <link>/docs/solutions/006-voice-based-trade-compliance/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/solutions/006-voice-based-trade-compliance/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;voice-based-trade-compliance&#34;&gt;Voice-based Trade Compliance&lt;/h2&gt;
+&lt;h3 id=&#34;executive-summary&#34;&gt;Executive summary&lt;/h3&gt;
+&lt;p&gt;Convert the voice-based advisor to client phone conversations into text. Analyze for possible breaches of regulatory and compliance policies. This multi-step analytical process involves voice-to-text transcription, a compliance ontology, text parsing &amp;amp; natural language understanding.&lt;/p&gt;
+&lt;h3 id=&#34;problem-statement&#34;&gt;Problem statement&lt;/h3&gt;
+&lt;p&gt;Many if not most client advisors to client communications still occur via phone. These conversations happen in a black box environment that is difficult to track and audit. Potential compliance breaches in areas such as insider trading or conflict of interest can only be identified and intercepted at great cost while only listening in on select phone calls. The vast majority of conversation remains unchecked, leaving the organization in the dark and at risk. Often compliance is at odds with sales – one controlling the business, the other pushing the boundaries of acceptable risk.&lt;/p&gt;
+&lt;h3 id=&#34;target-market--industries&#34;&gt;Target market / Industries&lt;/h3&gt;
+&lt;p&gt;Described use case can be efficiently applied in the industries where the track / audit of the voice-based communication is required.&lt;/p&gt;
+&lt;h3 id=&#34;solution&#34;&gt;Solution&lt;/h3&gt;
+&lt;p&gt;Leveraging your existing Public Branch eXchange (PBX) phone recording infrastructure &amp;amp; partnering with your choice of voice-to-text transcription service, the solution is to automatically screen every conversion. The transcribed text files are parsed against the Sales &amp;amp; Compliance Ontology. Using Natural Language Understanding (NLU) the use case identifies which call advice and trade decisions occurred and high-lights possible compliance breaches.&lt;/p&gt;
+&lt;p&gt;Once the predictions become more accurate a sales focused “topics-of-interest“ screening can be added.&lt;/p&gt;
+&lt;p&gt;The solution included:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Voice to text transcription&lt;/li&gt;
+&lt;li&gt;Word parsing of text-based inputs&lt;/li&gt;
+&lt;li&gt;Compliance &amp;amp; Sales Ontology matching&lt;/li&gt;
+&lt;li&gt;Identification of possible compliance breaches (and / or sales topics of interest)&lt;/li&gt;
+&lt;li&gt;Aggregation of findings, reporting, alerting&lt;/li&gt;
+&lt;li&gt;Action recommendation&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5 id=&#34;example-use-case-agent-cascade&#34;&gt;Example Use Case Agent Cascade&lt;/h5&gt;
+
+
+
+
+
+
+&lt;p&gt; 
+            &lt;img src=&#34;/streamzero/images/solutions/uc_006_2021.png&#34; style=&#34;border:2px solid #fff;
+            box-shadow: 10px 10px 5px #ccc;
+            -moz-box-shadow: 10px 10px 5px #ccc;
+            -webkit-box-shadow: 10px 10px 5px #ccc;
+            -khtml-box-shadow: 10px 10px 5px #ccc;&#34;/&gt;
+&lt;/p&gt;
+
+&lt;h3 id=&#34;stakeholders&#34;&gt;Stakeholders&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Compliance&lt;/li&gt;
+&lt;li&gt;Security&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;data-elements-assets-and-deliverables&#34;&gt;Data elements, Assets and Deliverables&lt;/h3&gt;
+&lt;p&gt;As an Input from the client, the following items were used:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Relationship Manager – Client Conversations (Voice or Text)&lt;/li&gt;
+&lt;li&gt;Client portfolios - positions / transactions&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Assets &amp;amp; Artefacts:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Unstructured Data&lt;/li&gt;
+&lt;li&gt;Semantic Harmonization&lt;/li&gt;
+&lt;li&gt;Natural language processing&lt;/li&gt;
+&lt;li&gt;Personalization&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The deliverables included:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Sales &amp;amp; Transaction Monitoring Ontology&lt;/li&gt;
+&lt;li&gt;Use case specific orchestration flow&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;impact-and-benefits&#34;&gt;Impact and benefits&lt;/h3&gt;
+&lt;p&gt;Sales Compliance headcount was reduced by 3 Full Time Employees while screening coverage increased to 90% (before only spot checks) and resolution quality focuses on sales and compliance.&lt;/p&gt;
+&lt;h3 id=&#34;testimonials&#34;&gt;Testimonials&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&amp;ldquo;The overall sensitivity of advisors to client‘s sentiment and requirements has increased. Also, we improved  the understanding how compliance and sales can work together to achieve client satisfaction.&amp;rdquo;
+— Ms. Milica L., Chief Risk Officer, Swiss Private Bank&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;tags--keywords&#34;&gt;Tags / Keywords&lt;/h3&gt;
+&lt;p&gt;#voicetradecompliance #tradecompliance #compliance #bank #communicationscreening #financialservices&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

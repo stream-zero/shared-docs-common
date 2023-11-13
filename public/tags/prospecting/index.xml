@@ -1,0 +1,211 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>GridMine – prospecting</title>
+    <link>/tags/prospecting/</link>
+    <description>Recent content in prospecting on GridMine</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    
+	  <atom:link href="/tags/prospecting/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Docs: Prospecting 360 Degree</title>
+      <link>/docs/solutions/001-prospect-360-finance/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/solutions/001-prospect-360-finance/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;prospect-360&#34;&gt;Prospect 360°&lt;/h2&gt;
+&lt;h3 id=&#34;executive-summary&#34;&gt;Executive summary&lt;/h3&gt;
+&lt;p&gt;For many strategic prospects the preparation of possible offers and establishment of a real relationship either involves great effort or lacks structure and focus. The Prospect 360° use case augments traditional advisor intelligence with automation to improve this original dilemma.&lt;/p&gt;
+&lt;!-- 2 Problem statement --&gt;
+&lt;h3 id=&#34;problem-statement&#34;&gt;Problem statement&lt;/h3&gt;
+&lt;p&gt;Hunting for new important clients usually is driven by referrals and the search for an “ideal event“ to introduce a product or service. Existing client relationships are usually screened manually and approached directly to request an introduction, prior to offering any services. Monitoring the market and a prospect’s connections can be cumbersome and is error prone – either introductions are awkward or they do not focus on a specific and urgent need. Hence the success and conversion rates seem hard to plan.&lt;/p&gt;
+&lt;!-- 3 Target markets --&gt;
+&lt;h3 id=&#34;target-market--industries&#34;&gt;Target market / Industries&lt;/h3&gt;
+&lt;p&gt;This use case is traditionally applicable to such industries where the customer engagement and acquisition process is long and costs per customer are high:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Financial Services&lt;/li&gt;
+&lt;li&gt;Insurance&lt;/li&gt;
+&lt;li&gt;General Business Services&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- 4 Solution description --&gt;
+&lt;h3 id=&#34;solution&#34;&gt;Solution&lt;/h3&gt;
+&lt;p&gt;We introduce the idea of “soft onboarding”. Instead of selling hard to a new prospect, we start to engage them with tailored and relevant pieces of information or advice free of charge. We do, however, tempt this prospect to embrace little initial pieces of an onboarding-like process, extending the period we are allowed to profile the needs and preferences of the client and the related social graph. Turning a prospect into an interested party and then increasing the levels of engagement of the period of up to six months allows for a more natural and client-driven advisory experience, that is shifting from a “product push” towards a “client pull”.&lt;/p&gt;
+&lt;p&gt;The solution included:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Integration of disparate news &amp;amp; event information sources (licensed &amp;amp; public origins)&lt;/li&gt;
+&lt;li&gt;Provisioning of select RM &amp;amp; client data points to understand social graphs&lt;/li&gt;
+&lt;li&gt;Word parsing of text-based inputs (e.g. news articles and liquidity event streams)&lt;/li&gt;
+&lt;li&gt;Onboarding &amp;amp; Sales Ontology matching&lt;/li&gt;
+&lt;li&gt;Identification of possible liquidity events, new referral paths &amp;amp; sales topics of interest&lt;/li&gt;
+&lt;li&gt;Aggregation of findings, reporting, notifications and organizational routing&lt;/li&gt;
+&lt;li&gt;Ideally inclusion of reinforcement learning (via RM, client &amp;amp; assistant feedback loops)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5 id=&#34;example-use-case-agent-cascade&#34;&gt;Example Use Case Agent Cascade&lt;/h5&gt;
+
+
+
+
+
+
+&lt;p&gt; 
+            &lt;img src=&#34;/streamzero/images/solutions/uc_001_2021.png&#34; style=&#34;border:2px solid #fff;
+            box-shadow: 10px 10px 5px #ccc;
+            -moz-box-shadow: 10px 10px 5px #ccc;
+            -webkit-box-shadow: 10px 10px 5px #ccc;
+            -khtml-box-shadow: 10px 10px 5px #ccc;&#34;/&gt;
+&lt;/p&gt;
+
+&lt;!-- 5 Stakeholders --&gt;
+&lt;h3 id=&#34;stakeholders&#34;&gt;Stakeholders&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Relationship Management&lt;/li&gt;
+&lt;li&gt;Sales&lt;/li&gt;
+&lt;li&gt;Marketing&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- 6 Inputs, tools and deliverables --&gt;
+&lt;h3 id=&#34;data-elements-assets-and-deliverables&#34;&gt;Data elements, Assets and Deliverables&lt;/h3&gt;
+&lt;p&gt;As an Input from the client, the following items were used:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Sales organization setup (desks / books)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Client to Client / Client to Company graphs&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5 id=&#34;capabilities-utilized&#34;&gt;Capabilities utilized:&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;Unstructured Data&lt;/li&gt;
+&lt;li&gt;Semantic Harmonization&lt;/li&gt;
+&lt;li&gt;NLP&lt;/li&gt;
+&lt;li&gt;Personalization&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5 id=&#34;assets--artefacts&#34;&gt;Assets &amp;amp; Artefacts:&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;Financial Product Ontology&lt;/li&gt;
+&lt;li&gt;Analytical CRM Models&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5 id=&#34;the-deliverables-included&#34;&gt;The deliverables included:&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;Sales &amp;amp; Onboarding Ontology&lt;/li&gt;
+&lt;li&gt;Use case specific orchestration flow&lt;/li&gt;
+&lt;li&gt;Integration with many info sources&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- 7 Implementation results --&gt;
+&lt;h3 id=&#34;impact-and-benefits&#34;&gt;Impact and benefits&lt;/h3&gt;
+&lt;p&gt;Strategic client team originally covered 200 prospects manually. Introducing Prospect 360° allowed to double that number while reducing the time-to-close by 35% — from more than 12 to an average of about 7 months.&lt;/p&gt;
+&lt;p&gt;The use-case implementation resulted in:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;+8%&lt;/strong&gt; growth of corporate loan book&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;+22%&lt;/strong&gt; reduction on credit defaults&lt;/p&gt;
+&lt;!-- 8 Testimonials --&gt;
+&lt;h3 id=&#34;testimonials&#34;&gt;Testimonials&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&amp;ldquo;I feel a lot more as a real advisor. I can be helpful and feel informed. And I still can make my own judgments of what is relevant for my personal relationship to existing clients and new referrals. I learn as the system learns.&amp;rdquo;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;— Mr. Pius Brändli, Managing Director, Credit Suisse&lt;/p&gt;
+&lt;!-- 9 Tags / Keywords --&gt;
+&lt;h3 id=&#34;tags--keywords&#34;&gt;Tags / Keywords&lt;/h3&gt;
+&lt;p&gt;#kyc, #knowyourcustomer, #finance, #financialservices, #onboarding, #prospecting, #prospect360&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Prospecting 360 Degree - general</title>
+      <link>/docs/solutions/001-prospect-360-general/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/solutions/001-prospect-360-general/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;prospect-360&#34;&gt;Prospect 360°&lt;/h2&gt;
+&lt;h3 id=&#34;executive-summary&#34;&gt;Executive summary&lt;/h3&gt;
+&lt;p&gt;For many strategic prospects the preparation of possible offers and establishment of a real relationship either involves great effort or lacks structure and focus. The Prospect 360° use case augments traditional sales and marketing intelligence with automation to improve this original dilemma.&lt;/p&gt;
+&lt;!-- 2 Problem statement --&gt;
+&lt;h3 id=&#34;problem-statement&#34;&gt;Problem statement&lt;/h3&gt;
+&lt;p&gt;Hunting for new important clients usually is driven by advertisement, referrals and the search for an “ideal event“ to introduce a product or service. Existing client relationships are usually screened manually and approached directly to request an introduction, prior to offering any services. Monitoring the market and a prospect’s connections can be cumbersome and is error prone – either introductions are awkward or they do not focus on a specific and urgent need. Hence the success and conversion rates seem hard to plan.&lt;/p&gt;
+&lt;!-- 3 Target markets --&gt;
+&lt;h3 id=&#34;target-market--industries&#34;&gt;Target market / Industries&lt;/h3&gt;
+&lt;p&gt;This use case is suitable for the industries where the customer engagement and acquisition process is long and costs per customer are high.&lt;/p&gt;
+&lt;!-- 4 Solution description --&gt;
+&lt;h3 id=&#34;solution&#34;&gt;Solution&lt;/h3&gt;
+&lt;p&gt;We introduce the idea of “soft onboarding”. Instead of selling hard to a new prospect, we start to engage them with tailored and relevant pieces of information or advice free of charge. We do, however, tempt this prospect to embrace little initial pieces of an onboarding-like process, extending the period we are allowed to profile the needs and preferences of the client and the related social graph. Turning a prospect into an interested party and then increasing the levels of engagement of the period of up to six months allows for a more natural and client-driven sales experience, that is shifting from a “product push” towards a “client pull”.&lt;/p&gt;
+&lt;p&gt;The solution included:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Integration of disparate news &amp;amp; event information sources (licensed &amp;amp; public origins)&lt;/li&gt;
+&lt;li&gt;Provisioning of select sales &amp;amp; client data points to understand social graphs&lt;/li&gt;
+&lt;li&gt;Word parsing of text-based inputs (e.g. news articles)&lt;/li&gt;
+&lt;li&gt;Onboarding &amp;amp; Sales Ontology matching&lt;/li&gt;
+&lt;li&gt;Identification of new referral paths &amp;amp; sales topics of interest&lt;/li&gt;
+&lt;li&gt;Aggregation of findings, reporting, notifications and organizational routing&lt;/li&gt;
+&lt;li&gt;Ideally inclusion of reinforcement learning (via sales, client &amp;amp; assistant feedback loops)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5 id=&#34;example-use-case-agent-cascade&#34;&gt;Example Use Case Agent Cascade&lt;/h5&gt;
+
+
+
+
+
+
+&lt;p&gt; 
+            &lt;img src=&#34;/streamzero/images/solutions/uc_001_2021.png&#34; style=&#34;border:2px solid #fff;
+            box-shadow: 10px 10px 5px #ccc;
+            -moz-box-shadow: 10px 10px 5px #ccc;
+            -webkit-box-shadow: 10px 10px 5px #ccc;
+            -khtml-box-shadow: 10px 10px 5px #ccc;&#34;/&gt;
+&lt;/p&gt;
+
+&lt;!-- 5 Stakeholders --&gt;
+&lt;h3 id=&#34;stakeholders&#34;&gt;Stakeholders&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Relationship Management&lt;/li&gt;
+&lt;li&gt;Sales&lt;/li&gt;
+&lt;li&gt;Marketing&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- 6 Inputs, tools and deliverables --&gt;
+&lt;h3 id=&#34;data-elements-assets-and-deliverables&#34;&gt;Data elements, Assets and Deliverables&lt;/h3&gt;
+&lt;p&gt;As an Input from the client, the following items were used:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Sales organization setup (desks / books)&lt;/li&gt;
+&lt;li&gt;Client to Client / Client to Company graphs&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5 id=&#34;capabilities-utilized&#34;&gt;Capabilities utilized:&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;Unstructured Data&lt;/li&gt;
+&lt;li&gt;Semantic Harmonization&lt;/li&gt;
+&lt;li&gt;NLP&lt;/li&gt;
+&lt;li&gt;Personalization&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5 id=&#34;assets--artefacts&#34;&gt;Assets &amp;amp; Artefacts:&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;Product Ontology&lt;/li&gt;
+&lt;li&gt;Analytical CRM Models&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5 id=&#34;the-deliverables-included&#34;&gt;The deliverables included:&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;Sales &amp;amp; Onboarding Ontology&lt;/li&gt;
+&lt;li&gt;Use case specific orchestration flow&lt;/li&gt;
+&lt;li&gt;Integration with many info sources&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- 7 Implementation results --&gt;
+&lt;!-- 8 Testimonials --&gt;
+&lt;!-- 9 Tags / Keywords --&gt;
+&lt;h3 id=&#34;tags--keywords&#34;&gt;Tags / Keywords&lt;/h3&gt;
+&lt;p&gt;#newclients #salesfunnel #sales #marketing #salesautomation #prospecting #prospect360&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,897 @@
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="generator" content="Hugo 0.117.0"><link rel="canonical" type="text/html" href="/docs/security/">
+<link rel="alternate" type="application/rss&#43;xml" href="/docs/security/index.xml">
+<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+
+
+<link rel="shortcut icon" href="/favicons/favicon.ico" >
+<link rel="apple-touch-icon" href="/favicons/apple-touch-icon-180x180.png" sizes="180x180">
+<link rel="icon" type="image/png" href="/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicons/android-36x36.png" sizes="36x36">
+<link rel="icon" type="image/png" href="/favicons/android-48x48.png" sizes="48x48">
+<link rel="icon" type="image/png" href="/favicons/android-72x72.png" sizes="72x72">
+<link rel="icon" type="image/png" href="/favicons/android-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="/favicons/android-144x144.png" sizes="144x144">
+<link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
+
+<title>Security | GridMine</title>
+
+
+  <meta name="description" content="Introduction and &#34;how-to&#34; guide to the {{&lt; param replacables.brand_name  &gt;}} Security and Access Rights Management.">
+<meta property="og:title" content="Security" />
+<meta property="og:description" content="Introduction and &#34;how-to&#34; guide to the {{&lt; param replacables.brand_name  &gt;}} Security and Access Rights Management." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="/docs/security/" />
+<meta itemprop="name" content="Security">
+<meta itemprop="description" content="Introduction and &#34;how-to&#34; guide to the {{&lt; param replacables.brand_name  &gt;}} Security and Access Rights Management."><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Security"/>
+<meta name="twitter:description" content="Introduction and &#34;how-to&#34; guide to the {{&lt; param replacables.brand_name  &gt;}} Security and Access Rights Management."/>
+
+
+
+
+<link rel="preload" href="/scss/main.scss" as="style">
+<link href="/scss/main.scss" rel="stylesheet" integrity="">
+
+
+<script
+  src="https://code.jquery.com/jquery-3.5.1.min.js"
+  integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+  crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RZ6L6XFT3Q"></script>
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-RZ6L6XFT3Q', { 'anonymize_ip': false });
+}
+</script>
+
+
+
+
+  </head>
+  <body class="td-section">
+    <header>
+      
+<nav class="js-navbar-scroll navbar navbar-expand-lg navbar-dark  td-navbar">
+	<a class="navbar-brand" href="/">
+		<span class="navbar-logo"><svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6675 639" width="200" height="29"><style>.a{fill:#e21339}</style><path class="a" d="m234 638.6q-66.8.0-119.6-22.9-52-22.9-81.9-66.9-29.9-44-31.7-106.5h125.9q.9 27.3 14.1 49.3t36.9 35.2q23.8 12.3 56.3 12.3 27.3.0 47.6-8.8 21.1-9.7 32.5-26.4 12.3-16.7 12.3-39.6.0-27.3-14-44.9-13.2-18.4-36.1-29.9-22.9-12.3-52.8-22-29.1-10.5-61.6-21.1Q90.6 321.8 52.8 283q-37.9-39.6-37.9-104.7.0-55.4 26.4-95 26.4-39.6 73.9-60.7 47.6-21.2 108.3-21.2 62.5.0 110 22 47.5 21.2 74.8 61.6 27.3 40.5 29 95.1H309.7q-.9-20.3-11.4-37.9-10.6-18.4-29.9-29-19.4-11.4-46.7-11.4-22.9-.9-41.3 7-18.5 7.9-30 23.8-10.5 14.9-10.5 37.8.0 22 10.5 37 10.6 14.9 30 26.4 19.3 10.5 45.7 20.2 26.4 8.8 57.2 18.5 46.7 15.8 84.5 37.8 38.7 21.1 61.6 55.5 22.9 34.3 22.9 90.6.0 48.4-25.5 89.8-24.7 41.3-73.1 66.8-48.4 25.6-119.7 25.6zM929.2 628H811.3V107.9H630.9V12h478.7v95.9H929.2zm498 0h-118.8V12H1539q73.9.0 122.3 25.5 49.3 25.6 73.1 68.7 23.7 42.2 23.7 94.1.0 49.3-23.7 92.4-22.9 42.3-72.2 68.7-48.4 25.5-125 25.5h-110zm336.2.0h-135.5l-126.7-271h128.4zm-336.1-516.6v189.2h103.8q54.6.0 80.1-26.4 25.5-26.4 25.5-69.5t-25.5-67.8q-25.5-25.5-80.1-25.5zM2383.8 628h-405.6V12h405.6v95.9H2097v161h260.4v92.4H2097V532h286.8zm306.2.0h-124l224.4-616H2925l225.3 616h-125.9l-167.2-480.4zm351.2-140h-375.8l30.8-92.4h314.2zm422.3 140h-118.8V12h141.7l191.8 383.6L3867.4 12h141.7v616h-118.8V213.5L3724 540h-94.2l-166.3-327.4zm1153.7.0h-393.4v-58.1l303.6-493.7h-299.2V12h385.4v58.1l-304.4 493.7h308zm601.8.0h-381V12h381v60.7h-307.1v214.7h280.7v59.8h-280.7v220H5219zm306.2.0h-73.9V12h198.9q72.2.0 117.9 24.7 45.8 23.7 67.8 64.2t22 91.5q0 49.3-22.9 90.7-22 41.3-68.6 66-46.7 24.6-119.7 24.6h-121.5zm338.8.0h-87.1l-135.5-275.4h82.7zM5525.2 74.5v241.1h119.7q70.4.0 103-34.3 33.4-34.4 33.4-88 0-54.6-32.6-86.3-31.6-32.5-104.7-32.5zm844.8 564q-90.7.0-159.3-39.6-67.8-40.4-106.5-111.7-37.8-72.2-37.8-167.2.0-94.2 37.8-165.5 38.7-72.1 106.5-112.6 68.6-40.5 159.3-40.5 91.5.0 159.3 40.5 68.6 40.5 106.4 112.6 37.9 71.3 37.9 165.5.0 95-37.9 167.2-37.8 71.3-106.4 111.7-67.8 39.6-159.3 39.6zm0-65.1q67.7.0 118.8-29.9 51.9-30.8 80.1-87.1 29-57.2 29-136.4t-29-135.5q-28.2-57.2-80.1-87.2-51.1-29.9-118.8-29.9-67.8.0-119.7 29.9-51 30-80.1 87.2-28.1 56.3-28.1 135.5t28.1 136.4q29.1 56.3 80.1 87.1 51.9 29.9 119.7 29.9z"/></svg></span>
+	</a>
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+		<ul class="navbar-nav ml-auto">
+			
+			
+				
+				
+				
+				
+				
+				
+				
+					<li class="nav-item mr-2 mb-2 mb-lg-0 dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">
+							PRODUCTS
+						</a>
+						<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+							
+								<li>
+									<a class="nav-link" href="/products/fx/" >STREAMZERO FX</a>
+								</li>
+							
+								<li>
+									<a class="nav-link" href="/products/k8x/" >STREAMZERO K8X</a>
+								</li>
+							
+								<li>
+									<a class="nav-link" href="/products/sx/" >STREAMZERO SX</a>
+								</li>
+							
+						</ul>
+					</li>
+				
+			
+				
+				
+				
+				
+				
+				
+				
+				
+				
+					<li class="nav-item mr-2 mb-2 mb-lg-0">
+						<a class="nav-link active" href="/docs/" ><span class="active">DOCUMENTATION</span></a>
+					</li>
+				
+			
+			
+			
+		</ul>
+	</div>
+	<div class="navbar-nav d-none d-lg-block">
+<input type="search" class="form-control td-search-input" placeholder="&#xf002; Search this site…" aria-label="Search this site…" autocomplete="off">
+
+</div>
+</nav>
+
+    </header>
+    <div class="container-fluid td-outer">
+      <div class="td-main">
+        <div class="row flex-xl-nowrap">
+          <div class="col-12 col-md-3 col-xl-2 td-sidebar d-print-none">
+          </div>
+          <div class="d-none d-xl-block col-xl-2 td-toc d-print-none">
+          </div>
+          <main class="col-12 col-md-9 col-xl-8 pl-md-5" role="main">
+            
+
+
+
+
+<div class="td-content">
+<div class="pageinfo pageinfo-primary d-print-none">
+<p>
+This the multi-page printable view of this section.
+<a href="#" onclick="print();return false;">Click here to print</a>.
+</p><p>
+<a href="/docs/security/">Return to the regular view of this page</a>.
+</p>
+</div>
+
+
+
+<h1 class="title">Security</h1>
+<div class="lead">Introduction and &ldquo;how-to&rdquo; guide to the StreamZero Security and Access Rights Management.</div>
+
+
+
+
+    <ul>
+    
+  
+  
+  
+  
+
+  
+    
+    
+	
+<li>1: <a href="#pg-7804eee8f41a6e121843cad239d0d1f9">Permissions</a></li>
+
+
+    
+  
+    
+    
+	
+<li>2: <a href="#pg-a35e4146e8038db91df8fe4d25b617fe">Roles</a></li>
+
+
+    
+  
+    
+    
+	
+<li>3: <a href="#pg-464a500a6d71679f53ea1ce05db41c35">Users</a></li>
+
+
+    
+  
+    
+    
+	
+<li>4: <a href="#pg-10881709841225152de8bc24ff86d402">Statistics</a></li>
+
+
+    
+  
+
+    </ul>
+
+
+<div class="content">
+      <h4 id="concept">Concept</h4>
+<p>StreamZero is taking a multi-layered and integrative approach to security and access rights management, protecting systems, networks, users and data alike.</p>
+<p>While the security architecture of StreamZero stands alone and operates well in isolation, it is built to integrate with enterprise security systems such as LDAP and Active Directory.</p>
+<p>It supports Single Sign On (SSO) through open protocols such as Auth0 and SAML.</p>
+<p>This user guide focuses on the application internal - user controlled - aspects of the seurity functions.</p>
+<h4 id="approach">Approach</h4>
+<p>StreamZero applies the proven notion of #Users, #Roles and #Permissions and linking them to the application elements such as #Menues, Views and Pages.</p>
+<p>This approach enables the breaking of the application into granular elements and organizing them into groups of like access control areas. The ultimate benefit is the implementation of user rights on a strict &ldquo;need-to-know&rdquo; basis.</p>
+<h4 id="security-components">Security Components</h4>
+<p>In the following sections you will learn how the security components work and how to set them up for your purpose.</p>
+<blockquote>
+<p>If you want to follow the instructions and examples, you first need to connect to your StreamZero demo instance.</p>
+</blockquote>
+<h5 id="navigation">Navigation</h5>
+<p>The Security menu is found on left hand navigation of Ferris.</p>
+<ul>
+<li>Click on the Security menu to expand it and display all security relevant menu items.</li>
+</ul>
+
+
+
+
+
+
+<p> 
+            <img src="/streamzero/images/security/security_navigation.png" style="border:2px solid #fff;
+            box-shadow: 10px 10px 5px #ccc;
+            -moz-box-shadow: 10px 10px 5px #ccc;
+            -webkit-box-shadow: 10px 10px 5px #ccc;
+            -khtml-box-shadow: 10px 10px 5px #ccc;"/>
+</p>
+
+<p><em>StreamZero Security Navigation</em></p>
+<ul>
+<li><a href="/tags/users/"><strong>List Users:</strong></a> Setup individual users and assign one or more roles to them. If StreamZero is integrated with a company own Single Sign On, here is where all users can be viewed. Each user may be deactivated manually.</li>
+<li><a href="/tags/roles/"><strong>List Roles:</strong></a> Setup and maintain individual roles and assign them viewing, editing, executing and other rights pertinent to the character and scope of the role. Roles can be integrated and inheritet with the company Active Directory.</li>
+<li><strong>Users Statistics:</strong> Useful grafical statistic displaying the login behavior of individual users, such as login count and failed logins. For <em>Security Admins</em> only.</li>
+<li><strong>User Registrations:</strong> Listing pending registration requests. For <em>Security Admins</em> only.</li>
+<li><strong>Base Permissions:</strong> Listing the base permissions. For <em>Security Admins</em> only.</li>
+<li><strong>Views/Menus:</strong> Listing of all Menu and View (aka Pages, UI) items. For <em>Security Admins</em> only.</li>
+<li><strong>Permissions on Views/Menus:</strong> Listing of the assigned permissions of each Menu and View element. For <em>Security Admins</em> only.</li>
+</ul>
+<p><em>NOTE that it is considered a good practice that security related tasks are provided to only a few dedicated Security Leads within the organization. For that purpose, setting up a dedicated <strong>Security Lead</strong> role is advised.</em></p>
+<h4 id="authentication-and-authorization">Authentication and Authorization</h4>
+<p>Add text</p>
+<h4 id="data-level-security">Data Level Security</h4>
+<p>Add text</p>
+<h4 id="integrations">Integrations</h4>
+<p>Add text</p>
+<h4 id="audit-functions">Audit Functions</h4>
+<p>Add viewing function (below)</p>
+<p>Add logging and monitoring capabilities</p>
+
+</div>
+</div>
+
+
+  
+  
+  
+  
+
+  
+  
+
+  
+    
+    
+	
+    
+
+<div class="td-content" style="page-break-before: always">
+    
+	<h1 id="pg-7804eee8f41a6e121843cad239d0d1f9">1 - Permissions</h1>
+    <div class="lead">Meaning, role and application of Roles.</div>
+	<h4 id="roles">Roles</h4>
+<p>This is us - humans - using StreamZero on a day to day basis. And in this section each user is listed with the most important attributes defininig name, e-mail, status and - most importantly - the associated roles.</p>
+<blockquote>
+<p>To get the the Users page, navigate to: Security &gt; List Roles</p>
+</blockquote>
+
+
+
+
+
+
+<p> 
+            <img src="/streamzero/images/security/list_users_page.png" style="border:2px solid #fff;
+            box-shadow: 10px 10px 5px #ccc;
+            -moz-box-shadow: 10px 10px 5px #ccc;
+            -webkit-box-shadow: 10px 10px 5px #ccc;
+            -khtml-box-shadow: 10px 10px 5px #ccc;"/>
+</p>
+
+<p><em>Example: List of Users</em></p>
+<p>Besides displaying the list of all current users, the Users page offers a number of capabilities:</p>
+<ul>
+<li>Add User <img src="../../../../../../../images/add_icon.png" alt="Add User"></li>
+<li>Show User <img src="../../../../../../../images/view_icon.png" alt=""></li>
+<li>Edit User <img src="../../../../../../../images/edit_icon.png" alt=""></li>
+<li>Delete User <img src="../../../../../../../images/delete_icon.png" alt=""></li>
+</ul>
+<p><em>Note that each of these capabilities depends on the Permissions given to your Role. Some roles may be given full rights (e.g. add, show, edit, delete), where others may only be given viewing rights (e.g. show). As a result, some users may only be seeing the &ldquo;Show User&rdquo; magnifying glass icon.</em></p>
+
+</div>
+
+
+
+    
+	
+  
+    
+    
+	
+    
+
+<div class="td-content" style="page-break-before: always">
+    
+	<h1 id="pg-a35e4146e8038db91df8fe4d25b617fe">2 - Roles</h1>
+    <div class="lead">Meaning, role and application of Roles.</div>
+	<h4 id="roles">Roles</h4>
+<p>Roles represent a collection of permissions or rights that can be performed within Ferris. They can be directly associated with the job of job a <a href="/docs/security/list_users/">#User</a> performs.</p>
+<blockquote>
+<p>To get the the Users page, navigate to: Security &gt; List Roles</p>
+</blockquote>
+
+
+
+
+
+
+<p> 
+            <img src="/streamzero/images/security/list_roles_page.png" style="border:2px solid #fff;
+            box-shadow: 10px 10px 5px #ccc;
+            -moz-box-shadow: 10px 10px 5px #ccc;
+            -webkit-box-shadow: 10px 10px 5px #ccc;
+            -khtml-box-shadow: 10px 10px 5px #ccc;"/>
+</p>
+
+<p><em>Example: List of StreamZero Roles</em></p>
+<p>Besides displaying the list of all available Roles, the Roles page offers a number of capabilities:</p>
+<ul>
+<li>Add Role <img src="/images/add_icon.png" alt="Add User"></li>
+<li>Actions <img src="/images/actions_icon.png" alt="Add User"></li>
+<li>Show Roles <img src="/images/view_icon.png" alt=""></li>
+<li>Edit Roles <img src="/images/edit_icon.png" alt=""></li>
+<li>Delete Roles <img src="/images/delete_icon.png" alt=""></li>
+</ul>
+<p><em>Note that each of these capabilities depends on the Permissions given to your Role. Some roles may be given full rights (e.g. add, show, edit, delete), where others may only be given viewing rights (e.g. show). As a result, some users may only be seeing the &ldquo;Show Roles&rdquo; magnifying glass icon.</em></p>
+<h5 id="add-new-role">Add new Role</h5>
+<p>Adding a new Role can be done directly within StreamZero by any person who has the necessary permissions to do so. This is normally a designated Security Lead.</p>
+<p>Often times, adding new Roles is done by integrating StreamZero with the corporate Identity Access Management (IAM) and Active Directory (AD).</p>
+<blockquote>
+<p>Click on the plus sign <img src="/images/add_icon.png" alt="Add Role"> to add a new user.</p>
+</blockquote>
+
+
+
+
+
+
+<p> 
+            <img src="/streamzero/images/security/add_role_page.png" style="border:2px solid #fff;
+            box-shadow: 10px 10px 5px #ccc;
+            -moz-box-shadow: 10px 10px 5px #ccc;
+            -webkit-box-shadow: 10px 10px 5px #ccc;
+            -khtml-box-shadow: 10px 10px 5px #ccc;"/>
+</p>
+
+<p><em>Example: Adding a new Role and Permissions</em></p>
+<ul>
+<li>
+<p><strong>Name:</strong> Use a meaningful name for the role, and consider applying naming standards for all Roles</p>
+</li>
+<li>
+<p><strong>Permissions:</strong> Chose from the previously setup list of <a href="/docs/security/permissions/">#Permissions</a></p>
+</li>
+</ul>
+<p><em>Note that it possible, and common practice, to apply multiple roles to a user. Therefore it is a good idea to keep the number of permissions within one role to a minimum. This enables the enforcement of the <strong>&ldquo;need-to-know&rdquo;</strong> basis for each role.</em></p>
+<h3 id="actions">Actions</h3>
+<p>In order to apply an Action, first select the Role you want the action to apply to.</p>
+<ul>
+<li>Select a Role then click Actions &gt; Copy Role &gt; click <strong>Yes</strong> to confirm</li>
+<li>The Role is now copied and can be found in the list of Roles as <strong>&quot;[original role name] copy&quot;</strong></li>
+</ul>
+
+</div>
+
+
+
+    
+	
+  
+    
+    
+	
+    
+
+<div class="td-content" style="page-break-before: always">
+    
+	<h1 id="pg-464a500a6d71679f53ea1ce05db41c35">3 - Users</h1>
+    <div class="lead">Meaning, role and setup of the StreamZero User.</div>
+	<h4 id="users">Users</h4>
+<p>This is us - humans - using StreamZero on a day to day basis. And in this section each user is listed with the most important attributes defininig name, e-mail, status and - most importantly - the associated roles.</p>
+<blockquote>
+<p>To get the the Users page, navigate to: Security &gt; List Users</p>
+</blockquote>
+
+
+
+
+
+
+<p> 
+            <img src="/streamzero/images/security/list_users_page.png" style="border:2px solid #fff;
+            box-shadow: 10px 10px 5px #ccc;
+            -moz-box-shadow: 10px 10px 5px #ccc;
+            -webkit-box-shadow: 10px 10px 5px #ccc;
+            -khtml-box-shadow: 10px 10px 5px #ccc;"/>
+</p>
+
+<p><em>Example: List of StreamZero Users</em></p>
+<p>Besides displaying the list of all current users, the Users page offers a number of capabilities:</p>
+<ul>
+<li>Add User <img src="/images/add_icon.png" alt="Add User"></li>
+<li>Show User <img src="/images/view_icon.png" alt=""></li>
+<li>Edit User <img src="/images/edit_icon.png" alt=""></li>
+<li>Delete User <img src="/images/delete_icon.png" alt=""></li>
+</ul>
+<p><em>Note that each of these capabilities depends on the Permissions given to your Role. Some roles may be given full rights (e.g. add, show, edit, delete), where others may only be given viewing rights (e.g. show). As a result, some users may only be seeing the &ldquo;Show User&rdquo; magnifying glass icon.</em></p>
+<h5 id="add-new-user">Add new User</h5>
+<p>Adding a new User can be done directly within StreamZero by any person who has the necessary permissions to do so. This is normally a designated Security Lead.</p>
+<p>Most often though, adding new Users is done by integrating StreamZero with the corporate Identity Access Management (IAM) and Single Sign On (SSO) system.</p>
+<blockquote>
+<p>Click on the plus sign <img src="/images/add_icon.png" alt="Add User"> to add a new user.</p>
+</blockquote>
+
+
+
+
+
+
+<p> 
+            <img src="/streamzero/images/security/add_user_page.png" style="border:2px solid #fff;
+            box-shadow: 10px 10px 5px #ccc;
+            -moz-box-shadow: 10px 10px 5px #ccc;
+            -webkit-box-shadow: 10px 10px 5px #ccc;
+            -khtml-box-shadow: 10px 10px 5px #ccc;"/>
+</p>
+
+<p><em>Example: Adding a new StreamZero User</em></p>
+<ul>
+<li>
+<p><strong>First Name, Last Name</strong>: Full first and last name of the user</p>
+</li>
+<li>
+<p><strong>User Name:</strong> Apply any name or e-mail, but it is advised to adhere to a standard applied to all users.</p>
+<p><em>Possible options may include: Email, Company User ID, first name only or full name</em></p>
+</li>
+<li>
+<p><strong>Is Active</strong>: Keep this boxed checked as long as the user is actively using Ferris.</p>
+<p><em>Uncheck the box once a user is no longer using Ferris. Delete the user after a prolonged period of inactivity.</em></p>
+</li>
+<li>
+<p><strong>Email:</strong> The users email is the primary means of identification and communication.</p>
+</li>
+<li>
+<p><strong>Role</strong>: This is where one or more roles - and therefore permissions - are associated with each user.</p>
+<p><em>Roles are setup in advance, and only already existing roles may be selected. A user may be associated to multiple roles.</em></p>
+</li>
+<li>
+<p><strong>Save:</strong> Always save!</p>
+</li>
+</ul>
+<h5 id="show-user">Show User</h5>
+<blockquote>
+<p>Click on the spyglass icon <img src="/images/view_icon.png" alt="Add User"> in front of the user you want to look at.</p>
+</blockquote>
+
+
+
+
+
+
+<p> 
+            <img src="/streamzero/images/security/view_user_page.png" style="border:2px solid #fff;
+            box-shadow: 10px 10px 5px #ccc;
+            -moz-box-shadow: 10px 10px 5px #ccc;
+            -webkit-box-shadow: 10px 10px 5px #ccc;
+            -khtml-box-shadow: 10px 10px 5px #ccc;"/>
+</p>
+
+<p><em>Example: View only List of StreamZero Users</em></p>
+<p><strong>User Info</strong></p>
+<ul>
+<li><strong>User Name:</strong> displays user name</li>
+<li><strong>Is Active:</strong> shows whether the user is set to active or inactive. Note that an inactivated user may not be able to loginto Ferris</li>
+<li><strong>Role:</strong> Associated roles</li>
+<li><strong>Login Count:</strong> Count of how many times the user has logged in in total</li>
+</ul>
+<p><strong>Personal Info</strong></p>
+<ul>
+<li><strong>First Name:</strong> First name as given during setup. This name may also be provided from the corporate directory</li>
+<li><strong>Last Name:</strong> Last name as given during setup. This name may also be provided from the corporate directory</li>
+<li><strong>Email:</strong> Email as given during setup. This email may also be provided from the corporate directory</li>
+</ul>
+<p><strong>Audit Info</strong></p>
+<ul>
+<li><strong>Last login:</strong> Last successful login date and time</li>
+<li><strong>Failed login count:</strong> Number of unsuccessful login attempts</li>
+<li><strong>Created on:</strong> Exact date and time this user was created (manually or via corporate SSO)</li>
+<li><strong>Created by:</strong> StreamZero User or corporate integration service</li>
+<li><strong>Changed on:</strong> Exact date and time this user was edited (manually or via corporate SSO)</li>
+<li><strong>Changed by:</strong> StreamZero User or corporate integration service</li>
+</ul>
+<p><strong>Edit User</strong>: Depending on your user rights (permission level) you may be able to enter the <strong>Edit</strong> function.</p>
+<p><strong>Back arrow</strong>: go back to the List Users page.</p>
+<h5 id="edit-user">Edit User</h5>
+<p>Editing User details such as name, email or even Role(s) may be done here.</p>
+<p><em>Note though that if the StreamZero Security is integrated with the corporate Identity Access Management (IAM), adding or removing Roles should be done there in order to ensure the change is permanent and not overwritten at the next syncronization.</em></p>
+<blockquote>
+<p>Click on the edit icon <img src="/images/edit_icon.png" alt="Add User"> in front of the user you want to apply changes to.</p>
+</blockquote>
+<h5 id="delete-user">Delete User</h5>
+<p>Delete Users permanetly from Ferris.</p>
+<p><em>Note though that if the StreamZero Security is integrated with the corporate Identity Access Management (IAM), deleting users should be done there in order to ensure the change is permanent and not overwritten at the next syncronization.</em></p>
+<p><em>Also note that before permanetly deleting a user from Ferris, it is advised that the status of the user is first set to &ldquo;inactive&rdquo; for a period of time, and until it is sure that the user will not be reactivatet.</em></p>
+<blockquote>
+<p>Click on the delete icon <img src="/images/delete_icon.png" alt="Add User"> in front of the user you want to delete.</p>
+</blockquote>
+<hr>
+
+</div>
+
+
+
+    
+	
+  
+    
+    
+	
+    
+
+<div class="td-content" style="page-break-before: always">
+    
+	<h1 id="pg-10881709841225152de8bc24ff86d402">4 - Statistics</h1>
+    <div class="lead">Statistics lists the number of successful as well as failed login counts by user.</div>
+	<h4 id="users-statistics">Users Statistics</h4>
+<p>Here a Security Lead finds useful information on any user&rsquo;s successful as well as failed login attempts.</p>
+<p>Navigate to: Security &gt; User&rsquo;s Statistics</p>
+
+
+
+
+
+
+<p> 
+            <img src="/streamzero/images/security/users_statistics.png" style="border:2px solid #fff;
+            box-shadow: 10px 10px 5px #ccc;
+            -moz-box-shadow: 10px 10px 5px #ccc;
+            -webkit-box-shadow: 10px 10px 5px #ccc;
+            -khtml-box-shadow: 10px 10px 5px #ccc;"/>
+</p>
+
+<p><em>Example: Users Statistics &gt; Login count</em></p>
+
+</div>
+
+
+
+    
+	
+  
+
+
+
+          </main>
+        </div>
+      </div>
+      <section class="row td-cover-block" style="background-color: #1b1a21;">
+  <div class="container">
+      <footer class="footer-component with-intercom">
+          <div class="section-container footer-inner size-medium">
+              <div class="content">
+                  <div class="page-container padding-small-x">
+                      <div class="margin-component bottom-small-x">
+                          <nav class="footer-links" role="navigation">
+                              <ul class="list-component footer-column ul">
+                                  <li class="list-item-component footer-item footer-item-header">
+                                      <div class="margin-component inner bottom-zero">
+                                          <div class="list-content-wrapper">
+                                              <div class="typography-text p2-caps footer-link footer-header inverted">
+                                                  Product
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </li>
+                                  <li class="list-item-component footer-item">
+                                      <div class="margin-component inner bottom-zero">
+                                          <div class="list-content-wrapper">
+                                              <div class="typography-text p2-normal inverted"><a
+                                                  class="link-component footer-link"
+                                                  href="/products/fx/">StreamZero FX</a></div>
+                                          </div>
+                                      </div>
+                                  </li>
+                                  <li class="list-item-component footer-item">
+                                      <div class="margin-component inner bottom-zero">
+                                          <div class="list-content-wrapper">
+                                              <div class="typography-text p2-normal inverted"><a
+                                                  class="link-component footer-link"
+                                                  href="/products/k8x">StreamZero K8X</a></div>
+                                          </div>
+                                      </div>
+                                  </li>
+                                  <li class="list-item-component footer-item">
+                                      <div class="margin-component inner bottom-zero">
+                                          <div class="list-content-wrapper">
+                                              <div class="typography-text p2-normal inverted"><a
+                                                  class="link-component footer-link"
+                                                  href="/products/sx/">StreamZero SX</a></div>
+                                          </div>
+                                      </div>
+                                  </li>
+                              </ul>
+                              <ul class="list-component footer-column ul">
+                                  <li class="list-item-component footer-item footer-item-header">
+                                      <div class="margin-component inner bottom-zero">
+                                          <div class="list-content-wrapper">
+                                              <div class="typography-text p2-caps footer-link footer-header inverted">
+                                                  Solutions
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </li>
+                                  <li class="list-item-component footer-item">
+                                      <div class="margin-component inner bottom-zero">
+                                          <div class="list-content-wrapper">
+                                              <div class="typography-text p2-normal inverted"><a
+                                                  class="link-component footer-link"
+                                                  href="/solutions/">Why GridMine?</a></div>
+                                          </div>
+                                      </div>
+                                  </li>
+                                  <li class="list-item-component footer-item">
+                                      <div class="margin-component inner bottom-zero">
+                                          <div class="list-content-wrapper">
+                                              <div class="typography-text p2-normal inverted"><a
+                                                  class="link-component footer-link"
+                                                  href="/integrations/">Integrations</a></div>
+                                          </div>
+                                      </div>
+                                  </li>
+                                  <li class="list-item-component footer-item">
+                                      <div class="margin-component inner bottom-zero">
+                                          <div class="list-content-wrapper">
+                                              <div class="typography-text p2-normal inverted"><xa
+                                                  class="link-component footer-link"
+                                                  href="/partners/">Partners</a></div>
+                                          </div>
+                                      </div>
+                                  </li>
+                              </ul>
+                              <ul class="list-component footer-column ul">
+                                  <li class="list-item-component footer-item footer-item-header">
+                                      <div class="margin-component inner bottom-zero">
+                                          <div class="list-content-wrapper">
+                                              <div class="typography-text p2-caps footer-link footer-header inverted">
+                                                  Learn
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </li>
+                                  <li class="list-item-component footer-item">
+                                      <div class="margin-component inner bottom-zero">
+                                          <div class="list-content-wrapper">
+                                              <div class="typography-text p2-normal inverted"><a
+                                                  rel="noopener noreferrer"
+                                                  class="link-component footer-link" href="/docs/">Developer
+                                                  Guide</a>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </li>
+                                  <li class="list-item-component footer-item">
+                                      <div class="margin-component inner bottom-zero">
+                                          <div class="list-content-wrapper">
+                                              <div class="typography-text p2-normal inverted"><a
+                                                  rel="noopener noreferrer"
+                                                  class="link-component footer-link" href="/docs/integrations/">Integrations
+                                                  Guide</a></div>
+                                          </div>
+                                      </div>
+                                  </li>
+                                  <li class="list-item-component footer-item">
+                                      <div class="margin-component inner bottom-zero">
+                                          <div class="list-content-wrapper">
+                                              <div class="typography-text p2-normal inverted"><a
+                                                  class="link-component footer-link"
+                                                  href="/docs/security/">Security</a></div>
+                                          </div>
+                                      </div>
+                                  </li>
+                                  <li class="list-item-component footer-item">
+                                      <div class="margin-component inner bottom-zero">
+                                          <div class="list-content-wrapper">
+                                              <div class="typography-text p2-normal inverted"><xa
+                                                  class="link-component footer-link"
+                                                  href="/blog/">Blog</a></div>
+                                          </div>
+                                      </div>
+                                  </li>
+                                  
+                              </ul>
+                              <ul class="list-component footer-column ul">
+                                  <li class="list-item-component footer-item footer-item-header">
+                                      <div class="margin-component inner bottom-zero">
+                                          <div class="list-content-wrapper">
+                                              <div class="typography-text p2-caps footer-link footer-header inverted">
+                                                  Support
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </li>
+                                  <li class="list-item-component footer-item">
+                                      <div class="margin-component inner bottom-zero">
+                                          <div class="list-content-wrapper">
+                                              <div class="typography-text p2-normal inverted"><xa
+                                                  class="link-component footer-link"
+                                                  href="/support/">Support Plans</a></div>
+                                          </div>
+                                      </div>
+                                  </li>
+                                  
+                                  <li class="list-item-component footer-item">
+                                      <div class="margin-component inner bottom-zero">
+                                          <div class="list-content-wrapper">
+                                              <div class="typography-text p2-normal inverted"><xa
+                                                  class="link-component footer-link"
+                                                  href="/services/">Professional Services</a></div>
+                                          </div>
+                                      </div>
+                                  </li>
+                                  <li class="list-item-component footer-item">
+                                      <div class="margin-component inner bottom-zero">
+                                          <div class="list-content-wrapper">
+                                              <div class="typography-text p2-normal inverted"><a
+                                                  rel="noopener noreferrer"
+                                                  class="link-component footer-link" href="/docs/">Documentation</a>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </li>
+                              </ul>
+                              <ul class="list-component footer-column ul">
+                                  <li class="list-item-component footer-item footer-item-header">
+                                      <div class="margin-component inner bottom-zero">
+                                          <div class="list-content-wrapper">
+                                              <div class="typography-text p2-caps footer-link footer-header inverted">
+                                                  Company
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </li>
+                                  <li class="list-item-component footer-item">
+                                      <div class="margin-component inner bottom-zero">
+                                          <div class="list-content-wrapper">
+                                              <div class="typography-text p2-normal inverted"><a
+                                                  class="link-component footer-link"
+                                                  href="/about/">About Us</a></div>
+                                          </div>
+                                      </div>
+                                  </li>
+                                  <li class="list-item-component footer-item">
+                                      <div class="margin-component inner bottom-zero">
+                                          <div class="list-content-wrapper">
+                                              <div class="typography-text p2-normal inverted"><xa
+                                                  class="link-component footer-link"
+                                                  href="/jobs/"><span class="footer-pill-wrapper">Careers <span
+                                                  class="footer-pill">We're hiring</span></span></a>
+                                                </div>
+                                          </div>
+                                      </div>
+                                  </li>
+                                  <li class="list-item-component footer-item">
+                                      <div class="margin-component inner bottom-zero">
+                                          <div class="list-content-wrapper">
+                                              <div class="typography-text p2-normal inverted"><a
+                                                  class="link-component footer-link"
+                                                  href="/contact/">Contact Us</a></div>
+                                          </div>
+                                      </div>
+                                  </li>
+                              </ul>
+                          </nav>
+                      </div>
+                      <div class="margin-component bottom-small-x">
+                          <div class="centering-wrapper social-links">
+                              <a rel="noopener noreferrer" class="link-component social-link"
+                                href="https://twitter.com/gridmine/" title="Twitter" target="_blank">
+                                  <img src="/icons/footer/twitter-icon.png" alt="Twitter">
+                              </a>
+                              
+                              <a rel="noopener noreferrer" class="link-component social-link"
+                                href="https://www.linkedin.com/company/gridmine/" title="LinkedIn" target="_blank">
+                                  <img src="/icons/footer/linkedin-icon.png" alt="LinkedIn">
+                              </a>
+                              <a rel="noopener noreferrer" class="link-component social-link"
+                                href="https://www.youtube.com/channel/UC5miURXVxGLo17EyWPBWCug/" title="YouTube"
+                                target="_blank">
+                                  <img src="/icons/footer/youtube-icon.png" alt="YouTube">
+                              </a>
+                              
+                              <a rel="noopener noreferrer" class="link-component social-link"
+                                href="https://github.com/gridmine/" title="GitHub" target="_blank">
+                                  <img src="/icons/footer/github-icon.png" alt="GitHub">
+                              </a>
+                              <a rel="noopener noreferrer" class="link-component social-link"
+                                href="https://www.medium.com/gridmine/" title="Medium" target="_blank">
+                                  <img src="/icons/footer/medium-icon.png" alt="Medium">
+                              </a>
+                              <xa rel="noopener noreferrer" class="link-component social-link" href="#"
+                                data-toggle="modal" data-target="#subscribeModal"
+                                title="Subscribe to our Newsletter">
+                                  <img src="/icons/footer/mail-icon.png" alt="Newsletter">
+                              </a>
+                          </div>
+                      </div>
+                      <div class="centering-wrapper legal-links">
+                          <div class="typography-text p2-normal align-center">
+                              <span class="copyright">2023 © GridMine GmbH</span>
+                              <span> | </span>
+                              <br class="br-component mobile">
+                              <a class="link-component legal-link" href="/docs/privacy_policy/">Privacy Policy</a>
+                              <span> | </span>
+                              <a class="link-component legal-link" href="/docs/privacy_policy/">Data Protection
+                                  Policy</a>
+                              <span> | </span>
+                              <a class="link-component legal-link" href="/docs/terms_conditions/">Legal Terms and
+                                  Conditions</a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </footer>
+  </div>
+</section>
+
+<script type="text/javascript" src="/js/carousel.js"></script>
+<link rel="stylesheet" href="/css/carousel.css">
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+
+
+
+
+
+<script src='/js/tabpane-persist.js'></script>
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="/js/main.min.7d5b92c4889cf0554b0ea5e2309b0b81b196aa7c9a235632938a25d9fc4d8a7c.js" integrity="sha256-fVuSxIic8FVLDqXiMJsLgbGWqnyaI1Yyk4ol2fxNinw=" crossorigin="anonymous"></script>
+
+
+
+
+  </body>
+</html>

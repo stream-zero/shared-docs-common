@@ -1,0 +1,90 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>GridMine – dataqualityimprovement</title>
+    <link>/tags/dataqualityimprovement/</link>
+    <description>Recent content in dataqualityimprovement on GridMine</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    
+	  <atom:link href="/tags/dataqualityimprovement/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Docs: Metadata-controlled Data Quality &amp; Data Lineage in Production</title>
+      <link>/docs/solutions/008-metadata-controlled-data-quality-data-lineage-in-production/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/solutions/008-metadata-controlled-data-quality-data-lineage-in-production/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;metadata-controlled-data-quality--data-lineage-in-production&#34;&gt;Metadata-controlled Data Quality &amp;amp; Data Lineage in Production&lt;/h2&gt;
+&lt;h3 id=&#34;executive-summary&#34;&gt;Executive summary&lt;/h3&gt;
+&lt;p&gt;Metadata-controlled data quality &amp;amp; data lineage along the production chain integrated with a laboratory information system for monitoring and quality documentation of various BoM &amp;amp; formulation variations in the biochemical production of active pharmaceutical ingredients (preliminary production of active ingredients in transplant medicine).&lt;/p&gt;
+&lt;h3 id=&#34;problem-statement&#34;&gt;Problem statement&lt;/h3&gt;
+&lt;p&gt;Neither technical, nor rule based approaches can adequately help in raising data quality without domain expertise.
+Using the domain expertise to create the rules is time consuming and often not feasible from the manpower prospective.&lt;/p&gt;
+&lt;h3 id=&#34;target-market--industries&#34;&gt;Target market / Industries&lt;/h3&gt;
+&lt;p&gt;The use case is applicable to any industry dealing with large volumes of data if insufficient quality, e.g.:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Serial manufacturing&lt;/li&gt;
+&lt;li&gt;Mass production&lt;/li&gt;
+&lt;li&gt;Retail&lt;/li&gt;
+&lt;li&gt;Financial services&lt;/li&gt;
+&lt;li&gt;Cross-industry applications&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;solution&#34;&gt;Solution&lt;/h3&gt;
+&lt;p&gt;The approach is based on few shot manual learning, when the expert creates a few dozens of examples with real-life data. Later on from these examples the model learns strategies to identify and correct data quality errors.&lt;/p&gt;
+&lt;h5 id=&#34;example-use-case-agent-cascade&#34;&gt;Example Use Case Agent Cascade&lt;/h5&gt;
+
+
+
+
+
+
+&lt;p&gt; 
+            &lt;img src=&#34;/streamzero/images/solutions/uc_008_2021.jpeg&#34; style=&#34;border:2px solid #fff;
+            box-shadow: 10px 10px 5px #ccc;
+            -moz-box-shadow: 10px 10px 5px #ccc;
+            -webkit-box-shadow: 10px 10px 5px #ccc;
+            -khtml-box-shadow: 10px 10px 5px #ccc;&#34;/&gt;
+&lt;/p&gt;
+
+&lt;h3 id=&#34;stakeholders&#34;&gt;Stakeholders&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Domain experts&lt;/li&gt;
+&lt;li&gt;Product data quality&lt;/li&gt;
+&lt;li&gt;Functional experts&lt;/li&gt;
+&lt;li&gt;Risk managers&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;data-elements-assets-and-deliverables&#34;&gt;Data elements, Assets and Deliverables&lt;/h3&gt;
+&lt;p&gt;As an Input from the client, the following items were used:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Detailed data sets where the quality to be improved&lt;/li&gt;
+&lt;li&gt;20-30 examples of errors and their manual corrections&lt;/li&gt;
+&lt;li&gt;Judgement on automated model performance&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Assets &amp;amp; Artefacts:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;StreamZero error correction toolbox&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The deliverables included:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Customized data quality improvement workflow&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;impact-and-benefits&#34;&gt;Impact and benefits&lt;/h3&gt;
+&lt;p&gt;The use case implementation allows to address data quality issues in an efficient manner with high quality of the process automation. If the data quality management process would remain manual, this would result in 5-6 Full Time Employees dedicated for this task. The Machine Learning model will over time accumulate respective knowledge and support domain expertise with relevant automated data quality improvement proposals.&lt;/p&gt;
+&lt;!-- 8 Testimonials --&gt;
+&lt;h3 id=&#34;tags--keywords&#34;&gt;Tags / Keywords&lt;/h3&gt;
+&lt;p&gt;#dataquality #dataqualityimprovement #machinelearning #production #manufacturing #serialmanufacturing #massproduction #medicine #laboratory #pharma #financialservices #crossindustry&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

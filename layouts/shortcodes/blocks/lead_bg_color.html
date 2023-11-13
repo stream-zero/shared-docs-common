@@ -1,0 +1,22 @@
+{{ $_hugo_config := `{ "version": 1 }` }}
+{{ $color := .Get "color" | default .Ordinal }}
+{{ $col_id := .Get "color" | default .Ordinal }}
+{{ $height := .Get "height" | default "auto"  }}
+{{ $color_left := .Get "color_left" | default "#c33764"  }}
+{{ $color_right := .Get "color_right" | default "#1d2671"  }}
+
+{{/* Height can be one of: auto, min, med, max, full. */}}
+<a id="td-block-{{ .Ordinal }}" class="td-offset-anchor"></a>
+<section style="background-blend-mode: multiply; background:{{ $color_left }}; background: -webkit-linear-gradient(to right, {{ $color_right }}, {{ $color_left }});background: linear-gradient(to right, {{ $color_left }}, {{ $color_right }});"  
+class="row td-box td-box--{{ $col_id }} position-relative td-box--gradient td-box--height-{{ $height }}">
+	<div class="container text-center td-arrow-down">
+		<span class="h4 mb-0">
+			{{ if eq .Page.File.Ext "md" }}
+				{{ .Inner | markdownify }}
+			{{ else }}
+				{{ .Inner | htmlUnescape | safeHTML }}
+			{{ end }}
+		</span>
+	</div>
+</section>
+

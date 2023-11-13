@@ -1,0 +1,41 @@
+{{ $_hugo_config := `{ "version": 1 }` }}
+{{ $col_id := .Get "color" | default .Ordinal }}
+{{ $height := .Get "height" | default "auto"  }}
+{{ $type   := .Get "type" | default "" }}
+<a id="td-block-{{ .Ordinal }}" class="td-offset-anchor"></a>
+
+<div class="pt-3 lead">
+  {{ if eq .Page.File.Ext "md" }}
+      {{ .Inner | markdownify }}
+  {{ else }}
+      {{ .Inner | htmlUnescape | safeHTML }}
+  {{ end }}
+</div>
+
+    <div class="container">
+    <div class="card-deck">
+        {{ range $.Site.Data.usecases }}
+        <div class="col-sm-4">
+        <div class="card" style=" background-color: rgb(256, 256, 256);  box-shadow: 10px 10px 5px #ccc;
+        -moz-box-shadow: 10px 10px 5px rgb(15, 15, 15);
+        -webkit-box-shadow: 10px 10px 5px rgb(12, 11, 11);
+        -khtml-box-shadow: 10px 10px 5px rgb(3, 3, 3); padding: 30px; margin-bottom: 30px;">
+          <img class="card-img-top" src="/images/card_image-2.svg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">{{.title}}</h5>
+            <p class="card-text">{{.description}}</p>
+            <p class="card-text"><a href="{{.url}}"><small class="text-muted">Learn More</small></a></p>
+          </div>
+        </div>
+        </div>
+        {{ end }}
+    </div>
+
+</div>
+
+
+
+
+
+
+
