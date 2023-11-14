@@ -147,6 +147,7 @@ prism_syntax_highlighting = false
 
 
 company_baseurl = "https://streamzero.com"
+company_docsurl = "https://docs.streamzero.com"
 
 
 # User interface configuration
@@ -285,6 +286,13 @@ enable = false
   [menu.main.params]
     class = 'highlight-menu-item'
 
+[[menu.main]]
+  identifier = 'documentations'
+  name = 'DOCUMENTATION'
+  url = '/docs/'
+  weight = 3
+  [menu.main.params]
+    class = 'highlight-menu-item'
 
 #[[menu.main]]
 #  identifier = 'integrations'
