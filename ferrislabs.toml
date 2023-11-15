@@ -144,7 +144,7 @@ prism_syntax_highlighting = false
 
 
 # Special configs for docs site integration
-company_baseurl = "https://ferrislabs.net"
+company_baseurl = "https://www.ferrislabs.net"
 company_docsurl = "https://docs.ferrislabs.net"
 company_footer = "footer_fl.html"
 
