@@ -142,6 +142,12 @@ offlineSearch = false
 # Enable syntax highlighting and copy buttons on code blocks with Prism
 prism_syntax_highlighting = false
 
+
+# Special configs for docs site integration
+company_baseurl = "https://ferrislabs.net"
+company_docsurl = "https://docs.ferrislabs.net"
+company_footer = "footer_fl.html"
+
 # User interface configuration
 [params.ui]
 #  Set to true to disable breadcrumb navigation.
