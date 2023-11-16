@@ -1,7 +1,7 @@
 {{ $cover := and (.HasShortcode "blocks/cover") (not .Site.Params.ui.navbar_translucent_over_cover_disable) }}
 <nav class="js-navbar-scroll navbar navbar-expand-lg navbar-dark {{ if $cover }} td-navbar-cover {{ end }} td-navbar">
 	<a class="navbar-brand" href="{{  .Site.Params.company_baseurl }}">
-		<span class="navbar-logo">{{ if .Site.Params.ui.navbar_logo }}{{ with resources.Get "icons/streamzero_logo_red.svg" }}{{ ( . | minify).Content | safeHTML }}{{ end }}{{ end }}</span>
+		<span class="navbar-logo">{{ if .Site.Params.ui.navbar_logo }}{{ with resources.Get .Site.Params.company_navbar_logo }}{{ ( . | minify).Content | safeHTML }}{{ end }}{{ end }}</span>
 	</a>
 	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 		<span class="navbar-toggler-icon"></span>

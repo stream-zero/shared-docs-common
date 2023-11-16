@@ -151,6 +151,7 @@ company_baseurl = "https://streamzero.com"
 company_docsurl = "https://docs.streamzero.com"
 company_footer = "footer_sz.html"
 company_index = "index_sz.html"
+company_navbar_logo = "icons/streamzero_logo_red.svg"
 
 
 

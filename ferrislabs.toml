@@ -148,6 +148,7 @@ company_baseurl = "https://www.ferrislabs.net"
 company_docsurl = "https://docs.ferrislabs.net"
 company_footer = "footer_fl.html"
 company_index = "index_fl.html"
+company_navbar_logo = "icons/logo.svg"
 
 # User interface configuration
 [params.ui]
