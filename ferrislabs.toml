@@ -246,7 +246,7 @@ enable = false
 [[menu.main]]
   identifier = 'product'
   name = 'PRODUCTS'
-  url = '/product/'
+  url = 'https://www.ferrislabs.net/product/'
   weight = 1
   [menu.main.params]
     class = 'highlight-menu-item'
@@ -254,7 +254,7 @@ enable = false
 [[menu.main]]
   identifier = 'solutions'
   name = 'SOLUTIONS'
-  url = '/solutions/'
+  url = 'https://www.ferrislabs.net/solutions/'
   weight = 2
   [menu.main.params]
     class = 'highlight-menu-item'
@@ -262,7 +262,7 @@ enable = false
 [[menu.main]]
   identifier = 'integrations'
   name = "INTEGRATIONS"
-  url = "/integrations/"
+  url = "https://www.ferrislabs.net/integrations/"
   weight = 3
   [menu.main.params]
     class = 'highlight-menu-item'
@@ -270,7 +270,7 @@ enable = false
 [[menu.main]]
   identifier = 'integrations_integrations'
   name = "INTEGRATIONS"
-  url = "/integrations/"
+  url = "https://www.ferrislabs.net/integrations/"
   parent = "integrations"
   weight = 1
   [menu.main.params]
@@ -279,7 +279,7 @@ enable = false
 [[menu.main]]
     identifier = "integrations_databases"
     name = "DATABASES"
-    url = "/integrations/databases/"
+    url = "https://www.ferrislabs.net/integrations/databases/"
     parent = "integrations"
     weight = 2
     [menu.main.params]
@@ -288,7 +288,7 @@ enable = false
 [[menu.main]]
     identifier = "integrations_notifications"
     name = "NOTIFICATIONS"
-    url = "/integrations/notifications/"
+    url = "https://www.ferrislabs.net/integrations/notifications/"
     parent = "integrations"
     weight = 3
     [menu.main.params]
@@ -297,7 +297,7 @@ enable = false
 [[menu.main]]
   identifier = 'company'
   name = 'COMPANY'
-  url = '/about/'
+  url = 'https://www.ferrislabs.net/about/'
   weight = 4
   [menu.main.params]
     class = 'highlight-menu-item'
@@ -305,49 +305,49 @@ enable = false
 [[menu.main]]
     identifier = "company_about"
     name = "ABOUT US"
-    url = "/about/"
+    url = "https://www.ferrislabs.net/about/"
     parent = "company"
     weight = 1
 
 [[menu.main]]
     identifier = "company_contact"
     name = "CONTACT US"
-    url = "/contact/"
+    url = "https://www.ferrislabs.net/contact/"
     parent = "company"
     weight = 2
 
 [[menu.main]]
     identifier = "company_careers"
     name = "CAREERS"
-    url = "/jobs/"
+    url = "https://www.ferrislabs.net/jobs/"
     parent = "company"
     weight = 3
 
 [[menu.main]]
     identifier = "company_partners"
     name = "PARTNERS"
-    url = "/partners/"
+    url = "https://www.ferrislabs.net/partners/"
     parent = "company"
     weight = 4
 
 [[menu.main]]
     identifier = "support_professional_services"
     name = "PRICING"
-    url = "/support/"
+    url = "https://www.ferrislabs.net/support/"
     parent = "company"
     weight = 5
 
 [[menu.main]]
     identifier = "company_blog"
     name = "BLOG"
-    url = "/blog/"
+    url = "https://www.ferrislabs.net/blog/"
     parent = "company"
     weight = 6
 
 [[menu.main]]
  identifier = 'learn'
  name = 'DOCUMENTATION'
- url = "/docs/"
+ url = "https://docs.ferrislabs.net/docs/"
  weight = 6
  [menu.main.params]
    class = 'highlight-menu-item'
