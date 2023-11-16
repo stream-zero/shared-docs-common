@@ -9,7 +9,10 @@
     </header>
     <div class="container-fluid td-default td-outer">
       <main role="main" class="td-main">
-        {{ block "main" . }}{{ end }}
+        
+
+        {{ partial .Site.Params.company_index . }}
+       
       </main>
       {{ partial .Site.Params.company_footer . }}
     </div>

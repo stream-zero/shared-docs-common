@@ -147,6 +147,7 @@ prism_syntax_highlighting = false
 company_baseurl = "https://www.ferrislabs.net"
 company_docsurl = "https://docs.ferrislabs.net"
 company_footer = "footer_fl.html"
+company_index = "index_fl.html"
 
 # User interface configuration
 [params.ui]
