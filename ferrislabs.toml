@@ -71,7 +71,7 @@ id = "G-RZ6L6XFT3Q"
 [languages]
 [languages.en]
 title = "Ferris Labs"
-description = "FERRIS LABS web site"
+description = "FERRIS LABS"
 languageName =""
 # Weight used for sorting.
 weight = 1
@@ -309,33 +309,33 @@ enable = false
     parent = "company"
     weight = 1
 
-[[menu.main]]
-    identifier = "company_contact"
-    name = "CONTACT US"
-    url = "https://www.ferrislabs.net/contact/"
-    parent = "company"
-    weight = 2
-
-[[menu.main]]
-    identifier = "company_careers"
-    name = "CAREERS"
-    url = "https://www.ferrislabs.net/jobs/"
-    parent = "company"
-    weight = 3
+#[[menu.main]]
+#    identifier = "company_contact"
+#    name = "CONTACT US"
+#    url = "https://www.ferrislabs.net/contact/"
+#    parent = "company"
+#    weight = 2
 
 [[menu.main]]
     identifier = "company_partners"
     name = "PARTNERS"
     url = "https://www.ferrislabs.net/partners/"
     parent = "company"
-    weight = 4
+    weight = 3
 
 [[menu.main]]
-    identifier = "support_professional_services"
-    name = "PRICING"
-    url = "https://www.ferrislabs.net/support/"
+    identifier = "company_careers"
+    name = "CAREERS"
+    url = "https://www.ferrislabs.net/jobs/"
     parent = "company"
-    weight = 5
+    weight = 4
+
+#[[menu.main]]
+#    identifier = "support_professional_services"
+#    name = "PRICING"
+#    url = "https://www.ferrislabs.net/support/"
+#    parent = "company"
+#    weight = 5
 
 [[menu.main]]
     identifier = "company_blog"
@@ -344,25 +344,25 @@ enable = false
     parent = "company"
     weight = 6
 
-[[menu.main]]
- identifier = 'learn'
- name = 'DOCUMENTATION'
- url = "https://docs.ferrislabs.net/docs/"
- weight = 6
- [menu.main.params]
-   class = 'highlight-menu-item'
+#[[menu.main]]
+# identifier = 'learn'
+# name = 'DOCUMENTATION'
+# url = "https://docs.ferrislabs.net/docs/"
+# weight = 5
+# [menu.main.params]
+#   class = 'highlight-menu-item'
 
-[[menu.main]]
-  name = ""
-  pre = '<button type="button" class="btn-sm btn-primary" >Get Started</button>'
-  url = "https://m.ferrislabs.net/fl-sandbox-lp"
-  weight = 100
+#[[menu.main]]
+#  name = ""
+#  pre = '<button type="button" class="btn-sm btn-primary" >Get Started</button>'
+#  url = "https://docs.ferrislabs.net/docs/"
+#  weight = 100
 
-[[menu.main]]
-  name = " "
-  pre = '<button type="button" class="btn-sm btn-primary" >Demo</button>'
-  url = "https://calendly.com/ferris-team/ferris-intro"
-  weight = 101
+#[[menu.main]]
+#  name = " "
+#  pre = '<button type="button" class="btn-sm btn-primary" >Demo</button>'
+#  url = "https://calendly.com/ferris-team/ferris-intro"
+#  weight = 101
 
 [params.replacables]
   company_name = "Ferris Labs AG"
