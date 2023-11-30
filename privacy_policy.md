@@ -284,9 +284,7 @@ You are advised to review this Privacy Policy periodically for any changes. Chan
 
 If you have any questions about this Privacy Policy, You can contact us:
 
-- By email: info@gridmine.com
-- By visiting this page on our website: [www.gridmine.com](https://www.privacypolicies.com/live/www.gridmine.com)
-- By phone number: +41(0)41 561 0105
-- By mail: Baarerstrasse 5, 6300 Zug, Switzerland
+- By email: {{< param replacables.company_email  >}}
+- By phone number: {{< param replacables.company_phone  >}}
 
 Privacy Policy for {{< param replacables.company_name  >}}
