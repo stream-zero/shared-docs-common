@@ -1,18 +1,15 @@
 ---
-title: "Event Manipulation Strategies"
-linkTitle: "Leveraging Event Manipulation"
+title: "Event Transformation"
+linkTitle: "Event Transformation"
 tags: [quickstart, connect, register] 
 categories: ["Knowledge Base"]
 description: >-
-     Leveraging Event Manipulation.
+    Event Transformation using Event Transformers.
 ---
 
 
 
-Events are the powerful concept at the center of the DX Platform. There are a number of strategies for using event structures. The following are a few important related topics.
-
-* Correlation IDs
-* Event Mappings
+Events are the powerful concept at the center of the FX Platform. The Event Transformer based Services offer a simple and configurable approach to transforming the payload of events prior to reemiiting events. These are useful for targeting services which expect different payloads.
 
 
 
