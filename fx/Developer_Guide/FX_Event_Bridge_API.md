@@ -3,7 +3,7 @@ title: "FX Event Bridge API"
 linkTitle: "FX Event Bridge API"
 tags: [quickstart, integration]
 categories: ["Knowledge Base"]
-weight: 209
+weight: 220
 description: >-
   How to send events to the {{< param replacables.brand_name  >}} Platform using the FX Event Bridge API
 ---
