@@ -1,6 +1,6 @@
 ---
-title: "Streamlining Service Documentation"
-linkTitle: "Streamlining Service Documentation"
+title: "Streamlining Platform Documentation"
+linkTitle: "Streamlining Platform Documentation"
 tags: [quickstart, integration, documentation]
 categories: ["Knowledge Base"]
 weight: 221
