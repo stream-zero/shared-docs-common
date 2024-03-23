@@ -10,7 +10,9 @@ description: >-
 
 ### Implementing Encrypted Payloads in FX Platform Services
 
-In environments like the FX platform, where services exchange data over internal networks protected by TLS, there still exists a need for additional security measures. Specifically, there are scenarios where the confidentiality of certain payload parameters must be maintained, even from other developers within the platform. To address this, encrypting specific attributes or entire data structures within payloads before transmission is a practical solution. This process relies on AES symmetric encryption, where both encryption and decryption are performed using the same secret key.
+In environments like the FX platform, where services exchange data over internal networks protected by TLS, there still exists a need for additional security measures. Specifically, there are scenarios where the confidentiality of certain payload parameters must be maintained, even from other developers within the platform. 
+
+To address this, encrypting specific attributes or entire data structures within payloads before transmission is a practical solution. This process relies on AES symmetric encryption, where both encryption and decryption are performed using the same secret key.
 
 #### Steps for AES Symmetric Encryption
 
@@ -43,7 +45,9 @@ print(f"AES Key (hex): {aes_key_hex}")
 ```
 
 ## Encryption Key Storage 
-For enhanced security, both the sending and receiving services must adhere to stringent key management practices. Specifically, the AES key should be securely stored and retrieved from the FX secrets management system. Under no circumstances should the key be embedded directly in `config.json` files or included within Git repositories. Storing keys in such locations significantly increases the risk of unauthorized access and potential data breaches. Instead, leveraging dedicated secrets management tools ensures that the key remains encrypted and accessible only to authorized services and individuals, thereby maintaining the integrity and confidentiality of the encrypted payloads.
+For enhanced security, both the sending and receiving services must adhere to stringent key management practices. Specifically, the AES key should be securely stored and retrieved from the FX secrets management system. Under no circumstances should the key be embedded directly in `config.json` files or included within Git repositories. Storing keys in such locations significantly increases the risk of unauthorized access and potential data breaches. 
+
+Instead, leveraging dedicated secrets management tools ensures that the key remains encrypted and accessible only to authorized services and individuals, thereby maintaining the integrity and confidentiality of the encrypted payloads.
 
 ## Payload Encryption and Decryption
 
@@ -110,4 +114,6 @@ print(f"Decrypted: {decrypted_message}")
 
 #### Conclusion
 
-Encrypting payloads or specific payload attributes with AES symmetric encryption provides an effective way to enhance data confidentiality in the FX platform's service-to-service communications. This method ensures that sensitive information remains protected, even in environments where multiple developers have access to the platform. By following the outlined steps and adhering to best practices for key management and encryption, services can maintain the integrity and confidentiality of their data exchanges.
+Encrypting payloads or specific payload attributes with AES symmetric encryption provides an effective way to enhance data confidentiality in the FX platform's service-to-service communications. This method ensures that sensitive information remains protected, even in environments where multiple developers have access to the platform. 
+
+By following the outlined steps and adhering to best practices for key management and encryption, services can maintain the integrity and confidentiality of their data exchanges.
