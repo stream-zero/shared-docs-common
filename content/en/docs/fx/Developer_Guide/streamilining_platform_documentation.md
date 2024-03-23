@@ -110,9 +110,9 @@ info:
 
 servers:
   production:
-    host: mqtt://test.mosquitto.org
-    protocol: mqtt
-    description: Test MQTT broker
+    host: kafka://broker.core
+    protocol: kafka
+    description: Kafka broker
 
 channels:
   'fx.events':
