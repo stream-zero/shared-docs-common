@@ -60,7 +60,7 @@ The definition of event schemas within our system follows a structured yet flexi
 
 2. **Centralized Schema Catalog**: The platform maintains a centralized catalog of messages, adopting an 'uber specification' model. This model aggregates the definitions of various events and references the payload schemas, which are maintained separately. This centralized approach facilitates easier management and discovery of schemas, ensuring that the system remains organized and that schemas are easily accessible for validation and other purposes.
 
-```yam
+```yaml
 asyncapi: 3.0.0
 info:
   title: Git Repository Events
