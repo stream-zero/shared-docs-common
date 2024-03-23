@@ -5,7 +5,7 @@ tags: [quickstart, integration, documentation]
 categories: ["Knowledge Base"]
 weight: 221
 description: >-
-  Streamlining Service Integration and Documentation on the FX Platform: A Dynamic Approach with AsyncAPI
+  Streamlining Service Documentation and Discoverability : A Dynamic Approach with AsyncAPI
 ---
 
 ## Streamlining Service Integration and Documentation on the FX Platform: A Dynamic Approach with AsyncAPI
