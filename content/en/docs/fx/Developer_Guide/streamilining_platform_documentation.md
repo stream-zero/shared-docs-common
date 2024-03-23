@@ -8,7 +8,7 @@ description: >-
   Streamlining Service Integration and Documentation on the FX Platform: A Dynamic Approach with AsyncAPI
 ---
 
-# Streamlining Service Integration and Documentation on the FX Platform: A Dynamic Approach with AsyncAPI
+## Streamlining Service Integration and Documentation on the FX Platform: A Dynamic Approach with AsyncAPI
 
 The FX platform leverages CloudEvents as the primary format for event transmission across its internal Kafka bus, showcasing our commitment to utilizing industry standards and specifications for enhanced interoperability and efficiency. However, our adherence to standards extends beyond CloudEvents. We also incorporate OpenAPI and AsyncAPI, two pivotal standards that play crucial roles within our ecosystem.
 
