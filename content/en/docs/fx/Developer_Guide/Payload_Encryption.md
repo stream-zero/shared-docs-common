@@ -42,6 +42,9 @@ aes_key_hex = aes_key.hex()
 print(f"AES Key (hex): {aes_key_hex}")
 ```
 
+## Encryption Key Storage 
+For enhanced security, both the sending and receiving services must adhere to stringent key management practices. Specifically, the AES key should be securely stored and retrieved from the FX secrets management system. Under no circumstances should the key be embedded directly in `config.json` files or included within Git repositories. Storing keys in such locations significantly increases the risk of unauthorized access and potential data breaches. Instead, leveraging dedicated secrets management tools ensures that the key remains encrypted and accessible only to authorized services and individuals, thereby maintaining the integrity and confidentiality of the encrypted payloads.
+
 ## Payload Encryption and Decryption
 
 The following snippet demostrates how you can decrypt strings or dicts.
