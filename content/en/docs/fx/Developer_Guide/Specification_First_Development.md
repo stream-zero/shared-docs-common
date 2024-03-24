@@ -3,13 +3,15 @@ title: "Specification-First Development"
 linkTitle: "Specification-First Development"
 tags: [basic, development, design]
 categories: ["Knowledge Base"]
-weight: 222
+weight: 223
 description: >-
      Specification-First Development on the FX Platform.
 ---
 # Embracing Specification-First Development on the FX Platform: A Comprehensive Guide
 
-Specification-first development is a methodology where the design of software applications starts with specifying what the application will do and how it will interact with other systems before any code is written. This approach is particularly beneficial in environments where clear communication between teams (such as frontend and backend teams) or between services is crucial. In the context of the FX platform, which supports both code-first and specification-first development, this article focuses on how to implement the latter, leveraging AsyncAPI for defining platform services and event specifications.
+Specification-first development is a methodology where the design of software applications starts with specifying what the application will do and how it will interact with other systems before any code is written. This approach is particularly beneficial in environments where clear communication between teams (such as frontend and backend teams) or between services is crucial. 
+
+In the context of the FX platform, which supports both code-first and specification-first development, this article focuses on how to implement the latter, leveraging AsyncAPI for defining platform services and event specifications.
 
 ### Why Specification First?
 
