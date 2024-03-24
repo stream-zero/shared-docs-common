@@ -75,7 +75,12 @@ components:
 
 ##### Service Specification Sample:
 
-Note how except for the manifest.json attributes 'trigger_events' and 'output_events' all other attributes are added to the info section of the file along with 'x-fx' prefix.
+In the process of configuring a service on the FX platform, it's essential to understand the relationship between the manifest.json file and the AsyncAPI specification. 
+
+The manifest.json file contains several key attributes that define the service's behavior, including trigger_events and output_events, which respectively specify the events that trigger the service and the events that the service emits upon execution. 
+
+When translating these configurations into the AsyncAPI file, all attributes from the manifest.json, with the exception of trigger_events and output_events, should be meticulously incorporated into the 'info' section of the AsyncAPI document. To clearly denote their origin and purpose, these attributes are prefixed with x-fx. This practice ensures a seamless integration of service configurations from the manifest.json into the AsyncAPI specification, facilitating a coherent and comprehensive service definition on the FX platform.
+
 
 ```yaml
 asyncapi: 3.0.0
