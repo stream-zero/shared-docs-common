@@ -77,7 +77,9 @@ Ensure your system is prepared with:
 
 ### Automated Pipeline
 
-Upon pushing changes to the repository, an automated pipeline is triggered. This pipeline performs several actions:
+Upon pushing changes to the repository, an automated pipeline is triggered. The pipeline is customised for your implementation of the FX Platform.
+
+This pipeline performs several actions:
 
 - **Builds the Application**: Compiles your code, ensuring it's ready for deployment.
 - **Runs Tests**: Executes predefined tests to verify the functionality of your application.

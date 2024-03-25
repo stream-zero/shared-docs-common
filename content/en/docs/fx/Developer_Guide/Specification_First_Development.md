@@ -127,17 +127,17 @@ operations:
 
 Once all your YAML files are ready and properly organized within the directory structure, create a zip archive of the entire structure. This makes it easier to upload and manage the specifications as a single unit.
 
-#### 4. Upload the File to the UI
-
-The FX platform provides a user interface for uploading your zip archive. This step integrates your specifications into the platform, making them part of the system's overall architecture.
-
-#### 5. The Platform Creates Code Stubs
+#### 4. Upload the File to the FX Code Gen Server
 
 Upon uploading your specifications, the FX platform processes them and automatically generates code stubs for the required services. This significantly accelerates the development process by providing a solid foundation on which to build.
 
-#### 6. Download the Code Stubs
+Use the following command to upload the zip arhive to the FX platform. The command will return a zip file with the generated code.
 
-Finally, download the generated code stubs from the platform. These stubs serve as the starting point for developing the actual logic of your services, already structured according to the specifications you defined.
+```bash
+curl -X POST -F "file=@specifications.zip" http://localhost:8083/generate-code-from-specification -o result.zip
+```
+
+The generated code stubs from the platform. These stubs serve as the starting point for developing the actual logic of your services, already structured according to the specifications you defined.
 
 ### Conclusion
 
