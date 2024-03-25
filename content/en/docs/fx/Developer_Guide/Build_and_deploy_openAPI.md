@@ -32,16 +32,19 @@ Ensure your system is prepared with:
 3. **OpenAPI Specification Update**:
 
    - Navigate to the root directory of your local repository and update the `openapi.yaml` file to reflect your API design.
+   - **Important**: When editing the `openapi.yaml`, ensure you introduce the `tag` attribute for each endpoint. This attribute is mandatory and specifies the name of the controller that should handle the endpoint.
 
 4. **Code Generation**:
 
    - Execute the command:
 
-     ```
+     ```bash
+     
      java -jar swagger-codegen-cli.jar generate -l python-flask -i openapi.yaml -o server -c server/sg_config.json
      ```
 
-     This command generates the server code based on your `openapi.yaml` specification.
+     This command generates the server code based on your openapi.yaml specification.
+
 
 5. **Implement Controller Functions**:
 
