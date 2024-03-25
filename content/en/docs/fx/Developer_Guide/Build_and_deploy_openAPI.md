@@ -32,7 +32,24 @@ Ensure your system is prepared with:
 3. **OpenAPI Specification Update**:
 
    - Navigate to the root directory of your local repository and update the `openapi.yaml` file to reflect your API design.
-   - **Important**: When editing the `openapi.yaml`, ensure you introduce the `tag` attribute for each endpoint. This attribute is mandatory and specifies the name of the controller that should handle the endpoint.
+   - **Important**: When editing the `openapi.yaml`, ensure you introduce the `tag` attribute for each endpoint. This attribute is mandatory and specifies the name of the controller that should handle the endpoint. A sample
+
+   ```yaml
+   openapi: 3.0.0
+    info:
+    title: Hello API
+    version: 1.0.0
+    paths:
+    /hello-world:
+        get:
+        tags:
+            - "codegen"
+        summary: Get Hello
+        description: Retrieve "OK" message
+        responses:
+            '200':
+    ```
+
 
 4. **Code Generation**:
 
