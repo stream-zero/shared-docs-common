@@ -1,6 +1,6 @@
 ---
 title: "Deploying OpenAPI Compliant Servers"
-linkTitle: "FX Event Bridge API"
+linkTitle: "OpenAPI Compliant Servers"
 tags: [quickstart, integration, openapi]
 categories: ["Knowledge Base"]
 weight: 220
