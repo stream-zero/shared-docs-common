@@ -144,8 +144,8 @@ prism_syntax_highlighting = false
 
 
 # Special configs for docs site integration
-company_baseurl = "https://www.ferrislabs.net"
-company_docsurl = "https://docs.ferrislabs.net"
+company_baseurl = "https://www.ferris.ai"
+company_docsurl = "https://docs.ferrislabs.net/docs"
 company_footer = "footer_fl.html"
 company_index = "index_fl.html"
 company_navbar_logo = "icons/logo.svg"
@@ -228,7 +228,7 @@ enable = false
 # End user relevant links. These will show up on left side of footer and in the community page if you have one.
 [[params.links.user]]
 	name = "User mailing list"
-	url = "https://ferrislabs.net/about"
+	url = "https://ferris.ai/about"
 	icon = "fa fa-envelope"
         desc = "Ferris news and updates"
 [[params.links.user]]
@@ -246,7 +246,7 @@ enable = false
 [[menu.main]]
   identifier = 'product'
   name = 'PRODUCTS'
-  url = 'https://www.ferrislabs.net/product/'
+  url = 'https://www.ferris.ai/product/'
   weight = 1
   [menu.main.params]
     class = 'highlight-menu-item'
@@ -254,7 +254,7 @@ enable = false
 [[menu.main]]
   identifier = 'solutions'
   name = 'SOLUTIONS'
-  url = 'https://www.ferrislabs.net/solutions/'
+  url = 'https://www.ferris.ai/solutions/'
   weight = 2
   [menu.main.params]
     class = 'highlight-menu-item'
@@ -262,7 +262,7 @@ enable = false
 [[menu.main]]
   identifier = 'integrations'
   name = "INTEGRATIONS"
-  url = "https://www.ferrislabs.net/integrations/"
+  url = "https://www.ferris.ai/integrations/"
   weight = 3
   [menu.main.params]
     class = 'highlight-menu-item'
@@ -270,7 +270,7 @@ enable = false
 [[menu.main]]
   identifier = 'integrations_integrations'
   name = "INTEGRATIONS"
-  url = "https://www.ferrislabs.net/integrations/"
+  url = "https://www.ferris.ai/integrations/"
   parent = "integrations"
   weight = 1
   [menu.main.params]
@@ -279,7 +279,7 @@ enable = false
 [[menu.main]]
     identifier = "integrations_databases"
     name = "DATABASES"
-    url = "https://www.ferrislabs.net/integrations/databases/"
+    url = "https://www.ferris.ai/integrations/databases/"
     parent = "integrations"
     weight = 2
     [menu.main.params]
@@ -288,7 +288,7 @@ enable = false
 [[menu.main]]
     identifier = "integrations_notifications"
     name = "NOTIFICATIONS"
-    url = "https://www.ferrislabs.net/integrations/notifications/"
+    url = "https://www.ferris.ai/integrations/notifications/"
     parent = "integrations"
     weight = 3
     [menu.main.params]
@@ -297,7 +297,7 @@ enable = false
 [[menu.main]]
   identifier = 'company'
   name = 'COMPANY'
-  url = 'https://www.ferrislabs.net/about/'
+  url = 'https://www.ferris.ai/about/'
   weight = 4
   [menu.main.params]
     class = 'highlight-menu-item'
@@ -305,42 +305,42 @@ enable = false
 [[menu.main]]
     identifier = "company_about"
     name = "ABOUT US"
-    url = "https://www.ferrislabs.net/about/"
+    url = "https://www.ferris.ai/about/"
     parent = "company"
     weight = 1
 
 #[[menu.main]]
 #    identifier = "company_contact"
 #    name = "CONTACT US"
-#    url = "https://www.ferrislabs.net/contact/"
+#    url = "https://www.ferris.ai/contact/"
 #    parent = "company"
 #    weight = 2
 
 [[menu.main]]
     identifier = "company_partners"
     name = "PARTNERS"
-    url = "https://www.ferrislabs.net/partners/"
+    url = "https://www.ferris.ai/partner/"
     parent = "company"
     weight = 3
 
 [[menu.main]]
     identifier = "company_careers"
     name = "CAREERS"
-    url = "https://www.ferrislabs.net/jobs/"
+    url = "https://www.ferris.ai/jobs/"
     parent = "company"
     weight = 4
 
 #[[menu.main]]
 #    identifier = "support_professional_services"
 #    name = "PRICING"
-#    url = "https://www.ferrislabs.net/support/"
+#    url = "https://www.ferris.ai/support/"
 #    parent = "company"
 #    weight = 5
 
 [[menu.main]]
     identifier = "company_blog"
     name = "BLOG"
-    url = "https://www.ferrislabs.net/blog/"
+    url = "https://www.ferris.ai/blog/"
     parent = "company"
     weight = 6
 
@@ -374,7 +374,7 @@ enable = false
   website_url = "https://github.com/ferrislabs/"
   brand_name = "Ferris"
   brand_name_lower="ferris"
-  company_email = "info@ferrislabs.net"
+  company_email = "info@ferris.ai"
   company_website = "ferrislabs.com"
   company_address = "Fabrikstrasse 5, 6330 Cham, Switzerland"
   company_phone = "+41(0)41 561 0105"
