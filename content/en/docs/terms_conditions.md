@@ -1,11 +1,11 @@
 ---
 title: "Terms & Conditions"
 linkTitle: "Terms & Conditions"
-tags: [terms and conditions] 
+tags: [terms and conditions, policy]
 categories: []
 weight: 108
 description: >-
- {{< param replacables.company_name  >}} Terms and Conditions.
+  {{< param replacables.company_name  >}} Terms and Conditions.
 ---
 
 Last updated: February 12, 2021
@@ -29,7 +29,7 @@ For the purposes of these Terms and Conditions:
 - **Service** refers to the Website.
 - **Terms and Conditions** (also referred as "Terms") mean these Terms and Conditions that form the entire agreement between You and the Company regarding the use of the Service.
 - **Third-party Social Media Service** means any services or content (including data, information, products or services) provided by a third-party that may be displayed, included or made available by the Service.
-- **Website** refers to {{< param replacables.company_name  >}}, accessible from [{{< param replacables.company_website  >}}](https://www.privacypolicies.com/live/{{< param replacables.company_website  >}})
+- **Website** refers to {{< param replacables.company_name  >}}, accessible from [{{< param replacables.company_website >}}](https://www.privacypolicies.com/live/{{< param replacables.company_website >}})
 - **You** means the individual accessing or using the Service, or the company, or other legal entity on behalf of which such individual is accessing or using the Service, as applicable.
 
 ### Acknowledgment
