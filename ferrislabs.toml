@@ -267,32 +267,32 @@ enable = false
   [menu.main.params]
     class = 'highlight-menu-item'
 
-[[menu.main]]
-  identifier = 'integrations_integrations'
-  name = "INTEGRATIONS"
-  url = "https://www.ferris.ai/integrations/"
-  parent = "integrations"
-  weight = 1
-  [menu.main.params]
-    class = 'highlight-menu-item'
+#[[menu.main]]
+#  identifier = 'integrations_integrations'
+#  name = "INTEGRATIONS"
+#  url = "https://www.ferris.ai/integrations/"
+#  parent = "integrations"
+#  weight = 1
+#  [menu.main.params]
+#    class = 'highlight-menu-item'
 
-[[menu.main]]
-    identifier = "integrations_databases"
-    name = "DATABASES"
-    url = "https://www.ferris.ai/integrations/databases/"
-    parent = "integrations"
-    weight = 2
-    [menu.main.params]
-      class = 'highlight-menu-item'
+#[[menu.main]]
+#    identifier = "integrations_databases"
+#    name = "DATABASES"
+#    url = "https://www.ferris.ai/integrations/databases/"
+#    parent = "integrations"
+#    weight = 2
+#    [menu.main.params]
+#      class = 'highlight-menu-item'
 
-[[menu.main]]
-    identifier = "integrations_notifications"
-    name = "NOTIFICATIONS"
-    url = "https://www.ferris.ai/integrations/notifications/"
-    parent = "integrations"
-    weight = 3
-    [menu.main.params]
-      class = 'highlight-menu-item'
+#[[menu.main]]
+#    identifier = "integrations_notifications"
+#    name = "NOTIFICATIONS"
+#    url = "https://www.ferris.ai/integrations/notifications/"
+#    parent = "integrations"
+#    weight = 3
+#    [menu.main.params]
+#      class = 'highlight-menu-item'
 
 [[menu.main]]
   identifier = 'company'
@@ -337,12 +337,12 @@ enable = false
 #    parent = "company"
 #    weight = 5
 
-[[menu.main]]
-    identifier = "company_blog"
-    name = "BLOG"
-    url = "https://www.ferris.ai/blog/"
-    parent = "company"
-    weight = 6
+#[[menu.main]]
+#    identifier = "company_blog"
+#    name = "BLOG"
+#    url = "https://www.ferris.ai/blog/"
+#    parent = "company"
+#    weight = 6
 
 #[[menu.main]]
 # identifier = 'learn'
@@ -375,6 +375,6 @@ enable = false
   brand_name = "Ferris"
   brand_name_lower="ferris"
   company_email = "info@ferris.ai"
-  company_website = "ferrislabs.com"
+  company_website = "ferris.ai"
   company_address = "Fabrikstrasse 5, 6330 Cham, Switzerland"
   company_phone = "+41(0)41 561 0105"
