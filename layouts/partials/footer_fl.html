@@ -1,6 +1,9 @@
 <section class="row td-cover-block" style="background-color: black">
   <div class="container">
-    <footer class="footer-component with-intercom">
+    <footer
+      class="footer-component with-intercom"
+      style="background-color: black"
+    >
       <div class="section-container footer-inner size-medium">
         <div class="content">
           <div class="page-container padding-small-x">
@@ -339,7 +342,14 @@
                   </li>
                 </ul>
                 <!-- Social Links -->
-                <div class="centering-wrapper social-links">
+                <div
+                  style="
+                    width: 100%;
+                    text-align: center;
+                    margin-top: 20px;
+                    padding-bottom: 20px;
+                  "
+                >
                   <a
                     rel="noopener noreferrer"
                     class="link-component social-link"
@@ -398,13 +408,19 @@
                 <br />
                 <br />
                 <!-- Legal Links -->
-                <div class="centering-wrapper legal-links">
+                <div
+                  style="
+                    width: 100%;
+                    text-align: center;
+                    border-top: 1px solid #ccc;
+                    padding-top: 20px;
+                  "
+                >
                   <div class="typography-text p2-normal align-center">
                     <span class="copyright"
-                      >{{ now.Year}} © FERRIS LABS AG</span
+                      >© {{ now.Year }} FERRIS LABS AG</span
                     >
                     <span> | </span>
-                    <br class="br-component mobile" />
                     <a
                       class="link-component legal-link"
                       href="https://docs.ferrislabs.net/docs/privacy_policy/"
